@@ -78,7 +78,7 @@ class Storage:
 
         # Models setup
         self.descriptor_model = Groq(
-            model="llama3-70b-8192",
+            model="llama-3.3-70b-versatile",
             api_key=args.groq_api_key,
             model_kwargs={"seed": 42},
             temperature=0.0
