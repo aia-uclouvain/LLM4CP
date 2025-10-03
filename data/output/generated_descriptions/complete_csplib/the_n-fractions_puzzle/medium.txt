@@ -1,0 +1,13 @@
+**Problem Name:** Fractions Problem
+
+**Description:** The Fractions Problem is a classic constraint programming problem that involves finding distinct non-zero digits to satisfy a given equation. The equation consists of three fractions, each with a numerator and a denominator, and the sum of these fractions should equal 1.
+
+**Decision Variables:** The main decision variables in this problem are the digits A, B, C, D, E, F, G, H, and I, which represent the numerators and denominators of the fractions. These variables are integer variables that range from 1 to 9.
+
+**Constraints:** The key constraints in this problem can be described in plain language as follows:
+- Each digit can only be used once.
+- The equation A/BC + D/EF + G/HI = 1 must be satisfied.
+- The symmetry of the problem is broken by ensuring that A*EF >= D*BC and D*HI >= G*EF.
+- Redundant constraints are added to reduce the search space, such as 3*A >= BC and 3*G <= EF.
+
+**Objective:** The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. In other words, the goal is to find an assignment of digits to the variables A, B, C, D, E, F, G, H, and I that makes the equation true.

@@ -1,0 +1,24 @@
+**Student-Company Interview Assignment Problem**
+
+The Student-Company Interview Assignment Problem is a classic constraint programming problem that involves assigning students to companies for interviews. The problem is about finding an optimal assignment of students to companies, given the preferences of students and the capacity constraints of companies.
+
+**Decision Variables**
+
+The main decision variables in this problem are the assignment variables, which represent the company assigned to each student for each interview. These variables are typically represented as a matrix, where each row corresponds to a student and each column corresponds to an interview. The value of each cell in the matrix represents the company assigned to the student for that interview.
+
+**Constraints**
+
+The key constraints in this problem are:
+
+* **Capacity constraints**: Each company has a limited capacity, which means that only a certain number of students can be assigned to it.
+* **Student preferences**: Students have preferences over companies, and the assignment should try to satisfy these preferences as much as possible.
+* **Unique assignments**: Each student can only be assigned to one company for each interview.
+* **Ordering**: The assignments for each student should be ordered, meaning that the first interview should be with the most preferred company, the second interview with the second most preferred company, and so on.
+
+**Objective**
+
+The objective of the problem is to minimize the total regret of all students, where regret is defined as the difference between the student's preference value for the assigned company and their preference value for their most preferred company. In other words, the objective is to assign students to companies in a way that minimizes the total dissatisfaction of all students.
+
+In some variants of the problem, there is a secondary objective, which is to minimize the maximum regret of any student. This means that the assignment should try to minimize the worst-case regret of any student, in addition to minimizing the total regret.
+
+Overall, the Student-Company Interview Assignment Problem is a complex constraint programming problem that requires finding a balance between satisfying student preferences, respecting company capacity constraints, and minimizing regret.

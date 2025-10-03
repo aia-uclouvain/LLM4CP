@@ -1,0 +1,8 @@
+**Ramsey Problem**
+The Ramsey problem is about finding the minimum number of vertices in a complete graph such that, when the edges are colored with two colors, there is always a monochromatic subgraph of a certain size. 
+
+The main decision variables in this problem are the colors of the edges between vertices, represented by `x[i][j]` in the PyCSP3 model and `graph` in the Essence model. These variables determine the color of each edge in the graph.
+
+The key constraints in this problem are that the graph is complete, meaning every vertex is connected to every other vertex, and that there are no monochromatic triangles. In plain language, this means that for any three vertices, the edges between them cannot all have the same color. Additionally, the problem constraints ensure that there is no subgraph of a certain size where all edges have the same color.
+
+The objective of the problem is to minimize the maximum color used, which is equivalent to minimizing the number of colors needed to color the graph such that there are no monochromatic subgraphs of a certain size. In other words, the goal is to find the smallest complete graph that can be colored with two colors such that there is no monochromatic subgraph of a certain size.

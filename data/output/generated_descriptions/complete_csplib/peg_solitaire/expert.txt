@@ -1,0 +1,7 @@
+name: Peg Solitaire
+description: The Peg Solitaire problem is a classic puzzle where a player is presented with a board containing pegs, and the goal is to remove pegs by jumping one peg over another, landing on an empty space. The problem is to find a sequence of moves that transforms an initial board configuration into a target configuration.
+variables: $x_{i,j,t}, y_t$ 
+These are decision variables where $x_{i,j,t}$ represents the state of the cell at row $i$ and column $j$ at time $t$ (1 if there is a peg, 0 if the cell is empty), and $y_t$ represents the move (transition) performed at time $t$.
+constraints: $x_{0} = init\_board, x_{nMoves} = final\_board, unchanged(i, j, t), to0(i, j, t), to1(i, j, t)$ 
+These constraints ensure that the initial board configuration is set correctly, the final board configuration is reached, and the rules of the game are followed at each time step. The $unchanged(i, j, t)$ constraint ensures that a cell remains unchanged if no move involves it, the $to0(i, j, t)$ constraint ensures that a cell becomes empty if a move involves jumping over it, and the $to1(i, j, t)$ constraint ensures that a cell becomes occupied if a move involves landing on it.
+objective: The objective of the problem is to find a sequence of moves that satisfies the constraints, there is no explicit objective function to minimize or maximize.

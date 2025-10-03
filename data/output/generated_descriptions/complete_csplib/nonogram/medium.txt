@@ -1,0 +1,13 @@
+The name of the problem is Nonogram.
+
+Nonogram is a classic constraint programming problem that involves solving a picture logic puzzle. The puzzle consists of a grid with some numbers given at the side of the grid, which represent the number of consecutive filled-in squares in each row or column. The goal is to fill in the grid according to these numbers to reveal a hidden picture.
+
+The main decision variables in this problem are the values of the grid cells, which can be either 0 (empty) or 1 (filled-in). These variables represent the state of each cell in the grid.
+
+The key constraints in this problem are:
+
+* Each row and column must satisfy the given number of consecutive filled-in squares.
+* The numbers given at the side of the grid represent the number of consecutive filled-in squares in each row or column.
+* The grid cells can only be filled-in or empty.
+
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to fill in the grid according to the given numbers to reveal a hidden picture. There is no explicit objective function to minimize or maximize, but rather a feasibility problem to find a solution that satisfies all the constraints.

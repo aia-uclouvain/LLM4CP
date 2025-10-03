@@ -1,0 +1,18 @@
+Medical Appointment Scheduling Problem (MASP)
+The Medical Appointment Scheduling Problem is about scheduling medical appointments for patients with multiple resources, such as doctors from different specialties like cardiology and neurology, while considering patient preferences and availability of resources.
+
+The main variables are:
+- Appointment slots: These represent the time slots when the appointments can be scheduled.
+- Resources: These are the doctors or medical specialties (like cardiology or neurology) that are required for the appointment.
+- Auxiliary variables: These help in linking resources to the first slot of the appointment and in calculating violations of patient preferences.
+
+The basic restrictions or rules of the problem are:
+- Each appointment slot must be unique and sequential.
+- Resources must be assigned to each appointment, and each resource can only be assigned once.
+- Appointment slots cannot fall on undesired weekdays for the patient.
+- Resources must be available during the scheduled appointment time.
+
+The goal of the problem is to minimize the total number of violations of patient preferences, such as:
+- Preferred dates: The appointment should be scheduled on the patient's preferred dates if possible.
+- Preferred doctors: The appointment should be scheduled with the patient's preferred doctors if possible.
+- Preferred times: The appointment should be scheduled within the patient's preferred time ranges if possible.

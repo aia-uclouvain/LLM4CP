@@ -1,0 +1,13 @@
+Rack Configuration Problem
+The Rack Configuration Problem is about plugging electronic cards into racks with electronic connectors, where each rack has a limited number of connectors and a limited power supply. The goal is to find the optimal configuration of racks and cards that minimizes the total cost.
+
+The main decision variables are:
+- The model used for each rack, which determines the number of connectors and the power supply of the rack.
+- The number of cards of each type plugged into each rack.
+
+The key constraints are:
+- The connector-capacity constraint: the number of cards plugged into a rack cannot exceed the number of connectors of the rack model.
+- The power-capacity constraint: the total power of the cards plugged into a rack cannot exceed the power supply of the rack model.
+- The demand constraint: all cards of each type must be plugged into some rack.
+
+The objective of the problem is to minimize the total cost, which is the sum of the prices of the rack models used by all the racks needed. The problem aims to find the optimal configuration of racks and cards that satisfies all the constraints while minimizing the total cost.

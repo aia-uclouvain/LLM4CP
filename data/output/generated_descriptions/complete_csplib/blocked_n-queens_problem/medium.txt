@@ -1,0 +1,13 @@
+N-Queens Problem with Blocked Squares
+The N-Queens problem is a classic constraint programming problem where the goal is to place N queens on an NxN chessboard such that no two queens attack each other. In this variation, some squares on the board are blocked, and the queens cannot be placed on these squares.
+
+The main decision variables in this problem are the positions of the queens on the board. In the given implementations, these variables are represented in different ways, such as a matrix `m` in the .eprime implementation, an array `q` in the .py implementation, and a series of bits in the .cc implementations.
+
+The key constraints in this problem are:
+- Each row and column can contain at most one queen.
+- Each diagonal can contain at most one queen.
+- Queens cannot be placed on blocked squares.
+
+These constraints are enforced in different ways in the given implementations. For example, in the .eprime implementation, the `allDiff` constraint is used to ensure that each row and column contains at most one queen, while the `table` constraint is used to ensure that each diagonal contains at most one queen. In the .py implementation, the `AllDifferent` constraint is used to ensure that each row and column contains at most one queen, while a custom constraint is used to ensure that each diagonal contains at most one queen.
+
+The objective of this problem is to find a solution that satisfies all the constraints, i.e., to place the queens on the board such that no two queens attack each other and no queen is placed on a blocked square. There is no explicit objective function to minimize or maximize in this problem. The goal is simply to find a feasible solution.

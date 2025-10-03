@@ -1,0 +1,1768 @@
+1) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+include "globals.mzn";
+int: n = 12;
+set of int: classes = 0..n-1;
+set of int: differ = 1..n-1;
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+array[0..n-2] of var differ: differences;
+
+solve ::int_search(series, first_fail, indomain_max, complete) satisfy;
+
+constraint
+   % C1: Each pitch class occurs exactly once
+   % GCAD: Exploitation of alldifferent() global constraint
+   all_different(series)
+   /\
+   % C2: Differences between neighbouring notes are all different
+   % AUX: Addition of auxiliary predicates
+   % Auxiliary predicate stores the interval between pairs of neighbouring notes
+   forall(i in 0..n-2) (
+          differences[i] = abs(series[i+1] - series[i])
+   )
+   /\
+   % GCAD: Exploitation of alldifferent() global constraint
+   all_different(differences)
+   /\
+   % SBSO: Symmetry-breaking by selective ordering
+   % The first note is less than last one
+   series[0] < series[n-1]
+;
+
+
+output [
+   "series: " ++ show(series) ++ "\n" ++
+   "differences: " ++ show(differences) 
+];
+
+2) IMPLEMENTATION IN .eprime
+$
+$ All interval problem in Essence'.
+$
+$
+$ CSPLib problem number 7
+$ http://www.csplib.org/Problems/prob007
+$ """
+$ Given the twelve standard pitch-classes (c, c$, d, ...), represented by 
+$ numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+$ once and in which the musical intervals between neighbouring notes cover 
+$ the full set of intervals from the minor second (1 semitone) to the major 
+$ seventh (11 semitones). That is, for each of the intervals, there is a 
+$ pair of neigbhouring pitch-classes in the series, between which this 
+$ interval appears. The problem of finding such a series can be easily 
+$ formulated as an instance of a more general arithmetic problem on Z_n, 
+$ the set of integer residues modulo n. Given n in N, find a vector 
+$ s = (s_1, ..., s_n), such that (i) s is a permutation of 
+$ Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+$ v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+$ Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+$ called an all-interval series of size n; the problem of finding such 
+$ a series is the all-interval series problem of size n. We may also be 
+$ interested in finding all possible series of a given size. 
+$ """
+$
+$ Model created by Hakan Kjellerstrand, hakank@gmail.com
+$ See also my Essence'/Tailor page: http://www.hakank.org/savile_row/
+$
+$
+$ Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+language ESSENCE' 1.0
+
+letting n be 12
+letting range be domain int(1..n)
+letting range2 be domain int(1..n-1)
+find x: matrix indexed by [range] of range
+find diffs: matrix indexed by [range2] of range2
+
+such that
+   allDiff(diffs),
+   allDiff(x),
+   forall k : range2 . diffs[k] = |x[k+1]-x[k]|,
+   $ symmetry breaking
+   x[1] < x[n-1],
+   diffs[1] < diffs[2]
+
+3) IMPLEMENTATION IN .essence
+language ESSENCE 1.2.0
+$ prob007.essence: All-interval Series
+$ Problem details available at http://www.csplib.org/Problems/prob007/
+$ 05 September 2007
+$
+
+given n : int(1..)
+
+letting Num be domain int(0..n-1),
+        Interval be domain int(1..n-1)
+
+find s : function (total, bijective) int(1..n) --> Num,
+     v : function (total, bijective) int(1..n-1) --> Interval
+
+such that forAll i : int(1..n-1) . v(i) = |s(i+1) - s(i)|
+
+
+
+4) IMPLEMENTATION IN .co
+/*
+
+  
+  All interval problem in Comet.
+  
+  CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  """
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+  once and in which the musical intervals between neighbouring notes cover 
+  the full set of intervals from the minor second (1 semitone) to the major 
+  seventh (11 semitones). That is, for each of the intervals, there is a 
+  pair of neigbhouring pitch-classes in the series, between which this 
+  interval appears. The problem of finding such a series can be easily 
+  formulated as an instance of a more general arithmetic problem on Z_n, 
+  the set of integer residues modulo n. Given n in N, find a vector 
+  s = (s_1, ..., s_n), such that (i) s is a permutation of 
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+  called an all-interval series of size n; the problem of finding such 
+  a series is the all-interval series problem of size n. We may also be 
+  interested in finding all possible series of a given size. 
+  """
+ 
+  Compare with
+  * MiniZinc model: http://www.hakank.org/minizinc/all_interval.mzn
+  * Gecode/R model: http://www.hakank.org/gecode_r/all_interval.rb
+ 
+
+  This Comet model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Comet page: http://www.hakank.org/comet 
+
+ */
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+/*
+
+ Note: For n = 12, all 1328 solution (no symmetry breaking) took about 16
+       seconds.
+       With symmetry breaking: 463 solutions in 5.5 seconds.
+
+ */
+
+
+import cotfd;
+
+int t0 = System.getCPUTime();
+
+int n = 12;
+int sum_distinct = ((n+1)*n) / 2;
+
+Solver<CP> m();
+
+var<CP>{int} x[1..n](m, 1..n);
+var<CP>{int} diffs[1..n-1](m, 1..n-1);
+
+
+Integer num_solutions(0);
+
+exploreall<m> {
+
+  forall(k in 1..n-1) 
+    m.post(diffs[k] == abs(x[k+1] - x[k]), onValues);
+
+  m.post(alldifferent(x), onValues);
+  m.post(alldifferent(diffs), onValues);
+
+
+  // symmetry breaking
+  m.post(x[1] < x[n-1], onValues);
+  m.post(diffs[1] < diffs[2], onValues);
+
+
+} using {
+
+  /*
+  forall(i in 1..n : !x[i].bound()) by (-x[i].getSize()) {
+    // tryall<m>(v in 1..n)
+    //  m.label(x[i], v);
+    label(x[i]);
+  }
+
+  forall(i in 1..n-1 : !diffs[i].bound()) by (diffs[i].getSize()) {
+    // tryall<m>(v in 1..n)
+    //   m.label(x[i], v);
+    label(diffs[i]);
+  }
+  */
+
+  //label(m);
+
+  label(x);
+  // label(diffs);
+
+
+
+
+  num_solutions := num_solutions + 1;
+
+      
+  cout << x << " " << sum_distinct << " " << diffs <<  endl;
+  cout << flush;
+
+}
+
+// cout << x << endl;
+cout << "\nnum_solutions: " << num_solutions << endl;
+    
+int t1 = System.getCPUTime();
+cout << "time:      " << (t1-t0) << endl;
+cout << "#choices = " << m.getNChoice() << endl;
+cout << "#fail    = " << m.getNFail() << endl;
+cout << "#propag  = " << m.getNPropag() << endl;
+
+
+
+5) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+
+% Problem description
+% Given the twelve standard pitch-classes (c, c#, d, ...), represented by numbers 0,1,...,11, this problem amounts to find a series in which each pitch-class occurs exactly once and in which the musical intervals between neighboring notes cover the full set of intervals from the minor second (1 semitone) to the major seventh (11 semitones). That is, for each of the intervals, there is a pair of neighboring pitch-classes in the series, between which this interval appears.
+
+% We consider a generalization of this problem in which the set of numbers is the range from 0 to n-1, for any given positive 'n'. In particular, given such 'n', the problem amounts to find a vector s = (s1, ..., sn) that is a permutation of {0, 1,..., n-1} and such that the interval vector v = (|s2 - s1|, |s3 - s2|, ..., |sn - s(n-1)|) is a permutation of {1, 2,..., n-1}.
+%
+% Problem input
+%
+%     * n, the number of pitch classes 
+%
+% Search space
+% The set of permutations of integer range [0..n-1]
+%
+% Constraints
+%
+%     * C1: Each pitch class occurs exactly once
+%     * C2: Differences between neighbouring notes are all different
+
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+include "globals.mzn";
+int: n = 12;
+set of int: classes = 0..n-1;
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+
+solve :: int_search(series, first_fail, indomain_min, complete) satisfy;
+
+constraint
+%    all_different(series) /\
+
+   % C1: Each pitch class occurs exactly once
+   forall(i,j in classes where i != j) (
+     series[i] != series[j]
+   )
+   /\
+   % C2: Differences between neighbouring notes are all different
+   forall(i,j in classes where j < n-1 /\ i < n-1 /\ i != j)  (
+     abs(series[i+1] - series[i]) != abs(series[j+1] - series[j])
+   )
+;
+
+output
+[  show(series)
+];
+
+6) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Examples:
+  python AllInterval.py
+  python AllInterval.py -data=10
+  python AllInterval.py -data=10 -variant=aux
+"""
+
+from pycsp3 import *
+
+n = data or 8
+
+# x[i] is the ith note of the series
+x = VarArray(size=n, dom=range(n))
+
+if not variant():
+    satisfy(
+        # notes must occur once, and so form a permutation
+        AllDifferent(x),
+
+        # intervals between neighbouring notes must form a permutation
+        AllDifferent(abs(x[i + 1] - x[i]) for i in range(n - 1)),
+
+        # tag(symmetry-breaking)
+        x[0] < x[n - 1]
+    )
+
+elif variant("aux"):
+    # y[i] is the distance between x[i] and x[i+1]
+    y = VarArray(size=n - 1, dom=range(1, n))
+
+    satisfy(
+        # notes must occur once, and so form a permutation
+        AllDifferent(x),
+
+        # intervals between neighbouring notes must form a permutation
+        AllDifferent(y),
+
+        # computing distances
+        [y[i] == abs(x[i + 1] - x[i]) for i in range(n - 1)],
+
+        # tag(symmetry-breaking)
+        [x[0] < x[n - 1], y[0] < y[1]]
+    )
+
+
+7) IMPLEMENTATION IN .java
+// Copyright 2011 Hakan Kjellerstrand hakank@gmail.com
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.ortools.constraintsolver.samples;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+
+import com.google.ortools.constraintsolver.DecisionBuilder;
+import com.google.ortools.constraintsolver.IntVar;
+import com.google.ortools.constraintsolver.Solver;
+
+public class AllInterval {
+
+  static {
+    System.loadLibrary("jniconstraintsolver");
+  }
+
+
+  /**
+   * 
+   * Implements the all interval problem.
+   * See http://www.hakank.org/google_or_tools/all_interval.py
+   *
+   */
+  private static void solve(int n) {
+
+    Solver solver = new Solver("AllInterval");
+
+        
+    // 
+    // variables
+    //
+    IntVar[] x = solver.makeIntVarArray(n, 0, n - 1, "x");
+    IntVar[] diffs = solver.makeIntVarArray(n - 1, 1, n - 1, "diffs");
+
+    //
+    // constraints
+    //
+    solver.addConstraint(solver.makeAllDifferent(x, true));
+    solver.addConstraint(solver.makeAllDifferent(diffs, true));
+
+    for(int k = 0; k < n - 1; k++) {
+      solver.addConstraint(
+          solver.makeEquality(diffs[k], 
+              solver.makeAbs(solver.makeDifference(x[k + 1], x[k])).Var()));
+    }
+
+
+    // symmetry breaking
+    solver.addConstraint(solver.makeLess(x[0], x[n - 1]));
+    solver.addConstraint(solver.makeLess(diffs[0], diffs[1]));
+
+
+    //
+    // search
+    //
+    DecisionBuilder db = solver.makePhase(x,
+                                          solver.CHOOSE_FIRST_UNBOUND,
+                                          solver.ASSIGN_MIN_VALUE);
+
+    solver.newSearch(db);
+
+    //
+    // output
+    //
+    while (solver.nextSolution()) {
+      System.out.print("x    : ");
+      for(int i = 0; i < n; i++) {
+        System.out.print(x[i].value() + " ");
+      }
+      System.out.print("\ndiffs: ");
+
+      for(int i = 0; i < n-1; i++) {
+        System.out.print(diffs[i].value() + " ");
+      }
+      System.out.println("\n");
+
+    }
+    solver.endSearch();
+
+    // Statistics
+    System.out.println();
+    System.out.println("Solutions: " + solver.solutions());
+    System.out.println("Failures: " + solver.failures());
+    System.out.println("Branches: " + solver.branches());
+    System.out.println("Wall time: " + solver.wall_time() + "ms");
+
+  }
+
+  public static void main(String[] args) throws Exception {
+
+    int n = 12;
+    if (args.length > 0) {
+      n = Integer.parseInt(args[0]);
+    }
+
+    AllInterval.solve(n);
+  }
+}
+
+
+8) IMPLEMENTATION IN .cpp
+/*
+  
+  All interval problem  in Gecode.
+
+   CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  """
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+  once and in which the musical intervals between neighbouring notes cover 
+  the full set of intervals from the minor second (1 semitone) to the major 
+  seventh (11 semitones). That is, for each of the intervals, there is a 
+  pair of neigbhouring pitch-classes in the series, between which this 
+  interval appears. The problem of finding such a series can be easily 
+  formulated as an instance of a more general arithmetic problem on Z_n, 
+  the set of integer residues modulo n. Given n in N, find a vector 
+  s = (s_1, ..., s_n), such that (i) s is a permutation of 
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+  called an all-interval series of size n; the problem of finding such 
+  a series is the all-interval series problem of size n. We may also be 
+  interested in finding all possible series of a given size. 
+  """
+ 
+  Compare with the following models:
+  * MiniZinc: http://www.hakank.org/minizinc/all_interval.mzn
+  * Comet   : http://www.hakank.org/comet/all_interval.co 
+  * Gecode/R: http://www.hakank.org/gecode_r/all_interval.rb
+  * ECLiPSe: http://www.hakank.org/eclipse/all_interval.ecl
+  * SICStus Prolog: http://www.hakank.org/sicstus/all_interval.pl
+
+
+  Note: This is a fairly true port from the MiniZinc model.
+  A faster implementation is in the Gecode distribution:
+  http://www.gecode.org/doc-latest/reference/all-interval_8cpp_source.html
+  
+
+  This Gecode model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Gecode page: http://www.hakank.org/gecode/ .
+
+*/
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+#include <gecode/driver.hh>
+#include <gecode/int.hh>
+#include <gecode/minimodel.hh>
+
+using namespace Gecode;
+
+using std::cout;
+using std::endl;
+using std::setw;
+using std::string;
+
+
+class AllInterval : public Script {
+protected:
+
+  int n;
+
+  IntVarArray x;
+  IntVarArray diffs;
+
+public:
+
+  AllInterval(const SizeOptions& opt) 
+    : 
+    n(opt.size()),
+    x(*this, n, 1, n),
+    diffs(*this, n-1, 0, n-1)
+  {
+
+    cout << "Size: " << n << endl;
+
+    distinct(*this, x, opt.icl());
+    distinct(*this, diffs, opt.icl());
+
+    for(int k = 0; k < n-1; k++) {
+      rel(*this, diffs[k] == abs(x[k+1] - x[k]), opt.icl());
+    }
+
+    // symmetry breaking
+    rel(*this, x[0] < x[n-1], opt.icl());
+    rel(*this, diffs[0] < diffs[1], opt.icl());
+
+    // branching
+    branch(*this, x, INT_VAR_SIZE_MIN(), INT_VAL_MIN());
+
+  }
+
+  // Print solution
+  virtual void
+  print(std::ostream& os) const {
+    os << "x    : " << x << endl;
+    os << "diffs: " << diffs << endl;
+    os << endl;
+  }
+
+
+  // Constructor for cloning s
+  AllInterval(bool share, AllInterval& s) : Script(share,s) {
+    x.update(*this, share, s.x);
+    diffs.update(*this, share, s.diffs);
+  }
+
+  // Copy during cloning
+  virtual Space*
+  copy(bool share) {
+    return new AllInterval(share,*this);
+  }
+};
+
+
+int
+main(int argc, char* argv[]) {
+
+  SizeOptions opt("AllInterval");
+
+  opt.icl(ICL_DOM);
+  opt.solutions(0);
+  opt.size(12);
+
+  opt.parse(argc,argv);
+
+  Script::run<AllInterval,DFS,SizeOptions>(opt);
+    
+  return 0;
+}
+
+
+
+
+9) IMPLEMENTATION IN .py
+# All-Interval Series
+#
+# Arrange the numbers 1 to n in a vector s, such that the
+# interval vector v=(|s2-s1|,|s3-s2|,...,|sn-sn-1|) is a
+# permutation of {1,2,...,n-1}.
+#
+# CSPLib Problem 007 - http://www.csplib.org/Problems/prob007/
+
+from Numberjack import *
+
+
+def get_model(N):
+    series = VarArray(N, 0, N - 1)
+
+    model = Model(
+        AllDiff(series),
+        AllDiff([Abs(series[i] - series[i - 1]) for i in range(1, N)]))
+
+    return series, model
+
+
+def solve(param):
+    N = param['N']
+
+    series, model = get_model(N)
+
+    solver = model.load(param['solver'])
+    solver.setVerbosity(param['verbose'])
+    solver.solve()
+
+    if solver.is_sat():
+        print "Solution:", str(series)
+        print "Absolute differences:",
+        print [abs(series[i].get_value() - series[i - 1].get_value())
+               for i in range(1, N)]
+    elif solver.is_unsat():
+        print "Unsatisfiable"
+    else:
+        print "Timed out"
+
+
+if __name__ == '__main__':
+    default = {'N': 12, 'solver': 'MiniSat', 'verbose': 1}
+    param = input(default)
+    solve(param)
+
+
+
+10) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+include "globals.mzn";
+
+int: n = 12;
+set of int: classes = 0..n-1;
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+
+solve :: int_search(series, first_fail, indomain_median, complete) satisfy;
+
+constraint
+  % C1: Each pitch class occurs exactly once
+  % GCAD: Exploitation of alldifferent() global constraint
+  all_different(series)
+  /\
+
+  % C2: Differences between neighbouring notes are all different
+  % GCAD: Exploitation of alldifferent() global constraint
+  % alldifferent(all (i in classes: i <> n-1) abs(series[i+1] - series[i]));
+  all_different( 
+         [ abs(series[i+1] - series[i]) | i in classes where i != n-1]
+  )
+  
+;
+
+output [
+  show(series)
+];
+
+11) IMPLEMENTATION IN .pl
+/*
+
+  All interval problem in SICStus Prolog.
+
+  CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  """
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+  once and in which the musical intervals between neighbouring notes cover 
+  the full set of intervals from the minor second (1 semitone) to the major 
+  seventh (11 semitones). That is, for each of the intervals, there is a 
+  pair of neigbhouring pitch-classes in the series, between which this 
+  interval appears. The problem of finding such a series can be easily 
+  formulated as an instance of a more general arithmetic problem on Z_n, 
+  the set of integer residues modulo n. Given n in N, find a vector 
+  s = (s_1, ..., s_n), such that (i) s is a permutation of 
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+  called an all-interval series of size n; the problem of finding such 
+  a series is the all-interval series problem of size n. We may also be 
+  interested in finding all possible series of a given size. 
+  """
+
+ Compare with the following models:
+  * MiniZinc: http://www.hakank.org/minizinc/all_interval.mzn
+  * Comet   : http://www.hakank.org/comet/all_interval.co 
+  * Gecode/R: http://www.hakank.org/gecode_r/all_interval.rb
+  * ECLiPSe : http://www.hakank.org/eclipse/all_interval.ecl
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my SICStus Prolog page: http://www.hakank.org/sicstus/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+:-use_module(library(clpfd)).
+:-use_module(library(lists)).
+
+go :-
+        N = 12,
+        all_interval(N),
+        fd_statistics,
+        fail.
+
+
+all_interval(N) :-
+
+        length(Xs,N),
+        domain(Xs, 1, N),
+
+        N1 is N-1,
+        length(Diffs,N1),
+        domain(Diffs,1,N1),
+
+        SumDistinct is ((N+1)*N) // 2,
+        % sum(Xs,#=,SumDistinct),
+
+        all_different(Xs),
+        all_different(Diffs),
+        
+        ( fromto(Xs, [This,Next | Rest], [Next|Rest],[_]),
+          foreach(Diff,Diffs)
+        do
+          Diff #= abs(This - Next)
+        ),
+        
+        % symmetry breaking
+        element(1,Xs,XsFirst),
+        element(N1,Xs,XsLast),
+        XsFirst #< XsLast,
+        Diffs = [Diffs1,Diffs2|_],
+        Diffs1 #< Diffs2,
+
+        %
+        % With labeling ff the first solution is found
+        % very fast with zero backtrack, but next solutions takes
+        % longer.
+        % This first solution has the Diffs as the sequence 1..N-1.
+        %
+        append(Diffs,Xs, Vars),
+        labeling([ff], Vars),
+
+        write(x:Xs),nl,
+        write(diffs:Diffs),nl,
+        write(sum_distinct:SumDistinct),nl,nl.
+
+
+
+12) IMPLEMENTATION IN .java
+package org.jcp.jsr331.hakan;
+
+
+/**
+ *
+ * All interval problem in JSR-331.
+ *
+ * CSPLib problem number 7
+ * http://www.csplib.org/Problems/prob007
+ * '''
+ * Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+ * numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+ * once and in which the musical intervals between neighbouring notes cover 
+ * the full set of intervals from the minor second (1 semitone) to the major 
+ * seventh (11 semitones). That is, for each of the intervals, there is a 
+ * pair of neigbhouring pitch-classes in the series, between which this 
+ * interval appears. The problem of finding such a series can be easily 
+ * formulated as an instance of a more general arithmetic problem on Z_n, 
+ * the set of integer residues modulo n. Given n in N, find a vector 
+ * s = (s_1, ..., s_n), such that (i) s is a permutation of 
+ * Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+ * v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+ * Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+ * called an all-interval series of size n; the problem of finding such 
+ * a series is the all-interval series problem of size n. We may also be 
+ * interested in finding all possible series of a given size. 
+ * '''
+ *
+ * Compare with the following models:
+ * - MiniZinc: http://www.hakank.org/minizinc/all_interval.mzn
+ * - Comet   : http://www.hakank.org/comet/all_interval.co 
+ * - Gecode/R: http://www.hakank.org/gecode_r/all_interval.rb
+ * - ECLiPSe : http://www.hakank.org/eclipse/all_interval.ecl
+ * - SICStus : http://www.hakank.org/sicstus/all_interval.pl
+ * - Google CP Solver: http://hakank.org/google_or_tools/all_interval.py
+ *
+ * Model created by Hakan Kjellerstrand (hakank@gmail.com)
+ * Also see http://www.hakank.org/jsr_331/
+ *
+ */
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import javax.constraints.*;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+
+public class AllInterval {
+
+    int n;
+    Var[] x;
+  Problem p = ProblemFactory.newProblem("All Interval");
+
+    // main
+    public static void main(String[] args) {
+
+        int n_in = 10;
+
+        if (args.length >= 1) {
+            n_in = Integer.parseInt(args[0]);
+        }
+
+        System.out.println("\nn: " + n_in + "\n");
+        AllInterval allInterval = new AllInterval();
+        allInterval.define(n_in);
+        allInterval.solve();
+
+    }
+
+
+    // Problem definition    
+    public void define(int n_in) {
+
+        n = n_in;
+        x = p.variableArray("x", 1, n, n);
+        Var[] diffs = p.variableArray("diffs", 1, n-1, n-1);
+        /*
+        Var[] diffs = new Var[n-1];
+        for(int i = 0; i < n-1; i++) {
+            diffs[i] = new javax.constraints.impl.Var(x[0].getProblem(), "diffs-"+i, 1, n-1);
+        }
+        */
+
+        p.postAllDifferent(x);
+        p.postAllDifferent(diffs);
+
+        for(int k = 0; k < n-1; k++) {
+            p.post(diffs[k],"=", x[k+1].minus(x[k]).abs());
+        }
+
+        // symmetry breaking
+        p.post(x[0], "<", x[n-1]);
+        p.post(diffs[0], "<", diffs[1]);
+
+    }
+    
+    
+    public void solve() {
+        //
+        // search
+        //
+        Solver solver = p.getSolver();
+        SearchStrategy strategy = solver.getSearchStrategy();
+        strategy.setVars(x);
+
+        // strategy.setVarSelectorType(VarSelectorType.INPUT_ORDER);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_VALUE);
+        // strategy.setVarSelectorType(VarSelectorType.MAX_VALUE);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN_MIN_VALUE);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN_RANDOM);
+        // strategy.setVarSelectorType(VarSelectorType.RANDOM);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN_MAX_DEGREE);
+        // strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN_OVER_DEGREE);
+        strategy.setVarSelectorType(VarSelectorType.MIN_DOMAIN_OVER_WEIGHTED_DEGREE);
+        // strategy.setVarSelectorType(VarSelectorType.MAX_WEIGHTED_DEGREE);
+        // strategy.setVarSelectorType(VarSelectorType.MAX_IMPACT);
+        // strategy.setVarSelectorType(VarSelectorType.MAX_DEGREE);
+        // strategy.setVarSelectorType(VarSelectorType.MAX_REGRET);
+        
+        
+        
+        
+        // strategy.setValueSelectorType(ValueSelectorType.IN_DOMAIN);
+        // strategy.setValueSelectorType(ValueSelectorType.MIN);
+        // strategy.setValueSelectorType(ValueSelectorType.MAX);
+        strategy.setValueSelectorType(ValueSelectorType.MIN_MAX_ALTERNATE);
+        // strategy.setValueSelectorType(ValueSelectorType.MIDDLE);
+        // strategy.setValueSelectorType(ValueSelectorType.MEDIAN);
+        // strategy.setValueSelectorType(ValueSelectorType.RANDOM);
+        // strategy.setValueSelectorType(ValueSelectorType.MIN_IMPACT);
+        // strategy.setValueSelectorType(ValueSelectorType.CUSTOM);
+        
+        //
+        // tracing
+        //
+        // solver.addSearchStrategy(new StrategyLogVariables(solver)); 
+        // solver.traceExecution(true);
+
+        //
+        // solve
+        //        
+        int num_sols = 0;
+        SolutionIterator iter = solver.solutionIterator();
+        while (iter.hasNext()) {
+            num_sols++;
+            Solution s = iter.next();
+
+            // s.log();
+            for(int i = 0; i < n; i++) {
+                System.out.print(s.getValue("x-"+i) + " ");
+            }
+            System.out.println();
+
+        }
+
+        System.out.println("\nIt was " + num_sols + " solutions.\n");
+
+        solver.logStats();
+    }
+
+}
+
+
+13) IMPLEMENTATION IN .pl
+/*
+
+  All interval problem in B-Prolog.
+
+  CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  """
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+  once and in which the musical intervals between neighbouring notes cover 
+  the full set of intervals from the minor second (1 semitone) to the major 
+  seventh (11 semitones). That is, for each of the intervals, there is a 
+  pair of neigbhouring pitch-classes in the series, between which this 
+  interval appears. The problem of finding such a series can be easily 
+  formulated as an instance of a more general arithmetic problem on Z_n, 
+  the set of integer residues modulo n. Given n in N, find a vector 
+  s = (s_1, ..., s_n), such that (i) s is a permutation of 
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+  called an all-interval series of size n; the problem of finding such 
+  a series is the all-interval series problem of size n. We may also be 
+  interested in finding all possible series of a given size. 
+  """
+ 
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+%
+% Reporting both time and backtracks
+%
+time2(Goal):-
+        cputime(Start),
+        statistics(backtracks, Backtracks1),
+        call(Goal),
+        statistics(backtracks, Backtracks2),
+        cputime(End),
+        T is (End-Start)/1000,
+        Backtracks is Backtracks2 - Backtracks1,
+        format('CPU time ~w seconds. Backtracks: ~d\n', [T, Backtracks]).
+
+
+
+go :-
+        N = 12,
+        findall(X,time2(all_interval(N,X)),L),
+        length(L, Len),
+        writeln('Len:':Len),
+        nl,nl.
+
+all_interval(N,X) :-
+
+        length(X,N),
+        X :: 1..N,
+
+        N1 is N-1,
+        length(Diffs,N1),
+        Diffs :: 1..N1,
+
+        SumDistinct is ((N+1)*N) div 2,
+
+        alldifferent(X),
+        alldifferent(Diffs),
+        
+        foreach(K in 1..N1, Diffs[K] #= abs(X[K+1] - X[K])),
+        
+        % symmetry breaking
+        X[1] #< X[N1],
+        Diffs[1] #< Diffs[2],
+
+        term_variables([X,Diffs], Vars),
+
+        %
+        % With largest and indomain_min the first solution is found
+        % very fast with zero backtrack, but next solutions takes
+        % longer.
+        % This first solution has the Diffs as the sequence 1..N-1.
+        %
+        % labeling([ff,down], Vars),
+        labeling(Vars),
+        writeln(x:X),
+        writeln(diffs:Diffs),
+        writeln(sum_distinct:SumDistinct),
+        nl.
+
+
+14) IMPLEMENTATION IN .lp4
+% 
+% All interval problem in ASP.
+% 
+% CSPLib problem number 7
+% http://www.csplib.org/Problems/prob007
+% """
+% Given the twelve standard pitch-classes (c, c%, d, ...), represented by 
+% numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+% once and in which the musical intervals between neighbouring notes cover 
+% the full set of intervals from the minor second (1 semitone) to the major 
+% seventh (11 semitones). That is, for each of the intervals, there is a 
+% pair of neigbhouring pitch-classes in the series, between which this 
+% interval appears. The problem of finding such a series can be easily 
+% formulated as an instance of a more general arithmetic problem on Z_n, 
+% the set of integer residues modulo n. Given n in N, find a vector 
+% s = (s_1, ..., s_n), such that (i) s is a permutation of 
+% Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+% v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+% Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+% called an all-interval series of size n; the problem of finding such 
+% a series is the all-interval series problem of size n. We may also be 
+% interested in finding all possible series of a given size. 
+% """
+%
+% This was created by Hakan Kjellerstrand, hakank@gmail.com
+% See also http://www.hakank.org/answer_set_programming/
+%
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+#const n = 11.
+
+% indices
+ix(1..n).
+diffs_ix(1..n-1).
+
+values(1..n).
+diffs_values(1..n-1).
+
+% unique index for diffs
+1 { diffs(I, Val) : diffs_values(Val) } 1 :- diffs_ix(I).
+
+% alldifferent for diffs
+1 { diffs(I, Val) : diffs_ix(I) } 1 :- diffs_values(Val).
+
+% unique index for x
+1 { x(I, Val) : values(Val) } 1 :- ix(I).
+
+% alldifferent for x
+1 { x(I, Val) : ix(I) } 1 :- values(Val).
+
+diffs(K, S) :- S = |Val1-Val|, x(K+1, Val1), x(K,Val), diffs_ix(K). 
+ 
+
+% symmetry breaking
+% x[1] < x[n-1]
+:- x(1,Val1), x(n-1, Val2), Val1 >= Val2.
+
+% diffs[1] < diffs[2]
+:- diffs(1, Val1), diffs(2, Val2), Val1 >= Val2.
+
+#show x/2.
+#show diffs/2.
+
+15) IMPLEMENTATION IN .mzn
+% 
+% All interval problem in MiniZinc
+% 
+% CSPLib problem number 7
+% http://www.csplib.org/Problems/prob007
+% """
+% Given the twelve standard pitch-classes (c, c%, d, ...), represented by 
+% numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+% once and in which the musical intervals between neighbouring notes cover 
+% the full set of intervals from the minor second (1 semitone) to the major 
+% seventh (11 semitones). That is, for each of the intervals, there is a 
+% pair of neigbhouring pitch-classes in the series, between which this 
+% interval appears. The problem of finding such a series can be easily 
+% formulated as an instance of a more general arithmetic problem on Z_n, 
+% the set of integer residues modulo n. Given n in N, find a vector 
+% s = (s_1, ..., s_n), such that (i) s is a permutation of 
+% Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+% v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+% Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+% called an all-interval series of size n; the problem of finding such 
+% a series is the all-interval series problem of size n. We may also be 
+% interested in finding all possible series of a given size. 
+% """
+
+%
+% Compare with the Gecode/R model http://www.hakank.org/gecode_r/all_interval.rb
+%
+
+% 
+% This MiniZinc model was created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+%
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+include "globals.mzn";
+
+int: n = 12;
+% array[1..n] of var 1..n: x;
+array[1..n] of var 1..n: x;
+array[1..n-1] of var 1..n-1: diffs;
+int: sum_distinct = ((n+1)*n) div 2;
+
+% max_regret seems to be quite good....
+solve :: int_search(x, max_regret, indomain_split, complete) satisfy;
+
+constraint      
+  all_different(diffs) :: domain
+  /\  
+  all_different(x) :: domain
+  /\ 
+  forall(k in 1..n-1) (
+      diffs[k] = abs(x[k+1] - x[k])
+  )
+  /\ % symmetry breaking
+  x[1] < x[n-1]
+  /\
+  diffs[1] < diffs[2]
+;
+
+
+output [
+       show(x) ++ "," % , " ", show(sum_distinct), " diffs: ", show(diffs)
+]
+
+
+16) IMPLEMENTATION IN .cs
+//
+// Copyright 2012 Hakan Kjellerstrand
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+using System;
+using System.Collections;
+using System.IO;
+using System.Text.RegularExpressions;
+using Google.OrTools.ConstraintSolver;
+
+
+public class AllInterval
+{
+
+  /**
+   *
+   * Implements the all interval problem.
+   * See http://www.hakank.org/google_or_tools/all_interval.py
+   *
+   */
+  private static void Solve(int n=12)
+  {
+    Solver solver = new Solver("AllInterval");
+
+
+    //
+    // Decision variables
+    //
+    IntVar[] x =  solver.MakeIntVarArray(n, 0, n-1, "x");
+    IntVar[] diffs = solver.MakeIntVarArray(n-1, 1, n-1, "diffs");
+
+    //
+    // Constraints
+    //
+    solver.Add(x.AllDifferent());
+    solver.Add(diffs.AllDifferent());
+
+    for(int k = 0; k < n - 1; k++) {
+      // solver.Add(diffs[k] == (x[k + 1] - x[k]).Abs());
+      solver.Add(diffs[k] == (x[k + 1] - x[k].Abs()));
+    }
+
+
+    // symmetry breaking
+    solver.Add(x[0] < x[n - 1]);
+    solver.Add(diffs[0] < diffs[1]);
+
+
+    //
+    // Search
+    //
+    DecisionBuilder db = solver.MakePhase(x,
+                                          Solver.CHOOSE_FIRST_UNBOUND,
+                                          Solver.ASSIGN_MIN_VALUE);
+
+    solver.NewSearch(db);
+
+    while (solver.NextSolution()) {
+      Console.Write("x: ");
+      for(int i = 0; i < n; i++) {
+          Console.Write("{0} ", x[i].Value());
+      }
+      Console.Write("  diffs: ");
+      for(int i = 0; i < n-1; i++) {
+          Console.Write("{0} ", diffs[i].Value());
+      }
+      Console.WriteLine();
+    }
+
+    Console.WriteLine("\nSolutions: {0}", solver.Solutions());
+    Console.WriteLine("WallTime: {0}ms", solver.WallTime());
+    Console.WriteLine("Failures: {0}", solver.Failures());
+    Console.WriteLine("Branches: {0} ", solver.Branches());
+
+    solver.EndSearch();
+
+  }
+
+
+  public static void Main(String[] args)
+  {
+    int n = 12;
+    if (args.Length > 0) {
+      n = Convert.ToInt32(args[0]);
+    }
+
+    Solve(n);
+  }
+}
+
+
+17) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+int: n= 12;
+set of int: classes = 0..n-1;
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+
+solve :: int_search(series, first_fail, indomain_min, complete) satisfy;
+
+constraint
+   %  C1: Each pitch class occurs exactly once
+   forall(i, j in classes where i != j) (
+     series[i] != series[j]
+   )
+   /\
+   % C2: Differences between neighbouring notes are all different
+   forall(i,j in classes where j < n-1 /\ i < n-1 /\ i!=j) (
+     abs(series[i+1] - series[i]) != abs(series[j+1] - series[j])
+   )
+   /\
+   % SBSO: Symmetry-breaking by selective ordering
+   % The first note is less than last one
+   series[0] < series[n-1]
+;
+
+
+output
+[ show(series)
+];
+
+18) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+int: n= 12;
+set of int: classes = 0..n-1;
+set of int: differ = 1..n-1;
+
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+array[0..n-2] of var differ: differences;
+
+% solve satisfy;
+solve :: int_search(series, occurrence, indomain_min, complete) satisfy;
+
+constraint
+   % C1: Each pitch class occurs exactly once
+   forall(i,j in classes where i != j) (
+     series[i] != series[j]
+   )
+   /\
+   % C2: Differences between neighbouring notes are all different
+   % AUX: Addition of auxiliary predicates
+   % Auxiliary predicate stores the interval between pairs of neighbouring notes
+   forall(i in 0..n-2) (
+      differences[i]=abs(series[i+1] - series[i])
+   )
+   /\
+   forall(i,j in 0..n-2 where i != j) (
+      differences[i] != differences[j]
+   )
+   /\
+   % SBSO: Symmetry-breaking by selective ordering
+   % The first note is less than last one
+   series[0] < series[n-1]
+;
+
+output [
+  show(series)
+];
+
+19) IMPLEMENTATION IN .mzn
+%
+% All interval problem in MiniZinc.
+% 
+% Different approaches inspired by
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=007
+%
+% Also see
+%   http://www.hakank.org/minizinc/all_interval1.mzn
+%   http://www.hakank.org/minizinc/all_interval2.mzn
+%   http://www.hakank.org/minizinc/all_interval3.mzn
+%   http://www.hakank.org/minizinc/all_interval4.mzn
+%   http://www.hakank.org/minizinc/all_interval5.mzn
+%   http://www.hakank.org/minizinc/all_interval6.mzn
+%
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+%
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+int: n= 12;
+set of int: classes = 0..n-1;
+set of int: differ = 1..n-1;
+
+
+% Search space: The set of permutations of integer range [0..n-1]
+array[classes] of var classes: series;
+array[differ] of var differ: differences;
+
+solve satisfy;
+
+constraint
+   % C1: Each pitch class occurs exactly once
+   forall(i,j in classes where i != j) (
+     series[i] != series[j]
+   )
+   /\
+   % C2: Differences between neighbouring notes are all different
+   % AUX: Addition of auxiliary predicates
+   % Auxiliary predicate stores the interval between pairs of neighbouring notes
+   forall(i in 1..n-2) (
+       differences[i]=abs(series[i+1] - series[i])
+   )
+   /\
+   forall(i,j in differ where i != j) (
+       differences[i] != differences[j]
+   )
+;
+
+output [
+  show(series)
+];
+
+
+20) IMPLEMENTATION IN .cpp
+
+#include<ilsolver/ilcint.h>
+
+ILOSTLBEGIN
+
+class IlcIntSelectMaxI : public IlcIntSelectI {
+public:
+    IlcIntSelectMaxI(){};
+    virtual IlcInt select(IlcIntVar var);
+};
+
+IlcInt IlcIntSelectMaxI::select(IlcIntVar var){
+    return var.getMax();
+}
+
+IlcIntSelect IlcIntSelectMax(IlcManager m){
+    return IlcIntSelect(new (m.getHeap()) IlcIntSelectMaxI());
+}
+
+void prob007large(IlcManager m, int n){
+  IlcIntVarArray x(m, n, 0, n-1);
+  IlcIntVarArray y(m, n-1, 1, n-1);
+  int i;
+  for (i=0; i<n-1; i++){
+    m.add(y[i]==IlcAbs(x[i+1] - x[i]));
+  }
+  m.add(x[0] < x[1]);
+  m.add(IlcAllDiff(x, IlcWhenRange));
+  m.add(IlcAllDiff(y, IlcWhenRange));
+  m.add(IlcGenerate(y, IlcChooseMaxMaxInt, IlcIntSelectMax(m)));
+  m.add(IlcGenerate(x));
+}
+
+void prob007AC(IlcManager m, int n){
+  IlcIntVarArray x(m, n, 0, n-1);
+  IlcIntVarArray y(m, n-1, 1, n-1);
+  IlcIntTupleSet set(m,3);
+  int i,j;
+  for(i=0;i<n-1;i++){
+    for(j=i+1;j<n;j++){
+      set.add(IlcIntArray(m,3, i, j, IlcAbs(j-i)));
+      set.add(IlcIntArray(m,3, j, i, IlcAbs(j-i)));
+    }
+  }
+  set.close();
+  for (i=0; i<n-1; i++){
+    IlcIntVarArray vars(m, 3, x[i], x[i+1], y[i]);
+    m.add(IlcTableConstraint(vars, set, IlcTrue));
+  }
+  m.add(IlcAllDiff(x, IlcWhenDomain));
+  m.add(IlcAllDiff(y, IlcWhenDomain));
+  m.add(IlcGenerate(x, IlcChooseMinSizeInt));
+}
+
+void prob007(IlcManager m, int n) {
+  IlcIntVarArray x(m, n, 0, n-1);
+  IlcIntVarArray y(m, n-1, 1, n-1);
+  for (int i=0; i<n-1; i++)
+    m.add(y[i]==IlcAbs(x[i+1] - x[i]));
+  m.add(IlcAllDiff(x, IlcWhenRange));
+  m.add(IlcAllDiff(y, IlcWhenRange));
+  m.add(IlcGenerate(x, IlcChooseMinSizeInt));
+}
+
+int main(int argc, char** argv) {
+  IlcManager m(IlcNoEdit);
+  int n = (argc>1)? atoi(argv[1]): 10;
+  prob007(m, n);
+  //prob007AC(m, n);
+  int sol=0;
+  //m.nextSolution();
+  // m.nextSolution();
+
+  //m.out() << x << endl;
+   while(m.nextSolution()){
+      sol++;
+    }
+    m.out() << sol << endl;
+  m.printInformation();
+  m.end();
+  return 0;
+}
+
+
+
+
+
+
+21) IMPLEMENTATION IN .pi
+/*
+
+  All interval problem in Picat.
+
+  CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  """
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by 
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly 
+  once and in which the musical intervals between neighbouring notes cover 
+  the full set of intervals from the minor second (1 semitone) to the major 
+  seventh (11 semitones). That is, for each of the intervals, there is a 
+  pair of neigbhouring pitch-classes in the series, between which this 
+  interval appears. The problem of finding such a series can be easily 
+  formulated as an instance of a more general arithmetic problem on Z_n, 
+  the set of integer residues modulo n. Given n in N, find a vector 
+  s = (s_1, ..., s_n), such that (i) s is a permutation of 
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector 
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of 
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is 
+  called an all-interval series of size n; the problem of finding such 
+  a series is the all-interval series problem of size n. We may also be 
+  interested in finding all possible series of a given size. 
+  """
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cp.
+
+main => time2(go).
+
+go =>
+        N = 12,
+        L = findall(X,all_interval(N,X,[])),
+        Len = length(L),
+        writef("Total: %d\n", Len).
+
+% Just the first solution
+go2 =>
+        foreach(N in 2..220) 
+           writeln(n=N),
+           time2($all_interval(N,_X,[ff,split]))
+        end,
+        nl.
+
+go3 => 
+   all_interval(2000,X,[ff,split]),
+   writeln(X),
+   nl.
+
+all_interval(N,X,Label) =>
+
+        X = new_list(N),
+        X :: 1..N,
+
+        N1 = N-1,
+        Diffs = new_list(N1),
+        Diffs :: 1..N1,
+
+        SumDistinct = ((N+1)*N) // 2,
+
+        all_different(X),
+        all_different(Diffs),
+        
+        foreach(K in 1..N1)
+           Diffs[K] #= abs(X[K+1] - X[K])
+        end,
+        
+        % symmetry breaking
+        X[1] #< X[N1],
+        Diffs[1] #< Diffs[2],
+
+        Vars = X ++ Diffs,
+
+        % symmetry breaking for one solutions
+        % increasing(Diffs),
+
+        %
+        % This first solution is found very fast using [ff,split],
+        % then the Diffs is the sequence 1..N-1.
+        % For getting all solution, the default labeling is better.
+        %
+        % solve([ff,down], Vars),
+        % solve([ff,split], Vars),
+        solve(Label, Vars),
+        % solve(Vars),
+        writef("x: %w  diffs: %w  [sum: %d]\n", X, Diffs, SumDistinct).
+
+
+increasing(List) =>
+   foreach(I in 2..List.length) List[I-1] #=< List[I] end.
+
+
+22) IMPLEMENTATION IN .py
+# Copyright 2010 Hakan Kjellerstrand hakank@gmail.com
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+"""
+
+  All interval problem in Google CP Solver.
+
+  CSPLib problem number 7
+  http://www.csplib.org/Problems/prob007
+  '''
+  Given the twelve standard pitch-classes (c, c , d, ...), represented by
+  numbers 0,1,...,11, find a series in which each pitch-class occurs exactly
+  once and in which the musical intervals between neighbouring notes cover
+  the full set of intervals from the minor second (1 semitone) to the major
+  seventh (11 semitones). That is, for each of the intervals, there is a
+  pair of neigbhouring pitch-classes in the series, between which this
+  interval appears. The problem of finding such a series can be easily
+  formulated as an instance of a more general arithmetic problem on Z_n,
+  the set of integer residues modulo n. Given n in N, find a vector
+  s = (s_1, ..., s_n), such that (i) s is a permutation of
+  Z_n = {0,1,...,n-1}; and (ii) the interval vector
+  v = (|s_2-s_1|, |s_3-s_2|, ... |s_n-s_{n-1}|) is a permutation of
+  Z_n-{0} = {1,2,...,n-1}. A vector v satisfying these conditions is
+  called an all-interval series of size n; the problem of finding such
+  a series is the all-interval series problem of size n. We may also be
+  interested in finding all possible series of a given size.
+  '''
+
+ Compare with the following models:
+  * MiniZinc: http://www.hakank.org/minizinc/all_interval.mzn
+  * Comet   : http://www.hakank.org/comet/all_interval.co
+  * Gecode/R: http://www.hakank.org/gecode_r/all_interval.rb
+  * ECLiPSe : http://www.hakank.org/eclipse/all_interval.ecl
+  * SICStus : http://www.hakank.org/sicstus/all_interval.pl
+
+
+  This model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also see my other Google CP Solver models: http://www.hakank.org/google_or_tools/
+
+"""
+import string, sys
+
+from constraint_solver import pywrapcp
+
+def main(n=12):
+
+    # Create the solver.
+    solver = pywrapcp.Solver('All interval')
+
+    #
+    # data
+    #
+    print "n:", n
+
+    #
+    # declare variables
+    #
+    x = [solver.IntVar(1, n, 'x[%i]' % i) for i in range(n)]
+    diffs = [solver.IntVar(1, n-1, 'diffs[%i]' % i) for i in range(n-1)]
+
+    #
+    # constraints
+    #
+    solver.Add(solver.AllDifferent(x))
+    solver.Add(solver.AllDifferent(diffs))
+
+    for k in range(n-1):
+        solver.Add(diffs[k] == abs(x[k+1]-x[k]))
+
+    # symmetry breaking
+    solver.Add(x[0] < x[n-1])
+    solver.Add(diffs[0] < diffs[1])
+
+    #
+    # solution and search
+    #
+    solution = solver.Assignment()
+    solution.Add(x)
+    solution.Add(diffs)
+
+    db = solver.Phase(x,
+                      solver.CHOOSE_FIRST_UNBOUND,
+                      solver.ASSIGN_MIN_VALUE)
+
+    solver.NewSearch(db)
+    num_solutions = 0
+    while solver.NextSolution():
+        print "x:", [x[i].Value() for i in range(n)]
+        print "diffs:", [diffs[i].Value() for i in range(n-1)]
+        num_solutions += 1
+        print
+
+    print "num_solutions:", num_solutions
+    print "failures:", solver.Failures()
+    print "branches:", solver.Branches()
+    print "WallTime:", solver.WallTime()
+
+n=12
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        n = string.atoi(sys.argv[1])
+    main(n)
+
+

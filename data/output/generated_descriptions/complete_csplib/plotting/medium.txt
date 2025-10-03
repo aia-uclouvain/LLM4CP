@@ -1,0 +1,30 @@
+**Plotting Problem**
+
+The Plotting problem is a classic constraint programming problem that involves finding a sequence of shots to clear a grid of blocks. The problem is defined as follows:
+
+* The grid has a fixed width and height, and each cell can be either empty or contain a block of a specific color.
+* The goal is to clear the grid by finding a sequence of shots that removes all blocks, leaving only empty cells.
+* Each shot can be either horizontal (along a row) or vertical (along a column), and can only remove blocks of the same color as the hand.
+* The hand can change color after each shot, and the goal is to find a sequence of shots that clears the grid in a minimum number of steps.
+
+**Decision Variables**
+
+The decision variables in the Plotting problem are:
+
+* `fpRow`: a matrix indexed by the step number, representing the row where the shot is fired (0 if no shot is fired along a row).
+* `fpCol`: a matrix indexed by the step number, representing the column where the shot is fired (0 if no shot is fired along a column).
+* `grid`: a 3D matrix indexed by the step number, row, and column, representing the state of the grid at each step.
+* `hand`: a matrix indexed by the step number, representing the color of the hand at each step.
+
+**Constraints**
+
+The constraints in the Plotting problem can be summarized as follows:
+
+* The initial state of the grid is given, and the goal state is to have all blocks removed.
+* Each shot must remove at least one block, and the hand can only change color if a block of the same color is removed.
+* The grid can only change in response to a shot, and the changes must be consistent with the rules of the game (e.g., blocks can only fall down if there is an empty space below).
+* The hand can only change color if a block of the same color is removed, and the new color must be different from the previous color.
+
+**Objective**
+
+The objective of the Plotting problem is to find a sequence of shots that clears the grid in a minimum number of steps. The problem can be solved using constraint programming techniques, such as search and propagation, to find a solution that satisfies all the constraints.

@@ -1,0 +1,16 @@
+Quasigroup Existence Problem
+The Quasigroup Existence Problem is a classic problem in constraint programming. 
+
+It involves finding an m x m multiplication table of integers 1..m, where each element occurs exactly once in each row and column, and certain multiplication axioms hold.
+
+The main decision variables in this problem are the elements of the multiplication table, which are typically represented as a 2D array. 
+
+The key constraints in this problem are:
+- Each row and column must contain each element exactly once (Latin square property).
+- The multiplication axioms must hold, which vary depending on the specific type of quasigroup (e.g., QG3, QG4, QG5, etc.).
+
+The objective of this problem is to find a quasigroup that satisfies all the constraints, i.e., to determine whether a quasigroup of a given order exists. 
+
+In other words, the problem is a satisfiability problem, where the goal is to assign values to the decision variables such that all constraints are satisfied. 
+
+There is no explicit objective function to minimize or maximize; instead, the focus is on finding a feasible solution that meets all the requirements.

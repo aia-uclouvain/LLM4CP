@@ -1,0 +1,13 @@
+Optimal Partial Design (OPD) problem
+The OPD problem is about finding the best way to arrange 0s and 1s in a table with a certain number of rows and columns, such that each row has a specific number of 1s, and the similarity between any two rows is as small as possible.
+The main variables are: 
+- x (or m): a table where each cell can be either 0 or 1, representing the arrangement of 0s and 1s in the table.
+- v: the number of rows in the table.
+- b: the number of columns in the table.
+- r: the number of 1s in each row.
+- lambda (or objective): the maximum similarity between any two rows, which we want to minimize.
+The basic restrictions are: 
+- Each row must have exactly 'r' number of 1s.
+- The table must have 'v' rows and 'b' columns.
+- The similarity between any two rows should be as small as possible.
+The goal is to minimize the maximum similarity (lambda) between any two rows, while satisfying the restrictions.

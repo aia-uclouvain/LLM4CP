@@ -1,0 +1,15 @@
+The SONET problem
+The SONET problem is about designing a network between nodes, where certain nodes need to be connected. Nodes are connected by putting them on a ring, and each ring has a limited capacity. The goal is to set up the network using the minimum number of connections, called ADMs.
+
+The main variables are:
+- Rings: a 2-dimensional matrix where Rings[i, j] = 1 if node j is assigned to ring i, and 0 otherwise.
+- Demand: a 2-dimensional matrix where Demand[i, j] = 1 if nodes i and j need to communicate, and 0 otherwise.
+- Capacity_nodes: an array where Capacity_nodes[i] is the capacity of ring i.
+- Z: the total number of ADMs used, which is the sum of all elements in the Rings matrix.
+
+The basic restrictions are:
+- If two nodes need to communicate, they must be on the same ring.
+- Each ring's capacity cannot be exceeded.
+- Each node can be on multiple rings.
+
+The goal of the problem is to minimize the total number of ADMs used, which is represented by the variable Z.

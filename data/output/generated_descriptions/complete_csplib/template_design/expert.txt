@@ -1,0 +1,5 @@
+name: Template Design
+description: The Template Design problem is a classic problem in constraint programming that involves designing a set of templates to print a certain number of variations of a product, with each template having a limited number of slots. The goal is to minimize the total number of templates printed while meeting the demand for each variation.
+variables: $d_{ij}, p_i$ where $d_{ij}$ represents the number of occurrences of variation $j$ on template $i$ and $p_i$ represents the number of printings of template $i$. These variables determine how many times each variation appears on each template and how many times each template is printed.
+constraints: $\sum_{j=1}^{n} d_{ij} = S, \sum_{i=1}^{t} p_i d_{ij} \geq d_j, p_i \leq \frac{P}{t}$ where the first constraint ensures that all slots on each template are used, the second constraint ensures that the demand for each variation is met, and the third constraint limits the number of printings of each template. 
+objective: Minimize $\sum_{i=1}^{t} p_i$ which represents the total number of templates printed.

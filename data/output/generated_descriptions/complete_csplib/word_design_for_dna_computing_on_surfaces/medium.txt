@@ -1,0 +1,18 @@
+**Word Design Problem**
+The Word Design problem is a classic constraint programming problem that involves designing a set of words for DNA computing on surfaces. 
+
+**Problem Description**
+The problem requires finding a set of words, where each word consists of 8 symbols from the set {A, C, G, T}. The goal is to maximize the number of words in the set while satisfying certain constraints.
+
+**Main Decision Variables**
+The main decision variables in this problem are the words themselves, which are represented as functions that map each index (1-8) to a symbol (A, C, G, or T). In the Minizinc model, these variables are represented as `x[i][k]`, where `i` is the word index and `k` is the symbol index.
+
+**Key Constraints**
+The key constraints in this problem are:
+- Each word must have exactly 4 symbols from the set {C, G}.
+- Each pair of words must differ in at least 4 positions.
+- The reverse of each word and the Watson-Crick complement of every other word must also differ in at least 4 positions.
+- The Watson-Crick complement of a word is obtained by replacing each symbol with its complement (A with T, C with G, G with C, and T with A).
+
+**Objective**
+The objective of the problem is to maximize the number of words in the set while satisfying the constraints. In other words, the goal is to find the largest possible set of words that meet the specified conditions.

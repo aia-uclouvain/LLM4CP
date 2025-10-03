@@ -1,0 +1,12 @@
+Equidistant Frequency Permutation Arrays
+The problem is about creating a set of special words, called code words, that follow certain rules. 
+The main variables are: 
+- the number of different symbols (like letters or colors) that can be used, 
+- how many times each symbol should appear in each word, 
+- the total number of words to create, and 
+- the minimum number of differences between any two words.
+These rules are: 
+- each word must contain each symbol a certain number of times, 
+- each word must be a certain length, and 
+- any two words must differ in exactly a certain number of positions.
+The goal is to find a set of words that meet these rules, with the number of words specified.

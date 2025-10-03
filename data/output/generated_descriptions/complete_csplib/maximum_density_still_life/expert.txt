@@ -1,0 +1,10 @@
+name: Maximum Density Still Life
+description: The problem is to find a still life pattern with the maximum number of live cells in a grid of a given size, where a still life pattern is a configuration of live and dead cells that does not change over time, according to the rules of Conway's Game of Life.
+variables: $x_{i,j}$, where $x_{i,j} = 1$ if the cell at row $i$ and column $j$ is alive, and $x_{i,j} = 0$ otherwise. These variables represent the state of each cell in the grid.
+constraints: 
+- $x_{i,j} = 0$ for all cells on the border of the grid (i.e., the first and last rows and columns), 
+- $\sum_{k=-1}^{1} \sum_{l=-1}^{1} x_{i+k,j+l} - x_{i,j} = 2$ or $3$ for all live cells (i.e., each live cell must have 2 or 3 live neighbors), 
+- $\sum_{k=-1}^{1} \sum_{l=-1}^{1} x_{i+k,j+l} - x_{i,j} \neq 3$ for all dead cells (i.e., no dead cell can have exactly 3 live neighbors), 
+- symmetry-breaking constraints to reduce the search space.
+These constraints ensure that the pattern is a still life, and that the border cells are dead.
+objective: Maximize the number of live cells, i.e., $\max \sum_{i,j} x_{i,j}$, which represents the maximum density of live cells in the grid.

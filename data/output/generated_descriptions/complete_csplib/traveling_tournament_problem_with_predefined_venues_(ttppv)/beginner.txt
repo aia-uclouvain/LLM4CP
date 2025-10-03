@@ -1,0 +1,17 @@
+Traveling Tournament Problem with Predefined Venues
+The problem is about scheduling a tournament where several teams play against each other in a series of rounds. Each team has to play against every other team, and the venue of each game (home or away) has already been decided. The goal is to find a schedule that minimizes the total distance traveled by all teams.
+
+The main variables are:
+- opponent: which team each team plays against in each round
+- venue: whether each team plays at home or away in each round
+- travel: the distance each team travels in each round
+- distance: the distance between two teams
+
+The basic restrictions or rules are:
+- each team plays against every other team exactly once
+- a team cannot play against itself
+- if team A plays against team B, then team B plays against team A
+- each team can have at most 3 consecutive home games and at most 3 consecutive away games
+- the venue of each game has already been decided
+
+The goal is to minimize the total distance traveled by all teams.

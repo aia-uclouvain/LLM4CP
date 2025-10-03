@@ -1,0 +1,11 @@
+Peaceably Co-existing Armies of Queens
+The problem is about placing two armies of queens of different colors on a square chessboard in such a way that no queen attacks any queen of the opposing army, and the number of queens in each army is maximized.
+
+The main decision variables are the positions of the black and white queens on the board. In the given models, these are represented as sets of squares (in the .essence model) or as binary/ternary variables (in the .py models) indicating the presence of a black or white queen on each square.
+
+The key constraints are: 
+- Each row, column, and diagonal can contain at most one queen of each color, ensuring that no two queens of the same color attack each other.
+- No row, column, or diagonal can contain both a black and a white queen, ensuring that no queen attacks any queen of the opposing army.
+- The number of black queens must be equal to the number of white queens, ensuring that the armies are of equal size.
+
+The objective of the problem is to maximize the number of queens in each army, which is equivalent to maximizing the total number of queens on the board, since the armies are of equal size. This means finding the largest possible number of non-attacking queens of each color that can be placed on the board.

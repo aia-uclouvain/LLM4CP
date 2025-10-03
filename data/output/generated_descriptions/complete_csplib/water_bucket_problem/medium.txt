@@ -1,0 +1,17 @@
+Water Bucket Problem
+The Water Bucket Problem is a classic problem in the field of constraint programming. 
+
+It involves a set of buckets with different capacities, and the goal is to find a sequence of pouring operations to achieve a specific distribution of water among the buckets.
+
+The main decision variables in this problem are the amount of water in each bucket at each time step. 
+
+The key constraints in this problem are:
+- The amount of water in each bucket cannot exceed its capacity.
+- The total amount of water remains constant throughout the process.
+- At each time step, exactly two buckets change their water levels.
+- After each pouring operation, either the source bucket is empty or the target bucket is full.
+- The initial and final states of the buckets are specified.
+
+The objective of the problem is to minimize the number of pouring operations required to reach the target distribution of water. 
+
+In other words, the goal is to find the shortest sequence of pouring operations that transforms the initial state into the final state while satisfying all the constraints.

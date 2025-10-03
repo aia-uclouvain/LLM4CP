@@ -1,0 +1,5 @@
+Solitaire Battleships
+The problem is about filling a grid with ships of different sizes, given some hints and constraints. 
+The main variables are the positions and orientations of the ships in the grid.
+The basic restrictions are that each row and column can only contain a certain number of ships, and ships cannot be adjacent to each other. 
+The goal is to find a valid arrangement of ships that satisfies all the constraints.

@@ -1,0 +1,5 @@
+name: Graceful Graph Problem
+description: The Graceful Graph Problem is a well-known problem in graph theory and computer science, which involves finding a labeling of the nodes and edges of a graph such that the labels of the edges are determined by the absolute difference of the labels of the nodes they connect, and all labels are distinct.
+variables: $nodes, edges, graph$ - These are the decision variables of the problem, where $nodes$ represents the labels of the nodes, $edges$ represents the labels of the edges, and $graph$ represents the structure of the graph, with $graph[i,1]$ and $graph[i,2]$ being the nodes connected by the $i^{th}$ edge.
+constraints: $\forall i \in 1..m, |nodes[graph[i,1]] - nodes[graph[i,2]]| = edges[i] \wedge all\_different(edges) \wedge all\_different(nodes)$ - These constraints ensure that the labels of the edges are determined by the absolute difference of the labels of the nodes they connect, and all labels are distinct.
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

@@ -1,0 +1,15 @@
+**Social Golfer Problem**
+The Social Golfer problem is about scheduling golf games between groups of golfers over several weeks. 
+The main decision variables are: 
+- `r[i][w]`: the visitor (golfer) for the ith visitee (group) at week w, 
+- `e[i][w]`: the visitee (group) for the ith visitor (golfer) at week w, 
+- `rg[i][w]`: the visitor group for the ith visitee at week w, 
+- `eg[i][w]`: the visitee group for the ith visitor at week w. 
+The key constraints are: 
+- each week, all visitors must be different, 
+- each week, all visitees must be different, 
+- the visitor groups must be different for each visitee, 
+- the visitee groups must be different for each visitor, 
+- each visitor can only be assigned to one group per week, 
+- each group can only have one visitor per week. 
+The problem's objective is to find a schedule that satisfies all the constraints, with no specific objective function to minimize or maximize, the goal is to find a feasible solution.

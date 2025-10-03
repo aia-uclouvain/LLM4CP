@@ -1,0 +1,17 @@
+**Discrete Lot Sizing Problem**
+The Discrete Lot Sizing Problem is a classic problem in operations research and production planning. It involves determining a minimum cost production schedule to satisfy demands for multiple items without exceeding machine capacities.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- **Production dates**: The date at which each item is produced.
+- **Successors**: The sequence in which items are produced, representing the transition from one item to another.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- **Production before demand**: Each item must be produced before its demand date.
+- **Machine capacity**: Only one item can be produced per period.
+- **Sequence-dependent changeover costs**: There are costs associated with changing from producing one item to another.
+- **Stocking costs**: There are costs associated with holding inventory, which is proportional to the number of days between the production date and the demand date.
+
+**Objective**
+The objective of the Discrete Lot Sizing Problem is to minimize the sum of stocking costs and changeover costs. This means finding a production schedule that balances the costs of holding inventory with the costs of changing from producing one item to another, while ensuring that all demands are met on time.

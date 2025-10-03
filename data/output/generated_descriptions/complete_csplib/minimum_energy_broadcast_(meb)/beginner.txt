@@ -1,0 +1,12 @@
+The problem is called the Minimum Spanning Tree problem. 
+It's about connecting a group of places, called nodes, in the cheapest way possible, using links between them. 
+The main variables are: 
+- parents: this shows which node is the "parent" of each other node, meaning which node it's directly connected to, 
+- depths: this shows how many links away each node is from the starting node, 
+- linkCosts: this shows how much it costs to connect two nodes.
+The basic rules are: 
+- each node must be connected to another node, unless it's the starting node, 
+- a node can't be connected to itself, 
+- if there's no link between two nodes, they can't be connected, 
+- a node must be connected to a node that's closer to the starting node.
+The goal is to find the cheapest way to connect all the nodes, by minimizing the total cost of the links used.

@@ -1,0 +1,19 @@
+Problem name: Fixed Length Error Correcting Codes
+
+This problem is about creating a set of codes that are similar to words, but with a special property: if one code is sent and an error occurs, the receiver can still figure out what the original code was. Think of it like a message in a bottle where some letters might get smudged, but the receiver can still understand the message.
+
+The main variables are: 
+- Character: the individual letters or symbols used in the codes
+- maxDist: the maximum number of differences allowed between two codes
+- codeWordLength: the length of each code
+- numOfCodeWords: the total number of codes to create
+- c: the set of codes to be created
+- dist: a measure of how different two characters are
+- minDist: the minimum number of differences required between any two codes
+
+The basic restrictions or rules are: 
+- Each code must be of a fixed length
+- No two codes can be the same
+- The difference between any two codes must be at least a certain minimum amount (minDist)
+
+The goal of the problem is to create a set of codes (c) that meets these rules, with the size of the set being equal to numOfCodeWords. In other words, the problem aims to find the largest possible set of codes that are distinct enough from each other to allow for error correction.

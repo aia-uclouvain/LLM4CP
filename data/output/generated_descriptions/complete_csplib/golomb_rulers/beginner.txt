@@ -1,0 +1,5 @@
+The name of the problem is the Golomb Ruler problem. 
+The Golomb Ruler problem is about finding the shortest ruler with a certain number of marks such that all the distances between the marks are different. 
+The main variables are the positions of the marks on the ruler, which are typically represented as integers. 
+The basic restrictions or rules of the problem are that all the distances between the marks must be different, and the marks must be placed in increasing order. 
+The goal of the problem is to minimize the length of the ruler, which is typically represented as the position of the last mark.

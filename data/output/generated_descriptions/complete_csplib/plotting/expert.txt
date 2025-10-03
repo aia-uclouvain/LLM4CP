@@ -1,0 +1,7 @@
+name: Plotting
+description: The Plotting problem is a combinatorial puzzle where the goal is to clear a grid of colored blocks by shooting them with a hand that can hold one color at a time. The hand can move horizontally or vertically, and when it shoots, it clears all blocks of the same color in the direction of the shot until it hits a block of a different color or the edge of the grid. The problem requires finding a sequence of shots that clears the maximum number of blocks, leaving at most a specified number of blocks remaining.
+variables: $fpRow, fpCol, grid, hand$ 
+These variables represent the following: $fpRow$ and $fpCol$ are the row and column where the hand shoots, $grid$ is the state of the grid after each shot, and $hand$ is the color of the block held by the hand after each shot.
+constraints: $grid[0, gRow, gCol] = initGrid[gRow, gCol]$, $atleast(flatten(grid[noSteps,..,..]), [NOBLOCKS - goalBlocksRemaining], [EMPTY])$, $(fpRow[step] * fpCol[step]) = 0 /\ (fpRow[step] + fpCol[step]) > 0$, and several other constraints that model the behavior of the hand and the grid after each shot.
+These constraints ensure that the initial state of the grid is set correctly, the goal state is reached, and the hand moves and shoots correctly, clearing blocks and changing the state of the grid accordingly.
+objective: The objective of the problem is to find a sequence of shots that minimizes the number of blocks remaining in the grid, which is equivalent to maximizing the number of blocks cleared.

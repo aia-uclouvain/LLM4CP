@@ -1,0 +1,12 @@
+name: Steel Mill Slab Design Problem
+
+description: The Steel Mill Slab Design Problem is a classic problem in operations research and constraint programming. It involves a steel mill that produces slabs of different sizes and colors to fulfill customer orders. Each order has a specific size and color, and the mill has a limited number of slabs with different capacities. The goal is to assign the orders to the slabs in a way that minimizes the total loss of material, subject to constraints such as not exceeding the maximum slab size and limiting the number of distinct colors on each slab.
+
+variables: $sb_i, ld_j, ls_j, y_{ij}, z_{jc}$ 
+These variables represent the decision variables in the problem: $sb_i$ is the slab assigned to the $i^{th}$ order, $ld_j$ is the load of the $j^{th}$ slab, $ls_j$ is the loss of the $j^{th}$ slab, $y_{ij}$ is a binary variable indicating whether the $i^{th}$ order is assigned to the $j^{th}$ slab, and $z_{jc}$ is a binary variable indicating whether the $j^{th}$ slab is used to produce an order of color $c$.
+
+constraints: $\sum_{i=1}^{nOrders} sb_i \cdot sizes_i = ld_j, (ld_j, ls_j) \in \{(i, loss) \mid i, loss \in possibleLosses\}, \sum_{i=1}^{nOrders} y_{ij} \cdot sizes_i = ld_j, \sum_{c=1}^{nColors} z_{jc} \leq 2, \sum_{j=1}^{nSlabs} ld_j = \sum_{i=1}^{nOrders} sizes_i, ld_j \leq maxSlabSize$
+These constraints ensure that: the load of each slab is calculated correctly, the loss of each slab is calculated correctly, each slab is not overloaded, each slab has at most two distinct colors, the total load of all slabs equals the total size of all orders, and the load of each slab does not exceed the maximum slab size.
+
+objective: minimize $\sum_{j=1}^{nSlabs} ls_j$ 
+The objective of the problem is to minimize the total loss of material, which is the sum of the losses of all slabs.

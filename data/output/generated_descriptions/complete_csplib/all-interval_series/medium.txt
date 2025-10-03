@@ -1,0 +1,18 @@
+The All Interval Series Problem
+The All Interval Series problem is a classic constraint programming problem. 
+It involves finding a series of notes where each note occurs exactly once, and the intervals between neighboring notes cover the full set of intervals from the minor second to the major seventh.
+
+Main Decision Variables
+The main decision variables in this problem are the series of notes, typically represented by an array of integers, where each integer corresponds to a note. 
+In some formulations, auxiliary variables are introduced to represent the intervals between neighboring notes.
+
+Key Constraints
+The key constraints in this problem are:
+1. Each note occurs exactly once: This is typically modeled using an "all different" constraint, which ensures that each note in the series is unique.
+2. The intervals between neighboring notes are all different: This is modeled by introducing auxiliary variables to represent the intervals and then applying an "all different" constraint to these variables.
+3. The intervals cover the full set of intervals from the minor second to the major seventh: This is implicitly satisfied by the previous constraint, as the intervals are required to be all different and cover the range from 1 to n-1, where n is the number of notes.
+
+Objective
+The objective of the All Interval Series problem is to find a series of notes that satisfies the given constraints. 
+There is no explicit objective function to minimize or maximize; instead, the goal is to find a feasible solution that meets all the constraints. 
+In some cases, the problem may be modified to find all possible series of a given size.

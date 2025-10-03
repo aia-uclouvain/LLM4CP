@@ -1,0 +1,8 @@
+Killer Sudoku
+Killer Sudoku is a puzzle that combines elements of Sudoku and Kakuro, where the goal is to fill a 9x9 grid with numbers from 1 to 9, satisfying certain conditions.
+The main decision variables in Killer Sudoku are the values of the cells in the grid, which represent the numbers from 1 to 9.
+The key constraints in Killer Sudoku are: 
+1. Each row, column, and 3x3 sub-grid (nonet) must contain each number exactly once.
+2. The sum of all numbers in a "cage" (a group of cells) must match the given sum for that cage.
+3. No number can appear more than once in a cage.
+The objective of Killer Sudoku is to find a solution that satisfies all the constraints, filling the grid with numbers from 1 to 9.

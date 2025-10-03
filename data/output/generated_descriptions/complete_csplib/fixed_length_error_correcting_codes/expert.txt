@@ -1,0 +1,7 @@
+name: Fixed Length Error Correcting Codes
+description: The problem involves finding a set of code words of a fixed length, where each code word is a sequence of characters, such that the minimum distance between any two code words is greater than or equal to a given minimum distance. The distance between two code words is calculated as the sum of the distances between corresponding characters in the two code words.
+variables: c: set (size numOfCodeWords) of String, c = {s1, s2, ..., sn} where si is a function from Index to Character. 
+These are the decision variables representing the set of code words, where each code word is a sequence of characters.
+constraints: ∀s1, s2 ∈ c, s1 ≠ s2, ∑[i ∈ Index] dist(s1(i), s2(i)) ≥ minDist. 
+These constraints ensure that the minimum distance between any two distinct code words in the set is greater than or equal to the given minimum distance.
+objective: The objective of this problem is to find a set of code words that satisfy the given constraints, there is no explicit objective function to minimize or maximize, the goal is to find a feasible solution.

@@ -1,0 +1,14 @@
+N-Queens Problem
+The N-Queens problem is a classic constraint programming problem where the goal is to place N queens on an NxN chessboard such that no two queens attack each other.
+
+The main decision variables in this problem are the positions of the queens on the board, which can be represented as a matrix or a set of coordinates (x, y) for each queen.
+
+The key constraints in this problem are:
+- Each row can contain at most one queen.
+- Each column can contain at most one queen.
+- Each diagonal can contain at most one queen.
+These constraints ensure that no two queens attack each other.
+
+The objective of the problem is to find a placement of N queens on the board that satisfies all the constraints, or to determine that no such placement exists.
+
+In the given implementations, the problem is solved using various approaches, including recursive search, constraint programming, and SAT solvers. The solutions involve representing the problem as a set of constraints and using algorithms to search for a solution that satisfies all the constraints.

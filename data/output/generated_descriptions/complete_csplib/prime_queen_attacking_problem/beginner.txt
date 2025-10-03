@@ -1,0 +1,5 @@
+The problem is called the Queen Attacking problem. 
+It's about placing a queen and a sequence of numbers on a chessboard in such a way that the queen attacks as many prime numbers as possible. 
+The main variables are the position of the queen (q) and the positions of the numbers (x). 
+The basic restrictions are that each number must be placed in a different cell, and each number must be placed in a cell that is a knight's move away from the previous number. 
+The goal is to minimize the number of prime numbers that are not attacked by the queen.

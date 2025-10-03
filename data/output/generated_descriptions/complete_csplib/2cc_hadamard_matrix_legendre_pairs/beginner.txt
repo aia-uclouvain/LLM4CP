@@ -1,0 +1,5 @@
+Hadamard Problem
+The problem is about finding two sequences of numbers, where each number is either -1 or 1, that satisfy certain conditions. 
+The main variables are x and y, which represent the two sequences of numbers. 
+The basic restrictions are that the sum of the numbers in each sequence must be 1, and when you compare the numbers at certain positions in the sequences, they must follow specific patterns. 
+The goal of the problem is to find sequences that meet these conditions, which is related to a concept in mathematics called Hadamard matrices.

@@ -1,0 +1,13 @@
+Peg Solitaire
+The Peg Solitaire problem is a classic constraint programming problem that involves finding a sequence of moves to transform an initial board configuration into a target configuration. The game is played on a grid where some cells contain pegs, and the goal is to remove pegs by jumping one peg over another.
+
+The main decision variables in this problem are `x[i, j, t]`, which represents the state of cell `(i, j)` at time `t` (0 if the cell is empty, 1 if it contains a peg), and `y[t]`, which represents the move performed at time `t`.
+
+The key constraints in this problem can be described as follows: 
+- The initial board configuration must be set correctly.
+- The final board configuration must match the target configuration.
+- At each time step, a peg can be moved by jumping over another peg to an empty cell.
+- A cell can only be changed if it is involved in a move.
+- A move can only be performed if the source and destination cells are correctly configured.
+
+The objective of this problem is to find a sequence of moves that transforms the initial board configuration into the target configuration in a specified number of moves (`nMoves`). The problem does not explicitly minimize or maximize a particular objective function, but rather seeks to find a feasible solution that satisfies all the constraints.

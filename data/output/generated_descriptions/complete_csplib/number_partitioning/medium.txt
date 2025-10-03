@@ -1,0 +1,21 @@
+Set Partition Problem
+The Set Partition Problem is a classic problem in computer science and operations research. 
+
+The problem is about dividing a set of numbers into two subsets such that the sum of the numbers in each subset is equal, and the sum of the squares of the numbers in each subset is also equal.
+
+Main Decision Variables
+The main decision variables in this problem are the two subsets A and B, which are formed from the original set S = {1, 2, ..., n}. 
+
+Key Constraints
+The key constraints in this problem are:
+- The union of A and B must be equal to S (i.e., A ∪ B = S).
+- The cardinality of A must be equal to the cardinality of B (i.e., |A| = |B|).
+- The sum of the numbers in A must be equal to the sum of the numbers in B (i.e., sum(A) = sum(B)).
+- The sum of the squares of the numbers in A must be equal to the sum of the squares of the numbers in B (i.e., sum_squares(A) = sum_squares(B)).
+
+Objective
+The objective of the Set Partition Problem is to find two subsets A and B that satisfy the above constraints. 
+
+Note that this problem is different from the Partition Problem, where the goal is to divide a set of numbers into two subsets such that the sum of the numbers in one subset is as close as possible to the sum of the numbers in the other subset. 
+
+In the Set Partition Problem, the sums of the numbers and their squares in the two subsets must be exactly equal.

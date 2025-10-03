@@ -1,0 +1,1 @@
+No problem is provided. Please provide the Minizinc model code to explain the problem. I will then be able to give a detailed explanation of the problem, including its name, description in everyday terms, main variables, restrictions, and goal.

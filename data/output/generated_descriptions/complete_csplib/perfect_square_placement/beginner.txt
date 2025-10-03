@@ -1,0 +1,5 @@
+Perfect Squares Problem
+The problem is about packing squares of different sizes into a larger square without overlapping.
+The main variables are the x and y coordinates of the bottom-left corner of each square, and the size of each square.
+The basic restrictions are that each square must be fully contained within the larger square, and no two squares can overlap.
+The goal of the problem is to find a packing of all the squares into the larger square, or to determine that no such packing exists.

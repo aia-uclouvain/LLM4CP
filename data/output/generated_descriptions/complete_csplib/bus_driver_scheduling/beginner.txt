@@ -1,0 +1,5 @@
+Bus Driver Scheduling
+The problem is about creating a schedule for bus drivers to cover all their tasks, like driving certain routes, while using the fewest number of shifts possible. 
+The main variables are the tasks, which are the pieces of work the bus drivers need to do, and the shifts, which are the periods of time when a driver is working. The variable x represents whether a shift is selected or not.
+The basic restrictions are that each task must be covered by exactly one shift, and the goal is to minimize the number of shifts used. 
+The goal of the problem is to find the smallest number of shifts that can cover all the tasks, which means using the fewest number of bus drivers possible to get all the work done.

@@ -1,0 +1,5 @@
+Ramsey Problem
+The problem is about coloring the connections between people at a party so that you don't have a certain number of people who all know each other or a certain number of people who don't know each other.
+The main variables are the colors of the connections between people, which are represented by x[i][j], where i and j are the people and x[i][j] is the color of the connection between them.
+The basic restrictions are that the connections must be colored in a way that doesn't create a group of people who all know each other or a group of people who don't know each other, both of a certain size.
+The goal is to minimize the maximum color used, which means finding the simplest way to color the connections without creating these groups.

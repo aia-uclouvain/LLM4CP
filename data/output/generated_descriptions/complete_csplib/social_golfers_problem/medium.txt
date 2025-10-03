@@ -1,0 +1,11 @@
+Social Golfer Problem
+The Social Golfer Problem is a classic constraint programming problem that involves scheduling golfers into groups over several weeks, ensuring that no two golfers play together more than once.
+
+The main decision variables in this problem represent the group assignments for each golfer in each week. These variables can be represented as a 2D array or matrix, where the rows correspond to golfers, the columns correspond to weeks, and the cell at row i and column j contains the group number assigned to golfer i in week j.
+
+The key constraints in the Social Golfer Problem can be described in plain language as follows:
+- Each group must have exactly the same number of players.
+- No two players can be in the same group more than once across all weeks.
+- Each player must be assigned to a group in each week.
+
+The objective of the Social Golfer Problem is not to minimize or maximize a specific function but rather to find a feasible schedule that satisfies all the constraints for the maximum number of weeks possible. In other words, the goal is to determine the longest schedule where no two golfers play together more than once.

@@ -1,0 +1,902 @@
+1) IMPLEMENTATION IN .co
+/*
+
+  SONET problem in Comet.
+
+
+  Translation of the EssencePrime model in the Minion Translator examples:
+  http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+  """
+  The SONET problem is a network design problem: set up a network between
+  n nodes, where only certain nodes require a connection.
+  Nodes are connected by putting them on a ring, where all nodes
+  on a ring can communicate. Putting a node on a ring requires a so-called
+  ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+  amount of rings, r, that is available. The objective is to set up a network
+  by using a minimal amount of ADMs.
+
+
+  About the problem model
+
+  The problem model has the amount of rings ('r'), amount of nodes('n'),
+  the 'demand' (which nodes require communication) and node-capacity of each 
+  ring ('capacity_nodes') as parameters.
+  The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+  indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+  If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+  and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+  Hence the objective is to minimise the sum over all columns and rows of matrix
+  'rings'.
+  """
+
+  Compare with the MiniZinc model http://www.hakank.org/minizinc/sonet_problem.mzn
+
+
+  This Comet model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Comet page: http://www.hakank.org/comet/
+
+ */
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cotfd;
+int t0 = System.getCPUTime();
+
+
+int r = 4;  // upper bound for amount of rings
+int n = 5;  // amount of clients
+
+// original comment: 
+// """
+// we have double entries here because of the symmetric structure!
+// """
+int demand[1..n, 1..n] =
+  [
+   [0,1,0,1,0],
+   [1,0,1,0,0],
+   [0,1,0,0,1],
+   [1,0,0,0,0],
+   [0,0,1,0,0]
+   ]
+  ;
+
+int capacity_nodes[1..r] = [3,2,2,1];
+
+Solver<CP> m();
+var<CP>{int} rings[1..r, 1..n](m, 0..1);
+var<CP>{int} z(m,0..sum(i in 1..r) capacity_nodes[i]);
+
+Integer num_solutions(0);
+
+// explore<m> {
+// exploreall<m> {
+minimize<m> z subject to {
+
+  m.post(z == sum(ring in 1..r, client in 1..n) rings[ring, client]);
+
+  // m.post(z <= 7); // for exploreall
+
+  // original comment:
+  // """
+  // capacity of each ring must not be exceeded     
+  // """
+  forall(ring in 1..r) 
+    m.post(sum(client in 1..n) 
+           (rings[ring, client]) <= capacity_nodes[ring] );
+
+  // original comment:
+  // """
+  // if there is a demand between 2 nodes, then there has to exist 
+  // a ring, on which they are both installed
+  // """
+  forall(client1 in 1..n,client2 in 1..n : client1 < client2) 
+    if(demand[client1,client2] == 1) {
+      // tryall<m>(ring in 1..r) 
+      // var<CP>{int} ring(m, 1..r); // another solution, but slower
+      // m.post(rings[ring,client1] + rings[ring, client2] >= 2);
+      // This was suggested by Pierre Schaus instead of the tryall thing.
+      m.post(or(ring in 1..r) (rings[ring,client1] + rings[ring, client2] >= 2));
+    }
+  
+ 
+
+} using {
+      
+  label(m);
+
+  num_solutions := num_solutions + 1;
+
+  cout << "z: " << z << endl;
+  forall(i in 1..r) {
+    forall(j in 1..n) {
+      cout << rings[i,j] << " ";
+    }
+    cout << endl;
+  }
+  cout << endl;
+  
+
+}
+
+
+cout << "\nnum_solutions: " << num_solutions << endl;
+    
+int t1 = System.getCPUTime();
+cout << "time:      " << (t1-t0) << endl;
+cout << "#choices = " << m.getNChoice() << endl;
+cout << "#fail    = " << m.getNFail() << endl;
+cout << "#propag  = " << m.getNPropag() << endl;
+
+
+
+2) IMPLEMENTATION IN .cpp
+/*
+
+  SONET problem in Gecode.
+
+
+  Translation of the EssencePrime model in the Minion Translator examples:
+  http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+  """
+  The SONET problem is a network design problem: set up a network between
+  n nodes, where only certain nodes require a connection.
+  Nodes are connected by putting them on a ring, where all nodes
+  on a ring can communicate. Putting a node on a ring requires a so-called
+  ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+  amount of rings, r, that is available. The objective is to set up a network
+  by using a minimal amount of ADMs.
+
+
+  About the problem model
+
+  The problem model has the amount of rings ('r'), amount of nodes('n'),
+  the 'demand' (which nodes require communication) and node-capacity of each 
+  ring ('capacity_nodes') as parameters.
+  The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+  indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+  If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+  and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+  Hence the objective is to minimise the sum over all columns and rows of matrix
+  'rings'.
+  """
+
+
+  Compare with the following models: 
+  * MiniZinc: http://www.hakank.org/minizinc/sonet_problem.mzn
+  * Comet   : http://www.hakank.org/comet/sonet_problem.co
+
+
+  This Gecode model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Gecode page: http://www.hakank.org/gecode/ .
+
+*/
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+/*
+
+  Answer should be:
+  z: 7
+  0 1 1 0 1
+  1 0 0 1 0
+  1 1 0 0 0
+  0 0 0 0 0
+
+  If the option 
+
+    -search dfs
+
+  is set then all 6 solutions are generated.  
+
+ */
+
+#include <gecode/driver.hh>
+#include <gecode/int.hh>
+#include <gecode/minimodel.hh>
+
+using namespace Gecode;
+
+
+class Sonet : public MinimizeScript {
+protected:
+
+                           // size of problem
+  static const int r = 4;  // upper bound for amount of rings
+  static const int n = 5;  // amount of clients
+
+  IntVarArray rings;       // rings
+  IntVar z;                // number of rings, the objective to minimize
+
+public:
+
+  // search engines
+  enum {
+    SEARCH_DFS,
+    SEARCH_BAB,
+  }
+;
+
+  Sonet(const Options& opt) 
+    : 
+    rings(*this, r*n, 0, 1),
+    z(*this, 0, 10)
+  {
+
+
+    // original comment: 
+    // """
+    // we have double entries here because of the symmetric structure!
+    // """
+    int demand[] =
+      {
+       0,1,0,1,0,
+       1,0,1,0,0,
+       0,1,0,0,1,
+       1,0,0,0,0,
+       0,0,1,0,0
+      };
+
+    int capacity_nodes[] = {3,2,2,1};
+
+    linear(*this, rings, IRT_EQ, z, opt.icl());
+ 
+    Matrix<IntVarArray> rings_m(rings, n, r);
+
+    // original comment:
+    // """
+    // if there is a demand between 2 nodes, then there has to exist 
+    // a ring, on which they are both installed
+    // """
+    for(int client1 = 0; client1 < n; client1++) {
+      for(int client2 = client1 + 1; client2 < n; client2++) {
+        if(demand[client1*n+client2] == 1) {
+          // EssencePrime code:
+          //   exists ring : int(1..r) .
+          //      rings[ring,client1] + rings[ring, client2] >= 2)
+
+          // here we use reification: 
+          BoolVarArray bs(*this, r, 0, 1);
+          for(int ring = 0; ring < r; ring++) {
+            // does this ring satisfy the condition?
+            // note: the "~" is needed
+            bs[ring] = expr(*this, (rings_m(client1, ring) + rings_m(client2,ring) >= 2), opt.icl());
+          }
+          // at least one success is needed
+          linear(*this, bs, IRT_GQ, 1, opt.icl());
+        }
+      }
+    }
+    
+ 
+    // original comment:
+    // """
+    // capacity of each ring must not be exceeded     
+    // """
+    for(int ring = 0; ring < r; ring++) {
+      linear(*this, rings_m.row(ring), IRT_LQ, capacity_nodes[ring], opt.icl());
+    }
+
+    //
+    // If 
+    //   -search dfs 
+    // we show all optimal solutions, i.e. for z == 7
+    //
+    if (opt.search() == SEARCH_DFS) {
+      rel(*this, z == 7, opt.icl());
+    }
+
+  
+    // branching
+    branch(*this, rings, INT_VAR_DEGREE_SIZE_MAX(), INT_VAL_SPLIT_MIN());
+
+  }
+
+  // Print solution
+  virtual void
+  print(std::ostream& os) const {
+    os << "z: " << z << std::endl;
+    for(int i = 0; i < r; i++) {
+      for(int j = 0; j < n; j++) {
+        os << rings[i*n+j] << " ";
+      }
+      os << std::endl;
+    }
+    os << std::endl;
+  }
+
+  // Return cost
+  virtual IntVar cost(void) const {
+    return z;
+  }
+
+
+  // Constructor for cloning s
+  Sonet(bool share, Sonet& s) : MinimizeScript(share,s) {
+    rings.update(*this, share, s.rings);
+    z.update(*this, share, s.z);
+  }
+
+  // Copy during cloning
+  virtual Space*
+  copy(bool share) {
+    return new Sonet(share,*this);
+
+  }
+};
+
+
+int
+main(int argc, char* argv[]) {
+
+  Options opt("Sonet");
+
+  opt.solutions(0);
+  opt.icl(ICL_BND);
+  opt.search(Sonet::SEARCH_BAB);
+  opt.search(Sonet::SEARCH_DFS, "dfs");
+  opt.search(Sonet::SEARCH_BAB, "bab");
+
+  opt.parse(argc,argv);
+
+  if (opt.search() == Sonet::SEARCH_DFS) {
+    Script::run<Sonet,DFS,Options>(opt);
+  } else {
+    MinimizeScript::run<Sonet,BAB,Options>(opt);
+  }
+
+
+  return 0;
+}
+
+
+
+
+3) IMPLEMENTATION IN .pl
+/*
+
+  SONET problem in B-Prolog.
+
+  From the EssencePrime model in the Minion Translator examples:
+  http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+  """
+  The SONET problem is a network design problem: set up a network between
+  n nodes, where only certain nodes require a connection.
+  Nodes are connected by putting them on a ring, where all nodes
+  on a ring can communicate. Putting a node on a ring requires a so-called
+  ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+  amount of rings, r, that is available. The objective is to set up a network
+  by using a minimal amount of ADMs.
+
+  About the problem model
+
+  The problem model has the amount of rings ('r'), amount of nodes('n'),
+  the 'demand' (which nodes require communication) and node-capacity of each 
+  ring ('capacity_nodes') as parameters.
+  The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+  indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+  If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+  and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+  Hence the objective is to minimise the sum over all columns and rows of matrix
+  'rings'.
+  """
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+go :-
+        R = 4,
+        N = 5,
+        Demand = [[0,1,0,1,0],
+                  [1,0,1,0,0],
+                  [0,1,0,0,1],
+                  [1,0,0,0,0],
+                  [0,0,1,0,0]],
+
+        CapacityNodes = [3,2,2,1],
+
+        % decision variables
+        matrix(Rings,[R,N]),
+        term_variables(Rings,Vars),
+        Vars :: 0..1,
+
+        % to optimize
+        Z #= sum([(Rings[Ring,Client]) : Ring in 1..R, Client in 1..N]),
+
+        
+        % if there is a demand between 2 nodes, then there has to exist 
+        % a ring, on which they are both installed
+        foreach(Client1 in 1..N,
+                Client2 in Client1+1..N,
+                [Ring,R1,R2],
+                (
+                    Demand[Client1,Client2] =:= 1 ->
+                        matrix_element(Rings,Ring,Client1,R1),
+                        matrix_element(Rings,Ring,Client2,R2),
+                        R1 + R2 #>= 2
+                ;
+                        true
+                )
+               ),
+       
+        % original comment:
+        % capacity of each ring must not be exceeded     
+        foreach(Ring in 1..R,
+                sum([Rings[Ring,Client] : Client in 1..N]) #=< CapacityNodes[Ring] 
+               ),
+
+        % Z #= 7, % for showing all 6 optimal solutions
+
+        minof(labeling(Vars),Z),
+        % labeling(Vars),
+
+        writeln(z:Z),
+        foreach(RR in Rings, writeln(RR)),
+        nl.
+        
+matrix_element(X, I, J, Val) :-
+        nth1(I, X, Row),
+        element(J, Row, Val).
+
+
+matrix(_, []) :- !.
+matrix(L, [Dim|Dims]) :-
+        length(L, Dim),
+        foreach(X in L, matrix(X, Dims)).
+
+
+
+4) IMPLEMENTATION IN .pi
+/*
+
+  SONET problem in Picat.
+
+  From the EssencePrime model in the Minion Translator examples:
+  http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+  """
+  The SONET problem is a network design problem: set up a network between
+  n nodes, where only certain nodes require a connection.
+  Nodes are connected by putting them on a ring, where all nodes
+  on a ring can communicate. Putting a node on a ring requires a so-called
+  ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+  amount of rings, r, that is available. The objective is to set up a network
+  by using a minimal amount of ADMs.
+
+  About the problem model
+
+  The problem model has the amount of rings ('r'), amount of nodes('n'),
+  the 'demand' (which nodes require communication) and node-capacity of each 
+  ring ('capacity_nodes') as parameters.
+  The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+  indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+  If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+  and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+  Hence the objective is to minimise the sum over all columns and rows of matrix
+  'rings'.
+  """
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import util.
+import cp.
+
+main => go.
+
+go =>
+
+   R = 4,
+   N = 5,
+   Demand = [[0,1,0,1,0],
+             [1,0,1,0,0],
+             [0,1,0,0,1],
+             [1,0,0,0,0],
+             [0,0,1,0,0]],
+
+   CapacityNodes = [3,2,2,1],
+
+   % decision variables
+   Rings = new_array(R,N).array_matrix_to_list_matrix(),
+   Vars = vars(Rings),
+   Vars :: 0..1,
+
+   % to optimize
+
+   Z #= sum([(Rings[Ring,Client]) : Ring in 1..R, Client in 1..N]),
+
+   % if there is a demand between 2 nodes, then there has to exist 
+   % a ring, on which they are both installed
+   foreach(Client1 in 1..N, Client2 in Client1+1..N)
+      if Demand[Client1,Client2] == 1 then
+          matrix_element(Rings,Ring,Client1,R1),
+          matrix_element(Rings,Ring,Client2,R2),
+          R1 + R2 #>= 2
+      end
+   end,
+
+   % capacity of each ring must not be exceeded     
+   foreach(Ring in 1..R)
+      sum([Rings[Ring,Client] : Client in 1..N]) #=< CapacityNodes[Ring] 
+   end,
+
+   % Z #= 7, % for showing all 6 optimal solutions
+
+   solve([$min(Z)], Rings),
+   % solve(Vars),
+
+   writeln(z=Z),
+   foreach(RR in Rings) writeln(RR) end,
+   nl.
+   
+matrix_element(X, I, J, Val) =>
+   nth(I, X, Row),
+   element(J, Row, Val).
+
+
+% matrix_element(X, I, J, Val) =>
+%    freeze(I, (element(I, X, Row),freeze(J,element(J,Row,Val)))).
+
+
+
+5) IMPLEMENTATION IN .essence
+language Essence 1.2.0
+$ prob056.essence: SONET Configuration
+$
+$ A SONET communication network comprises a number of rings, each joining a
+$ a number of nodes. A node is installed on a ring using an add-drop multiplexer
+$ (ADM) and there is a capacity bound on the number of ADMs that can be
+$ installed on a ring. Each node can be installed on more than one ring.
+$ Communication can be routed between a pair of nodes only if both are installed
+$ on a common ring. Given the capacity bound and a specification of which pairs
+$ of nodes must communicate, allocate a set of nodes to each ring so that the
+$ given communication demands are met. The objective is to minimise the number
+$ of ADMs used. (This is a common simplification of the full SONET problem.)
+$
+$ 03 September 2007
+$
+
+given nnodes, nrings, capacity : int(1..)
+
+letting Nodes be domain int(1..nnodes)
+
+given demand : set of set (size 2) of Nodes
+
+find network : mset (size nrings) of set (maxSize capacity) of Nodes
+
+find optVar : int(0..nrings*capacity)
+
+minimising optVar
+
+such that 
+
+optVar=sum ring in network . |ring|,
+such that 
+
+forAll pair in demand . 
+    exists ring in network . 
+        pair subsetEq ring
+
+
+6) IMPLEMENTATION IN .mzn
+%
+% The SONET problem in MiniZinc.
+% 
+% Translation of the EssencePrime model in the Minion Translator examples:
+% http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+% """
+% The SONET problem is a network design problem: set up a network between
+% n nodes, where only certain nodes require a connection.
+% Nodes are connected by putting them on a ring, where all nodes
+% on a ring can communicate. Putting a node on a ring requires a so-called
+% ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+% amount of rings, r, that is available. The objective is to set up a network
+% by using a minimal amount of ADMs.
+%
+%
+% About the problem model
+%
+% The problem model has the amount of rings ('r'), amount of nodes('n'),
+% the 'demand' (which nodes require communication) and node-capacity of each 
+% ring ('capacity_nodes') as parameters.
+% The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+% indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+% If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+% and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+% Hence the objective is to minimise the sum over all columns and rows of matrix
+% 'rings'.
+% """
+%
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc/
+%
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+%
+% The Minion solution is:
+% """
+% Sol: 0 1 1 0 1
+% Sol: 1 0 0 1 0
+% Sol: 1 1 0 0 0
+% Sol: 0 0 0 0 0
+% """
+%
+% Which is the same solution that fz gives for the minimizing
+% objective. The problem has 6 solutions with z = 7.
+% 
+% z: 7
+% 0 1 1 0 1
+% 1 0 0 1 0
+% 1 1 0 0 0
+% 0 0 0 0 0
+
+
+int: r;  % upper bound for amount of rings
+int: n;  % amount of clients
+
+
+% original comment: 
+% we have double entries here because of the symmetric structure!
+array[1..n, 1..n] of 0..1: demand;
+array[1..r] of 1..n: capacity_nodes;
+
+array[1..r, 1..n] of var 0..1: rings;
+var int: z =  sum(ring in 1..r, client in 1..n) (rings[ring, client]);
+
+solve minimize z;
+% solve satisfy;
+
+
+constraint
+%   z <= 7 % for solve satisfy
+%   /\
+
+   % original comment:
+   % if there is a demand between 2 nodes, then there has to exist 
+   % a ring, on which they are both installed
+   forall(client1,client2 in 1..n where client1 < client2) (
+      (demand[client1,client2] = 1) ->
+           exists(ring in 1..r) (
+                 rings[ring,client1] + rings[ring, client2] >= 2
+           )
+   )   
+   /\
+   % original comment:
+   % capacity of each ring must not be exceeded     
+   forall(ring in 1..r) (
+        sum(client in 1..n) (
+              rings[ring, client]
+              ) <= capacity_nodes[ring] 
+   )
+;
+
+
+%
+% data
+% (sonet_problem1nu.param)
+%
+r = 4;
+n = 5;
+
+demand =
+array2d(1..n, 1..n,
+        [0,1,0,1,0,
+         1,0,1,0,0,
+         0,1,0,0,1,
+         1,0,0,0,0,
+         0,0,1,0,0])
+;
+
+capacity_nodes = [3,2,2,1];
+
+
+output 
+[
+  "z: ", show(z)
+] ++
+[
+  if client = 1 then "\n" else " " endif ++
+    show(rings[ring, client])
+  | ring in 1..r, client in 1..n
+] ++ ["\n"];
+
+
+7) IMPLEMENTATION IN .essence
+language Essence 1.2.0
+$ prob056.essence: SONET Configuration
+$
+$ A SONET communication network comprises a number of rings, each joining a
+$ a number of nodes. A node is installed on a ring using an add-drop multiplexer
+$ (ADM) and there is a capacity bound on the number of ADMs that can be
+$ installed on a ring. Each node can be installed on more than one ring.
+$ Communication can be routed between a pair of nodes only if both are installed
+$ on a common ring. Given the capacity bound and a specification of which pairs
+$ of nodes must communicate, allocate a set of nodes to each ring so that the
+$ given communication demands are met. The objective is to minimise the number
+$ of ADMs used. (This is a common simplification of the full SONET problem.)
+$
+$ 03 September 2007
+$
+
+given nnodes, nrings, capacity : int(1..)
+
+letting Nodes be domain int(1..nnodes)
+
+given demand : set of set (size 2) of Nodes
+
+find network : set (maxSize nrings) of set (minSize 2, maxSize capacity) of Nodes
+
+find optVar : int(0..nrings*capacity)
+
+minimising optVar
+
+such that 
+
+optVar=sum ring in network . |ring|,
+such that 
+
+forAll pair in demand . 
+    exists ring in network . 
+        pair subsetEq ring
+
+
+8) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Data can come:
+ - either directly from a JSON file
+ - or from an intermediate parser
+
+Example:
+  python Sonet.py -data=Sonet_sonet1.json
+"""
+
+from pycsp3 import *
+
+n, m, r, connections = data
+
+# x[i][j] is 1 if the ith ring contains the jth node
+x = VarArray(size=[m, n], dom={0, 1})
+
+table = {tuple(1 if j // 2 == i else ANY for j in range(2 * m)) for i in range(m)}
+
+satisfy(
+    [(x[i][j1] if k == 0 else x[i][j2] for i in range(m) for k in range(2)) in table for (j1, j2) in connections],
+
+    # respecting the capacity of rings
+    [Sum(x[i]) <= r for i in range(m)],
+
+    # tag(symmetry-breaking)
+    LexIncreasing(x)
+)
+
+minimize(
+    # minimizing the number of nodes installed on rings
+    Sum(x)
+)
+
+
+9) IMPLEMENTATION IN .mod
+/*
+
+  SONET problem in AMPL+CP.
+
+  Translation of the EssencePrime model in the Minion Translator examples:
+  http://www.cs.st-andrews.ac.uk/~andrea/examples/sonet/sonet_problem.eprime
+  """
+  The SONET problem is a network design problem: set up a network between
+  n nodes, where only certain nodes require a connection.
+  Nodes are connected by putting them on a ring, where all nodes
+  on a ring can communicate. Putting a node on a ring requires a so-called
+  ADM, and each ring has a capacity of nodes, i.e. ADMs. There is a certain 
+  amount of rings, r, that is available. The objective is to set up a network
+  by using a minimal amount of ADMs.
+
+
+  About the problem model
+
+  The problem model has the amount of rings ('r'), amount of nodes('n'),
+  the 'demand' (which nodes require communication) and node-capacity of each 
+  ring ('capacity_nodes') as parameters.
+  The assignement of nodes to rings is modelled by a 2-dimensional matrix 'rings',
+  indexed by the amnount of rings and nodes. The matrix-domain is boolean:
+  If the node in column j is assigned to the ring in row i, then rings[i,j] = 1 
+  and 0 otherwise. So all the '1's in the matrix 'rings' stand for an ADM.
+  Hence the objective is to minimise the sum over all columns and rows of matrix
+  'rings'.
+  """
+
+
+  This AMPL model was created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my AMPL page: http://www.hakank.org/ampl/
+
+*/
+
+# Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+param r; # upper bound for amount of rings
+param n; # number of clients
+param demand{1..n, 1..n}; 
+param capacity_nodes{1..r}; 
+
+# decision variables
+var rings{1..r, 1..n} binary;
+var z >= 0 integer;
+
+minimize obj: z;
+
+#
+# constraints
+#
+
+# "if there is a demand between 2 nodes, then there has to exist 
+#  a ring, on which they are both installed"
+# 
+s.t. c1{client1 in 1..n, client2 in 1..n: client1 < client2}:
+   (demand[client1,client2] = 1) ==>
+        exists{ring in 1..r}
+              rings[ring,client1] + rings[ring, client2] >= 2
+;
+
+# capacity of each ring must not be exceeded     
+s.t. c2{ring in 1..r}:
+     sum{client in 1..n} rings[ring, client] <= capacity_nodes[ring] 
+;
+
+
+s.t. c3: z = sum{ring in 1..r, client in 1..n} rings[ring, client];
+
+data;
+
+param r := 4;
+param n := 5;
+
+param demand: 1 2 3 4 5 :=
+  1 0 1 0 1 0 
+  2 1 0 1 0 0 
+  3 0 1 0 0 1 
+  4 1 0 0 0 0 
+  5 0 0 1 0 0
+;
+
+param capacity_nodes := 
+  1 3
+  2 2 
+  3 2 
+  4 1
+;
+
+
+
+option show_stats 2;
+# option presolve 0;
+
+option solver gecode;
+option gecode_options "var_branching=size_max val_branching=min outlev=1 outfreq=1";
+
+# option solver ilogcp;
+# option ilogcp_options "optimizer=cp alldiffinferencelevel=4 debugexpr=0 logperiod=10 logverbosity=0";
+
+solve;
+
+
+display z;
+# display rings;
+for{i in 1..r} {
+  for{j in 1..n} {
+    printf "%d ", rings[i,j];
+  }
+  printf "\n";
+}
+printf "\n";
+
+

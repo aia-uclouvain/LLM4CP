@@ -1,0 +1,13 @@
+The Nurse Workload Problem
+The problem is about assigning patients to nurses in a way that balances the workload of each nurse, while ensuring that each patient is assigned to a nurse and that the workload of each nurse is within a specified range.
+
+The main decision variables are `p` and `w`, where `p[i]` represents the nurse assigned to the `i-th` patient, and `w[k]` represents the workload of the `k-th` nurse.
+
+The key constraints are:
+- Each nurse must be assigned a number of patients within a specified range (between `minPatientsPerNurse` and `maxPatientsPerNurse`).
+- Patients from the same zone must be assigned to different nurses.
+- The workload of each nurse is calculated as the sum of the demands of the patients assigned to that nurse.
+- The workload of each nurse must be within a specified range (between `lb` and `maxWorkloadPerNurse`).
+- The workload of the nurses must be in increasing order, which is a symmetry-breaking constraint to reduce the search space.
+
+The objective of the problem is to minimize the sum of the squares of the workloads of all nurses, which represents the overall imbalance of the workload distribution among nurses.

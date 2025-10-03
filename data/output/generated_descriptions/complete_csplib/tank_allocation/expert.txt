@@ -1,0 +1,9 @@
+name: Tank Allocation
+description: The Tank Allocation problem is a classic problem in constraint programming that involves allocating cargos to tanks in a way that satisfies certain constraints. The problem consists of a set of tanks, each with a given capacity, and a set of cargos, each with a given volume to be shipped. The goal is to allocate the cargos to the tanks in a way that maximizes the number of empty tanks, while ensuring that the volume of each cargo is fully allocated, and that certain constraints are satisfied, such as not allocating a cargo to a tank that is incompatible with it, and not allocating two incompatible cargos to neighboring tanks.
+variables: allocation[tank] ∈ {0, 1, ..., numCargos}, where allocation[tank] represents the cargo allocated to tank, or 0 if the tank is empty. This is a matrix of decision variables, where each element represents the cargo allocated to a particular tank.
+constraints: 
+∀cargo ∈ dCargos: ∑(capacities[tank] * (allocation[tank] = cargo)) ≥ volumeToShip[cargo]
+∀tank ∈ dTanks: allocation[tank] ∉ impossibleCargos[tank]
+∀tank ∈ dTanks, ∀neighbour ∈ neighbours[tank]: {allocation[tank], allocation[neighbour]} ∉ incompatibilities
+These constraints ensure that the volume of each cargo is fully allocated, that no tank is allocated a cargo that is incompatible with it, and that no two incompatible cargos are allocated to neighboring tanks.
+objective: maximize ∑(toInt(allocation[tank] = 0)), which represents the number of empty tanks. The goal is to maximize this value, i.e., to minimize the number of tanks that are allocated a cargo.

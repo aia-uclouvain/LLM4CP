@@ -1,0 +1,13 @@
+The SONET problem
+The SONET problem is a network design problem where the goal is to set up a network between a given number of nodes, with certain nodes requiring a connection. Nodes are connected by putting them on a ring, allowing all nodes on the ring to communicate. Each ring has a limited capacity, and the objective is to minimize the total number of Add-Drop Multiplexers (ADMs) used.
+
+Main decision variables
+The main decision variables in the SONET problem are represented by a 2-dimensional matrix 'rings', where rings[i, j] = 1 if node j is assigned to ring i, and 0 otherwise. These variables determine the assignment of nodes to rings.
+
+Key constraints
+The key constraints in the SONET problem are:
+- If there is a demand between two nodes, they must be assigned to at least one common ring.
+- The capacity of each ring must not be exceeded, i.e., the number of nodes assigned to a ring must not exceed its capacity.
+
+Problem objective
+The objective of the SONET problem is to minimize the total number of ADMs used, which is equivalent to minimizing the sum of all elements in the 'rings' matrix. This represents the minimum number of ADMs required to satisfy all communication demands between nodes.

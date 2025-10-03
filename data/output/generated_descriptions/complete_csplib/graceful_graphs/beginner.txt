@@ -1,0 +1,9 @@
+The problem is called the "Graceful Graph" problem. 
+
+It's about coloring the nodes and edges of a graph in such a way that the colors of the edges are determined by the colors of the nodes they connect. The goal is to find a coloring where all nodes have different colors and all edges have different colors.
+
+The main variables are the colors of the nodes and the edges. The node colors are like labels that we assign to each node, and the edge colors are calculated based on the labels of the nodes they connect.
+
+The basic restrictions are that all nodes must have different colors, and all edges must have different colors. The color of an edge is determined by the difference between the colors of the two nodes it connects.
+
+The goal of the problem is to find a coloring that satisfies these restrictions. There is no specific objective to minimize or maximize, the goal is simply to find a valid coloring.

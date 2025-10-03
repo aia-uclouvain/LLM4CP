@@ -1,0 +1,13 @@
+Tail Assignment Problem
+The Tail Assignment Problem is about assigning flights to aircraft in a way that satisfies various constraints, such as ensuring each aircraft visits a maintenance depot frequently enough and that each flight is made exactly once.
+
+The main decision variables in this problem are the routes for each aircraft, represented by the function `route`, which maps each aircraft to a sequence of flights. The `route` function represents the order in which each aircraft makes its assigned flights.
+
+The key constraints in this problem can be described as follows: 
+- Each aircraft's route must start with a flight that can follow the last flight it made.
+- Each aircraft can only make flights it is capable of making.
+- Flights must be made in the correct order, as defined by the flight network.
+- Each flight can only be made once, and each aircraft must make a distinct set of flights.
+- Each aircraft must visit a maintenance depot at least every `maint_freq` flights.
+
+The objective of the Tail Assignment Problem is to find a valid assignment of flights to aircraft that satisfies all the given constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the requirements.

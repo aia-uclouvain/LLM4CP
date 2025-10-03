@@ -1,0 +1,10 @@
+Nurse Scheduling Problem
+The problem is about creating a schedule for nurses to work different shifts at a hospital. 
+The main variables are the shifts that each nurse will work on each day of the week, with 4 possible shifts: early, late, night, and day off (rest day).
+The basic restrictions are: 
+- each nurse must work a minimum and maximum number of consecutive days with the same shift
+- weekend days (Saturday and Sunday) must have the same shift
+- at least 2 days must be rest days every 2 weeks
+- the order of shifts must follow a forward rotating principle (after an early shift, there can only be a shift with the same or higher value, or a rest shift)
+- the number of nurses working each shift on each day must meet the hospital's requirements.
+The goal of the problem is to find a schedule that satisfies all these restrictions and meets the hospital's requirements.

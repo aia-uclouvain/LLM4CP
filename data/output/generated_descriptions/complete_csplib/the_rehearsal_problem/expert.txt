@@ -1,0 +1,17 @@
+name: Rehearsal Problem
+description: The Rehearsal Problem is a scheduling problem where a set of pieces of music need to be rehearsed by a set of players. Each piece has a specific duration and requires a subset of players. The goal is to find an order in which the pieces can be rehearsed to minimize the total waiting time of the players.
+variables: $o, a, l, ep, rehearsal\_order, waiting\_time, p\_from, p\_to$ 
+These variables represent the following: 
+- $o$ is the order in which the pieces are rehearsed, 
+- $a$ and $l$ represent the arrival and departure times of each player, 
+- $ep$ indicates whether a player is effectively playing in a given slot, 
+- $rehearsal\_order$ is the order in which the pieces are rehearsed, 
+- $waiting\_time$ is the waiting time for each player, 
+- $p\_from$ and $p\_to$ represent the first and last pieces that each player plays.
+constraints: $\forall i \in \{1, \ldots, n\}: o_i \neq o_j, \forall p \in \{1, \ldots, m\}: a_p \leq i \leq l_p \rightarrow playing_{pi} = 1, \forall p \in \{1, \ldots, m\}: waiting\_time_p = \sum_{i=1}^{n} duration_i \cdot (a_p \leq i \leq l_p \wedge playing_{pi} = 0)$
+These constraints ensure that: 
+- each piece is played only once, 
+- each player is present when their piece is being played, 
+- the waiting time for each player is calculated correctly.
+objective: minimize $\sum_{p=1}^{m} waiting\_time_p$ 
+The objective is to minimize the total waiting time of all players.

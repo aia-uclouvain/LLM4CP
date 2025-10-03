@@ -1,0 +1,142 @@
+1) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Data can come:
+ - either directly from a JSON file
+ - or from an intermediate parser
+
+Example:
+  python Rack.py -data=Rack_r2.json
+"""
+
+from pycsp3 import *
+
+nRacks, models, cardTypes = data
+models.append([0, 0, 0])  # we add first a dummy model (0,0,0)
+powers, sizes, costs = zip(*models)
+cardPowers, cardDemands = zip(*cardTypes)
+nModels, nTypes = len(models), len(cardTypes)
+
+table = {(i, powers[i], sizes[i], costs[i]) for i in range(nModels)}
+
+# m[i] is the model used for the ith rack
+m = VarArray(size=nRacks, dom=range(nModels))
+
+# p[i] is the power of the model used for the ith rack
+p = VarArray(size=nRacks, dom=powers)
+
+# s[i] is the size (number of connectors) of the model used for the ith rack
+s = VarArray(size=nRacks, dom=sizes)
+
+# c[i] is the cost (price) of the model used for the ith rack
+c = VarArray(size=nRacks, dom=costs)
+
+# nc[i][j] is the number of cards of type j put in the ith rack
+nc = VarArray(size=[nRacks, nTypes], dom=lambda i, j: range(min(max(sizes), cardDemands[j]) + 1))
+
+satisfy(
+    # linking rack models with powers, sizes and costs
+    [(m[i], p[i], s[i], c[i]) in table for i in range(nRacks)],
+
+    # connector-capacity constraints
+    [Sum(nc[i]) <= s[i] for i in range(nRacks)],
+
+    # power-capacity constraints
+    [nc[i] * cardPowers <= p[i] for i in range(nRacks)],
+
+    # demand constraints
+    [Sum(nc[:, j]) == cardDemands[j] for j in range(nTypes)],
+
+    # tag(symmetry-breaking)
+    [Decreasing(m), imply(m[0] == m[1], nc[0][0] >= nc[1][0])]
+)
+
+minimize(
+    # minimizing the total cost being paid for all racks
+    Sum(c)
+)
+
+
+
+2) IMPLEMENTATION IN .essence
+language Essence 1.3
+$ prob031.essence: Rack Configuration Problem
+$ Problem details available at http://www.csplib.org/Problems/prob031/
+
+$ We are using the problem description from the following paper very closely here.
+$ "Symmetry Breaking in a Rack Configuration Problem" Zeynep Kızıltan and Brahim Hnich
+
+
+
+$ The rack configuration problem consists of plugging a set of electronic cards
+$ into racks with electronic connectors.
+given nbRacks : int(1..)
+letting Rack be new type of size nbRacks
+
+$ Each card belongs to a certain card type.
+given nbTypes : int(1..)
+letting Type be domain int(1..nbTypes)
+
+$ A card type is characterised by the power it requires, ...
+given requiredPower : function (total) Type --> int(1..)
+
+$ ... and a demand, which designates how many cards of that type have to be plugged.
+given demand : function (total) Type --> int(1..)
+
+
+$ In order to plug a card into a rack, the rack needs to use a rack model.
+given nbModels : int
+letting Model be domain int(1..nbModels)
+
+$ Each rack model is characterised by the maximal power it can supply, its number of connectors, and its price.
+given maxPower      : function (total) Model --> int(1..)
+given maxConnectors : function (total) Model --> int(1..)
+given price         : function (total) Model --> int(1..)
+
+$ A rack model can be used by any rack.
+$ Each card plugged into a rack uses a connector.
+$ The problem is to decide how many of the available racks are needed,
+$ and which rack models the racks use in order to plug all the cards
+$ such that the total price is minimised.
+
+find configuration :
+        function Rack -->
+            $ the model for this rack
+            ( Model
+            $ for each type, the number of cards of that type
+            , function (total) Type --> int(0..max(range(maxConnectors)))
+            )
+
+
+$ The constraints of the problem and the cost function can be summarised as the following:
+
+$ The connector-capacity constraint:
+$ the number of cards plugged into a rack r
+$ must not exceed the number of connectors of the rack model used by r.
+such that
+    forAll (rack, (model, counts)) in configuration .
+        sum([ num | (ty, num) <- counts ]) <= maxConnectors(model)
+
+$ The power-capacity constraint:
+$ the total power of the cards plugged into a rack r
+$ must not exceed the power of the rack model used by r.
+such that
+    forAll (rack, (model, counts)) in configuration .
+        sum([ requiredPower(ty) * num | (ty, num) <- counts ]) <= maxPower(model)
+
+$ The demand constraint: all the cards have to be plugged into some rack.
+such that
+    forAll (ty, tyDemand) in demand .
+        tyDemand <= sum([ num
+                        | (rack, (model, counts)) <- configuration
+                        , (ty2, num) <- counts
+                        , ty = ty2
+                        ])
+
+$ The cost function is the sum of the prices of the rack models used by all the racks needed.
+find totalCost : int(0.. |Rack| * |Model| * max(range(price)) )
+such that totalCost = sum (rack, (model, counts)) in configuration . price(model)
+minimising totalCost
+
+

@@ -1,0 +1,22 @@
+**Nurse Scheduling Problem**
+The problem is a classic example of a nurse scheduling problem, which is a type of scheduling problem that involves assigning nurses to shifts over a given period of time.
+
+**Description**
+The problem involves scheduling nurses to work on different shifts over a period of several weeks. Each week is divided into 7 days, and each day has 4 possible shifts: early, late, night, and day off (rest day). The goal is to assign nurses to these shifts while satisfying various constraints, such as ensuring that each shift has the required number of nurses, that nurses work a minimum and maximum number of consecutive days, and that they have at least 2 rest days every 2 weeks.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `plan1d`: a 1-dimensional array that represents the assignment of nurses to shifts over the entire scheduling period.
+- `plan2d`: a 2-dimensional array that represents the assignment of nurses to shifts for each week.
+- `s_min_arrays` and `s_max_arrays`: helper arrays used to enforce the minimum and maximum consecutive days constraints.
+
+**Constraints**
+The problem has several key constraints:
+- **C_equalDays**: ensures that weekend days (Saturday and Sunday) always have the same shift.
+- **C_shiftRepetitions**: ensures that each nurse works a minimum and maximum number of consecutive days.
+- **C_restDays**: ensures that each nurse has at least 2 rest days every 2 weeks.
+- **C_shiftOrder**: restricts the order of shifts, ensuring that after an early shift, only a shift with the same or a higher value, or a rest shift, can follow.
+- **C_shiftRequirements**: ensures that each shift has the required number of nurses.
+
+**Objective**
+The objective of the problem is to find a feasible schedule that satisfies all the constraints, without any specific objective function to minimize or maximize. The goal is to find a valid assignment of nurses to shifts that meets all the requirements and constraints.

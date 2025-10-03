@@ -1,0 +1,11 @@
+name: Diagnosis Problem
+description: The Diagnosis Problem is a classic problem in constraint programming that involves identifying faulty gates in a digital circuit. The circuit consists of a set of gates, each with a specific function, and a set of inputs and outputs. The goal is to determine which gates are faulty, given the observed output of the circuit. A gate is considered faulty if it is stuck on or off, meaning it always produces the same output regardless of its inputs.
+
+variables: $x, y, faultyGates, gateOutput$ 
+These variables represent the decision variables in the problem. $x$ and $y$ are used in the PyCSP3 model to represent the state of each gate (faulty or not) and its output, respectively. $faultyGates$ is a function in the Essence model that maps each gate to a boolean value indicating whether it is faulty. $gateOutput$ is a function in the Essence model that maps each gate to its output.
+
+constraints: $\forall gate \in dGates: (gateOutput(gate) = gateFuncs(gate)([gateOutput(gateInpts(gate)[1]), gateOutput(gateInpts(gate)[2])]) \vee gateOutput(gate) = faultyGates(gate)) \wedge \forall (gateLinkedtoOutput, expectedOutput) \in finalOutputs: gateOutput(gateLinkedtoOutput) = expectedOutput$
+These constraints ensure that each gate either produces the expected output based on its function and inputs or is faulty. The constraints also ensure that the output of the circuit matches the observed output.
+
+objective: minimize $|faultyGates|$
+The objective of the problem is to minimize the number of faulty gates in the circuit. This is achieved by finding the smallest possible set of gates that can be considered faulty in order to explain the observed output of the circuit.

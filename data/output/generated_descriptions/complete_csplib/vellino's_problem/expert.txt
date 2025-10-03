@@ -1,0 +1,19 @@
+name: Vellino's Problem
+description: Vellino's Problem is a classic problem in constraint programming that involves assigning materials to bins of different colors, subject to various constraints such as capacity limits, material compatibility, and color restrictions. The goal is to minimize the number of bins used while satisfying all the constraints.
+variables: $c, p$ where $c = (c_1, \ldots, c_n)$ is a vector of decision variables representing the color of each bin, and $p = (p_{ij})$ is a matrix of decision variables representing the number of components of material $j$ put in bin $i$. These variables determine the assignment of materials to bins.
+constraints: 
+$c_i \in \{Unusable, Red, Blue, Green\}$, 
+$p_{ij} \in \{0, \ldots, maxCapacity\}$, 
+$c_i = Unusable \leftrightarrow \sum_{j} p_{ij} = 0$, 
+$\sum_{i} p_{ij} = demands_j$, 
+$\sum_{j} p_{ij} \leq capacities_{c_i}$, 
+$c_i = Red \rightarrow p_{i, Plastic} = 0 \wedge p_{i, Steel} = 0$, 
+$c_i = Blue \rightarrow p_{i, Wood} = 0 \wedge p_{i, Plastic} = 0$, 
+$c_i = Green \rightarrow p_{i, Steel} = 0 \wedge p_{i, Glass} = 0$, 
+$c_i = Red \rightarrow p_{i, Wood} \leq 1$, 
+$c_i = Green \rightarrow p_{i, Wood} \leq 2$, 
+$p_{i, Wood} > 0 \rightarrow p_{i, Plastic} > 0$, 
+$p_{i, Glass} > 0 \rightarrow p_{i, Copper} = 0$, 
+$p_{i, Copper} > 0 \rightarrow p_{i, Plastic} = 0$. 
+These constraints ensure that each bin has a valid color, the correct amount of each material is used, the capacity of each bin is not exceeded, and various material compatibility and color restrictions are satisfied.
+objective: Minimize the number of used bins, i.e., $\min \sum_{i} (c_i \neq Unusable)$, which represents the total number of bins that are assigned a color and contain materials.

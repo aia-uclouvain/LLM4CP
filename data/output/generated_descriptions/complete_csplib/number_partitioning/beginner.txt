@@ -1,0 +1,5 @@
+Set Partition Problem
+The problem is about dividing a set of numbers into two equal-sized groups, where the sum of the numbers in each group is the same, and the sum of the squares of the numbers in each group is also the same.
+The main variables are the two sets A and B, which are the groups of numbers.
+The basic restrictions are that A and B must be disjoint (i.e., they have no numbers in common), A and B must have the same number of elements, the sum of the numbers in A must be equal to the sum of the numbers in B, and the sum of the squares of the numbers in A must be equal to the sum of the squares of the numbers in B.
+The goal of the problem is to find two sets A and B that satisfy these conditions.

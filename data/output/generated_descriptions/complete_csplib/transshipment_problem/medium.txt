@@ -1,0 +1,11 @@
+The Transportation Problem
+The Transportation Problem is a classic problem in operations research and constraint programming that involves finding the most cost-effective way to transport goods from a set of sources (warehouses) to a set of destinations (customers) through a set of intermediate points (transshipment points).
+
+The main decision variables in this problem are `amountWT` and `amountTC`, which represent the amount of goods to be transported from a warehouse to a transshipment point and from a transshipment point to a customer, respectively.
+
+The key constraints in this problem are:
+- The preservation of flow constraint, which ensures that the total amount of goods arriving at a transshipment point is equal to the total amount of goods leaving that point.
+- The demand constraint, which ensures that the total amount of goods delivered to each customer meets their demand.
+- The stock constraint, which ensures that the total amount of goods shipped from each warehouse does not exceed its available stock.
+
+The objective of the Transportation Problem is to minimize the total cost of transportation, which is calculated by summing the costs of transporting goods from warehouses to transshipment points and from transshipment points to customers. The total cost is represented by the `totalCost` variable, which is subject to a maximum cost constraint `maxCost`.

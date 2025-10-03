@@ -1,0 +1,5 @@
+Magic Sequence Problem
+The Magic Sequence problem is about finding a sequence of integers where each integer represents the number of times it appears in the sequence.
+The main variables are the sequence of integers, where each integer is between 0 and n-1, and n is the length of the sequence.
+The basic restrictions or rules of the problem are that each integer i in the sequence occurs exactly xi times, where xi is the value of the integer at position i.
+The goal of the problem is to find a sequence that satisfies these conditions, and there may be multiple solutions for a given length n.

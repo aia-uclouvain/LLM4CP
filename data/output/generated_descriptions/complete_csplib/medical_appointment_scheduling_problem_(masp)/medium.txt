@@ -1,0 +1,20 @@
+**Medical Appointment Scheduling Problem (MASP)**
+The Medical Appointment Scheduling Problem is a classic constraint programming problem that involves scheduling medical appointments for patients with multiple resources, such as doctors and facilities, while satisfying various constraints and preferences.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `appSlots`: an array of integer variables representing the time slots assigned to each appointment.
+- `appResources`: an array of integer variables representing the resources (e.g., doctors) assigned to each appointment.
+- `auxVarCalendars`: an array of integer variables representing the first time slot for each resource calendar.
+
+**Key Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each appointment must be scheduled within a valid time slot.
+- No two appointments can be scheduled in the same time slot.
+- Each resource (e.g., doctor) can only be assigned to one appointment at a time.
+- The appointment duration must be consecutive time slots.
+- The patient's preferred dates, doctors, and times must be respected as much as possible.
+- Undesired dates and weekdays must be avoided.
+
+**Objective**
+The objective of this problem is to minimize the total number of violations of the patient's preferences, including preferred dates, doctors, and times, while satisfying all the hard constraints. In other words, the goal is to find a schedule that respects the patient's preferences as much as possible while ensuring that all appointments are scheduled validly and efficiently.

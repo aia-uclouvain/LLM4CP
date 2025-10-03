@@ -1,0 +1,16 @@
+Balanced Incomplete Block Design 
+The problem is about arranging objects into blocks in a specific way. Imagine you have a certain number of objects, and you want to put them into groups (or blocks) in such a way that each object appears in the same number of groups, each group has the same number of objects, and any two objects appear together in the same number of groups.
+
+The main variables are: 
+- v: the number of objects 
+- b: the number of blocks 
+- r: the number of blocks each object appears in 
+- k: the number of objects in each block 
+- lambda: the number of blocks any two objects appear in together
+
+The basic restrictions are: 
+- Each object must appear in the same number of blocks (r). 
+- Each block must have the same number of objects (k). 
+- Any two objects must appear together in the same number of blocks (lambda).
+
+The goal is to find an arrangement that satisfies these conditions. There is no specific objective to minimize or maximize, the goal is simply to find a valid arrangement.

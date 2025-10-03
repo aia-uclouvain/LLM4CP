@@ -1,0 +1,15 @@
+Round Robin Tournament Scheduling
+The problem is about scheduling a round robin tournament where each team plays every other team exactly once, with the constraint that each team plays at most two matches in each period and all teams play each week.
+
+The main decision variables are:
+- `sched`: a relation representing the schedule of matches, where each match is defined by a week, a period, and a set of two teams.
+- `m`: a 2D array representing the number of the match at each week and period.
+- `x` and `y`: 2D arrays representing the first and second teams for each match at each week and period.
+
+The key constraints are:
+- Each team plays every other team exactly once.
+- Each team plays at most two matches in each period.
+- All teams play each week.
+- No team can play twice against another team.
+
+The objective of the problem is to find a schedule that satisfies all the constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

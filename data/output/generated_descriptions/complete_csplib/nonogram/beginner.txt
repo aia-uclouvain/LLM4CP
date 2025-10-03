@@ -1,0 +1,16 @@
+Nonogram Problem
+The problem is about solving a Nonogram puzzle, which is a picture logic puzzle where cells in a grid must be colored or left blank according to numbers given at the side of the grid to reveal a hidden picture.
+
+Main Variables
+The main variables are:
+- `x`: a 2D array representing the grid, where `x[i][j]` is 1 if the cell at row `i` and column `j` is colored in black, and 0 otherwise.
+- `rows` and `cols`: the number of rows and columns in the grid.
+- `row_rules` and `col_rules`: 2D arrays representing the rules for each row and column, where `row_rules[i][j]` and `col_rules[i][j]` are the lengths of the consecutive blocks of colored cells in row `i` and column `j`, respectively.
+
+Basic Restrictions
+The basic restrictions are:
+- Each row and column must satisfy the given rules, i.e., the lengths of the consecutive blocks of colored cells must match the given rules.
+- The grid must be filled with either colored or blank cells.
+
+Goal
+The goal is to find a solution that satisfies all the rules, i.e., a grid where each row and column matches the given rules.

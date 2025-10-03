@@ -1,0 +1,14 @@
+Rack Configuration Problem
+The problem is about plugging electronic cards into racks with electronic connectors in a way that minimizes the total cost. 
+The main variables are: 
+- the model of rack used for each rack, 
+- the number of cards of each type plugged into each rack, 
+- the power and number of connectors of each rack model, 
+- the cost of each rack model, 
+- the power required and demand for each card type.
+The basic restrictions or rules are: 
+- each rack can only hold a certain number of cards based on its model, 
+- the total power of the cards in a rack cannot exceed the power of the rack model, 
+- all cards of each type must be plugged into some rack, 
+- each rack model has a limited number of connectors and power.
+The goal of the problem is to minimize the total cost of the rack models used, while satisfying all the constraints and plugging all the cards into the racks.

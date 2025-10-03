@@ -1,0 +1,5 @@
+name: 0/1 Knapsack Problem
+description: The 0/1 Knapsack Problem is a classic problem in combinatorial optimization and operations research that involves finding the optimal way to pack a set of items of different weights and values into a knapsack of limited capacity. The goal is to maximize the total value of the items packed while not exceeding the knapsack's capacity. Each item can either be included or excluded from the knapsack, hence the "0/1" designation.
+variables: $x_i$, where $i = 1, 2, ..., n$ : These are binary decision variables, where $x_i = 1$ indicates that the $i^{th}$ item is included in the knapsack, and $x_i = 0$ indicates that it is not.
+constraints: $\sum_{i=1}^{n} w_i x_i \leq W$, where $w_i$ is the weight of the $i^{th}$ item and $W$ is the capacity of the knapsack : This constraint ensures that the total weight of the items packed does not exceed the knapsack's capacity.
+objective: Maximize $\sum_{i=1}^{n} v_i x_i$, where $v_i$ is the value of the $i^{th}$ item : The objective is to maximize the total value of the items packed into the knapsack.

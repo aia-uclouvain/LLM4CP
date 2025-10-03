@@ -1,0 +1,12 @@
+Covering Array Problem
+The problem is about creating a table with a specific structure, where each row and column has certain properties. 
+The main variables are: 
+- CA (or p and v in the Python implementation): a table where each cell can have one of a certain number of values (represented by g), 
+- t: the size of a subset of rows, 
+- k: the total number of rows, 
+- g: the number of possible values for each cell, 
+- b: the total number of columns.
+The basic restrictions are: 
+- each subset of t rows must contain all possible combinations of values, 
+- the table must be structured in a way that each row and column is unique and follows a specific order.
+The goal is to determine if it's possible to create such a table with the given constraints, and if so, to find one example of it.

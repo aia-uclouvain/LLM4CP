@@ -1,0 +1,15 @@
+Warehouse Location Problem
+The problem is about a company that needs to supply goods to its stores from warehouses. The company has to decide which warehouses to build and which warehouse should supply which store to minimize the total cost, including the cost of building warehouses and the cost of transporting goods from warehouses to stores.
+
+The main variables are:
+- Stores: the locations that need to be supplied with goods
+- Warehouses: the locations where goods are stored and from where they are transported to stores
+- Capacity: the maximum number of stores that a warehouse can supply
+- Cost: the cost of building a warehouse and the cost of transporting goods from a warehouse to a store
+
+The basic restrictions or rules of the problem are:
+- Each store must be supplied by exactly one warehouse
+- The total number of stores supplied by a warehouse cannot exceed its capacity
+- The cost of building a warehouse and the cost of transporting goods from a warehouse to a store must be minimized
+
+The goal of the problem is to minimize the total cost, which includes the cost of building warehouses and the cost of transporting goods from warehouses to stores. This is achieved by finding the optimal assignment of stores to warehouses, taking into account the capacity of each warehouse and the cost of transportation.

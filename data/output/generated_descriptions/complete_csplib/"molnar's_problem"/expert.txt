@@ -1,0 +1,5 @@
+name: Matrix Determinant Problem
+description: The problem involves finding a square matrix of size k x k with integer entries between 2 and d (inclusive) such that the determinant of the matrix and the determinant of the matrix of squared entries are both equal to 1. The problem also involves symmetry breaking to ensure a unique solution.
+variables: $x_{i,j}, y_{i,j}$ where $1 \leq i \leq k, 1 \leq j \leq k$, $x_{i,j}$ represents the value of the matrix at row i and column j, and $y_{i,j}$ represents the square of the value of the matrix x at row i and column j.
+constraints: $y_{i,j} = x_{i,j}^2, det(x) = 1, det(y) = 1, x_{i,j} \in [2, d], y_{i,j} \in [4, d^2], LexIncreasing(x)$ where $det(x)$ and $det(y)$ represent the determinants of matrices x and y respectively, and $LexIncreasing(x)$ represents a lexicographic increasing order constraint on the matrix x to break symmetry.
+objective: The problem is a feasibility problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

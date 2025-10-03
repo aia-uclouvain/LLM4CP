@@ -1,0 +1,13 @@
+Balanced Academic Curriculum Problem
+The Balanced Academic Curriculum Problem is a classic constraint programming problem that involves scheduling courses for students over a set of periods, subject to various constraints such as prerequisites, course loads, and period capacities.
+
+The main decision variables in this problem are the course periods, which represent the period to which each course is assigned. Additionally, there are variables that represent the number of courses and credits in each period.
+
+The key constraints in this problem can be described as follows: 
+- Each course must be assigned to a period.
+- A course cannot be scheduled before its prerequisites.
+- The total number of credits in each period must be within the allowed range.
+- The number of courses in each period must also be within the allowed range.
+- The goal is to minimize the maximum load (i.e., the total number of credits) in any period.
+
+The objective of the problem is to assign a period to every course while satisfying the given constraints and minimizing the maximum load in any period. This means that the solution should aim to distribute the courses evenly across the periods, ensuring that no period has an excessive number of credits or courses, while also respecting the prerequisites and other constraints.

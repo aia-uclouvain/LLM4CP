@@ -1,0 +1,5 @@
+name: Set Partition Problem
+description: The Set Partition Problem is a classic problem in computer science and operations research that involves partitioning a set of integers into two or more subsets such that the sum of the elements in each subset is equal, and the sum of the squares of the elements in each subset is also equal.
+variables: $a, x, y, A, B, setA, setB, S$ - These variables represent the sets or partitions of the integers, where $a$ and $x$ are binary matrices, $y$ is an array of integers, $A$ and $B$ are sets, and $setA$ and $setB$ are sets of integers.
+constraints: $|A| = |B|, \sum_{i \in A} i = \sum_{i \in B} i, \sum_{i \in A} i^2 = \sum_{i \in B} i^2, A \cup B = S, A \cap B = \emptyset$ - These constraints ensure that the two subsets have the same cardinality, the sum of their elements is equal, the sum of the squares of their elements is equal, and that the subsets are disjoint and cover the entire set $S$.
+objective: The objective of the problem is to find a partition of the set $S$ that satisfies the given constraints, there is no specific value to minimize or maximize.

@@ -1,0 +1,12 @@
+The name of the problem is Plotting. 
+Plotting is about a game where a player has a grid of colored blocks and a hand that can hold one color at a time. The goal is to remove as many blocks as possible from the grid by shooting down columns or rows, with the hand changing color after each shot. 
+The main variables are: 
+- fpRow and fpCol, which represent the row and column where the player shoots, 
+- grid, which represents the state of the grid at each step, 
+- hand, which represents the color of the hand at each step. 
+The basic restrictions or rules of the problem are: 
+- The player can only shoot down one column or row at a time, 
+- The player can only remove blocks of the same color as the hand, 
+- After each shot, the hand changes color to the color of the block that was removed, 
+- The game ends after a certain number of steps, and the goal is to have as few blocks remaining as possible. 
+The goal of the problem is to find a sequence of shots that minimizes the number of blocks remaining on the grid after the given number of steps.

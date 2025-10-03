@@ -1,8 +1,7 @@
 ### Github's boilerplate .gitignore ###
 
 # Secret keys
-app/assets/env/keys.txt
-
+app/assets/env/*
 # Outputs
 
 data/_output/

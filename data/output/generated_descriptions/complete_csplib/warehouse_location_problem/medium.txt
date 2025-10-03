@@ -1,0 +1,23 @@
+**Warehouse Location Problem**
+The Warehouse Location Problem is a classic problem in operations research and constraint programming. 
+
+**Description**
+It involves a company that needs to supply goods to a set of stores from a set of potential warehouse locations. Each warehouse has a limited capacity and incurs a fixed construction cost. The goal is to determine which warehouses to build and which warehouse should supply which store to minimize the total cost, including both construction and transportation costs.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- **Warehouse opening decisions**: which warehouses to build, often represented as a binary variable (0/1) for each potential warehouse location.
+- **Store supply decisions**: which warehouse should supply each store, often represented as an integer variable for each store, indicating the index of the supplying warehouse.
+
+**Constraints**
+The key constraints in this problem are:
+- **Capacity constraints**: each warehouse can supply at most a certain number of stores, based on its capacity.
+- **Supply constraints**: each store must be supplied by exactly one warehouse.
+- **Opening constraints**: a warehouse must be open to supply any stores.
+
+**Objective**
+The objective of the Warehouse Location Problem is to minimize the total cost, which includes:
+- **Construction costs**: the fixed cost of building each warehouse.
+- **Transportation costs**: the cost of transporting goods from each warehouse to the stores it supplies. 
+
+This problem is a complex optimization problem that requires careful consideration of both the construction and transportation costs to find the optimal solution.

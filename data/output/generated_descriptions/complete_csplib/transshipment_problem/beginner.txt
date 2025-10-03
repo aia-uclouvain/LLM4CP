@@ -1,0 +1,12 @@
+The problem is called the Transportation Problem. 
+It's about delivering items from warehouses to customers through transshipment points in the most cost-effective way. 
+The main variables are: 
+- the amount of items transported from a warehouse to a transshipment point (amountWT), 
+- the amount of items transported from a transshipment point to a customer (amountTC), 
+- the total cost of transportation (totalCost). 
+These variables represent the quantity of goods being moved between locations and the overall cost of doing so. 
+The basic restrictions or rules are: 
+- the amount of items transported through each transshipment point must be balanced (i.e., the amount coming in must equal the amount going out), 
+- each customer's demand must be met, 
+- the amount of items transported from each warehouse cannot exceed its available stock. 
+The goal of the problem is to minimize the total cost of transportation (totalCost) while meeting all the demands and following the rules.

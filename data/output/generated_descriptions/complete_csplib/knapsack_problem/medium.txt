@@ -1,0 +1,13 @@
+**Knapsack Problem**
+The Knapsack Problem is a classic constraint programming problem that involves finding the optimal way to pack a set of items of different weights and values into a knapsack of limited capacity.
+
+**Decision Variables**
+The main decision variables in the Knapsack Problem are the binary variables `x[i]`, which represent whether the `i-th` item is included (1) or excluded (0) from the knapsack.
+
+**Constraints**
+The key constraints in the Knapsack Problem are:
+* The total weight of the items included in the knapsack must not exceed the knapsack's capacity.
+* Each item can either be included or excluded from the knapsack, but not both.
+
+**Objective**
+The objective of the Knapsack Problem is to maximize the total value of the items included in the knapsack, while not exceeding the knapsack's capacity. In other words, the goal is to find the optimal subset of items that provides the highest total value while staying within the weight limit.

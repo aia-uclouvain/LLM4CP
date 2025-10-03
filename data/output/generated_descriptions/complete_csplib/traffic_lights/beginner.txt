@@ -1,0 +1,14 @@
+Traffic Lights Problem
+The problem is about finding the possible configurations of traffic lights at a four-way junction. 
+There are eight traffic lights in total, with four for vehicles and four for pedestrians. 
+The vehicle traffic lights can be red, red-yellow, green, or yellow, while the pedestrian traffic lights can only be red or green.
+
+The main variables are:
+- V1 to V4: the colors of the vehicle traffic lights
+- P1 to P4: the colors of the pedestrian traffic lights
+
+The basic restrictions or rules of the problem are:
+- The traffic lights must follow certain allowed combinations, which are (r,r,g,g), (ry,r,y,r), (g,g,r,r), and (y,r,ry,r).
+- The combinations must be applied to each pair of adjacent traffic lights (i.e., (Vi, Pi, Vj, Pj) for 1<=i<=4, j=(1+i)mod 4).
+
+The goal of the problem is to find all possible assignments of colors to the traffic lights that satisfy the given constraints.

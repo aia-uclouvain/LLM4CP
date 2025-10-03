@@ -1,0 +1,5 @@
+Latin Square Completion
+The problem is about completing a partially filled Latin square, which is an N x N matrix where each row and column contains each number from 1 to N exactly once.
+The main decision variables are the elements of the puzzle matrix, where puzzle[i,j] represents the number that should be placed in the cell at row i and column j.
+The key constraints are: each row and column must contain each number exactly once, and the initial board must be respected, meaning that if a cell is already filled, the same number must be placed in that cell. Additionally, each cell must have a number assigned to it.
+The objective of the problem is to find a completion of the Latin square that satisfies all the constraints, which is a satisfaction problem, meaning that the goal is to find a solution that meets all the requirements, rather than optimizing a specific objective function.

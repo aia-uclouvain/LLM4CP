@@ -1,0 +1,5 @@
+N-Queens Completion Problem
+The problem is about finding a way to place queens on a chessboard such that no two queens attack each other, given some pre-placed queens and restrictions on certain diagonals.
+The main variables are the positions of the queens on the chessboard, represented as a matrix or a set of coordinates.
+The basic restrictions are that no two queens can be in the same row, column, or diagonal, and that certain diagonals are restricted.
+The goal is to find a solution that satisfies all the restrictions and places the maximum number of queens on the board.
