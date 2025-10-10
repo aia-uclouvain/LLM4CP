@@ -35,7 +35,7 @@ def config_parser():
                         help='.txt directory input path.')
 
     parser.add_argument("--descriptions_dir", type=str,
-                        default="data/output/generated_descriptions/hakank_csplib",
+                        default="data/output/generated_descriptions",
                         help="path of the folder containing the generated descriptions")
 
     parser.add_argument("--merged_mzn_source_path", type=str,

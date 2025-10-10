@@ -116,15 +116,20 @@ class Storage:
                     file_content = file.read()
                     filename_stripped = filename[:-4]
 
+                    # Save descriptions to files
+                    output_folder = os.path.join(self.args.descriptions_dir, filename_stripped)
+                    if os.path.exists(output_folder) and len(os.listdir(output_folder)) >= 4:
+                        continue  # Skip if descriptions already exist
+
+                    os.makedirs(output_folder, exist_ok=True)
+                    print("Processing file:", filename)
+                    print(output_folder)
                     # Generate descriptions for different expertise levels
                     descriptions = {}
                     for level, template in self.templates.items():
                         prompt = template.format(source_code=file_content)
                         descriptions[level] = self.descriptor_model.complete(prompt=prompt).text
-
-                    # Save descriptions to files
-                    output_folder = os.path.join(self.args.descriptions_dir, filename_stripped)
-                    os.makedirs(output_folder, exist_ok=True)
+                    
 
                     for level, description in descriptions.items():
                         with open(os.path.join(output_folder, f"{level}.txt"), "w", encoding="utf-8") as f:
