@@ -1,0 +1,14 @@
+Magic Square Problem
+The Magic Square problem is about filling a square grid with distinct numbers from 1 to n^2, where n is the size of the grid, such that the sum of numbers in each row, column, and diagonal is the same.
+
+The main decision variables are x, a 2D array representing the grid, where x[i,j] is the number in the i-th row and j-th column, and s, a variable representing the sum of numbers in each row, column, and diagonal.
+
+The key constraints are: 
+- all numbers from 1 to n^2 are used exactly once, 
+- the sum of numbers in each row is equal to s, 
+- the sum of numbers in each column is equal to s, 
+- the sum of numbers in the main diagonal is equal to s, 
+- the sum of numbers in the secondary diagonal is equal to s, 
+- the sum s is equal to the magic constant, which is (n * (n^2 + 1)) / 2.
+
+The objective of the problem is to find a solution that satisfies all these constraints, which means finding a magic square of size n. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that meets all the constraints.

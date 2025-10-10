@@ -1,0 +1,8 @@
+Work-shift scheduling problem
+The problem is about assigning six workers to three working shifts while satisfying certain constraints on the number of workers per shift and individual worker availability.
+The main decision variables are `x[1..p]`, where `x[i]` represents the shift assigned to worker `i`. The shifts are numbered from 1 to 3.
+The key constraints are: 
+- Each shift has a specific lower and upper bound on the number of workers that can be assigned to it. 
+- Alan cannot work on the first shift. 
+- Bob can only work on the third shift.
+The problem's objective is to find a feasible assignment of workers to shifts that satisfies all the given constraints. There is no explicit objective function to minimize or maximize, the goal is to find a valid schedule.

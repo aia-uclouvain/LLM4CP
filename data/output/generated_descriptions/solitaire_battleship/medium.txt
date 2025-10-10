@@ -1,0 +1,23 @@
+**Solitaire Battleship Problem**
+
+The Solitaire Battleship problem is a classic constraint programming problem that involves finding the locations of battleships, cruisers, destroyers, and submarines on a 10x10 grid, given some hints about their locations.
+
+**Decision Variables**
+
+The main decision variable in this problem is a 10x10 grid, where each cell represents a square on the grid. The value of each cell is either 0 (water) or 1 (occupied by a ship). The grid is represented by the `grid` array in the Minizinc model.
+
+**Constraints**
+
+The problem has several constraints that must be satisfied:
+
+* The number of occupied squares in each row and column must match the given tallies (`row_tallies` and `column_tallies`).
+* If a hint indicates that a square is water, then the corresponding cell in the grid must be 0.
+* If a hint indicates that a square is a submarine (circle), then the corresponding cell in the grid must be 1, and all adjacent cells must be 0.
+* If a hint indicates that a square is a middle, top, bottom, left, or right part of a ship, then the corresponding cell in the grid must be 1, and the adjacent cells must satisfy certain conditions (e.g., the top part of a ship must have a cell below it that is also 1).
+* No ship can be placed diagonally or in a way that would cause it to overlap with another ship.
+
+**Objective**
+
+The objective of the problem is to find a solution that satisfies all the constraints. There is no explicit objective function to minimize or maximize, as the goal is simply to find a feasible solution.
+
+Note that the problem does not specify the exact number of each type of ship, which makes it a bit more challenging. The model provided is a simplified version of the problem, and there are additional constraints that could be added to make it more realistic (e.g., constraints on the number of cruisers, submarines, etc.).

@@ -1,0 +1,5 @@
+Kakuro puzzle
+The Kakuro puzzle is a classic constraint programming problem that involves filling in numbers on a grid to satisfy certain constraints. 
+The main decision variables in this problem are the values of the cells in the grid, represented by the array x, where x[i, j] is the value of the cell at row i and column j. 
+The key constraints in this problem are that the sum of the numbers in each entry must match the clue associated with it, and no digit can be duplicated in any entry. Additionally, some cells are blank and must be filled in according to the given clues. 
+The objective of the problem is to find a solution that satisfies all the constraints, with no specific minimization or maximization goal. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the requirements.

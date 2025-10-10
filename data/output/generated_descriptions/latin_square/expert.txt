@@ -1,0 +1,5 @@
+name: Latin Square Problem
+description: The Latin Square problem is a classical problem in constraint programming that involves finding an n × n table filled with n different symbols, such that each symbol occurs exactly once in each row and exactly once in each column.
+variables: $x_{i, j}$ for $i, j \in \{1, 2, ..., n\}$, where $x_{i, j}$ represents the symbol in the $i^{th}$ row and $j^{th}$ column of the table, and is a decision variable that takes a value from the set $\{1, 2, ..., n\}$.
+constraints: $\forall i \in \{1, 2, ..., n\}: \text{all\_different}(\{x_{i, j} | j \in \{1, 2, ..., n\}\}) \land \text{all\_different}(\{x_{j, i} | j \in \{1, 2, ..., n\}\}) \land \forall i \in \{1, 2, ..., n\}: x_{1, i} = i \land x_{i, 1} = i$, which ensure that each row and each column contains each symbol exactly once, and that the first row and first column are in a specific order to break symmetry.
+objective: The problem is a satisfaction problem, meaning that the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

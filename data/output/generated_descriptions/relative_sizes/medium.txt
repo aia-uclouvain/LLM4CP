@@ -1,0 +1,13 @@
+Relative sizes puzzle 
+is a classic constraint programming problem. 
+The problem is about finding the value of the word "BEETLES" where each letter represents a unique digit, given certain conditions and comparisons between the totals of different words, also represented by unique digits.
+
+The main decision variables are the digits a, b, e, f, g, i, l, n, s, and t, which represent the unique digits for each letter in the words. 
+These variables are used to construct the values of words like "BEES", "SNAIL", "FLEAS", "ANT", "ANTS", "GNAT", "FLIES", "FLEA", and "BEETLES".
+
+The key constraints are that each letter consistently stands for the same digit, leading digits cannot be zero, and the total of four "BEES" and a "SNAIL" is greater than the total of eight "FLEAS" and an "ANT". 
+Additionally, the total of 18 "ANTS" and a "GNAT" is greater than the total of 18 "FLIES" and a "FLEA". 
+All the digits used must be different.
+
+The problem's objective is to find the value of "BEETLES" that satisfies all the given conditions, which is essentially a satisfaction problem rather than an optimization problem, as indicated by the "solve satisfy" statement in the MiniZinc model. 
+The model aims to find a solution that meets all the constraints, and the output will be the value of "BEETLES" that fulfills these requirements.

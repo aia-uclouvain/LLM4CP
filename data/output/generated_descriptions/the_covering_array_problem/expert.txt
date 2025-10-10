@@ -1,0 +1,7 @@
+name: Covering Array Problem
+description: The Covering Array Problem is a combinatorial problem that involves finding a matrix with a specific structure, where each row represents a test case and each column represents a parameter. The goal is to find a matrix such that every possible combination of values for a subset of rows is covered by at least one column.
+variables: CA: matrix indexed by [int(1..k), int(1..b)] of int(1..g), p[i][j], v[i][j] 
+These are decision variables where CA represents the covering array, p[i][j] represents the position of the jth value of the ith 't'-combination, and v[i][j] represents the jth value of the ith 't'-combination.
+constraints: forAll rows : sequence (size t) of int(1..k) . (forAll i : int(2..t) . rows(i-1) < rows(i)) -> forAll values : sequence (size t) of int(1..g) . exists column : int(1..b) . forAll i : int(1..t) . CA[rows(i), column] = values(i), AllDifferent(p[i]), Channel(p[i], v[i]), v[:, j] in table
+These constraints ensure that every possible combination of values for a subset of rows is covered by at least one column, and that the values in the covering array are consistent with the positions and values of the 't'-combinations.
+objective: The objective of the problem is to determine whether a covering array with the given parameters (t, k, g, b) exists, which is a decision problem and does not involve minimizing or maximizing a specific value.

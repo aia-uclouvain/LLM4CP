@@ -1,0 +1,5 @@
+name: Constraint Satisfaction Problem with Global Constraints
+description: This problem involves finding a solution that satisfies a set of global constraints, specifically strictly_decreasing, strictly_increasing, and decreasing constraints, on a given array of variables.
+variables: $x = [x_1, x_2, x_3, x_4]$, where $x_i$ are decision variables representing the elements of the array, which are integers between 1 and 8.
+constraints: $cp1d(x, [8,4,3,1]) \wedge strictly\_decreasing(x)$, where $cp1d(x, y)$ is a constraint that checks if two arrays are equal, and $strictly\_decreasing(x)$ is a constraint that checks if the elements of the array $x$ are strictly decreasing, meaning $x_i > x_{i+1}$ for all $i$.
+objective: The objective of this problem is to find a solution that satisfies the given constraints, which is a feasibility problem, meaning the goal is to find a solution that meets all the constraints, rather than minimizing or maximizing a specific value.

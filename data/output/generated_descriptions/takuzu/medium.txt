@@ -1,0 +1,5 @@
+Takuzu
+The Takuzu problem is a logic-based number placement puzzle where the goal is to fill a grid with 1s and 0s, following specific rules.
+The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents the value (0 or 1) to be placed in the `i-th` row and `j-th` column of the grid.
+The key constraints of the problem are: each row and column must have an equal number of 0s and 1s, no more than two of the same values can be adjacent in a row or column, and no two rows or columns can be identical. 
+The objective of the problem is to find a solution that satisfies all the constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

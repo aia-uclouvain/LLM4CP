@@ -1,0 +1,6 @@
+The problem is called the "Nine-Digit Arrangement" or "Gardner's Problem". 
+It is about arranging the digits 1 through 9 in two different multiplication equations, such that both equations yield the same product. 
+The main decision variables are A, B, C, D, E, F, G, H, and I, which represent the digits 1 through 9, each used exactly once. 
+The key constraints are that each digit is used only once, the two multiplication equations must have the same product, and the product must be equal to 7448. 
+Additionally, a symmetry-breaking constraint is used to ensure that the first multiplicand in the second equation is less than or equal to the second multiplicand. 
+The objective of the problem is to find all possible arrangements of the digits that satisfy these constraints, with a particular focus on finding the arrangement that yields the maximum product, which is 7448.

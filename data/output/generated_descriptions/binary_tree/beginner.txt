@@ -1,0 +1,15 @@
+Binary Tree Problem
+The problem is about creating binary trees from a given set of nodes and their successors. 
+In everyday terms, imagine a company with several employees, and each employee reports to another employee, except for the top managers who don't report to anyone. The goal is to group these employees into separate teams, where each team is like a binary tree, with a manager at the top and employees below them.
+
+The main variables are:
+- tree: an array that shows which node each node reports to, or its successor.
+- num_trees: the number of separate binary trees to create.
+- parents: a matrix that keeps track of the path from each node to its top manager.
+
+The basic restrictions or rules are:
+- Each node must report to another node, except for the top managers.
+- The number of separate binary trees must be equal to the number of different top managers.
+- The path from each node to its top manager must be unique.
+
+The goal of the problem is to find the number of separate binary trees and the structure of these trees, given the successors of each node. In other words, the problem wants to minimize or maximize the number of binary trees that can be created from the given set of nodes and their successors, but in this case, the goal is to satisfy the given constraints.

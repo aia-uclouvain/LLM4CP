@@ -1,0 +1,5 @@
+Enigma puzzle Eight times
+The problem is about finding a special 5-digit number that meets certain conditions when multiplied by 8. 
+The main variables are the 5-digit numbers x and y, and the individual digits that make up these numbers, x_a and y_a. 
+The basic restrictions are that the 5-digit number x must consist of five different digits, not start with zero, and when multiplied by 8, it produces another 5-digit number y with different digits. 
+The goal is to find the 5-digit number x such that the sum of its digits is greater than the sum of the digits of the product y.

@@ -1,0 +1,5 @@
+The problem is called the Among Diff 0 problem. 
+It is about finding the number of variables in a collection that take a value different from 0. 
+The main decision variables are `nvar`, which represents the number of variables that are different from 0, and `x`, an array of variables that can take values between 0 and 5. 
+The key constraints are that `nvar` must be equal to the sum of the number of variables in `x` that are not equal to 0. 
+The problem's objective is to satisfy the constraints, specifically the `among_diff_c` constraint, which ensures that `nvar` is correctly calculated based on the values of `x`. In other words, the goal is to find a solution where the number of non-zero variables in `x` matches the value of `nvar`.

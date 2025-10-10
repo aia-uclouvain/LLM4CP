@@ -1,0 +1,12 @@
+The problem is called "Add or Multiply."
+It is about a scenario where five boys are given different amounts of money to spend on goodies at a corner shop, with the condition that each goodie must cost a different exact number of half-pennies. The boys must buy the same number of goodies, and the prices of the goodies must satisfy a unique condition: when the prices are multiplied together, the result must be the same as when they are added together.
+
+The main decision variables are `total`, which represents the total amount of money spent by each boy, and `x`, which represents the number of half-pennies for each goodie purchased by each boy.
+
+The key constraints are: 
+- Each boy buys the same number of goodies, and the prices of the goodies are different exact numbers of half-pennies.
+- The product of the prices of the goodies purchased by each boy is equal to the sum of the prices.
+- In one case, each of the prices is an exact whole number of pence.
+- The total amount spent by each boy is greater than zero, and the prices of the goodies purchased by each boy are in non-decreasing order.
+
+The problem's objective is to find the total amount of money spent by all the boys, which is the sum of the `total` variables. The model is solved as a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

@@ -1,0 +1,17 @@
+Traveling Tournament Problem with Predefined Venues
+The Traveling Tournament Problem with Predefined Venues is a classic constraint programming problem that involves scheduling a tournament between multiple teams while minimizing the total travel distance. In this problem, the venue of each game has already been decided, and the goal is to find a compact single round-robin schedule that minimizes the total travel distance.
+
+The main decision variables in this problem are:
+- `opponent[i, k]`: the opponent of team `i` in round `k`
+- `venue[i, k]`: a binary variable indicating whether team `i` plays at home in round `k`
+- `travel[i, k]`: the distance traveled by team `i` to play in round `k`
+
+The key constraints in this problem can be described as follows:
+- Each team plays against every other team exactly once.
+- The venue of each game is predefined, and the schedule must respect these venues.
+- A team cannot play against itself.
+- If team `i` plays against team `j` in round `k`, then team `j` plays against team `i` in round `k`.
+- There can be at most 3 consecutive home games and at most 3 consecutive away games for each team.
+- The total travel distance is calculated based on the venues of the current and next round games.
+
+The objective of this problem is to minimize the total travel distance, which is calculated by summing up the travel distances of all teams over all rounds. The problem is typically solved using constraint programming techniques, such as constraint satisfaction and optimization.

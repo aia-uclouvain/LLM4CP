@@ -1,0 +1,5 @@
+name: Pyramid of Numbers
+description: The Pyramid of Numbers is a puzzle where a pyramid is filled with numbers such that each number is the sum of the two numbers directly below it. The pyramid has a specific structure with some given numbers and some missing numbers that need to be found. The missing numbers at the base of the pyramid have an additional constraint that the middle number is the sum of the other two.
+variables: $x_1, x_2, ..., x_{15}, X, Y, Z$ - These are the decision variables representing the numbers in the pyramid, where $x_1$ to $x_{15}$ are the numbers in the pyramid and $X$, $Y$, $Z$ are the three missing numbers at the base of the pyramid.
+constraints: $x_i \geq 1 \forall i$, $x_i = x_{adds_i} + x_{adds_i+1} \forall i$, $X = x_{11}$, $Y = x_{13}$, $Z = x_{15}$, $Y = X + Z$ - These constraints ensure that all numbers in the pyramid are positive, each number is the sum of the two numbers below it, and the missing numbers at the base satisfy the additional constraint.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, there is no specific value to minimize or maximize.

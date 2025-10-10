@@ -1,0 +1,8 @@
+Set Packing Problem
+The Set Packing Problem is a classic problem in computer science and operations research that involves finding the largest number of mutually disjoint subsets from a given collection of subsets.
+
+The main decision variables in this problem are the binary variables `x`, where `x[i]` represents whether the `i-th` subset is included in the solution or not.
+
+The key constraints in this problem can be described as follows: each element in the universal set can be covered by at most one subset in the solution. This ensures that the subsets in the solution are mutually disjoint.
+
+The objective of the Set Packing Problem is to maximize the number of subsets included in the solution, which is represented by the variable `numNeeded`. This variable is calculated as the sum of the `x` variables, where each `x[i]` contributes 1 to the sum if the `i-th` subset is included in the solution. The goal is to find the largest possible value of `numNeeded`, which corresponds to the largest number of mutually disjoint subsets that can be selected from the given collection of subsets.

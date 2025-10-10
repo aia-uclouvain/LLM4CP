@@ -1,0 +1,5 @@
+Equation Puzzle
+The problem is about finding different combinations of fractions that can be added together to get the same result as multiplying them together. 
+The main variables are A, B, C, D, E, and F, which are numbers used to create fractions. 
+The basic restrictions are that each fraction must be unique and that the first fraction must be less than the second, and the second must be less than the third. 
+The goal is to find all possible combinations of these fractions where their sum equals their product.

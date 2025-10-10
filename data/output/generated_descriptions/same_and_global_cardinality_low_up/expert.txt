@@ -1,0 +1,9 @@
+name: Same and Global Cardinality Low Up Problem
+
+description: The problem involves finding two collections of variables, VARIABLES1 and VARIABLES2, where the variables of VARIABLES2 correspond to the variables of VARIABLES1 according to a permutation. Additionally, each value in the VALUES collection should be taken by at least a minimum and at most a maximum number of variables in the VARIABLES1 collection.
+
+variables: $variables1 = [x_1, x_2, ..., x_n], variables2 = [y_1, y_2, ..., y_n], values = [v_1, v_2, ..., v_m]$ where $x_i$ and $y_i$ are decision variables representing the values assigned to the $i^{th}$ variable in VARIABLES1 and VARIABLES2 respectively, and $v_i$ represents the $i^{th}$ value in the VALUES collection with attributes $val$, $omin$, and $omax$.
+
+constraints: $same(variables1, variables2), global\_cardinality\_low\_up\_table(variables1, values), global\_cardinality\_low\_up\_table(variables2, values)$ where $same(variables1, variables2)$ ensures that the variables of VARIABLES2 correspond to the variables of VARIABLES1 according to a permutation, and $global\_cardinality\_low\_up\_table(variables, values)$ ensures that each value in the VALUES collection is taken by at least $omin$ and at most $omax$ variables in the VARIABLES collection.
+
+objective: The objective of the problem is to satisfy all the given constraints, which is achieved by finding a feasible assignment of values to the variables in VARIABLES1 and VARIABLES2 that meets the permutation and cardinality requirements.

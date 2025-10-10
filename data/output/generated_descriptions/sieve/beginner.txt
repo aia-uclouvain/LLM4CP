@@ -1,0 +1,8 @@
+Sieve Problem
+The problem is about finding all the numbers that can divide another number exactly without leaving a remainder. 
+The main variables are: 
+- n, which is the number we want to find divisors for, 
+- sieve, which is a list of numbers where each number says whether its position is a divisor of n or not, 
+- s, which is a set of numbers that are divisors of n.
+The basic restrictions are that a number in the list is marked as a divisor if it can divide n exactly, and it's added to the set of divisors if it can do so.
+The goal of the problem is to identify all the divisors of the given number n and list them out.

@@ -1,0 +1,5 @@
+Number Lock Problem
+The problem is about cracking a 3-digit code for a number lock based on given hints.
+The main decision variables are the elements of the array `x`, which represent the 3-digit code to be found, with each element being a digit from 0 to 9.
+The key constraints are that each hint provided must be satisfied: for each hint, a certain number of digits must be correct and in the correct position, and a certain number of digits must be correct but in the wrong position. For example, the hint "682 - one number is correct and in the correct position" means that one of the digits in the code must match one of the digits in "682" and be in the same position.
+The objective of the problem is to find a 3-digit code that satisfies all the given hints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution that meets all the constraints.

@@ -1,0 +1,14 @@
+Bit Vector Problem
+The problem is about finding a number that Alice picked, where she multiplies it by two and then inverts the last 4 bits of the result, and the result is the same as the initial number.
+The main variables are: 
+- num: the initial number Alice picked
+- num_x: the binary representation of num
+- num2: the result of multiplying num by 2
+- num2_x: the binary representation of num2
+- num3: the result of inverting the last 4 bits of num2
+- num3_x: the binary representation of num3
+The basic restrictions are: 
+- num is multiplied by 2 to get num2
+- the last 4 bits of num2 are inverted to get num3
+- num is equal to num3
+The goal is to find the value of num that satisfies these conditions.

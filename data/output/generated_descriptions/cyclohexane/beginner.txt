@@ -1,0 +1,5 @@
+Hakan Kjellerstrand's Non-Linear Problem
+The problem is about finding the values of three variables, x, y, and z, that satisfy a set of complex mathematical equations. 
+The main variables are x, y, and z, which are just numbers that we want to find. 
+The basic restrictions or rules of the problem are that these numbers must make three specific mathematical equations true. These equations involve multiplying and adding the numbers together in certain ways. 
+The goal of the problem is to find values of x, y, and z that make all three equations true at the same time, which is known as "satisfying" the equations.

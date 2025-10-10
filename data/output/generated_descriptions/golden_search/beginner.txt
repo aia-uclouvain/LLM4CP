@@ -1,0 +1,5 @@
+The problem is called Golden Search. 
+It's about finding the best value of something, let's call it "x", that makes another value, "z", as big as possible. 
+The main variables are "x" and "z". "x" is a number that we can choose, and "z" is a result that depends on "x". 
+The basic restriction is that "x" must be between -1.0 and 3.0. 
+The goal is to maximize "z", which means finding the value of "x" that makes "z" the largest, and "z" is calculated by subtracting a special number (called exp(x)) from "x".

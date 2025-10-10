@@ -1,0 +1,5 @@
+The problem is called the "In Same Partition" problem. 
+It is about assigning two variables to values that belong to the same partition in a given collection of partitions. 
+The main decision variables are `var1` and `var2`, which represent the values to be assigned, and `s`, which represents the partitions. 
+The key constraints are that `var1` and `var2` must be assigned to values that belong to the same partition in `s`, and that `s` must be equal to a given collection of partitions. 
+The problem's objective is to find an assignment of `var1` and `var2` that satisfies the constraint that they belong to the same partition, without any specific objective function to minimize or maximize, as the problem is a satisfaction problem.

@@ -1,5 +1,0 @@
-Quasigroup Existence Problem
-The problem is about finding a quasigroup, which is a mathematical structure that satisfies certain properties. 
-The main variables are the order of the quasigroup (n) and the multiplication table (quasiGroup). 
-The basic restrictions are that each element occurs exactly once in each row and column, and certain multiplication axioms hold. 
-The goal is to find a quasigroup that satisfies these conditions.

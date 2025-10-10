@@ -1,0 +1,7 @@
+Antisymmetric Relation Problem
+The problem is about modeling an antisymmetric relation, which is a binary relation between elements of a set that satisfies two properties: no element is related to itself, and if one element is related to another, then the second element is not related to the first.
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents whether element `i` is related to element `j`. The value of `x[i, j]` is 1 if `i` is related to `j`, and 0 otherwise.
+The key constraints are: 
+- No element is related to itself, meaning that the diagonal elements of the `x` array are all 0.
+- If element `i` is related to element `j`, then element `j` is not related to element `i`, meaning that if `x[i, j]` is 1, then `x[j, i]` is 0.
+The problem's objective is to find an assignment of values to the `x` array that satisfies the antisymmetric relation constraints. The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

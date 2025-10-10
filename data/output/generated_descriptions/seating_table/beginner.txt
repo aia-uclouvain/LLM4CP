@@ -1,0 +1,5 @@
+Table Seating Problem
+The problem is about seating couples around a table so that each person sits next to someone of the opposite sex who is not their spouse.
+The main variables are the seating arrangement (x) and the gender of each person (gender), which determine who sits where and whether they are male or female.
+The basic restrictions are that each person must sit next to someone of the opposite sex and not their spouse, and that each seat at the table must be occupied by a different person.
+The goal of the problem is to find a seating arrangement that satisfies these rules, with no specific objective to minimize or maximize, the goal is to simply find a valid arrangement.

@@ -1,0 +1,5 @@
+name: Freight Transfer Problem
+description: The problem involves transporting a certain amount of freight using a fleet of trucks with different capacities and costs. The goal is to determine the optimal number of trucks of each size to use in order to minimize the total cost while ensuring that all the freight is transported.
+variables: $x_1, x_2, x_3, x_4$ - These are decision variables representing the number of trucks of each size to use, where $x_i$ is the number of trucks of size $i$ to use. 
+constraints: $\sum_{i=1}^{4} x_i \cdot capacity_i \geq transport$, $x_i \leq available_i$ for $i = 1, 2, 3, 4$ - These constraints ensure that the total amount of freight transported is at least the required amount, and that the number of trucks of each size used does not exceed the available number of trucks of that size.
+objective: Minimize $z = \sum_{i=1}^{4} x_i \cdot cost_i$ - The objective is to minimize the total cost of transporting the freight, which is calculated as the sum of the costs of using each truck, where the cost of using a truck is the number of trucks of that size used multiplied by the cost per truck of that size.

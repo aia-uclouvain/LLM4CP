@@ -1,9 +1,0 @@
-The name of the problem is Crossfigure.
-
-This problem is about filling in a grid with numbers, similar to a crossword puzzle, but with numerical answers instead of words. The grid has some given numbers and some blank spaces, and the goal is to fill in the blank spaces with numbers that satisfy certain conditions.
-
-The main variables are the numbers in the grid, which are represented by variables such as A1, A4, A7, etc. for the across clues, and D1, D2, D3, etc. for the down clues. These variables are integers that range from 0 to 9999.
-
-The basic restrictions or rules of the problem are that the numbers in the grid must satisfy the conditions given in the clues. For example, the clue "1. 27 across times two" means that the number in the grid corresponding to A1 must be equal to twice the number corresponding to A27. Similarly, the clue "4. 4 down plus seventy-one" means that the number corresponding to A4 must be equal to the number corresponding to D4 plus 71.
-
-The goal of the problem is to find a solution that satisfies all the clues and fills in the entire grid with numbers. The problem does not specify any particular objective function to minimize or maximize, so the goal is simply to find a feasible solution.

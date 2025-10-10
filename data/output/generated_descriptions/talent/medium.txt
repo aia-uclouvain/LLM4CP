@@ -1,0 +1,15 @@
+The Talent Scheduling Problem.
+The Talent Scheduling Problem is about scheduling scenes in a movie or play with multiple actors, where each actor has a specific pay rate and is involved in a subset of scenes, and each scene has a specific duration. The goal is to find a schedule that minimizes the total idle cost, which is the sum of the waiting times of all actors, weighted by their pay rates.
+
+The main decision variables are: 
+- `slot`: an array that assigns a time slot to each scene, 
+- `scene`: an array that assigns a scene to each time slot, 
+- `firstSlot` and `lastSlot`: variables that represent the first and last time slots where each actor plays, 
+- `actorWait`: variables that represent the waiting time for each actor.
+
+The key constraints are: 
+- Each actor's first and last time slots must be within the time slots where they play, 
+- The waiting time for each actor is calculated based on the time slots where they do not play but are required to be present, 
+- The `slot` and `scene` arrays must be inverses of each other, meaning that the scene assigned to a time slot must be the same as the time slot assigned to that scene.
+
+The objective of the problem is to minimize the total idle cost, which is the sum of the waiting times of all actors, weighted by their pay rates. In other words, the goal is to find a schedule that minimizes the amount of time actors spend waiting, taking into account their pay rates.

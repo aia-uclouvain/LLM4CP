@@ -1,5 +1,0 @@
-Car Sequencing Problem
-The problem is about scheduling the production of cars on an assembly line, where each car has certain options that need to be installed. 
-The main variables are the sequence of cars to be produced, the options installed in each car, and the setup of the assembly line for each option.
-The basic restrictions are that each car must have the correct options installed, the assembly line must be set up correctly for each option, and the production sequence must meet certain constraints such as the maximum number of cars with a particular option in a row.
-The goal of the problem is to find a production sequence that satisfies all the constraints and minimizes a certain objective function, such as the total number of cars produced or the time taken to produce all the cars.

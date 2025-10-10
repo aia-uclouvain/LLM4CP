@@ -1,0 +1,15 @@
+**Greatest Combination Problem**
+The Greatest Combination Problem is a classic constraint programming problem that involves finding the greatest combination of numbers in a square grid, starting from the top and moving down row by row, with the option to move down, down to the right, or down to the left.
+
+**Decision Variables**
+The main decision variables in this problem are represented by the array `x`, where `x[i]` represents the column index of the chosen number in the `i-th` row. The value of `x[i]` determines which number to choose from the `i-th` row.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- The chosen number in each row must be within one column of the chosen number in the previous row.
+- The chosen numbers must be within the bounds of the grid.
+
+**Objective**
+The objective of this problem is to maximize the sum of the chosen numbers, represented by the variable `max_val`. The goal is to find the combination of numbers that yields the highest total value.
+
+In simpler terms, the problem is asking to find the best path through the grid, starting from the top and moving down, that results in the highest total value. The path can move down, down to the right, or down to the left, and the chosen numbers must be adjacent to each other in the previous row. The solution with the highest total value is considered the best solution.

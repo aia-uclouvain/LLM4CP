@@ -1,0 +1,5 @@
+Family Riddle 
+The problem is about two families, Leo's and Rene's, each having three boys and three girls, with certain conditions about their ages. 
+The main variables are the ages of the boys and girls in each family, which are represented by numbers from 0 to 9. 
+The basic restrictions are that no two children in a family can be the same age, the youngest child in each family is a girl, and in Rene's family, the youngest girl is a newborn (0 years old). Also, the sum of the ages of the girls equals the sum of the ages of the boys in each family, and the same applies to the sum of their squared ages. The total age of all children in both families is 60. 
+The goal is to find the ages of the children in each family that satisfy all these conditions.

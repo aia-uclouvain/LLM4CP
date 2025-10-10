@@ -1,0 +1,9 @@
+Uzbekian Puzzle
+The problem is about a salesman who visits five different cities and meets five traders. We need to figure out the order in which he visited the cities and met the traders.
+The main variables are the order of visiting cities (vstCty) and the order of meeting traders (mtTrader). These variables represent the sequence of cities the salesman visited and the sequence of traders he met.
+The basic restrictions or rules are: 
+- The salesman met one trader before another in a specific order.
+- He visited some cities in a specific order, with some cities coming after others.
+- He met a specific trader after visiting a certain city.
+- He visited one city immediately after meeting a specific trader.
+The goal of the problem is to find a sequence of cities and traders that satisfies all these rules.

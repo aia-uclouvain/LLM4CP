@@ -1,0 +1,5 @@
+Family Relations Problem
+The problem is about finding relationships between family members, such as siblings, cousins, and parents.
+The main variables are X and Y, which represent two people in the family. 
+The basic restrictions or rules of the problem are that X and Y must be related in a specific way, such as being cousins, and that their ages and relationships must match the given information.
+The goal of the problem is to find the values of X and Y that satisfy the given relationships, specifically that X is a cousin of Peter and that X is older than Y is not a requirement in this case, but rather to find a cousin of Peter.

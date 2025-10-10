@@ -1,0 +1,5 @@
+name: Numerica Problem
+description: The Numerica problem is a constraint satisfaction problem that involves finding values for two variables that satisfy a set of equations. The problem is a variant of a classical problem in constraint programming and is used to demonstrate the capabilities of constraint programming solvers.
+variables: $x = [x_1, x_2]$, where $x_1$ and $x_2$ are decision variables representing the values to be found, and are floating-point numbers.
+constraints: $x_1^2 + x_2^2 = 1.0 \wedge x_1^2 = x_2$, which are two equations that the decision variables must satisfy: the first equation is a circle equation, and the second equation is a parabola equation.
+objective: The objective of the problem is to find values for $x_1$ and $x_2$ that satisfy the given constraints, with no specific objective function to minimize or maximize, as the problem is a satisfaction problem.

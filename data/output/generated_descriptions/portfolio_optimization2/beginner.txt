@@ -1,0 +1,13 @@
+Portfolio Optimization Problem
+The problem is about investing money in different shares to get the best possible return, while following some rules to minimize risk.
+The main variables are: 
+- SHARES: a list of different shares to invest in
+- frac: the percentage of money to invest in each share
+- return: the total return on investment
+- ret: the estimated return for each share
+The basic restrictions or rules are: 
+- not investing more than a third of the money in high-risk shares
+- investing at least half of the money in shares from North America
+- investing all the available money
+- not investing more than 30% of the money in any single share
+The goal of the problem is to maximize the total return on investment.

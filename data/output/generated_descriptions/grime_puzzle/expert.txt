@@ -1,0 +1,5 @@
+name: Six Digit Number Problem
+description: The problem is to find a six-digit number abcdef such that the sum of its digits, the sum of its digits grouped in pairs, and the sum of its digits grouped in triples, are all related to a common value y by specific multiplication factors.
+variables: a, b, c, d, e, f, y, x = [a, b, c, d, e, f]. These are the decision variables representing the digits of the six-digit number and the common value y, where a, b, c, d, e, f are the individual digits and x is an array of these digits.
+constraints: y = a + b + c + d + e + f, 10a + b + 10c + d + 10e + f = 10y, 100a + 10b + c + 100d + 10e + f = 100y. These constraints represent the relationships between the sum of the digits, the sum of the digits grouped in pairs, and the sum of the digits grouped in triples, and the common value y.
+objective: satisfy. The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

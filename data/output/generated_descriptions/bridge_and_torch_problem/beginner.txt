@@ -1,0 +1,5 @@
+Bridge and Torch Problem
+The problem is about four people who need to cross a narrow bridge at night, and they have a torch that must be used when crossing. 
+The main variables are the people (A, B, C, D), the time it takes for each person to cross the bridge (1, 2, 5, 8 minutes), and the torch. 
+The basic restrictions are that the bridge can only hold two people at a time, and when two people cross together, they move at the slower person's pace. The torch must be used when crossing and must be carried by one of the people. 
+The goal is to find a way for all four people to cross the bridge in 15 minutes or less, by determining the order in which they should cross and the minimum number of steps required to achieve this.

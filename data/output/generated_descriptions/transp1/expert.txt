@@ -1,0 +1,15 @@
+name: Transportation Problem
+description: The transportation problem is a classic problem in operations research and optimization, which involves finding the most cost-effective way to transport a set of products from a set of sources to a set of destinations. The problem takes into account the supply and demand of each product at each source and destination, as well as the capacity of the transportation system and the cost of transporting each product from each source to each destination.
+
+variables: $Trans_{p,o,d}, z$ 
+These are the decision variables of the problem, where $Trans_{p,o,d}$ represents the amount of product $p$ transported from source $o$ to destination $d$, and $z$ represents the total transportation cost.
+
+constraints: 
+$z = \sum_{p \in P} \sum_{o \in O} \sum_{d \in D} Cost_{p,o,d} \cdot Trans_{p,o,d}$, 
+$\sum_{d \in D} Trans_{p,o,d} = Supply_{p,o}$, 
+$\sum_{o \in O} Trans_{p,o,d} = Demand_{p,d}$, 
+$\sum_{p \in P} Trans_{p,o,d} \leq Capacity$ 
+These constraints ensure that the total transportation cost is calculated correctly, that the supply of each product at each source is met, that the demand of each product at each destination is met, and that the capacity of the transportation system is not exceeded.
+
+objective: minimize $z$ 
+The objective of the problem is to minimize the total transportation cost, $z$, which is the sum of the costs of transporting each product from each source to each destination.

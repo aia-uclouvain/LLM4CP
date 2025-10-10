@@ -1,0 +1,5 @@
+The problem is called Lexicographically Greater. 
+It's about comparing two lists of numbers to see if one is "greater" than the other in a specific way. 
+The main variables are vector1 and vector2, which are lists of numbers. 
+The basic restrictions are that each number in the lists must be between 1 and 7, and the lists must be the same length. 
+The goal is to find values for vector1 and vector2 such that vector1 is lexicographically strictly greater than vector2, meaning it's "greater" when compared from left to right, and to show that vector1 is indeed [5,2,7,1] and vector2 is [5,2,6,2].

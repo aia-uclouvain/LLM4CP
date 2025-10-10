@@ -1,0 +1,5 @@
+The problem is called Balance. 
+It's about finding a set of numbers where the difference between the most frequent and least frequent numbers is a certain value. 
+The main variables are x, which is a list of numbers, bal, which is the difference between the most frequent and least frequent numbers, and gcc, which is a list of counts of how many times each number appears. 
+The basic restrictions are that each number in the list x must be between 1 and 7, and the difference between the most frequent and least frequent numbers must be equal to a certain value, which is 3 in this case. 
+The goal of the problem is to find a list of numbers x that satisfies these restrictions, and to calculate the difference between the most frequent and least frequent numbers, which is stored in the variable bal.

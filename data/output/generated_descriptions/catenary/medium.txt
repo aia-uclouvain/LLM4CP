@@ -1,0 +1,10 @@
+Catenary Problem
+The catenary problem is about finding the shape of a hanging chain under its own weight, given the distance between its endpoints and the length of the chain. 
+
+The main decision variables are the y-coordinates of the endpoints of the chainlinks, represented by the array `y`. These variables determine the shape of the hanging chain.
+
+The key constraints are: 
+- The chain's endpoints are fixed at specific x-coordinates and y-coordinates (0 and L for the x-coordinates, and 0 for the y-coordinates).
+- The length of each link of the chain is limited, which translates to a constraint on the distance between consecutive endpoints of the chainlinks.
+ 
+The objective of the problem is to minimize the potential energy of the chain, represented by the variable `z`, which is calculated as the sum of the average y-coordinates of each link, multiplied by the weight of the chain (assumed to be uniform). The solution to this problem is known to be a catenary curve, which is a hyperbolic cosine curve.

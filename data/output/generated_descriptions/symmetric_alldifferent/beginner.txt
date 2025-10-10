@@ -1,0 +1,5 @@
+Symmetric Alldifferent Problem
+The problem is about creating pairs of items in a way that each item is connected to another unique item, and this connection is two-way. 
+The main variables are the items (represented by the array x), and what they mean is that each item is assigned another item to be its pair.
+The basic restrictions or rules of the problem are that each item must be paired with another item, and this pairing must be unique and two-way, meaning if item A is paired with item B, then item B must also be paired with item A.
+The goal of the problem is to find all possible ways to create these pairs while following the rules, without trying to minimize or maximize anything, but rather to satisfy the given conditions.

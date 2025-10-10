@@ -1,0 +1,5 @@
+Peaceable Army of Queens
+The problem is about placing two armies of queens, one white and one black, on a chessboard in such a way that no queen from one army attacks any queen from the other army.
+The main variables are the size of the chessboard (n), the number of queens in each army (amountOfQueens), and the positions of the queens on the board (board).
+The basic restrictions are that each queen must be placed on the board, and no queen from one army can attack any queen from the other army. A queen can attack another queen if they are on the same row, column, or diagonal.
+The goal of the problem is to maximize the number of queens in each army, which means finding the largest possible number of queens that can be placed on the board without any queen from one army attacking any queen from the other army.

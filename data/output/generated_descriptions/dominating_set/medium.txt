@@ -1,0 +1,15 @@
+**Dominating Set Problem**
+The Dominating Set Problem is a classic problem in graph theory and computer science. 
+It involves finding a subset of vertices in a graph such that every other vertex in the graph is connected to at least one vertex in the subset.
+
+**Main Decision Variables**
+The main decision variable in this problem is `D`, which represents the dominating set of vertices. `D` is a set of vertices that satisfies the condition that every other vertex in the graph is connected to at least one vertex in `D`. The variable `K` represents the limit on the size of the dominating set.
+
+**Key Constraints**
+The key constraints in this problem are:
+- Every vertex in the graph must be connected to at least one vertex in the dominating set `D`.
+- The size of the dominating set `D` must be less than or equal to `K`.
+These constraints ensure that the dominating set is valid and does not exceed the specified size limit.
+
+**Problem Objective**
+The objective of the Dominating Set Problem is to find a dominating set of minimum size, i.e., to minimize the cardinality of `D`. In other words, the goal is to find the smallest subset of vertices that satisfies the condition that every other vertex in the graph is connected to at least one vertex in the subset.

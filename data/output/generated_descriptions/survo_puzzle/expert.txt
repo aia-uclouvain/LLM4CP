@@ -1,0 +1,11 @@
+name: Survo Puzzle
+description: The Survo puzzle is a logic puzzle where the task is to fill an m * n table with integers 1,2,...,m*n such that each of these numbers appears only once and their row and column sums are equal to integers given on the bottom and the right side of the table.
+variables: $x_{i,j}$, where $i \in \{1,2,...,r\}$ and $j \in \{1,2,...,c\}$. These are decision variables representing the value in the $i^{th}$ row and $j^{th}$ column of the table.
+constraints: 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} x_{i,j} \in \{1,2,...,r*c\}$, 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} x_{i,j} = matrix_{i,j}$ if $matrix_{i,j} > 0$, 
+$\bigwedge_{i=1}^{r} \sum_{j=1}^{c} x_{i,j} = rowsums_{i}$, 
+$\bigwedge_{j=1}^{c} \sum_{i=1}^{r} x_{i,j} = colsums_{j}$, 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} \bigwedge_{k=1}^{r} \bigwedge_{l=1}^{c} (i \neq k \vee j \neq l) \rightarrow x_{i,j} \neq x_{k,l}$. 
+These constraints ensure that each cell in the table contains a unique integer between 1 and $r*c$, the given values in the table are respected, the sum of each row and column equals the given row and column sums, and all numbers in the table are unique.
+objective: The objective of the Survo puzzle is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize. The goal is to find an assignment of values to the decision variables $x_{i,j}$ such that all constraints are satisfied.

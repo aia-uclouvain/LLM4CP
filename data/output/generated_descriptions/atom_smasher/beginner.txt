@@ -1,0 +1,5 @@
+The Digital Atom Smasher 
+It's about finding a special number called "ATOM" that can be broken down into smaller parts, where each part is a single digit. 
+The main variables are A, T, O, and M, which are single digits from 0 to 9 that make up the number "ATOM". 
+The basic rules are that the digits must be different from each other, and when you square a certain number, it must equal the value of "ATOM". Also, this certain number is equal to A plus a two-digit number made of T and O, plus M. 
+The goal is to find values for A, T, O, and M that satisfy these rules, and the model will output the solution in a specific format.

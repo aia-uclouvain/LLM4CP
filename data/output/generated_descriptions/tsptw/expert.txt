@@ -1,0 +1,22 @@
+name: Travelling Salesman Problem with Time Windows (TSPTW)
+description: The TSPTW is a variant of the classic Travelling Salesman Problem (TSP) where each city has a time window within which it must be visited. The problem involves finding the shortest possible tour that visits each city exactly once, while respecting the time windows and minimizing the total travel time, which includes waiting times at each city.
+variables: x, d, path, cum_times, wait_time, travel_distance, travel_time, total_wait_times. 
+These variables represent the following: 
+- x is an array of decision variables representing the circuit of cities to visit, 
+- d is an array of decision variables representing the distance between each pair of consecutive cities in the circuit, 
+- path is an array of decision variables representing the path of cities to visit in the order they are visited, 
+- cum_times is an array of decision variables representing the cumulative time spent traveling to each city, 
+- wait_time is an array of decision variables representing the waiting time at each city, 
+- travel_distance is the total distance traveled, 
+- travel_time is the total time spent traveling, and 
+- total_wait_times is the total waiting time.
+constraints: all_different(x) ∧ circuit(x) ∧ d[i] = dist[i,x[i]] ∧ all_different(path) ∧ circuit_path(x,path) ∧ cum_times[1] = dist[path[n],path[1]] ∧ cum_times[i] = cum_times[i-1] + dist[path[i-1],path[i]] + wait_time[path[i]] ∧ cum_times[i] ≥ time_windows[path[i],1] ∧ cum_times[i] ≤ time_windows[path[i],2]. 
+These constraints ensure that: 
+- each city is visited exactly once (all_different(x)), 
+- the circuit of cities is valid (circuit(x)), 
+- the distance between each pair of consecutive cities is correctly calculated (d[i] = dist[i,x[i]]), 
+- each city is visited in a unique order (all_different(path)), 
+- the path of cities is consistent with the circuit (circuit_path(x,path)), 
+- the cumulative time spent traveling to each city is correctly calculated (cum_times[1] = dist[path[n],path[1]] and cum_times[i] = cum_times[i-1] + dist[path[i-1],path[i]] + wait_time[path[i]]), 
+- and each city is visited within its time window (cum_times[i] ≥ time_windows[path[i],1] ∧ cum_times[i] ≤ time_windows[path[i],2]).
+objective: minimize travel_time (the total time spent traveling, including waiting times) or minimize travel_distance (the total distance traveled).

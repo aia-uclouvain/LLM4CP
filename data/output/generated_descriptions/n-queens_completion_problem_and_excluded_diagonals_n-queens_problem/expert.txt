@@ -1,0 +1,11 @@
+name: N-Queens Problem
+description: The N-Queens problem is a classic problem in computer science and chess, where the goal is to place N queens on an NxN chessboard such that no two queens attack each other.
+variables: $q_1, q_2, ..., q_n$ where $q_i$ represents the position of the queen in the $i^{th}$ row, 
+            $m_{i,j}$ where $m_{i,j}$ is a boolean variable representing whether a queen is placed at position $(i,j)$ on the board.
+            These variables represent the positions of the queens on the board.
+constraints: $\sum_{j=1}^{n} m_{i,j} = 1 \forall i \in \{1,2,...,n\}$ (each row has exactly one queen), 
+              $\sum_{i=1}^{n} m_{i,j} = 1 \forall j \in \{1,2,...,n\}$ (each column has exactly one queen), 
+              $\sum_{i=1}^{n} \sum_{j=1}^{n} m_{i,j} \cdot \delta(i+j=k) \leq 1 \forall k \in \{2,3,...,2n\}$ (no two queens are on the same diagonal), 
+              $\sum_{i=1}^{n} \sum_{j=1}^{n} m_{i,j} \cdot \delta(i-j=k) \leq 1 \forall k \in \{-n+1,-n+2,...,n-1\}$ (no two queens are on the same anti-diagonal).
+              These constraints ensure that each row and column has exactly one queen, and no two queens are on the same diagonal or anti-diagonal.
+objective: The objective of the problem is to find a feasible solution, i.e., a placement of N queens on the board such that all constraints are satisfied. The problem does not have a specific objective function to minimize or maximize.

@@ -1,0 +1,5 @@
+Penguin problem 
+This problem is about figuring out which birds can fly, given some rules about birds and their abilities. 
+The main variables are Tweety and Toto, which represent two birds, and "flies" which shows whether each bird can fly or not. 
+The basic rules are that birds can usually fly, but some birds, like penguins, are abnormal and cannot fly, and that Tweety is a penguin and Toto is an eagle. 
+The goal of the problem is to determine which of the two birds, Tweety or Toto, can fly, based on these rules.

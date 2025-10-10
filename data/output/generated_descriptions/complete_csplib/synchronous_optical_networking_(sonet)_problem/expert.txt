@@ -1,5 +1,0 @@
-name: SONET problem
-description: The SONET problem is a network design problem where the goal is to set up a network between n nodes, with certain nodes requiring a connection, by assigning them to rings with limited capacity, and the objective is to minimize the total number of Add-Drop Multiplexers (ADMs) used.
-variables: $x_{ij}$, where $x_{ij} = 1$ if node $j$ is assigned to ring $i$, and $x_{ij} = 0$ otherwise. These variables represent the assignment of nodes to rings.
-constraints: $\sum_{i=1}^{r} x_{ij} \leq r$, $\sum_{j=1}^{n} x_{ij} \leq capacity\_nodes_i$, $x_{ij} + x_{ik} \geq 2$ if demand$_{jk} = 1$, $x_{ij} \in \{0,1\}$. These constraints ensure that each ring's capacity is not exceeded, that nodes are assigned to rings, and that communicating nodes are on the same ring.
-objective: Minimize $\sum_{i=1}^{r} \sum_{j=1}^{n} x_{ij}$, which represents the total number of ADMs used.

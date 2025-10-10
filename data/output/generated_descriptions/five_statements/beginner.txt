@@ -1,0 +1,5 @@
+Five Statements Problem
+The problem is about figuring out which of five statements is true, where each statement says a different number of the statements are false. 
+The main variables are the statements themselves, represented by x[1] to x[5], where x[1] means "Exactly one of these statements is false", x[2] means "Exactly two of these statements are false", and so on. 
+The basic restrictions are that each statement can either be true or false, and the number of false statements must match what each statement says. 
+The goal is to find which statement is true, by figuring out which one matches the actual number of false statements.

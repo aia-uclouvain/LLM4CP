@@ -1,0 +1,13 @@
+Checker Puzzle Problem
+The Checker Puzzle problem is about placing n checkers on an n x n checkerboard with certain restrictions.
+
+The main decision variables in this problem are:
+- `x[i, j]`: a 2D array representing the checkerboard, where `x[i, j]` is 1 if a checker is placed at row `i` and column `j`, and 0 otherwise.
+- `sum_rows[i]`: an array representing the number of checkers in each row.
+
+The key constraints are:
+- Each column must have exactly one checker.
+- The total number of checkers on the board must be n.
+- For the first i rows, the total number of checkers cannot be exactly i.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find all possible configurations of the checkerboard that satisfy the given constraints. The problem is essentially a counting problem, where the goal is to determine the number of ways to place n checkers on an n x n checkerboard under the specified restrictions.

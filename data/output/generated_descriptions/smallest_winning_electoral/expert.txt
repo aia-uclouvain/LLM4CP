@@ -1,0 +1,16 @@
+name: Least Amount of Land to Win a Presidential Election
+description: The problem is to determine the smallest area of land that a candidate must win in order to win a presidential election in the United States. The candidate needs to win at least 270 electoral votes, and each state has a certain number of electoral votes and a certain area of land. The goal is to find the combination of states that gives the candidate at least 270 electoral votes while minimizing the total area of land.
+
+variables: x, y, z, s 
+x: array of binary decision variables where x[i] = 1 if the candidate wins state i, and 0 otherwise. 
+y: array of decision variables where y[i] = Votes[i] * x[i], representing the number of electoral votes won in state i. 
+z: decision variable representing the total area of land won by the candidate. 
+s: decision variable representing the number of states won by the candidate.
+
+constraints: sum(i in STATES) (y[i]) >= Need, z = sum(i in STATES) (Cost[i]*x[i])
+The constraints are: 
+- The candidate must win at least 270 electoral votes (sum(i in STATES) (y[i]) >= Need).
+- The total area of land won by the candidate is the sum of the areas of the states won (z = sum(i in STATES) (Cost[i]*x[i])).
+
+objective: minimize z
+The objective is to minimize the total area of land won by the candidate (z).

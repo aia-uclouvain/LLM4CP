@@ -1,0 +1,5 @@
+All Interval Problem. 
+This problem is about creating a sequence of musical notes where each note is used exactly once and the differences between consecutive notes are all unique. 
+The main variables are the "series" which represents the sequence of notes, and the "classes" which are the different notes that can be used. 
+The basic restrictions are that each note can only be used once, the differences between consecutive notes must be unique, and the first note must be less than the last note. 
+The goal of the problem is to find a sequence of notes that satisfies these rules.

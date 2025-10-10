@@ -1,0 +1,5 @@
+Prime Looking Problem 
+This problem is about finding numbers that are not prime but seem like they could be, because they are not divisible by 2, 3, or 5. 
+The main variables are x, which is the number we're looking at, and d1 and d2, which are the factors of x that multiply together to give x.
+The basic rules are that x must be a product of two numbers (d1 and d2), and x cannot be divisible by 2, 3, or 5. 
+The goal is to find how many numbers like this exist that are less than 1000.

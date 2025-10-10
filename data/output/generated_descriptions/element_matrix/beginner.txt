@@ -1,0 +1,5 @@
+The problem is called Element Matrix. 
+It is about finding a specific value in a two-dimensional table, which is like a spreadsheet with rows and columns. 
+The main variables are: index_i and index_j, which are like coordinates to find a specific cell in the table, matrix, which is the table itself, and value, which is the number we are looking for in the table. 
+The basic restrictions are that index_i and index_j must point to a valid cell in the table, and the value in that cell must be equal to the value we are looking for. 
+The goal of the problem is to confirm that the value at the specified position in the table is indeed the value we expect, which is 7 in this case.

@@ -1,0 +1,12 @@
+The problem is called the Global Constraint Product_ctr. 
+It is about constraining the product of a set of domain variables to satisfy a certain comparison with a target value. 
+The main decision variables are: 
+- `variables`: an array of variables representing the set of domain variables, 
+- `ctr`: an integer representing the comparison operator, 
+- `t_var`: a variable representing the target value. 
+The key constraints are: 
+- The product of the `variables` array must be compared to `t_var` using the operator specified by `ctr`, 
+- The `variables` array must be equal to a given array `[2,1,4]`, 
+- The target value `t_var` must be equal to 8. 
+The problem's objective is to satisfy these constraints, meaning that the product of the `variables` array must be compared to the target value `t_var` using the specified operator `ctr`, and the `variables` array must match the given array. 
+In this case, since `ctr` is 0, the product of `variables` must be equal to `t_var`, which is 8, and indeed 2*1*4 equals 8.

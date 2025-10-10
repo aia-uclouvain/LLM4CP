@@ -1,0 +1,5 @@
+name: Dudeney Numbers Problem
+description: The Dudeney Numbers problem is a mathematical problem where we need to find positive integers that are perfect cubes, and the sum of their decimal digits is equal to the cube root of the number. 
+variables: $x = (x_1, x_2, ..., x_n), nb, s$ where $x_i$ represents the $i^{th}$ digit of the number, $nb$ represents the number itself, and $s$ represents the sum of the digits of the number. These variables are used to represent the Dudeney number and its properties.
+constraints: $nb = s^3, nb = \sum_{i=1}^{n} 10^{n-i}x_i, s = \sum_{i=1}^{n} x_i$ where the first constraint ensures that the number is a perfect cube, the second constraint ensures that the number is represented correctly by its digits, and the third constraint calculates the sum of the digits.
+objective: The objective of this problem is to find the values of $x, nb, s$ that satisfy all the constraints, which essentially means finding the Dudeney numbers. Since this is a satisfaction problem, there is no explicit objective function to minimize or maximize.

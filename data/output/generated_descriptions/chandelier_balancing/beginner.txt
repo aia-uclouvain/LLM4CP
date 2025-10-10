@@ -1,0 +1,5 @@
+Chandelier Balancing 
+This problem is about balancing a chandelier by placing weights in triangles so that it doesn't lean to one side. 
+The main variables are the weights placed in each of the 9 triangles, labeled a to i, which can hold weights from 1 to 9 kilograms. 
+The basic restrictions are that each triangle can only hold one weight, and the weights on different parts of the chandelier must be balanced according to specific rules. 
+The goal is to find the arrangement of weights that perfectly balances the chandelier, meaning that the weights on each side of the chandelier are equal, and the chandelier doesn't lean to one side.

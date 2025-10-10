@@ -1,0 +1,8 @@
+The 13-Link Chain Puzzle
+The problem is about having a chain with 13 links, each weighing 1 ounce, and a balance scale. The goal is to figure out how many links of the chain need to be broken so that you can weigh items from 1 to 13 ounces in 1-ounce increments.
+
+The main variables are the "weights" which represent the lengths of the chain that are left after breaking some links, and "s" which shows how each weight from 1 to 13 ounces can be made using the remaining chain links.
+
+The basic restrictions are that the total length of the chain is 13 links, and each weight from 1 to 13 ounces must be made using the remaining chain links. The problem also tries to avoid having multiple chain links of the same length.
+
+The goal of the problem is to minimize the number of different chain lengths (or "weights") needed to be able to weigh items from 1 to 13 ounces. In other words, the problem wants to find the smallest number of different chain lengths that can be used to make all the weights from 1 to 13 ounces.

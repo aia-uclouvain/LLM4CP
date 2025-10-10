@@ -1,0 +1,5 @@
+The problem is called a Numerica problem. 
+It's about finding a number that satisfies a complex mathematical equation. 
+The main variable is "x", which is a number that we're trying to find. 
+The basic restriction or rule of the problem is that "x" must make the equation true: when you plug "x" into the equation, the result must be zero. 
+The goal of the problem is to find a value of "x" that makes the equation true, which is known as solving the equation.

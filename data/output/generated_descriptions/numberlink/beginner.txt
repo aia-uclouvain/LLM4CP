@@ -1,0 +1,5 @@
+Numberlink problem. 
+The problem is about connecting pairs of numbers in a grid by drawing lines between them, such that each number is connected to its matching pair and the lines do not intersect. 
+The main variables are the grid size (number of rows and columns), the number of pairs, and the connections between the numbers in the grid. 
+The basic restrictions are that each number can only be connected to its matching pair, and the lines cannot intersect. 
+The goal of the problem is to find a solution that connects all the pairs without any intersections.

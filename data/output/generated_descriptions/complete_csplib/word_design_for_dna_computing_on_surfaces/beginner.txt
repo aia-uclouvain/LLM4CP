@@ -1,8 +1,0 @@
-Word Design
-The problem is about designing a set of words for DNA computing on surfaces. In simple terms, it's like creating a collection of special codes that can be used to represent genetic information. These codes are made up of four letters: A, C, G, and T, which are the building blocks of DNA.
-
-The main variables are the words, which are like the special codes, and the letters that make up these words. Each word has eight positions, and each position can be one of the four letters.
-
-The basic restrictions are that each word must have exactly four positions with either C or G, and no more than four positions with A or T. Also, when comparing any two words, they must differ in at least four positions. Additionally, if you reverse one word and compare it to the Watson-Crick complement of another word, they must also differ in at least four positions. The Watson-Crick complement is like a mirror image, where A pairs with T, and C pairs with G.
-
-The goal is to find the largest possible set of words that satisfy these conditions. In other words, the problem is trying to maximize the number of words that can be designed while following these rules.

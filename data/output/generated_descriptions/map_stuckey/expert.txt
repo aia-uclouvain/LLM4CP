@@ -1,0 +1,11 @@
+name: Map Coloring Problem (Australia)
+description: The Map Coloring Problem is a classic problem in constraint programming and graph theory. The problem involves coloring a map of Australia with the fewest number of colors such that no two adjacent regions have the same color. The map is represented as a graph, where each region is a node, and two nodes are connected by an edge if the corresponding regions share a border. The goal is to assign a color to each region such that the number of colors used is minimized.
+
+variables: $n, country[1..n], connections[1..n,1..n], num\_larger$ 
+These variables represent the number of countries ($n$), the color assigned to each country ($country[1..n]$), the adjacency matrix of the graph ($connections[1..n,1..n]$), and a variable used for symmetry breaking ($num\_larger$). The $country[1..n]$ variables are decision variables that take on integer values between 1 and $n$, representing the color assigned to each country.
+
+constraints: $coloring(connections, country, n)$, $country[1] = 1$ 
+These constraints ensure that the coloring is valid, i.e., no two adjacent countries have the same color, and that the first country is assigned the first color. The $coloring$ constraint is a predicate that checks for each pair of adjacent countries that they have different colors. The $country[1] = 1$ constraint is used to break symmetry in the solution.
+
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of colors to the countries, i.e., to find a coloring that satisfies the constraints. There are also alternative objectives commented out in the code, such as minimizing or maximizing the $num\_larger$ variable or the sum of the colors assigned to each country, but the main objective is to find a feasible solution.

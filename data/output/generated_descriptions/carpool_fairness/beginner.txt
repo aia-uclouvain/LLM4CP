@@ -1,0 +1,15 @@
+Carpool Fairness Problem
+The problem is about sharing a carpool among a group of people for a certain number of days. Each person can choose whether to participate in the carpool on each day. The goal is to allocate the daily driving responsibilities fairly among the participants.
+
+The main variables are:
+- The number of people in the carpool
+- The number of days the carpool is shared
+- Which person drives on each day
+- How many days each person participates in the carpool
+- The number of days each person should drive to be fair
+
+The basic restrictions or rules are:
+- A person can only drive on days they participate in the carpool
+- Each person should drive no more than their fair share of days
+
+The goal of the problem is to minimize the differences between the actual number of days each person drives and their fair share of driving days, making the schedule as fair as possible.

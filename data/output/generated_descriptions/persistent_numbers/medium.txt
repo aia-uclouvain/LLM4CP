@@ -1,0 +1,15 @@
+**Persistence of a Number Problem**
+The problem is about finding the smallest number that requires a certain number of steps to reduce it to a single digit by repeatedly multiplying its digits.
+
+**Decision Variables**
+The main decision variables are `num`, which represents the initial number, and `x`, a 2D array where `x[s, i]` represents the `i-th` digit of the number at step `s`. The `nums` array stores the numbers at each step.
+
+**Key Constraints**
+The constraints can be described as follows:
+- The initial number `num` is equal to the number formed by the digits in `x[0]`.
+- For each step `s`, the number `nums[s]` is the product of the digits in `x[s-1]`, and it is also equal to the number formed by the digits in `x[s]`.
+- The last number `nums[num_steps]` must be a single digit, and it must be different from the previous number `nums[num_steps-1]`.
+- The last number `nums[num_steps]` has all digits except the first one equal to 0.
+
+**Objective**
+The objective is to minimize the initial number `num` that requires exactly `num_steps` steps to reduce it to a single digit. In other words, the goal is to find the smallest number with a given persistence.

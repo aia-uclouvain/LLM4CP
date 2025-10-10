@@ -1,0 +1,13 @@
+name: Rogo problem
+description: The Rogo problem is a classic problem in constraint programming where the goal is to find a loop through a grid of fixed length that contains as many reward points as possible. The grid is composed of cells with different values, and the loop must visit each cell only once, without visiting any black cells. The loop must also be closed, meaning that the last cell visited must be adjacent to the first cell.
+variables: $x[1..max\_steps], y[1..max\_steps], points[1..max\_steps], sum\_points$ 
+These variables represent the coordinates of the cells in the path, the points collected at each cell, and the total sum of points collected. $x[i]$ and $y[i]$ are the row and column indices of the $i^{th}$ cell in the path, $points[i]$ is the value of the $i^{th}$ cell, and $sum\_points$ is the total value of all cells in the path.
+constraints: $\forall s, t \in 1..max\_steps, x[s] \neq x[t] \lor y[s] \neq y[t]$ 
+$\forall s \in 1..max\_steps, points[s] = problem[x[s], y[s]]$ 
+$\forall s \in 1..max\_steps, problem[x[s], y[s]] \neq B$ 
+$\forall s \in 1..max\_steps-1, |x[s] - x[s+1]| + |y[s] - y[s+1]| = 1$ 
+$|x[max\_steps] - x[1]| + |y[max\_steps] - y[1]| = 1$ 
+$x[1]*cols+y[1] < x[2]*cols+y[2]$ 
+These constraints ensure that all coordinates in the path are unique, the points collected at each cell are calculated correctly, no black cells are visited, the path is connected and closed, and symmetry is broken by ensuring that the first cell has the lowest coordinates and the second cell has higher coordinates than the first cell.
+objective: maximize $sum\_points$ 
+The objective of the problem is to maximize the total sum of points collected in the path.

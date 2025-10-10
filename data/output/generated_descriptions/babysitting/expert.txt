@@ -1,0 +1,15 @@
+name: Babysitting Puzzle
+description: The problem is to determine the full name and age of five children, Keith, Libby, Margo, Nora, and Otto, with last names Fell, Gant, Hall, Ivey, and Jule, based on given clues about their ages and relationships.
+variables: $Fell, Gant, Hall, Ivey, Jule \in \{1, 2, 3, 4, 5\}, age = (age_1, age_2, age_3, age_4, age_5) \in \{2, 3, 4, 5, 6\}^5, last = (last_1, last_2, last_3, last_4, last_5) \in \{1, 2, 3, 4, 5\}^5$ 
+These variables represent the last name and age of each child, where $Fell, Gant, Hall, Ivey, Jule$ are the last names, $age_i$ is the age of the $i^{th}$ child, and $last_i$ is the last name of the $i^{th}$ child.
+constraints: $\begin{aligned}
+&all\_different(last) \\
+&all\_different(age) \\
+&Jule = Libby \\
+&age_{Keith} = age_{Ivey} + 1 \land Keith \neq Ivey \\
+&age_{Ivey} = age_{Nora} + 1 \land Ivey \neq Nora \\
+&age_{Fell} = age_{Margo} + 3 \land Fell \neq Margo \\
+&age_{Otto} = age_{Hall} \times 2 \land Otto \neq Hall
+\end{aligned}$ 
+These constraints ensure that each child has a unique last name and age, and satisfy the given clues about the relationships between the children's ages and last names.
+objective: The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize. The goal is to determine the full name and age of each child.

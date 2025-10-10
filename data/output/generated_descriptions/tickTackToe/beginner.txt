@@ -1,0 +1,5 @@
+Tic Tac Toe problem.
+The problem is about a game where two players take turns marking spaces on a 3x3 grid with either a circle or an x, and the goal is for one player to win by getting three of their marks in a row, either horizontally, vertically, or diagonally.
+The main variables are the state of each space on the grid at each step of the game, represented by the array tickTackToe, where each element can be 0 (black), 1 (white), or 2 (empty).
+The basic restrictions are that each player can only mark an empty space, a space can only be marked by one player, and a player cannot change a space that is already marked by them or their opponent. The game starts with an empty grid and ends when one player wins.
+The goal of the problem is to find a sequence of moves that allows the winning player (either black or white) to win the game in a specified number of steps, while ensuring that the losing player does not win. The problem also requires that the number of marks made by each player is roughly equal, and that the total number of marks made is equal to the number of steps.

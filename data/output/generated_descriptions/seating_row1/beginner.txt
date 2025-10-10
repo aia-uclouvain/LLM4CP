@@ -1,0 +1,5 @@
+Movie theater seating problem. 
+This problem is about arranging couples in a row of seats at a movie theater. 
+The main variables are the seats, represented by the array x, which means each person's position in the row. 
+The basic restrictions are that each person, except those at the ends, must sit next to someone of the same gender or their spouse. 
+The goal of the problem is to find a valid arrangement of the couples in the row, following the given restrictions.

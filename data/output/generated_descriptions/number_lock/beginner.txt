@@ -1,0 +1,10 @@
+Number Lock Problem
+The problem is about cracking a 3-digit code for a number lock. 
+The main variables are the 3-digit code, where each digit can be a number from 0 to 9.
+The basic restrictions are that the code must satisfy the given hints: 
+  - 682 has one correct digit in the correct position, 
+  - 645 has one correct digit but in the wrong position, 
+  - 206 has two correct digits but in the wrong positions, 
+  - 738 has no correct digits, and 
+  - 780 has one correct digit but in the wrong position.
+The goal is to find the correct 3-digit code that satisfies all these hints.

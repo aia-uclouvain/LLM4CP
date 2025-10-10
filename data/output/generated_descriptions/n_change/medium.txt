@@ -1,0 +1,8 @@
+The N-Change Problem
+The N-Change problem is about finding a sequence of numbers where the number of changes between consecutive elements is minimized or maximized. 
+
+The main decision variables are `x`, an array of integers representing the sequence of numbers, `c_pos`, an array of binary variables indicating whether a change occurs between two consecutive elements, and `num_changes`, an integer representing the total number of changes in the sequence.
+
+The key constraints are: each element in the sequence `x` must be within a certain range (from 1 to `n`), `c_pos` indicates whether a change occurs between two consecutive elements in `x`, and the total number of changes `num_changes` is calculated based on the differences between consecutive elements in `x`. 
+
+The objective of the problem is to satisfy the given constraints, specifically to find a sequence `x` where the number of changes `num_changes` equals a specified value (in this case, 2). The problem does not explicitly aim to minimize or maximize a particular objective, but rather to find a feasible solution that satisfies the constraints.

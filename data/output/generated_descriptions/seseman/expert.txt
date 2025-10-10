@@ -1,0 +1,13 @@
+name: Seseman's Convent Problem
+description: Seseman's Convent Problem is a classic problem in constraint programming that involves finding a solution to an n x n matrix where the sum of the elements on the borders is equal to a given value, and the sum of all elements in the matrix is also equal to a given value. The problem has additional constraints that the middle cells of the matrix must be zero, and the border cells must be greater than or equal to 1.
+variables: $x_{i,j}$ for $i = 1$ to $n$ and $j = 1$ to $n$, total_sum. The $x_{i,j}$ variables represent the values of the cells in the n x n matrix, and total_sum represents the total sum of all elements in the matrix.
+constraints: 
+$\sum_{i=1}^{n} x_{i,1} = border\_sum$, 
+$\sum_{i=1}^{n} x_{i,n} = border\_sum$, 
+$\sum_{j=1}^{n} x_{1,j} = border\_sum$, 
+$\sum_{j=1}^{n} x_{n,j} = border\_sum$, 
+$x_{i,j} = 0$ for $i = 2$ to $n-1$ and $j = 2$ to $n-1$, 
+$x_{i,j} \geq 1$ for $i = 1$ or $j = 1$ or $i = n$ or $j = n$, 
+$\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i,j} = total\_sum$. 
+These constraints ensure that the sum of the elements on the borders is equal to the given border sum, the middle cells are zero, the border cells are greater than or equal to 1, and the total sum of all elements is equal to the given total sum.
+objective: The objective of the problem is to satisfy all the given constraints, there is no specific value to minimize or maximize.

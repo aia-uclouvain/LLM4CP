@@ -1,0 +1,5 @@
+Sum First and Last Problem
+The problem is about filling a square grid with numbers from 0 to the grid size minus 1, such that each row and column contains each number only once. 
+The main variables are the grid cells (x) and the constraints on the top, right, bottom, and left sides of the grid (TopConstraint, RightConstraint, BottomConstraint, LeftConstraint). 
+The basic restrictions are that each number can appear only once in each row and column, and the sums of the first and last numbers in each row and column must match the given constraints, unless the constraint is 0, in which case it is ignored. 
+The goal of the problem is to find a solution that satisfies all the constraints.

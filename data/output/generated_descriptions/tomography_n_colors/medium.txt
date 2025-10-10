@@ -1,0 +1,8 @@
+Discrete Tomography Problem
+The Discrete Tomography problem is about reconstructing a two-dimensional image from its row and column sums, where each cell in the image can have one of a given number of colors. 
+
+The main decision variable is `x`, a 2D array where `x[i,j]` represents the color of the cell at row `i` and column `j`. The colors are represented by integers from 1 to `num_colors`.
+
+The key constraints are that the sum of each color in each row must match the given row sums, and the sum of each color in each column must match the given column sums. In other words, for each row and each color, the number of cells of that color in the row must be equal to the given row sum for that color and row. Similarly, for each column and each color, the number of cells of that color in the column must be equal to the given column sum for that color and column.
+
+The objective of the problem is to find a feasible solution, i.e., an assignment of colors to cells that satisfies the row and column sum constraints. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a solution that satisfies all the given constraints.

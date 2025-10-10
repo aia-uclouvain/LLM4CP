@@ -1,0 +1,5 @@
+The problem is called Indexed Sum. 
+It's about taking some items, each with a certain weight and a specific label, and assigning them to different groups, so that the total weight of the items in each group matches a target weight for that group. 
+The main variables are the items, which have a label and a weight, and the groups, which have a target weight. 
+The basic rules are that each item can only be assigned to one group, and the total weight of the items in each group must match the target weight for that group. 
+The goal is to find a way to assign the items to the groups so that the total weight of the items in each group matches the target weight, which is already given as 6, 0, and -3 for the three groups.

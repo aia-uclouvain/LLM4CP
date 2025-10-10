@@ -1,0 +1,19 @@
+**Card Trick Problem**
+The Card Trick problem is a classic constraint programming problem that involves arranging a standard deck of 52 playing cards into a 4x13 rectangle.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `suites`: a 2D array representing the suit of each card in the rectangle, where each element can take a value from 1 to 4 (representing the four suits: Hearts, Spades, Clubs, and Diamonds).
+- `values`: a 2D array representing the face value of each card in the rectangle, where each element can take a value from 1 to 13 (representing the thirteen face values: Ace to King).
+- `columns_set`: a 1D array of sets, where each set represents the face values present in a particular column.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- Each suit must appear exactly once in each column.
+- Each face value must appear exactly once in each row.
+- No two cards with the same face value can appear in the same column.
+- Each row must contain four cards of one suit and three cards of each of the other suits.
+- Any two columns must share exactly one face value, and any two face values must appear together in exactly one column.
+
+**Objective**
+The objective of this problem is to find a satisfying assignment of cards to the 4x13 rectangle, such that all the constraints are met. This is a satisfaction problem, meaning that there is no objective function to minimize or maximize; the goal is simply to find a feasible solution that satisfies all the constraints.

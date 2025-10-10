@@ -1,0 +1,5 @@
+The problem is called the "nvalues_except_0" problem. 
+It is about counting the number of distinct non-zero values in an array of variables. 
+The main decision variables are the array "variables" and the variable "limitx", where "variables" represents the array of values and "limitx" represents the target number of distinct non-zero values. 
+The key constraints are that the number of distinct non-zero values in the "variables" array should be related to "limitx" by the comparison operator "relop", which can be one of less than, less than or equal to, equal to, greater than or equal to, or greater than. 
+The problem's objective is to satisfy the constraint that the number of distinct non-zero values in the "variables" array has the specified relationship to "limitx", rather than to minimize or maximize a specific value.

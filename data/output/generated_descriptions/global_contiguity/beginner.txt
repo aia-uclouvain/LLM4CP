@@ -1,0 +1,5 @@
+The problem is called Global Contiguity. 
+It's about arranging a series of 0s and 1s in a line so that all the 1s are together. 
+The main variables are x, which is a list of 0s and 1s, and start and end, which mark the beginning and end of the group of 1s. 
+The basic rules are that each position in the list can be either 0 or 1, and all the 1s must be next to each other. 
+The goal is to find a way to arrange the 0s and 1s that satisfies these rules, without trying to minimize or maximize anything in particular, just to find a valid arrangement.

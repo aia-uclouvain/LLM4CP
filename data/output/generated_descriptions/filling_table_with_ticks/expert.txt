@@ -1,0 +1,12 @@
+name: Filling a Table with Ticks Problem
+
+description: The problem involves filling a 4x6 table with a total of 18 ticks, such that the sum of ticks in each column and row is even, and no row or column is empty.
+
+variables: $x_{i,j}, ticks$ 
+These are decision variables where $x_{i,j}$ represents whether a tick is placed in the cell at row $i$ and column $j$ (1 if a tick is placed, 0 otherwise), and $ticks$ represents the total number of ticks placed in the table.
+
+constraints: $ticks = 18, \sum_{i=1}^{rows} \sum_{j=1}^{cols} x_{i,j} = ticks, \sum_{j=1}^{cols} x_{i,j} \geq 1 \wedge \sum_{j=1}^{cols} x_{i,j} \mod 2 = 0 \forall i, \sum_{i=1}^{rows} x_{i,j} \geq 1 \wedge \sum_{i=1}^{rows} x_{i,j} \mod 2 = 0 \forall j$
+These constraints ensure that the total number of ticks is 18, the sum of ticks in each row and column is even and greater than or equal to 1, and the total number of ticks is consistent with the placement of ticks in the table.
+
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of ticks to the table, such that all constraints are met.

@@ -1,0 +1,5 @@
+Latin Square Problem
+The Latin Square problem is about finding an arrangement of numbers in a square matrix such that each row and column contains each number exactly once.
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents whether the number `j` is placed in the `i-th` row. The array `num_list` represents the numbers assigned to each row.
+The key constraints are: each row contains each number exactly once, and each column contains each number exactly once. This is achieved through the `binmatrix2num_ip` predicate, which ensures that each row sums up to a unique number and each column has exactly one 1.
+The objective of the problem is to satisfy these constraints, i.e., to find a valid Latin Square arrangement. The model uses the `satisfy` objective, which means it aims to find a solution that satisfies all the constraints, without any specific minimization or maximization goal.

@@ -1,0 +1,6 @@
+The problem is a Numerical Problem, specifically a polynomial equation solving problem. 
+This problem is about finding the value of a variable x that satisfies a given polynomial equation of degree 4. 
+The main decision variable is x, which represents the solution to the polynomial equation. 
+The key constraint in this problem is that the value of x must satisfy the equation x^4 - 12x^3 + 47x^2 - 60x + 24 = 0. 
+In plain language, this means that when we plug the value of x into the equation, the result must be equal to zero. 
+The problem's objective is to find a value of x that satisfies this constraint, which is a satisfaction problem, meaning that the goal is to find a solution that meets the given condition, rather than minimizing or maximizing a specific objective function.

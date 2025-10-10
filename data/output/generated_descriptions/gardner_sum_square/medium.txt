@@ -1,0 +1,5 @@
+Gardner's Sum Square problem
+The problem is about finding the minimum possible value of the sum of squares of two sets of distinct numbers, where each set contains four numbers from a given set of eight integers.
+The main decision variables are a, b, c, d, e, f, g, and h, which represent the distinct elements in the set {-7,-5,-3,-2,2,4,6,13} that are assigned to two sets of four numbers. The variable V represents the sum of squares of these two sets.
+The key constraints are that all the numbers must be distinct, the numbers in each set must be in increasing order, and the smallest number in the second set must be greater than the largest number in the first set. In plain language, this means that we cannot repeat any numbers, the numbers in each group must get progressively larger, and the second group must start with a number that is larger than the last number in the first group.
+The objective of the problem is to minimize the value of V, which is the sum of the squares of the sums of the two sets of numbers. In other words, we want to find the way of dividing the eight numbers into two sets that results in the smallest possible sum of squares.

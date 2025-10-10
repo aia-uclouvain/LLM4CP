@@ -1,0 +1,5 @@
+Ramsey Partition Problem
+The problem is about dividing a set of numbers (1 to 23) into three groups in such a way that for no group are there three different numbers where two of the numbers add up to the third.
+The main variables are the three groups of numbers, represented by x[1], x[2], and x[3], which are sets of numbers from 1 to 23.
+The basic restrictions are that the three groups must contain all the numbers from 1 to 23, and for each group, there should not be three numbers where two add up to the third.
+The goal of the problem is to find a way to divide the numbers into three groups that satisfy these restrictions, with no specific objective to minimize or maximize.

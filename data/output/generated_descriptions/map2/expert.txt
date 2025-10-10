@@ -1,0 +1,5 @@
+name: Map Coloring Problem
+description: The Map Coloring Problem is a classic problem in constraint programming and graph theory. It involves coloring a map of countries such that no two adjacent countries have the same color. The problem is often used to demonstrate the application of constraint programming techniques to solve complex combinatorial problems.
+variables: $country[1..n]$ - This is an array of decision variables where $country[i]$ represents the color assigned to country $i$. The colors are represented by integers from 1 to 4, where each integer corresponds to a different color.
+constraints: $\forall i, j \in 1..n \text{ where } i < j \land connections[i, j] = 1: country[i] \neq country[j]$ - This constraint ensures that no two adjacent countries have the same color. $connections[i, j] = 1$ indicates that countries $i$ and $j$ are adjacent.
+objective: satisfy - The objective of the problem is to find a feasible solution that satisfies all the constraints, i.e., to find a coloring of the map such that no two adjacent countries have the same color. There is no explicit objective function to minimize or maximize.

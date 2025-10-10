@@ -1,0 +1,5 @@
+name: Kraitchik's Queen Placement Problem
+description: The problem is a classic constraint programming problem where the goal is to place the minimum number of queens on an 8x8 chessboard such that every square is either occupied by a queen or under attack by a queen.
+variables: $x_{i,j}, a_{i,j}$, where $x_{i,j}$ is a binary variable representing whether a queen is placed on square $(i,j)$, and $a_{i,j}$ is a binary variable representing whether square $(i,j)$ is under attack by a queen.
+constraints: $\sum_{m \in S, m \neq i, m-i+j \geq 1, m-i+j \leq size} x_{m,m-i+j} + \sum_{m \in S, m \neq i, i+j-m \geq 1, i+j-m \leq size} x_{m,i+j-m} + \sum_{m \in S} x_{m,j} + \sum_{n \in S, n \neq j} x_{i,n} \geq a_{i,j}$ and $a_{i,j} + x_{i,j} = 1$, which ensure that each square is either occupied or under attack, and that the attack status is correctly calculated based on the placement of queens.
+objective: Minimize the total number of queens placed on the board, represented by the variable $numq = \sum_{i \in S, j \in S} x_{i,j}$.

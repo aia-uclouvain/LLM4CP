@@ -1,0 +1,5 @@
+The problem is called "Back to Front" or Enigma 1535. 
+It is about finding two 6-digit numbers that have a unique property: when their digits are reversed, the new number is a multiple of the original number. 
+The main decision variables are x1 and x2, which represent the two 6-digit numbers, and x1_a and x2_a, which are arrays of variables representing the digits of x1 and x2, respectively. 
+The key constraints are that the digits of x1 reversed must be equal to the digits of x2, x1 must be greater than x2, and x1 must be a multiple of x2. 
+The problem's objective is to find the lower of the two 6-digit numbers that satisfy these constraints, which is x2.

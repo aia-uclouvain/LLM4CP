@@ -1,0 +1,5 @@
+Max Flow Problem. 
+The problem is about finding the maximum amount of "stuff" that can flow through a network from a starting point to an ending point. 
+The main variables are the amount of stuff that flows from one point to another (x), the total amount of stuff that flows out of the starting point (total), and the amount of stuff that flows into or out of each point (inFlow and outFlow). 
+The basic restrictions are that the amount of stuff that flows from one point to another cannot be negative and cannot exceed the maximum capacity of the connection between the points, and that the amount of stuff that flows into a point must be equal to the amount of stuff that flows out of that point, except for the starting and ending points. 
+The goal is to maximize the total amount of stuff that flows out of the starting point.

@@ -1,0 +1,5 @@
+name: Minesweeper
+description: The Minesweeper problem is a classic puzzle where a player is presented with a grid of cells, some of which contain hidden mines. The player is given clues about the number of mines adjacent to each cell, and the goal is to determine the location of all the mines.
+variables: $x_{i,j} \in \{0,1\}$ for $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, c\}$, where $x_{i,j}$ represents whether a mine is present in cell $(i,j)$ or not.
+constraints: $\sum_{(i',j') \in N(i,j)} x_{i',j'} = game_{i,j}$ for $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, c\}$, where $N(i,j)$ is the set of neighboring cells of $(i,j)$, and $game_{i,j}$ is the given clue for cell $(i,j)$.
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, i.e., to determine the location of all the mines such that the number of mines adjacent to each cell matches the given clues. The problem does not have a specific objective function to minimize or maximize, but rather to find a solution that satisfies all the constraints.

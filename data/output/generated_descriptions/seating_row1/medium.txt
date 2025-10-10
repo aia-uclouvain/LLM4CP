@@ -1,0 +1,5 @@
+Movie Theater Seating Problem
+The problem is about seating n couples in a row such that each person, except those at the ends, has neighbors of the same gender or their spouse.
+The main decision variable is an array x of length 2n, where x[i] represents the position of person i in the row, with odd indices representing one gender (e.g., males) and even indices representing the other gender (e.g., females), and each couple is assigned consecutive indices (e.g., 1 and 2, 3 and 4).
+The key constraints are that each position in the row must be occupied by a different person, and for each person (except those at the ends), their neighbors must either be of the same gender or their spouse.
+The problem's objective is to find a satisfying seating arrangement, with no specific objective function being minimized or maximized, as the goal is to simply find a feasible solution that meets the given constraints.

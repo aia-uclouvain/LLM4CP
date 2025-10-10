@@ -1,0 +1,5 @@
+The problem is called Hardy's 1729 problem. 
+It is about finding the smallest number that can be expressed as the sum of two cubes in two different ways, which means finding two pairs of numbers whose cubes add up to the same total. 
+The main variables are X1, X2, Y1, Y2, and Z. X1 and X2 are the first pair of numbers, Y1 and Y2 are the second pair, and Z is the total number they add up to. 
+The basic restrictions are that X1, X2, Y1, Y2, and Z must be positive integers, X1 must be less than or equal to X2, Y1 must be less than or equal to Y2, and the two pairs must be different. 
+The goal of the problem is to find the smallest possible value of Z that satisfies these conditions, which is the smallest number that can be expressed as the sum of two cubes in two different ways.

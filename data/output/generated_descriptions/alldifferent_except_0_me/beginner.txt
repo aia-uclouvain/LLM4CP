@@ -1,0 +1,5 @@
+The problem is called "All Different Except 0". 
+It's about arranging a set of numbers in a special order. 
+The main variables are a list of numbers called "x", where each number can be between 0 and a certain maximum value "n". 
+The basic restrictions are that all non-zero numbers in the list must be different from each other, and the numbers must be in increasing order. 
+The goal is to find a list of numbers that satisfies these rules.

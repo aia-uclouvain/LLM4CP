@@ -1,0 +1,5 @@
+Job Shop Scheduling Problem
+The Job Shop Scheduling Problem is about scheduling a set of jobs on a shared resource, where each job has a specific duration and must be completed after its predecessors. 
+The main decision variables are Ss, which represents the start time of each job, and End, which represents the total time to complete all jobs. 
+The key constraints are that each job must start after its predecessors, the total time to complete all jobs must be minimized, and the cumulative resource usage must not exceed the available capacity. 
+The problem's objective is to minimize the total time to complete all jobs, which is represented by the variable End.

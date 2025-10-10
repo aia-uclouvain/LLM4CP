@@ -1,0 +1,23 @@
+name: DONALD+GERALD=ROBERT problem
+
+description: The DONALD+GERALD=ROBERT problem is a classic constraint satisfaction problem where the goal is to assign digits to the letters in the equation "DONALD + GERALD = ROBERT" such that the equation holds true. Each letter represents a unique digit from 0 to 9, and the equation must be satisfied when the numbers are added together.
+
+variables: D, O, N, A, L, G, E, R, B, T, c1, c2, c3, c4, c5, c6 
+These variables represent the digits assigned to each letter in the equation, where D, O, N, A, L, G, E, R, B, and T are the digits for the corresponding letters, and c1, c2, c3, c4, c5, and c6 are carry variables used in the addition.
+
+constraints: 
+all_different(fd) /\
+D + D = 10 * c1 + T /\
+c1 + L + L = 10 * c2 + R /\
+c2 + A + A = 10 * c3 + E /\
+c3 + N + R = 10 * c4 + B /\
+c4 + O + E = 10 * c5 + O /\
+c5 + D + G = 10 * c6 + R /\
+D > 0 /\ 
+G > 0 /\ 
+R > 0 /\ 
+c6 = 0 
+These constraints ensure that each digit is unique, the equation "DONALD + GERALD = ROBERT" holds true when the numbers are added together with carry, and the first digit of each number is non-zero.
+
+objective: satisfy 
+The objective of the problem is to find an assignment of digits to the letters that satisfies all the constraints, rather than minimizing or maximizing a specific value.

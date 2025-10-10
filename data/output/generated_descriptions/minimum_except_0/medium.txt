@@ -1,0 +1,5 @@
+The Minimum Except 0 Problem
+The Minimum Except 0 problem is about finding the minimum value in a collection of non-negative integers, ignoring any zeros in the collection.
+The main decision variables are `t_min` and `variables`. `t_min` represents the minimum value in the collection, and `variables` is an array of non-negative integers.
+The key constraints are that `t_min` must be the minimum value in `variables`, unless all values in `variables` are zero, in which case `t_min` takes a default value. This is achieved through two conditions: (1) `t_min` is less than or equal to all non-zero values in `variables`, and there exists a value in `variables` that equals `t_min`; or (2) all values in `variables` are zero, and `t_min` equals the default value.
+The objective of the problem is not to minimize or maximize a specific value, but rather to satisfy the constraints, meaning to find a valid assignment of values to `t_min` and `variables` that meets the conditions of the Minimum Except 0 constraint.

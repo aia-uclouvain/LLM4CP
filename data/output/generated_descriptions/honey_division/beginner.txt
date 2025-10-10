@@ -1,0 +1,5 @@
+Honey Division Puzzle
+The problem is about dividing honey among sons using barrels of different capacities. 
+The main variables are the number of barrels each son gets of each capacity, and how full each barrel is. 
+The basic restrictions are that each son must get 7 barrels and 3.5 units of honey, and each barrel capacity must be used 7 times. 
+The goal is to find a way to divide the honey that satisfies these rules.

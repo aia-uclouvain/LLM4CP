@@ -1,0 +1,5 @@
+Ormat Game
+The Ormat game is about filling a grid with numbers in a way that follows certain rules. 
+The main variables are the numbers in the grid, which can be either 0 or 1, and the size of the grid, which is 6x6 in this case. 
+The basic restrictions are that the grid must be filled with 0s and 1s, and the rules of the game must be followed, but the specific rules are not defined in this code snippet. 
+The goal of the problem is not explicitly stated in this code, but based on the context of the Ormat game, it is likely that the goal is to find a way to fill the grid that satisfies all the rules, or to find the maximum or minimum number of 1s that can be placed in the grid while still following the rules.

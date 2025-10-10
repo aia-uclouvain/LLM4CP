@@ -1,8 +1,0 @@
-name: Capacitated Vehicle Routing Problem (CVRP)
-description: The Capacitated Vehicle Routing Problem is a classic problem in operations research and computer science that involves finding the most efficient routes for a fleet of vehicles to visit a set of locations and return to a depot, while not exceeding the capacity of each vehicle. The problem has many real-world applications, such as delivery routing, logistics, and transportation management.
-variables: $plan, optVar, c, d$ 
-These variables represent the decision variables in the problem: $plan$ is a set of sequences of locations to be visited by each vehicle, $optVar$ is the total cost of the routes, $c$ is a 2D array representing the customers visited by each vehicle, and $d$ is a 2D array representing the demands of the customers visited by each vehicle.
-constraints: $|plan| \geq \lceil \frac{totalOrderWeight}{vehicleCapacity} \rceil, \sum_{i \in route} orderWeights(i) \leq vehicleCapacity, \forall route \in plan, AllDifferent([loc | route \in plan, loc \in route]), \sum_{route \in plan} |route| = numberLocations, c[i][j] \neq 0 \rightarrow c[i][j+1] \neq 0, \sum_{j} d[i][j] \leq capacity$
-These constraints ensure that the number of vehicles used is sufficient to deliver all orders, the capacity of each vehicle is not exceeded, each location is visited exactly once, and the routes are feasible and efficient.
-objective: minimize $optVar = \sum_{route \in plan} (\sum_{i=2}^{|route|} costs(route[i-1], route[i]) + costs(0, route[1]) + costs(route[|route|], 0))$ 
-The objective is to minimize the total cost of the routes, which includes the costs of traveling between locations and the costs of visiting each location.

@@ -1,0 +1,5 @@
+name: All Different with Constants (Alldifferent_cst) Problem
+description: The Alldifferent_cst problem is a constraint satisfaction problem where the goal is to find an assignment of values to a set of variables such that all expressions formed by adding a variable and a corresponding constant are distinct.
+variables: $x = [x_1, x_2, ..., x_n]$ and $cst = [cst_1, cst_2, ..., cst_n]$, where $x_i$ is a decision variable representing the value assigned to the $i^{th}$ variable, and $cst_i$ is a given constant associated with the $i^{th}$ variable.
+constraints: $all\_different\_cst(x, cst)$, which can be mathematically represented as $\forall i \neq j, x_i + cst_i \neq x_j + cst_j$, ensuring that all expressions $x_i + cst_i$ are distinct.
+objective: The objective of the problem is to find a satisfying assignment, i.e., to solve the problem such that all constraints are satisfied, but there is no explicit objective function to minimize or maximize.

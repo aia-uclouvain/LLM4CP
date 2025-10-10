@@ -1,0 +1,6 @@
+The problem is called "same" in the Global Constraint Catalogue. 
+It's about comparing two lists of numbers to see if they have the same distribution of values, regardless of the order. 
+The main variables are "variables1" and "variables2", which are two lists of numbers that we want to compare. 
+The basic restrictions are that each list must have the same length and the same numbers, but not necessarily in the same order. 
+The goal is to find a solution where the two lists have the same distribution of numbers, meaning that each number appears the same number of times in both lists. 
+In this specific example, we are given two lists: [1,9,1,5,2,1] and [9,1,1,2,5,1], and we want to see if we can rearrange the numbers in the first list to match the distribution of numbers in the second list.

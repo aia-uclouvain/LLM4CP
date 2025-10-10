@@ -1,0 +1,8 @@
+Distance Change Problem
+The problem is about comparing two sequences of numbers and counting how many times the relationship between consecutive numbers in one sequence changes, while the relationship in the other sequence does not.
+The main variables are: 
+- v1 and v2, which are sequences of numbers, 
+- dist, which is the count of how many times the relationship changes, 
+- ctr, which is the type of comparison operator (e.g., equal, not equal, less than, etc.).
+The basic restrictions are that v1 and v2 must be sequences of specific numbers, and the comparison operator is set to "not equal".
+The goal of the problem is to find the count of how many times the relationship between consecutive numbers in one sequence changes, while the relationship in the other sequence does not, given the specific sequences and comparison operator.

@@ -1,0 +1,5 @@
+Restaurant Scheduling problem
+The problem is about scheduling employees in a restaurant to meet the daily demand while minimizing the total cost.
+The main decision variables are `x` and `working`, where `x[i]` represents the number of employees hired on day `i`, and `working[d]` represents the total number of employees working on day `d`.
+The key constraints are that the number of employees working on each day must be greater than or equal to the number of employees needed on that day, and that each employee works for four consecutive days and then has three days off. This is achieved by calculating the total number of employees working on each day by summing the number of employees hired on the current day and the previous three days, wrapping around to the beginning of the week if necessary.
+The objective is to minimize the total cost, which is calculated as the sum of the cost per day multiplied by the number of employees hired on each day, assuming each employee works for four days at $100 per day.

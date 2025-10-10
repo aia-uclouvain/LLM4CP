@@ -1,0 +1,5 @@
+The problem is called the Coloring problem. 
+It's about coloring a map of European countries so that no two countries that share a border have the same color. 
+The main variables are the countries (like Belgium, Denmark, and France) and the colors (like blue, red, and yellow) that can be used to color them. 
+The basic restrictions are that countries sharing a border cannot have the same color, and there's a limit to how many colors can be used. 
+The goal is to use the fewest number of colors possible to color all the countries on the map without breaking the rule about neighboring countries having different colors.

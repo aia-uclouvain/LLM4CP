@@ -1,0 +1,5 @@
+Denny's Menu problem
+The problem is about finding different combinations of menu items that add up to $10. 
+The main variables are the number of each menu item, which are priced at $2, $4, $6, and $8. 
+The basic restrictions are that each menu item can be chosen zero or more times, and the total cost must be exactly $10. 
+The goal of the problem is to find all possible combinations of menu items that total $10.

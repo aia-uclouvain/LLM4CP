@@ -1,0 +1,9 @@
+name: Appointment Scheduling Problem
+
+description: The problem involves scheduling interviews between an employer and N people, where each person has a free-busy schedule for N interview slots. The goal is to assign each person to a slot such that every person is assigned to exactly one slot and every slot is assigned to exactly one person, while respecting the free-busy schedule of each person.
+
+variables: $x_{i,j}$, where $x_{i,j} \in \{0,1\}$ represents the assignment of person $j$ to slot $i$. In other words, $x_{i,j} = 1$ if person $j$ is assigned to slot $i$, and $x_{i,j} = 0$ otherwise.
+
+constraints: $\sum_{j=1}^{n} m_{i,j} \cdot x_{i,j} = 1 \forall i \in \{1,\ldots,n\}$, $\sum_{j=1}^{n} x_{i,j} = 1 \forall i \in \{1,\ldots,n\}$, and $\sum_{i=1}^{n} x_{i,j} = 1 \forall j \in \{1,\ldots,n\}$. The first constraint ensures that each slot is assigned to a person who is free at that slot. The second and third constraints ensure that each slot is assigned to exactly one person and each person is assigned to exactly one slot, respectively.
+
+objective: The problem is a satisfaction problem, meaning that the objective is to find a feasible assignment of people to slots that satisfies all the constraints, rather than minimizing or maximizing a specific value.

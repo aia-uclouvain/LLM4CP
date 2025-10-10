@@ -1,0 +1,5 @@
+name: Circle Intersection Problem
+description: The problem involves finding the intersection points of two circles, each with a radius of 2 units, centered at (0,0) and (1,1) respectively.
+variables: X, Y - These are the decision variables representing the x and y coordinates of the intersection point of the two circles.
+constraints: 4.0 = X*X + Y*Y, 4.0 = (X-1.0)*(X-1.0) + (Y-1.0)*(Y-1.0) - These constraints represent the equations of the two circles. The first equation represents a circle centered at (0,0) with a radius of 2, while the second equation represents a circle centered at (1,1) with a radius of 2.
+objective: satisfy - The objective of this problem is to find a solution that satisfies both constraints, i.e., to find the intersection point(s) of the two circles. There is no explicit objective function to minimize or maximize.

@@ -1,0 +1,7 @@
+name: NClass Problem
+description: The NClass problem is a constraint satisfaction problem that involves assigning values to a set of variables such that the values are partitioned into a specified number of non-empty sets. The problem requires finding an assignment of values to the variables such that at least one value is assigned to at least one variable in each partition.
+variables: $x = [x_1, x_2, ..., x_n]$, $s = [s_1, s_2, ..., s_m]$, $num\_class$ 
+where $x$ is an array of decision variables representing the values assigned to each variable, $s$ is an array of decision variables representing the partitions, and $num\_class$ is a decision variable representing the number of partitions.
+constraints: $nclass(num\_class, x, s)$, $cp1d(s, [{1,3}, {4}, {2,6}])$, $cp1d(x, [3,2,7,2,6])$, $num\_class = 2$ 
+where $nclass(num\_class, x, s)$ is a global constraint that ensures the number of partitions is equal to $num\_class$, $cp1d(s, [{1,3}, {4}, {2,6}])$ and $cp1d(x, [3,2,7,2,6])$ are constraints that assign specific values to the partitions and variables, and $num\_class = 2$ is a constraint that fixes the number of partitions to 2.
+objective: satisfy

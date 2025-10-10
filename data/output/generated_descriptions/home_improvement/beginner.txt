@@ -1,0 +1,12 @@
+Home Improvement Problem
+The problem is about deciding which home improvement to make to a house to increase its selling price. 
+The main variables are: 
+- house prices: the prices at which similar houses in the neighborhood were sold
+- improvements: whether a house had a new bathroom, kitchen, pool, wood floors, or new paint
+- installation costs: the cost of making each improvement
+- x: the amount of profit each improvement adds to the house price
+- rest: the difference between the actual and expected selling price of each house.
+The basic restrictions are: 
+- each house can have multiple improvements, but the installation cost is subtracted from the profit
+- the total profit from all improvements plus any extra factors (rest) equals the actual selling price of the house.
+The goal is to find the improvement that adds the most profit to the house, while also considering the installation costs and other factors that affect the selling price.

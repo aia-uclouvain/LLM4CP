@@ -1,0 +1,13 @@
+name: Crowded Chessboard puzzle
+description: The Crowded Chessboard puzzle is a classic problem in constraint programming where the goal is to place a set of chess pieces (queens, bishops, knights, and rooks) on a chessboard in such a way that no two pieces of the same type attack each other, and each square of the board is occupied by at most one piece.
+variables: $x_{i,j,k}$, where $x_{i,j,k}$ is a binary variable that represents whether a piece of type $k$ (1 - Queen, 2 - Bishop, 3 - Knight, 4 - Rook) is placed on the square $(i,j)$ of the board. $res_{i,j}$ is an auxiliary variable used to calculate the output.
+constraints: 
+$\sum_{i,j} x_{i,j,k} = N_k$ (each piece type has a fixed number of occurrences), 
+$\sum_{k} x_{i,j,k} \leq 1$ (each square can be occupied by at most one piece), 
+$\sum_{j} x_{i,j,1} \leq 1$ and $\sum_{i} x_{i,j,1} \leq 1$ (no two queens attack each other), 
+$\sum_{k} x_{k,i-k+1,1} \leq 1$ and $\sum_{k} x_{k,i+k-1,1} \leq 1$ (no two queens attack each other diagonally), 
+similar constraints for bishops and rooks, 
+$x_{i-2,j-1,3} + x_{i-1,j-2,3} + x_{i+1,j-2,3} + x_{i+2,j-1,3} + x_{i+2,j+1,3} + x_{i+1,j+2,3} + x_{i-1,j+2,3} + x_{i-2,i+1,3} + 99x_{i,j,3} \leq 99$ (no two knights attack each other), 
+$\sum_{i,j,k} x_{i,j,k} = 0$ for dummy squares (squares outside the actual chessboard).
+These constraints ensure that the pieces are placed on the board according to the rules of chess, and that each square is occupied by at most one piece.
+objective: minimize $z = \sum_{i,j,k} x_{i,j,k}$, which represents the total number of pieces placed on the board.

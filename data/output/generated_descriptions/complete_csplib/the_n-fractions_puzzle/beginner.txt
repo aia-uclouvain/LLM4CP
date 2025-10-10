@@ -1,5 +1,0 @@
-The name of the problem is the Fractions problem. 
-This problem is about finding a way to assign the numbers 1 through 9 to the letters A, B, C, D, E, F, G, H, and I, so that when you plug these numbers into a certain math equation, the equation equals 1. 
-The main variables are A, B, C, D, E, F, G, H, and I, which represent the digits 1 through 9. 
-The basic restrictions are that each digit can only be used once, and the equation must equal 1. The equation is: (A / (B * C)) + (D / (E * F)) + (G / (H * I)) = 1. 
-The goal of the problem is to find a solution that satisfies the equation and the restrictions.

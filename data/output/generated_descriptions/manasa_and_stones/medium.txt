@@ -1,0 +1,5 @@
+Manasa and Stones problem
+The problem is about finding all possible values for the number on the last stone in a trail of stones where each stone has a number, and the difference between two consecutive stones is either a or b.
+The main decision variables are the array x, where x[i] represents the number on the i-th stone.
+The key constraints are that the first stone has a number of 0, and for each subsequent stone, its number is either the number of the previous stone plus a, or the number of the previous stone plus b. Additionally, the numbers on the stones are in increasing order.
+The problem's objective is to find all possible values for the number on the last stone, which is represented by x[n]. The goal is to generate all possible sequences of stone numbers that satisfy the given constraints, and then output the distinct possible values for the last stone in increasing order.

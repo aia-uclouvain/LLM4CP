@@ -1,0 +1,8 @@
+name: Nine-Digit Arrangement Problem
+description: The problem is to arrange the digits 1-9 in two multiplications such that the products are equal. The arrangement is in the form of two equations: ABC * DE = FG * HI, where each letter represents a digit from 1 to 9, and the products are equal.
+variables: A, B, C, D, E, F, G, H, I, s, x 
+The decision variables are A, B, C, D, E, F, G, H, I, which represent the digits 1-9, and s, which represents the product of the two equations. The variable x is an array of variables representing the digits.
+constraints: all_different(x) ∧ s = (100*A + 10*B + C) * (10*D + E) ∧ s = (10*F + G) * (10*H + I) ∧ (10*F + G) <= (10*H + I) ∧ s = 7448
+The constraints are: all the digits must be different, the product of the first equation must be equal to the product of the second equation, the first term of the second equation must be less than or equal to the second term, and the product must be equal to 7448. The first two constraints ensure that the products are equal, the third constraint is for symmetry breaking, and the last constraint specifies the target product.
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of values to the variables such that all the constraints are met, rather than minimizing or maximizing a specific value. However, the model can also be used to maximize the product s by replacing the constraint s = 7448 with an objective function to maximize s.

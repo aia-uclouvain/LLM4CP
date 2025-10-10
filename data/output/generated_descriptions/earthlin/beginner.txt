@@ -1,0 +1,5 @@
+Earthlings puzzle 
+The problem is about figuring out the order of three teams, Zaire, Uruguay, and Spain, based on statements made by truth-tellers, liars, and alternators. 
+The main variables are: x, which shows which team is in which place, y, which shows which type of statement is made by which team, and d, which shows the number of true statements. 
+The basic restrictions are that each team can only be in one place, each place can only have one team, and each type of statement can only be made by one team. The statements also have to follow certain rules, such as a truth-teller always telling the truth and a liar always lying. 
+The goal of the problem is to find a solution that satisfies all the given constraints, which means finding the correct order of the teams and the types of statements they made.

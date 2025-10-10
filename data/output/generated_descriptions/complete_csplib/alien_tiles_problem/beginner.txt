@@ -1,5 +1,0 @@
-Alien Tiles problem. 
-This problem is about finding the best way to color a grid of tiles using a set of rules. 
-The main variables are the size of the grid, the number of colors available, and a matrix that represents which color to apply to each tile. 
-The basic restrictions are that each tile can be colored in a way that is determined by the colors of the tiles around it, and that the goal is to find a way to color all the tiles that is the most efficient, meaning it uses the most "clicks" or color changes. 
-The goal of the problem is to maximize the total number of clicks, or color changes, used to color the entire grid, while making sure that there is no other way to color the grid that uses the same number of clicks and results in the same final coloring.

@@ -1,0 +1,5 @@
+Defending the Castle puzzle 
+The problem is about defending a square castle with a certain number of fighters. 
+The main variables are p and q, which represent the number of defenders in different positions around the castle. 
+The basic restrictions are that the total number of defenders is 28, and the number of defenders on each side of the castle should be as high as possible, with p and q being non-negative and q being at least as many as p. 
+The goal is to maximize the number of defenders on each side of the castle.

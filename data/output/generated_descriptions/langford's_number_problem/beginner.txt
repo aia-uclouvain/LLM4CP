@@ -1,0 +1,13 @@
+Langford's Number Problem
+The problem is about arranging two sets of positive integers from 1 to k in a sequence, such that each subsequent occurrence of an integer i appears i+1 indices later than the last occurrence.
+
+The main variables are:
+- position: an array of length 2k, where each element represents the position of an integer in the sequence
+- solution: an array of length 2k, where each element represents the integer at a particular position in the sequence
+
+The basic restrictions or rules of the problem are:
+- All positions in the sequence must be unique (all_different constraint)
+- For each integer i, the difference between the positions of its two occurrences must be i+1
+- The first occurrence of each integer i must be before the second occurrence (symmetry breaking constraint)
+
+The goal of the problem is to find a sequence that satisfies these constraints.

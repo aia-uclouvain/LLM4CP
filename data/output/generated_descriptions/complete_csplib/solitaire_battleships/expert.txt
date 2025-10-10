@@ -1,8 +1,0 @@
-name: Solitaire Battleships
-description: Solitaire Battleships is a puzzle where a partially filled board and the number of ships in each row and column are given, and the goal is to fill the board with ships of different types and sizes, ensuring that the row and column tallies are respected and that ships do not overlap.
-variables: $s_{i,j}, t_{i,j}, cp_i, cn_i$ 
-These variables represent the state of each cell in the board ($s_{i,j}$ is 1 if the cell is occupied by a ship segment, and 0 otherwise), the type of ship segment in each cell ($t_{i,j}$ is the size of the ship if the cell is occupied, and 0 otherwise), and the number of occurrences of ship segments of each type ($cp_i$ and $cn_i$ are the number of positive and negative ship segments of type $i$, respectively).
-constraints: $s_{i,j} \in \{0,1\}, t_{i,j} \in \{-s,0,s\}, cp_i \geq 0, cn_i \geq 0, \sum_{j} s_{i,j} = rowsum_i, \sum_{i} s_{i,j} = colsum_j, t_{i,j} \neq 0 \leftrightarrow s_{i,j} = 1, cp_i + cn_i = surfaces_i, t_{i+1,j} \in horizontal\_automaton, t_{i,j+1} \in vertical\_automaton$
-These constraints ensure that the cells are either occupied or not, that the ship segments are of the correct type, that the row and column tallies are respected, that ships do not overlap, and that the number of occurrences of ship segments of each type is correct.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, i.e., to fill the board with ships of different types and sizes, ensuring that the row and column tallies are respected and that ships do not overlap.

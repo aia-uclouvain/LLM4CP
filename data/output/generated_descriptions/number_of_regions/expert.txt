@@ -1,0 +1,5 @@
+name: Numbering the Regions
+description: The problem involves dividing a circle into seven regions using three lines, and assigning the numbers 1 to 7 to these regions such that the sum of the numbers on either side of each line is the same.
+variables: $x_1, x_2, ..., x_7$ - These are decision variables representing the numbers assigned to each of the seven regions.
+constraints: $\forall i \in \{1, 2, 3\} (disjoint(lines[i,1], lines[i,2]) \wedge card(lines[i,1] \cup lines[i,2]) = n) \wedge all\_different(x) \wedge \forall i \in \{1, 2, 3\} (\sum_{j \in lines[i,1]} x_j = \sum_{j \in lines[i,2]} x_j)$ - These constraints ensure that the sets of regions on either side of each line are disjoint and cover all numbers, all numbers are assigned to different regions, and the sum of the numbers on either side of each line is the same.
+objective: satisfy - The objective of the problem is to find a satisfying assignment of numbers to regions, rather than minimizing or maximizing a specific value.

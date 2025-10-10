@@ -1,0 +1,5 @@
+name: Digit Sequence Problem
+description: The problem involves finding a sequence of digits that contains a specific element and corresponds to a given decimal number when interpreted as a base-10 numeral.
+variables: $x_1, x_2, ..., x_n, el, num$ - These are decision variables where $x_i$ represents the $i^{th}$ digit in the sequence, $el$ is the element that must be contained in the sequence, and $num$ is the decimal equivalent of the sequence.
+constraints: $el \in x$, $toNum(x, num, 10.0)$, $num = 123402345$ - These constraints ensure that the element $el$ is present in the sequence $x$, the sequence $x$ corresponds to the decimal number $num$ when interpreted as a base-10 numeral, and $num$ is equal to $123402345$.
+objective: satisfy - The objective of the problem is to find a feasible solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

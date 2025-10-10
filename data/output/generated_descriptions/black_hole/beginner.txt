@@ -1,0 +1,14 @@
+Black Hole Solitaire
+The problem is about a card game where you have 17 stacks of 3 cards and a "black hole" in the middle. The goal is to move all the cards from the stacks to the black hole, following certain rules. The black hole will accept a card if its rank is one greater or one less than the rank of the card currently on top of it.
+
+The main variables are:
+- blackHole: the sequence of cards that are moved to the black hole
+- cardSequence: the position of each card in the sequence
+- initialStacks: the initial cards in each stack
+
+The basic restrictions or rules of the problem are:
+- Each card can only be moved to the black hole if its rank is one greater or one less than the rank of the card currently on top of it
+- The cards in each stack must be moved in the correct order (from top to bottom)
+- The game starts with the Ace of Spades in the black hole
+
+The goal of the problem is to find a sequence of moves that will remove all the cards from the stacks and move them to the black hole, following the rules of the game.

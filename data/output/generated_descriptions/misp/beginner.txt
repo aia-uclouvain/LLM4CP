@@ -1,0 +1,5 @@
+Maximum Independent Set Problem
+The problem is about finding the largest group of people who don't know each other in a big network of friends. 
+The main variables are the number of people (n), the connections between people (E), and whether a person is in the group (x). 
+The basic restrictions are that if two people know each other, they can't both be in the group. 
+The goal is to find the largest group of people who don't know each other, which means maximizing the number of people in the group (obj).

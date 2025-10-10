@@ -1,0 +1,15 @@
+**Grid Puzzle Problem**
+The Grid Puzzle problem is a classic constraint programming problem. 
+It involves filling in a grid with letters such that each row and column contains the same number of each letter, and at least one row or column contains the same letter in all its cells.
+
+**Decision Variables**
+The main decision variables in this problem are the values of the grid cells, represented by the `x` array. Each cell `x[i, j]` can take a value from 1 to `m`, where `m` is the number of letters (in this case, A, B, and C).
+
+**Constraints**
+The key constraints in this problem are:
+- Each row and column must contain the same number of each letter, unless the letter does not appear at all in that row or column.
+- At least one row or column must contain the same letter in all its cells.
+- The values of the grid cells are constrained by the given initial values, where some cells may already be filled with a letter.
+
+**Objective**
+The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific function. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the requirements.

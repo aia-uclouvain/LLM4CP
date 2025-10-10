@@ -1,0 +1,5 @@
+The problem is called the Scheduling Speakers problem. 
+It is about scheduling a set of speakers into a set of time slots, where each speaker has a specific set of available slots in which they can speak. 
+The main decision variables are the array `x`, where `x[i]` represents the time slot assigned to speaker `i`. 
+The key constraints are that each speaker must be assigned to one of their available slots, and no two speakers can be assigned to the same slot. 
+The problem's objective is to find a feasible schedule that satisfies these constraints, meaning that every speaker is assigned a slot and no slot is assigned to more than one speaker.

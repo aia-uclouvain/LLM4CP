@@ -1,0 +1,5 @@
+name: Langford's Number Problem
+description: The problem is to arrange two sets of positive integers from 1 to k in a sequence such that each subsequent occurrence of an integer i appears i+1 indices later than the last occurrence.
+variables: $x_{i,j}, seq_i, pos_i, solution_i$ - These variables represent the position of the ith occurrence of the jth number, the sequence of numbers, the position of the numbers, and the solution array respectively. They are used to model the sequence and positions of the numbers.
+constraints: $\forall i \in [1,k], \forall j \in [2,k], pos_{i,j} = pos_{i,j-1} + i + 1$, $\forall i \in [1,k], solution_{pos_i} = i$, $\forall i \in [1,k], solution_{pos_{i+k}} = i$, $alldifferent(pos)$, $solution_1 < solution_{2k}$ - These constraints ensure that each subsequent occurrence of a number is i+1 indices later than the last, that the solution array is correctly assigned, that the positions are distinct, and that the first occurrence of the number 1 is before the last occurrence.
+objective: The objective of the problem is to find a sequence that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

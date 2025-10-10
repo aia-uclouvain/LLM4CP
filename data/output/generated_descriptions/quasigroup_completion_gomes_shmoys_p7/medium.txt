@@ -1,0 +1,5 @@
+Quasigroup Completion Problem
+The Quasigroup Completion Problem is about filling in missing values in a partially filled table, known as a Latin square, such that each row, column, and sub-table contains each symbol exactly once. 
+The main decision variables in this problem are the elements of the two-dimensional array x, where x[i, j] represents the value to be assigned to the cell at row i and column j in the table.
+The key constraints are that each row, column, and sub-table must contain each symbol exactly once, and the pre-assigned values in the table must be respected. In plain language, this means that no row or column can have any repeated values, and the given values in the table cannot be changed.
+The objective of the Quasigroup Completion Problem is to find a valid completion of the table, which means finding an assignment of values to the missing cells such that all the constraints are satisfied. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the constraints.

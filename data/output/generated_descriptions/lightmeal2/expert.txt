@@ -1,0 +1,13 @@
+name: Lightmeal Problem
+description: The Lightmeal Problem is a classic problem in constraint programming that involves finding a combination of appetizer, main course, and dessert that has a total calorific value not exceeding a given limit, in this case 10 calories. The problem is defined by a set of foods, each with a specific calorific value, and the goal is to select one appetizer, one main course (which can be either meat or fish), and one dessert, such that the total calorific value of the selected dishes does not exceed the limit.
+variables: $x = [x_1, x_2, ..., x_8]$, where $x_i$ is a binary decision variable that represents whether the $i^{th}$ food is selected or not. The variable $sum\_calories$ represents the total calorific value of the selected dishes.
+constraints: 
+$\sum_{i=1}^{8} x_i = 3$ (exactly three dishes are selected), 
+$\sum_{i=1}^{8} bool2int(appetisers[i] > 0) * x_i = 1$ (exactly one appetizer is selected), 
+$\sum_{i=1}^{8} bool2int(meat[i] > 0) * x_i \leq 1$ (at most one meat dish is selected), 
+$\sum_{i=1}^{8} bool2int(fish[i] > 0) * x_i \leq 1$ (at most one fish dish is selected), 
+$\sum_{i=1}^{8} bool2int(dessert[i] > 0) * x_i = 1$ (exactly one dessert is selected), 
+$sum\_calories = \sum_{i=1}^{8} (bool2int(appetisers[i] > 0) * appetisers[i] * x_i + bool2int(meat[i] > 0) * meat[i] * x_i + bool2int(fish[i] > 0) * fish[i] * x_i + bool2int(dessert[i] > 0) * dessert[i] * x_i)$ (the total calorific value of the selected dishes), 
+$sum\_calories \leq max\_calories$ (the total calorific value does not exceed the limit).
+These constraints ensure that a valid meal is selected, with exactly one appetizer, one main course, and one dessert, and that the total calorific value does not exceed the limit.
+objective: The objective of the problem is to find all possible combinations of dishes that satisfy the constraints, with no specific objective function to minimize or maximize, the goal is to find all feasible solutions.

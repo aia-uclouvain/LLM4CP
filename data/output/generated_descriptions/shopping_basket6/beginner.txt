@@ -1,0 +1,11 @@
+Shopping Basket Optimization Problem
+The problem is about finding the best way to buy a list of items from different shops to minimize the total cost. 
+The main variables are: 
+- the items to buy 
+- the shops that sell these items and their prices 
+- the delivery costs for each shop and the limit above which the delivery is free.
+The basic restrictions or rules of the problem are: 
+- each item can only be bought from one shop 
+- the total cost of items from a shop determines if a delivery cost should be added 
+- the goal is to minimize the total cost, which includes the cost of items and any applicable delivery costs. 
+The goal of the problem is to minimize the total cost of buying all the items, taking into account the prices of the items in different shops and the delivery costs associated with each shop.

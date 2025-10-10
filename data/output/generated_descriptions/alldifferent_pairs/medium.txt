@@ -1,0 +1,5 @@
+The All Different Pairs problem. 
+This problem is about generating all possible pairs of distinct nodes in a set of n nodes, such that all pairs are unique and ordered. 
+The main decision variables are x, a 2D array where x[k,1] and x[k,2] represent the two nodes that form the k-th pair, with the constraint that x[k,1] and x[k,2] must be different. 
+The key constraints are that all pairs must be different, the pairs are in increasing order, and for each pair, the first node must be less than the second node. 
+The problem's objective is to find all possible combinations of pairs that satisfy these constraints, with no explicit minimization or maximization objective, but rather to generate all valid solutions.

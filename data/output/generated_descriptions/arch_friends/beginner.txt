@@ -1,0 +1,5 @@
+Arch Friends puzzle
+The problem is about a girl named Harriet who bought four different pairs of shoes at four different stores. She can't remember the order in which she bought the shoes or which store she bought each pair at. 
+The main variables are the types of shoes (ecru espadrilles, fuchsia flats, purple pumps, and suede sandals) and the stores where they were bought (Foot Farm, Heels in a Handcart, The Shoe Palace, and Tootsies). These variables represent the order in which Harriet visited each store and which shoe she bought at each one.
+The basic restrictions are: Harriet bought fuchsia flats at Heels in a Handcart, the store after buying purple pumps was not Tootsies, Foot Farm was the second store visited, and two stores after The Shoe Palace, she bought suede sandals. Also, each shoe can only be bought at one store, and each store can only be visited once.
+The goal is to figure out the order in which Harriet bought each pair of shoes and which store she bought each pair at, by satisfying all the given restrictions.

@@ -1,0 +1,8 @@
+Twelve Draughts Puzzle
+The Twelve Draughts Puzzle is a classic constraint programming problem that involves placing 12 draughts (or checkers) on a 4x4 grid, subject to certain constraints. 
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i,j]` denotes the number of draughts placed on the square at row `i` and column `j`. 
+
+The key constraints in this problem can be described as follows: each square on the grid can hold any number of draughts (including zero), the total number of draughts placed on the grid must be exactly 12, there must be exactly 5 draughts on the first row, exactly 5 draughts on the first column, exactly 5 draughts on the last row, and exactly 5 draughts on the last column. Additionally, the inner 2x2 sub-grid must be empty, meaning no draughts can be placed on these squares.
+
+The objective of the Twelve Draughts Puzzle is not to minimize or maximize a specific quantity, but rather to find a feasible solution that satisfies all the given constraints. In other words, the goal is to find a way to place the 12 draughts on the grid such that all the constraints are met, and this is achieved by using the `solve satisfy` statement in the MiniZinc model.

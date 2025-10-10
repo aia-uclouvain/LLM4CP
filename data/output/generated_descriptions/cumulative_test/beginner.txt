@@ -1,0 +1,13 @@
+The problem is called Cumulative Scheduling. 
+It's about scheduling tasks that require some resources, like machines or workers, and making sure that at any given time, the total amount of resources being used doesn't exceed a certain limit. 
+The main variables are: 
+- origin: when each task starts
+- duration: how long each task takes
+- height: how many resources each task requires
+- end: when each task finishes
+- limitx: the maximum amount of resources that can be used at any time. 
+The basic restrictions are: 
+- each task has a start time, a duration, and a finish time
+- the finish time is calculated by adding the start time and the duration
+- the total amount of resources used by all tasks at any given time cannot exceed the limit. 
+The goal is to find a schedule that minimizes the maximum finish time of all tasks, which means finding the earliest time when all tasks can be completed.

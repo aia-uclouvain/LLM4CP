@@ -1,0 +1,30 @@
+**2D Bin Packing Problem**
+
+The 2D Bin Packing Problem is a classic problem in computer science and operations research. It involves packing a set of rectangles of different sizes into a larger rectangle, called the bin, without overlapping any of the rectangles.
+
+**Decision Variables**
+
+The main decision variables in this problem are the coordinates of the rectangles. In the given Minizinc model, the coordinates are represented by a 2D array `r` where `r[i, j]` represents the `j-th` coordinate of the `i-th` rectangle. The coordinates can be represented in different ways, including "end" representation (`xorig, xend, yorig, yend`), "size" representation (`xorig, xsize, yorig, ysize`), and "CHIP" representation (`xorig, yorig, xsize, ysize`).
+
+**Constraints**
+
+The key constraints in this problem are:
+
+* Non-overlap constraint: No two rectangles can overlap. This is enforced by the `diffn` predicate, which checks if two rectangles do not overlap in at least one dimension.
+* Rectangle size constraint: The size of each rectangle is given by the `areas` array, and the coordinates of the rectangle must be consistent with its size. This is enforced by the `r_area_end`, `r_area_size`, and `r_area_chip` predicates.
+* Bin size constraint: The rectangles must fit within the larger bin. This constraint is not explicitly stated in the model, but it is implied by the bounds on the coordinates.
+
+**Objective**
+
+The objective of the problem is to find a packing of the rectangles that satisfies all the constraints. In the given model, the objective is to satisfy the constraints, and there is no explicit objective function to minimize or maximize. However, the model can be modified to include an objective function, such as minimizing the total area of the bin or maximizing the number of rectangles packed.
+
+**Problem Variants**
+
+The 2D Bin Packing Problem has several variants, including:
+
+* Online bin packing: The rectangles are given one at a time, and the algorithm must pack each rectangle without knowing the future rectangles.
+* Offline bin packing: All the rectangles are given at once, and the algorithm can pack them in any order.
+* Guaranteed bin packing: The algorithm must pack all the rectangles into a bin of a given size.
+* Bin packing with rotation: The rectangles can be rotated by 90 degrees before packing.
+
+The given Minizinc model can be used to solve different variants of the 2D Bin Packing Problem by modifying the constraints and objective function.

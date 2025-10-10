@@ -1,0 +1,16 @@
+name: Facility Location Problem
+
+description: The problem involves a company considering opening warehouses in four cities: New York, Los Angeles, Chicago, and Atlanta. Each warehouse has a fixed weekly cost and can ship a maximum of 100 units per week. The company needs to meet the weekly demands of three regions at minimum cost, subject to certain restrictions such as the opening of specific warehouses and the maximum number of warehouses that can be opened.
+
+variables: $open_i, ships_{ij}$ where $i \in \{1, 2, 3, 4\}$ and $j \in \{1, 2, 3\}$. These variables represent the decision of whether to open a warehouse in a particular city ($open_i$) and the number of units to ship from a warehouse to a region ($ships_{ij}$).
+
+constraints: 
+$\sum_{j=1}^{3} open_i \cdot ships_{ij} \leq 100, \forall i \in \{1, 2, 3, 4\}$,
+$\sum_{i=1}^{4} open_i \cdot ships_{ij} \geq demands_j, \forall j \in \{1, 2, 3\}$,
+$open_i = 1 \leftrightarrow \sum_{j=1}^{3} ships_{ij} > 0, \forall i \in \{1, 2, 3, 4\}$,
+$open_{New York} = 1 \rightarrow open_{Los Angeles} = 1$,
+$\sum_{i=1}^{4} open_i \leq 3$,
+$open_{Atlanta} = 1 \lor open_{Los Angeles} = 1$.
+These constraints ensure that each warehouse does not exceed its shipping capacity, the demands of each region are met, a warehouse is only considered open if it ships to at least one region, and the specific restrictions on warehouse openings are satisfied.
+
+objective: Minimize $tot\_cost = \sum_{i=1}^{4} open_i \cdot (fixed\_cost_i + \sum_{j=1}^{3} ships_{ij} \cdot costs_{ij})$, which represents the total weekly cost of meeting the demands of the three regions.

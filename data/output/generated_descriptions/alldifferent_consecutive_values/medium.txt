@@ -1,0 +1,5 @@
+The problem is called the All Different Consecutive Values problem. 
+This problem is about assigning distinct consecutive values to a set of variables. 
+The main decision variables are the array `x` of variables, where each `x[i]` represents the value assigned to the `i-th` variable. 
+The key constraints are that all variables must take distinct values and the difference between the largest and smallest values assigned must be equal to the number of variables minus one, meaning there are no gaps in the assigned values. 
+The problem's objective is to find an assignment of values to the variables that satisfies these constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

@@ -1,0 +1,5 @@
+Sultan's Children Problem
+The problem is about a sultan who has a secret number of children, and a diplomat tries to figure out the exact number based on a hint given by the sultan. 
+The main variables are the number of boys (b) and the number of girls (g), which represent the total number of male and female children the sultan has.
+The basic restrictions are that the total number of children must be between 100 and 500, and if you pick any two children at random, the chance that both are boys is exactly 50%.
+The goal is to find the exact total number of the sultan's children, which is the sum of the number of boys and girls.

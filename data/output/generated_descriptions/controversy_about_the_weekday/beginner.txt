@@ -1,0 +1,7 @@
+The problem is called "Controversy about the weekday". 
+It's about seven friends who can't agree on what day of the week it is. 
+The main variables are "today" (the current day of the week) and "truth" (whether each friend's statement is true or not). 
+The basic restrictions are that each friend makes a statement about the day of the week, and only one of these statements can be true. 
+The goal is to figure out what day of the week the friends met, given their statements. 
+For example, Klaus says it's Tuesday, Sabine says tomorrow is Tuesday, and so on. 
+The problem wants to find the day of the week that makes only one of these statements true, and the rest false.

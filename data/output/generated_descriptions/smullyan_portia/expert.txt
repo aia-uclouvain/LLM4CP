@@ -1,0 +1,5 @@
+name: Smullyan's Portia problem
+description: The problem is based on a story where a portrait is placed in one of three caskets: gold, silver, or lead. Each casket has an inscription that provides a clue about the location of the portrait. The goal is to determine which casket contains the portrait based on the given inscriptions.
+variables: $portrait = [portrait_1, portrait_2, portrait_3]$ and $inscriptions = [inscriptions_1, inscriptions_2, inscriptions_3]$, where $portrait_i$ is a boolean variable indicating whether the portrait is in the $i^{th}$ casket, and $inscriptions_i$ is a boolean variable indicating whether the inscription on the $i^{th}$ casket is true.
+constraints: $\sum_{i=1}^{3} portrait_i = 1$, $inscriptions_1 = \neg portrait_2$, $inscriptions_2 = \neg portrait_2$, $inscriptions_3 = portrait_3$, $\sum_{i=1}^{3} inscriptions_i \geq 1$, and $\sum_{i=1}^{3} \neg inscriptions_i \geq 1$, which ensure that the portrait is in only one casket, the inscriptions are consistent with the location of the portrait, and at least one inscription is true and at least one is false.
+objective: satisfy

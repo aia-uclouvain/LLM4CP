@@ -1,0 +1,5 @@
+The problem is called the Minimum Index Problem. 
+It is about finding the index of the minimum value in a collection of variables. 
+The main decision variables are `variables`, an array of variables representing the collection of values, `min_ind`, the index of the minimum value, and `min_val`, the minimum value itself. 
+The key constraints are that `variables` must be equal to a given array of values, and `min_ind` and `min_val` must correspond to the index and value of the minimum element in `variables`. 
+The problem's objective is to satisfy these constraints, meaning that it is a satisfaction problem rather than an optimization problem, where the goal is to find a solution that meets all the constraints, rather than minimizing or maximizing a specific objective function.

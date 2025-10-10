@@ -1,0 +1,8 @@
+Football Team Optimization Problem
+The problem is about optimizing the selection of football players for a team within a given budget, ensuring that the team meets the minimum and maximum requirements for each position.
+The main decision variables are the `x` array, which represents whether a player should be bought or not, with `x[i,j]` being 1 if the jth player of type i is bought and 0 otherwise.
+The key constraints are:
+- Each position (goalkeeper, defender, midfielder, striker) has a minimum and maximum number of players that must be bought.
+- The total cost of the chosen players cannot exceed the budget of 30 million.
+- The model only considers "real" players, ignoring the "0" filled values in the cost matrix.
+The objective of the problem is to maximize the total cost of the chosen players, which is equivalent to spending as much of the budget as possible, while meeting the requirements for each position.

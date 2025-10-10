@@ -1,0 +1,8 @@
+The problem is called the Domain Constraint Problem. 
+It is about linking a domain variable to a set of 0-1 variables, each representing a potential value of the domain variable, such that the 0-1 variable associated with the actual value of the domain variable is equal to 1, and the remaining 0-1 variables are all equal to 0.
+
+The main decision variables are `var01`, an array of 0-1 variables, `values`, an array of potential values, and `val`, the actual value of the domain variable. `var01` represents the selection of the actual value, `values` represents the potential values, and `val` represents the actual value chosen.
+
+The key constraints are that one and only one of the 0-1 variables in `var01` must be equal to 1, and the actual value `val` must be equal to the corresponding value in `values`. Additionally, the `cp1d` constraints ensure that `var01` and `values` are set to specific values.
+
+The problem's objective is to satisfy all the given constraints, specifically the `domain_constraint`, which links the domain variable `val` to the 0-1 variables `var01` and the potential values `values`. The goal is not to minimize or maximize a specific objective function, but rather to find a solution that satisfies all the constraints.

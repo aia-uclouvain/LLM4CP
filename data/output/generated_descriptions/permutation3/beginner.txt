@@ -1,0 +1,5 @@
+Permutation Problem
+The problem is about rearranging a set of items, like a list of numbers, into a different order. 
+The main variables are x, y, and p. The variable x is the original list of numbers, y is the rearranged list, and p is a helper list that keeps track of how the numbers were moved from x to y.
+The basic rules are that each number in x must be used exactly once in y, and no number can be used more than once in y. The helper list p must also have each number from 1 to the length of x exactly once.
+The goal of the problem is to find a valid rearrangement of the numbers in x, which is stored in y, and the corresponding helper list p that shows how the numbers were rearranged.

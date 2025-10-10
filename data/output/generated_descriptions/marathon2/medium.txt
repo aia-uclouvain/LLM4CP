@@ -1,0 +1,5 @@
+The Marathon Puzzle problem. 
+This problem is about determining the order in which six runners, Dominique, Ignace, Naren, Olivier, Philippe, and Pascal, finished a marathon, given certain conditions about their relative finishing positions. 
+The main decision variables are the finishing positions of each runner, represented by variables such as Dominique, Ignace, Naren, Olivier, Philippe, and Pascal, which can take on values from 1 to 6, where 1 is the first position and 6 is the last. 
+The key constraints are: Olivier did not finish last, Dominique, Pascal, and Ignace finished before Naren and Olivier, Dominique improved on last year's position, Philippe finished among the first four, Ignace did not finish second or third, Pascal finished three positions ahead of Naren, and neither Ignace nor Dominique finished fourth. 
+The objective of this problem is to find a satisfying assignment of finishing positions for all runners, such that all given conditions are met, which is achieved by solving the "satisfy" constraint in the model.

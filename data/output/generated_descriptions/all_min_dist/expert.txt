@@ -1,0 +1,5 @@
+name: All Minimum Distance Problem
+description: The All Minimum Distance Problem is a constraint satisfaction problem where the goal is to find an assignment of values to a set of variables such that the absolute difference between any two variables is greater than or equal to a given minimum distance.
+variables: $x = [x_1, x_2, ..., x_n], c$: These are the decision variables where $x$ is an array of $n$ variables, each representing a value, and $c$ is a variable representing the minimum distance between any two values in $x$. 
+constraints: $c > 0, |x_i - x_j| \geq c \forall i, j \in \{1, 2, ..., n\} \text{ where } i \neq j, c = 2$: These constraints ensure that the minimum distance $c$ is positive, the absolute difference between any two variables in $x$ is greater than or equal to $c$, and $c$ is fixed to 2.
+objective: satisfy: The objective of this problem is to find a satisfying assignment of values to the variables $x$ and $c$ such that all constraints are met, rather than minimizing or maximizing a specific value.

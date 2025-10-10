@@ -1,0 +1,7 @@
+name: Uniform Dice Problem
+description: The Uniform Dice Problem is a constraint programming problem that involves finding two dice with a uniform distribution of sums. The goal is to design two dice such that the sums of the numbers on the two dice have a uniform distribution. This means that each possible sum should occur with the same frequency.
+variables: $x1_1, x1_2, ..., x1_n, x2_1, x2_2, ..., x2_n, dist_1, dist_2, ..., dist_{m*2}, z$ 
+These variables represent the numbers on each face of the two dice ($x1_i$ and $x2_i$), the frequency of each possible sum ($dist_k$), and the number of non-zero frequencies ($z$).
+constraints: $\forall k \in \{1, 2, ..., m*2\}: dist_k = \sum_{i,j \in \{1, 2, ..., n\}} (x1_i + x2_j == k), \sum_{k \in \{1, 2, ..., m*2\}} dist_k = n*n, same\_except\_0(dist), increasing(x1), increasing(x2), lex\_lesseq(x1, x2)$
+These constraints ensure that the frequency of each sum is calculated correctly, the total frequency is equal to the total number of possible outcomes, the frequencies are either zero or the same, and the numbers on each die are in increasing order and lexicographically ordered.
+objective: satisfy

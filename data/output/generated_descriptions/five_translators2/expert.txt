@@ -1,0 +1,18 @@
+name: Five Translator Problem
+description: The problem involves five translators, each with their native language and two additional languages they can speak. The goal is to determine the languages spoken by each translator based on given conditions and constraints.
+variables: $x_{i,j}$, where $x_{i,j} = 1$ if translator $i$ speaks language $j$ and $x_{i,j} = 0$ otherwise. These decision variables represent the language skills of each translator, with $i$ denoting the translator and $j$ denoting the language.
+constraints: 
+$x_{i,i} = 1$ (each translator speaks their native language), 
+$\sum_{j=1}^{n} x_{i,j} = 3$ (each translator speaks exactly three languages), 
+$x_{English,German} = 1$, 
+$x_{Spanish,French} = 1$, 
+$x_{German,Spanish} = 0$, 
+$x_{French,German} = 0$, 
+$x_{Spanish,German} = 1$, 
+$\sum_{j=1}^{n} (x_{English,j} = x_{French,j} \land x_{French,j} = 1) = 2$, 
+$\sum_{i=1}^{n} x_{i,Russian} = 4$, 
+$\sum_{i=1}^{n} x_{i,French} = 2$, 
+$\sum_{i=1}^{n} (x_{i,Spanish} = 1 \land x_{i,Russian} = 1) = 1$, 
+$\sum_{j=1, j \neq English, j \neq Russian}^{n} (x_{English,j} = x_{Russian,j} \land x_{Russian,j} = 1) = 0$. 
+These constraints represent the given conditions, such as which translators speak which languages, and the relationships between their language skills.
+objective: satisfy, meaning the goal is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

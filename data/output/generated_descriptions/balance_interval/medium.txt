@@ -1,0 +1,11 @@
+The Balance Interval Problem
+The Balance Interval problem is about distributing a set of variables into intervals of a specified size, such that the difference between the maximum and minimum number of variables in any interval is minimized.
+
+The main decision variables in this problem are the array of variables `x` and the balance variable `bal`. The array `x` represents the values assigned to each variable, and the balance variable `bal` represents the difference between the maximum and minimum number of variables in any interval.
+
+The key constraints in this problem are:
+- The variables in `x` must be assigned values within the specified intervals, which are defined by the `interval_size`.
+- The `balance_interval` constraint ensures that the difference between the maximum and minimum number of variables in any interval is calculated correctly.
+- The `min_except_0` predicate is used to find the minimum count of variables in any interval, excluding intervals with zero variables.
+
+The objective of the Balance Interval problem is to find an assignment of values to the variables in `x` such that the balance variable `bal` is equal to a specified value, in this case, 3. This means that the difference between the maximum and minimum number of variables in any interval should be 3. The problem does not explicitly minimize or maximize a specific objective function, but rather satisfies the given constraints.

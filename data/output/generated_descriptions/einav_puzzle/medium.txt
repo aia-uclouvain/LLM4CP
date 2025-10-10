@@ -1,0 +1,18 @@
+**Sign Flip Problem**
+The Sign Flip Problem is a classic constraint programming problem where the goal is to flip the signs of rows and columns in a given matrix to make all row and column sums positive or zero, while minimizing the total sum of the matrix.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `row_signs`: an array of variables representing the sign of each row, which can be either -1 or 1.
+- `col_signs`: an array of variables representing the sign of each column, which can be either -1 or 1.
+- `data_x`: a 2D array of variables representing the matrix after sign flips, where each element is the product of the corresponding element in the original matrix and the signs of its row and column.
+
+**Constraints**
+The key constraints in this problem are:
+- Each element in the `data_x` matrix is calculated by multiplying the corresponding element in the original matrix with the signs of its row and column.
+- The sum of each row in the `data_x` matrix must be positive or zero.
+- The sum of each column in the `data_x` matrix must be positive or zero.
+- The total sum of all elements in the `data_x` matrix is minimized.
+
+**Objective**
+The objective of the Sign Flip Problem is to find the assignment of signs to rows and columns that minimizes the total sum of the matrix, while ensuring that all row and column sums are positive or zero.

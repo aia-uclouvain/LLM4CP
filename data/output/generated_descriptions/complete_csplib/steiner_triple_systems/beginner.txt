@@ -1,5 +1,0 @@
-The Steiner Triplets problem. 
-This problem is about finding a set of triples, where each triple contains three elements, and any two triples have at most one element in common. 
-The main variables are the sets of triples, where each triple is a set of three elements. 
-The basic restrictions are that each triple must contain exactly three elements, and any two triples can have at most one element in common. 
-The goal of the problem is to find a set of triples that satisfy these conditions, given a specific number of elements.

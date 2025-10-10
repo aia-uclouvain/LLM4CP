@@ -1,0 +1,5 @@
+Transportation Problem
+The problem is about finding the cheapest way to transport goods from factories to markets. 
+The main variables are the amount of goods shipped from each factory to each market, and the total cost of shipping.
+The basic restrictions are that each factory can only ship a certain amount of goods, and each market needs to receive a certain amount of goods. 
+The goal is to minimize the total cost of shipping while meeting the demands of the markets and not exceeding the supply limits of the factories.

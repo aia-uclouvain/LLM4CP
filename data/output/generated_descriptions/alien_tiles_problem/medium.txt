@@ -1,0 +1,8 @@
+Alien Tiles Problem
+The Alien Tiles problem is about finding the maximum number of clicks required to reach a specific state in a grid of tiles, where each tile can be clicked and changes the state of its neighboring tiles.
+
+The main decision variable is the `clickMatrix`, a 2D matrix representing the number of clicks for each tile in the grid, where each element `clickMatrix[i][j]` represents the number of clicks for the tile at position `(i, j)`.
+
+The key constraints are that there should be no faster way to reach the same state, and the state reached by the `clickMatrix` should be different from any other possible state. In plain language, this means that for any given tile, the total number of clicks that affect it (including its own clicks and the clicks of its neighbors) should have a unique remainder when divided by the number of colors, compared to any other possible click matrix.
+
+The objective of the problem is to maximize the total number of clicks in the `clickMatrix`, which represents the maximum number of clicks required to reach a specific state in the grid.

@@ -1,0 +1,5 @@
+The Birthday Problem. 
+It's about a person named Frank who is trying to decide whether to buy flowers for his friend Kitty, thinking it might be her birthday. 
+The main variables are Frank's actions: either buying flowers or doing nothing, and the outcome: whether it's Kitty's birthday or not. 
+The basic rules are: if Frank buys flowers and it's not Kitty's birthday, Kitty might be suspicious, and if Frank doesn't buy flowers and it's Kitty's birthday, he'll be in trouble. 
+The goal is to find the best strategy for Frank to follow, which maximizes his payoff, or the good outcome, in this situation.

@@ -1,0 +1,5 @@
+The Five Floors Problem
+The problem is about determining the floor assignments for five people - Baker, Cooper, Fletcher, Miller, and Smith - in a five-floor apartment house, given certain constraints on their living arrangements.
+The main decision variables are Baker, Cooper, Fletcher, Miller, and Smith, which represent the floor numbers (from 1 to 5) where each person lives. 
+The key constraints are: each person must live on a different floor, Baker cannot live on the fifth floor, Cooper cannot live on the first floor, Fletcher cannot live on the first or fifth floor, Miller must live on a higher floor than Cooper, Smith cannot live on a floor next to Fletcher's, and Fletcher cannot live on a floor next to Cooper's.
+The objective of the problem is to find a satisfying assignment of floors to people, such that all the given constraints are met, which is achieved by using the "solve satisfy" statement in the MiniZinc model.

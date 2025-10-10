@@ -1,0 +1,7 @@
+name: Enigma 1530 (Tom Daley)
+description: The problem is to find a five-digit number represented by the letters DALEY, where each letter stands for a different digit, and no number starts with a zero. The number DALEY is the result of multiplying the three-digit number TOM by 13.
+variables: $T, O, M, D, A, L, E, Y, DALEY, TOM, x$ 
+These variables represent the digits of the numbers TOM and DALEY, where $T, O, M$ are the digits of the number TOM, and $D, A, L, E, Y$ are the digits of the number DALEY. $x$ is an array of variables representing the digits of DALEY. $DALEY$ and $TOM$ are the resulting numbers.
+constraints: $all\_different(x) \land T > 0 \land D > 0 \land toNum([D,A,L,E,Y], DALEY) \land TOM * 13 = DALEY$
+These constraints ensure that all digits are different, the numbers TOM and DALEY do not start with zero, the array $x$ is converted to the number DALEY, and the equation $TOM * 13 = DALEY$ is satisfied.
+objective: The objective of the problem is to satisfy the given constraints, which means finding the values of the variables that make the equation $TOM * 13 = DALEY$ true, where each letter stands for a different digit, and no number starts with a zero. The problem does not have a specific objective function to minimize or maximize.

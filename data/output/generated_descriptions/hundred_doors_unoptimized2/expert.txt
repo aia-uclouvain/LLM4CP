@@ -1,0 +1,7 @@
+name: 100 Doors Problem
+description: The problem involves 100 doors in a row, initially all closed. The task is to determine the state of the doors after 100 passes, where in each pass, every nth door is toggled, and n increases from 1 to 100.
+variables: x[j], s 
+x[j] represents the state of door j (0: closed, 1: open), and s is the set of doors that are open after the last pass.
+constraints: x[1] = 1, y[pass] = 1 <-> y[pass-1] = 0, y[pass] = 0 <-> y[pass-1] = 1, x[j] = y[n], x[j] == 1 <-> j in s 
+These constraints ensure that the first door is initially open, and the state of each door is updated correctly after each pass. The constraints also link the state of each door to the set of open doors.
+objective: The problem does not have a specific objective function to minimize or maximize, but rather aims to find the state of the doors after the last pass, specifically identifying which doors are open and which are closed.

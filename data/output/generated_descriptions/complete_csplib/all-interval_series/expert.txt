@@ -1,5 +1,0 @@
-name: All Interval Series Problem
-description: The problem is to find a series of pitch classes where each class occurs exactly once and the intervals between neighboring notes cover the full set of intervals from the minor second to the major seventh.
-variables: $x = (x_1, x_2, ..., x_n)$ and $d = (d_1, d_2, ..., d_{n-1})$, where $x_i$ represents the pitch class at position $i$ and $d_i$ represents the interval between $x_i$ and $x_{i+1}$.
-constraints: $x$ is a permutation of $\{0, 1, ..., n-1\}$, $d$ is a permutation of $\{1, 2, ..., n-1\}$, and $d_i = |x_{i+1} - x_i|$ for $i = 1, 2, ..., n-1$.
-objective: The problem is a satisfaction problem, where the goal is to find a series that satisfies all the constraints, rather than minimizing or maximizing a specific value.

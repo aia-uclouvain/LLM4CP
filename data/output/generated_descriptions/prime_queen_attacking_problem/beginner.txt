@@ -1,0 +1,5 @@
+The problem is called Queen Attacking. 
+It's about placing a queen and some other values on a chessboard in such a way that the queen doesn't attack certain special numbers, called prime numbers. 
+The main variables are the position of the queen (q) and the positions of the other values (x). 
+The basic restrictions are that each value must be placed in a different cell, and each value must be placed in a cell that is a knight's move away from the previous value. 
+The goal is to minimize the number of prime numbers that are not attacked by the queen.

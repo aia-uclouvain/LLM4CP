@@ -1,0 +1,9 @@
+Portfolio Optimization Problem
+The problem is about investing in a portfolio of shares to maximize the return on investment while satisfying certain constraints.
+The main decision variables are `frac`, an array of variables representing the percentage of each share in the portfolio, and `return`, a variable representing the total return on investment.
+The key constraints are: 
+- the total percentage of high-risk shares cannot exceed 33%, 
+- the total percentage of shares from North America must be at least 50%, 
+- the total percentage of all shares must equal 100%, and 
+- the percentage of each individual share cannot exceed 30%.
+The objective of the problem is to maximize the total return on investment, which is calculated as the sum of the returns of each share multiplied by its corresponding percentage in the portfolio.

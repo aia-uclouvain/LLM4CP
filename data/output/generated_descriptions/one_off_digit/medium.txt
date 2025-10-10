@@ -1,0 +1,5 @@
+The One Off Digit problem. 
+This problem is about finding the correct sum of two numbers where every digit in the original equation is precisely one way from its true value. 
+The main decision variables are the array x, which represents the correct digits of the two numbers being added and their sum. 
+The key constraints are that the sum of the two numbers with the corrected digits must be equal, and each digit in the original equation must be exactly one more or one less than its corresponding correct digit. 
+The problem's objective is to find a solution that satisfies these constraints, effectively finding the correct sum of the two numbers.

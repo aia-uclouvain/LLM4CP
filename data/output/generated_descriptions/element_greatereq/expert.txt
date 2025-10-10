@@ -1,0 +1,5 @@
+name: Element Greater Than or Equal To Problem
+description: The Element Greater Than or Equal To problem is a constraint satisfaction problem that involves finding an item value that is greater than or equal to at least one value in a given table. The problem is defined by a set of decision variables, constraints, and an objective to satisfy all the constraints.
+variables: $n, element\_table, item$ - These are the decision variables where $n$ is the size of the table, $element\_table$ is an array of variables representing the table, and $item$ is a variable representing the item value to be found.
+constraints: $cp1d(element\_table, [6,9,2,9]), item = 8, element\_greatereq(item, element\_table)$ - These constraints ensure that the $element\_table$ is equal to the given table $[6,9,2,9]$, the $item$ value is set to $8$, and the $element\_greatereq$ constraint holds, meaning the $item$ value is greater than or equal to at least one value in the $element\_table$.
+objective: satisfy - The objective of this problem is to satisfy all the given constraints, meaning to find values for the decision variables that make all the constraints true.

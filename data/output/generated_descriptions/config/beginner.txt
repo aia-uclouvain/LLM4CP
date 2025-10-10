@@ -1,0 +1,11 @@
+Config Problem
+The problem is about configuring equipment in racks to minimize the total cost while meeting certain requirements.
+The main variables are: 
+- rack: which model of equipment is placed in each rack
+- counters: how many of each type of card is placed in each rack
+- cost: the total cost of the configuration
+The basic restrictions or rules are: 
+- each rack has a limited amount of power and connectors
+- each type of card has a specific power requirement and quantity
+- all cards must be placed in the racks
+The goal is to minimize the total cost of the configuration by choosing the right equipment models and card placements.

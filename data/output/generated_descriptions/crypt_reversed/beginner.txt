@@ -1,0 +1,5 @@
+Reversed Cryptograms problem.
+This problem is about finding special numbers that, when added to their reverse, result in another special number. 
+The main variables are x and z, where x is a sequence of digits (like a phone number) and z is the sum of x and its reverse. 
+The basic restrictions are that all digits in x and z must be different, the first and last digits of x cannot be zero, and x plus its reverse equals z. 
+The goal is to find the smallest possible x that meets these conditions, and to count how many such x exist for different lengths of x.

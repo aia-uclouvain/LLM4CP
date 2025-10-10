@@ -1,0 +1,5 @@
+The problem is called the "GATHER + HOMAGE = MARTIN" problem. 
+It is about finding a unique assignment of digits to letters in the equation GATHER + HOMAGE = MARTIN, such that the equation holds true when the letters are replaced by their corresponding digits. 
+The main decision variables are G, A, T, H, E, R, O, M, I, and N, which represent the digits assigned to each letter. 
+The key constraints are that each digit can only be used once, the first digit of each word cannot be zero, and the equation GATHER + HOMAGE = MARTIN must be satisfied when the letters are replaced by their corresponding digits. Additionally, there are two extra constraints: A*A = H and G*G = O. 
+The problem's objective is to find a satisfying assignment of digits to letters, which is achieved by solving the constraints. There is no explicit objective function being minimized or maximized, but rather the goal is to find a solution that satisfies all the constraints.

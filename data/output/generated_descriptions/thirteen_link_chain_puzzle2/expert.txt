@@ -1,0 +1,12 @@
+name: The 13-Link Chain Puzzle
+
+description: The problem involves a balance scale and a single chain with thirteen links, each weighing one ounce. The goal is to determine the minimum number of links that need to be broken in order to be able to weigh items from 1 to 13 ounces in 1-ounce increments, considering that the balance scale allows for using +/- to get each weight.
+
+variables: $n, m1, m2, m3, weights, x, t, t2$ 
+These variables represent the following: $n$ is the total number of links in the chain, $m1, m2, m3$ are intermediate variables used for array bounds and domain definitions, $weights$ is an array of variables representing the weights used, $x$ is a 2D array of variables representing the number of times each weight is used for each possible weight from 1 to 13 ounces, $t$ is the total number of non-zero weights used, and $t2$ is the maximum number of times a weight is used.
+
+constraints: $\sum_{j=1}^{m1} ( \max_{i=1}^{n} (x_{ij}) ) \cdot weights_j = n$, $\forall i \in \{1, \ldots, n\}: i = \sum_{j=1}^{m1} x_{ij} \cdot weights_j$, $weights_1 \leq weights_2 \leq \ldots \leq weights_{m1}$, $\forall j \in \{1, \ldots, m1\}: \forall i \in \{1, \ldots, n\}: weights_j = 0 \leftrightarrow x_{ij} = 0$, $\forall j \in \{1, \ldots, m1\}: alldifferent\_except\_0(weights_j)$
+These constraints ensure that the total weight of the links is equal to the total number of links, each possible weight from 1 to 13 ounces can be achieved using the selected weights, the weights are non-decreasing, a weight is used only if it is non-zero, and all non-zero weights are distinct.
+
+objective: minimize $t \cdot t2$ 
+The objective is to minimize the product of the total number of non-zero weights used ($t$) and the maximum number of times a weight is used ($t2$), which represents the minimum number of links that need to be broken to achieve the desired weighing capabilities.

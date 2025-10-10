@@ -1,0 +1,5 @@
+name: Fruit Cost Problem
+description: The problem is about finding the cost of a combination of fruits, given the cost of another combination of fruits. We are given that the cost of b apples, b bananas, and a + b cherries is $77, and we need to find the cost of one apple, two bananas, and one cherry.
+variables: $a, b, c, y$ - These variables represent the cost of an apple, a banana, a cherry, and the total cost of one apple, two bananas, and one cherry, respectively.
+constraints: $b*a + b*b + (a+b)*c = 77, y = a + 2*b + c, a > 0, b > 0, c > 0, y > 0$ - These constraints represent the given information: the total cost of b apples, b bananas, and a + b cherries is $77, the total cost of one apple, two bananas, and one cherry is y, and all costs are positive integers.
+objective: The objective of the problem is to find the value of y, which is the cost of one apple, two bananas, and one cherry.

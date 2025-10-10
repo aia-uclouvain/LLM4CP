@@ -1,0 +1,5 @@
+Minesweeper Problem
+The Minesweeper problem is about identifying the location of mines in a grid based on given clues, which are numbers representing how many mines are adjacent to each cell.
+The main decision variables in this problem are the values of each cell in the grid, which can either be a mine or a number representing the count of adjacent mines.
+The key constraints are that each number in the grid must be equal to the number of mines adjacent to it, and that the total number of mines in the grid must be consistent with the given clues. Additionally, the placement of mines must be such that each cell's count of adjacent mines is accurate.
+The objective of the problem is not explicitly to minimize or maximize a particular value, but rather to find a consistent and valid placement of mines in the grid that satisfies all the given clues. In other words, the goal is to solve the puzzle by identifying the location of all mines.

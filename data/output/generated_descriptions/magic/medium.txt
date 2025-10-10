@@ -1,0 +1,5 @@
+Magic Square Problem
+The Magic Square problem is about arranging distinct integers in a square grid such that the sum of numbers in each row, column, and diagonal is the same.
+The main decision variables are x[i,j,k] and square[i,j], where x[i,j,k] represents whether the cell at position (i,j) contains the integer k, and square[i,j] represents the actual integer value at position (i,j).
+The key constraints are: each cell must contain exactly one integer, each integer must be assigned to exactly one cell, the sum of numbers in each row must be the same, the sum of numbers in each column must be the same, and the sum of numbers in both diagonals must be the same.
+The objective of the problem is to find a valid arrangement of integers that satisfies all the constraints, with the magic sum s being the common sum of numbers in each row, column, and diagonal, which is implicitly defined by the constraints and is not explicitly minimized or maximized.

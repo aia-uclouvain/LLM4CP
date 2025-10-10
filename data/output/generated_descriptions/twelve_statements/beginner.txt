@@ -1,0 +1,6 @@
+The Twelve Statements Problem. 
+This problem is about a set of 12 cards with statements that talk about the number of false statements to their left. 
+The main variables are the order of the cards (x), whether each statement is true or false (y), and the total number of true statements (z). 
+In simple terms, x is like a list of the cards in order, y is a list that says whether each card is true or not, and z is a counter for how many true statements there are. 
+The basic rules are that each card must be in a unique position, and the statement on each card must match the actual number of false statements to its left. 
+The goal is to find the largest possible number of true statements, which means maximizing z.

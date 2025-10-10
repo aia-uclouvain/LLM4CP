@@ -1,0 +1,5 @@
+Climbing Stairs Problem
+The problem is about finding the number of ways to climb a flight of stairs, where each step can be either one or two steps at a time, and the total number of steps is given.
+The main decision variables are the array `x`, where `x[i]` represents the number of steps taken at the `i-th` step, and `z`, which represents the total number of non-zero steps taken.
+The key constraints are that the total number of steps taken must equal the total number of stairs `n`, and a symmetry breaking constraint that ensures that once a zero step is taken, all subsequent steps must also be zero.
+The objective of the problem is not to minimize or maximize a specific value, but rather to find all possible combinations of steps that satisfy the constraints, effectively counting the number of ways to climb the stairs.

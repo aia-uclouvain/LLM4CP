@@ -1,0 +1,13 @@
+**Same and Global Cardinality Low Up Problem**
+The Same and Global Cardinality Low Up problem is a classic constraint programming problem that involves finding a permutation of two sets of variables while satisfying certain constraints on the values assigned to these variables.
+
+**Main Decision Variables**
+The main decision variables in this problem are two arrays of variables, `variables1` and `variables2`, each representing a set of variables that can take on values from a given range (1-9 in this case). The `values` array represents the allowed values and their corresponding lower and upper bounds.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- The variables in `variables1` and `variables2` must be a permutation of each other, meaning that each value in `variables1` must have a corresponding value in `variables2` and vice versa.
+- Each value in the `values` array must be taken by at least `omin` and at most `omax` variables in `variables1` (and similarly for `variables2`).
+
+**Objective**
+The objective of this problem is to find an assignment of values to `variables1` and `variables2` that satisfies the permutation constraint and the value constraints, rather than minimizing or maximizing a specific objective function. In other words, the goal is to find a feasible solution that meets all the constraints.

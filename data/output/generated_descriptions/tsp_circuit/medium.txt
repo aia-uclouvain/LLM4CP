@@ -1,0 +1,11 @@
+Traveling Salesman Problem (TSP)
+The Traveling Salesman Problem is a classic constraint programming problem that involves finding the shortest possible route that visits a set of cities and returns to the starting city. 
+
+The main decision variables in this problem are `x`, which represents the circuit or the order in which the cities are visited, and `d`, which represents the distance traveled between each pair of consecutive cities.
+
+The key constraints in this problem are: 
+- `all_different(x)`: ensures that each city is visited only once, 
+- `circuit(x)`: ensures that the route forms a circuit, i.e., it starts and ends at the same city, 
+- `distances[i,x[i]] = d[i]`: ensures that the distance traveled between each pair of consecutive cities is correctly calculated based on the distance matrix.
+
+The objective of this problem is to minimize the total distance traveled, which is represented by the variable `distance`. The `distance` variable is calculated as the sum of the distances traveled between each pair of consecutive cities, represented by the variable `d`. The goal is to find the shortest possible route that visits all cities and returns to the starting city.

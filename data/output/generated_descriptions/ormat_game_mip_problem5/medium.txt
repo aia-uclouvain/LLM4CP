@@ -1,0 +1,5 @@
+The Ormat Game problem.
+The Ormat Game is about finding a path in a grid that visits as many cells as possible without revisiting any cell, with certain restrictions on the movements.
+The main decision variables represent the direction of movement from each cell, which can be up, down, left, or right, and whether a cell is visited or not.
+The key constraints are that each cell can only be visited once, the path must start from a specific cell, and the movements are restricted to up, down, left, or right, with some cells being blocked or restricted.
+The objective of the Ormat Game problem is to maximize the number of cells visited, i.e., to find the longest possible path in the grid without revisiting any cell.

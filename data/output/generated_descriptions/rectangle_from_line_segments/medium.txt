@@ -1,0 +1,16 @@
+Largest Rectangle Problem
+The problem is about constructing the largest possible rectangle using a set of given line segments of different lengths, where the segments can be added but not broken in between.
+
+The main decision variables are:
+- `x`: an array of variables representing which side of the rectangle each segment should be placed on (1: top, 2: right, 3: bottom, 4: left).
+- `sum_sides`: an array of variables representing the total length of each side of the rectangle.
+- `num_sides`: an array of variables representing the number of segments on each side of the rectangle.
+- `area`: a variable representing the area of the constructed rectangle.
+
+The key constraints are:
+- Each segment must be assigned to one side of the rectangle.
+- The total length of the top and bottom sides must be equal.
+- The total length of the left and right sides must be equal.
+- The area of the rectangle is calculated as the product of the lengths of two adjacent sides.
+
+The objective of the problem is to maximize the area of the constructed rectangle. The model uses a constraint programming approach to find the optimal assignment of segments to sides that results in the largest possible rectangle.

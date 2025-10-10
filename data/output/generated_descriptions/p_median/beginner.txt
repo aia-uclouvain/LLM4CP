@@ -1,0 +1,16 @@
+P-median problem
+The problem is about deciding where to build warehouses to serve customers in a way that minimizes the total distance customers have to travel to get to a warehouse, taking into account how much each customer needs.
+
+The main variables are:
+- OpenWarehouse: whether a warehouse is built at a certain location
+- ShipToCustomer: which warehouse each customer gets their goods from
+- Demand: how much each customer needs
+- Distance: how far each customer is from each possible warehouse location
+- z: the total distance all customers have to travel to get to a warehouse
+
+The basic restrictions or rules are:
+- Each customer must get their goods from one and only one warehouse
+- Only a certain number (P) of warehouses can be built
+- A customer can only get their goods from a warehouse that has been built
+
+The goal is to minimize the total distance all customers have to travel to get to a warehouse, taking into account how much each customer needs.

@@ -1,0 +1,5 @@
+The problem is called the Divisor Problem or Finding Divisors of a Number. 
+It is about finding all the divisors of a given number, which are the numbers that divide the given number without leaving a remainder. 
+The main decision variables are `sieve`, an array of binary variables where `sieve[i] = 0` represents that `i` is a divisor of the given number `n`, and `s`, a set of numbers that are divisors of `n`. 
+The key constraints are that for each number `i` from 1 to `n`, `i` is a divisor of `n` if and only if `n` modulo `i` equals 0, and `i` is included in the set `s` if and only if `n` modulo `i` equals 0. 
+The problem's objective is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the constraints, which in this case means finding all the divisors of the given number `n`.

@@ -1,0 +1,13 @@
+name: Associative Magic Square
+description: The problem is to find an associative magic square of a given size n, where every pair of numbers symmetrically opposite to the center sum up to the same value, and all rows, columns, and diagonals sum up to the same total value.
+variables: $magic_{i,j}$, where $i$ and $j$ are in $1..n$, representing the value in the $i$-th row and $j$-th column of the magic square. These variables are decision variables that represent the numbers to be placed in the magic square.
+constraints: 
+$\bigwedge_{k=1}^{n} \sum_{i=1}^{n} magic_{k,i} = total$
+$\bigwedge_{k=1}^{n} \sum_{i=1}^{n} magic_{i,k} = total$
+$\sum_{i=1}^{n} magic_{i,i} = total$
+$\sum_{i=1}^{n} magic_{i,n-i+1} = total$
+$\bigwedge_{i,j=1}^{n} magic_{i,j} + magic_{n-i+1,n-j+1} = assoc$
+$minimum(magic_{1,1}, [magic_{1,1}, magic_{1,n}, magic_{n,1}, magic_{n,n}])$
+$magic_{1,2} < magic_{2,1}$
+These constraints ensure that all rows, columns, and diagonals sum up to the same total value, every pair of numbers symmetrically opposite to the center sum up to the same value, and the magic square is in the Frénicle standard form.
+objective: The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

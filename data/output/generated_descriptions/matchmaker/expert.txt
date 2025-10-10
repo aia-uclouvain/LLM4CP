@@ -1,0 +1,16 @@
+name: Matchmaker problem
+
+description: The Matchmaker problem is a classic problem in constraint programming where the goal is to pair up men and women such that each pair has at least one common trait, either hair color or eye color. There are six men and six women, each with different hair colors and eye colors. The problem requires finding all possible pairings that satisfy the condition of having at least one common trait.
+
+variables: $x = (x_1, x_2, ..., x_6)$, where $x_i$ is a decision variable representing the man assigned to woman $i$. These variables are used to determine the pairings between men and women.
+
+constraints: 
+$\begin{aligned}
+&alldifferent(x) \\
+&\forall i \in \{1, 2, ..., 6\}: num\_matches_i = bool2int(women_{i,1} = men_{x_i,1}) + bool2int(women_{i,2} = men_{x_i,2}) \\
+&\forall i \in \{1, 2, ..., 6\}: num\_matches_i \geq 1 \\
+&total = \sum_{i=1}^{6} num\_matches_i
+\end{aligned}$ 
+These constraints ensure that each woman is assigned to a different man (alldifferent), calculate the number of common traits between each pair (num_matches), require each pair to have at least one common trait (num_matches >= 1), and calculate the total number of common traits across all pairs (total).
+
+objective: satisfy, which means the problem aims to find all possible pairings that satisfy the given constraints, rather than optimizing a specific objective function.

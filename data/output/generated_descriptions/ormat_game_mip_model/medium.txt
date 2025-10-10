@@ -1,0 +1,11 @@
+The Ormat Game
+The Ormat Game is a classic constraint programming problem where the goal is to cover a given template of colored and blank squares with a subset of transparent plastic overlays, each bearing a pattern of black dots, such that all colored squares are covered and no blank squares are covered, using the fewest number of overlays possible.
+
+The main decision variables in this problem are the array `x`, where `x[o]` represents whether the `o-th` overlay is used (1) or not (0), and `num_overlays`, which represents the total number of overlays used.
+
+The key constraints in this problem are: 
+- If a cell in the template is colored (1), then at least one of the selected overlays must have a black dot in the corresponding position.
+- If a cell in the template is blank (0), then none of the selected overlays should have a black dot in the corresponding position.
+- The number of overlays used is calculated by summing up the values of `x`.
+
+The objective of the problem is to minimize the number of overlays used, represented by `num_overlays`, which is equivalent to minimizing the total cost of using the overlays, as each overlay used incurs a cost of $1.

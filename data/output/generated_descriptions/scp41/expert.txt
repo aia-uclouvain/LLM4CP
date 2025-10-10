@@ -1,0 +1,11 @@
+name: Set Covering Problem
+
+description: The Set Covering Problem is a classic problem in computer science and operations research. It involves finding the smallest number of sets that cover all elements in a given universe. In this problem, we have 200 groups and 168 senators, where each senator belongs to some groups. The goal is to select a subset of groups such that each senator is covered by at least one group, while minimizing the total cost.
+
+variables: x = [x1, x2, ..., x168] where xi is a binary variable indicating whether the ith senator is selected to be part of the solution.
+
+constraints: 
+set_covering3(mat, assign, n_groups, n_senators) 
+where mat is a matrix representing the group-senator relationships, assign is an array of binary variables representing the selected groups, n_groups is the number of groups, and n_senators is the number of senators.
+
+objective: minimize sum(i in 1.. n_senators) (costs[i]*x[i])

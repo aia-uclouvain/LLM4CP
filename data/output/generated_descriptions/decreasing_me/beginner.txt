@@ -1,0 +1,5 @@
+The problem is called "Global Constraint Decreasing". 
+It's about making sure a list of numbers is in decreasing order, meaning each number is smaller or equal to the one before it. 
+The main variable is "x", which is a list of numbers that can be between 1 and 8. 
+The basic restrictions are that the list "x" must be the same as a given list [8,4,1,1], and the numbers in "x" must be in decreasing order. 
+The goal is to find a list of numbers that satisfies these conditions, which is already given as [8,4,1,1], so the problem is more about verifying that this list meets the "decreasing" rule.

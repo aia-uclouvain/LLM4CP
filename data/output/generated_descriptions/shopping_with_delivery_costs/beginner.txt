@@ -1,0 +1,11 @@
+The problem is called Shopping with Delivery Cost. 
+It's about buying different parts from various stores while trying to spend as little money as possible. 
+The main variables are: 
+- x, which represents the store where each part should be bought from, 
+- part_cost, which is the total cost of all the parts, 
+- delivery_cost, which is the total cost of delivering all the parts from the chosen stores, 
+- total_cost, which is the sum of part_cost and delivery_cost. 
+The basic restrictions are: 
+- each part must be bought from a store that has it available, 
+- the total cost of the parts and the delivery cost must be calculated correctly. 
+The goal is to minimize the total_cost, which means finding the cheapest way to buy all the necessary parts, including the cost of delivering them.

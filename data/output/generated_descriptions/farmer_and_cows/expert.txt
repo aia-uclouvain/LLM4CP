@@ -1,0 +1,15 @@
+name: Farmer and Cow Problem
+
+description: The problem involves a farmer who has 81 cows, each producing a different amount of milk per day, and 9 sons. The farmer wants to distribute the cows among his sons such that each son gets 9 cows and the total quantity of milk produced by the cows assigned to each son is the same.
+
+variables: $sons = [s_1, s_2, ..., s_9]$ where $s_i$ is the total quantity of milk produced by the cows assigned to son $i$, and $cows = [c_1, c_2, ..., c_{81}]$ where $c_i$ is the son to whom cow $i$ is assigned. These decision variables determine the distribution of cows among the sons and the total quantity of milk produced by the cows assigned to each son.
+
+constraints: 
+$\sum_{i=1}^{9} s_i = \frac{81 \times 82}{2}$, 
+$s_i = s_{i-1}$ for $i = 2, 3, ..., 9$, 
+$s_i = \sum_{j=1}^{81} j \times bool2int(c_j = i)$ for $i = 1, 2, ..., 9$, 
+$\sum_{j=1}^{81} bool2int(c_j = i) = 9$ for $i = 1, 2, ..., 9$, 
+$c_1 = 1$. 
+These constraints ensure that the total quantity of milk produced by all cows is distributed evenly among the sons, each son gets the same quantity of milk, each son gets exactly 9 cows, and the first cow is assigned to the first son.
+
+objective: The objective of the problem is to find a feasible distribution of cows among the sons that satisfies all the constraints, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find a solution that meets all the requirements.

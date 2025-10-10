@@ -1,0 +1,8 @@
+Ski Assignment Problem
+The Ski Assignment Problem is about assigning skis to skiers in a way that minimizes the total disparity between the height of each skier and the height of their assigned skis.
+
+The main decision variables are the array `x`, where `x[i]` represents the index of the ski assigned to the `i-th` skier. This means that `x[i]` will take a value between 1 and `num_skis`, which is the total number of available skis.
+
+The key constraints in this problem are that each ski can only be assigned to one skier, which is enforced by the `all_different(x)` constraint. This ensures that the assignment is one-to-one, meaning that no two skiers can be assigned the same ski.
+
+The objective of the problem is to minimize the total disparity between the height of each skier and the height of their assigned skis. This is calculated as the sum of the absolute differences between the height of each skier and the height of their assigned ski. The goal is to find an assignment that minimizes this total disparity, which is represented by the variable `z`. The problem uses the `minimize` keyword to specify that the objective is to minimize `z`.

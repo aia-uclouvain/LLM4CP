@@ -1,0 +1,8 @@
+Minesweeper
+Minesweeper is a classic puzzle game where the player is presented with a grid of cells, some of which contain hidden mines. The goal is to determine the location of all mines based on clues provided by the game.
+
+The main decision variables in this problem are `mines`, a 2D array of binary variables where `mines[i,j]` represents whether there is a mine in the cell at position `(i,j)`.
+
+The key constraints in this problem can be described as follows: for each cell that does not contain a mine and has a known number of adjacent mines, the number of mines in the neighboring cells must match the given number. If a cell contains a mine, it cannot have a known number of adjacent mines. Additionally, if a cell has a known number of adjacent mines, it cannot contain a mine.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all constraints. In other words, the goal is to determine the location of all mines in the grid such that the number of mines in each cell's neighborhood matches the given clues. The problem is solved using a satisfaction-based approach, where the model is executed with the `solve satisfy` statement, which searches for a solution that satisfies all constraints.

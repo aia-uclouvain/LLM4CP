@@ -1,0 +1,5 @@
+Nadel's Construction Problem
+The problem is about building different things like a recreation area, apartments, houses, a cemetery, and a dumpsite on eight lots of land. 
+The main variables are the locations of these developments: recreation area, apartments, houses, cemetery, and dump. 
+The basic restrictions are: the recreation area should be near the lake, steep slopes should be avoided for most developments, poor soil should be avoided for apartments and houses, the highway should not be near apartments, houses, or the recreation area, and the dumpsite should not be visible from apartments, houses, or the lake. 
+The goal is to place these developments in a way that minimizes the number of broken constraints, with the ideal being no more than one broken constraint.

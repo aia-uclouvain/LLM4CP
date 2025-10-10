@@ -1,0 +1,6 @@
+The problem is called the Circular Except 0 constraint. 
+It's about arranging a sequence of numbers from 0 to 5 in a circle, following certain rules. 
+The main variables are the numbers in the sequence, which are represented by the array x. 
+These numbers can be thought of as the values we want to arrange in a circle. 
+The basic restrictions or rules of the problem are that the sequence must follow a specific pattern defined by a set of transitions, and the number of zeros in the sequence must be related to the length of the sequence in a certain way. 
+The goal of the problem is to find a sequence that satisfies all these rules, which is achieved by solving the problem as a satisfaction problem, meaning we just want to find a solution that meets all the constraints, without trying to minimize or maximize anything.

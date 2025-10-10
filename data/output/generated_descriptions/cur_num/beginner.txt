@@ -1,0 +1,5 @@
+Curious Numbers problem. 
+This problem is about finding special numbers that have a unique property: when you add 1 to the number, the result is a perfect square, and when you add 1 to half of the number, the result is also a perfect square. 
+The main variables are X, A, B, C, D, and E, which represent the special number, the result of adding 1 to it, the square root of that result, half of the special number, the result of adding 1 to that half, and the square root of that result, respectively. 
+The basic restrictions are that adding 1 to the special number results in a perfect square, and adding 1 to half of the special number also results in a perfect square. 
+The goal is to find the smallest possible special numbers that satisfy these conditions, with no specific objective to minimize or maximize, but rather to find a set of numbers that meet the given criteria.

@@ -1,0 +1,11 @@
+**Problem Name:** Longest Subset of Five-Positions Five-Elements Permutations
+
+**Description:** This problem involves finding the longest subset of permutations of five elements (1 to 5) in five positions, with the condition that any two permutations in the subset can share at most one identical element in the same position.
+
+**Decision Variables:** The main decision variable is a 2D array `x` where `x[i, j]` represents the element in the `j-th` position of the `i-th` permutation. The value of `x[i, j]` ranges from 1 to 5, indicating which of the five elements is in that position.
+
+**Constraints:**
+- The key constraint is that for any two permutations `i` and `j`, the number of positions where they have the same element is at most 1. This ensures that the permutations do not share too many elements in the same positions.
+- A symmetry-breaking constraint (`lex2(x)`) is also applied to ensure that the permutations are ordered lexicographically, which helps in reducing the search space by avoiding equivalent solutions.
+
+**Objective:** The objective of this problem is to maximize the number of permutations in the subset, i.e., to find the longest subset that satisfies the given conditions. In the provided model, the size of the subset is fixed at `m` (set to 25), and the goal is to find a subset of this size that satisfies the constraints. However, the ultimate goal is to find the maximum possible size of such a subset.

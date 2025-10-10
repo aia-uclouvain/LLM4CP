@@ -1,0 +1,5 @@
+Quasigroup problem
+The problem is about finding a special kind of multiplication table where each row and column has each number exactly once, and some specific rules are followed when multiplying numbers together.
+The main variables are the quasiGroup table, which is like a big grid where each cell contains a number, and the qgDiagonal, which is a list of numbers that are on the diagonal of the quasiGroup table. 
+The basic restrictions are that each row and column in the quasiGroup table must have each number exactly once, and when you multiply two numbers together in a certain way, the result must be the first number. 
+The goal of the problem is to find a quasiGroup table that satisfies all these rules, which is a difficult problem to solve, especially for large tables.

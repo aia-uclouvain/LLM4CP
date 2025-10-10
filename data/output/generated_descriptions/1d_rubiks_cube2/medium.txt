@@ -1,0 +1,12 @@
+1D Rubik's Cube
+The 1D Rubik's Cube problem is about finding the shortest sequence of rotations to restore a scrambled line of numbers to its original position. 
+
+The main decision variables are `steps` and `ops`. `steps` is a 2D array where `steps[i, j]` represents the value at position `j` after `i` rotations. `ops` is a 1D array where `ops[i]` represents the rotation applied at step `i`.
+
+The key constraints are:
+- The initial state of the cube is given by the `data` array.
+- Each rotation is one of three possible rotations of four consecutive elements.
+- The goal is to find the shortest sequence of rotations that results in the cube being in its original position (i.e., the numbers 1 to `n` in order).
+- The `permutation3` predicate ensures that the rotation applied at each step is valid.
+
+The objective of the problem is to minimize `min_step`, which represents the minimum number of rotations required to solve the cube. In other words, the goal is to find the shortest sequence of rotations that restores the cube to its original position.

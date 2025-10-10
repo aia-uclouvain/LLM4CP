@@ -1,0 +1,5 @@
+name: Factorial Calculation
+description: The problem is to calculate the factorial of a given number n, which is the product of all positive integers less than or equal to n. The model is designed to compute the factorial using a recursive approach, where each intermediate result is stored in an array.
+variables: z, x[1..n] - These are the decision variables, where z represents the final result (the factorial of n) and x[i] represents the intermediate result of the factorial calculation up to the i-th iteration.
+constraints: x[1] = 1, x[i] = x[i-1]*i for i in 2..n, res = x[n] - These constraints define the recursive formula for calculating the factorial, where the first element of the array x is initialized to 1, each subsequent element is the product of the previous element and the current index, and the final result is stored in the last element of the array.
+objective: The objective of the problem is not to minimize or maximize a value, but rather to satisfy the constraints and compute the factorial of the given number n.

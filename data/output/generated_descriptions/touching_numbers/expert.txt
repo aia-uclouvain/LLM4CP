@@ -1,0 +1,11 @@
+name: Touching Numbers puzzle
+
+description: The Touching Numbers puzzle is a classic problem in constraint programming where the goal is to arrange the digits 0-9 in a specific way such that each digit is "touching" another digit, with the number of touch points between two digits depending on their values. The puzzle requires finding an arrangement that maximizes the total score, which is calculated based on the number of touch points between adjacent digits.
+
+variables: $X_{i,j}, Z_i$ 
+These are decision variables where $X_{i,j}$ represents whether digit $i-1$ is to the immediate left of digit $j-1$, and $Z_i$ are auxiliary variables used to avoid circular sets in the arrangement.
+
+constraints: $\sum_{j=0}^{Size} X_{i,j} \leq 1, \sum_{i=0}^{Size} X_{i,j} \leq 1, Z_i - Z_j + (Size+1)X_{i,j} \leq Size, \sum_{i,j=0}^{Size} X_{i,j} = 9$
+These constraints ensure that each digit is to the immediate left of no more than one other digit, each digit is to the immediate right of no more than one other digit, there are no circular sets in the arrangement, and exactly nine adjacencies are required.
+
+objective: Maximize $\sum_{i,j=0}^{Size} (i+j-1)N_{i,j}X_{i,j}$, which represents the total score of the arrangement based on the number of touch points between adjacent digits.

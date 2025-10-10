@@ -1,0 +1,10 @@
+Student Interview Assignment Problem
+The problem is about assigning students to companies for interviews, where each student has a preference for which companies they want to interview with. 
+The main variables are: 
+- Student preferences: a list of numbers showing how much each student likes each company
+- Company assignments: a list of numbers showing which company each student is assigned to for an interview
+The basic restrictions or rules of the problem are: 
+- Each student can only interview with a certain number of companies
+- Each company can only have a certain number of students interviewing with them
+- Students should be assigned to companies they prefer, if possible
+The goal of the problem is to minimize the total "regret" of the students, which means assigning students to their preferred companies as much as possible, while following the rules.

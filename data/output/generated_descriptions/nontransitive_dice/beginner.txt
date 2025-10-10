@@ -1,0 +1,19 @@
+Name of the problem: Nontransitive Dice
+
+The problem is about creating a set of dice where each die has a different number of sides, and when you roll two dice against each other, one die is more likely to roll a higher number than the other. However, this relationship is not transitive, meaning that if die A is more likely to beat die B, and die B is more likely to beat die C, it does not necessarily mean that die A is more likely to beat die C.
+
+The main variables are: 
+- dice: a 2D array representing the numbers on each side of each die
+- comp: a 2D array representing the number of times one die beats another in a competition
+- max_val: the maximum value on any side of any die
+- max_win: the maximum number of wins for any die in a competition
+- gap: an array representing the difference in wins between each pair of competing dice
+
+The basic restrictions or rules of the problem are: 
+- Each die has a certain number of sides
+- Each side of each die has a number between 1 and twice the number of sides
+- The numbers on each die are in increasing order
+- When competing two dice, the number of wins for each die is calculated by comparing each side of one die to each side of the other die
+- The relationship between the dice is non-transitive, meaning that if die A beats die B, and die B beats die C, it does not necessarily mean that die A beats die C
+
+The goal of the problem is to minimize the maximum value on any side of any die (max_val), while ensuring that the relationship between the dice is non-transitive.

@@ -1,0 +1,5 @@
+The Reveal the Mapping problem. 
+This problem is about mapping the digits 1-9 to the letters a-i in a set of 5 interconnected circles, such that the sum of the letters in each circle equals 11. 
+The main decision variables are the array x, where x[i] represents the digit assigned to the letter corresponding to position i. 
+The key constraints are that each digit can only be used once, and the sum of the digits in each circle must equal 11. 
+The objective of this problem is to find all possible mappings that satisfy these constraints, rather than minimizing or maximizing a specific value.

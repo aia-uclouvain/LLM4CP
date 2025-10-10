@@ -1,0 +1,5 @@
+Dinner Party Seating Problem
+The problem is about arranging guests at a dinner party to minimize conflicts between them. 
+The main variables are the guests, specifically their seating arrangement, represented by the variable x, which means the position of each guest at the table. 
+The basic restrictions are that each guest has specific people they are willing to sit next to, and the goal is to arrange the seating so that each guest is sitting next to someone they get along with. 
+The goal of the problem is to find a seating arrangement that minimizes conflicts, ideally with no conflicts at all, which means everyone is sitting next to someone they are willing to sit next to.

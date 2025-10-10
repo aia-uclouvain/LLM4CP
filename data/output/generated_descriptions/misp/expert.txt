@@ -1,0 +1,5 @@
+name: Maximum Independent Set Problem (MISP)
+description: The Maximum Independent Set Problem is a classic problem in graph theory and computer science. Given an undirected graph, the goal is to find the largest subset of vertices such that no two vertices in the subset are connected by an edge. This problem has numerous applications in fields like computer networks, social network analysis, and scheduling.
+variables: $x_1, x_2, ..., x_n$ - These are binary decision variables where $x_i = 1$ indicates that vertex $i$ is included in the independent set, and $x_i = 0$ indicates that it is not.
+constraints: $x_{E[i,1]} + x_{E[i,2]} \leq 1$ for $i = 1$ to $num\_edges$ - These constraints ensure that for each edge in the graph, at most one of the vertices connected by the edge can be included in the independent set.
+objective: maximize $\sum_{i=1}^{n} x_i$ - The objective is to maximize the cardinality of the independent set, which means finding the largest possible subset of vertices that are pairwise non-adjacent.

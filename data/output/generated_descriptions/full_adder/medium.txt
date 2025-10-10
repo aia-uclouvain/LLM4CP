@@ -1,0 +1,8 @@
+Full Adder Problem
+The Full Adder problem is about designing a digital circuit that adds three binary digits, producing a sum and a carry. 
+
+The main decision variables are I1, I2, I3, O1, and O2, which represent the input bits and output bits of the full adder circuit. I1 and I2 are the two input bits to be added, I3 is the carry from the previous addition, O1 is the sum bit, and O2 is the carry bit.
+
+The key constraints are that the circuit must follow the rules of binary addition, including the calculation of the sum and carry bits. Specifically, the sum bit O1 is the XOR of the XOR of I1 and I2, and I3, and the carry bit O2 is the OR of the AND of I1 and I2, and the AND of I3 and the XOR of I1 and I2.
+
+The objective of the problem is to find values for I1 and I2 that satisfy the given constraints, specifically that I3 is false (no carry from the previous addition) and O2 is true (the result has a carry). The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

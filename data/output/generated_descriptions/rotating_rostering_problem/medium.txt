@@ -1,0 +1,22 @@
+**Nurse Scheduling Problem**
+The problem is a classic example of a scheduling problem in the field of operations research and constraint programming.
+
+**Description**
+The Nurse Scheduling Problem is about creating a schedule for nurses to work in a hospital. The goal is to assign nurses to shifts while satisfying various constraints such as the minimum and maximum number of consecutive shifts, rest days, and shift requirements.
+
+**Decision Variables**
+The main decision variables are:
+- `plan1d`: a one-dimensional array representing the shift assigned to each day.
+- `plan2d`: a two-dimensional array representing the shift assigned to each day of each week.
+- `s_min_arrays` and `s_max_arrays`: helper arrays used to handle constraints related to the minimum and maximum number of consecutive shifts.
+
+**Constraints**
+The key constraints are:
+- **C_equalDays**: weekend days (Saturday and Sunday) must have the same shift.
+- **C_shiftRepetitions**: the minimum and maximum number of consecutive assignments to the same shift.
+- **C_restDays**: at least 2 days must be rest days every 2 weeks.
+- **C_shiftOrder**: the order of shifts must follow a forward rotating principle, where after an early shift, there can only be a shift with the same or a higher value, or a rest shift.
+- **C_shiftRequirements**: the number of nurses required for each shift and day must be satisfied.
+
+**Objective**
+The objective is to find a feasible schedule that satisfies all the constraints. There is no explicit objective function to minimize or maximize, but rather to find a valid assignment of shifts to nurses.

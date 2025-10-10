@@ -1,0 +1,13 @@
+name: Seating Problem of OR'ers
+description: The problem involves seating 19 people around a circular table to maximize the total compatibility score of adjacent individuals. The compatibility scores are given in a 19x19 matrix, where each entry represents the score between two people. The goal is to find the seating arrangement that maximizes the sum of the compatibility scores of adjacent individuals.
+variables: $x, z, s, total$ 
+These variables represent the following: 
+- $x$ is an array of decision variables representing the circuit of people around the table, 
+- $z$ is an array of decision variables representing the actual seating arrangement, 
+- $s$ is an array of decision variables representing the compatibility scores of adjacent individuals, 
+- $total$ is the total compatibility score of all adjacent individuals.
+constraints: $circuit\_me(x, z), \forall i \in 1..n (s[i] = scores[i, x[i]])$ 
+These constraints represent the following: 
+- $circuit\_me(x, z)$ ensures that the seating arrangement forms a circuit, 
+- $\forall i \in 1..n (s[i] = scores[i, x[i]])$ ensures that the compatibility score of each individual and their adjacent person is correctly calculated based on the given scores matrix.
+objective: maximize $total$

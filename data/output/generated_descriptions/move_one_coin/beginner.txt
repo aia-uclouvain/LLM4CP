@@ -1,0 +1,5 @@
+The problem is called the "Move one coin problem". 
+It's about rearranging a line of coins by moving just one coin to get them in the opposite order, with the most coins on the left and the least on the right. 
+The main variables are "from" and "to", which mean the position of the coin to be moved and the position where it will be moved to. 
+The basic rules are that we can only move one coin, we can't move a coin to its current position, and we can only move a coin to an empty space. 
+The goal is to find the position of the coin to move and where to move it, so that the coins are in the desired order, with the most coins on the left and the least on the right.

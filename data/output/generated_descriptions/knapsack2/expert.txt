@@ -1,0 +1,5 @@
+name: 0/1 Knapsack Problem
+description: The 0/1 Knapsack Problem is a classic problem in combinatorial optimization where we have a set of items, each with a weight and a rating, and a knapsack with a limited capacity. The goal is to select a subset of the items to include in the knapsack such that the total weight does not exceed the capacity and the total rating is maximized.
+variables: $take_i, i = 1..n$ - These are binary decision variables where $take_i = 1$ if item $i$ is included in the knapsack and $take_i = 0$ otherwise.
+constraints: $\sum_{i=1}^{n} weights_i \cdot take_i \leq capacity, take_i \geq 0, take_i \leq 1, i = 1..n$ - These constraints ensure that the total weight of the selected items does not exceed the knapsack capacity, and each item is either included or not included in the knapsack.
+objective: Maximize $\sum_{i=1}^{n} ratings_i \cdot take_i$ - The objective is to maximize the total rating of the selected items.

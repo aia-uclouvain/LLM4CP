@@ -1,0 +1,5 @@
+name: Enigma Puzzle #1615
+description: The problem represents a six-digit number, ENIGMA, where all digits are different and non-zero. When the first two digits, EN, are moved to the end, the resulting six-digit number, IGMAEN, is 20% larger than the original number ENIGMA. The goal is to find the value of ENIGMA.
+variables: $e, n, i, g, m, a, enigma, igmaen$ - These variables represent the digits of the six-digit number ENIGMA and the resulting number IGMAEN when the first two digits are moved to the end. $e, n, i, g, m, a$ are the individual digits, while $enigma$ and $igmaen$ are the complete six-digit numbers.
+constraints: $alldifferent([e,n,i,g,m,a])$, $enigma = e*100000 + n*10000 + i*1000 + g*100 + m*10 + a$, $igmaen = i*100000 + g*10000 + m*1000 + a*100 + e*10 + n$, $10*igmaen = 12*enigma$ - These constraints ensure that all digits are different, define the structure of the numbers ENIGMA and IGMAEN, and enforce the relationship that IGMAEN is 20% larger than ENIGMA.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

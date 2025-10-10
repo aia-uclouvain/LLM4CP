@@ -1,0 +1,11 @@
+Skyscraper Puzzle
+The Skyscraper puzzle is a classic constraint programming problem that involves finding the heights of buildings in a grid, given certain clues about the number of buildings that can be seen from the outside.
+
+The main decision variables in this problem are the heights of the buildings, represented by the 2D array `x`, where `x[i,j]` is the height of the building at row `i` and column `j`. The variables `cu`, `cl`, `rl`, and `rr` represent the number of visible buildings from the top, bottom, left, and right sides of the grid, respectively.
+
+The key constraints in this problem are:
+- The grid must be a Latin square, meaning that each row and column contains each height exactly once.
+- The number of visible buildings from each side of the grid must match the given clues.
+- The heights of the buildings must be between 1 and `n`, where `n` is the size of the grid.
+
+The objective of the Skyscraper puzzle is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The goal is to determine the heights of the buildings in the grid, given the clues about the number of visible buildings from each side.

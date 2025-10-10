@@ -1,0 +1,5 @@
+Queens and Knights problem
+The problem is about placing queens and knights on a chessboard in such a way that none of them can attack each other. 
+The main variables are the positions of the queens and knights on the board, which are represented by a grid of squares. 
+The basic restrictions are that each queen can attack horizontally, vertically, or diagonally, and each knight can attack in an L-shape (two squares in one direction, then one square to the side). No queen or knight can be placed where it can attack another piece. 
+The goal is to find the maximum number of pieces (queens and knights) that can be placed on the board without any of them attacking each other, and to find all the different ways to do this.

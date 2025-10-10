@@ -1,0 +1,7 @@
+The problem is called the "Chebyshev Center of a Polygon". 
+It's about finding the center of a shape, like a polygon with many sides, where the center is the point that is farthest from any edge of the shape. 
+The main variables are: 
+- r, which is the distance from the center to the farthest edge, 
+- x and y, which are the coordinates of the center point. 
+The basic restrictions are that the center point must be inside the polygon and the distance from the center to any edge must be less than or equal to the distance from the center to the farthest edge. 
+The goal is to maximize the distance r, which means finding the center point that is farthest from any edge of the polygon.

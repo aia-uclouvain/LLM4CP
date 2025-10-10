@@ -1,5 +1,0 @@
-Langford's Number Problem
-The problem is about arranging two sets of positive integers from 1 to k in a sequence, such that after the first occurrence of an integer i, each subsequent occurrence of i appears i+1 positions later.
-The main variables are the sequence of numbers and the positions of the numbers in the sequence.
-The basic restrictions are that each number from 1 to k appears exactly twice in the sequence, and the difference between the positions of two occurrences of the same number is equal to the number plus one.
-The goal is to find a sequence that satisfies these conditions.

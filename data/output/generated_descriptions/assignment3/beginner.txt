@@ -1,0 +1,5 @@
+The Assignment Problem or Marriage Theorem. 
+This problem is about matching people of opposite sexes to maximize overall happiness when each person spends all their time with one partner. 
+The main variables are the people (men and women) and the time they spend together, with "x" representing whether a couple spends time together (1 for yes, 0 for no) and "cost" representing the happiness each couple would experience. 
+The basic restrictions are that each person can only spend all their time with one person of the opposite sex. 
+The goal is to maximize the total happiness of all couples, by finding the perfect matches between men and women.

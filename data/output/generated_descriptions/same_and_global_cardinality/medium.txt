@@ -1,0 +1,7 @@
+Same and Global Cardinality Problem
+The Same and Global Cardinality problem is about finding two sets of variables, VARIABLES1 and VARIABLES2, that correspond to each other according to a permutation, and where each value in a given set of values is taken by a specified number of variables in VARIABLES1.
+The main decision variables are VARIABLES1 and VARIABLES2, which are arrays of variables representing the two sets of values, and VALUES, a 2D array representing the allowed values and their respective occurrences.
+The key constraints are: 
+- VARIABLES1 and VARIABLES2 must be permutations of each other, meaning that the values in one array are a rearrangement of the values in the other array.
+- Each value in VALUES must be taken by exactly the specified number of variables in VARIABLES1.
+The objective of the problem is to satisfy these constraints, meaning that the goal is to find an assignment of values to VARIABLES1 and VARIABLES2 that meets the permutation and occurrence requirements, rather than minimizing or maximizing a specific objective function.

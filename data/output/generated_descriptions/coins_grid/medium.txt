@@ -1,0 +1,5 @@
+The name of the problem is the Coins Puzzle. 
+The Coins Puzzle is about placing a certain number of coins on a grid in such a way that each row and column contains the same number of coins, and the sum of the quadratic horizontal distances from the main diagonal of all cells containing a coin is minimized. 
+The main decision variables are the elements of the 2D array x, where x[i,j] represents whether a coin is placed in the cell at row i and column j (1 if a coin is placed, 0 otherwise). 
+The key constraints are that each row and each column must contain exactly c coins, and each cell can contain at most one coin. Additionally, the model calculates the sum of the quadratic horizontal distances from the main diagonal for all cells containing a coin. 
+The objective of the problem is to minimize the sum of the quadratic horizontal distances from the main diagonal of all cells containing a coin, which is represented by the variable z.

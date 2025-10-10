@@ -1,0 +1,5 @@
+The Digits of the Square puzzle 
+is a mathematical puzzle where the goal is to find a four-digit whole number n such that the last four digits of n^2 are the original number n.
+The main decision variables are n, which represents the four-digit whole number, and n_a and n_squared_a, which are arrays representing the digits of n and n^2 respectively.
+The key constraints are that n must be a four-digit whole number, the last four digits of n^2 must be equal to n, and n^2 must be calculated correctly.
+The problem's objective is to find a value of n that satisfies these constraints, with no explicit minimization or maximization objective, the goal is to find a solution that meets the given conditions.

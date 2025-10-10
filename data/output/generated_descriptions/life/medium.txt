@@ -1,0 +1,10 @@
+Conway's Game of Life
+The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway, where cells in a grid are either alive or dead, and their state changes based on simple rules.
+The main decision variables are the cells in the grid, represented by the 3D array `x`, where `x[k,i,j]` is 1 if the cell at position `(i,j)` is alive at time step `k`, and 0 if it is dead. The `start` array represents the initial state of the grid.
+The key constraints are:
+- A cell with fewer than two live neighbors dies (loneliness).
+- A cell with more than three live neighbors dies (overcrowding).
+- A cell with two or three live neighbors stays alive.
+- A dead cell with exactly three live neighbors becomes alive.
+These constraints are implemented in the `life` predicate, which calculates the number of live neighbors for each cell and applies the rules to determine the next state of the cell.
+The objective of the problem is not to minimize or maximize a specific value, but rather to satisfy the constraints and simulate the evolution of the Game of Life for a given number of time steps `m`, starting from an initial configuration `start`. The solution is the sequence of states of the grid over time, which is output in a human-readable format.

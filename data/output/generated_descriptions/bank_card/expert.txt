@@ -1,0 +1,5 @@
+name: Bank Card Code Problem
+description: The problem is about finding a 4-digit PIN code for a bank card, where the code is represented as abcd, and it must satisfy certain conditions to help remember it. The conditions are that no two digits are the same, the 2-digit number cd is 3 times the 2-digit number ab, and the 2-digit number da is 2 times the 2-digit number bc.
+variables: $a, b, c, d$ - These are the decision variables representing the 4 digits of the PIN code, where $a$ and $b$ are the first two digits, and $c$ and $d$ are the last two digits.
+constraints: $a \neq b \neq c \neq d, 10c+d = 3(10a+b), 10d+a = 2(10b+c)$ - These constraints ensure that all digits are different, the 2-digit number cd is 3 times the 2-digit number ab, and the 2-digit number da is 2 times the 2-digit number bc, respectively.
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, as it is a satisfaction problem, not an optimization problem.

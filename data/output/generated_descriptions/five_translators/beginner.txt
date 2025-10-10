@@ -1,0 +1,5 @@
+Five Translator Problem
+The problem is about five translators from different countries who speak their native language and two other languages. 
+The main variables are the languages spoken by each translator, which are represented by the letters S (Spanish), E (English), F (French), G (German), and R (Russian).
+The basic restrictions are: each translator speaks their native language and two other languages, and there are specific rules about which translators can speak which languages, such as the Englishman speaking German and the Spaniard speaking French.
+The goal of the problem is to find out which languages each translator speaks, given the restrictions and rules provided.

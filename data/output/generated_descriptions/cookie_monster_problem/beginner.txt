@@ -1,0 +1,5 @@
+Cookie Monster Problem
+The problem is about a monster who wants to eat all the cookies from several jars in the fewest number of moves. 
+The main variables are the number of cookies in each jar and the number of cookies the monster eats from each jar in each move. 
+The basic restrictions are that the monster must eat the same number of cookies from each jar in each move, and he cannot eat more cookies from a jar than it contains. 
+The goal is to find the smallest number of moves the monster needs to empty all the jars.

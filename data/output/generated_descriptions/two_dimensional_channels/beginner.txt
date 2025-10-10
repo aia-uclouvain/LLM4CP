@@ -1,0 +1,5 @@
+Two-dimensional constrained channels problem
+The problem is about creating a grid of black and white squares where each interior square has four black and four white neighbors. 
+The main variables are the grid size (n) and the number of black neighbors (m) for each square, as well as the grid itself (x) which represents the color of each square (0 for white, 1 for black).
+The basic restrictions are that each interior square must have four black and four white neighbors, and the grid size is fixed. 
+The goal of the problem is to find all possible configurations of the grid that satisfy the constraints, and to determine the limits of the number of solutions for different grid sizes and numbers of black neighbors.

@@ -1,0 +1,5 @@
+The problem is called "Missing digit". 
+It's about finding a digit that is not present in the 9-digit number 2^29, which is a very large number. 
+The main variables are "x" and "missing". "x" represents the digits of the large number, and "missing" is the digit that is not in the number. 
+The basic rules are that the large number 2^29 must be formed using the digits in "x", and each digit in "x" must be different. Also, the "missing" digit must not be in the list of digits "x". 
+The goal is to find the "missing" digit, which is the digit that is not used in the large number 2^29.

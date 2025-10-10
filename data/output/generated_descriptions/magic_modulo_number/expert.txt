@@ -1,0 +1,5 @@
+name: Magic Modulo Number
+description: The problem is to find a number that has a specific property: when divided by consecutive integers from 2 to 10, the remainder is one less than the divisor. The problem asks to find the smallest such number that is not too big.
+variables: $x$ - a decision variable representing the number to be found, which is an integer between 0 and 10,000,000.
+constraints: $x \mod i = i-1, \forall i \in \{2, 3, ..., 10\}$ - a set of constraints that ensure the number $x$ satisfies the modulo property for each divisor from 2 to 10.
+objective: minimize $x$ - the objective is to find the smallest number that satisfies all the constraints, although the model provided uses the satisfy keyword, indicating that any solution that satisfies the constraints is acceptable.

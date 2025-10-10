@@ -1,8 +1,0 @@
-name: Resource Constrained Project Scheduling Problem (RCPSP)
-description: The Resource Constrained Project Scheduling Problem is a classic problem in operations research and constraint programming that involves scheduling a set of tasks with given durations and resource requirements, subject to constraints on the availability of resources and machines. The goal is to find a schedule that minimizes the maximum completion time of all tasks.
-variables: tasks[t], allocs[a] 
-tasks[t] represents the interval of time during which task t is executed, and allocs[a] represents the allocation of task t to machine m. These decision variables determine the schedule of tasks on machines and the allocation of resources to tasks.
-constraints: alternative(tasks[t], all(a in Allocs: a.tname==t.name) allocs[a]), noOverlap(all(a in Allocs: a.machine==m) allocs[a]), noOverlap(all(t in Tasks: r in t.resources) tasks[t]), machines <= card(Machines)
-These constraints ensure that each task is executed on one of the available machines, that no two tasks allocated to the same machine overlap in time, that no two tasks requiring the same resource overlap in time, and that the total number of machines used does not exceed the available number of machines.
-objective: minimize max(t in Tasks) endOf(tasks[t])
-The objective is to minimize the maximum completion time of all tasks, which is equivalent to minimizing the makespan of the schedule.

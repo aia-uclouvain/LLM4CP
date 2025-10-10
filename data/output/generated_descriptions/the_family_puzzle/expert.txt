@@ -1,0 +1,7 @@
+name: The Family Puzzle
+description: The problem involves determining the marriages and parent-son relationships between three men (Abel, Locker, and Snyder), their wives (Edith, Doris, and Luisa), and their sons (Albert, Henry, and Victor) based on given clues and constraints.
+variables: $Edith, Doris, Luisa, Albert, Henry, Victor \in \{1, 2, 3\}$, where $Edith, Doris, Luisa$ represent the wives of the men and $Albert, Henry, Victor$ represent the sons of the couples.
+constraints: 
+$Edith \neq Locker \wedge Edith \neq Albert \wedge Snyder \neq Luisa \wedge Snyder \neq Henry \wedge (Albert = Locker \vee Albert = Snyder) \rightarrow Luisa = Victor \wedge Luisa = Locker \rightarrow Doris \neq Albert \wedge all\_different([Edith, Doris, Luisa]) \wedge all\_different([Albert, Henry, Victor])$, 
+where the constraints ensure that each man is married to a different woman, each couple has a different son, and the given clues about the relationships are satisfied.
+objective: The objective of the problem is to find a satisfying assignment of the decision variables, i.e., to determine the marriages and parent-son relationships that satisfy all the given constraints.

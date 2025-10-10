@@ -1,0 +1,12 @@
+Hidato Puzzle
+The Hidato puzzle is a logic-based puzzle where the goal is to connect numbered tiles in a grid by finding a path that visits each number in sequential order, with consecutive numbers being adjacent either horizontally, vertically, or diagonally.
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` denotes the number that should be placed at position `(i, j)` in the grid. The values of `x` range from 1 to `r*c`, where `r` and `c` are the number of rows and columns in the grid, respectively.
+
+The key constraints in the Hidato puzzle can be described as follows: 
+- Each number from 1 to `r*c` must be placed exactly once in the grid.
+- The fixed tiles, represented by the `puzzle` array, must be placed at their corresponding positions in the grid.
+- For each number `k` in the grid, there must exist a adjacent position (horizontally, vertically, or diagonally) that contains the next number `k+1`.
+These constraints ensure that the numbers in the grid form a connected path, with consecutive numbers being adjacent.
+
+The objective of the Hidato puzzle is to find a solution that satisfies all the constraints, effectively connecting the numbered tiles in a sequential order. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints.

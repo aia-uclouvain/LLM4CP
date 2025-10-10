@@ -1,0 +1,5 @@
+Box Design Problem
+The problem is about designing a box that meets certain requirements while keeping costs as low as possible. 
+The main variables are the depth (d), width (w), and height (h) of the box, which are the dimensions that define its size, and the cost (z) of making the box.
+The basic restrictions are that the box must have a certain minimum surface area and volume, its height and width must be in a certain proportion to each other for aesthetic reasons, and its footprint (the area of the base) must be small for marketing reasons. Also, all dimensions must be non-negative.
+The goal is to minimize the cost (z) of the box, which depends on its dimensions, while satisfying all the requirements.

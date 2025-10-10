@@ -1,5 +1,0 @@
-The name of the problem is the Knapsack Problem. 
-This problem is about packing items of different weights and values into a knapsack with limited capacity. 
-The main variables are the items to be packed, their weights, and their values, which represent how much each item weighs and how valuable it is. 
-The basic restrictions or rules of the problem are that the total weight of the packed items cannot exceed the capacity of the knapsack. 
-The goal of the problem is to maximize the total value of the packed items, which means to choose the items that give the highest total value while not exceeding the knapsack's capacity.

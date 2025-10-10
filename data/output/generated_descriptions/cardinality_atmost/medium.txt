@@ -1,0 +1,11 @@
+Cardinality Atmost Problem
+The Cardinality Atmost problem is about limiting the number of occurrences of specific values within a collection of variables. 
+The main decision variables are: 
+- `variables`: an array of variables representing the collection of values, 
+- `values`: an array of values that must occur within the `variables` array, 
+- `nvar`: a variable representing the maximum number of occurrences allowed for each value in `values`. 
+The key constraints are: 
+- Each value in `values` can occur at most `nvar` times within the `variables` array, 
+- The `variables` array must match a predefined sequence of values, 
+- The `values` array must match a predefined set of values. 
+The problem's objective is to satisfy these constraints, ensuring that the number of occurrences of each value in `values` does not exceed `nvar` within the `variables` array.

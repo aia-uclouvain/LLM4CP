@@ -1,0 +1,5 @@
+name: All Different Consecutive Values
+description: The problem requires finding an assignment of distinct consecutive values to a set of variables, such that the difference between the largest and smallest values is equal to the number of variables minus one.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ represents the value assigned to the $i^{th}$ variable, and $n$ is the total number of variables.
+constraints: $alldifferent(x) \wedge max(x) - min(x) = n - 1$, where $alldifferent(x)$ ensures that all values in $x$ are distinct, and $max(x) - min(x) = n - 1$ ensures that the values are consecutive.
+objective: The problem is a satisfaction problem, where the goal is to find a feasible assignment of values to the variables that satisfies the given constraints, rather than minimizing or maximizing a specific value.

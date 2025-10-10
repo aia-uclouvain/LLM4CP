@@ -1,0 +1,5 @@
+name: Project Euler Problem 1
+description: The problem asks to find the sum of all natural numbers below 1000 that are multiples of 3 or 5. 
+variables: $x_1, x_2, ..., x_{999}$, where $x_i$ is a binary decision variable that represents whether the number $i$ is a multiple of 3 or 5 (1 if it is, 0 otherwise), and $s$ is an integer variable that represents the sum of these multiples.
+constraints: $x_i = 1 \iff i \mod 3 = 0 \lor i \mod 5 = 0, \forall i \in \{1, 2, ..., 999\}$, which ensures that $x_i$ is 1 if and only if $i$ is a multiple of 3 or 5.
+objective: The objective is to find the value of $s$, which is the sum of all the multiples of 3 or 5 below 1000, there is no explicit minimize or maximize in this problem as it is a satisfaction problem where the goal is to find the sum $s$.

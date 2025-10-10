@@ -1,0 +1,5 @@
+name: In Interval Problem
+description: The In Interval problem is a constraint satisfaction problem that involves determining whether a given variable falls within a specified interval. The problem is defined by a variable, a lower bound, and an upper bound, and the goal is to satisfy the constraint that the variable is within the given interval.
+variables: $v, low, up$ - These are the decision variables, where $v$ is the variable to be checked, and $low$ and $up$ represent the lower and upper bounds of the interval, respectively.
+constraints: $v \geq low \wedge v \leq up$ - These constraints ensure that the variable $v$ is greater than or equal to the lower bound $low$ and less than or equal to the upper bound $up$, effectively enforcing the interval constraint.
+objective: Satisfy the constraints - The objective of the problem is to find an assignment of values to the variables that satisfies the given constraints, specifically the interval constraint.

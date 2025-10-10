@@ -1,0 +1,5 @@
+The Eighteen puzzle
+The Eighteen puzzle is a classic constraint programming problem where an eight-digit multiplicand, consisting of dots and letters, is multiplied by 2 to produce the product EIGHTEEN. 
+The main decision variables in this problem are the letters (N, I, E, G, H, T) and the dots (X1, X2, X3, X4), which represent the digits in the multiplicand. 
+The key constraints in this problem are that different letters stand for different digits, the same letter stands for the same digit, and a dot can be any digit. Additionally, the multiplicand multiplied by 2 must equal the product EIGHTEEN. 
+The objective of this problem is to find the eight-digit product EIGHTEEN that satisfies all the given constraints, which is essentially a satisfaction problem where the goal is to find a solution that meets all the conditions, rather than minimizing or maximizing a specific value.

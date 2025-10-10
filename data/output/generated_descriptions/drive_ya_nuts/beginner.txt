@@ -1,0 +1,5 @@
+Drive Ya Nuts puzzle
+The problem is about solving a puzzle where seven nuts with numbered sides need to be arranged so that the numbers on adjacent sides of each nut match.
+The main variables are the nuts and their positions, which can be thought of as the order in which the nuts are placed and the direction they are facing.
+The basic restrictions are that each nut has six sides with different numbers, and when two nuts are placed next to each other, the numbers on the sides that touch must be the same.
+The goal of the problem is to find an arrangement of the nuts that satisfies these restrictions, with the additional condition that the center nut starts with the number 1.

@@ -1,0 +1,5 @@
+The problem is called Numerica. 
+It's about finding the values of two connected numbers, x[1] and x[2], that satisfy certain rules. 
+The main variables are x[1] and x[2], which are just two numbers that we're trying to figure out. 
+The basic restrictions are that the sum of the squares of these two numbers must be equal to 1, and the square of the first number must be equal to the second number. 
+The goal of the problem is to find the values of x[1] and x[2] that make these rules true, without trying to minimize or maximize anything, just finding the solutions that work.

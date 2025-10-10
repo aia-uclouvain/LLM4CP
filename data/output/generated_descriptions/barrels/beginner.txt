@@ -1,0 +1,16 @@
+Barrels Problem
+The problem is about filling in numbers on the sides of barrels with different digits from 1 to 6, such that each row and column has unique numbers. The top number on each barrel must be the sum or product of the four different digits on that barrel. All top numbers are different and less than 91.
+
+The main variables are: 
+- barrels: the numbers on top of each barrel
+- contents: the numbers on the sides of each barrel
+- barrels_op: whether the top number is the sum or product of the side numbers
+- mat: a 6x6 grid representing the numbers on the sides of all barrels
+
+The basic restrictions are: 
+- each row and column in the grid can only have each number once
+- the numbers on the sides of each barrel must be different
+- the top number on each barrel must be the sum or product of the side numbers
+- all top numbers must be different and less than 91
+
+The goal is to find a solution that satisfies all these restrictions.

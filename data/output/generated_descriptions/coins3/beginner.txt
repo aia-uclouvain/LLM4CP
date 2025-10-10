@@ -1,0 +1,5 @@
+Coin problem. 
+This problem is about finding the minimum number of coins needed to make any amount of money from 1 to 99 cents using six different coin denominations: 1, 2, 5, 10, 20, and 50 cents. 
+The main variables are the number of each coin type needed, represented by x, and the total number of coins used, represented by num_coins. 
+The basic restrictions are that each coin type must be used a non-negative number of times, and all amounts from 1 to 99 cents must be payable using the selected coins. 
+The goal is to minimize the total number of coins used, which means finding the smallest number of coins that can still make any amount from 1 to 99 cents.

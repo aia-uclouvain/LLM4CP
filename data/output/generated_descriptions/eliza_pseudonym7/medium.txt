@@ -1,0 +1,18 @@
+The problem is called Eliza Pseudonym of Puzzlania. 
+It is about determining the day on which each of six women, Eliza and her friends Anna, Barbra, Carla, Delilah, and Fiona, subscribed to an internet mailing list and the day on which each of six words, abulia, betise, caryatid, dehisce, euhemerism, and floruit, was featured.
+
+The main decision variables are the days on which each woman subscribed and the days on which each word was featured. 
+These variables represent the assignment of women to days and words to days, with each woman and each word being assigned to a unique day.
+
+The key constraints are: 
+each woman subscribed on a different day, 
+each word was featured on a different day, 
+exactly one woman has a name beginning with the same letter as the word featured on the day she subscribed, 
+the word "caryatid" was featured two days before Fiona subscribed, 
+Carla subscribed on Friday, 
+Anna subscribed one day after the word "euhemerism" was featured, 
+Wednesday's word did not end with the letter "e", and 
+Barbra subscribed three days after the word "dehisce" was featured.
+
+The problem's objective is to find an assignment of women to days and words to days that satisfies all the given constraints. 
+There is no explicit objective function being minimized or maximized; instead, the goal is to find a feasible solution that meets all the conditions.

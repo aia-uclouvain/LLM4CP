@@ -1,0 +1,21 @@
+**Vellino's Problem**
+Vellino's Problem is a classic constraint programming problem that involves assigning materials to bins of different colors, subject to various constraints.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `colour`: a function that assigns a color to each bin
+- `contents`: a function that assigns a multiset of materials to each bin
+
+These variables represent the assignment of materials to bins and the color of each bin.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each bin that has a color must also have a contents, and vice versa
+- The correct amount of each material must be spread across all the bins
+- The amount of material in each bin must not exceed its capacity
+- Certain materials are not allowed in bins of specific colors (e.g., plastic and steel are not allowed in red bins)
+- Certain materials have specific requirements (e.g., wood requires plastic)
+- Certain materials exclude each other (e.g., glass excludes copper)
+
+**Objective**
+The objective of this problem is to minimize the number of bins that have colors and materials assigned to them. In other words, the goal is to use the fewest number of bins possible to satisfy all the constraints.

@@ -1,0 +1,5 @@
+The problem is called the Exact Cover problem. 
+It is about finding a way to cover all the items in a list using a collection of sets, where each set contains some of the items, and each item must be covered exactly once. 
+The main variables are the sets (A, B, C, D, E, F) and the items (1, 2, 3, 4, 5, 6, 7), where each set is a collection of items. 
+The basic restrictions are that each item must be covered by exactly one set, and each set can either be used or not used. 
+The goal of the problem is to find a combination of sets that covers all the items exactly once.

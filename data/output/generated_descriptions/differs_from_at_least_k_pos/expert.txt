@@ -1,0 +1,5 @@
+name: Differ From At Least K Positions
+description: The problem involves two vectors of integers, and the goal is to find values for these vectors such that they differ from each other in at least K positions, where K is a given integer.
+variables: $a1_1, a1_2, ..., a1_n, a2_1, a2_2, ..., a2_n, k$ - These are the decision variables, where $a1_i$ and $a2_i$ represent the elements of the two vectors, and $k$ represents the minimum number of positions in which the vectors must differ.
+constraints: $cp1d(a1,[2,5,2,0])$, $cp1d(a2,[3,6,2,1])$, $k = 2$, $differ\_from\_at\_least\_k\_pos(k, a1,a2)$ - These constraints ensure that the first vector $a1$ is equal to $[2,5,2,0]$, the second vector $a2$ is equal to $[3,6,2,1]$, $k$ is equal to $2$, and the two vectors differ from each other in at least $k$ positions.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

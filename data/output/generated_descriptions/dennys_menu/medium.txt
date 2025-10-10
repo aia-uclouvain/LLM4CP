@@ -1,0 +1,5 @@
+Denny's Menu problem
+The problem is about finding different combinations of menu items that can be purchased to total a specific amount, in this case $10, given the prices of the items.
+The main decision variables are `x`, an array of variables representing the quantity of each menu item to purchase, where `x[i]` is the quantity of the item with price `y[i]`.
+The key constraints are that the total cost of the purchased items must equal $10, and the quantity of each item cannot be negative.
+The problem's objective is to find all possible combinations of menu items that satisfy the total cost constraint, rather than minimizing or maximizing a specific value. In other words, the goal is to enumerate all feasible solutions that total $10, given the prices of the menu items.

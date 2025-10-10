@@ -1,0 +1,11 @@
+Decentralization problem
+The problem is about deciding where to locate different departments of a company in various cities to maximize benefits while minimizing communication costs.
+The main variables are: 
+- d (department in city): whether a department is located in a particular city
+- g (department in city and department in city): whether two departments are in the same or different cities
+- tcost (total cost): the total benefit of locating departments in cities minus the communication costs between them
+The basic restrictions or rules are: 
+- each department must be located in one city
+- at most three departments can be in each city
+- the communication costs between departments in different cities must be considered
+The goal of the problem is to maximize the total benefit (tcost) by finding the best location for each department in a city, taking into account the benefits and communication costs.

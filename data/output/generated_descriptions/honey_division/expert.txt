@@ -1,0 +1,5 @@
+name: Honey Division Puzzle
+description: The Honey Division Puzzle is a classic problem where three sons are to be divided a certain amount of honey from barrels of different capacities. The goal is to find a way to divide the honey such that each son gets the same amount, and each barrel capacity is used the same number of times.
+variables: $x_{i,j}, howfull_j, sumx$ where $x_{i,j}$ represents the number of times son $i$ uses barrel capacity $j$, $howfull_j$ represents the amount of honey in each unit of barrel capacity $j$, and $sumx$ is the total number of times all sons use all barrel capacities. These variables are used to determine how the honey is divided among the sons.
+constraints: $\forall i \in S: \sum_{j \in C} x_{i,j} = 7$, $\forall i \in S: \sum_{j \in C} howfull_j \cdot x_{i,j} = 7$, $\forall j \in C: \sum_{i \in S} x_{i,j} = 7$ where the first constraint ensures each son gets 7 barrels, the second constraint ensures each son gets the same amount of honey, and the third constraint ensures each barrel capacity is used 7 times.
+objective: satisfy

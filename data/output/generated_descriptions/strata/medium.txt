@@ -1,0 +1,20 @@
+**Strata Puzzle**
+The Strata puzzle is a classic constraint programming problem where the goal is to strategically layer colored ribbons to match a given pattern. The puzzle consists of a grid with a certain number of rows and columns, and a set of colored ribbons that can be placed either horizontally or vertically.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `move_color`: an array of variables representing the color of each move.
+- `move_row` and `move_column`: arrays of variables representing the row or column where each move is made.
+- `y`: a 3D array of variables representing the configuration of the grid after each move.
+- `num_moves`: a variable representing the total number of moves made.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- The initial configuration of the grid is empty.
+- Each move can either place a colored ribbon in a row or a column, or do nothing (inertia).
+- When a move is made, the corresponding row or column is updated with the new color, and the rest of the grid remains unchanged.
+- The goal is to reach a configuration that matches the given pattern.
+- The number of moves is minimized.
+
+**Objective**
+The objective of the Strata puzzle is to find the minimum number of moves required to reach the target configuration. This is achieved by minimizing the `num_moves` variable. The solution to the puzzle is a sequence of moves that transforms the initial empty grid into the target configuration using the minimum number of moves.

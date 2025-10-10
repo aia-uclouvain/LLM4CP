@@ -1,0 +1,16 @@
+name: Superpermutation Problem
+
+description: The Superpermutation Problem is a combinatorial problem that involves finding the shortest string that contains every possible permutation of a given set of symbols as a substring, allowing for overlaps between permutations. The problem is to determine the minimum length of such a string and to find an example of a superpermutation.
+
+variables: $x = (x_1, x_2, ..., x_{upper\_bound})$, $ps = (ps_1, ps_2, ..., ps_{num\_perms})$, $z$ 
+These are decision variables where $x_i$ represents the $i^{th}$ symbol in the superpermutation string, $ps_i$ represents the starting position of the $i^{th}$ permutation in the string, and $z$ represents the maximum starting position of all permutations.
+
+constraints: 
+$\forall perm \in \{1, 2, ..., num\_perms\}, \forall j \in \{0, 1, ..., n-1\}: x[ps[perm]+j] = permutations[perm,j+1]$,
+$\forall i \in \{1, 2, ..., n\}: x[i] = i$,
+$\forall i \in \{1, 2, ..., upper\_bound\}: x[i] = x[upper\_bound-i+1]$,
+$all\_different(ps)$
+These constraints ensure that each permutation appears as a substring in the superpermutation string, the first $n$ symbols are fixed to break symmetry, the string is a palindrome, and all permutations start at different positions.
+
+objective: minimize $z$ 
+The objective is to minimize the maximum starting position $z$ of all permutations, which effectively minimizes the length of the superpermutation string.

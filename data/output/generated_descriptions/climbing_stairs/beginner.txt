@@ -1,0 +1,5 @@
+Climbing Stairs Problem
+The problem is about climbing a flight of stairs, where you can take either one or two steps at a time. 
+The main variables are the number of steps in the stairs (n) and the maximum number of steps you can take at a time (m), and the decision variables (x) which represent the number of steps taken at each leap.
+The basic restrictions are that you must climb all the steps and you can only take up to m steps at a time. 
+The goal of the problem is to find the number of different ways you can climb the stairs, which is achieved by finding all possible combinations of steps that add up to the total number of steps (n).

@@ -1,0 +1,12 @@
+name: Movement Puzzle Problem
+description: The movement puzzle problem is a classic problem in constraint programming where we have a list of integers representing the number of steps that can be taken to the left or right from each cell. The goal is to find a path from any cell to the last cell, which is represented by a 0, by taking the allowed number of steps from each cell. The problem can be solved by finding a sequence of cells that satisfies the given constraints.
+variables: $x_1, x_2, ..., x_n, c$ where $x_i$ represents the position of the $i^{th}$ step in the sequence and $c$ represents the total number of steps taken. These variables are used to represent the sequence of cells that need to be visited to reach the last cell.
+constraints: 
+- $alldifferent\_except\_0(x)$: ensures that all $x_i$ are distinct except for the value 0.
+- $maximum(x_n, x)$: ensures that the last cell is the maximum value in the sequence.
+- $x[n] > 0$: ensures that the last cell is visited.
+- $\forall i \in 2..n: (i \leq x[n]) \rightarrow \exists j, k \in 1..n: x[j] = i \wedge x[k] = i-1 \wedge a[k] = |j-k|$ : ensures that for each step in the sequence, there exists a previous step that is connected to it.
+- $\exists j \in 1..n-1: x[j] = x[n]-1 \wedge a[j] = n - j$: ensures that the last step is connected to the second last step.
+- $if start > 0 then x[start] = 1 else true$: ensures that if a start position is given, the first step is from that position.
+These constraints ensure that the sequence of cells satisfies the given conditions and that the path from any cell to the last cell is valid.
+objective: minimize $c$ which represents the total number of steps taken. The objective is to find the shortest path from any cell to the last cell.

@@ -1,0 +1,5 @@
+name: Arrow Problem
+description: The Arrow problem is a constraint programming problem where the goal is to find a path in a 3x3 grid filled with digits from 1 to 9, such that the path forms a number that is larger than a given number, 84937561. The path must start from one cell, visit neighboring cells without revisiting any cell, and form a valid number by concatenating the digits in the visited cells.
+variables: $x = (x_1, x_2, ..., x_9)$, $num$ - $x$ is an array of decision variables representing the cells to be visited in order, where each $x_i$ is a value between 1 and 9, and $num$ is a decision variable representing the number formed by concatenating the digits in the visited cells.
+constraints: $alldifferent(x)$, $toNum(x, num)$, $x_k = data[i, j]$, $i+a \geq 1$, $j+b \geq 1$, $i+a \leq n$, $j+b \leq n$, $(a = 0 \lor b = 0)$, $x_{k+1} = data[i+a, j+b]$, $num > 84937561$ - these constraints ensure that all cells are visited exactly once, the path is valid, and the formed number is larger than the given number.
+objective: Maximize $num$ - the objective is to find a path that forms the largest possible number.

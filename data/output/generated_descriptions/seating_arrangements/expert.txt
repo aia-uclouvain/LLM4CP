@@ -1,0 +1,18 @@
+name: Seating Arrangement Problem
+
+description: The problem involves organizing a party with a certain number of tables, each having a specific number of chairs. The guests are assigned numbers, and there are two conditions to be satisfied: some guests like each other and want to sit together, while others dislike each other and want to sit at different tables. The task is to find a seating arrangement that satisfies these conditions or determine that it is impossible.
+
+variables: $x_1, x_2, ..., x_k, tables_1, tables_2, ..., tables_n$ 
+These are decision variables where $x_i$ represents the table assigned to guest $i$, and $tables_t$ is a set of guests assigned to table $t$.
+
+constraints: 
+$\forall t \in \{1, 2, ..., n\}: |tables_t| = m$
+$\forall i \in \{1, 2, ..., num\_likes\}: x_{likes_{i,1}} = x_{likes_{i,2}}$
+$\forall i \in \{1, 2, ..., num\_dislikes\}: x_{dislikes_{i,1}} \neq x_{dislikes_{i,2}}$
+$\forall j \in \{1, 2, ..., k\}: x_j = t \leftrightarrow j \in tables_t$
+$x_1 = 1$
+$decreasing\_set(tables)$
+These constraints ensure that each table has exactly $m$ guests, guests who like each other are seated at the same table, guests who dislike each other are seated at different tables, and the seating arrangement is consistent between the $x$ and $tables$ variables. The last two constraints are used for symmetry breaking.
+
+objective: satisfy 
+The objective of the problem is to find a seating arrangement that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

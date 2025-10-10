@@ -1,0 +1,15 @@
+**Stable Marriage Problem**
+The Stable Marriage Problem is a classic constraint programming problem that involves matching two sets of entities, typically men and women, based on their preferences for each other.
+
+**Decision Variables**
+The main decision variables in this problem are represented by a 0/1 matrix `x`, where `x[i, j]` is 1 if person `i` is matched with person `j`, and 0 otherwise.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each person can only be matched with one other person.
+- A person cannot be matched with themselves.
+- The matching must be symmetric, meaning that if person `i` is matched with person `j`, then person `j` must also be matched with person `i`.
+- The matching must be stable, meaning that there is no pair of persons who would prefer each other over their current matches.
+
+**Objective**
+The objective of the Stable Marriage Problem is to maximize the total score of the matches, where the score of a match is based on the preferences of the two persons involved. In this implementation, the score is represented by the `scores` matrix, where `scores[i, j]` is the score of the match between person `i` and person `j`. The goal is to find a stable matching that maximizes the sum of these scores.

@@ -1,5 +1,0 @@
-Costas Array Problem
-The problem is about arranging marks in a special way on a grid with the same number of rows and columns, so that no two marks are on the same row or column, and the distances between marks are all unique.
-The main variables are the positions of the marks, represented by x, which means the row where each mark is placed.
-The basic restrictions are that each mark must be in a different row and column, and the distances between marks must all be different.
-The goal of the problem is to find an arrangement of marks that satisfies these restrictions, which is a way of creating a special kind of grid pattern known as a Costas array.

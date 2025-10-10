@@ -1,0 +1,5 @@
+Set Covering Problem
+The problem is about selecting the best workers to build a house while keeping costs low. 
+The main variables are the workers and the tasks they can perform, as well as the cost of hiring each worker. 
+The basic restrictions are that each task must be performed by at least one worker, and each worker can either be hired or not. 
+The goal is to minimize the total cost of hiring workers while ensuring all tasks are completed.

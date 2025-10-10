@@ -1,0 +1,5 @@
+Nurse Rostering Problem
+The problem is about creating a schedule for nurses to work at a hospital. 
+The main variables are the nurses and the days of the week, and what they mean is which nurse is working on which day and what shift they are working (day, night, or off).
+The basic restrictions or rules of the problem are that each day, there must be at least 3 nurses working the day shift and 2 nurses working the night shift, and nurses can only work if they are available. 
+The goal of the problem is to create a schedule that satisfies all the rules and restrictions, and assigns a shift to each nurse for each day.

@@ -1,0 +1,5 @@
+Assignment Problem
+The problem is about matching items from one group (called A) with items from another group (called B) in a way that satisfies certain rules. 
+The main variables are A and B, which represent the two groups of items, and x, which represents the matches between the items in A and B. 
+The basic restrictions are that each item in A can only be matched with one item in B, and each item in B can only be matched with one item in A. Also, the matches must be done in a way that the values of the items in A and B are the same for each match. 
+The goal of the problem is to find a set of matches that satisfy all the rules, and the problem does not aim to minimize or maximize anything, but rather to find a valid assignment.

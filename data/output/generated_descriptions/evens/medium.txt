@@ -1,0 +1,13 @@
+Evens Puzzle
+The Evens puzzle is a classic constraint programming problem that involves placing coins on a square grid in such a way that each row and column contains an even number of coins.
+
+The main decision variables in this problem are:
+- `x[i, j]`: a binary variable that represents whether a coin is placed at position `(i, j)` on the grid.
+- `n[i]` and `m[j]`: integer variables that represent the number of pairs of coins in row `i` and column `j`, respectively.
+
+The key constraints in this problem are:
+- The total number of coins placed on the grid must be equal to a given number (10 in this case).
+- Each row must contain an even number of coins, which means that the sum of `x[i, j]` over all columns `j` for a given row `i` must be even.
+- Each column must contain an even number of coins, which means that the sum of `x[i, j]` over all rows `i` for a given column `j` must be even.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, which is achieved by using the `solve satisfy` statement in the Minizinc model. In other words, the goal is to find a way to place the coins on the grid such that all rows and columns contain an even number of coins.

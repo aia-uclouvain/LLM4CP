@@ -1,0 +1,5 @@
+Antisymmetric Relation Problem
+The problem is about finding a relationship between different things, where if one thing is related to another, the second thing cannot be related to the first. 
+The main variable is x, which is a table that shows the relationships between different things. In this table, a 1 means that the thing on the left is related to the thing on the top, and a 0 means they are not related.
+The basic rules are that no thing can be related to itself, and if one thing is related to another, the second thing cannot be related to the first.
+The goal of the problem is to find a relationship that follows these rules, without trying to minimize or maximize anything, just to satisfy the conditions.

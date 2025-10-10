@@ -1,0 +1,8 @@
+name: Message Passing Problem
+description: The problem describes a situation where a teacher wants to send a message to Robert through a network of students. The students meet each other and pass the message, and the goal is to find all possible paths from Craig to Robert.
+variables: $x_1, x_2, ..., x_{10}$, $path\_len$ 
+These variables represent the path taken by the message, where $x_i$ is the $i^{th}$ student in the path, and $path\_len$ is the length of the path.
+constraints: $all\_different\_except\_0(x)$, $x_1 = Craig$, $last\_not\_0(x, Robert)$, $all\_paths(x, graph)$
+These constraints ensure that all students in the path are different (except for the case where the path is shorter than the number of students), the path starts with Craig, the path ends with Robert, and the path is a valid sequence of students based on the given graph.
+objective: minimize $path\_len$ 
+The objective is to find the shortest path from Craig to Robert.

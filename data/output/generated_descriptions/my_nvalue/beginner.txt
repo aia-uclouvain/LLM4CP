@@ -1,0 +1,14 @@
+Name of the problem: N-Value Problem
+
+The problem is about finding a set of numbers where a certain condition is met. Imagine you have a list of numbers, and you want to know how many different numbers are in that list. 
+
+The main variables are: 
+- x, which is a list of numbers
+- nvv, which is the count of different numbers in the list x
+
+The basic restrictions or rules of the problem are: 
+- The numbers in the list x must be within a certain range (from 1 to n, where n is 7 in this case)
+- The list x can have repeated numbers
+- The variable nvv must be equal to the number of different numbers in the list x
+
+The goal of the problem is to find a list of numbers x such that the number of different numbers in x (nvv) is equal to a given value (in this case, 2). In other words, the problem wants to find a list of numbers where exactly 2 different numbers appear in the list.

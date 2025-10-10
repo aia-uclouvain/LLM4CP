@@ -1,5 +1,0 @@
-Schur's Lemma
-The problem is about distributing balls into boxes in such a way that no box contains a specific combination of balls. 
-The main variables are the number of balls (n) and the number of boxes (d or c), and the box where each ball is placed (x). 
-The basic restrictions are that for any three balls where one is the sum of the other two, they cannot all be in the same box. 
-The goal of the problem is to find a way to distribute the balls into the boxes that satisfies this restriction.

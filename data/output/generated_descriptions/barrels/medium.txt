@@ -1,0 +1,16 @@
+Barrels Problem
+The Barrels problem is a classic constraint programming problem where the goal is to fill in the missing digits on the sides of a set of barrels with numbers from 1 to 6, such that each row and column contains each digit only once, and the top number on each barrel is either the sum or product of the four digits on its sides.
+
+The main decision variables in this problem are:
+- `barrels`: an array representing the top numbers of the barrels
+- `barrels_op`: an array indicating whether the top number of each barrel is the sum (2) or product (1) of the digits on its sides
+- `contents`: a 3D array representing the digits on the sides of the barrels
+- `mat`: a 2D array representing the digits in a 6x6 matrix, where each 2x2 sub-matrix corresponds to a barrel
+
+The key constraints in this problem are:
+- Each row and column in the 6x6 matrix must contain each digit from 1 to 6 only once
+- The digits on the sides of each barrel must be different
+- The top number of each barrel must be either the sum or product of the four digits on its sides
+- All top numbers of the barrels must be different and less than 91
+
+The objective of the problem is to find a solution that satisfies all the constraints, with no specific minimization or maximization goal. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the requirements.

@@ -1,0 +1,13 @@
+name: Bridge and Torch Problem
+
+description: The Bridge and Torch Problem is a classic logic puzzle where four people need to cross a narrow bridge at night, and they have a torch that must be used when crossing. Each person takes a different amount of time to cross the bridge, and the bridge can only hold two people at a time. The goal is to find a sequence of crossings that allows all four people to cross the bridge in 15 minutes or less.
+
+variables: $A, B, \text{cross\_time}, \text{actions}, \text{times}, \text{torch\_place}, \text{total\_steps}, \text{total}, \text{transfered}$ 
+These variables represent the following: $A$ and $B$ are the starting and ending points, $\text{cross\_time}$ is the time it takes for each person to cross the bridge, $\text{actions}$ is a 2D array representing the actions of each person at each time step, $\text{times}$ is an array representing the time taken for each crossing, $\text{torch\_place}$ is an array representing the location of the torch at each time step, $\text{total\_steps}$ is the total number of steps taken to cross the bridge, $\text{total}$ is the total time taken to cross the bridge, and $\text{transfered}$ is a 2D array representing the people who are transferred at each time step.
+
+constraints: $\forall i \in 1..num\_persons (actions[1,i] = A) \land torch\_place[1] = A \land transfered[1] = 1..num\_persons$ 
+$\forall t \in 2..max\_time (\exists place \in A..B (torch\_place[t-1] = place \land torch\_place[t] \neq torch\_place[t-1] \land times[t] = \max_{i \in 1..num\_persons} (cross\_time[i] \cdot bool2int(i \in transfered[t])) \land \forall i \in 1..num\_persons ((i \in transfered[t]) \leftrightarrow (actions[t-1,i] = place \land actions[t-1,i] \neq actions[t,i])) \land (not(i \in transfered[t]) \leftrightarrow actions[t-1,i] = actions[t,i])))$ 
+$\exists t \in 2..max\_time (\forall i \in 1..num\_persons (actions[t,i] = B) \land torch\_place[t] = B \land total\_steps = t)$
+These constraints represent the initial state, the transfer of people at each time step, and the goal state where all people have crossed the bridge.
+
+objective: minimize $total\_steps$ (or equivalently, minimize $total$)

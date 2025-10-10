@@ -1,0 +1,5 @@
+name: Movie Theater Seating Problem
+description: The problem involves seating n couples in a row such that each person, except those at the ends, has neighbors of the same gender or is the spouse of one of the neighbors.
+variables: $x_1, x_2, ..., x_{2n}$, where $x_i$ represents the person seated in the $i^{th}$ position, with $x_i$ taking values from 1 to $2n$, representing the $2n$ people (n couples) to be seated.
+constraints: $alldifferent(x) \wedge \forall i \in \{2, ..., 2n\} ((x_i \mod 2 = x_{i-1} \mod 2) \vee \exists j \in \{1, ..., n\} ((2(j-1)+1 = x_i \wedge 2(j-1)+2 = x_{i-1}) \vee (2(j-1)+1 = x_{i-1} \wedge 2(j-1)+2 = x_i)))$, which ensures that all people are seated exactly once, and each person (except those at the ends) has neighbors of the same gender or is the spouse of one of the neighbors.
+objective: The problem is a satisfaction problem, meaning the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

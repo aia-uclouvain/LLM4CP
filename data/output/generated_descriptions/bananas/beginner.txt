@@ -1,0 +1,8 @@
+Bananas problem
+This problem is about buying different types of fruits, specifically bananas, oranges, mangoes, and apples, with a limited amount of money, which is $100. The goal is to buy a total of 100 fruits while spending exactly $100.
+
+The main variables are the number of bananas, oranges, mangoes, and apples to be purchased. These variables represent the quantity of each fruit that will be bought.
+
+The basic restrictions or rules of the problem are that all types of fruits must be purchased, but the buyer does not like bananas and apples, so these should be bought in the smallest quantity possible. Additionally, the total cost of the fruits should equal $100, and the total number of fruits should be 100.
+
+The goal of the problem is to minimize the total number of bananas and apples purchased, which is represented by the variable "the_sum". This means finding the smallest possible quantity of bananas and apples that still allows the buyer to purchase 100 fruits in total, while spending exactly $100.

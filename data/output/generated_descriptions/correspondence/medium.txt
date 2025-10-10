@@ -1,0 +1,5 @@
+The name of the problem is Correspondence. 
+Correspondence is about finding a mapping between two collections of items, such that the items in the first collection correspond to the items in the second collection according to a given permutation. 
+The main decision variables are from, permutation, and to, which represent the items in the first collection, the permutation that defines the correspondence, and the items in the second collection, respectively. 
+The key constraints are that each item in the first collection must correspond to exactly one item in the second collection, as defined by the permutation, and that the permutation must be a one-to-one mapping, meaning that each item in the second collection is mapped to by exactly one item in the first collection. 
+The problem's objective is to satisfy the given constraints, meaning that the model is looking for a solution where the correspondence between the two collections is established according to the given permutation, rather than minimizing or maximizing a specific objective function.

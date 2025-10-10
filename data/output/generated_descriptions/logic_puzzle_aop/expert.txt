@@ -1,0 +1,16 @@
+name: Logic Puzzle from The Art of Prolog
+description: Three friends, Michael, Simon, and Richard, come first, second, and third in a programming competition. Each has a different first name, likes a different sport (basketball, tennis, or cricket), and has a different nationality (American, Israeli, or Australian). The problem provides several clues about their preferences and nationalities, and the goal is to determine who is the Australian and what sport Richard plays.
+variables: $michael, simon, richard, basketball, tennis, cricket, america, israel, australia, place = [place_1, place_2, place_3], sport = [basketball, tennis, cricket], country = [america, israel, australia]$ 
+These variables represent the friends' names, their preferred sports, their nationalities, and their respective places in the competition. The $place$ variable is an array that assigns a place (1, 2, or 3) to each friend, the $sport$ variable assigns a sport to each friend, and the $country$ variable assigns a nationality to each friend.
+constraints: $\begin{aligned}
+&all\_different(sport) \\
+&all\_different(country) \\
+&all\_different(place) \\
+&michael = basketball \\
+&place[michael] < place[america] \\
+&simon = israel \\
+&place[simon] < place[tennis] \\
+&place[cricket] = 1
+\end{aligned}$ 
+These constraints ensure that each friend has a unique sport, nationality, and place. They also encode the given clues: Michael likes basketball and did better than the American, Simon is Israeli and did better than the tennis player, and the cricket player came first.
+objective: The objective of this problem is to find a satisfying assignment of values to the decision variables, which means finding a solution that satisfies all the given constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the conditions.

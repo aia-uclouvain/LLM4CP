@@ -1,0 +1,14 @@
+Prime Number Identification Problem
+The problem is about determining whether a given number is prime or not by calculating its divisors.
+The main decision variables are: 
+- `nn`: the number to be checked for primality, 
+- `num_divisors`: the number of divisors of `nn`, 
+- `divisor`: a set of divisors of `nn`, and 
+- `is_prime`: a binary variable indicating whether `nn` is prime (1) or not (0).
+The key constraints are: 
+- `nn` must be greater than 1, 
+- a number `i` is a divisor of `nn` if `nn` modulo `i` equals 0, 
+- 1 and `nn` are always divisors of `nn`, 
+- `num_divisors` is the total count of divisors of `nn`, and 
+- `is_prime` is 1 if `num_divisors` equals 2 (indicating `nn` is prime) and 0 otherwise.
+The problem's objective is to find a value of `nn` that satisfies the given constraints, specifically to identify whether a number is prime by checking its divisors, with the goal of satisfying all constraints rather than minimizing or maximizing a specific objective function.

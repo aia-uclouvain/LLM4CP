@@ -1,0 +1,5 @@
+Team Picking Problem
+The problem is about dividing a group of people into two teams in a fair way, considering their individual strengths or abilities. 
+The main variables are the team each person belongs to (x) and the difference in total strength between the two teams (d). 
+The basic restrictions are that each team must have the same number of people, and the teams are divided based on the strengths of the individuals. 
+The goal is to minimize the difference in total strength between the two teams, making them as balanced as possible.

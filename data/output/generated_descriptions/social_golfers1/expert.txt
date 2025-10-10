@@ -1,0 +1,10 @@
+name: Social Golfer Problem
+description: The Social Golfer Problem is a classic problem in constraint programming that involves scheduling golfers into groups over several weeks, with the constraint that no two golfers can play in the same group more than once.
+variables: $assign_{g,w}$, where $g \in \{1, \ldots, golfers\}$ and $w \in \{1, \ldots, weeks\}$. These variables represent the assignment of each golfer $g$ to a group in each week $w$.
+constraints: 
+$\forall gr \in Group, w \in Week: \sum_{g \in Golfer} (assign_{g,w} = gr) = groupSize$,
+$\forall g1, g2 \in Golfer, w1, w2 \in Week, g1 \neq g2, w1 \neq w2: (bool2int(assign_{g1,w1} = assign_{g2,w1}) + bool2int(assign_{g1,w2} = assign_{g2,w2})) \leq 1$,
+$\forall g \in Golfer: assign_{g,1} = \lfloor \frac{g-1}{groupSize} \rfloor + 1$,
+$\forall g \in Golfer, g \leq groupSize: assign_{g,2} = g$. 
+These constraints ensure that each group has exactly $groupSize$ players, no two golfers play in the same group more than once, and introduce symmetry-breaking constraints to reduce the search space.
+objective: The objective of the problem is to find a schedule for as many weeks as possible, i.e., to maximize the number of weeks $weeks$ for which a valid scheduling exists.

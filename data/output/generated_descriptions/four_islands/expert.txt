@@ -1,0 +1,17 @@
+name: Four Islands Puzzle
+description: The Four Islands Puzzle is a classic logic puzzle where four islands, Pwana, Quero, Rayou, and Skern, are connected by bridges and each island has a unique primary export (alabaster, bananas, coconuts, and durian fruit) and a unique tourist attraction (hotel, ice skating rink, jai alai stadium, and koala preserve). The goal is to determine the name, export, and attraction of each island based on given clues.
+variables: $Pwana, Quero, Rayou, Skern, alabaster, bananas, coconuts, durian\_fruit, resort\_hotel, ice\_skating\_rink, jai\_alai\_stadium, koala\_preserve, island = [Pwana, Quero, Rayou, Skern], export = [alabaster, bananas, coconuts, durian\_fruit], attraction = [resort\_hotel, ice\_skating\_rink, jai\_alai\_stadium, koala\_preserve]$ 
+These variables represent the assignment of islands, exports, and attractions to each other, where $Pwana, Quero, Rayou, Skern$ are the islands, $alabaster, bananas, coconuts, durian\_fruit$ are the exports, and $resort\_hotel, ice\_skating\_rink, jai\_alai\_stadium, koala\_preserve$ are the attractions.
+constraints: $\begin{aligned}
+&all\_different(island) \\
+&all\_different(export) \\
+&all\_different(attraction) \\
+&(Pwana = A \wedge koala\_preserve = C) \vee (Pwana = B \wedge koala\_preserve = D) \\
+&(alabaster = A \wedge Quero = B) \vee (alabaster = C \wedge Quero = D) \\
+&(durian\_fruit = A \wedge resort\_hotel = B) \vee (durian\_fruit = C \wedge resort\_hotel = D) \\
+&(Skern = A \wedge jai\_alai\_stadium = C) \vee (Skern = C \wedge jai\_alai\_stadium = A) \vee (Skern = B \wedge jai\_alai\_stadium = D) \vee (Skern = D \wedge jai\_alai\_stadium = B) \\
+&(Rayou = A \wedge bananas = B) \vee (Rayou = B \wedge bananas = A) \vee (Rayou = C \wedge bananas = D) \vee (Rayou = D \wedge bananas = C) \\
+&(ice\_skating\_rink = A \wedge jai\_alai\_stadium = D) \vee (ice\_skating\_rink = D \wedge jai\_alai\_stadium = A) \vee (ice\_skating\_rink = B \wedge jai\_alai\_stadium = C) \vee (ice\_skating\_rink = C \wedge jai\_alai\_stadium = B)
+\end{aligned}$ 
+These constraints ensure that each island, export, and attraction is assigned uniquely, and that the given clues are satisfied.
+objective: The objective of the problem is to find a satisfying assignment of islands, exports, and attractions, which is achieved by solving the constraints. There is no explicit objective function to minimize or maximize.

@@ -1,0 +1,8 @@
+The problem is called Random Generator. 
+It's about creating a way to make random numbers in a programming language called MiniZinc. 
+The main variables are: 
+- seed, which is like a starting point to generate the random numbers
+- n, which is how many random numbers we want to generate
+- mod_value, which helps decide the range of the random numbers.
+The basic restrictions are that we need a seed to start, and we need to know how many numbers we want and their range. 
+The goal is to create a list of random numbers that seem random and can be used in other problems.

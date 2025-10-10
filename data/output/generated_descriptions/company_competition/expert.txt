@@ -1,0 +1,18 @@
+name: Team Formation Problem
+description: The problem is to form teams of employees from different departments with a balanced distribution of sexes and departments, while also ensuring that managers are in different teams if possible, and minimizing the number of violations of these rules.
+variables: $team, team\_departments, team\_sex, team\_size, which\_team, z$ 
+These variables represent the following: 
+- $team$: the set of persons in each team, 
+- $team\_departments$: the number of persons from each department in each team, 
+- $team\_sex$: the number of persons of each sex in each team, 
+- $team\_size$: the size of each team, 
+- $which\_team$: the team to which each person is assigned, 
+- $z$: the total number of violations of the rules.
+constraints: $all\_disjoint(team), team\_size[t] = card(team[t]), between(team\_size[t], t\_size, t\_size+1), i \in team[t] \leftrightarrow which\_team[i] = t, team\_departments[t, d] = \sum_{i \in 1..n} (departments[i] == d) \cdot (i \in team[t]), team\_sex[t, s] = \sum_{i \in 1..n} (sex[i] == s) \cdot (i \in team[t]), z = \sum_{t \in 1..num\_teams} (|team\_sex[t,M] - team\_sex[t,F]|) + \sum_{t \in 1..num\_teams, d1,d2 \in 1..num\_departments, d1 < d2} (|team\_departments[t,d1] - team\_departments[t,d2]|) + \sum_{m1,m2 \in managers, m1 < m2} (which\_team[m1] == which\_team[m2])$ 
+These constraints ensure that: 
+- the teams are disjoint, 
+- the size of each team is between $t\_size$ and $t\_size+1$, 
+- each person is assigned to exactly one team, 
+- the number of persons from each department and of each sex in each team is calculated correctly, 
+- the total number of violations of the rules is calculated.
+objective: minimize $z$

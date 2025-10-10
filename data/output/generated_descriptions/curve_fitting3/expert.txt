@@ -1,0 +1,11 @@
+name: Curve Fitting Problem by Least Squares
+description: The Curve Fitting Problem by Least Squares is a mathematical optimization problem that aims to find the best-fitting linear curve to a set of given data points. The problem involves finding the linear equation that minimizes the sum of the squared errors between the observed data points and the predicted values based on the linear equation.
+variables: X, Y, Ex, Ey, b1, where X and Y are the coefficients of the linear equation (y = Y + b1*x), Ex and Ey are arrays of variables representing the errors between the observed and predicted values for the x and y coordinates of the data points, and b1 is the slope of the linear equation. These variables are used to determine the best-fitting linear curve to the given data points.
+constraints: 
+  sum(z in Sample) (Ex[z]) = 0.0, 
+  X + Ex[z] = Sx[z] for all z in Sample, 
+  Y + Ey[z] = Sy[z] for all z in Sample, 
+  sum(z in Sample) (Ey[z]) = 0.0, 
+  b1 = (sum(z in Sample) (Ex[z]*Ey[z]))/(sum(z in Sample) (Ex[z]*Ex[z])), 
+  where these constraints ensure that the sum of the errors for the x and y coordinates is zero, the predicted values based on the linear equation are equal to the observed values plus the errors, and the slope of the linear equation is calculated based on the errors.
+objective: The objective of the problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find the values of the decision variables that satisfy all the constraints, resulting in the best-fitting linear curve to the given data points. However, the problem can be implicitly considered as a minimization problem, where the goal is to minimize the sum of the squared errors between the observed and predicted values.

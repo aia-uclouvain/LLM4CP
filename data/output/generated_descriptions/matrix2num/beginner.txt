@@ -1,0 +1,5 @@
+Binary Matrix to Number Problem
+The problem is about converting a binary matrix into a list of numbers. 
+The main variables are a binary matrix (x) and a list of numbers (num_list), where the binary matrix is like a table with 0s and 1s, and the list of numbers is what we want to get from the matrix.
+The basic restrictions are that each row and column in the binary matrix can only have one 1, and the list of numbers should match the positions of the 1s in the matrix.
+The goal is to find a binary matrix that satisfies these restrictions and matches a given list of numbers.

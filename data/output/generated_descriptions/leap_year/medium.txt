@@ -1,0 +1,5 @@
+Leap Year Problem
+The problem is about determining whether a given year is a leap year or not.
+The main decision variables are `year` and `is_leap_year`, where `year` represents the year to be checked and `is_leap_year` is a boolean variable indicating whether the year is a leap year (1) or not (0).
+The key constraints are that a year is a leap year if it is divisible by 4, but not by 100, unless it is also divisible by 400. This is implemented using the `leap_year` predicate, which checks these conditions for a given year.
+The problem's objective is to satisfy the constraints, meaning to correctly determine whether a given year is a leap year or not, rather than minimizing or maximizing a specific value. The model uses the `solve satisfy` statement to find a solution that meets the constraints.

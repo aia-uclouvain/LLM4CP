@@ -1,0 +1,5 @@
+Prime Multiplication Problem
+The Prime Multiplication Problem is about finding prime numbers to replace the digits in a multiplication equation such that the equation holds true. 
+The main decision variables are abc, de, fghi, jklm, and nopqr, which represent the numbers in the multiplication equation, and their corresponding arrays (abc_a, de_a, fghi_a, jklm_a, nopqr_a) represent the individual digits of these numbers, restricted to the prime numbers 2, 3, 5, or 7.
+The key constraints are that each digit must be a prime number, the numbers must satisfy the multiplication equation, and the digits must be combined correctly to form the numbers. In plain language, the constraints ensure that the multiplication of the two numbers (abc and de) results in the correct sum (nopqr) when adding the partial products (fghi and jklm).
+The problem's objective is to find a solution that satisfies all the constraints, meaning finding prime numbers for each digit such that the multiplication equation is correct, rather than minimizing or maximizing a specific value.

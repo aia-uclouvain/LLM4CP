@@ -1,0 +1,5 @@
+Torn Number Puzzle
+The problem is about finding a four-digit number where if you split it into two parts, add those parts together, and then square the result, you get the original number. 
+The main variables are D0, D1, D2, and D3, which represent the four digits of the number, and Sum, which is the result of adding the two parts of the number together.
+The basic restrictions are that the digits must all be different, the number cannot start with 0, and the two parts of the number cannot be 30 or 25, which are the parts of the original example number 3025.
+The goal is to find a number that meets these conditions, which is a puzzle to solve, rather than trying to minimize or maximize something.

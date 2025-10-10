@@ -1,0 +1,8 @@
+The problem is the Global Cardinality with No Loop problem. 
+It is about assigning values to a set of variables such that each value is assigned to a specific number of variables, and the number of variables assigned to themselves is limited.
+
+The main decision variables are `variables` and `values`. `variables` is an array of variables, each representing a variable that can be assigned a value from 1 to 8. `values` is a 2D array where each row represents a value and its corresponding occurrence.
+
+The key constraints are that the number of occurrences of each value should be equal to the number of variables assigned to that value, excluding the case where a variable is assigned to itself. Additionally, the number of variables assigned to themselves should be equal to `nloop`.
+
+The problem's objective is to satisfy these constraints, meaning that it is a satisfaction problem rather than an optimization problem, where the goal is to find an assignment of values to variables that meets the given constraints.

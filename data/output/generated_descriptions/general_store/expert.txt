@@ -1,0 +1,9 @@
+name: General Store Problem
+
+description: The General Store Problem is a classic puzzle where each different letter represents a different digit, and the goal is to find the correct digits for each letter such that the sum of the numbers represented by the words above the line equals the total represented by "ALL WOOL".
+
+variables: $C, H, E, S, A, B, O, W, P, L$ - These variables represent the digits that each letter corresponds to, with each variable being a decision variable that can take on a value from 0 to 9.
+
+constraints: $10000*C + 1000*H + 100*E + 10*S + S + 1000*C + 100*A + 10*S + H + 100000*B + 10000*O + 1000*W + 100*W + 10*O + W + 10000*C + 1000*H + 100*O + 10*P + S + 100000*A + 10000*L + 1000*S + 100*O + 10*P + S + 1000000*P + 100000*A + 10000*L + 1000*E + 100*A + 10*L + E + 1000*C + 100*O + 10*O + L + 1000*B + 100*A + 10*S + S + 1000*H + 100*O + 10*P + S + 1000*A + 100*L + 10*E + S + 1000*H + 100*O + 10*E + S + 100000*A + 10000*P + 1000*P + 100*L + 10*E + S + 1000*C + 100*O + 10*W + S + 100000*C + 10000*H + 1000*E + 100*E + 10*S + E + 100000*C + 10000*H + 1000*S + 100*O + 10*A + P + 10000*S + 1000*H + 100*E + 10*E + P = 1000000*A + 100000*L + 10000*L + 1000*W + 100*O + 10*O + L, all\_different(x)$ - The first constraint represents the equation where the sum of the numbers represented by the words equals the total represented by "ALL WOOL", and the second constraint ensures that all the decision variables take on different values.
+
+objective: The objective of the problem is to satisfy the given constraints, which means finding the correct digits for each letter such that the sum of the numbers represented by the words equals the total represented by "ALL WOOL". The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that satisfies all the constraints.

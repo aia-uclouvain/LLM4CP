@@ -1,0 +1,24 @@
+**Common Modulo Problem**
+
+The Common Modulo problem is a constraint programming problem that involves finding the number of common equivalence classes between two sets of variables, where the equivalence classes are defined by a modulo operation.
+
+**Decision Variables**
+
+The main decision variables in this problem are:
+- `x`: an array of variables representing the first set of values
+- `y`: an array of variables representing the second set of values
+- `a`: the number of variables in `x` that have a common equivalence class with `y`
+- `b`: the number of variables in `y` that have a common equivalence class with `x`
+- `m`: the modulo value used to define the equivalence classes
+
+**Constraints**
+
+The key constraints in this problem can be described as follows:
+- Each variable in `x` and `y` must be assigned a value within a certain range (0-9 in this case)
+- The `common_modulo` constraint ensures that `a` and `b` are correctly calculated based on the number of common equivalence classes between `x` and `y`
+- The `array2set_mod` predicate is used to convert the arrays `x` and `y` into sets of equivalence classes
+- The `cp1d` predicate is used to assign specific values to `x` and `y` in the example
+
+**Objective**
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the constraints and find a feasible solution that meets the conditions defined by the `common_modulo` constraint. In other words, the goal is to find values for `x`, `y`, `a`, and `b` that satisfy the constraints, given a specific modulo value `m`.

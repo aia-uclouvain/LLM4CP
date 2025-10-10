@@ -1,0 +1,5 @@
+Combination Locks problem 
+The problem is about unlocking a home safe with six dials, each having multiple number options. 
+The main variables are the six dials, and they represent the numbers that need to be selected on each dial to open the safe. 
+The basic restrictions are that each dial can only be set to one of its available numbers, and the sum of all the numbers on the dials must be 419. 
+The goal of the problem is to find the correct numbers to select on each dial to unlock the safe, which means finding the combination of numbers that adds up to 419.

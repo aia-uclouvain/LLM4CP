@@ -1,0 +1,5 @@
+The problem is called the Strictly Decreasing, Increasing, or Decreasing Sequence problem. 
+It's about arranging a set of numbers in a specific order, either from smallest to largest, largest to smallest, or in a way that each number is less than or equal to the previous one. 
+The main variables are the numbers in the sequence, which are represented by the array "x". 
+The basic restrictions or rules are that the numbers must be arranged in one of these specific orders: strictly decreasing (each number is larger than the next), strictly increasing (each number is smaller than the next), or decreasing (each number is less than or equal to the next). 
+The goal of the problem is to find a sequence of numbers that satisfies one of these orders, and in this case, it's trying to find a sequence that is strictly decreasing and matches a given example sequence (8, 4, 3, 1).

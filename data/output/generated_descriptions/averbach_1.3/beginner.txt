@@ -1,0 +1,5 @@
+The Devonshire Polo Club Problem. 
+This problem is about five men in a polo club, each owning a pony named after another man's wife. 
+The main variables are the men, their wives, and the names of their ponies, which represent the relationships between the men and their wives and ponies. 
+The basic restrictions are that each pony and wife has a unique name, no man's pony is named after his own wife, and specific rules about which pony each man owns and who their wives are. 
+The goal of the problem is to figure out who owns which pony and who is married to whom, specifically to find out who Jasmine's husband is and who owns Helene, the only wife who knows how to ride a horse.

@@ -1,0 +1,14 @@
+**Furniture Offer Optimization Problem**
+The problem is about finding the best combination of furniture offers to buy at least a certain amount of each type of furniture, while minimizing the total cost.
+
+**Decision Variables**
+The main decision variables are represented by the array `to_buy`, where `to_buy[i]` represents the number of times to buy the `i-th` offer. Each offer is a combination of armchairs, sidechairs, and benches.
+
+**Key Constraints**
+The key constraints are:
+- Each offer has a specific price and contains a certain number of armchairs, sidechairs, and benches.
+- The total number of each type of furniture bought must be at least the desired amount (represented by the `prefs` array).
+- The total cost is calculated by multiplying the number of times each offer is bought by its price and summing these values.
+
+**Objective**
+The objective of the problem is to minimize the total cost (`Total`) while satisfying the constraints. In other words, find the cheapest way to buy at least the desired amount of each type of furniture by selecting the optimal combination of offers.

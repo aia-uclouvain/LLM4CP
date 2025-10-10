@@ -1,0 +1,5 @@
+Quasigroup Completion Problem
+The problem is about filling in missing numbers in a grid to make it follow certain rules. 
+The main variables are the grid cells (x) which represent the missing numbers in the grid. 
+The basic restrictions are that each row and column of the grid must contain each number exactly once, and the numbers must be arranged in a specific pattern. 
+The goal of the problem is to find a way to fill in the missing numbers in the grid so that it satisfies all the rules, and there are many possible solutions.

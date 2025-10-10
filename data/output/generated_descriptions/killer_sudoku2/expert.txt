@@ -1,0 +1,11 @@
+name: Killer Sudoku
+description: Killer Sudoku is a puzzle that combines elements of Sudoku and Kakuro, where the goal is to fill a 9x9 grid with numbers from 1 to 9, such that each row, column, and nonet contains each number exactly once, and the sum of all numbers in a cage (a group of cells) must match the small number printed in its corner.
+variables: $x_{i,j}$ for $i,j = 1, \ldots, 9$, where $x_{i,j}$ represents the number in the $i$-th row and $j$-th column of the grid, and is a decision variable that can take values from 1 to 9.
+constraints: 
+$\forall i \in \{1, \ldots, 9\}: \forall j \in \{1, \ldots, 9\}: x_{i,j} \in \{1, \ldots, 9\}$, 
+$\forall i \in \{1, \ldots, 9\}: \text{all\_different}(\{x_{i,j} | j \in \{1, \ldots, 9\}\})$, 
+$\forall j \in \{1, \ldots, 9\}: \text{all\_different}(\{x_{i,j} | i \in \{1, \ldots, 9\}\})$, 
+$\forall i \in \{0, \ldots, 2\}: \forall j \in \{0, \ldots, 2\}: \text{all\_different}(\{x_{i',j'} | i' \in \{3i+1, \ldots, 3i+3\}, j' \in \{3j+1, \ldots, 3j+3\}\})$, 
+$\forall p \in \{1, \ldots, 29\}: \sum\{x_{i,j} | i,j \in \{1, \ldots, 9\} \wedge \text{segments}_{i,j} = p\} = \text{segment\_sums}_p$, 
+where the first constraint ensures that each cell contains a number from 1 to 9, the next three constraints ensure that each row, column, and nonet contains each number exactly once, and the last constraint ensures that the sum of all numbers in a cage matches the small number printed in its corner.
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

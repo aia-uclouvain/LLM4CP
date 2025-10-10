@@ -1,0 +1,5 @@
+Knapsack Problem with Randomly Generated Weights
+The problem is about finding a set of values that satisfy a set of constraints, where the constraints are generated randomly. 
+The main decision variables are x, an array of integers, where each element x[i] represents a value that contributes to the total sum of x[i] and x[i+1], which must equal the sum of two randomly generated numbers rand[i] and rand[i+1].
+The key constraints are that each x[i] must be greater than or equal to 0, and the sum of x[i] and x[i+1] must equal the sum of rand[i] and rand[i+1] for all i from 1 to n-1.
+The problem's objective is to find a set of values for x that satisfy all the constraints, with no specific objective function to minimize or maximize, as indicated by the "solve satisfy" statement, which means the goal is to find a feasible solution that meets all the constraints.

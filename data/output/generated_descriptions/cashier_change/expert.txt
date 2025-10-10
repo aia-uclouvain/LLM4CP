@@ -1,0 +1,5 @@
+name: Cashier Change Problem
+description: The problem is about a cashier who has $1.15 in coins and is unable to make change for $1, $0.50, $0.25, $0.10, and $0.05. The goal is to determine the combination of coins that the cashier has.
+variables: $x_1, x_2, x_3, x_4, x_5$, where $x_i$ represents the number of coins of denomination $b_i$ (1, 5, 10, 25, 50 cents) that the cashier has.
+constraints: $\sum_{i=1}^{5} x_i \cdot b_i = 115$, $\forall i \in \{1, 2, 3, 4, 5\}, \forall j \in \{i+1, ..., 6\}, \sum_{k=1}^{ub(x_i)} (k \leq x_i \wedge b_i \cdot k = b_j) = 0$, where the first constraint ensures that the total value of the coins is $1.15, and the second constraint ensures that for each denomination $b_i$, there is no amount of $b_i$ that can be used to make the amount of any larger denomination $b_j$.
+objective: The problem is a satisfaction problem, where the goal is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

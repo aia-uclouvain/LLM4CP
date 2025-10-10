@@ -1,0 +1,14 @@
+**Timeslot Problem**
+The Timeslot problem is a classic constraint programming problem that involves scheduling a set of tasks, in this case, song tapes and a news tape, into a fixed number of time slots.
+
+**Decision Variables**
+The main decision variables in this problem are the time slots assigned to each song tape (G, H, L, O, P, S) and the news tape. These variables represent the position of each tape in the broadcast schedule.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- L must be played immediately before O, meaning that there is no other tape between L and O.
+- The news tape must be played at some time after L, meaning that L must come before the news tape in the schedule.
+- There must be exactly two time slots between G and P, regardless of whether G comes before P or after P, meaning that G and P are separated by two other tapes.
+
+**Objective**
+The objective of this problem is to find all possible assignments of the song tapes and the news tape to the time slots that satisfy the given constraints. In other words, the goal is to generate all valid schedules that meet the specified conditions. The problem does not involve minimizing or maximizing a specific objective function, but rather finding all feasible solutions that satisfy the constraints.

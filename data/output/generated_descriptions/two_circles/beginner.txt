@@ -1,0 +1,5 @@
+Two Circles Problem
+The problem is about finding the sizes of two circles. 
+The main variables are r1 and r2, which represent the sizes (or radii) of the two circles. 
+The basic restrictions are that the sum of the distances around the two circles (their circumferences) must be 10322 times Pi, and the sum of the areas inside the two circles must be 13946281 times Pi. Also, one circle cannot be larger than the other.
+The goal of the problem is to find the sizes (radii) of the two circles that satisfy these conditions.

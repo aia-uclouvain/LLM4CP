@@ -1,0 +1,11 @@
+name: Digits of the Square puzzle
+
+description: The problem is to find a four-digit whole number n such that the last four digits of n^2 are in fact the original number n.
+
+variables: $n, n_a, n_squared, n_squared_a$ 
+These variables represent the four-digit number $n$, its digits $n_a$, the square of $n$ ($n_squared$), and the digits of $n_squared$ ($n_squared_a$), where $n$ is a four-digit number, $n_a$ is an array of four variables representing the digits of $n$, $n_squared$ is a variable representing the square of $n$, and $n_squared_a$ is an array of eight variables representing the digits of $n_squared$.
+
+constraints: $n = 1000..9999, n_a \in [0..9]^4, n_squared = 1000000..99980001, n_squared_a \in [0..9]^8, toNum(n_a, n, 10.0), toNum(n_squared_a, n_squared, 10.0), n_a[i] = n_squared_a[i+4] \forall i \in 1..4, n*n = n_squared$ 
+These constraints define the domains of the variables, ensure that $n$ and $n_squared$ can be represented by their respective digit arrays, and enforce the condition that the last four digits of $n^2$ are equal to $n$.
+
+objective: The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to solve the problem, there is no explicit objective function to minimize or maximize, the goal is to find a feasible solution that satisfies all the constraints.

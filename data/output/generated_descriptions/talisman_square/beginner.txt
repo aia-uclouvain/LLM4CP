@@ -1,0 +1,5 @@
+Talisman Square problem. 
+This problem is about arranging numbers from 1 to n^2 in an n by n grid in such a way that the difference between any two numbers next to each other is at least a certain value, k. 
+The main variables are the size of the grid (n), the minimum difference between numbers (k), and the numbers in the grid (x). The size of the grid determines how many numbers will be arranged, the minimum difference is the rule that must be followed, and the numbers in the grid are the values being arranged. 
+The basic restrictions are that each number can only be used once, and the difference between any two numbers next to each other (horizontally, vertically, or diagonally) must be at least k. 
+The goal of the problem is to find an arrangement of numbers that satisfies these rules, there is no specific objective to minimize or maximize, the goal is to find a valid arrangement.

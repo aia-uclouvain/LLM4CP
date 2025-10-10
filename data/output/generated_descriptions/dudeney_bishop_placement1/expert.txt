@@ -1,0 +1,5 @@
+name: Dudeney's Bishop Placement problem
+description: The problem is to place the minimum number of bishops on an 8x8 chessboard such that every square is either occupied by a bishop or under attack by a bishop. A bishop attacks a square if it is on the same diagonal as the bishop.
+variables: $x_{i,j}, a_{i,j}$, where $x_{i,j}$ is a binary variable that represents whether square $(i,j)$ is occupied by a bishop, and $a_{i,j}$ is a binary variable that represents whether square $(i,j)$ is under attack by a bishop.
+constraints: $\sum_{m \in 1..size, m \neq i, m-i+j \geq 1, m-i+j \leq size} x_{m,m-i+j} + \sum_{m \in 1..size, m \neq i, i+j-m \geq 1, i+j-m \leq size} x_{m,i+j-m} \geq a_{i,j}$, $a_{i,j} + x_{i,j} = 1$, which ensure that a square is under attack if there is a bishop on the same diagonal, and that each square is either occupied or under attack.
+objective: Minimize $\sum_{i,j \in 1..size} x_{i,j}$, which represents the total number of bishops placed on the board.

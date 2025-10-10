@@ -1,0 +1,6 @@
+Digital Root Problem
+The problem is about finding a special number, called the digital root, for a given number. 
+In everyday terms, it's like taking a number, adding up all its digits, and repeating this process until you get a single-digit number. 
+The main variables are: n, m, and x, which are numbers used to test the digital root calculation, and d_x and d_roots, which store the digital roots of x and numbers from 1 to m, respectively. 
+The basic restrictions or rules are that the digital root is calculated by adding up the digits of a number and repeating this process until a single-digit number is reached. 
+The goal of the problem is to calculate the digital root of a given number, in this case, the number 65,536, and also calculate the digital roots of numbers from 1 to a given limit, in this case, 112.

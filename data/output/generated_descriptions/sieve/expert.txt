@@ -1,0 +1,5 @@
+name: Divisor Problem
+description: The problem is to find all the divisors of a given number n and represent them in a set and an array. The model takes an integer n as input and outputs the set of divisors and an array where each index represents a number from 1 to n, with 0 indicating that the number is a divisor of n.
+variables: $s, sieve = [sieve_1, sieve_2, ..., sieve_n]$ where $s$ is a set of integers from 1 to n, and $sieve$ is an array of binary variables, with $sieve_i = 0$ indicating that i is a divisor of n, and $s$ containing all the divisors of n.
+constraints: $n \mod i = 0 \leftrightarrow sieve_i = 0, i \in s \leftrightarrow n \mod i = 0$ for all $i$ from 1 to $n$, which ensure that the array and set correctly represent the divisors of n.
+objective: The problem does not have an objective function to minimize or maximize, as it is a satisfaction problem where the goal is to find a solution that satisfies all the constraints.

@@ -1,0 +1,15 @@
+Car Replacement Problem
+The problem is about deciding when to replace a car to minimize costs. 
+The main variables are: 
+- timex: the number of years to consider
+- new_car: the cost of buying a new car
+- trade_in: the price at which the old car can be sold
+- maintenance: the cost of repairing the car each year
+- x: a table showing the strategy to choose, where x[i,j] represents replacing the car at year i with a new one that will be used until year j
+- cost: a table showing the cost of replacing the car at year i with a new one that will be used until year j
+- z: the total cost of the chosen strategy
+The basic restrictions are: 
+- the cost of replacing the car at any time must be non-negative
+- the cost of replacing the car is calculated based on the cost of the new car, the maintenance cost, and the trade-in value
+- the number of cars bought and sold at each time must be balanced
+The goal is to minimize the total cost z.

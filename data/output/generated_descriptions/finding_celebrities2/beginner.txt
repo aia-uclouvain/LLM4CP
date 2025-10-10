@@ -1,0 +1,10 @@
+Finding Celebrities Problem
+The problem is about finding famous people, called "celebrities", at a party. 
+The main variables are: 
+- the number of people at the party (n), 
+- who each person knows at the party (party), and 
+- the group of celebrities (celebrities).
+The basic restrictions are: 
+- everyone at the party knows the celebrities, and 
+- the celebrities only know other celebrities.
+The goal is to find the group of people who are celebrities, meaning they are known by everyone and they only know other celebrities.

@@ -1,0 +1,5 @@
+Football Team Optimization
+The problem is about managing a football team's budget to buy players. 
+The main variables are the players to buy and their costs, the team's budget, and the minimum and maximum number of players to buy for each position.
+The basic restrictions are that the team must buy a certain number of players for each position, and the total cost of the players cannot exceed the budget. 
+The goal is to spend as much of the budget as possible on players, which is equivalent to maximizing the total cost of the chosen players, without exceeding the budget of 30 million pounds.

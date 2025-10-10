@@ -1,0 +1,5 @@
+Car Talk Odometer problem 
+The problem is about a person named Tommy who notices that his car's odometer reading is the same when read forwards and backwards, which is called a palindrome, both when he starts his car and when he arrives at work after a short drive. 
+The main variables are the start and end odometer readings, which are numbers between 100,000 and 999,999, and the difference between these two readings, which represents the distance driven. 
+The basic restrictions are that both the start and end odometer readings must be palindromes, and the distance driven must be greater than zero. 
+The goal of the problem is to find the smallest possible distance that Tommy could have driven, which is the difference between the end and start odometer readings.

@@ -1,0 +1,5 @@
+The Send More Money problem.
+This problem is about finding an assignment of digits to letters in the equation SEND+MORE=MONEY such that the equation holds true when each letter is replaced by its corresponding digit.
+The main decision variables are the array `LETTERS` representing the letters in the equation, the 2D array `x` where `x[i,d]` represents whether letter `i` is assigned digit `d`, and the array `dig` where `dig[i]` represents the digit assigned to letter `i`.
+The key constraints are that each letter must be assigned exactly one digit, different letters must be assigned different digits, and the equation SEND+MORE=MONEY must hold true when each letter is replaced by its corresponding digit. This includes constraints such as carrying over from one column to the next when the sum of digits in a column exceeds 9.
+The objective of this problem is to find a satisfying assignment of digits to letters, meaning that the equation holds true. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

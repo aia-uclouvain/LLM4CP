@@ -1,5 +1,0 @@
-Schur's Lemma
-Schur's Lemma is a classic problem in constraint programming that involves distributing a set of balls into a set of boxes under certain constraints. 
-The main decision variables in this problem are the box assignments for each ball, which are typically represented as an array of variables, where each variable corresponds to a ball and takes a value representing the box where the ball is placed.
-The key constraints in Schur's Lemma are that for any triple of balls (x, y, z) where x + y = z, not all three balls can be in the same box. This constraint is often implemented using a disjunction or an "at most two" constraint, which ensures that at least one of the balls is in a different box.
-The objective of Schur's Lemma is to find a satisfying assignment of balls to boxes, such that the constraints are met. In other words, the goal is to determine whether it is possible to distribute the balls into the boxes in a way that satisfies the constraints, rather than optimizing a specific objective function.

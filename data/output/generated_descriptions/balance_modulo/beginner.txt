@@ -1,0 +1,5 @@
+The problem is called Balance Modulo. 
+It's about dividing a set of numbers into groups based on their remainder when divided by another number, and then finding the difference between the largest and smallest groups. 
+The main variables are x, which is a list of numbers, bal, which is the difference between the largest and smallest groups, and m, which is the number used to divide the numbers. 
+The basic restrictions are that each number in x must be between 1 and 7, and the numbers must be divided into groups based on their remainder when divided by m. 
+The goal is to find a set of numbers that satisfies these restrictions and calculates the balance between the largest and smallest groups.

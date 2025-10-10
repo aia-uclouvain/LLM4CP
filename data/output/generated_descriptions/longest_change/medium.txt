@@ -1,0 +1,8 @@
+The Longest Change Problem
+The Longest Change problem is about finding the maximum length of consecutive variables in an array where each pair of adjacent variables satisfies a certain constraint, such as being different.
+
+The main decision variables are `x`, an array of variables representing the values in the sequence, and `c`, an integer variable representing the length of the longest change. The `x` array represents the sequence of values, and the `c` variable represents the maximum length of consecutive variables that satisfy the given constraint.
+
+The key constraints are that each pair of adjacent variables in the `x` array must satisfy the given constraint, which in this case is that they are different (`!=`). The `longest_change` predicate ensures that the `c` variable is equal to the maximum length of consecutive variables that satisfy this constraint. The `cp1d` predicate ensures that the `x` array is equal to a given array of values.
+
+The objective of the problem is to find a sequence of values `x` that maximizes the length of consecutive variables that satisfy the given constraint, which is represented by the `c` variable. In other words, the problem is trying to find the longest subsequence of consecutive values where each pair of adjacent values is different.

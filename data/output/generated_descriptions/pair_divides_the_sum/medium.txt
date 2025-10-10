@@ -1,0 +1,5 @@
+The Pairs Divide the Sum problem. 
+This problem is about finding a set of distinct positive integers such that for every pair of them, their difference divides their sum. 
+The main decision variables are x, an array of n variables representing the distinct positive integers, and z, a variable representing the sum of the integers in x. 
+The key constraints are that all the integers in x must be different, the integers in x must be in increasing order, the sum of the integers z must be divisible by the number of integers n, and for every pair of integers in x, their difference must divide their sum. 
+The problem's objective is to find sets of distinct positive integers that satisfy these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

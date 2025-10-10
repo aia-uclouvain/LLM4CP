@@ -1,0 +1,22 @@
+N-Queens Problem
+The N-Queens problem is a classic constraint programming problem that involves placing N queens on an NxN chessboard such that no two queens attack each other. A queen can attack another queen if they are on the same row, column, or diagonal.
+
+Main Decision Variables
+The main decision variables in the N-Queens problem are the positions of the queens on the chessboard. These variables are typically represented as an array of integers, where each integer represents the column in which a queen is placed in a particular row.
+
+Key Constraints
+The key constraints in the N-Queens problem are:
+
+* Each queen must be placed in a unique column (i.e., no two queens can be in the same column).
+* Each queen must be placed in a unique row (i.e., no two queens can be in the same row).
+* No two queens can be on the same diagonal.
+
+These constraints can be represented mathematically as follows:
+
+* For each pair of queens (i, j), where i and j are the row numbers, the following constraints must hold:
+	+ qi ≠ qj (no two queens can be in the same column)
+	+ qi + i ≠ qj + j (no two queens can be on the same upward diagonal)
+	+ qi - i ≠ qj - j (no two queens can be on the same downward diagonal)
+
+Objective
+The objective of the N-Queens problem is to find a placement of N queens on an NxN chessboard that satisfies all the constraints. There is no explicit objective function to minimize or maximize; the goal is simply to find a feasible solution.

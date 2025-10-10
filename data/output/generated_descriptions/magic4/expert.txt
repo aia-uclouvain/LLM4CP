@@ -1,0 +1,15 @@
+name: Magic Square Problem
+description: The Magic Square problem is a classic problem in constraint programming where the goal is to fill a square grid with distinct numbers such that the sum of numbers in each row, column, and diagonal is the same.
+variables: $X_1, X_2, ..., X_{16}$, which represent the values to be assigned to each cell in the 4x4 grid, and are decision variables that take on integer values from 1 to 16.
+constraints: $X_1 \neq X_2 \neq ... \neq X_{16}$, 
+$X_1 + X_2 + X_3 + X_4 = 34$, 
+$X_5 + X_6 + X_7 + X_8 = 34$, 
+$X_9 + X_{10} + X_{11} + X_{12} = 34$, 
+$X_{13} + X_{14} + X_{15} + X_{16} = 34$, 
+$X_1 + X_5 + X_9 + X_{13} = 34$, 
+$X_2 + X_6 + X_{10} + X_{14} = 34$, 
+$X_3 + X_7 + X_{11} + X_{15} = 34$, 
+$X_4 + X_8 + X_{12} + X_{16} = 34$, 
+$X_1 + X_6 + X_{11} + X_{16} = 34$, 
+$X_4 + X_7 + X_{10} + X_{13} = 34$, which ensure that all numbers are distinct, and the sum of numbers in each row, column, and diagonal is 34.
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to solve the problem such that all constraints are satisfied, there is no specific value to minimize or maximize.

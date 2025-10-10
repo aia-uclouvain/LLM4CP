@@ -1,0 +1,5 @@
+Doubly Square Dates
+The problem is about finding specific dates where the numbers representing the day, month, and year can be arranged in two different ways to form perfect squares. 
+The main variables are day, month, and year, which represent the parts of a date. 
+The basic restrictions are that the day, month, and year must be valid (e.g., day between 1 and 31, month between 1 and 12), and when the numbers are arranged in the two different ways, they must form perfect squares. 
+The goal is to find the next two dates after 4 April 2001 that meet these conditions.

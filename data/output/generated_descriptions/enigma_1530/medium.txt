@@ -1,0 +1,8 @@
+The problem is called the Enigma problem 1530, also known as the Tom Daley problem. 
+It is about finding a five-digit number represented by the letters DALEY, where each letter stands for a different digit, and no number starts with a zero, such that when the three-digit number TOM is multiplied by 13, the result is the five-digit number DALEY.
+
+The main decision variables are T, O, M, D, A, L, E, and Y, which represent the digits that the letters T, O, M, D, A, L, E, and Y stand for, respectively. 
+
+The key constraints are that all the digits must be different, the first digit of TOM and DALEY must not be zero, and the multiplication of TOM by 13 must equal DALEY. 
+
+The problem's objective is to find the five-digit number DALEY that satisfies these constraints, which is essentially a satisfaction problem rather than an optimization problem, as there is no specific value being minimized or maximized. The goal is to find a solution that meets all the given conditions.

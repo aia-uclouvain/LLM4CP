@@ -1,0 +1,8 @@
+Volsay Problem
+The Volsay problem is a classic constraint programming problem that involves finding the optimal production levels of different products given certain constraints on the availability of components and the demand for each product.
+
+The main decision variables in this problem are the Production variables, which represent the amount of each product to be produced. These variables are arrays, where each element corresponds to a specific product.
+
+The key constraints in this problem are that the total amount of each component used in production cannot exceed the available stock of that component. This is enforced by the constraint that the sum of the demand for each component across all products, multiplied by the production level of each product, must be less than or equal to the available stock of that component.
+
+The objective of the Volsay problem is to maximize the total profit, which is calculated as the sum of the profit of each product multiplied by its production level. The profit of each product is given, and the goal is to find the production levels that result in the highest total profit while satisfying the constraints on component availability.

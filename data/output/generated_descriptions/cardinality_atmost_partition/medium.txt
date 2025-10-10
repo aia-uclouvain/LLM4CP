@@ -1,0 +1,24 @@
+**Cardinality at Most Partition Problem**
+
+The Cardinality at Most Partition problem is a classic constraint programming problem that involves partitioning a set of variables into distinct groups, where each group is defined by a set of values. The goal is to ensure that the number of variables assigned to each group does not exceed a specified maximum value.
+
+**Decision Variables**
+
+The main decision variables in this problem are:
+
+* `variables`: an array of variables, each representing a value to be assigned to a partition.
+* `partitions`: an array of sets, where each set represents a partition and contains the values that can be assigned to that partition.
+* `nvar`: a variable representing the maximum number of variables that can be assigned to each partition.
+
+**Constraints**
+
+The key constraints in this problem can be described in plain language as follows:
+
+* Each variable must be assigned to exactly one partition.
+* The partitions must be disjoint, meaning that no value can be assigned to more than one partition.
+* The number of variables assigned to each partition must not exceed the specified maximum value `nvar`.
+* The "rest partition" (i.e., the partition that contains all values not assigned to any other partition) is not subject to the maximum value constraint.
+
+**Objective**
+
+The objective of the Cardinality at Most Partition problem is to find an assignment of variables to partitions that satisfies all the constraints. The problem is typically formulated as a satisfaction problem, where the goal is to find a feasible solution that meets all the constraints, rather than optimizing a specific objective function. In this case, the problem is to find an assignment of variables to partitions such that the number of variables assigned to each partition does not exceed the specified maximum value `nvar`.

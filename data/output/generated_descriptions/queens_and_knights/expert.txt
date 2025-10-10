@@ -1,0 +1,14 @@
+name: Queens and Knights problem
+
+description: The Queens and Knights problem is a variant of the classic N-Queens problem, where the goal is to place an equal number of queens and knights on a chessboard such that no piece attacks any other piece. The problem asks for the maximum number of pieces that can be placed on the board and the number of different ways to do it.
+
+variables: $x_{i,j} \in \{0, 1, 2\}$ for $i, j \in \{1, \ldots, n\}$, $queens \in \{1, \ldots, n\}$, $knights \in \{1, \ldots, n\}$, $z \in \{2, \ldots, 2n\}$. These variables represent the placement of queens and knights on the chessboard, where $x_{i,j} = 1$ indicates a queen, $x_{i,j} = 2$ indicates a knight, and $x_{i,j} = 0$ indicates an empty space. The variables $queens$ and $knights$ represent the total number of queens and knights on the board, respectively, and $z$ represents the total number of pieces.
+
+constraints: 
+$\forall i, j \in \{1, \ldots, n\}: (x_{i,j} = 1 \rightarrow \forall a \in \{1, \ldots, n\} \setminus \{i\}: x_{a,j} = 0 \land \forall a \in \{1, \ldots, n\} \setminus \{j\}: x_{i,a} = 0 \land \forall a, b \in \{1, \ldots, n\} \setminus \{(i, j)\}: (a + b = i + j \lor a - b = i - j) \rightarrow x_{a,b} = 0)$, 
+$\forall i, j \in \{1, \ldots, n\}: (x_{i,j} = 2 \rightarrow \forall a \in \{-2, -1, 1, 2\}: \forall b \in \{-2, -1, 1, 2\}: (i + a \in \{1, \ldots, n\} \land j + b \in \{1, \ldots, n\} \land |a| + |b| = 3) \rightarrow x_{i+a,j+b} = 0)$, 
+$queens = knights$, 
+$z = queens + knights$. 
+These constraints ensure that each queen does not attack any other queen, each knight does not attack any other knight, the number of queens is equal to the number of knights, and the total number of pieces is the sum of the number of queens and knights.
+
+objective: maximize $z$ (the total number of pieces on the board)

@@ -1,0 +1,5 @@
+The problem is called the Open Alldifferent problem. 
+It's about having a list of numbers and a special set of positions in that list, and making sure that the numbers at those special positions are all different from each other. 
+The main variables are x, which is the list of numbers, and s, which is the set of special positions. 
+The basic restrictions are that the list of numbers must match a given example list, and the numbers at the special positions must be different. 
+The goal is to find a list of numbers and a set of special positions that satisfy these restrictions, which is done by solving the problem.

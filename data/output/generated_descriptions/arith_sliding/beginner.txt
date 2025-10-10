@@ -1,0 +1,5 @@
+The problem is called "Arith Sliding". 
+It's about a sequence of numbers where we add them up in different ways and check if the sum is less than a certain value. 
+The main variables are "x" which is a list of numbers that can be between -3 and 3, and "z" which is a number between 0 and 9 that we compare the sum to. 
+The basic rule is that when we add up the numbers in "x" in different ways, the sum should always be less than "z". 
+The goal is to find values for "x" that satisfy this rule, given that "z" is 4.

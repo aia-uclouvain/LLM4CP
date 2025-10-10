@@ -1,0 +1,14 @@
+Traveling Salesman Problem
+The Traveling Salesman Problem (TSP) is a classic constraint programming problem that involves finding the shortest possible route that visits a set of cities and returns to the starting city. 
+
+The main decision variables in this problem are x[i,j] and y[i,j], where x[i,j] represents whether the salesman travels from city i to city j, and y[i,j] represents the number of cars (or items) the salesman has after leaving city i and before entering city j.
+
+The key constraints in this problem are: 
+- The salesman must leave each city exactly once.
+- The salesman must enter each city exactly once.
+- The number of cars the salesman has after leaving a city and before entering another city must be between 0 and the total number of cities minus 1.
+- The total number of cars the salesman has after leaving a city and before entering another city must be equal to the number of cars the salesman had at the starting city, minus the number of cities visited so far, plus the number of cars sold at each city.
+
+The objective of this problem is to minimize the total distance traveled by the salesman, which is calculated by summing the distances between each pair of cities visited. The distance between each pair of cities is given by the array c. 
+
+In this specific model, the number of cities (n) is 16, and the number of edges (num_edges) is 240. The edges and their corresponding distances are defined in the arrays E and c, respectively. The model uses a search strategy to find the optimal solution, which is the route that minimizes the total distance traveled.

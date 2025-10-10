@@ -1,0 +1,8 @@
+The problem is called "Recover origin of pair differences". 
+It's about finding a set of numbers when you only know the differences between some pairs of these numbers. 
+The main variables are the set of numbers (called x) and the differences between pairs of numbers (called diffs). 
+The differences are like clues that help figure out the original numbers. 
+The basic restrictions are that each difference must come from a pair of numbers in the set, and all the differences must be accounted for. 
+The goal is to find the set of numbers that matches all the given differences. 
+In other words, you want to find the original numbers that would produce the given differences when you subtract each pair of numbers. 
+The problem is trying to solve for the set of numbers (x) that satisfies all the given differences (diffs).

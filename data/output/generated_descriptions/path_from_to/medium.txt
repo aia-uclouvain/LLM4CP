@@ -1,0 +1,5 @@
+The problem is called the "Path From To" problem. 
+It is about finding a path between two given vertices in a directed graph. 
+The main decision variables are the graph `g`, which represents the adjacency matrix of the graph, and the array `paths`, which represents the path from the start vertex to the end vertex. 
+The key constraints are that the path must start from the specified start vertex `from`, end at the specified end vertex `to`, and only traverse existing edges in the graph. 
+The objective of the problem is to satisfy these constraints, i.e., to find a path from the start vertex to the end vertex in the given graph.

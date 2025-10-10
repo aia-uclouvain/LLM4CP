@@ -1,0 +1,5 @@
+The Super Number problem
+The Super Number problem is about finding a 10-digit number that meets specific divisibility conditions, where each digit from 0 to 9 is used exactly once.
+The main decision variables are the elements of the array `x`, which represent the digits of the 10-digit number, where `x[i]` is the i-th digit.
+The key constraints are that all digits must be different, and the number formed by the first i digits must be divisible by i, for i ranging from 2 to 10. This means the first two digits must be divisible by 2, the first three digits must be divisible by 3, and so on, until the entire 10-digit number is divisible by 10.
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints, effectively finding a 10-digit number that meets the specified divisibility conditions.

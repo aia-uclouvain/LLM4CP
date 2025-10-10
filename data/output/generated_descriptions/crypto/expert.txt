@@ -1,0 +1,31 @@
+name: Crypto Problem
+
+description: The Crypto problem is a classic benchmark problem in constraint programming. It involves assigning numerical values to letters of the alphabet such that the sum of the values of the letters in each word equals a given total value. The problem requires finding a unique assignment of values to letters that satisfies all the given equations.
+
+variables: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, 
+These variables represent the numerical values assigned to each letter of the alphabet, with each variable being a decision variable that can take on a value from 1 to 26.
+
+constraints: all_different(all_letters) ∧ 
+sum([B,A,L,L,E,T]) = 45 ∧ 
+sum([C,E,L,L,O]) = 43 ∧ 
+sum([C,O,N,C,E,R,T]) = 74 ∧ 
+sum([F,L,U,T,E]) = 30 ∧ 
+sum([F,U,G,U,E]) = 50 ∧ 
+sum([G,L,E,E]) = 66 ∧ 
+sum([J,A,Z,Z]) = 58 ∧ 
+sum([L,Y,R,E]) = 47 ∧ 
+sum([O,B,O,E]) = 53 ∧ 
+sum([O,P,E,R,A]) = 65 ∧ 
+sum([P,O,L,K,A]) = 59 ∧ 
+sum([Q,U,A,R,T,E,T]) = 50 ∧ 
+sum([S,A,X,O,P,H,O,N,E]) = 134 ∧ 
+sum([S,C,A,L,E]) = 51 ∧ 
+sum([S,O,L,O]) = 37 ∧ 
+sum([S,O,N,G]) = 61 ∧ 
+sum([S,O,P,R,A,N,O]) = 82 ∧ 
+sum([T,H,E,M,E]) = 72 ∧ 
+sum([V,I,O,L,I,N]) = 100 ∧ 
+sum([W,A,L,T,Z]) = 34, 
+These constraints ensure that each letter is assigned a unique numerical value and that the sum of the values of the letters in each word equals the given total value.
+
+objective: The objective of the problem is to find a satisfying assignment of values to letters, which is achieved by solving the constraints. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

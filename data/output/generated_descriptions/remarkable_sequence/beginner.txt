@@ -1,0 +1,5 @@
+Remarkable Sequence Problem. 
+This problem is about finding special arrangements of numbers from 1 to 9, where each number appears exactly three times, and there are exactly a certain number of other numbers between each occurrence of the same number. 
+The main variables are the sequence of numbers (a) and the count of each number in the sequence (gcc), which represent the arrangement of numbers and how many times each number appears, respectively. 
+The basic restrictions are that each number from 1 to 9 appears exactly three times, and there are exactly i numbers between each occurrence of the number i, and the sequence must be arranged in a specific way to meet these conditions. 
+The goal of the problem is to generate all possible remarkable sequences that meet these conditions.

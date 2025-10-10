@@ -1,0 +1,20 @@
+Magic Sequence Problem
+The Magic Sequence problem is a classic constraint programming problem where the goal is to find a sequence of integers that satisfies certain conditions.
+
+The problem can be described as follows: given a sequence of length n, find a sequence of integers x0, x1, ..., xn-1 between 0 and n-1, such that for all i in 0 to n-1, the number i occurs exactly xi times in the sequence.
+
+Main Decision Variables
+The main decision variables in this problem are the integers in the sequence x0, x1, ..., xn-1.
+
+Key Constraints
+The key constraints in this problem are:
+
+* The number i occurs exactly xi times in the sequence for all i in 0 to n-1.
+* The sequence consists of integers between 0 and n-1.
+
+In plain language, these constraints mean that each number i in the sequence must appear exactly as many times as the value of the ith element in the sequence. For example, if the sequence is 6, 2, 1, 0, 0, 0, 1, 0, 0, 0, then the number 0 must appear 6 times, the number 1 must appear 2 times, and so on.
+
+Objective
+The objective of this problem is to find a sequence that satisfies the constraints. There is no explicit objective function to minimize or maximize, but rather a satisfaction problem where the goal is to find a feasible solution.
+
+Note that some of the provided models appear to be solving a different problem, namely the Magic Square problem, which is a related but distinct problem. The Magic Square problem involves finding a square matrix of integers such that the sum of each row, column, and diagonal is the same.

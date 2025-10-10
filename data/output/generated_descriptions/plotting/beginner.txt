@@ -1,0 +1,5 @@
+Plotting problem. 
+The Plotting problem is about finding a sequence of shots in a grid-based game to remove a certain number of blocks while following specific rules. 
+The main variables are the grid, which represents the game state, the hand, which represents the current color, fpRow and fpCol, which represent the row and column where the shot is fired, and the number of steps, which represents the number of shots to be taken. 
+The basic restrictions or rules of the problem are that each shot must remove at least one block, only one row or column can be shot at a time, and the hand color must match the color of the block being removed. 
+The goal of the problem is to find a sequence of shots that removes the required number of blocks in the minimum number of steps.

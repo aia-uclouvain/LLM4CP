@@ -1,0 +1,5 @@
+The Monkey and the Coconuts problem. 
+This problem is about a group of men who take turns dividing a pile of coconuts, with some coconuts being given to a monkey at each step. 
+The main variables are the number of men (n), the number of coconuts left at each step (left), and the number of coconuts removed by each man (removed). 
+The basic restrictions are that each man takes a fraction of the remaining coconuts, leaves some for the monkey, and the remaining coconuts must be divided evenly among the men at the end. 
+The goal is to find the original number of coconuts, which is the value of left[0], given the number of men (n) and the fact that the same number of coconuts is left for the monkey at each step.

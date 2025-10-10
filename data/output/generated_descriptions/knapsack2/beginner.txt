@@ -1,0 +1,5 @@
+The 0/1 Knapsack Problem. 
+This problem is about packing a bag with a limited capacity in the best way possible. 
+The main variables are the items to pack, their weights, and their ratings, which represent how much we like each item. 
+The basic restrictions are that we can't pack more than the bag can hold and we can either pack an item or not, we can't pack a fraction of it. 
+The goal is to pack the items in a way that maximizes the total rating, or how much we like the items we packed, without exceeding the bag's capacity.

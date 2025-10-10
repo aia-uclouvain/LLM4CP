@@ -1,0 +1,5 @@
+The problem is called Maximum Modulo. 
+It is about finding the maximum value in a collection of variables based on a specific partial ordering, which is determined by the modulo operation. 
+The main decision variables are `t_max`, `variables`, and `m`, where `t_max` represents the maximum value, `variables` is an array of variables, and `m` is the modulo value. 
+The key constraints are that `t_max` must be equal to one of the values in `variables`, and the maximum value is determined by the modulo operation, where `t_max` mod `m` must be greater than or equal to all other values in `variables` mod `m`. 
+The problem's objective is to satisfy the given constraints, specifically the `maximum_modulo` constraint, which ensures that `t_max` is the maximum value in `variables` according to the modulo ordering.

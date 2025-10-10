@@ -120,10 +120,8 @@ class Storage:
                     output_folder = os.path.join(self.args.descriptions_dir, filename_stripped)
                     if os.path.exists(output_folder) and len(os.listdir(output_folder)) >= 4:
                         continue  # Skip if descriptions already exist
-
+                    #print(output_folder)
                     os.makedirs(output_folder, exist_ok=True)
-                    print("Processing file:", filename)
-                    print(output_folder)
                     # Generate descriptions for different expertise levels
                     descriptions = {}
                     for level, template in self.templates.items():

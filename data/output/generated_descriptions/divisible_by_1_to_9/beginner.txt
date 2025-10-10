@@ -1,0 +1,5 @@
+Divisible by 1 through 9 problem
+The problem is about finding a 10-digit number where each digit from 1 to 9 is used exactly once, and when you read the digits from left to right, the number formed by the first n digits is divisible by n.
+The main variables are the digits of the number (x) and the numbers formed by these digits (t), which represent the numbers created by combining the digits from left to right.
+The basic restrictions are that each digit can only be used once, and the numbers formed by the digits must be divisible by their position (for example, the first digit must be divisible by 1, the first two digits must be divisible by 2, and so on).
+The goal of the problem is to find a 10-digit number that satisfies these conditions, using each digit from 0 to 9 exactly once.

@@ -1,0 +1,8 @@
+Least Difference Problem
+The problem is about finding two numbers, each composed of five unique digits from 0 to 9, such that the difference between the two numbers is minimized.
+
+The main decision variables are A, B, C, D, E, F, G, H, I, and J, which represent the digits of the two numbers. These variables are defined as part of the set of integers from 0 to 9, ensuring that each digit is used exactly once. The array x is used to store these variables, and the difference variable calculates the absolute difference between the two numbers formed by these digits.
+
+The key constraints are that all digits from 0 to 9 must be used exactly once, which is enforced by the all_different constraint on the array x. This means that each digit can only appear once in the two numbers.
+
+The objective of the problem is to minimize the difference between the two numbers, which is calculated as the absolute difference between the first number (ABCDE) and the second number (FGHIJ). The solve statement uses the int_search function to find the values of the decision variables that result in the smallest possible difference.

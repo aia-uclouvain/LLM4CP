@@ -1,0 +1,5 @@
+Binero problem. 
+The Binero problem is a puzzle where you have a grid of squares that must be filled with either 0s or 1s. Some of the squares already have numbers in them, and you have to figure out what numbers to put in the empty squares. 
+The main variables are the numbers that go in each square of the grid, which can be either 0 or 1. 
+The basic rules are that each row and column must have the same number of 0s and 1s, no more than two of the same numbers can be next to each other in a row or column, and no two rows or columns can be exactly the same. 
+The goal is to fill in all the empty squares so that all these rules are followed.

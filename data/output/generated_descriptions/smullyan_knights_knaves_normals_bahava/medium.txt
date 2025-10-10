@@ -1,0 +1,9 @@
+The Island of Bahava problem
+The Island of Bahava problem is about determining the types of people (knights, knaves, or normals) based on the statements they make, given certain rules about who can marry whom.
+The main decision variables are `mr_p` and `mrs_p`, which represent the types of Mr. and Mrs. in two couples, respectively. Each variable can take on one of three values: knight (always tells the truth), knave (always lies), or normal (sometimes tells the truth, sometimes lies).
+The key constraints are: 
+- a knight must marry a knave, 
+- a knave must marry a knight, and 
+- a normal must marry a normal. 
+Additionally, there are constraints based on the statements made by each person, which are modeled using the `says` predicate. This predicate ensures that the statements made by each person are consistent with their type (knight, knave, or normal).
+The objective of the problem is to find a satisfying assignment of types to each person, given the constraints and the statements made by each person. In other words, the goal is to determine the types of Mr. and Mrs. in each couple, such that all the constraints are satisfied, including the marriage rules and the statements made by each person. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies all the constraints.

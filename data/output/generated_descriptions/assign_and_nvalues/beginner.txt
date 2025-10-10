@@ -1,0 +1,5 @@
+The problem is called "Assign and Nvalues". 
+It's about sorting different items into bins, where each item has a specific value and a specific bin it can go into. 
+The main variables are the items, which are things that need to be sorted, the bins, which are the groups that the items are sorted into, and the limit, which is the maximum number of different values that can be in each bin. 
+The basic rules are that each item must be put into a bin, and the number of different values in each bin cannot exceed the limit. 
+The goal is to find a way to sort the items into bins so that the number of different values in each bin satisfies the given condition, which in this case is that the number of different values is less than or equal to the limit.

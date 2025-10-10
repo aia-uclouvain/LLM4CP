@@ -1,0 +1,5 @@
+The problem is called Fix Points. 
+It's about finding a special kind of arrangement where some items are in their correct positions. 
+The main variables are x, which is a list of items that can be in any position from 1 to n, and z, which is the number of items that are in their correct positions. 
+The basic restrictions are that each item in the list x can only be in one position, and the number of items in their correct positions, z, must be exactly 4. 
+The goal of the problem is to find an arrangement of items in the list x such that exactly 4 items are in their correct positions.

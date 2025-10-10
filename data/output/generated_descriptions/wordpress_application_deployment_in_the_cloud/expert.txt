@@ -1,0 +1,23 @@
+name: Virtual Machine Allocation Problem
+description: The problem involves allocating a set of components of an application to a set of virtual machines (VMs) with different specifications and prices, while satisfying various constraints such as capacity, deployment, and conflict constraints, with the goal of minimizing the total cost.
+variables: AssignmentMatrix, VMType, OccupancyVector, Price. These decision variables represent the assignment of components to VMs (AssignmentMatrix), the type of each VM (VMType), whether each VM is occupied (OccupancyVector), and the price of each VM (Price).
+constraints: 
+forAll k : int(1..VM) . forAll h : int(1..HardwareREQ) . sum([AssignmentMatrix[i,k]*CompREQ[i,h] | i : int(1..NoComponents)]) <= VMSpecs[VMType[k],h],
+forAll k : int(1..VM) . sum(AssignmentMatrix[..,k]) > 0 -> OccupancyVector[k] = 1,
+forAll k : int(1..VM) . Price[k] = VMPrice[VMType[k]] * OccupancyVector[k],
+forAll i : BasicAllocation . sum(AssignmentMatrix[i,..]) >= 1,
+sum(AssignmentMatrix[Wordpress, ..]) >= WPInstances,
+sum(AssignmentMatrix[Varnish, ..]) >= 2,
+sum(AssignmentMatrix[MySQL, ..]) >= 2,
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) <= 1,
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 \/ sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0,
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) = 0,
+sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[DNS_LoadBalancer, ..]) = 0,
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[DNS_LoadBalancer, ..]) * 7,
+sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) * 3,
+sum(AssignmentMatrix[Wordpress, ..]) * 2 <= sum(AssignmentMatrix[MySQL, ..]) * 3,
+forAll k : int(1..VM) . AssignmentMatrix[Varnish, k] + AssignmentMatrix[MySQL, k] <= 1,
+forAll k : int(1..VM) . forAll i : int(Wordpress, MySQL, Varnish) . (AssignmentMatrix[DNS_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1) /\ (AssignmentMatrix[HTTP_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1),
+forAll k : int(1..VM-1) . (Price[k] <= Price[k+1]). 
+These constraints ensure that the allocation of components to VMs satisfies the capacity constraints of each VM, the deployment requirements of each component, and the conflict constraints between components, while also ensuring that the price of each VM is calculated correctly and that the symmetry of the solution is maintained.
+objective: minimize sum(Price)

@@ -1,0 +1,5 @@
+Auction Problem
+The problem is about holding an auction where people bid on items, and the goal is to choose which bids to accept to get the most value.
+The main variables are bids (which are offers to buy items) and x (which represents whether a bid is accepted or not). 
+The basic restrictions are that if two bids include the same item, only one of them can be accepted.
+The goal is to maximize the total value of the accepted bids, meaning to get as much value as possible from the chosen bids.

@@ -1,0 +1,5 @@
+Survivor problem
+The problem is about a person who is lost in the wilderness and needs to choose the right items to take with them to survive. 
+The main variables are the items to choose from, including food, water, shelter, and defense, and the goal is to select one item from each category. 
+The basic restrictions are that the total weight of the chosen items cannot exceed 25 kg, and each item has a certain weight and survival points. 
+The goal of the problem is to maximize the total survival points, which means choosing the items that will give the person the best chance of surviving.

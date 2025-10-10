@@ -1,0 +1,5 @@
+Equidistant Frequency Permutation Arrays problem
+The problem is about finding a set of codewords that satisfy certain conditions, specifically that each codeword contains each symbol a specified number of times and that each pair of codewords differs in a specified number of positions.
+The main decision variables are the codewords, represented by the set `c` of strings, where each string is a function that maps an index to a character. 
+The key constraints are that each codeword must contain each symbol exactly `lam` times, and that each pair of distinct codewords must differ in exactly `dist` positions. 
+The problem's objective is to find a set of `numCodeWords` codewords that satisfy these constraints, with no explicit objective function to minimize or maximize, the goal is to determine if such a set exists.

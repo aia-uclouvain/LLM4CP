@@ -1,0 +1,5 @@
+Magic Modulo Number problem
+The problem is about finding a number that satisfies a set of modular arithmetic conditions, specifically that when divided by consecutive integers from 2 to 10, the remainders are one less than the divisors.
+The main decision variable is `x`, which represents the number to be found.
+The key constraints are that for each divisor `i` from 2 to 10, the remainder of `x` divided by `i` must be `i-1`, meaning that `x` leaves a remainder of 1 when divided by 2, a remainder of 2 when divided by 3, and so on, up to a remainder of 9 when divided by 10.
+The problem's objective is to find a value of `x` that satisfies all these conditions, with the option to minimize `x` to find the smallest such number.

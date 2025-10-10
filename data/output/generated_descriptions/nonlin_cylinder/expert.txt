@@ -1,0 +1,5 @@
+name: Cylinder Problem
+description: The problem is to minimize the volume of a cylinder given certain constraints on its width and length, which can be achieved by finding the optimal values of the width and length.
+variables: W, L, V - W is the width of the cylinder (in hundreds), L is the length of the cylinder, and V is the volume of the cylinder, which is a function of W and L.
+constraints: V >= 2.0, V = (W/100) * (L^2/(4*pi)) - The first constraint ensures that the volume of the cylinder is at least 2.0, and the second constraint defines the relationship between the volume, width, and length of the cylinder based on the formula for the volume of a cylinder.
+objective: Minimize V, the volume of the cylinder.

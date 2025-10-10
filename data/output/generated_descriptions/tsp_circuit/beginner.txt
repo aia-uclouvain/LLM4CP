@@ -1,0 +1,11 @@
+Traveling Salesman Problem
+The problem is about finding the shortest route that visits a set of cities and returns to the starting city. 
+The main variables are: 
+- x, which represents the order in which the cities are visited
+- distances, which is a table showing the distance between each pair of cities
+- d, which represents the distance traveled between each city and the next one on the route
+The basic restrictions are: 
+- each city can only be visited once
+- the route must start and end at the same city
+- the distance traveled between each city and the next one on the route must be the actual distance between those two cities
+The goal is to minimize the total distance traveled.

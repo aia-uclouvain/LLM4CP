@@ -1,0 +1,9 @@
+name: Set Packing Problem
+
+description: The Set Packing Problem is a classical problem in combinatorial optimization and computer science. Given a collection of sets, the goal is to find the largest subset of these sets such that no two sets in the subset have any elements in common. In other words, we want to pack as many sets as possible without overlapping any of them.
+
+variables: $x_1, x_2, ..., x_{num\_sets}$, where $x_i$ is a binary decision variable that represents whether set $i$ is included in the packing (1) or not (0). These variables determine which sets to include in the packing.
+
+constraints: $\sum_{i=1}^{num\_sets} x_i \cdot belongs_{i,j} \leq 1 \; \forall j \in \{1, 2, ..., num\_elements\}$ and $numNeeded = \sum_{i=1}^{num\_sets} x_i$, where $belongs_{i,j}$ is a binary matrix indicating whether element $j$ belongs to set $i$. The first constraint ensures that no two sets that share an element are included in the packing, and the second constraint calculates the total number of sets included in the packing.
+
+objective: Maximize $numNeeded = \sum_{i=1}^{num\_sets} x_i$, which represents the total number of sets included in the packing. The goal is to find the largest possible subset of sets that do not overlap.

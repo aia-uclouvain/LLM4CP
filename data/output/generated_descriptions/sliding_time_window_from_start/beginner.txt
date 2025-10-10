@@ -1,0 +1,10 @@
+The problem is called "Sliding Time Window From Start". 
+It's about scheduling tasks within a certain time frame. 
+The main variables are: 
+- "tasks" which represents a list of tasks, each with a start time and duration, 
+- "window_size" which is the length of the time frame, 
+- "limitx" which is the maximum amount of tasks that can be done at the same time, 
+- "start" which is the beginning of the time frame, 
+- "occupied" which shows how many tasks are being done at each point in time. 
+The basic rules are that each task has a start time and duration, and the total amount of tasks being done at any point in time cannot exceed "limitx". 
+The goal is to check if the given tasks can be scheduled within the time frame without exceeding "limitx".

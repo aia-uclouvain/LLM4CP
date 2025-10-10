@@ -1,0 +1,19 @@
+**Eye Drop Distribution Problem**
+The Eye Drop Distribution Problem is a classic constraint programming problem that involves finding the optimal way to distribute eye drops of different types throughout the day. 
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array representing the time table, where `x[i]` is the type of eye drop to be taken at hour `i`, or 0 if no drop is taken.
+- `z`: a variable representing the dispersion of the eye drops, which is the objective to be maximized.
+- `drop_table` and `dists_table`: auxiliary arrays used to calculate the dispersion of each type of eye drop.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each type of eye drop must be taken the specified number of times per day.
+- The eye drops should be distributed as evenly as possible throughout the day.
+- There can be at most one drop per hour.
+- The last drop of the day must be of type 3 (for the night).
+- The total number of drops per day must not exceed the number of hours in the day.
+
+**Objective**
+The objective of this problem is to maximize the dispersion `z` of the eye drops, which means separating the times to take each type of eye drop as much as possible. This is achieved by maximizing the sum of the differences between the times at which each type of eye drop is taken.

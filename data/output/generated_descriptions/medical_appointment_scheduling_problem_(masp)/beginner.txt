@@ -1,0 +1,12 @@
+Medical Appointment Scheduling Problem (MASP)
+The Medical Appointment Scheduling Problem is about finding the best way to schedule medical appointments for patients. 
+The main variables are: 
+- Appointment slots: these are the time slots when the appointments can be scheduled
+- Resources: these are the doctors or medical specialists that will be assigned to the appointments
+- Preferred dates and times: these are the dates and times that the patient prefers for their appointment
+The basic restrictions or rules of the problem are: 
+- Each appointment must be assigned to a specific doctor or medical specialist
+- Each doctor or medical specialist has their own schedule and availability
+- The patient has preferred dates and times for their appointment
+- The appointment must be scheduled within a certain time frame
+The goal of the problem is to find a schedule that minimizes the number of violations of the patient's preferred dates and times, while also ensuring that each appointment is assigned to a doctor or medical specialist who is available at that time.

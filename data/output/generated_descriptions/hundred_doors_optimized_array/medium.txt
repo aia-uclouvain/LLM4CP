@@ -1,0 +1,8 @@
+100 Doors Problem
+The 100 doors problem is about determining the state of 100 doors after a series of passes, where each pass involves toggling the state of specific doors based on their position.
+
+The main decision variable in this problem is `x`, an array of 100 variables, where `x[j]` represents the state of the `j-th` door, with 0 indicating a closed door and 1 indicating an open door.
+
+The key constraint in this problem is that a door's state is toggled during each pass if its position is a multiple of the pass number. However, the optimized version of the model uses a mathematical property to simplify the problem: a door remains open if and only if its number is a perfect square of an integer. This is represented by the constraint `i*i = j <-> x[j] = 1`, which means that the `j-th` door is open if and only if `j` is a perfect square.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of values to the decision variables `x` that represents the final state of the doors after all passes. In other words, the goal is to determine which doors are open and which are closed after the last pass. The model uses the `solve satisfy` statement to find a solution that satisfies all the constraints, and the resulting state of the doors is printed out as the solution.

@@ -1,0 +1,5 @@
+name: xkcd Knapsack problem
+description: The xkcd Knapsack problem is a variation of the classic 0/1 Knapsack problem, where the goal is to find the combination of items (dishes) that sums up to a total cost of $15.05, with the additional constraint of maximizing the number of different dishes ordered.
+variables: $x_1, x_2, ..., x_6, y$ - These variables represent the number of items of each dish ordered ($x_1$ to $x_6$) and the number of different dishes ordered ($y$).
+constraints: $y = \sum_{i=1}^{6} (x_i > 0), \quad \sum_{i=1}^{6} (price_i \cdot x_i) = 1505, \quad x_i \in [0, 100], \quad y \in [0, 6]$ - These constraints ensure that $y$ is equal to the number of dishes ordered, the total cost of the dishes is equal to $15.05 (represented as 1505 cents), and the number of items of each dish is between 0 and 100.
+objective: Maximize $y$ - The objective is to maximize the number of different dishes ordered, which means finding the combination of dishes that includes the most variety while still summing up to a total cost of $15.05.

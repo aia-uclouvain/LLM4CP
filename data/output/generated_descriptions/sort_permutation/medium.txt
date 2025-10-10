@@ -1,0 +1,5 @@
+The problem is called the Sort Permutation problem. 
+It is about finding a permutation of a given set of numbers such that when the numbers are rearranged according to this permutation, they are in increasing order. 
+The main decision variables are three arrays: `from`, `permutation`, and `to`, where `from` represents the original set of numbers, `permutation` represents the permutation to be applied to `from`, and `to` represents the sorted set of numbers. 
+The key constraints are that the `permutation` array must be a valid permutation of the indices of the `from` array, the `to` array must be sorted in increasing order, and each element in the `from` array must be equal to the corresponding element in the `to` array when indexed by the `permutation` array. 
+The problem's objective is to satisfy these constraints, meaning that it is a satisfaction problem rather than an optimization problem, where the goal is to find a solution that meets all the constraints rather than minimizing or maximizing a specific objective function.

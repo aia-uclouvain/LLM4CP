@@ -1,0 +1,15 @@
+Diamond Free Degree Sequence Problem
+
+The problem is about creating a special kind of graph with a certain number of nodes, where each node is connected to some other nodes. The goal is to find all possible ways to connect these nodes such that certain rules are followed.
+
+The main variables are the number of nodes (n), the connections between nodes (represented as a matrix), and the degree of each node (the number of connections it has).
+
+The basic restrictions or rules of the problem are:
+- Each node must have at least one connection.
+- The number of connections for each node must be a multiple of 3.
+- The total number of connections in the graph must be a multiple of 6.
+- For any group of four nodes, there can be at most four connections between them.
+- The graph must be undirected, meaning that if node A is connected to node B, then node B is also connected to node A.
+- No node can be connected to itself.
+
+The goal of the problem is to find all possible degree sequences (the number of connections for each node) that satisfy these rules, given a certain number of nodes (n).

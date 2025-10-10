@@ -1,0 +1,5 @@
+The Super Number problem. 
+It's about finding a special 10-digit number where each digit from 0 to 9 is used exactly once. 
+The main variables are the 10 digits of the number, which are like boxes where we need to fill in the numbers from 0 to 9.
+The basic rules are that the first two digits must be an even number, the first three digits must be a multiple of 3, and so on, until the entire 10-digit number is a multiple of 10.
+The goal is to find a number that satisfies all these rules, and the solution is a specific 10-digit number that meets all the conditions, which is 3816547290.

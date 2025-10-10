@@ -1,0 +1,5 @@
+Quasigroup problem 
+This problem is about finding a special kind of multiplication table where each row and column has each number exactly once, and some specific rules are followed when multiplying numbers together. 
+The main variables are the multiplication table, called "quasiGroup", which is like a grid where each cell contains a number, and the diagonal of this table, called "qgDiagonal", which are the numbers on the diagonal line from top left to bottom right. 
+The basic restrictions are that each row and column must have each number exactly once, and when multiplying numbers together using this table, certain rules must be followed, such as the result of multiplying two numbers together and then multiplying the result with another number must equal a specific number. 
+The goal of the problem is to find a multiplication table that satisfies all these rules, which is called a quasigroup, and the problem is trying to find one that is "non-idempotent", meaning that when you multiply a number by itself, you don't always get that same number back.

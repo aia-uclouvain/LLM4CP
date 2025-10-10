@@ -1,0 +1,26 @@
+name: Nadel's Construction Problem
+
+description: The problem involves assigning five different developments (recreation area, apartments, houses, cemetery, and dumpsite) to eight lots, each with its own characteristics such as proximity to the lake, steep slopes, bad soil, and nearness to the highway. The goal is to satisfy a set of constraints related to these characteristics while minimizing the number of broken constraints.
+
+variables: $recreation, apartments, houses, cemetery, dump, developments = [recreation, apartments, houses, cemetery, dump]$ 
+These are decision variables representing the lot assigned to each development, where $recreation, apartments, houses, cemetery, dump$ are integers between 1 and 8, and $developments$ is an array of these variables.
+
+constraints: 
+$near\_lake[recreation] = 1 \leftrightarrow broken[1] = 0$
+$steep\_slopes[apartments] = 0 \leftrightarrow broken[2] = 0$
+$steep\_slopes[houses] = 0 \leftrightarrow broken[3] = 0$
+$steep\_slopes[cemetery] = 0 \leftrightarrow broken[4] = 0$
+$steep\_slopes[dump] = 0 \leftrightarrow broken[5] = 0$
+$bad\_soil[apartments] = 0 \leftrightarrow broken[6] = 0$
+$bad\_soil[houses] = 0 \leftrightarrow broken[7] = 0$
+$near\_highway[apartments] = 0 \leftrightarrow broken[8] = 0$
+$near\_highway[houses] = 0 \leftrightarrow broken[9] = 0$
+$near\_highway[recreation] = 0 \leftrightarrow broken[10] = 0$
+$near\_lake[dump] = 0 \leftrightarrow broken[11] = 0$
+$(near\_lots[dump, houses] = 0 \wedge near\_lots[houses, dump] = 0) \leftrightarrow broken[12] = 0$
+$(near\_lots[dump, apartments] = 0 \wedge near\_lots[apartments, dump] = 0) \leftrightarrow broken[13] = 0$
+$all\_different(developments)$
+These constraints ensure that the recreation area is near the lake, steep slopes are avoided for all but the recreation area, poor soil is avoided for apartments and houses, the highway is not near apartments, houses, or the recreation area, the dumpsite is not visible from apartments, houses, or the lake, and each development is assigned to a unique lot.
+
+objective: minimize $total\_count = \sum broken$ 
+The objective is to minimize the total number of broken constraints, which means finding an assignment of developments to lots that satisfies as many constraints as possible.

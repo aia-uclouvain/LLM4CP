@@ -1,0 +1,5 @@
+The problem is called Integer Partitions. 
+It's about dividing a certain number of items, in this case 52, into a specific number of groups, which is 9. 
+The main variables are the sizes of these groups, represented by x, which means each group must have at least one item, but in this problem, it's more than 2 items.
+The basic rules are that all items must be used, and each group must have more than 2 items. 
+The goal is to find a way to divide the items into these groups so that the total number of items in all groups adds up to 52, and each group has more than 2 items.

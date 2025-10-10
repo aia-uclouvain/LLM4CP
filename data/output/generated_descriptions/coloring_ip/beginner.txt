@@ -1,0 +1,12 @@
+Graph Coloring Problem
+The problem is about coloring a map or a network with different colors so that no two adjacent areas or nodes have the same color.
+The main variables are: 
+- V, which represents all the nodes or areas in the network
+- E, which represents all the connections between the nodes
+- x, which shows which color is assigned to each node
+- u, which shows which colors are actually used
+- nc, which is the maximum number of colors that can be used
+The basic restrictions are: 
+- Each node must have a color
+- No two nodes that are connected can have the same color
+The goal of the problem is to use the smallest number of colors possible to color the entire network.

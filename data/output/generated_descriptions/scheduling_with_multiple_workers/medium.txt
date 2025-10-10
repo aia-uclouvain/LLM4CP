@@ -1,0 +1,27 @@
+**Problem Name:** Scheduling with Multiple Workers
+
+**Description:** This problem involves scheduling a set of tasks on multiple machines, each with limited resources (memory). The goal is to assign tasks to machines in a way that minimizes the end time or the number of machines used.
+
+**Decision Variables:**
+
+* `start_time`: the start time for each task
+* `end_time`: the end time for each task
+* `machine`: the machine assigned to each task
+* `machine_used_ram`: the amount of memory used by each machine at each time point
+
+These variables represent the scheduling decisions: when to start and end each task, which machine to assign each task to, and how much memory is used by each machine at each time point.
+
+**Key Constraints:**
+
+* Each task must be completed within its duration
+* The memory used by each machine at each time point cannot exceed its available memory
+* A machine can work on multiple tasks at the same time as long as its memory is not exceeded
+* Tasks cannot be split among machines and must be completed in one shot
+* Machines are used in a way that minimizes the end time or the number of machines used
+
+**Objective:**
+
+* Minimize the end time (`last_time`): the goal is to complete all tasks as early as possible
+* Minimize the number of machines used (`machines_used`): the goal is to use the fewest machines possible to complete all tasks
+
+The problem is a classic example of a scheduling problem with resource constraints, and the MiniZinc model uses a combination of decision variables, constraints, and objectives to solve it.

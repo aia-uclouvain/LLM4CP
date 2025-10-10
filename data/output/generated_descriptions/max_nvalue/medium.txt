@@ -1,0 +1,9 @@
+The problem is called the Maximum Number of Value Occurrences, or max_nvalue.
+
+This problem is about finding the maximum number of times a value occurs in a collection of variables. In other words, it's about determining how many times the most frequent value appears in a set of variables.
+
+The main decision variables are `variables`, an array of variables that can take on values from 1 to 9, and `t_max`, a variable that represents the maximum number of times a value occurs. The `variables` array represents the collection of values, and `t_max` represents the maximum frequency of any value in the collection.
+
+The key constraints are that the `variables` array must match a given array of values, and that `t_max` must be equal to 3. The `max_nvalue` constraint ensures that `t_max` is indeed the maximum number of times any value occurs in the `variables` array. This constraint is implemented using the `global_cardinality` constraint, which counts the number of occurrences of each value in the `variables` array, and the `maximum` constraint, which finds the maximum of these counts.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the constraints. In other words, the goal is to find a solution that meets the given conditions, specifically that `t_max` is equal to 3 and that the `max_nvalue` constraint holds. The solution will assign values to the `variables` array such that the maximum number of times any value occurs is indeed 3.

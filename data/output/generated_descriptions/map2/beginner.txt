@@ -1,0 +1,10 @@
+Map Coloring Problem
+The problem is about coloring a map with different colors, so that no two countries that share a border have the same color.
+The main variables are: 
+- n, which is the number of countries on the map
+- country, which is an array that stores the color of each country
+- connections, which is a matrix that shows which countries share a border
+The basic restrictions are: 
+- each country can only have one of four available colors
+- no two countries that share a border can have the same color
+The goal of the problem is to find a way to color the map so that all the restrictions are met, which is known as a "satisfiable" solution.

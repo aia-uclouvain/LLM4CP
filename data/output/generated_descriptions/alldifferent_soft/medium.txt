@@ -1,0 +1,5 @@
+The problem is the Soft All-Different problem. 
+It is about finding the minimum number of changes required to make all elements in an array distinct, or the minimum number of disequality constraints that do not hold. 
+The main decision variables are x, an array of variables representing the elements of the array, and a and b, integers representing the minimum number of changes required to make all elements distinct and the number of disequality constraints that do not hold, respectively. 
+The key constraints are that the array x must be equal to a given array, and the number of changes required to make all elements distinct (a) and the number of disequality constraints that do not hold (b) must be calculated correctly. 
+The problem's objective is to satisfy these constraints, although it can also be formulated as maximizing the difference between the number of disequality constraints that do not hold and the minimum number of changes required to make all elements distinct.

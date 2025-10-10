@@ -1,6 +1,0 @@
-Vellino's Problem
-This problem is about sorting different materials into bins of different colors, following certain rules. 
-The main variables are the color of each bin and the materials inside each bin. 
-The color of a bin determines what materials can be inside it, and each material has a specific quantity that needs to be sorted. 
-The basic restrictions are: each bin can only hold a certain amount of material, some materials cannot be in certain colored bins, and some materials require or exclude other materials. 
-The goal is to minimize the number of bins used to sort all the materials.

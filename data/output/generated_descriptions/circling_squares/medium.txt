@@ -1,0 +1,5 @@
+Circling the Squares puzzle
+The problem is about placing different numbers in ten squares such that the sum of the squares of any two adjacent numbers is equal to the sum of the squares of the two numbers diametrically opposite to them.
+The main decision variables are A, B, C, D, E, F, G, H, I, and K, which represent the numbers to be placed in the ten squares.
+The key constraints are that each square must contain a different number, and the sum of the squares of any two adjacent numbers must be equal to the sum of the squares of the two numbers diametrically opposite to them. Additionally, some numbers are already given and must remain in their positions.
+The objective of the problem is to find a solution that satisfies all the constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution that meets all the conditions.

@@ -1,0 +1,10 @@
+Cond Lex Cost Problem
+The problem is about finding a match between a given set of preferences and a specific cost. 
+The main variables are: 
+- arr, a table of preferences with 0s and 1s, 
+- v1, a list of preferred values, 
+- pos, the position in the table where the preferred values are found.
+The basic restrictions are: 
+- the preferred values must match a row in the table, 
+- the position where the match is found is important.
+The goal is to find a position in the table where the preferred values match a row, satisfying the given constraints.

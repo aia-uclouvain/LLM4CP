@@ -1,0 +1,11 @@
+name: Blueberry Muffins problem
+
+description: The problem describes a situation where four housemates, two men (Bill and Mark) and two women (Calla and Lynn), with different last names (Ellis, Ingham, Oakley, and Summers) and professions (dogcatcher, flautist, secretary, and zookeeper), snatched a total of 10 blueberry muffins. Each housemate snatched a different number of muffins, and the goal is to determine each housemate's full name, profession, and number of muffins snatched.
+
+variables: $Bill, Mark, Calla, Lynn, Ellis, Ingham, Oakley, Summers, dogcatcher, flautist, secretary, zookeeper, lastname, job, muffins$ 
+These variables represent the first names, last names, professions, and the number of muffins snatched by each housemate. The $lastname$ and $job$ variables are arrays of decision variables that assign each housemate to a last name and profession, respectively. The $muffins$ variable is an array of decision variables that represents the number of muffins snatched by each housemate.
+
+constraints: $alldifferent(lastname) \wedge alldifferent(job) \wedge alldifferent(muffins) \wedge muffins[Bill] + muffins[Ellis] = 6 \wedge Ellis \neq Bill \wedge muffins[secretary] > muffins[dogcatcher] \wedge muffins[Mark] = muffins[Summers] + 2 \wedge Summers \neq Mark \wedge muffins[flautist] = muffins[Oakley] \times 2 \wedge flautist \neq Oakley \wedge Ingham \neq Calla$ 
+These constraints ensure that each housemate has a unique last name, profession, and number of muffins snatched. They also enforce the given conditions, such as Bill and Ellis snatching a total of 6 muffins, the secretary snatching more muffins than the dogcatcher, and Mark snatching 2 more muffins than Summers.
+
+objective: The objective of the problem is to satisfy all the given constraints, as indicated by the $solve satisfy$ statement in the MiniZinc model. There is no explicit objective function to minimize or maximize. The goal is to find an assignment of values to the decision variables that satisfies all the constraints.

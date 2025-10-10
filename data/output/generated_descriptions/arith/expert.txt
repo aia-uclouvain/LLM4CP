@@ -1,0 +1,8 @@
+name: Global Constraint Arith
+description: The Global Constraint Arith problem is a constraint satisfaction problem that enforces a specific relationship between a collection of variables and a value, based on a given comparison operator. The problem is defined such that all variables in the collection must satisfy the given relationship with the value.
+variables: $x = [x_1, x_2, ..., x_n], y$ 
+where $x$ is an array of decision variables representing the collection of values, and $y$ is a decision variable representing the value to be compared with the collection. In this problem, $x$ is an array of 5 variables, each ranging from 1 to 7, and $y$ is a variable ranging from 0 to 9.
+constraints: $x = [4, 5, 7, 4, 5], \forall i \in \{1, 2, ..., n\} (x_i < y), y = 9$ 
+where the first constraint assigns a fixed value to the array $x$, the second constraint enforces the relationship between each variable in $x$ and $y$ based on the comparison operator (in this case, less than), and the third constraint assigns a fixed value to $y$.
+objective: satisfy 
+The objective of the problem is to find an assignment of values to the decision variables $x$ and $y$ that satisfies all the given constraints. Since the values of $x$ and $y$ are already fixed by the constraints, the problem is essentially a satisfaction problem, where the goal is to verify that the given assignment satisfies the constraints.

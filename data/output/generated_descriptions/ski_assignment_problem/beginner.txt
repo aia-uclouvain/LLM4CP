@@ -1,0 +1,8 @@
+Ski Assignment Problem
+The problem is about matching skiers with skis at a ski resort. The goal is to find the best way to assign skis to skiers so that the height of the skis is as close as possible to the height of the skiers.
+
+The main variables are the skis and the skiers. The skis have different heights, and the skiers also have different heights. The problem tries to match each skier with a pair of skis.
+
+The basic rules are that each skier can only be assigned one pair of skis, and each pair of skis can only be assigned to one skier. The problem also tries to minimize the total difference in height between the skiers and their assigned skis.
+
+The goal is to minimize the sum of the differences in height between the skiers and their assigned skis. In other words, the problem wants to find the assignment of skis to skiers that results in the smallest total difference in height.

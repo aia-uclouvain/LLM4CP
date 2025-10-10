@@ -1,0 +1,5 @@
+Giapetto's Problem
+The problem is about a person named Giapetto who makes and sells wooden toys, specifically soldiers and trains. 
+The main variables are the number of soldiers (x1) and the number of trains (x2) that Giapetto can make. 
+The basic restrictions are that Giapetto cannot make a negative number of toys, he has limited time for finishing (100 hours) and carpentry (80 hours), and he cannot make more than 40 soldiers because that's all people want to buy. 
+The goal is to maximize Giapetto's profit, which is $3 for each soldier and $2 for each train.

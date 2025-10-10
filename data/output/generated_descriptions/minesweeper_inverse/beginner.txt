@@ -1,0 +1,10 @@
+Minesweeper Inverse Problem
+The problem is about figuring out where mines are located in a Minesweeper game, given some information about the number of mines near each cell.
+The main variables are: 
+- `r` and `c`, which represent the number of rows and columns in the game grid.
+- `game`, a 2D array where each cell can have a value from -1 to 8, representing the number of mines in the neighboring cells, or -1 if the cell is unknown.
+- `mines`, a 2D array where each cell is either 0 (no mine) or 1 (mine), representing the actual location of the mines.
+The basic restrictions are: 
+- Each cell in the `game` array must have a value equal to the number of mines in its neighboring cells.
+- The neighboring cells are the cells directly above, below, to the left, to the right, and diagonally adjacent to the current cell.
+The goal of the problem is to find a solution that satisfies all the constraints, which means finding the correct locations of the mines given the information in the `game` array.

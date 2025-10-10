@@ -1,0 +1,5 @@
+The name of the problem is the Grocery problem. 
+The problem is about finding the prices of four items that a kid buys at a grocery store, given that the total price is $7.11, whether the prices are added or multiplied together. 
+The main decision variables are A, B, C, and D, which represent the prices of the four items in cents. 
+The key constraints are that the sum of the prices of the four items equals $7.11, the product of the first two items and the product of the last two items, when multiplied together, equal $7.11^3, and the prices are positive integers. Additionally, symmetry breaking constraints are used to ensure that A is less than or equal to B, B is less than or equal to C, and C is less than or equal to D, which reduces the search space by avoiding duplicate solutions. 
+The problem's objective is to find a satisfying assignment of prices to the four items, rather than minimizing or maximizing a specific value, as indicated by the "solve satisfy" statement in the model.

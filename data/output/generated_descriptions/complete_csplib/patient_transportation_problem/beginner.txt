@@ -1,6 +1,0 @@
-No problem is provided. Please provide the Minizinc model code to explain the problem. I will then be able to:
-Identify the name of the problem
-Explain the problem in everyday terms
-Describe the main variables and their meanings
-Outline the basic restrictions or rules
-State the goal of the problem

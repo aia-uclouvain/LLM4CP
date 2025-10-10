@@ -1,0 +1,5 @@
+Smuggler's Knapsack Problem
+The problem is about a smuggler who has a bag with limited space and wants to fill it with valuable items to maximize profit. 
+The main variables are the items (whisky, perfume, and cigarettes) and how much of each item to put in the bag, as well as the total profit made from these items. 
+The basic restrictions are that the bag can only hold a certain amount of weight (9 units), and each item has a specific weight and profit value. 
+The goal is to choose which items to put in the bag and how much of each to include in order to make the most money possible, without exceeding the bag's weight limit.

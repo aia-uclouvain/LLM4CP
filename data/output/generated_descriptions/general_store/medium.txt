@@ -1,0 +1,8 @@
+The General Store problem
+The General Store problem is a classic constraint programming problem where each different letter in a set of words represents a different digit, and the goal is to find the correct digit for each letter such that the sum of the numbers represented by the words above the line equals the number represented by the word "ALL WOOL".
+
+The main decision variables in this problem are the letters C, H, E, S, A, B, O, W, P, and L, each representing a digit from 0 to 9. These variables are used to form numbers that are then added together to get the total.
+
+The key constraints in this problem are that each letter must represent a unique digit, and the sum of the numbers formed by the words above the line must equal the number formed by the word "ALL WOOL". This is represented by a large equation that adds up all the numbers formed by the words above the line and sets it equal to the number formed by "ALL WOOL".
+
+The objective of this problem is to satisfy the constraints, meaning to find an assignment of digits to letters such that the sum of the numbers above the line equals the number "ALL WOOL", and each letter represents a unique digit. There is no explicit objective function to minimize or maximize, but rather a satisfaction problem where the goal is to find a solution that satisfies all the constraints.

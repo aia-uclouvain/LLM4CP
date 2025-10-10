@@ -1,0 +1,5 @@
+The name of the problem is the Graceful Labeling problem. 
+This problem is about labeling the nodes of a tree with unique labels from the set {0, 1, ..., m} such that the absolute difference between the labels of adjacent nodes is unique for each edge. 
+The main decision variables are the labels assigned to each node, represented by the array `labels`, where `labels[i]` is the label assigned to node `i`. 
+The key constraints are that each node must have a unique label, and for each edge, the absolute difference between the labels of the two nodes connected by the edge must be unique. In other words, if two edges have the same absolute difference in labels, then those edges must be the same. 
+The problem's objective is to find a labeling that satisfies these constraints, and since it is a satisfaction problem, there is no explicit objective function being minimized or maximized, but rather the goal is to find any labeling that meets the given conditions.

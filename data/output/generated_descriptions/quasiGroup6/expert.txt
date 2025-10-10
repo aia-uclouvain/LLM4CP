@@ -1,0 +1,13 @@
+name: Quasigroup Existence Problem
+description: The Quasigroup existence problem is a classic problem in constraint programming that involves finding an m x m multiplication table of integers 1..m, where each element occurs exactly once in each row and column, and certain multiplication axioms hold. In this case, the problem is looking for an order m quasigroup that satisfies the axiom (a*b)*b = a*(a*b).
+variables: $quasiGroup_{i,j}, quasiGroupColumns_{i,j}$, where $i,j \in \{0,1,...,n-1\}$. These variables represent the elements of the quasigroup table and its transposed version, where $quasiGroup_{i,j}$ is the element at row $i$ and column $j$ in the quasigroup table, and $quasiGroupColumns_{i,j}$ is the element at row $i$ and column $j$ in the transposed table.
+constraints: 
+$\forall i,j \in \{0,1,...,n-1\}: quasiGroupColumns_{j,i} = quasiGroup_{i,j}$, 
+$\forall i \in \{0,1,...,n-1\}: \forall j \in \{0,1,...,n-1\}: quasiGroup_{i,j} \in \{0,1,...,n-1\}$, 
+$\forall i \in \{0,1,...,n-1\}: all\_different([quasiGroup_{i,j} | j \in \{0,1,...,n-1\}])$, 
+$\forall j \in \{0,1,...,n-1\}: all\_different([quasiGroup_{i,j} | i \in \{0,1,...,n-1\}])$, 
+$\forall i,j \in \{0,1,...,n-1\}: quasiGroup_{i,quasiGroup_{i,j}} = quasiGroupColumns_{j,quasiGroup_{i,j}}$, 
+$\forall i \in \{0,1,...,n-1\}: quasiGroup_{i,i} = i$, 
+$\forall i \in \{0,1,...,n-1\}: quasiGroup_{i,n-1} + 2 \geq i$. 
+These constraints ensure that the quasigroup table is properly constructed, with each element occurring exactly once in each row and column, and that the multiplication axioms hold.
+objective: The objective of the problem is to find a satisfying assignment of values to the $quasiGroup_{i,j}$ variables, such that all the constraints are satisfied. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

@@ -1,0 +1,5 @@
+Candies problem
+The problem is about a teacher, Alice, who wants to give candies to her students based on their performance ratings. 
+The main variables are the number of children, the performance ratings of each child, and the number of candies each child gets. 
+The basic restrictions are that each child must get at least one candy, and if two children sit next to each other, the one with the higher rating must get more candies. 
+The goal is to minimize the total number of candies Alice gives to the children.

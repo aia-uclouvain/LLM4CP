@@ -1,0 +1,5 @@
+The problem is called the Roots problem. 
+It is about finding the relationship between a set of indices and a set of values in a given array, such that the values in the set occur only at the specified indices in the array. 
+The main decision variables are x, which represents the array of values, s, which represents the set of indices, and t, which represents the set of values. 
+The key constraints are that the array x must be equal to a given array [1,3,1,2,3], the set s must be equal to {2,4,5}, the set t must be equal to {2,3,8}, and the roots constraint must hold, meaning that the values in t occur only at the indices in s in the array x. 
+The problem's objective is to satisfy all the given constraints, specifically the roots constraint, which is a satisfaction problem rather than an optimization problem, meaning that the goal is to find a solution that satisfies all the constraints rather than minimizing or maximizing a specific objective function.

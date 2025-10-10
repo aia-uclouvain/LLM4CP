@@ -1,0 +1,5 @@
+Coin Puzzle
+The problem is about finding the minimum number of coins of certain values that add up to a specific amount, in this case, 121 units.
+The main variables are the values of the coins (v) and the number of each coin (x). The values of the coins are 15, 16, and 17 units, and the number of each coin is what we're trying to find.
+The basic restrictions are that we can't have a negative number of coins, and the total value of the coins must be exactly 121 units.
+The goal is to minimize the total number of coins used to reach the amount of 121 units.

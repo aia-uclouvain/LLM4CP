@@ -1,0 +1,18 @@
+De Bruijn Matrix Problem
+The De Bruijn matrix problem is a classic constraint programming problem that involves finding a matrix of size n x n, where each cell can take a value from a given alphabet (0 to base-1), such that every sub-matrix of size m x m is unique when considered as a number in the given base.
+
+Main Decision Variables
+The main decision variables in this problem are:
+- `x`: a 2D array representing the matrix, where `x[i, j]` is the value of the cell at row `i` and column `j`.
+- `y`: a 1D array representing the converted sub-matrices, where `y[i]` is the number corresponding to the sub-matrix starting at row `i/m` and column `i mod m`.
+
+Key Constraints
+The key constraints in this problem are:
+- Each sub-matrix of size m x m must be unique when considered as a number in the given base.
+- The values in each cell must be between 0 and base-1.
+- The matrix must be filled in such a way that every sub-matrix is distinct.
+
+Problem Objective
+The objective of this problem is to find a matrix that satisfies all the constraints, i.e., every sub-matrix of size m x m is unique. There is no explicit objective function to minimize or maximize. The goal is to find a feasible solution that meets all the constraints.
+
+In the given MiniZinc model, the problem is solved using the `satisfy` keyword, which means that the solver will search for a solution that satisfies all the constraints without trying to optimize any objective function. The `int_search` function is used to specify the search strategy, which in this case is to use the `first_fail` strategy and `indomain_min` value selection.

@@ -1,0 +1,5 @@
+On the Road Puzzle
+The problem is about finding a set of numbers that satisfy certain conditions when placed in a specific order. 
+The main variables are x and y, where x represents the position of each number in the sequence, and y represents the actual numbers in the sequence. 
+The basic restrictions are that each number can only be used once, and the numbers must be placed in a specific order such that the difference between the numbers in each pair of positions is the same. 
+The goal of the problem is to minimize the value of the first two numbers in the sequence, which represents the closest pair of numbers to each other.

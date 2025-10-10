@@ -1,0 +1,8 @@
+Balanced 0-1 Matrix Problem
+The problem is about assigning values, either zero or one, to the positions of an n x n matrix, where n is even, to achieve a balanced distribution of zeros and ones in each row and column.
+
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the value (0 or 1) assigned to the position at row `i` and column `j` in the matrix.
+
+The key constraints are that each row and each column must contain exactly `n/2` zeros and `n/2` ones. This means that for every row, the number of positions with a value of 1 must be equal to the number of positions with a value of 0, and the same applies to every column.
+
+The problem's objective is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies the given constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. In other words, the goal is to find an assignment of values to the matrix such that the balanced distribution of zeros and ones is achieved, and the model will output one such solution if it exists.

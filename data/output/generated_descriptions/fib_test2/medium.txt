@@ -1,0 +1,5 @@
+Fibonacci Numbers Problem
+The problem is about calculating a sequence of Fibonacci numbers, which is a series of numbers where a number is the sum of the two preceding ones.
+The main decision variable is `fib`, an array of integers representing the Fibonacci sequence, where `fib[i]` represents the i-th Fibonacci number.
+The key constraints are that the first two Fibonacci numbers are 1, and each subsequent number is the sum of the two preceding ones. In plain language, the constraints ensure that the sequence follows the classic Fibonacci pattern: 1, 1, 2, 3, 5, 8, and so on.
+The problem's objective is not to minimize or maximize a specific value, but rather to satisfy the constraints and calculate the Fibonacci sequence up to the nth number, where n is a given input (in this case, 11). The model uses the `solve satisfy` statement, which means it aims to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

@@ -1,0 +1,5 @@
+The 13-Link Chain Puzzle
+The problem is about using a balance scale and a chain with 13 links to weigh items from 1 to 13 ounces. 
+The main variables are the weights and the coefficients. The weights represent the number of links to use for each weight, and the coefficients represent how to combine these weights to get the desired weight.
+The basic restrictions are that each link weighs one ounce, and we can use the balance scale to weigh items by placing weights on either side of the scale. We can also break links to create different weights.
+The goal of the problem is to minimize the number of links that need to be broken and the largest coefficient used to achieve all the desired weights from 1 to 13 ounces.

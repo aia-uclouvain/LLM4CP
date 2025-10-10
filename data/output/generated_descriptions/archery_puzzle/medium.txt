@@ -1,0 +1,5 @@
+The Archery Puzzle
+The Archery Puzzle is about finding the combination of targets that an archer can hit to get as close to a total score of 100 as possible, using any number of arrows.
+The main decision variables are `x`, an array of variables representing the number of arrows to hit each target, and `z`, the total score achieved by hitting the targets. The `x` variables range from 0 to 10, indicating that each target can be hit between 0 and 10 times.
+The key constraints are that the total score `z` is calculated by multiplying the number of arrows hitting each target by the target's score and summing these values, and that the difference between the total score `z` and the target score of 100, `diffz`, is minimized. In plain language, the constraint is that the archer wants to get as close to a total score of 100 as possible by hitting the available targets.
+The objective of the problem is to minimize `diffz`, which represents the absolute difference between the total score achieved and the target score of 100. In other words, the goal is to find the combination of targets that results in a total score closest to 100.

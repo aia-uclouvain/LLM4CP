@@ -1,0 +1,5 @@
+name: Product Configuration Problem
+description: The problem is to configure a product by selecting the type and quantity of each component, such that the total weight is minimized while meeting certain requirements, including lower bounds on disk space, memory capacity, and net power generation, as well as upper and lower bounds on the number of components of each type.
+variables: $x_i$ for $i = 1, \ldots, n$, where $x_i$ represents the number of components of type $i$ to be used. These variables determine the configuration of the product.
+constraints: $\sum_{i \in 1..n} x_i \cdot A_{i,j} \geq lower\_bound_j$ for $j = 1, \ldots, t+1$, $x_i \geq 0$ for $i = 1, \ldots, n$, $\sum_{i \in 1..n \mid A_{i,1} = j} x_i \leq max\_number\_used_j$ for $j = 1, \ldots, c$, and $\sum_{i \in 1..n \mid A_{i,1} = j} x_i \geq min\_number\_used_j$ for $j = 1, \ldots, c$. These constraints ensure that the product meets the required specifications and that the number of components of each type is within the allowed range.
+objective: Minimize $total\_weight = \sum_{i \in 1..n, j \in 1..t+1} x_i \cdot A_{i,j} \cdot unit\_cost_j$, which represents the total weight of the product.

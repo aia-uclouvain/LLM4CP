@@ -1,0 +1,5 @@
+Maximum Clique Problem
+The problem is about finding a group of friends in a social network where everyone in the group knows each other. 
+The main variables are the nodes or people in the network, and a variable that says whether each person is in the group or not.
+The basic restrictions are that if two people do not know each other, they cannot both be in the group.
+The goal is to find the largest group of friends where everyone knows each other.

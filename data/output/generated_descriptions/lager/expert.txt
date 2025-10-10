@@ -1,0 +1,8 @@
+name: Stock Control Problem
+description: The Stock Control Problem is a classic problem in operations research and management science that involves managing the stock levels of a product over a finite time horizon. The goal is to determine the optimal production and inventory levels at each time period to meet the demand while minimizing the total cost.
+variables: $x_t, y_t$ 
+These are the decision variables where $x_t$ represents the number of units manufactured at time period $t$, and $y_t$ represents the number of units in stock at the end of time period $t$.
+constraints: $x_t \geq 0, y_t \geq 0, y_{t-1} + x_t = d_t + y_t, y_0 = initstock, x_t \leq u_t$ 
+These constraints ensure that the production and inventory levels are non-negative, the inventory balance equation is satisfied (i.e., the stock at the end of the previous period plus the production equals the demand plus the stock at the end of the current period), the initial stock level is set to a given value, and the production does not exceed the production capacity.
+objective: minimize $\sum_{t=1}^T (c_t x_t + l_t y_t)$
+The objective is to minimize the total cost, which is the sum of the production costs and the inventory holding costs over all time periods.

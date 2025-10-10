@@ -1,0 +1,19 @@
+name: Hanging Weights Puzzle
+
+description: The Hanging Weights Puzzle is a classic problem in constraint programming where a system of bars and weights is given, and the goal is to find the integer values of the weights such that the system is in balance. The weights are labeled from A to M, and each weight has a value between 1 and 13. The system is considered balanced if the weights on either side of a given pivot point are equal when weighted by the distance from the pivot, and if a bar hanging beneath another contributes its total weight as if it were a single weight.
+
+variables: $a, b, c, d, e, f, g, h, i, j, k, l, m$ - These variables represent the integer values of the weights labeled A to M, respectively.
+
+constraints: 
+$4a = b, 
+5c = d, 
+3e = 2f, 
+3g = 2(c + d), 
+3(a + b) + 2j = k + 2(g + c + d), 
+3h = 2(e + f) + 3i, 
+(h + i + e + f) = l + 4m, 
+4(l + m + h + i + e + f) = 3(j + k + g + a + b + c + d), 
+\text{all\_different}([a, b, c, d, e, f, g, h, i, j, k, l, m])$ 
+- These constraints represent the balance conditions for each pivot point in the system, as well as the condition that all weights have distinct values.
+
+objective: The objective of this problem is to satisfy all the constraints, i.e., to find a solution that makes the system balanced, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the conditions.

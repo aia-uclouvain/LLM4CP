@@ -1,0 +1,11 @@
+name: Two Cube Calendar Problem
+description: The Two Cube Calendar Problem is a classic problem in constraint programming where the goal is to construct two cubes with numbers on their sides such that together they can represent the numbers 01 to 31, with each cube having a specific set of numbers on its sides.
+variables: $cube1_{1..6}, cube2_{1..6}, x_{1..31, 1..2}$ - These variables represent the numbers on the sides of the two cubes and the combinations of numbers that can be used to represent the numbers 01 to 31. $cube1$ and $cube2$ are arrays of decision variables representing the numbers on the sides of the two cubes, and $x$ is a 2D array of decision variables representing the combinations of numbers that can be used to represent each number from 01 to 31.
+constraints: $\begin{aligned}
+&contains(1, cube1) \wedge contains(2, cube1) \wedge contains(3, cube2) \wedge contains(4, cube2) \wedge contains(5, cube2) \\
+&\wedge \forall k \in 1..31: toNum(x_k, k, 10.0) \\
+&\wedge \forall k \in 1..31: (10 \cdot cube1_i + cube2_j = k \vee 10 \cdot cube2_i + cube1_j = k) \\
+&\wedge all\_different(cube1) \wedge increasing(cube1) \wedge all\_different(cube2) \wedge increasing(cube2) \\
+&\wedge \forall i \in 0..8: count(t \in cube1 \cup cube2)(t = i) \geq 1
+\end{aligned}$ - These constraints ensure that the numbers 1 and 2 are on the first cube, the numbers 3, 4, and 5 are on the second cube, each number from 01 to 31 can be represented by a combination of numbers from the two cubes, the numbers on each cube are distinct and in increasing order, and each digit from 0 to 8 appears at least once on the two cubes.
+objective: satisfy - The objective of the problem is to find a satisfying assignment of values to the decision variables, such that all the constraints are satisfied, rather than minimizing or maximizing a specific value.

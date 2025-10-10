@@ -1,0 +1,8 @@
+Drinking Game Problem
+The problem is about determining the drinking times in a game where a person must drink at certain time intervals.
+The main decision variables are `drinking`, an array of binary variables representing whether it's a drinking time at each time slot, and `last_8min`, an array of variables tracking the number of drinks in the last 8 minutes.
+The key constraints are: 
+- if the current time is divisible by 5 or 7, and there has been no drinking in the last 8 minutes, then the person must drink at this time, 
+- the `last_8min` array accurately tracks the number of drinks in the last 8 minutes, 
+- the total number of drinks is calculated correctly.
+The problem's objective is to find a satisfying assignment of drinking times, with the total number of drinks being a byproduct of this assignment, rather than an objective to be minimized or maximized.

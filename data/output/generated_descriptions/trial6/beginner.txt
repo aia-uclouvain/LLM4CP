@@ -1,0 +1,5 @@
+The Sixth Trial puzzle. 
+This problem is about two doors, one with a lady and one with a tiger, and the statements on the doors that may or may not be true. 
+The main variables are x, which shows what is behind each door, t, which shows if the statement on each door is true, and d, which are helper variables. 
+The basic restrictions are that each door has one thing behind it, and the statements on the doors must follow certain rules, like if a door says it has the lady, then it must be true or false based on what is behind the other door. 
+The goal of the problem is to figure out what is behind each door and if the statements on the doors are true or not, in a way that satisfies all the given rules.

@@ -1,0 +1,8 @@
+Number Cross Puzzle
+The Number Cross Puzzle is a classic constraint programming problem where the goal is to place numbers from 1 to N in a cross-shaped grid such that no two adjacent cells contain adjacent numbers.
+The main decision variables are the array `x`, where `x[i]` represents the number placed in the `i-th` cell of the cross. The `mat` array represents the grid, where `mat[i, j]` is the index of the cell at position `(i, j)` in the cross, or 0 if the cell is empty.
+The key constraints are: 
+- all numbers from 1 to N must be used exactly once, 
+- no two adjacent cells can contain adjacent numbers. 
+In plain language, this means that for each cell, the numbers in the cells directly above, below, to the left, to the right, and diagonally adjacent must not be one more or one less than the number in the current cell.
+The objective of the problem is to find a solution that satisfies these constraints, i.e., to find a valid placement of numbers in the cross. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find any feasible solution that meets the given constraints.

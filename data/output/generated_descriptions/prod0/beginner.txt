@@ -1,0 +1,5 @@
+Problem: Production Planning
+This problem is about a company that produces two products, X and Y, and wants to decide how much of each to make. 
+The main variables are XB and XC, which represent the amount of products X and Y to be produced.
+The basic restrictions are that the company cannot produce a negative amount of products, and there are limits to how much of each product can be made (6000 units of X and 4000 units of Y). Additionally, the company has limited resources, and producing these products requires a certain amount of resources, which cannot exceed 40 units.
+The goal of the problem is to maximize profit, which is calculated as $25 per unit of X and $30 per unit of Y, by finding the optimal amount of each product to produce.

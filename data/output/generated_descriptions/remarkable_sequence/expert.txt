@@ -1,0 +1,9 @@
+name: Remarkable Sequence Problem (Langford's Number Problem)
+description: The problem is to find a sequence of numbers from 1 to 9, where each number appears exactly three times, and the distance between consecutive occurrences of each number is equal to the number itself. For example, the number 1 must appear three times, with one number between the first and second occurrences, and one number between the second and third occurrences. The goal is to generate all possible sequences that satisfy these conditions.
+variables: $a = (a_1, a_2, ..., a_{27})$, $gcc = (gcc_1, gcc_2, ..., gcc_9)$ - $a$ is an array of decision variables representing the sequence of numbers, where $a_i$ is the number at position $i$ in the sequence, and $gcc$ is an array of decision variables representing the global cardinality of each number in the sequence.
+constraints: 
+$\forall i \in \{1, 2, ..., 9\} \exists j \in \{1, 2, ..., 25 - 2i\} (a_j = i \wedge a_{j+i+1} = i \wedge a_{j+2i+2} = i)$, 
+$\forall i \in \{1, 2, ..., 9\} \forall k \in \{0, 1, 2\} (a_{j+ik+k} = i)$, 
+$global\_cardinality(a, [i | i \in \{1, 2, ..., 9\}], gcc)$, 
+$a_1 \leq a_{27}$ - these constraints ensure that each number appears exactly three times, with the correct distance between consecutive occurrences, and that the sequence is symmetrically broken.
+objective: The problem does not have a specific objective function to minimize or maximize, as it is a constraint satisfaction problem, where the goal is to find all possible sequences that satisfy the given constraints.

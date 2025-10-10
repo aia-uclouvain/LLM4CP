@@ -1,0 +1,22 @@
+**15-Puzzle Problem**
+The 15-puzzle problem is a classic constraint programming problem. 
+It involves a 4x4 grid with 15 numbered tiles and one empty space, where the goal is to rearrange the tiles to form a sequential order from 1 to 15.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: a 2D array representing the state of the puzzle at each step, where `x[i, j]` is the value of the tile at position `j` in the `i-th` step.
+- `moves`: a 2D array representing the moves made at each step, where `moves[i, 1]` and `moves[i, 2]` are the positions of the tiles involved in the `i-th` move.
+- `operations`: an array representing the type of operation performed at each step, where `operations[i]` is 0 if the `i-th` step is a no-operation and 1 if it is a move.
+- `check`: an array representing whether the puzzle is solved at each step, where `check[i]` is 1 if the puzzle is solved at the `i-th` step and 0 otherwise.
+- `check_ix`: the index of the first step where the puzzle is solved.
+
+**Constraints**
+The key constraints in this problem are:
+- The initial state of the puzzle is given by the `puzzle` array.
+- The final state of the puzzle should be a sequential order from 1 to 15.
+- At each step, the puzzle can either remain unchanged or a tile can be moved into the empty space.
+- A tile can only be moved into the empty space if it is adjacent to the empty space.
+- The puzzle is solved when the tiles are in sequential order from 1 to 15.
+
+**Objective**
+The objective of this problem is to find the minimum number of steps required to solve the puzzle, which is represented by the `check_ix` variable. The problem is solved by finding the shortest sequence of moves that transforms the initial puzzle state into the goal state.

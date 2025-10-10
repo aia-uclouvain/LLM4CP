@@ -1,0 +1,5 @@
+name: Curious Numbers
+description: The problem is to find the smallest possible numbers that have a specific peculiarity, which is that if you add 1 to the number, the result is a square number, and if you add 1 to its half, you also get a square number.
+variables: $X, A, B, C, D, E$ - These variables represent the numbers involved in the peculiarity, where $X$ is the original number, $A$ is $X+1$, $B$ is the square root of $A$, $C$ is half of $X$, $D$ is $C+1$, and $E$ is the square root of $D$.
+constraints: $X + 1 = A, A = B^2, X = 2C, C + 1 = D, D = E^2$ - These constraints model the relationships between the variables, specifically that $X+1$ is a square number, $X/2 + 1$ is also a square number, and the corresponding square roots.
+objective: The objective of the problem is to find a solution that satisfies all the constraints, with no specific value to minimize or maximize, as indicated by the "solve satisfy" statement in the model.

@@ -1,0 +1,22 @@
+name: Food Manufacture Problem
+
+description: The Food Manufacture Problem is a classic problem in operations research and mathematical programming. It involves a company that produces a product using different types of raw oils, each with its own hardness level. The company needs to determine the optimal amount of each oil to buy and use in production, as well as the optimal amount of product to produce, in order to maximize its profit. The problem takes into account various constraints such as the availability of storage space, the refining capacity, and the hardness level of the final product.
+
+variables: $buys_{m,o}, stock_{m,o}, useoil_{m,o}, production_m, totalprofit, turnover, buying\_costs, storage\_costs$ 
+These are the decision variables of the problem, where $buys_{m,o}$ is the amount of oil $o$ bought in month $m$, $stock_{m,o}$ is the amount of oil $o$ in stock at the end of month $m$, $useoil_{m,o}$ is the amount of oil $o$ used in production in month $m$, $production_m$ is the amount of product produced in month $m$, and $totalprofit$, $turnover$, $buying\_costs$, $storage\_costs$ are the total profit, turnover, buying costs, and storage costs, respectively.
+
+constraints: 
+$\forall o \in oils: stock_{1,o} = 500.0$
+$\forall o \in oils: stock_{6,o} + buys_{6,o} - useoil_{6,o} \geq 500.0$
+$\forall m \in month, o \in oils: buys_{m,o} \geq 0.0 \wedge stock_{m,o} \geq 0.0 \wedge useoil_{m,o} \geq 0.0 \wedge stock_{m,o} \leq 1000.0$
+$\forall m \in month, o \in oils: useoil_{m,o} \leq stock_{m,o} + buys_{m,o}$
+$\forall m1 \in month, m2 \in month, o \in oils, m2 = m1+1: stock_{m2,o} = stock_{m1,o} + buys_{m1,o} - useoil_{m1,o}$
+$\forall m \in month: \sum_{o \in oils} (oilhardness_o \cdot useoil_{m,o}) \geq 3.0 \cdot production_m$
+$\forall m \in month: \sum_{o \in oils} (oilhardness_o \cdot useoil_{m,o}) \leq 6.0 \cdot production_m$
+$\forall m \in month: production_m \geq 0.0 \wedge production_m = \sum_{o \in oils} useoil_{m,o}$
+$\forall m \in month: useoil_{m,VEG1} + useoil_{m,VEG2} \leq 200.0$
+$\forall m \in month: useoil_{m,OIL1} + useoil_{m,OIL2} + useoil_{m,OIL3} \leq 250.0$
+These constraints represent the limitations and requirements of the problem, such as the initial and final stock levels, the non-negativity of the decision variables, the storage capacity, the refining capacity, and the hardness level of the final product.
+
+objective: Maximize $totalprofit = \sum_{m \in month} (productprice \cdot production_m) - \sum_{m \in month, o \in oils} (buyingprices_{m,o} \cdot buys_{m,o}) - \sum_{m \in month, o \in oils} (storagecost \cdot stock_{m,o})$ 
+The objective of the problem is to maximize the total profit, which is calculated as the sum of the revenue from selling the product minus the buying costs and storage costs.

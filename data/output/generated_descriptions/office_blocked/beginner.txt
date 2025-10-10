@@ -1,0 +1,5 @@
+Office Blocked problem
+The problem is about figuring out which of six employees work in which offices in a two-floor building. 
+The main variables are the names of the employees: Arthur, Bella, Craig, Duncan, Elizabeth, and Francesca, which represent the offices they occupy.
+The basic restrictions are: Arthur's office is directly above Bella's, Bella's office is next to Duncan's, Elizabeth's office number is lower than Francesca's, and Craig's office is next to Francesca's.
+The goal is to find out who works in which office, satisfying all the given restrictions.

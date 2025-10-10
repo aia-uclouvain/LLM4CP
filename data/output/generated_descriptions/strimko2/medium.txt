@@ -1,0 +1,11 @@
+Strimko Problem
+The Strimko problem is about filling an n x n grid with numbers from 1 to n, such that each row, column, and a set of predefined "streams" (connected paths in the grid) contain each number exactly once.
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` denotes the number placed in the cell at row `i` and column `j`. The `streams` array represents the predefined streams, where `streams[i, j]` is the stream identifier for the cell at row `i` and column `j`. The `placed` array represents the given numbers in the grid, where `placed[i, 1]`, `placed[i, 2]`, and `placed[i, 3]` denote the row, column, and number of a given cell, respectively.
+
+The key constraints in this problem are: 
+- Each row and column must contain each number from 1 to n exactly once, which is known as a Latin square constraint. 
+- Each stream must also contain each number from 1 to n exactly once. 
+- The given numbers in the grid, represented by the `placed` array, must be respected.
+
+The objective of the Strimko problem is to find a satisfying assignment of numbers to the grid, such that all constraints are met. In other words, the goal is to fill the grid in a way that satisfies the Latin square and stream constraints, while also respecting the given numbers. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies all the constraints.

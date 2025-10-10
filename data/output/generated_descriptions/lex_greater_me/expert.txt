@@ -1,0 +1,5 @@
+name: Lexicographically Strictly Greater Vectors
+description: The problem involves determining if one vector is lexicographically strictly greater than another vector, given two vectors of the same size with components in a specific range.
+variables: $vector1 = (x_1, x_2, ..., x_n), vector2 = (y_1, y_2, ..., y_n)$, where $x_i$ and $y_i$ are decision variables representing the components of the vectors, with $x_i, y_i \in \{1, 2, ..., 7\}$ for $i = 1, 2, ..., n$.
+constraints: $cp1d(vector1, [5,2,7,1]) \wedge cp1d(vector2, [5,2,6,2]) \wedge lex\_greater\_me(vector1, vector2)$, where $cp1d$ ensures that the vectors have the same size and components as the given vectors, and $lex\_greater\_me$ ensures that $vector1$ is lexicographically strictly greater than $vector2$.
+objective: The objective of the problem is to satisfy the given constraints, specifically to find an assignment of values to $vector1$ and $vector2$ such that $vector1$ is lexicographically strictly greater than $vector2$, with the given components.

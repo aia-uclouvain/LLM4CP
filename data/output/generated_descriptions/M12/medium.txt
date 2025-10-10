@@ -1,0 +1,12 @@
+M12 Problem
+The M12 problem is a classic constraint programming problem inspired by the Rubik's Cube. It involves a sequence of operations applied to a set of elements, with the goal of finding the shortest sequence that transforms the initial configuration into a target configuration.
+
+The main decision variables in this problem are the operations to be applied at each step, which can be one of three types: same (no change), merge (shuffle), or reverse. The variable `x` represents the state of the elements at each step, and `operations` represents the sequence of operations applied.
+
+The key constraints in this problem are:
+- The initial configuration is given, and the first row of the `x` matrix is initialized with this configuration.
+- Each subsequent row of the `x` matrix is obtained by applying one of the three operations to the previous row.
+- The `check` variable is used to indicate whether a row is the same as the initial configuration.
+- The `check_ix` variable represents the index of the first row that is the same as the initial configuration.
+
+The objective of the problem is to minimize `check_ix`, which means finding the shortest sequence of operations that transforms the initial configuration into a configuration that is the same as the initial one, but possibly in a different order. In other words, the goal is to find the shortest sequence of operations that "solves" the puzzle.

@@ -1,0 +1,19 @@
+The Pandigital Numbers problem. 
+This problem is about finding a way to arrange the digits from 1 to 9 (or 0 to 9 if the base is 10 and zero is included) such that the product of two groups of digits equals a number represented by the remaining digits. 
+
+The main decision variables are: 
+- x, an array representing the digits to be arranged, 
+- num1 and num2, the two numbers formed by the first and second groups of digits, 
+- len1 and len2, the lengths of num1 and num2, 
+- res, the result of the operation (either multiplication or addition) between num1 and num2, and 
+- vop, the operation to be performed (either multiplication or addition). 
+
+The key constraints are: 
+- each digit must be used exactly once, 
+- the numbers must be formed by consecutive digits in the array x, 
+- the operation between num1 and num2 must result in res, 
+- the numbers must be non-zero and the leading digit of each number must be non-zero, 
+- the result must be less than 99999, and 
+- the operation is currently limited to multiplication (though addition is also defined but commented out). 
+
+The objective of this problem is to find a satisfying assignment of values to the decision variables such that all constraints are met, rather than minimizing or maximizing a specific objective function.

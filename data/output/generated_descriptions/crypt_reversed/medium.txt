@@ -1,0 +1,10 @@
+Reversed Cryptogram Problem
+The Reversed Cryptogram Problem is about finding the minimum construction of a sequence of digits, where the sequence and its reverse have distinct digits, and their sum is also a sequence with distinct digits.
+The main decision variables are x and z, where x represents the original sequence of digits and z represents the sum of x and its reverse. The variable vx represents the numerical value of x, and vz represents the numerical value of z.
+The key constraints are: 
+- all digits in x are distinct, 
+- all digits in z are distinct, 
+- the sum of x and its reverse equals z, 
+- the first and last digits of x are non-zero, and 
+- the first digit of x is less than the last digit of x (symmetry breaking constraint).
+The objective of the problem is to find the minimum construction of x that satisfies all the constraints, which is equivalent to finding the smallest possible numerical value of x.

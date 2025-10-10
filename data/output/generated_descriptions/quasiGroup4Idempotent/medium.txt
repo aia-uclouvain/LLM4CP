@@ -1,0 +1,13 @@
+Quasigroup Existence Problem
+The Quasigroup existence problem is about finding an $m \times m$ multiplication table where each element occurs exactly once in each row and column, and certain multiplication axioms hold.
+
+The main decision variables are the `quasiGroup` array, which represents the multiplication table, and the `qgDiagonal` array, which stores the diagonal elements of the table. The `quasiGroup` array is a 2D array where `quasiGroup[i, j]` represents the result of multiplying the $i^{th}$ element by the $j^{th}$ element.
+
+The key constraints are: 
+- each row and column must contain each element exactly once, 
+- the diagonal elements must be different, 
+- the multiplication must satisfy certain axioms, such as $(j*i)*(i*j) = i$ and idempotency ($i*i = i$), 
+- the table must be anti-Abelian, meaning that $i*j$ is not equal to $j*i$ when $i$ is not equal to $j$, 
+- and if $(i*i) = j$ then $(j*j) = i$.
+
+The problem's objective is to find a solution that satisfies all these constraints, which means finding a valid Quasigroup table. The model uses a satisfiability solver to find such a solution, and the `int_search` function is used to specify the search strategy. The solution is then printed out as the multiplication table.

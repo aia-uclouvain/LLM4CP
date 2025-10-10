@@ -1,0 +1,5 @@
+Diet Problem
+The problem is about finding the cheapest way to buy food that meets certain nutritional needs. 
+The main variables are the amount of each food to buy (x) and the price of each food (price), which represent how many units of each food product are purchased and their respective costs.
+The basic restrictions are that the total amount of calories, chocolate, sugar, and fat from all the foods must meet or exceed certain minimum requirements, and the amount of each food bought cannot be negative.
+The goal is to minimize the total cost of the foods while meeting the nutritional requirements, with a maximum budget of 90 cents.

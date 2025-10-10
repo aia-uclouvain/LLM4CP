@@ -1,5 +1,0 @@
-Wagner-Whitin Distribution 
-The problem is about managing stock levels in a distribution system to meet customer demand while minimizing costs. 
-The main variables are orders, which represent the amount of stock ordered at each node and period, and stock, which represents the current stock level at each node and period. 
-The basic restrictions are that the initial stock level is zero, and the stock level at each period is determined by the previous period's stock level, plus any new orders, minus any demand or orders from child nodes. 
-The goal is to minimize the total cost, which includes holding costs for stock and processing costs for orders.

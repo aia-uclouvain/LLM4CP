@@ -1,0 +1,15 @@
+**Shortest Path Problem**
+The Shortest Path Problem is a classic problem in graph theory and operations research that involves finding the minimum-weight path between two nodes in a directed graph.
+
+**Decision Variables**
+The main decision variables in this problem are `x[i]`, which represent whether an edge `i` is included in the shortest path (1) or not (0).
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- The flow conservation constraints ensure that the number of edges entering a node is equal to the number of edges leaving the node, except for the source node where one unit of flow is generated, and the target node where one unit of flow is absorbed.
+- The constraints also ensure that the edges included in the path form a valid path from the source node to the target node.
+
+**Objective**
+The objective of the Shortest Path Problem is to minimize the total weight (or length) of the path from the source node `s` to the target node `t`, which is represented by the variable `z`. The weight of each edge is given by the array `c`. 
+
+In this specific model, the graph has 8 nodes and 15 edges, with the source node `s` being node 1 and the target node `t` being node 6. The edge lengths are given by the array `c`, and the edges are represented by the array `E`. The model outputs the values of `x` (the edges included in the shortest path) and `z` (the total weight of the shortest path).

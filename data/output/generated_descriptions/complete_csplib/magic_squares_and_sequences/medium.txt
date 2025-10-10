@@ -1,6 +1,0 @@
-Magic Sequence Problem
-The Magic Sequence problem is a classic constraint programming problem where the goal is to find a sequence of integers that satisfies certain conditions.
-The problem involves finding a sequence of integers x0, x1, ..., xn-1, where each integer is between 0 and n-1, and the number i occurs exactly xi times in the sequence.
-The main decision variables in this problem are the integers in the sequence, which represent the count of each number in the sequence.
-The key constraints in this problem are that each number i occurs exactly xi times in the sequence, and the sum of all the numbers in the sequence is equal to the length of the sequence.
-The objective of this problem is to find a sequence that satisfies these constraints, and there is no specific objective function to minimize or maximize.

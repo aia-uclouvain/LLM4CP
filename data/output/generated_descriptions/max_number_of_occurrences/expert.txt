@@ -1,0 +1,7 @@
+name: Maximum Occurrences in an Array
+description: The problem is to find the maximum number of occurrences of any value in a given array of integers. This involves counting the frequency of each unique value in the array and determining the highest frequency.
+variables: $n, a, upb, gcc, z, max_val$ 
+These variables represent the following: $n$ is the size of the array, $a$ is the array of integers, $upb$ is the upper bound of the values in the array, $gcc$ is an array that stores the frequency of each value in the array, $z$ is the maximum frequency, and $max_val$ is the value that occurs with the maximum frequency.
+constraints: $global_cardinality(a, array1d(0..upb,[i | i in 0..upb]), gcc), z = max(gcc), max_val = arg_max(gcc)-1$ 
+These constraints ensure that the frequency of each value in the array is counted correctly using the global cardinality constraint, the maximum frequency is calculated, and the value with the maximum frequency is identified.
+objective: The objective of the problem is to find the maximum number of occurrences of any value in the array, which is represented by the variable $z$.

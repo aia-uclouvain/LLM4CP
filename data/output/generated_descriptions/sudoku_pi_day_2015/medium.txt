@@ -1,0 +1,11 @@
+Sudoku Pi Day 2015
+The Sudoku Pi Day 2015 problem is a variation of the classic Sudoku puzzle, with additional constraints. The goal is to fill in a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 block contains each number exactly once. Furthermore, there are four shaded sequences in the grid that must contain the digits 3, 1, 4, 1, 5, 9, 2, 6 in that order.
+
+The main decision variables are the values of the grid cells, represented by the 2D array `x`, where `x[i, j]` is the value in the cell at row `i` and column `j`. These variables can take on values from 1 to 9.
+
+The key constraints are: 
+- each row, column, and 3x3 block must contain each number from 1 to 9 exactly once, 
+- each of the four shaded sequences must contain the digits 3, 1, 4, 1, 5, 9, 2, 6 in that order. 
+These constraints ensure that the solution is a valid Sudoku puzzle and that the shaded sequences contain the required digits.
+
+The objective of the problem is to find a solution that satisfies all the constraints. Since this is a constraint satisfaction problem, there is no explicit objective function to minimize or maximize. The goal is to find a feasible solution that meets all the requirements.

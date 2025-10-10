@@ -1,0 +1,5 @@
+Parallel Resistors Problem
+The problem is about determining the voltage and current in a circuit with two resistors connected in parallel. 
+The main decision variables are V (voltage), I (total current), R1 (resistance of the first resistor), and R2 (resistance of the second resistor), which represent the key electrical properties of the circuit.
+The key constraints are that the voltage across each resistor is the same, the current through each resistor is proportional to the voltage and inversely proportional to the resistance, and the total current is the sum of the currents through each resistor. 
+The problem's objective is to satisfy these constraints, given specific values for the resistances, rather than to minimize or maximize a particular value, as the goal is to find a valid solution that meets the electrical laws governing the circuit.

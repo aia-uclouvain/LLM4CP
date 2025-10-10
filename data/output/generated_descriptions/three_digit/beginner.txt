@@ -1,0 +1,5 @@
+Pandigital Number Square Problem
+The problem is about finding a 3-digit number that, when squared, contains all the digits from 0 to 9 exactly once. 
+The main variables are A, B, C, which represent the 3-digit number, and D, E, F, G, H, I, J, which represent the digits of the squared number. 
+The basic restrictions are that all the digits must be different, and the 3-digit number must be a valid number. 
+The goal is to find a 3-digit number that, when squared, contains all the digits from 0 to 9 exactly once, with no extra digits.

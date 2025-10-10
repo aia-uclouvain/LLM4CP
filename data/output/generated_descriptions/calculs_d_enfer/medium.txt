@@ -1,0 +1,12 @@
+**Calculs d'Enfer Puzzle**
+The Calculs d'Enfer puzzle is a classic constraint programming problem. 
+It involves assigning integer values to a set of variables, each representing a letter from 'a' to 'z', such that a set of equations is satisfied.
+
+The main decision variables in this problem are the 26 variables `a` to `z`, which are represented as an array `A` in the Minizinc model. Each variable `A[i]` represents the integer value assigned to the corresponding letter.
+
+The key constraints in this problem can be described as follows: 
+- Each variable `A[i]` must have a unique value, i.e., no two variables can have the same value. 
+- A set of linear equations must be satisfied, where each equation involves a sum of variables equaling a specific constant. 
+- The objective is to minimize the maximum absolute value of the variables, i.e., to find the assignment of values that minimizes the maximum of `|A[i]|` for all `i`.
+
+The problem's objective is to minimize the maximum absolute value of the variables, which is represented by the variable `a_max` in the Minizinc model. The goal is to find the assignment of values to the variables `A` that minimizes `a_max`, which is the maximum of `|A[i]|` for all `i`.

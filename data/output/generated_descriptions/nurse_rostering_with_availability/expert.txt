@@ -1,0 +1,16 @@
+name: Nurse Rostering Problem with Availability
+
+description: The Nurse Rostering Problem with Availability is a classic problem in constraint programming that involves scheduling nurses to work different shifts over a period of time, taking into account their availability and certain constraints such as the minimum number of nurses required for each shift. The goal is to find a feasible schedule that satisfies all the constraints.
+
+variables: $x_{i,j} \in \{1, 2, 3\}$, where $x_{i,j}$ represents the shift assigned to nurse $i$ on day $j$, with $1$ denoting a day shift, $2$ denoting a night shift, and $3$ denoting a day off. $stat_{j,t}$ represents the number of nurses working shift $t$ on day $j$.
+
+constraints: 
+$\forall i \in \{1, \ldots, 7\}: regular([x_{i,j} | j \in \{1, \ldots, 14\}], 6, 3, transition\_fn, 1, \{1, \ldots, 6\})$,
+$\forall j \in \{1, \ldots, 14\}: \sum_{i=1}^{7} bool2int(x_{i,j} = 1 \wedge available_{i,j} = 1) \geq 3$,
+$\forall j \in \{1, \ldots, 14\}: \sum_{i=1}^{7} bool2int(x_{i,j} = 2 \wedge available_{i,j} = 1) \geq 2$,
+$\forall j \in \{1, \ldots, 14\}: stat_{j,t} = \sum_{i=1}^{7} bool2int(x_{i,j} = t \wedge available_{i,j} = 1)$ for $t \in \{1, 2\}$,
+$\forall j \in \{1, \ldots, 14\}: stat_{j,3} = \sum_{i=1}^{7} bool2int(x_{i,j} = 3)$,
+$\forall i \in \{1, \ldots, 7\}, j \in \{1, \ldots, 14\}: available_{i,j} = 0 \rightarrow x_{i,j} = 3$.
+These constraints ensure that each nurse's schedule is valid according to the regular expression defined by the transition function, that each day has at least 3 nurses working the day shift and 2 nurses working the night shift, that the statistics for each day are correctly calculated, and that nurses who are not available are assigned a day off.
+
+objective: The objective of this problem is to find a feasible schedule that satisfies all the constraints, which is achieved by using the `satisfy` keyword in the MiniZinc model. There is no explicit objective function to minimize or maximize.

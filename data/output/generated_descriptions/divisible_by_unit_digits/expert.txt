@@ -1,0 +1,5 @@
+name: Divisible by Unit Digits
+description: The problem is to find the number of whole numbers between 10 and 50 that are divisible by their units digits. For example, the number 64 has this property because 64 is divisible by 4, which is its units digit.
+variables: $x_{10}, x_{11}, ..., x_{50}$, where $x_i$ is a binary decision variable that represents whether the number $i$ is divisible by its units digit or not. 
+constraints: $i \mod (i \mod 10) = 0 \leftrightarrow x_i = 1$ for $i = 10, 11, ..., 50$, which ensures that $x_i$ is 1 if and only if $i$ is divisible by its units digit.
+objective: The objective is to find the sum of all $x_i$ values, which represents the total number of whole numbers between 10 and 50 that are divisible by their units digits.

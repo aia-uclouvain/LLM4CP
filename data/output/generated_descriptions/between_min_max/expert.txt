@@ -1,0 +1,5 @@
+name: Between Min Max Problem
+description: The Between Min Max problem is a constraint satisfaction problem where the goal is to find an assignment of values to a set of variables such that a specific variable is within the range of the minimum and maximum values of another set of variables.
+variables: $x = [x_1, x_2, ..., x_n], nvar$, where $x$ is an array of decision variables representing a collection of values, and $nvar$ is a decision variable representing a value that must be within the range of the minimum and maximum values of $x$. These variables are used to model the problem, where $x$ represents the collection of values and $nvar$ represents the value that must be between the minimum and maximum of $x$.
+constraints: $nvar \geq \min(x) \wedge nvar \leq \max(x) \wedge x = [1,1,4,8] \wedge nvar = 3$, where the constraints ensure that $nvar$ is within the range of the minimum and maximum values of $x$, and $x$ is assigned a specific value.
+objective: satisfy, The objective of the problem is to find a satisfying assignment of values to the variables such that all constraints are met, rather than minimizing or maximizing a specific value.

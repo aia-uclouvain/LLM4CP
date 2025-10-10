@@ -1,0 +1,17 @@
+name: Miss Manners Seating Problem
+
+description: The Miss Manners Seating Problem is a classic problem in constraint programming that involves finding an acceptable seating arrangement for guests at a dinner party. The goal is to seat everyone next to a member of the opposite sex and match people with the same hobbies (at least one). The problem is typically defined by a set of guests with their respective genders and hobbies, and the objective is to find a seating arrangement that satisfies these constraints.
+
+variables: $seating = [s_1, s_2, ..., s_n]$, where $s_i$ is a variable representing the guest seated at position $i$. These variables are used to determine the seating arrangement, with each $s_i$ taking a value from the set of guests.
+
+constraints: 
+$\begin{aligned}
+& all\_different(seating) \\
+& gender[s_i] \neq gender[s_{i-1}] \quad \forall i \in 2..n \\
+& gender[s_1] \neq gender[s_n] \\
+& card(hobbies[s_i] \cap hobbies[s_{i-1}]) \geq 1 \quad \forall i \in 2..n \\
+& card(hobbies[s_n] \cap hobbies[s_1]) \geq 1
+\end{aligned}$ 
+These constraints ensure that each guest is seated only once, that guests of the same gender are not seated next to each other, and that each guest is seated next to someone with at least one common hobby.
+
+objective: Maximize $common\_hobbies = \sum_{i=2}^{n} card(hobbies[s_i] \cap hobbies[s_{i-1}]) + card(hobbies[s_n] \cap hobbies[s_1])$, which represents the total number of common hobbies between adjacent guests in the seating arrangement.

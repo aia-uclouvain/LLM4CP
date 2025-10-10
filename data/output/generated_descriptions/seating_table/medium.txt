@@ -1,0 +1,12 @@
+Table Seating Problem
+The Table Seating Problem is about arranging a group of couples around a table in such a way that each person's neighbors are of the opposite gender and not their spouse.
+
+The main decision variables are `x` and `gender`. `x` represents the seating arrangement, where `x[i]` is the person seated at position `i`. `gender` represents the gender of each person, where `gender[i]` is the gender of the person seated at position `i`, with 0 representing male and 1 representing female.
+
+The key constraints are: 
+- each person must have a unique seat, 
+- the neighbors of each person must be of the opposite gender, 
+- the neighbors of each person must not be their spouse, 
+- the seating arrangement must be a circular arrangement, meaning the last person's neighbors include the first person.
+
+The problem's objective is to find a seating arrangement that satisfies all the constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

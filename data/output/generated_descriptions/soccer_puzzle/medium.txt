@@ -1,0 +1,8 @@
+Soccer Tournament Problem
+The problem is about determining the number of points the fifth team scored in a soccer tournament where five teams played against each other once, given that the other four teams scored 1, 2, 5, and 7 points.
+
+The main decision variables are `x`, an array representing the total points for each team, and `matches`, a 2D array representing the outcome of each game between two teams, where `matches[i,j]` is the points team `i` got from the game against team `j`.
+
+The key constraints are: each team plays every other team exactly once, a team cannot play against itself, the outcome of each game is consistent (i.e., if team `i` wins against team `j`, then team `j` loses to team `i`), and the total points for each team are calculated based on the outcomes of all its games. Additionally, the points for the first four teams are fixed at 1, 2, 5, and 7 points.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, specifically to determine the number of points the fifth team scored. The model uses a satisfaction-based approach, where the goal is to find an assignment of values to the decision variables that satisfies all the constraints, rather than optimizing a specific objective function.

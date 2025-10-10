@@ -1,0 +1,5 @@
+name: Minesweeper
+description: The Minesweeper problem is a classic puzzle where a player is presented with a grid of cells, some of which contain hidden mines. The player's goal is to deduce the location of the mines based on clues provided by the game, which indicate the number of mines adjacent to each cell. The game requires logical reasoning and deduction to solve.
+variables: $x_{i,j} \in \{0,1\}$, where $x_{i,j}$ represents whether a mine is present (1) or not (0) in cell $(i,j)$ of the grid, and $v_{i,j} \in \mathbb{Z}$, which denotes the number of mines adjacent to cell $(i,j)$.
+constraints: $\sum_{(i',j') \in N(i,j)} x_{i',j'} = v_{i,j}$, where $N(i,j)$ is the set of neighboring cells of $(i,j)$, and $x_{i,j} \in \{0,1\}$, which ensure that the number of mines adjacent to each cell matches the given clues, and that each cell either contains a mine or does not.
+objective: The objective of the problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, thereby revealing the location of the mines in the grid.

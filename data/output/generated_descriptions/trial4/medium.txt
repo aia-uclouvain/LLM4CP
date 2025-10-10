@@ -1,0 +1,5 @@
+The Fourth Trial puzzle
+The problem is about finding the correct arrangement of a lady and a tiger behind two doors, where each door has a statement that may be true or false, and the statements are related to the arrangement of the lady and the tiger.
+The main decision variables are x(i,j) and t(i), where x(i,j) represents whether door i hides prize j (1 for the lady and 2 for the tiger), and t(i) represents whether the statement on door i is true.
+The key constraints are: each door hides one prize, the statement on each door is consistent with the arrangement of the lady and the tiger, and the statements on the two doors are related in a specific way. Specifically, the statement on door 1 is true if the lady is behind either door 1 or door 2, and the statement on door 2 is the same as the statement on door 1.
+The problem's objective is to find a satisfying assignment of values to the decision variables, such that all the constraints are met, which means finding a consistent arrangement of the lady and the tiger behind the two doors, along with the corresponding true or false statements on each door.

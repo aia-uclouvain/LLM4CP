@@ -1,0 +1,5 @@
+The problem is called the "Int Value Precede" problem. 
+It is about ensuring that in a given sequence of integers, if a specific target value occurs, then it must be preceded by another specific source value. 
+The main decision variables are the elements of the array `x`, which represent the sequence of integers. 
+The key constraints are that if the target value `t` occurs in the sequence, then the source value `s` must occur before it, and that the sequence must match a given example sequence. 
+The problem's objective is to find a sequence that satisfies these constraints, specifically to find a sequence where the target value is either not present or is preceded by the source value.

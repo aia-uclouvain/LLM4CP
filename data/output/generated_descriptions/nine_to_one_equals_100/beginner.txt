@@ -1,0 +1,5 @@
+Nine to One Equals 100 Problem
+The problem is about using the digits 1 through 9 in order, with mathematical operators (+ or -) between them, to get a total of 100. 
+The main variables are the digits 1-9, the numbers formed by combining these digits, and the mathematical operations (+ or -) used between them. 
+The basic restrictions are that the digits must be used in the correct order (either 1-9 or 9-1), and each digit can only be used once. The numbers formed by combining the digits must be positive integers. 
+The goal of the problem is to find a way to use the digits 1-9, with mathematical operators (+ or -) between them, to get a total of 100, while minimizing the number of operators used.

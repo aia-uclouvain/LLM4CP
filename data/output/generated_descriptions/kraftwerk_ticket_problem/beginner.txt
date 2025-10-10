@@ -1,0 +1,12 @@
+Kraftwerk Concert Ticket Problem
+The problem is about a group of friends who want to buy tickets to Kraftwerk concerts. Each person has a limited budget and can only buy tickets for one concert, with a maximum of 6 tickets. The friends have different preferences for the concerts, and the goal is to buy tickets in a way that maximizes the total happiness of the group.
+The main variables are: 
+- buy_concert: the concert that each person buys tickets for
+- buy_num_tickets: the number of tickets each person buys
+- attending: whether each person attends each concert
+The basic restrictions are: 
+- each person can only buy tickets for one concert
+- each person can buy a maximum of 6 tickets
+- the total number of tickets bought must equal the total number of concerts attended
+- each person's budget limits the number of concerts they can attend
+The goal is to maximize the total happiness of the group, which is calculated based on the preferences of each person for each concert.

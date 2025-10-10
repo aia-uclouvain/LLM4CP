@@ -1,0 +1,8 @@
+Assignment Problem
+The Assignment Problem is about finding the optimal way to assign a set of workers to a set of tasks, also referred to as products, to maximize the overall profit or efficiency. 
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` is a binary variable that equals 1 if worker `i` is assigned to product `j`, and 0 otherwise. 
+
+The key constraints in this problem are that each worker can only be assigned to one product, and each product can only be assigned to one worker. This is achieved through two constraints: the first ensures that the sum of assignments for each worker across all products equals 1, and the second ensures that the sum of assignments for each product across all workers equals 1.
+
+The objective of the Assignment Problem is to maximize the total profit, which is calculated by summing the profit of each worker-product pair that is assigned. The profit for each pair is given in the `profit` array, and the total profit is represented by the variable `sum_profit`. The goal is to find the assignment of workers to products that results in the highest total profit.

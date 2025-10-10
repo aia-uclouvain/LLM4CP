@@ -1,0 +1,5 @@
+Pythagorean Triplet Problem
+The problem is about finding a set of three natural numbers that satisfy the Pythagorean theorem and sum up to a given value.
+The main decision variables are a, b, and c, which represent the three natural numbers in the Pythagorean triplet, where a < b < c.
+The key constraints are that the numbers must satisfy the Pythagorean theorem (a^2 + b^2 = c^2), the numbers must be in increasing order (a < b < c), and their sum must equal 1000.
+The problem's objective is to find the product of these three numbers (abc) when their sum equals 1000, rather than minimizing or maximizing a specific value, the goal is to find a specific solution that satisfies all the constraints.

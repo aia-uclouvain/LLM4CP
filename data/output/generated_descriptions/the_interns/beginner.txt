@@ -1,0 +1,5 @@
+The Interns problem
+The problem is about finding the day of the week when all three hospital interns are on call at the same time. 
+The main variables are the interns' schedules, which are represented by a table showing whether each intern is on call (1) or off (0) for each day of the week. 
+The basic restrictions are: all three interns are on call together only once a week, no intern works three days in a row, and no two interns are off on the same day more than once a week. Additionally, each intern has specific days off. 
+The goal is to find the day of the week when all three interns are on call, given their individual schedules and the restrictions.

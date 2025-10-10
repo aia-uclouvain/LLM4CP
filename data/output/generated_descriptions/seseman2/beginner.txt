@@ -1,0 +1,5 @@
+The problem is called the Seseman Convent Problem. 
+It's about filling a square with numbers so that the sum of numbers on the borders of the square is the same and all numbers on the inside of the square are zero. 
+The main variables are the numbers in the square, represented by x, and the total sum of all numbers in the square, represented by total_sum. 
+The basic restrictions are that the numbers on the borders must be at least 1, the numbers on the inside must be zero, and the sum of numbers on each border must be the same. 
+The goal of the problem is to find a way to fill the square with numbers that satisfy these restrictions, without trying to minimize or maximize anything in particular, as indicated by the "solve satisfy" statement.

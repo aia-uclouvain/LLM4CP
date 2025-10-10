@@ -1,0 +1,14 @@
+The problem is known as the Cycle Problem or the Permutation Cycle Problem. 
+It is about finding a permutation of numbers from 1 to n, such that the permutation can be divided into a specific number of cycles. 
+A cycle is a sequence of numbers where each number is mapped to the next number in the sequence, and the last number is mapped back to the first number.
+
+The main decision variables are the array x, which represents the permutation of numbers from 1 to n, and the variable num_cycles, which represents the number of cycles in the permutation. 
+The array x is a one-dimensional array where each element x[i] represents the number that i is mapped to in the permutation.
+
+The key constraints in the problem are: 
+- all_different(x), which ensures that each number from 1 to n appears exactly once in the permutation, 
+- cycle(num_cycles, x), which ensures that the permutation can be divided into num_cycles cycles. 
+The cycle constraint is implemented using several auxiliary variables and constraints, including a cycle matrix, first fixed positions, and global cardinality constraints.
+
+The objective of the problem is to find a permutation that satisfies the given constraints, specifically the constraint that the permutation can be divided into a specific number of cycles (in this case, num_cycles = 2). 
+The problem does not have a clear objective function to minimize or maximize, but rather a satisfaction problem where the goal is to find a feasible solution that satisfies all the constraints.

@@ -1,0 +1,14 @@
+name: Futoshiki Problem
+
+description: The Futoshiki problem is a Japanese puzzle that consists of a square grid with some given numbers and inequality constraints between adjacent cells. The goal is to fill in the missing numbers such that each row and column contains each number from 1 to the size of the grid exactly once, and all inequality constraints are satisfied.
+
+variables: $field_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the values to be assigned to each cell in the grid, with $field_{i,j}$ being the value in the $i$-th row and $j$-th column.
+
+constraints: 
+$\forall i \in RANGE: \forall j, k \in RANGE, j \neq k: field_{i,j} \neq field_{i,k}$, 
+$\forall j \in RANGE: \forall i, k \in RANGE, i \neq k: field_{i,j} \neq field_{k,j}$, 
+$\forall i \in NUMQD: field_{lt_{i,0},lt_{i,1}} < field_{lt_{i,2},lt_{i,3}}$, 
+$\forall i, j \in RANGE: values_{i,j} > 0 \rightarrow field_{i,j} = values_{i,j}$. 
+These constraints ensure that each row and column contains each number exactly once, all inequality constraints are satisfied, and the given numbers in the grid are respected.
+
+objective: The objective of the Futoshiki problem is to find a satisfying assignment of values to the grid, which is a feasibility problem and does not involve minimizing or maximizing a specific value. The goal is to find a solution that satisfies all the constraints.

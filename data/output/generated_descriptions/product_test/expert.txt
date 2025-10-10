@@ -1,0 +1,5 @@
+name: Increasing Product Problem
+description: The problem is to find an increasing sequence of numbers whose product is greater than 0 and equals a certain value p, where the sequence is composed of 40 variables x, each ranging from 1 to 1000.
+variables: $x_1, x_2, ..., x_{40}, p$ - These are decision variables where $x_i$ represents the i-th number in the sequence and p represents the product of all the numbers in the sequence.
+constraints: $p > 0, p = \prod_{i=1}^{40} x_i, x_1 \leq x_2 \leq ... \leq x_{40}$ - These constraints ensure that the product p is greater than 0, equal to the product of all the numbers in the sequence, and that the sequence is increasing.
+objective: satisfy - The objective of this problem is to find a solution that satisfies all the given constraints, there is no explicit objective function to minimize or maximize.

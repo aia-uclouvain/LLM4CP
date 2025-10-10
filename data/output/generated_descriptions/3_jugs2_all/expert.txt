@@ -1,0 +1,5 @@
+name: 3 Jugs Problem (Shortest Path Problem)
+description: The 3 Jugs Problem is a classic problem in the field of operations research and constraint programming. However, the provided Minizinc model seems to be a shortest path problem rather than the traditional 3 Jugs Problem. The model represents a network with 15 nodes and the goal is to find the shortest path from the start node to the end node with a total cost less than or equal to 7.
+variables: x[i,j], inFlow, outFlow, total_cost. These variables represent the connection matrix (x[i,j]) where x[i,j] is 1 if there is a connection from node i to node j and 0 otherwise, the inFlow and outFlow variables are likely used to calculate the total cost, and total_cost is the total cost of the path.
+constraints: d[i,j] = M or 1, total_cost <= 7. These constraints represent the distance between nodes (d[i,j]) where M is a large number representing no connection, and the total cost constraint ensures that the total cost of the path does not exceed 7.
+objective: minimize total_cost. The objective of the problem is to minimize the total cost of the path from the start node to the end node.

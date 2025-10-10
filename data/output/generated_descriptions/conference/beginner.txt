@@ -1,0 +1,9 @@
+Conference Scheduling Problem
+The problem is about organizing a conference with 11 sessions into a schedule with the least number of time slots, where each slot can have up to 3 sessions running at the same time.
+The main variables are: 
+- Sessions: which time slot each session is assigned to
+- Slots: which sessions are assigned to each time slot
+The basic restrictions are: 
+- Some sessions must take place before others
+- Certain sessions cannot be held at the same time
+The goal is to minimize the number of time slots needed to schedule all 11 sessions while following these restrictions.

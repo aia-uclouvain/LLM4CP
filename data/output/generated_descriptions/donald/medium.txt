@@ -1,0 +1,5 @@
+Donald Puzzle
+The Donald puzzle is a classic alphametic problem where the goal is to find the numerical values of letters in an equation such that the equation holds true.
+The main decision variables in this problem are the letters D, O, N, A, L, G, E, R, B, and T, each representing a digit from 0 to 9.
+The key constraints are that each letter must represent a unique digit, and the equation DONALD + GERALD = ROBERT must be satisfied when the letters are replaced with their corresponding numerical values. Additionally, the letters D, G, and R must not be zero, as they are the first letters of the names and therefore represent the most significant digits.
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of digits to letters such that the equation holds true, which is achieved by using the "solve satisfy" statement in the Minizinc model.

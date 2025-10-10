@@ -1,0 +1,5 @@
+Bridges to Somewhere problem
+The problem is about finding the best way to build bridges between two towns, Hometown and Worktown, to minimize the total distance that residents have to travel to get to work. 
+The main variables are the positions of the residents' homes and workplaces, the possible locations for the bridges, and the decision of which bridges to build.
+The basic restrictions are that only two bridges can be built, and they can only be built in certain approved locations. The residents can only travel in straight lines, either up, down, left, or right, and they will always take the shortest path to get to work.
+The goal of the problem is to minimize the total distance that all residents have to travel to get to work by choosing the best locations for the two bridges.

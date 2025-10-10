@@ -1,0 +1,5 @@
+The Sangraal Problem
+The Sangraal problem is a classic constraint programming problem that involves scheduling the rescue of knights from a castle. 
+The main decision variables in this problem are the start times for freeing each knight, the end times for each knight to be ready, and which knights to rescue. 
+The key constraints in this problem are that each knight must be freed and prepared within the given time limit, and the cumulative time spent freeing and preparing each knight cannot exceed the available time. 
+The objective of this problem is to maximize the number of knights that can be rescued within the given time limit of 20 minutes.

@@ -1,0 +1,11 @@
+name: Talent Scheduling Problem
+description: The Talent Scheduling Problem is a classic problem in constraint programming that involves scheduling scenes for a set of actors in a film or theater production. The goal is to minimize the total waiting time for all actors, taking into account their pay rates and the duration of each scene. The problem requires finding an optimal schedule that satisfies various constraints, such as ensuring that each actor is available for their assigned scenes and that the schedule is feasible.
+
+variables: $slot_s, scene_s, firstSlot_a, lastSlot_a, actorWait_a$ 
+These variables represent the decision variables in the problem: $slot_s$ is the slot assigned to scene $s$, $scene_s$ is the scene assigned to slot $s$, $firstSlot_a$ is the first slot where actor $a$ plays, $lastSlot_a$ is the last slot where actor $a$ plays, and $actorWait_a$ is the waiting time for actor $a$.
+
+constraints: $firstSlot_a \geq 0$, $firstSlot_a \geq \min\{slot_s | s \in Scenes, actorInScene_{a,s} = 1\}$, $lastSlot_a \geq 0$, $lastSlot_a \geq \max\{slot_s | s \in Scenes, actorInScene_{a,s} = 1\}$, $actorWait_a \geq 0$, $actorWait_a = \sum\{sceneDuration_s | s \in Scenes, actorInScene_{a,s} = 0, firstSlot_a \leq slot_s \leq lastSlot_a\}$, $inverse(scene, slot)$
+These constraints ensure that the schedule is feasible and that each actor's waiting time is calculated correctly. The constraints include bounds on the first and last slots for each actor, relationships between the slots and scenes, and the calculation of waiting time based on scene duration and actor availability.
+
+objective: minimize $idleCost = \sum\{actorPay_a \cdot actorWait_a | a \in Actors\}$ 
+The objective is to minimize the total waiting time cost for all actors, which is calculated by multiplying each actor's pay rate by their waiting time and summing these values.

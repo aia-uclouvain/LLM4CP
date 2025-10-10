@@ -1,0 +1,5 @@
+name: Steady-State Heat Transfer Problem
+description: The problem models a steady-state heat transfer scenario where the temperature at each point in a 2D grid is determined by the average temperature of its neighboring points. The grid has fixed temperatures on its borders, and the goal is to find the temperature at each point inside the grid.
+variables: $temp_{i,j}$, where $i$ and $j$ are indices of the grid, representing the temperature at each point in the grid. These variables are decision variables that the model aims to find.
+constraints: $\forall i, j \in \{2, \ldots, n-1\}: temp_{i,j} = \frac{1}{4} (temp_{i-1,j} + temp_{i+1,j} + temp_{i,j-1} + temp_{i,j+1})$, which represents the steady-state heat transfer equation, stating that the temperature at each point is the average of its neighboring points.
+objective: satisfy, meaning that the objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. The model aims to find the steady-state temperature distribution across the grid.

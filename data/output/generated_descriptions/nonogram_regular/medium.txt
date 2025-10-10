@@ -1,0 +1,8 @@
+Nonogram Problem
+The Nonogram problem is a classic constraint programming problem that involves solving a puzzle where a set of clues is given to reconstruct a hidden image. 
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` represents the cell at row `i` and column `j` in the puzzle. The value of `x[i, j]` can be either 1 or 2, indicating whether the cell is filled (represented by "#") or empty (represented by " ").
+
+The key constraints in the Nonogram problem can be described as follows: each row and column has a set of patterns that must be satisfied. These patterns are defined by a set of clues, which specify the lengths of consecutive filled cells in each row and column. The `make_rules` predicate is used to enforce these constraints, ensuring that the filled cells in each row and column match the given patterns.
+
+The objective of the Nonogram problem is to find a solution that satisfies all the given constraints, effectively reconstructing the hidden image. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that meets all the constraints. The `solve` statement in the model uses the `int_search` function to find a solution, with the `satisfy` keyword indicating that the goal is to find a solution that satisfies all the constraints.

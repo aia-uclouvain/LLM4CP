@@ -1,0 +1,5 @@
+Two Cube Calendar problem
+The Two Cube Calendar problem is about constructing two cubes that can be used as a calendar to represent the numbers 01 to 31. 
+The main decision variables are cube1 and cube2, which represent the numbers on the sides of the two cubes. 
+The key constraints are that each cube must have six different numbers, the numbers on the cubes must be able to represent all numbers from 01 to 31 when combined in different ways, and the numbers on each cube must be increasing. 
+The objective of the problem is to find a solution that satisfies all the constraints, which means finding two cubes that can be used as a calendar to represent all numbers from 01 to 31.

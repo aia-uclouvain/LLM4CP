@@ -1,0 +1,5 @@
+Kaprekar's Constant problem.
+The problem is about taking a four-digit number, rearranging its digits to form the largest and smallest possible numbers, and then subtracting the smaller number from the larger one. This process is repeated with the resulting number until it reaches a specific constant, 6174. 
+The main variables are the initial four-digit number, the resulting numbers after each subtraction, and the position where the constant is reached. 
+The basic restrictions are that the initial number must have different digits, and the process is repeated until the constant is reached. 
+The goal is to find the position where the constant is reached, given an initial number, and to demonstrate that this process will always reach the constant 6174 in at most 7 steps for any four-digit number with different digits.

@@ -1,0 +1,5 @@
+Magic Squares and Cards
+The problem is about creating a special kind of square using cards from a deck, where each row, column, and diagonal adds up to the same number.
+The main variables are the numbers on the cards (x) and the target sum (s) that each row, column, and diagonal should add up to.
+The basic restrictions are that each number can be used at most four times (since there are four cards of each value in a deck), and the sum of each row, column, and diagonal must be the same.
+The goal is to find the largest possible target sum (s) that can be achieved using the cards from the deck to fill in the square.

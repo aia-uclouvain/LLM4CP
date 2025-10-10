@@ -1,0 +1,5 @@
+Dudeney's Bishop Placement problem
+The problem is about placing the minimum number of bishops on a chessboard such that every square is either occupied by a bishop or under attack by one.
+The main decision variables are `x[i,j]` and `a[i,j]`, where `x[i,j]` represents whether a bishop is placed on square `(i,j)` and `a[i,j]` represents whether square `(i,j)` is under attack by a bishop.
+The key constraints are that each square is either occupied by a bishop or under attack, and that a square is under attack if there is a bishop on a diagonally adjacent square. Additionally, the model ensures that each bishop attacks all squares on its diagonals.
+The objective of the problem is to minimize the total number of bishops placed on the board, which is represented by the variable `sumx`. The model uses a constraint programming approach to find the minimum number of bishops required to cover all squares on the board.

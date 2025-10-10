@@ -1,0 +1,19 @@
+**Argmax/Argmin Problem**
+The Argmax/Argmin problem is a classic constraint programming problem that involves finding the index of the maximum or minimum value in an array of variables.
+
+**Description**
+The problem is about finding the position of the maximum or minimum value in an array, where the array elements are decision variables that can take on different values. The goal is to identify the index of the maximum or minimum value while satisfying certain constraints.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables that can take on values between 1 and `n` (where `n` is the size of the array).
+- `pos`: a variable that represents the index of the maximum value in the array.
+
+**Constraints**
+The key constraints in this problem are:
+- `alldifferent(x)`: all elements in the array `x` must have different values.
+- `argmax_gt(pos, x)`: the value at index `pos` in the array `x` must be greater than all other values in the array.
+- `argmin_lt(2, x)`: the value at index 2 in the array `x` must be less than all other values in the array.
+
+**Objective**
+The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the constraints.

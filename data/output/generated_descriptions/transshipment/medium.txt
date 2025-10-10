@@ -1,0 +1,11 @@
+Transshipment Problem
+The Transshipment Problem is a classic problem in Operations Research and Constraint Programming that involves finding the most cost-effective way to transport goods from supply cities to demand cities through intermediate cities, known as transshipment points.
+
+The main decision variables in this problem are the `delivery` variables, which represent the amount of goods to be transported from one city to another. These variables are two-dimensional, where `delivery[i,j]` represents the amount of goods to be transported from city `i` to city `j`.
+
+The key constraints in this problem can be described in plain language as follows: 
+- The total amount of goods transported from a supply city cannot exceed its available supply.
+- The total amount of goods transported to a demand city must meet or exceed its demand.
+- Goods can only be transported from a city if it has a supply or if it receives goods from other cities.
+
+The objective of the Transshipment Problem is to minimize the total transportation cost, which is calculated by multiplying the cost of transporting goods between each pair of cities by the amount of goods transported and summing these costs. In other words, the goal is to find the least expensive way to satisfy the demand of all cities while not exceeding the supply of any city.

@@ -1,0 +1,12 @@
+name: Nimatron problem
+
+description: The Nimatron problem is a classic problem in the field of combinatorial game theory and constraint programming. It is a variation of the game of Nim, where two players take turns removing objects from distinct heaps. The goal is to find a move that leads to a safe position, which is a position where the bitwise XOR of the heap sizes is zero. In this problem, we are given an initial position with a specified number of heaps and objects in each heap, and we need to determine the minimum number of heaps that need to be changed to reach a safe position.
+
+variables: $n, x, d, s, m, w$ 
+These variables represent the following: $n$ is the number of objects in each heap before the move, $x$ is a binary representation of the position after the move, $d$ is a binary variable indicating whether a heap has been changed, $s$ is the number of objects taken from each heap, $m$ is the number of objects in each heap after the move, and $w$ is a dummy variable used for testing the winning position.
+
+constraints: $\forall i \in 1..heap: s_i \geq 0 \wedge m_i \geq 0$, $\forall i \in 1..col: w_i \geq 0$, $\forall i \in 1..heap: \sum_{j=1}^{col} 2^{j-1}x_{ij} = m_i$, $\forall j \in 1..col: \sum_{i=1}^{heap} x_{ij} = (k+1)w_j$, $\forall i \in 1..heap: n_i - s_i = m_i$, $\forall i \in 1..heap: s_i - n_{max}d_i \leq 0$ 
+These constraints ensure that the number of objects taken from each heap is non-negative, the number of objects in each heap after the move is non-negative, the binary representation of the position after the move is correct, the safe position condition is met, the positions before and after the move are consistent, and a heap is marked as changed if the number of objects taken from it is positive.
+
+objective: minimize $\sum_{i=1}^{heap} d_i$ 
+The objective is to minimize the number of heaps that need to be changed to reach a safe position. If the minimum value is zero, it means that the current position is already safe.

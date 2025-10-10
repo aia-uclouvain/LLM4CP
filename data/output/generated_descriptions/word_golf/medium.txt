@@ -1,0 +1,12 @@
+Word Golf
+The Word Golf problem is about transforming one word into another by changing one letter at a time, with each resulting word being a valid English word. 
+
+The main decision variables in this problem are `x` and `ladder_num`. `x` is a 2D array where `x[i, j]` represents the `j-th` letter of the `i-th` word in the ladder, and `ladder_num` is an array where `ladder_num[i]` represents the index of the word in the `words` array that corresponds to the `i-th` word in the ladder.
+
+The key constraints in this problem are: 
+- The first word in the ladder must be the start word, and the last word must be the end word.
+- Each word in the ladder must be a valid word from the given list of words.
+- Each word in the ladder can differ from the previous word by only one letter.
+- All words in the ladder must be different from each other.
+
+The objective of the Word Golf problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find a valid ladder of words that transforms the start word into the end word, given the constraints. However, in the context of the game, the objective is often to find the shortest ladder, i.e., to minimize the number of steps (or words) needed to transform the start word into the end word.

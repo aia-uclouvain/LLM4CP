@@ -1,0 +1,5 @@
+Portuguese Squares problem. 
+This problem is about decoding a statement where numbers are written with letters, and these letters represent digits. The statement says that four specific numbers, ZERO, UM, NOVE, and CEM, are perfect squares. 
+The main variables are the letters Z, E, R, O, U, M, N, V, and C, which represent the digits 0 through 9, with each letter being a different digit. 
+The basic restrictions are that each letter must be a unique digit, and no number can start with zero. Also, when these letters are replaced with their corresponding digits and formed into numbers, these numbers must be perfect squares. 
+The goal is to find the square root of the product of these four perfect squares, ZERO, UM, NOVE, and CEM, and calculate its numerical value.

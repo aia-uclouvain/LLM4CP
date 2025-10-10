@@ -1,5 +1,0 @@
-Water Bucket Problem
-The Water Bucket Problem is about dividing a certain amount of water into two or more buckets using a set of rules. 
-The main variables are the amount of water in each bucket at any given time and the number of transfers (or steps) needed to reach the goal.
-The basic restrictions are that each bucket has a limited capacity, and water can only be poured from one bucket to another if the source bucket has enough water and the target bucket has enough space. 
-The goal is to find the minimum number of transfers required to achieve a specific distribution of water among the buckets.

@@ -1,0 +1,5 @@
+De Bruijn Sequence Problem
+The problem is about creating a special sequence of numbers where no number is directly followed by the same number. 
+The main variables are x, binary, and bin_code. The variable x represents the sequence of numbers, binary is a way to represent these numbers in a different format, and bin_code is the first part of each number in the sequence.
+The basic restrictions are that all numbers in the sequence must be different, and no number can be directly followed by the same number. Also, the sequence must follow a specific pattern where the first part of each number is the same as the last part of the previous number.
+The goal of the problem is to create a sequence that satisfies all these restrictions and has a specific length, which is determined by the base and the number of bits used.

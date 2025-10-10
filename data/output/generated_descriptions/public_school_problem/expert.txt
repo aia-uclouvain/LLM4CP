@@ -1,0 +1,5 @@
+name: Public School Problem
+description: The Public School Problem is a classic problem in constraint programming that involves finding a set of integer values that satisfy a system of linear equations. The problem was first introduced by L.H. Clarke in 1954 and has since been used as a benchmark for testing constraint programming solvers.
+variables: $x_1, x_2, x_3, x_4, x_5, m$, where $x_1, x_2, x_3, x_4, x_5$ represent unknown integer values and $m$ is a variable that represents a lower bound for the $x_i$ values.
+constraints: $x_i \geq m, x_i \leq 1000, 2x_1 = x_5 - 4, x_4 + x_5 = x_2 + x_3 + 14, 2x_2 + 2x_5 = \sum_{i=1}^{5} x_i - 4, 32x_3 + 32x_4 = 13\sum_{i=1}^{5} x_i$, which are a set of linear equations and bounds that the decision variables must satisfy.
+objective: minimize $x_1$

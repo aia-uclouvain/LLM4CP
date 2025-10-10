@@ -1,0 +1,5 @@
+The problem is the All Different Modulo problem. 
+This problem is about enforcing a set of variables to have distinct remainders when divided by a certain number, which is a common constraint in various scheduling and resource allocation problems. 
+The main decision variables are x, an array of variables representing the values to be constrained, and m, a variable representing the divisor. 
+The key constraints are that the values in x must have distinct remainders when divided by m, and that the values in x must match a given set of values. 
+The problem's objective is to find an assignment of values to x that satisfies these constraints, specifically to demonstrate that the given values [25, 1, 14, 3] have distinct remainders when divided by 5.

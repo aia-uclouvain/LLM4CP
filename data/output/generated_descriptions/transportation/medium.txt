@@ -1,0 +1,8 @@
+Transportation Problem
+The problem is about finding the optimal way to transport goods from multiple sources to multiple destinations while minimizing the total transportation cost.
+The main decision variables are the quantities of goods to be transported from each source to each destination, represented by variables A1, A2, A3, B1, B2, B3, C1, C2, C3, D1, D2, and D3. These variables represent the amount of goods to be transported from each source (A, B, C, D) to each destination (1, 2, 3).
+The key constraints are: 
+- the total amount of goods available at each source is limited (e.g., A1 + A2 + A3 = 200), 
+- the total amount of goods that can be received at each destination is limited (e.g., A1 + B1 + C1 + D1 <= 500), 
+- the quantity of goods transported from each source to each destination must be non-negative.
+The objective of the problem is to minimize the total transportation cost, represented by the variable Obj, which is calculated as the sum of the products of the quantity of goods transported from each source to each destination and the corresponding transportation cost.

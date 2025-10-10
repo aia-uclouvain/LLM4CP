@@ -1,0 +1,12 @@
+name: Murder Puzzle
+description: The problem is a classic logic puzzle where a murder has occurred and there are five suspects, each with a different motive for the crime. The goal is to determine who the murderer is, what their motive was, and what evidence-object and activity are associated with each suspect. The puzzle provides various clues about the suspects, their motives, and the evidence-objects, as well as the activities that were witnessed around the time of the murder.
+
+variables: $pistol, umbrella, cigarette, diary, letter, argue, leave, rang, walk, murder, harassed, abandoned, sacked, promotion, hate$ 
+These variables represent the evidence-objects (pistol, umbrella, cigarette, diary, letter), the activities (argue, leave, rang, walk, murder), and the motives (harassed, abandoned, sacked, promotion, hate) that are associated with each suspect. Each variable is assigned a value from the set of suspects $\{Ablaze, Burner, Curious, Dulles, Evilson\}$.
+
+constraints: 
+$cigarette = Burner \land letter \neq Curious \land sacked \neq letter \land pistol \neq Curious \land hate \neq Curious \land hate = diary \land umbrella = leave \land walk = Dulles \land argue = promotion \land harassed = Ablaze \land letter \neq Ablaze \land murder \neq Ablaze \land all\_different(actions) \land all\_different(objects) \land all\_different(motives)$
+These constraints represent the given clues and rules of the puzzle. They specify the relationships between the suspects, motives, evidence-objects, and activities, as well as the restrictions on which suspects can be associated with which motives, evidence-objects, and activities. The $all\_different$ constraints ensure that each activity, evidence-object, and motive is assigned to a unique suspect.
+
+objective: satisfy
+The objective of the problem is to find a satisfying assignment of values to the variables that satisfies all the given constraints. In other words, the goal is to determine the values of the variables that make all the constraints true, without necessarily minimizing or maximizing any particular value.

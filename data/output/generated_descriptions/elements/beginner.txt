@@ -1,0 +1,6 @@
+The problem is called "Elements" in the Global Constraint Catalogue. 
+It's about checking if a list of items matches any entries in a given table. 
+The main variables are "items" (a list of numbers) and "element_table" (another list of numbers). 
+In simple terms, "items" is a list of values we want to find in the "element_table". 
+The basic restrictions are that each item must be found in the table, and the table has a specific set of numbers. 
+The goal is to find a solution where all items match some entry in the table, and to show the values of "items" and "element_table" that satisfy this condition.

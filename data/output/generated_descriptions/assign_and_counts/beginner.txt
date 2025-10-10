@@ -1,0 +1,11 @@
+Assign and Counts Problem
+The problem is about sorting items of different colors into bins, following certain rules. 
+The main variables are: 
+- bins: which bin each item is assigned to
+- colors: the color of each item
+- color: a specific color we are focusing on
+- nval: the maximum number of items of the focused color allowed in each bin
+The basic restrictions are: 
+- each item must be assigned to a bin
+- the number of items of the focused color in each bin cannot exceed the allowed limit
+The goal is to find a way to assign items to bins that satisfies these rules, specifically that the number of items of the focused color in each bin is less than or equal to the allowed limit.

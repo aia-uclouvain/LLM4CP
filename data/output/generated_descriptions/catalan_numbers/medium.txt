@@ -1,0 +1,11 @@
+Catalan Numbers Problem
+The problem is about calculating the Catalan numbers, a sequence of natural numbers that occur in various counting problems, often involving recursive structures.
+
+The main decision variables are the array `C` of variables, where `C[i]` represents the `i-th` Catalan number.
+
+The key constraints are:
+- Each Catalan number `C[i]` must be a non-negative integer.
+- The first Catalan number `C[0]` is 1.
+- Each subsequent Catalan number `C[n+1]` is the sum of the products of pairs of earlier Catalan numbers `C[j]` and `C[n-j]`, where `j` ranges from 0 to `n`.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to satisfy the constraints and calculate the Catalan numbers up to a given index `m`. The model uses the `satisfy` keyword, which means it aims to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. The `solve` statement uses an integer search strategy to find a solution for the array `C` that satisfies the given constraints.

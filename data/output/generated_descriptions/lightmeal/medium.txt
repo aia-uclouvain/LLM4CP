@@ -1,0 +1,5 @@
+The Lightmeal problem
+The Lightmeal problem is about finding combinations of appetizers, main meals, and desserts that have a total calorific value not exceeding a certain limit, in this case, 10 calories.
+The main decision variables are appetiser, main, and dessert, which represent the chosen dishes for each course. The variable sum_calories represents the total calorific value of the selected meal.
+The key constraints are that the appetiser must be either radishes or pasta, the main meal must be either a meat (beef or pork) or a fish (sole or tuna), and the dessert must be either fruit or icecream. Additionally, the total calorific value of the selected meal must not exceed the maximum allowed calories. The model also ensures that if a meat is chosen, no fish can be chosen, and vice versa.
+The objective of the problem is to find all possible combinations of meals that satisfy the given constraints, without necessarily minimizing or maximizing a specific value. The model is designed to find all feasible solutions, which are then printed out along with their total calorific value.

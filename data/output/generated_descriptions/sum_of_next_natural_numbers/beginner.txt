@@ -1,0 +1,5 @@
+The problem is called "Sum of next natural numbers". 
+It's about finding a sequence of increasing natural numbers where the difference between the last and first number is a certain value, and the sum of these numbers equals a specific formula. 
+The main variables are "n", which is the number of terms in the sequence, "x", which is the sequence of numbers, and "z", which is the sum of the numbers in the sequence. 
+The basic restrictions are that all numbers in the sequence must be different, they must be in increasing order, and the difference between the last and first number must be one less than the number of terms. 
+The goal is to find a sequence that satisfies these rules and has a sum equal to a specific formula, which is n times the sum of the squares of n plus 1, all divided by 2.

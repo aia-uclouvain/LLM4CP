@@ -1,0 +1,12 @@
+Steel Mill Slab Design Problem
+The Steel Mill Slab Design Problem is about assigning orders to slabs in a steel mill while minimizing the total loss of material. The problem involves dividing a set of orders of different sizes and colors into groups, where each group represents a slab. The goal is to minimize the total loss of material by assigning orders to slabs in a way that minimizes the difference between the size of the slab and the total size of the orders assigned to it.
+
+The main decision variables in this problem are the assignment of orders to slabs, represented by the variable `sb` in the Minizinc model, which indicates the slab used to produce each order. Other important variables are `ld`, which represents the load of each slab, and `ls`, which represents the loss of each slab.
+
+The key constraints in this problem are: 
+- each order is assigned to exactly one slab, 
+- the total size of the orders assigned to a slab does not exceed the maximum slab size, 
+- the number of distinct colors on each slab does not exceed a given limit (two colors in the provided models), 
+- the total size of all orders equals the total load of all slabs.
+
+The objective of the problem is to minimize the total loss of material, which is calculated as the sum of the differences between the size of each slab and the total size of the orders assigned to it. This is represented by the `minimize` statement in the Minizinc model, which minimizes the sum of the `ls` variables.

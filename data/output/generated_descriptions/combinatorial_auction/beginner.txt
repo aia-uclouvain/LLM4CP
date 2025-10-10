@@ -1,0 +1,11 @@
+Combinatorial Auction Problem
+The problem is about an auction where people can bid on groups of items, not just individual items. 
+The main variables are: 
+- packages: the groups of items that people are bidding on
+- bids: the amount of money that people are offering for each group of items
+- x: whether a bid is accepted or not
+- total: the total amount of money that the auctioneer gets from the accepted bids.
+The basic restrictions are: 
+- each item can only be sold once
+- if a bid is accepted, all the items in that bid must be sold to the bidder.
+The goal is to maximize the total amount of money that the auctioneer gets from the accepted bids, by choosing which bids to accept and which to reject.

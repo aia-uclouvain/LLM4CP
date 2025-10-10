@@ -1,0 +1,5 @@
+name: Fixed Points Problem
+description: The Fixed Points Problem is a classic problem in constraint programming where we are given a sequence of integers and we need to find a permutation of the sequence such that a certain number of elements are fixed points, i.e., they are equal to their index in the sequence.
+variables: $x = (x_1, x_2, ..., x_n), z$, where $x$ is an array of decision variables representing the permutation of the sequence, and $z$ is a decision variable representing the number of fixed points in the permutation. $x_i$ represents the value at index $i$ in the permutation, and $z$ represents the total number of fixed points.
+constraints: $z = \sum_{i=1}^{n} (x_i = i), z = 4$, where the first constraint defines the number of fixed points in the permutation, and the second constraint specifies that the number of fixed points should be equal to 4.
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables $x$ and $z$ that satisfy all the constraints, there is no explicit objective function to minimize or maximize.

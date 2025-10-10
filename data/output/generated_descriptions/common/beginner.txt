@@ -1,0 +1,11 @@
+The problem is called "Common" and "Used By". 
+It's about comparing two lists of numbers to see how many numbers they have in common. 
+The main variables are x and y, which are lists of numbers, and a and b, which count how many numbers are shared between the lists. 
+The basic rules are that each number in the lists must be between 1 and 9, and the counts a and b must be correct. 
+The goal is to find values for x and y that satisfy these rules, and to calculate the correct counts a and b. 
+
+In simpler terms, imagine you have two boxes of colored balls, and you want to know how many balls of each color are in both boxes. The problem is trying to figure out how many balls are shared between the boxes, and how many balls in one box are also in the other box. 
+
+The "Used By" part of the problem is a bit different - it's checking if all the balls in one box are also in the other box. 
+
+The problem is trying to solve this puzzle by using special rules, like the "common" and "used_by" rules, to find the correct answers for x, y, a, and b.

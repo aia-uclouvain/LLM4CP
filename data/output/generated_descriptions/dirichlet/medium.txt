@@ -1,0 +1,5 @@
+Triangle problem
+The problem is about finding the steady-state temperature distribution in a 2D grid, where the temperature at each point is the average of its four neighboring points.
+The main decision variables are the `temp` array, which represents the temperature at each point in the grid.
+The key constraints are that the temperature at each internal point is the average of the temperatures at its four neighboring points (up, down, left, and right). The temperatures at the boundary points are fixed.
+The problem's objective is to find a solution that satisfies all the constraints, which means finding the steady-state temperature distribution in the grid. The model uses the `solve satisfy` statement, which means it aims to find a solution that satisfies all the constraints, without optimizing any specific objective function. The temperature at the center point of the grid is also highlighted in the output.

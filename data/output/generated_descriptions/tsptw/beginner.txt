@@ -1,0 +1,17 @@
+The Travelling Salesman Problem with Time Windows (TSPTW)
+The problem is about a salesman who needs to visit a number of cities and return to the starting point, but with a twist: each city has a specific time window during which it must be visited. 
+
+The main variables are: 
+- x: the order in which the cities are visited 
+- d: the distance between each pair of cities 
+- path: the actual path taken by the salesman 
+- cum_times: the cumulative time taken to visit each city 
+- wait_time: the time spent waiting before visiting each city 
+
+The basic restrictions or rules of the problem are: 
+- The salesman must visit each city exactly once 
+- The salesman must return to the starting point 
+- Each city must be visited within its specified time window 
+- The salesman cannot visit a city before the start of its time window or after the end of its time window 
+
+The goal of the problem is to find the shortest possible tour that visits all cities within their time windows, minimizing either the total distance traveled or the total time taken, including any waiting time.

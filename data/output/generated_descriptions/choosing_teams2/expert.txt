@@ -1,0 +1,5 @@
+name: Team Formation Problem
+description: The problem is to divide a group of people into teams of equal size, where the order of the teams and the order of the people within each team do not matter. The goal is to find all possible ways to form these teams.
+variables: $x = [x_1, x_2, ..., x_{m*n}]$, where $x_i$ is a decision variable representing the team assignment for person $i$, and $x_i \in \{1, 2, ..., m\}$. These variables determine which team each person is assigned to.
+constraints: $\forall i \in \{1, 2, ..., m\}: |\{j \in \{1, 2, ..., m*n\} | x_j = i\}| = n$ and $value\_precede\_chain([1, 2, ..., m], x)$. The first constraint ensures that each team has exactly $n$ members, and the second constraint is a symmetry breaking constraint that ensures the first occurrence of each team number is in order.
+objective: The objective of the problem is to satisfy the constraints, i.e., to find all possible team formations that meet the given conditions. The problem does not have a specific objective function to minimize or maximize, but rather aims to enumerate all feasible solutions.

@@ -1,0 +1,8 @@
+Cutting Stock Problem
+The Cutting Stock Problem is about finding the most efficient way to cut raw materials into smaller pieces to meet customer demand while minimizing waste and the total number of cuts.
+
+The main decision variables in this problem are the values of `x[i]`, which represent the number of 17-ft boards cut according to each of the six possible combinations.
+
+The key constraints are that each cut must result in a non-negative number of boards, and the total number of boards of each size (3-ft, 5-ft, and 9-ft) produced must be greater than or equal to the customer demand. 
+
+The objective of the problem is to minimize the total number of cuts, which is represented by the variable `total_sum`. This means finding the smallest number of 17-ft boards that need to be cut to meet the customer demand for 3-ft, 5-ft, and 9-ft boards.

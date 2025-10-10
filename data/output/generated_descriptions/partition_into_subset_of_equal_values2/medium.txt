@@ -1,0 +1,28 @@
+Partition Problem
+The Partition Problem is a classic problem in computer science and operations research that involves dividing a set of numbers into a specified number of subsets, such that the sum of the numbers in each subset is equal.
+Main Decision Variables
+The main decision variable in this problem is `x`, which is an array of variables where `x[i]` represents the subset to which the `i-th` number in the set `s` belongs. The variable `x` is defined as `array[1..n] of var 1..num_subsets: x;`, where `n` is the number of elements in the set `s` and `num_subsets` is the number of subsets.
+Key Constraints
+The key constraints in this problem are:
+- The sum of the numbers in each subset must be equal.
+- The sum of the numbers in the set `s` must be divisible by the number of subsets `num_subsets`.
+The first constraint is implemented using the following code:
+```
+constraint
+   forall(p in 1..num_subsets-1) (
+      sum([s[i]*bool2int(x[i] == p) | i in 1..n]) == 
+      sum([s[i]*bool2int(x[i] == p+1) | i in 1..n])
+   )
+;
+```
+This constraint ensures that the sum of the numbers in each subset is equal by comparing the sum of the numbers in each pair of subsets.
+The second constraint is implemented using the following code:
+```
+constraint
+  assert(sum(s) mod num_subsets == 0,
+         "The sum of s should be divisible by num_subsets")
+;
+```
+This constraint ensures that the sum of the numbers in the set `s` is divisible by the number of subsets `num_subsets`.
+Problem's Objective
+The objective of the Partition Problem is to find a partition of the set `s` into `num_subsets` subsets, such that the sum of the numbers in each subset is equal. The problem does not have a specific objective function to minimize or maximize, but rather a set of constraints that must be satisfied. The goal is to find a feasible solution that satisfies all the constraints.

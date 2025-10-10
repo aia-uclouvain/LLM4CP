@@ -1,0 +1,18 @@
+**State Name Puzzle**
+The State Name Puzzle is a classic constraint programming problem. 
+It involves finding two pairs of U.S. state names such that when the letters of the two states in each pair are combined and rearranged, they form the names of two different U.S. states.
+
+**Main Decision Variables**
+The main decision variables in this problem are:
+- `x1` and `x2`: two arrays of variables representing the indices of the two pairs of U.S. states.
+- `gcc`: an array of variables representing the global cardinality count of each letter in the combined state names.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- Each pair of state names must be distinct from the other pair.
+- The combined letters of each pair of state names must have the same distribution of letters.
+- No two state names in the solution can be the same.
+- The solution must satisfy the symmetry breaking constraints to ensure that the pairs of state names are in increasing order and that the first state in the first pair comes before the first state in the second pair.
+
+**Objective**
+The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The goal is to identify the pairs of U.S. state names that meet the specified conditions.

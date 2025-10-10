@@ -1,0 +1,8 @@
+Autoref problem
+The Autoref problem is about finding a non-empty finite series of integers that satisfies two conditions: each integer from 0 to n appears a certain number of times in the series, and the last integer in the series is a specified value m.
+The main decision variables are the elements of the array s, where s[i] represents the value of the i-th integer in the series.
+The key constraints are: 
+- each integer from 0 to n appears a certain number of times in the series, 
+- the number of occurrences of each integer i is equal to the value of the i-th integer in the series, 
+- the last integer in the series is equal to the specified value m.
+The objective of the Autoref problem is to find a series that satisfies these constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a feasible solution that meets all the conditions, and there may be multiple such solutions.

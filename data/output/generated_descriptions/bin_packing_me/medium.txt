@@ -1,0 +1,15 @@
+Bin Packing Problem
+The Bin Packing Problem is a classic problem in computer science and operations research that involves packing a set of items of different sizes into the smallest possible number of bins, each with a limited capacity.
+
+The main decision variables in this problem are:
+- `bins`: a 2D array that represents whether an item is packed in a particular bin or not.
+- `bin_loads`: an array that calculates the total load in each bin.
+- `num_loaded_bins`: a variable that represents the total number of bins used.
+
+The key constraints in this problem are:
+- Each item can only be packed in one bin.
+- The total load in each bin cannot exceed the bin's capacity.
+- The total load of all items must be equal to the sum of the loads of all bins.
+- The number of loaded bins is calculated by counting the number of bins with a load greater than 0.
+
+The objective of the Bin Packing Problem is to minimize the number of loaded bins, which means finding the smallest possible number of bins that can accommodate all the items without exceeding the capacity of any bin.

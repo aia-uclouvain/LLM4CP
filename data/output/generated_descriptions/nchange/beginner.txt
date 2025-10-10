@@ -1,0 +1,5 @@
+NCHANGE problem
+The problem is about counting the number of times a sequence of numbers changes from one number to another. 
+The main variables are: x, which is a list of numbers, c_pos, which is a list that shows where the changes happen, and num_changes, which is the total number of changes.
+The basic restrictions are: each number in the list x must be between 1 and the total number of items in the list, and the list c_pos must correctly show where the changes happen.
+The goal of the problem is to find the correct number of changes in the list x, which is stored in the variable num_changes.

@@ -1,0 +1,11 @@
+Killer Sudoku
+The problem is about filling a 9x9 grid with numbers from 1 to 9, following certain rules that combine elements of Sudoku and Kakuro puzzles.
+
+The main decision variables are the values of the grid cells, represented by the 2D array `x`, where `x[i, j]` is the value in the cell at row `i` and column `j`. These variables represent the numbers to be filled in the grid.
+
+The key constraints are:
+- Each row, column, and 3x3 sub-grid (nonet) must contain each number from 1 to 9 exactly once.
+- The sum of the numbers in each "cage" (a group of cells marked by a border) must match the given sum for that cage.
+- No number can appear more than once in a cage.
+
+The objective of the problem is to find a solution that satisfies all the constraints, which means filling the grid with numbers from 1 to 9 in a way that meets the conditions. The problem does not have a specific objective function to minimize or maximize; instead, it aims to find a feasible solution that fulfills all the given constraints.

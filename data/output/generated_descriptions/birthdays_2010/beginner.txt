@@ -1,0 +1,5 @@
+Birthdays puzzle
+The problem is about two brothers, Anders and the narrator, and their ages in a specific year. 
+The main variables are the year each brother was born, their current ages, and the current year, which represent the birth years and ages of the two brothers and the year the problem is set in. 
+The basic restrictions are that Anders is four years older than the narrator, and in the year the problem is set, the narrator's age will be the same as the year Anders was born, and Anders' age will be the same as the year the narrator was born. 
+The goal of the problem is to find the current ages of the two brothers in the year 2010.

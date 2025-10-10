@@ -1,0 +1,14 @@
+Fill-in the squares problem
+The Fill-in the squares problem is a classic constraint programming problem where the goal is to fill in a 5x5 grid with numbers from 1 to 25, such that each number is used only once, and a set of constraints are satisfied.
+
+The main decision variables in this problem are the values assigned to each cell in the grid, represented by the arrays a, b, c, d, and e, where each array corresponds to a row in the grid. The variables a_sum, b_sum, c_sum, d_sum, and e_sum represent the sum of the values in each row.
+
+The key constraints in this problem can be described as follows: 
+- Each number from 1 to 25 is used only once.
+- The sum of each column is odd.
+- The sum of each row, except for row C, is even.
+- The sum of row A is not greater than the sum of any other row.
+- The sum of the diagonal from A1 to E5 is greater than the sum of the diagonal from E1 to A5.
+- Other constraints include relationships between specific cells, such as primality, square numbers, consecutive numbers, and modular arithmetic.
+
+The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific objective function. The problem is a satisfaction problem, where the goal is to find an assignment of values to the variables that satisfies all the constraints.

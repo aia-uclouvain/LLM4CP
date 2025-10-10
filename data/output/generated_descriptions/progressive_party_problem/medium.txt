@@ -1,0 +1,25 @@
+**Progressive Party Problem**
+
+The Progressive Party Problem is a classic constraint programming problem that involves organizing a series of parties where guest boats visit host boats. The problem requires finding a schedule that satisfies various constraints, including host boat capacities, guest boat crews, and social constraints.
+
+**Main Decision Variables**
+
+The main decision variables in this problem are:
+
+* `hosts`: a set of boats that will act as hosts for the parties
+* `sched`: a schedule that assigns each guest boat to a host boat for each time period
+
+These variables represent the core decisions that need to be made to solve the problem.
+
+**Key Constraints**
+
+The key constraints in the Progressive Party Problem can be described in plain language as follows:
+
+* Each host boat must have sufficient capacity to accommodate the guest boats assigned to it.
+* Each guest boat can only visit a host boat once.
+* Two guest boats cannot meet at the same host boat more than once.
+* The schedule must be consistent, meaning that the same host boats are used throughout the schedule.
+
+**Objective**
+
+The objective of the Progressive Party Problem is to minimize the number of host boats required to accommodate all the guest boats while satisfying the constraints. In other words, the goal is to find the smallest possible set of host boats that can accommodate all the guest boats and satisfy the social constraints.

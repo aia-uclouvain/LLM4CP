@@ -1,0 +1,5 @@
+Nonogram Problem
+The problem is about solving a puzzle called a Nonogram, which is like a picture made of blocks. 
+The main variables are the blocks in the picture, which can be either filled or empty, and the rules that describe how the blocks should be arranged.
+The basic restrictions are that the blocks must be arranged in a specific way, following certain patterns, and the goal is to find the correct arrangement of blocks that satisfies all the rules.
+The goal is to create a complete picture by filling in the correct blocks, using the given patterns as a guide, and the solution is a complete and correct picture made of blocks.

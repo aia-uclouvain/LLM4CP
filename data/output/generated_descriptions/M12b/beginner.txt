@@ -1,0 +1,5 @@
+M12 Problem
+The M12 problem is about solving a puzzle where you have a set of 12 items that need to be rearranged into their original order. 
+The main variables are the initial arrangement of the items, the operations performed on the items (such as shuffling or reversing), and the number of steps it takes to get the items back in order.
+The basic restrictions are that each operation can only be performed one at a time, and each item can only be moved one position at a time. 
+The goal of the problem is to find the shortest sequence of operations that will return the items to their original order.

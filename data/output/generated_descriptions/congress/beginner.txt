@@ -1,0 +1,5 @@
+Congress puzzle
+The problem is about figuring out when and who, out of five researchers from different countries, will give their talks on specific days. 
+The main variables are the days when each researcher gives their talk and the nationality of each researcher. In simple terms, these variables mean the schedule of talks and who is from which country.
+The basic restrictions are: each researcher talks on a different day, each nationality is represented exactly once, and there are specific rules about who talks when based on their nationality, such as Eric talking before the 10th and Arabinda talking on the 9th.
+The goal of the problem is to find a schedule that satisfies all the given rules and restrictions, essentially solving the puzzle by determining the day and nationality for every researcher.

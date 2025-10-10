@@ -1,0 +1,5 @@
+Sudoku Problem
+The problem is about solving a Sudoku puzzle, which is a game where you have to fill in numbers on a grid. 
+The main variables are the numbers that can be placed in each cell of the grid, which can be any number from 1 to the size of the grid.
+The basic restrictions are that each row, column, and smaller square (called a region) can only have each number once. 
+The goal of the problem is to find a way to fill in all the numbers so that all the rules are followed, which means finding a solution that satisfies all the restrictions.

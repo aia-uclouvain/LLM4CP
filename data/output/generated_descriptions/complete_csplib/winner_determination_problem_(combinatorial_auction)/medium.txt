@@ -1,8 +1,0 @@
-The problem is known as the Weighted Set Packing Problem or the Auction Problem. 
-It is about selecting a subset of bids from a set of given bids, where each bid is associated with a set of items and a value, such that the total value of the selected bids is maximized and no two selected bids have any item in common.
-
-The main decision variables are the `x` variables, which represent whether a bid is selected (1) or not (0). 
-
-The key constraints are that for each item, at most one bid that contains this item can be selected. This ensures that there is no overlap between the selected bids.
-
-The objective of the problem is to maximize the total value of the selected bids. This is achieved by multiplying the `x` variables with the corresponding bid values and summing them up. The goal is to find the optimal subset of bids that yields the highest total value while satisfying the constraints.

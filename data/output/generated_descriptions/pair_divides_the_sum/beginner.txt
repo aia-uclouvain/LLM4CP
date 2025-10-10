@@ -1,0 +1,5 @@
+Pairs Divides the Sum Puzzle
+The problem is about finding a set of distinct positive integers where the difference between any two numbers in the set divides their sum.
+The main variables are x, which represents the set of distinct positive integers, and z, which is the sum of the integers in x.
+The basic restrictions are that all numbers in x must be different, they must be in increasing order, and their sum (z) must be divisible by the number of integers (n). Also, for any two numbers in x, their difference must divide their sum.
+The goal is to find sets of distinct positive integers that satisfy these conditions, with the option to find multiple sets.

@@ -1,0 +1,5 @@
+Dudeney's Queen Placement Problem
+The problem is about placing eight queens on an 8x8 chessboard such that the number of squares attacked by the queens is minimized, with certain constraints on the placement of the queens.
+The main decision variables are x[i,j] and a[i,j], where x[i,j] represents whether the square at position (i,j) is occupied by a queen (1) or not (0), and a[i,j] represents whether the square at position (i,j) is attacked by any queen (1) or not (0).
+The key constraints are: all eight queens must be used, five of the original queens must remain untouched, and a square is considered attacked if it is in the same row, column, or diagonal as a queen. These constraints are enforced through a set of logical rules that ensure the queens are placed correctly and the attacked squares are accurately identified.
+The objective of the problem is to minimize the total number of squares attacked by the queens, which is represented by the variable suma. This means that the solution aims to find a placement of the queens that results in the fewest number of squares being under attack, while still satisfying the given constraints.

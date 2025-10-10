@@ -1,0 +1,8 @@
+The Inter-Distance Problem
+The Inter-Distance problem is about finding a set of values for a given number of variables such that the absolute difference between any two variables is greater than or equal to a certain minimum distance.
+
+The main decision variables in this problem are `x`, an array of variables representing the values to be assigned, and `p`, a variable representing the minimum distance between any two variables. The `x` variables represent the actual values that will be assigned, while `p` represents the minimum gap between these values.
+
+The key constraints in this problem are that the values assigned to the variables must be increasing, and the absolute difference between any two variables must be greater than or equal to the minimum distance `p`. In other words, for any two variables `x[i]` and `x[j]`, the constraint `abs(x[i]-x[j]) >= p` must hold. Additionally, `p` must be greater than or equal to 2.
+
+The objective of the Inter-Distance problem is to maximize the minimum distance `p` while still satisfying the constraints. This means finding the largest possible value of `p` such that all variables can be assigned values that meet the minimum distance requirement. The problem is solved by finding the maximum value of `p` that allows all variables to be assigned increasing values with a minimum distance of at least `p` between any two variables.

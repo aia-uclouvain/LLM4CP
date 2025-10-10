@@ -1,0 +1,16 @@
+name: Benjamin Franklin's 8x8 Magic Square
+
+description: The problem is to find an 8x8 magic square, which is a square grid filled with distinct numbers from 1 to 64, such that each row, column, and certain diagonals sum to the same constant. The problem is a specific instance of a magic square problem, with additional constraints on the diagonals.
+
+variables: $a_{ij}$ for $i, j = 1, \ldots, 8$, where $a_{ij}$ represents the number in the $i$th row and $j$th column of the square. These variables are decision variables that need to be assigned a value from 1 to 64.
+
+constraints: 
+$\forall i \in \{1, \ldots, 8\}: \sum_{j=1}^{8} a_{ij} = 260$,
+$\forall j \in \{1, \ldots, 8\}: \sum_{i=1}^{8} a_{ij} = 260$,
+$\forall i \in \{1, \ldots, 8\}, j \in \{1, \ldots, 8\}: a_{ij} \neq a_{i'j'}$ for $i \neq i'$ or $j \neq j'$,
+$\sum_{i=1}^{4} a_{i1} = \sum_{i=1}^{4} a_{i2} = \ldots = \sum_{i=1}^{4} a_{i8} = 130$,
+$\sum_{j=1}^{4} a_{1j} = \sum_{j=1}^{4} a_{2j} = \ldots = \sum_{j=1}^{4} a_{8j} = 130$,
+and several constraints on the diagonals. 
+These constraints ensure that the square is filled with distinct numbers, each row and column sums to the same constant, and the diagonals satisfy certain conditions.
+
+objective: The objective of the problem is to find a feasible solution, i.e., an assignment of values to the decision variables that satisfies all the constraints. There is no explicit objective function to minimize or maximize.

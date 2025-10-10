@@ -1,0 +1,13 @@
+name: Round Table Problem
+description: The problem involves 5 people of different nationalities (French, English, Polish, Italian, and Turkish) sitting at a round table. Each person knows only one language other than their native language. The seating arrangement is such that each person can communicate with their two neighbors, one in their native language and the other in their foreign language. The goal is to determine the foreign language known by the Turkish person.
+variables: $native = [n_1, n_2, ..., n_5], foreign = [f_1, f_2, ..., f_5], turk\_foreign$, where $n_i$ and $f_i$ represent the native and foreign languages of person $i$, and $turk\_foreign$ represents the foreign language known by the Turkish person. These variables represent the language assignments for each person and the specific foreign language known by the Turkish person.
+constraints: $\begin{aligned} 
+&alldifferent(native) \\
+&\forall i \in \{0, 1, ..., 4\}: native[1+(i \mod 5)] = foreign[1+(i+1 \mod 5)] \\
+&p(english, italian) \\
+&p(polish, french) \\
+&\neg p(english, turkish) \\
+&p(turkish, turk\_foreign) \\
+&native[french] = french 
+\end{aligned}$, where these constraints ensure that each person has a unique native language, the seating arrangement allows for communication between neighbors, and the specific language knowledge constraints for each person are satisfied.
+objective: satisfy, which means the goal is to find a feasible solution that satisfies all the constraints, rather than optimizing a specific objective function.

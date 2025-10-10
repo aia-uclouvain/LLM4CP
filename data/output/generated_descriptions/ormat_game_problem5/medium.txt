@@ -1,0 +1,5 @@
+The Ormat Game problem.
+The Ormat Game is a classic constraint programming problem that involves finding a solution to a puzzle where a set of rules must be satisfied. 
+The main decision variables in the Ormat Game problem are the values assigned to each cell in the grid, which represent whether a cell is "on" (1) or "off" (0).
+The key constraints in the Ormat Game problem are that each row and column must have a specific number of "on" cells, and that certain cells are already fixed to be either "on" or "off". Additionally, there are rules about which cells can be "on" or "off" at the same time, based on their position in the grid.
+The objective of the Ormat Game problem is to find a solution that satisfies all the constraints, which means finding a configuration of "on" and "off" cells that meets all the rules. The problem is a satisfaction problem, meaning that the goal is to find a feasible solution, rather than to minimize or maximize a specific objective function.

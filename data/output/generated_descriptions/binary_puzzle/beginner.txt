@@ -1,0 +1,5 @@
+Binary Puzzle
+The problem is about filling a 6x6 grid with 1s and 0s in a specific way. 
+The main variables are the cells in the grid, which can be either 1 or 0.
+The basic restrictions are that no three cells in a row, column, or diagonally can have the same value, and each row and column must have an equal number of 1s and 0s. 
+The goal is to find a way to fill the grid that satisfies these rules, with no specific objective to minimize or maximize, just to find a valid solution.

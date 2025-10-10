@@ -1,0 +1,8 @@
+Team Formation Problem
+The Team Formation Problem is about dividing a group of people into teams of equal size, where the order of people within each team and the order of teams do not matter.
+The main decision variables are represented by a 2D array `x`, where `x[i, j]` represents the person assigned to the `j-th` position in the `i-th` team. The value of `x[i, j]` ranges from 1 to `p`, where `p` is the total number of people.
+The key constraints are: 
+- all people must be assigned to a team, and no person can be in more than one team, which is ensured by the `all_different` constraint.
+- the order of people within each team does not matter, which is addressed by the `increasing` constraint that ensures people in each team are in ascending order.
+- the order of teams does not matter, which is handled by the `lex2` constraint that ensures teams are in lexicographic order.
+The objective of the problem is not to minimize or maximize a specific value, but rather to find all possible ways to form teams of equal size from a given group of people, while satisfying the given constraints. The model uses the `solve satisfy` statement to find all feasible solutions.

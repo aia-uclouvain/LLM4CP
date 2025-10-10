@@ -1,0 +1,14 @@
+Name of the problem: NPair Problem
+
+The problem is about counting the number of unique pairs of values. Imagine you have a list of pairs of numbers, like (3,1), (1,5), (3,1), etc. The goal is to find out how many unique pairs are in this list.
+
+Main variables: 
+- npairs: the number of unique pairs
+- pairs: a list of pairs of numbers
+
+Basic restrictions or rules: 
+- Each pair of numbers must be compared to every other pair to check if they are the same.
+- If a pair is the same as another pair, it is not counted as a unique pair.
+
+Goal of the problem: 
+- The goal is to find the number of unique pairs (npairs) in the given list of pairs, which should be equal to 2 in this case. The model is trying to satisfy the condition that there are exactly 2 unique pairs in the list.

@@ -1,0 +1,11 @@
+Binary Tree Problem
+The Binary Tree problem is a classic constraint programming problem that involves covering a directed graph with a specified number of binary trees. 
+
+The main decision variables in this problem are the `tree` array, which represents the successors of each node in the graph, and the `num_trees` variable, which represents the number of binary trees to be formed. The `parents` array is a auxiliary decision variable that represents the parent matrix, where each row represents a step towards the root of the tree.
+
+The key constraints in this problem are: 
+- Each node in the graph must have a successor, which is represented by the `tree` array.
+- The `parents` array must be constructed such that each row represents a step towards the root of the tree, where the first row is the `tree` array and each subsequent row is constructed by following the successors of the previous row.
+- The number of distinct roots in the `parents` array must be equal to the `num_trees` variable, which represents the number of binary trees to be formed.
+
+The objective of this problem is not explicitly stated, but it can be inferred that the goal is to find a valid configuration of the `tree` array and the `num_trees` variable that satisfies the constraints. In other words, the problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than an optimization problem, where the goal is to minimize or maximize a specific objective function.

@@ -1,0 +1,5 @@
+name: Chebyshev Center of a Polygon
+description: The problem is to find the Chebyshev center of a given polygon, which is the center of the largest circle that can be inscribed within the polygon. The Chebyshev center is the point that is farthest from the edges of the polygon.
+variables: $r, x, y$ - These are the decision variables where $r$ represents the radius of the largest inscribed circle, and $x$ and $y$ represent the coordinates of the center of the circle.
+constraints: $r \geq 0, x \geq 0, y \geq 0, r\sqrt{dx^2 + dy^2} \leq dy(x - x1) - dx(y - y1) \forall i$ - These constraints ensure that the radius is non-negative, the center coordinates are non-negative, and the distance from the center to each edge of the polygon is less than or equal to the radius times the length of the edge.
+objective: Maximize $r$ - The objective is to maximize the radius of the inscribed circle, which means finding the largest possible circle that can fit inside the polygon.

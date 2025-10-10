@@ -1,0 +1,5 @@
+The Gunport problem. 
+It's about placing dominoes on a grid so that every cell is either covered by a domino or has a neighboring cell that is covered. 
+The main variables are x, which shows if a domino is placed at a certain position on the grid, and d, which shows if a domino is used. 
+The basic rules are that each domino must be placed so that it covers two cells, each cell can only be covered by one domino, and no two adjacent cells can be empty. 
+The goal is to minimize the number of dominoes used to cover the grid.

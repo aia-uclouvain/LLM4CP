@@ -1,0 +1,9 @@
+Movement Puzzle
+The movement puzzle is a classic constraint programming problem where the goal is to find a path from a given start position to a target position (represented by 0) in an array, with each step limited by the value at the current position.
+The main decision variables are the array `x`, where `x[i]` represents the position reached after `i` steps, and the variable `c`, which represents the minimum number of steps required to reach the target position.
+The key constraints are: 
+- `alldifferent_except_0(x)` ensures that each position is visited at most once, except for the position 0, which can be visited multiple times.
+- `maximum(x[n], x)` ensures that the last step reaches the target position.
+- The main loop constraint ensures that for each step `i`, there exists a previous step `i-1` such that the distance between the two steps is equal to the value at the previous step.
+- The final constraint ensures that there is a step that connects to the target position.
+The objective of the problem is to minimize `c`, the minimum number of steps required to reach the target position.

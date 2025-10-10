@@ -1,0 +1,5 @@
+The N-Change Problem
+The N-Change problem is about finding the number of times a sequence of variables changes value. 
+The main decision variables are x, an array of integers representing the sequence of values, c_pos, an array of binary variables indicating whether a change occurs between consecutive variables, and num_changes, an integer representing the total number of changes.
+The key constraints are that each variable in x must be within a certain range, the c_pos array must accurately reflect the changes between consecutive variables in x, and the num_changes variable must be equal to the total number of changes in the x sequence.
+The objective of the N-Change problem is not to minimize or maximize a specific value, but rather to satisfy the given constraints, specifically to determine the number of changes in the sequence x.

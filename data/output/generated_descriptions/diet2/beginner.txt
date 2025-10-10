@@ -1,0 +1,5 @@
+Stigler's Nutrition Model 
+This problem is about finding the cheapest way to buy food that meets a person's daily nutritional needs. 
+The main variables are the amount of each food to buy, and the total cost of the food. 
+The basic restrictions are that the food must provide enough of each nutrient, such as calories, protein, and vitamins, and that the amount of each food bought must be non-negative. 
+The goal is to minimize the total cost of the food, while still meeting the nutritional requirements.

@@ -1,0 +1,5 @@
+Kordemsky's Palindrome problem
+The problem is about finding a 10-digit number with distinct digits, such that when divided by 9, the quotient is a palindrome, meaning it reads the same from left to right and right to left.
+The main decision variables are `xa` and `ya`, which represent the digits of the 10-digit number `x` and its quotient `y` when divided by 9, respectively. `x` and `y` are the actual numbers formed by the digits in `xa` and `ya`.
+The key constraints are that all digits in `xa` must be distinct, the number `y` must be the quotient of `x` divided by 9, and `y` must be a palindrome, meaning its digits are symmetric. 
+The problem's objective is to find a solution that satisfies all these constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a 10-digit number with distinct digits that meets the palindrome condition when divided by 9.

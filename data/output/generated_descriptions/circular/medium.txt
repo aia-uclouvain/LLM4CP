@@ -1,0 +1,5 @@
+Circular Ordering Problem
+The problem is about ordering a sequence of numbers in a circular manner, ensuring that each number is one more than the previous number, wrapping around to the start when reaching the maximum value.
+The main decision variable is `x`, an array of length `m` where each element represents a number in the sequence, ranging from 1 to `n`.
+The key constraints are that each element in the sequence must be one more than the previous element, modulo `n`, and the last element must wrap around to the first element, also modulo `n`. In plain language, this means that if the current number is the maximum value, the next number should be 1, and if we reach the end of the sequence, we should wrap around to the start.
+The objective of the problem is to find a satisfying assignment of values to the sequence `x` that meets the circular ordering constraint, rather than minimizing or maximizing a specific value. The `solve satisfy` statement in the model indicates that the goal is to find a feasible solution that satisfies all the constraints.

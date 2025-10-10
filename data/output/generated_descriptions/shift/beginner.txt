@@ -1,0 +1,5 @@
+Shift Problem
+The problem is about scheduling tasks into shifts, where each task has a start and end time. 
+The main variables are: tasks (which have a start and end time), shifts (which identify the shift for each task), min_break (the minimum time between tasks in the same shift), and max_range (the maximum duration of a shift).
+The basic restrictions are: tasks must start before they end, the time between tasks in the same shift must be less than or equal to min_break, and the duration of a shift must be less than or equal to max_range. Two tasks are in the same shift if one starts after the other ends with a distance less than or equal to min_break, or if they overlap.
+The goal of the problem is to find a schedule that satisfies these restrictions, with the given min_break and max_range.

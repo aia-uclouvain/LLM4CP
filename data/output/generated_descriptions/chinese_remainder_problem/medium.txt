@@ -1,0 +1,8 @@
+Chinese Remainder Problem
+The Chinese Remainder Problem is about finding the smallest number that satisfies multiple modular equations, where each equation specifies a remainder when the number is divided by a given divisor.
+
+The main decision variable in this problem is `x`, which represents the number to be found. The other key variables are `divs` and `rems`, which are arrays of divisors and corresponding remainders, respectively.
+
+The key constraints in this problem are that the number `x` must leave the specified remainder when divided by each divisor. In other words, for each divisor `divs[i]` and remainder `rems[i]`, the constraint is that `x` modulo `divs[i]` must be equal to `rems[i]`.
+
+The objective of the Chinese Remainder Problem is to minimize the value of `x`, i.e., to find the smallest number that satisfies all the modular equations. This is achieved by using the `solve minimize x` statement in the MiniZinc model, which searches for the smallest possible value of `x` that satisfies the constraints.

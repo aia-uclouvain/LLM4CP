@@ -1,0 +1,5 @@
+The Square Root of Wonderful problem. 
+This problem is about finding a set of unique digits (1-9) to replace the letters in the word "WONDERFUL" such that the resulting number is a perfect square, and the square root of this number can be represented by the letters "OODDF" using the same digit substitution.
+The main decision variables are W, O, N, D, E, R, F, U, and L, which represent the digits to be substituted for each letter in the word "WONDERFUL". 
+The key constraints are that each letter must be replaced by a unique digit, the resulting number "WONDERFUL" must be greater than 0, and the number represented by "OODDF" must be the square root of "WONDERFUL". Additionally, the digits for W and O must be greater than or equal to 1.
+The objective of this problem is to find a satisfying assignment of digits to letters, rather than minimizing or maximizing a specific value. The goal is to determine the unique set of digits that makes "WONDERFUL" a perfect square and "OODDF" its square root.

@@ -1,0 +1,8 @@
+Curve Fitting Problem
+The Curve Fitting problem is about finding the best linear relationship between two variables, x and y, given a set of data points. 
+
+The main decision variables are a and b, which represent the intercept and slope of the linear equation y = ax + b, respectively. Additionally, there are variables u and v, which are used to measure the difference between the observed y values and the predicted y values based on the linear equation.
+
+The key constraints are that the predicted y values, based on the linear equation, should be as close as possible to the observed y values. This is achieved by minimizing the sum of the absolute differences between the observed and predicted y values, which is represented by the variable z. The constraints also ensure that the coefficients a and b are non-negative and that the differences u and v are also non-negative.
+
+The objective of the problem is to minimize the sum of the absolute differences between the observed and predicted y values, which is represented by the variable z. In other words, the goal is to find the linear equation that best fits the given data points, by minimizing the total error between the observed and predicted y values.

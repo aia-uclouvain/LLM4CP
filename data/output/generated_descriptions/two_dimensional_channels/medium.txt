@@ -1,0 +1,5 @@
+Two-Dimensional Constrained Channels Problem
+The Two-Dimensional Constrained Channels Problem is about finding all possible configurations of a grid where each interior cell has a specific number of neighboring cells with a certain value.
+The main decision variables are the values of the cells in the grid, represented by the 2D array `x`, where `x[i, j]` is 1 if the cell at position `(i, j)` is black and 0 if it is white.
+The key constraints are that for each interior cell, the number of neighboring cells that are black must be equal to a given number `m`. The neighboring cells are the eight cells surrounding the current cell, and the constraint only applies to interior cells, not cells on the boundary of the grid.
+The objective of the problem is to find all possible configurations of the grid that satisfy the constraint, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find all solutions that satisfy the given constraints.

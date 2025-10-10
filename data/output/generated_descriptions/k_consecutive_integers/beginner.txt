@@ -1,0 +1,12 @@
+K Consecutive Integers Problem
+The problem is about filling an array of numbers with consecutive integers from 1 to k, where each integer must appear a certain number of times consecutively. 
+The main variables are: 
+- n, the size of the array 
+- k, the range of integers 
+- c, the minimum number of consecutive times each integer must appear 
+- x, the array of integers 
+- starts, a helper array to track the start of each sequence of consecutive integers.
+The basic restrictions are: 
+- each integer must appear at least a certain number of times consecutively 
+- the array must be filled with integers from 1 to k.
+The goal is to find a valid sequence of integers that satisfies the constraints, with the option to minimize the number of sequences.

@@ -1,0 +1,8 @@
+Langford's Number Problem
+The problem is about arranging a set of numbers in a specific order. Imagine you have a certain number of sets, each containing the numbers 1 to a certain maximum number. You need to put all these numbers together in a single sequence, following some rules.
+
+The main variables are the sequence of numbers (a) and their positions (pos). In simple terms, "a" represents the order in which the numbers should appear, and "pos" represents where each number is in that order.
+
+The basic restrictions are that each number must appear a certain number of times, and the distance between each pair of the same number must be equal to the number itself. For example, the number 1 must appear with one number in between, the number 2 must appear with two numbers in between, and so on.
+
+The goal of the problem is to find a sequence that satisfies all these rules. There is no specific goal to minimize or maximize something, but rather to find a valid arrangement of the numbers.

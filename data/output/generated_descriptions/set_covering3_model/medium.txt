@@ -1,0 +1,5 @@
+Set Covering Problem
+The Set Covering Problem is about finding the smallest subset of elements that covers all sets in a given collection. 
+The main decision variables are x, an array of binary variables where x[i] represents whether senator i is included in the committee, and belongs, a matrix indicating which group each senator belongs to.
+The key constraints are that each group must be covered by at least one senator in the committee, and the total number of senators in the committee must be exactly 2. 
+The problem's objective is to find a feasible solution that satisfies all constraints, specifically the set covering constraint, rather than minimizing or maximizing a specific value, as indicated by the "solve satisfy" statement.

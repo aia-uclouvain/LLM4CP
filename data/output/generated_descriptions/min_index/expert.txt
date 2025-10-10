@@ -1,0 +1,7 @@
+name: Minimum Index Problem
+description: The Minimum Index Problem is a constraint satisfaction problem that involves finding the index of the minimum value in a given array of variables, as well as the minimum value itself.
+variables: $n, variables_{1..n}, min\_ind, min\_val$ 
+These variables represent the following: $n$ is the number of elements in the array, $variables_{1..n}$ is an array of decision variables that can take integer values between 1 and 7, $min\_ind$ is the index of the minimum value in the array, and $min\_val$ is the minimum value itself.
+constraints: $cp1d(variables, [3,2,7,2,6]), min\_index\_val(min\_ind, variables, min\_val)$ 
+These constraints ensure that the array of variables $variables$ is equal to the given array $[3,2,7,2,6]$, and that $min\_ind$ is the index of the minimum value in $variables$ and $min\_val$ is the minimum value itself.
+objective: The objective of this problem is to satisfy the given constraints, there is no explicit objective function to minimize or maximize.

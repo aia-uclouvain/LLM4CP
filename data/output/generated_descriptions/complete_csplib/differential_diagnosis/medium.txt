@@ -1,5 +1,0 @@
-The problem is the Nurse Scheduling Problem. 
-It is about creating schedules for nurses to work shifts at a hospital, taking into account various constraints such as the number of nurses required for each shift, the maximum number of hours a nurse can work, and the minimum number of days off between shifts. 
-The main decision variables represent whether a nurse is assigned to work a particular shift, and they are typically binary variables (0 or 1) where 1 indicates the nurse is working the shift and 0 indicates they are not. 
-The key constraints include ensuring that each shift has the required number of nurses, that no nurse works more hours than allowed, and that each nurse gets the required minimum days off between shifts. Additionally, there may be constraints related to nurse availability, skill levels, and shift preferences. 
-The objective of the problem is typically to minimize the total cost of the schedule, which could include costs such as overtime pay, hiring temporary nurses, or violating certain constraints, while also ensuring that all shifts are adequately staffed and that nurses' workloads and rest periods are reasonable.

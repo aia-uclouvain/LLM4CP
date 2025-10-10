@@ -1,0 +1,5 @@
+name: Minesweeper
+description: Minesweeper is a classic puzzle game where the player is presented with a grid of cells, some of which contain hidden mines. The goal is to clear all non-mine cells without detonating a mine. The game provides clues in the form of numbers in some cells, which indicate how many mines are adjacent to that cell. The puzzle must be solved using logical deductions and reasoning.
+variables: $x_{i,j} \in \{0,1\}$ for $i \in \{1,\ldots,r\}$ and $j \in \{1,\ldots,c\}$, where $x_{i,j}$ represents whether a mine is present in cell $(i,j)$ or not.
+constraints: $\sum_{(i',j') \in N(i,j)} x_{i',j'} = game[i,j]$ for $i \in \{1,\ldots,r\}$ and $j \in \{1,\ldots,c\}$, where $N(i,j)$ denotes the set of neighboring cells of $(i,j)$, and $game[i,j]$ is the given clue for cell $(i,j)$. These constraints ensure that the number of mines adjacent to each cell matches the given clues.
+objective: The objective of the problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, effectively solving the Minesweeper puzzle.

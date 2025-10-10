@@ -1,0 +1,9 @@
+name: k_same_modulo Problem
+
+description: The k_same_modulo problem is a constraint satisfaction problem that involves enforcing a same_modulo constraint between each pair of consecutive sets of variables. The problem is defined by a collection of sets, each containing the same number of domain variables, and a modulus M. The goal is to find an assignment of values to the variables such that the same_modulo constraint holds between each pair of consecutive sets.
+
+variables: $v_{i,j}$ where $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, n\}$, which are decision variables representing the values assigned to each position in the sets, where $r$ is the number of sets and $n$ is the number of variables in each set.
+
+constraints: $m_{i,j} = v_{i,j} \mod M$, $\text{global_cardinality}(m_{i}, \text{array1d}(0..M-1, \text{set2array}(\text{index_set}(gcc_{i}))), gcc_{i})$, $\text{cp1d}(gcc_{i}, gcc_{i+1})$ where $i \in \{1, \ldots, r-1\}$, which are constraints that enforce the same_modulo relationship between each pair of consecutive sets, and $v = \text{array2d}(1..r, 1..n, \text{given values})$, which is a constraint that assigns specific values to the variables.
+
+objective: The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible assignment of values to the variables that satisfies the given constraints.

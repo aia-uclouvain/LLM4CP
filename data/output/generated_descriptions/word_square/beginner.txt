@@ -1,0 +1,5 @@
+Word Square problem
+The problem is about finding a set of words that can be arranged in a square grid, where each word can be read horizontally and vertically.
+The main variables are the words and their letters, where each letter is represented by a number from 1 to 26, with 1 being "a" and 26 being "z". The variable E represents the order of the words.
+The basic restrictions are that each word must have the same number of letters as the total number of words, and when the words are written out in a square grid, the same set of words can be read vertically. Also, all the words must be different.
+The goal of the problem is to find a set of words that satisfy these restrictions, and the solution is a square grid of words where each word can be read horizontally and vertically.

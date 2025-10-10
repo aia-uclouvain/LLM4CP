@@ -1,0 +1,5 @@
+Transportation Problem
+The problem is about finding the best way to transport goods from different sources to different destinations while keeping costs as low as possible. 
+The main variables are A1, A2, A3, B1, B2, B3, C1, C2, C3, D1, D2, and D3, which represent the amount of goods transported from each source to each destination. 
+The basic restrictions or rules of the problem are that each source has a limited amount of goods to transport, each destination has a limited capacity to receive goods, and the amount of goods transported from each source to each destination must be non-negative. 
+The goal of the problem is to minimize the total cost of transportation, which is calculated based on the amount of goods transported from each source to each destination and the cost per unit of goods for each route.

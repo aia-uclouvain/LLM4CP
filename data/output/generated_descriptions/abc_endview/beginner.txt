@@ -1,0 +1,5 @@
+ABC End View puzzle 
+The ABC End View puzzle is about filling a grid with letters so that each letter appears exactly once in each row and column, with some empty cells. The puzzle also has hints about which letter appears first when looking at the grid from different directions.
+The main variables are the grid cells, which can be filled with letters (A, B, C, etc.) or left empty. The hints are also important variables, as they tell us which letter to expect when looking at the grid from different directions.
+The basic restrictions are that each letter can only appear once in each row and column, and that the hints must be followed. For example, if a hint says that a certain letter appears first when looking at a row from the left, then that letter must be in the first column of that row.
+The goal of the puzzle is to fill the grid in a way that satisfies all the restrictions and hints, so that each letter appears exactly once in each row and column, and the hints are all correct.

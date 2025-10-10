@@ -1,0 +1,5 @@
+name: Box Design Problem
+description: The problem is to design a box at minimum cost that meets area, volume, marketing, and aesthetic requirements. The goal is to find the optimal dimensions of the box that satisfy all the given constraints while minimizing the total cost.
+variables: $d, w, h$ - These variables represent the dimensions of the box: $d$ is the depth, $w$ is the width, and $h$ is the height of the box.
+constraints: $z \geq 0, d \geq 0, w \geq 0, h \geq 0, 2(hd + hw + dw) \geq 888, hdw \geq 1512, \frac{h}{w} \leq 0.718, \frac{h}{w} \geq 0.518, dw \leq 252$ - These constraints ensure that the cost $z$ and the dimensions of the box are non-negative, the surface area of the box is at least 888, the volume of the box is at least 1512, the height-to-width ratio is within the range [0.518, 0.718] for aesthetic purposes, and the footprint of the box (depth times width) does not exceed 252 for marketing requirements.
+objective: Minimize $z = 2(0.05(dw + dh) + 0.1wh)$ - The objective is to minimize the total cost $z$ of the box, which is a function of its dimensions.

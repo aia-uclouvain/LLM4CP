@@ -1,0 +1,8 @@
+The Interns problem
+The Interns problem is about determining the day of the week when all three interns are on call at the same hospital, given certain constraints on their schedules.
+
+The main decision variables in this problem are represented by a 2D array `interns` where `interns[i, j]` is 1 if intern `i` is on call on day `j` and 0 otherwise.
+
+The key constraints in this problem can be described as follows: all three interns are on call on exactly one day of the week, no intern is on call for three consecutive days, and no two interns are off on the same day more than once a week. Additionally, there are specific constraints on the days when each intern is off.
+
+The objective of this problem is to find a schedule that satisfies all the given constraints, specifically to determine the day of the week when all three interns are on call. The problem does not involve minimizing or maximizing a particular objective function, but rather finding a feasible solution that meets all the constraints.

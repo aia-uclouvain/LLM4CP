@@ -1,0 +1,8 @@
+Primes in a Circle problem
+The problem is about arranging the numbers 1 to 14 in a circular manner such that the sum and the absolute difference of any two adjacent numbers are both prime numbers.
+The main decision variables are the array `x`, where `x[i]` represents the number placed at the `i-th` position in the circle.
+The key constraints are: 
+- each number from 1 to 14 is used exactly once (alldifferent), 
+- for any two adjacent numbers, their sum and absolute difference must be prime, 
+- the first number in the circle is fixed to 1 to break symmetry.
+The objective of the problem is to find all possible arrangements that satisfy these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

@@ -1,0 +1,5 @@
+Magic Sequence Problem
+The problem is about finding a sequence of integers where each integer represents the frequency of its own occurrence in the sequence.
+The main decision variable is `s`, an array of integers between 0 and `n-1`, where `n` is the length of the sequence, and each element `s[i]` represents the number of times `i` should occur in the sequence.
+The key constraint is that for each integer `i` in the sequence, it must occur exactly `s[i]` times, meaning that the count of each number in the sequence must match the value of the corresponding element in `s`.
+The objective of the problem is to find a sequence that satisfies this constraint, which is a satisfaction problem, not an optimization problem, so there is no specific value being minimized or maximized, but rather a valid solution is being sought.

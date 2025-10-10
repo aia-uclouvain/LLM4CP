@@ -1,0 +1,8 @@
+Bipartite Graph Problem
+The Bipartite Graph Problem is about finding a partition of the nodes in a graph into two disjoint sets such that there are no edges between nodes in the same set. 
+
+The main decision variables are `s` and `b`, where `s` represents the graph as an array of sets, with each set containing the indices of the nodes that are connected to the node at that index, and `b` represents the bipartite sets, which are two sets of nodes that partition the graph.
+
+The key constraints are that the graph must be symmetric, meaning that if there is an edge from node `i` to node `j`, then there must also be an edge from node `j` to node `i`, and that the graph must be bipartite, meaning that there are no edges between nodes in the same set. This is achieved through the `symmetric` and `bipartite` predicates.
+
+The objective of the problem is to find a partition of the nodes into two disjoint sets such that the graph is bipartite, rather than minimizing or maximizing a specific value. The `solve satisfy` statement indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a particular objective function.

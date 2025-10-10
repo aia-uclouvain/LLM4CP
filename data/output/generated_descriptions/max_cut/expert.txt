@@ -1,0 +1,19 @@
+name: Maximum Cut Problem
+
+description: The Maximum Cut Problem is a classic problem in computer science and operations research that involves finding the optimal partition of a set of nodes in a weighted graph into two disjoint sets, such that the total weight of the edges between the two sets is maximized.
+
+variables: $x, t, z, E, w$ 
+These variables represent the following: 
+- $x_i$ is a binary decision variable that indicates whether node $i$ is in set $V_1$ ($x_i = 0$) or set $V_2$ ($x_i = 1$), 
+- $t_{i,j}$ is a binary variable that represents the major bit of the sum $x_i + x_j$, 
+- $z$ is the total weight of the edges between the two sets, 
+- $E$ is a matrix that represents the edges in the graph, where $E_{i,1}$ and $E_{i,2}$ are the nodes connected by edge $i$, 
+- $w_i$ is the weight of edge $i$.
+
+constraints: $0 \leq x_{E_{i,1}} + x_{E_{i,2}} - 2t_{E_{i,1},E_{i,2}} \leq 1, z \geq 0, z = \sum_{i=1}^{num\_edges} w_i (x_{E_{i,1}} + x_{E_{i,2}} - 2t_{E_{i,1},E_{i,2}})$
+These constraints ensure that: 
+- the value of $t_{i,j}$ is consistent with the values of $x_i$ and $x_j$, 
+- the total weight $z$ is non-negative, 
+- the total weight $z$ is calculated correctly based on the values of $x$ and $t$.
+
+objective: maximize $z$

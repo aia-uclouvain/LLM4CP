@@ -1,0 +1,5 @@
+Golf Puzzle
+The problem is about finding the best way to play golf on a 9-hole course with two different golf clubs. 
+The main variables are the lengths of the two golf clubs (club1 and club2) and the number of times each club is used for each hole (holes). 
+The basic rules are that each hole has a certain distance, and the golfer must use a combination of the two clubs to cover that distance, with the option to go beyond the hole and then play back towards it. 
+The goal is to find the lengths of the two clubs that will result in the lowest total number of strokes (z) to complete the 9-hole course.

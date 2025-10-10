@@ -1,0 +1,15 @@
+Patient No. 21 problem
+The problem is about helping a doctor diagnose a patient based on their symptoms. The doctor has a list of 20 other patients with similar symptoms and their corresponding diagnoses. The goal is to use this information to determine the most likely diagnosis for Patient No. 21, who has symptoms of a stuffy nose, sneezing, and sore throat.
+
+The main variables are: 
+- x: the symptoms and diagnosis of Patient No. 21
+- dists: the distances between Patient No. 21 and the other 20 patients
+- min_dist: the minimum distance between Patient No. 21 and the other patients
+- min_ix: the index of the patient with the minimum distance
+
+The basic restrictions or rules of the problem are: 
+- Each patient has a set of symptoms (fatigue, stuffy nose, sneezing, sore throat) and a diagnosis (cold, flu, allergies)
+- The symptoms and diagnosis of the 20 patients are known
+- The symptoms of Patient No. 21 are known, but the diagnosis is not
+
+The goal of the problem is to minimize the distance between Patient No. 21 and the other patients, and use this information to determine the most likely diagnosis for Patient No. 21. The distance between two patients is calculated based on the difference in their symptoms. The patient with the minimum distance to Patient No. 21 is the one that is most similar, and their diagnosis is used as the most likely diagnosis for Patient No. 21.

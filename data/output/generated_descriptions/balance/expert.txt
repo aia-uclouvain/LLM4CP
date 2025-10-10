@@ -1,0 +1,5 @@
+name: Balance Problem
+description: The Balance Problem is a constraint satisfaction problem where we have a set of variables with a finite domain of values, and the goal is to find an assignment of values to these variables such that the difference between the maximum and minimum number of occurrences of any value is equal to a given balance value.
+variables: $x_1, x_2, ..., x_n, bal, gcc_1, gcc_2, ..., gcc_7$ - These are the decision variables where $x_i$ represents the value assigned to the $i^{th}$ variable, $bal$ represents the balance value, and $gcc_i$ represents the number of occurrences of the $i^{th}$ value.
+constraints: $global\_cardinality(x, [i|i in 1..7], gcc)$, $balance(bal, x)$, $bal = 3$ - These constraints ensure that the number of occurrences of each value is counted correctly, the balance value is calculated as the difference between the maximum and minimum number of occurrences, and the balance value is equal to 3.
+objective: The objective of the problem is to satisfy all the constraints, there is no explicit objective function to minimize or maximize.

@@ -1,0 +1,24 @@
+**Job Shop Scheduling Problem**
+The problem is a classic example of the Job Shop Scheduling Problem, which is a well-known problem in the field of Operations Research and Computer Science.
+
+**Description**
+The problem involves scheduling a set of jobs on a set of machines (or workers) to minimize the makespan, which is the maximum completion time of all jobs. Each job has a specific duration and requires a certain number of workers to complete. The problem also considers precedences between jobs, where some jobs must be completed before others can start.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `start_time`: the start time of each job
+- `end_time`: the end time of each job, which is calculated based on the start time and duration of the job
+- `assignment`: a binary matrix that represents the assignment of workers to jobs, where `assignment[j, w] = 1` if worker `w` is assigned to job `j`, and `0` otherwise
+
+**Constraints**
+The key constraints in this problem are:
+- Each job must be completed within its specified duration
+- Each worker can only work on one job at a time
+- Jobs that overlap in time cannot be assigned to the same worker
+- If a job requires multiple workers, they must work on the job simultaneously
+- Precedences between jobs must be respected, where some jobs must be completed before others can start
+- If idleness is not allowed, a worker cannot be idle until their last task is completed
+- If collect workers is enabled, the workers assigned to a job must work on the job as a contiguous block
+
+**Objective**
+The objective of the problem is to minimize the makespan, which is the maximum completion time of all jobs. This is represented by the `earliest_end_time` variable, which is calculated as the maximum end time of all jobs.

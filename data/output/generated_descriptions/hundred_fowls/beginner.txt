@@ -1,0 +1,5 @@
+Hundred Fowls Puzzle
+The problem is about buying 100 birds with 100 coins, where each type of bird has a different price. 
+The main variables are the number of cocks, hens, and chicks, which represent how many of each type of bird are bought.
+The basic restrictions are that the total number of birds is 100, the total cost is 100 coins, and the number of chicks must be a multiple of 3 because they are sold in groups of three. 
+The goal is to find how many cocks, hens, and chicks can be bought under these conditions.

@@ -1,0 +1,12 @@
+The Mislabeled Boxes problem. 
+This problem is about determining the contents of three boxes, each labeled with a type of fruit (apples, bananas, or oranges), given that no box contains the fruit it is labeled with and that one of the boxes, box b, contains apples.
+
+The main decision variables are the array x, where x[i] represents the contents of box i. The possible values for x[i] are 1 (apples), 2 (oranges), and 3 (bananas), which correspond to the indices of the labels array.
+
+The key constraints are: 
+- all boxes must contain different fruits (all_different(x)), 
+- no box can contain the fruit it is labeled with (x[i] != labels[i] for all i), 
+- box b must contain apples (x[b] = apples), and 
+- there is no box that contains the fruit that matches its label (not(has_fixpoint(x))).
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of fruits to boxes that meets all the given constraints, which is achieved by using the solve satisfy statement in the MiniZinc model.

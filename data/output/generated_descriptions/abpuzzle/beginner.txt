@@ -1,0 +1,5 @@
+Abbott's Puzzle
+The problem is about finding the right amounts of three different things to mix together to get a total of 200 units, with some specific rules to follow. 
+The main variables are the amounts of each thing, called x, which can be thought of as how much of each item to use. 
+The basic restrictions are that the total amount of all three things must add up to 100 units, the total value of the mixture must be exactly 200 units, and the amount of the second thing must be exactly five times the amount of the first thing. 
+The goal of the problem is to find the amounts of each thing that satisfy all these rules, which is more about finding a solution that works rather than minimizing or maximizing something.

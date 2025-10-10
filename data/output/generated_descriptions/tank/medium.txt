@@ -1,0 +1,9 @@
+The Tank Attack Puzzle
+The Tank Attack Puzzle is about determining the numbers on a grid of tanks such that each tank is attacked by a number of other tanks equal to the number on it.
+The main decision variables are x[i,j,k] and res[i,j], where x[i,j,k] represents whether the number on tank at position (i,j) is k, and res[i,j] represents the actual number on tank (i,j).
+The key constraints are: 
+- each tank is attacked by a number of other tanks equal to the number on it, 
+- each tank has exactly one number, 
+- the grid has symmetry, 
+- and the output result is calculated based on the numbers on the tanks.
+The objective of the problem is to find a valid assignment of numbers to the tanks that satisfies all the constraints, there is no explicit objective function being minimized or maximized.

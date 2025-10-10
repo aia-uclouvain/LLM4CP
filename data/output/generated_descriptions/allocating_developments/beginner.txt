@@ -1,0 +1,14 @@
+Mall Development Problem
+The problem is about placing four new stores - a Japanese restaurant, a hairstylist, a clothing store, and a toy store - in a 3x3 grid mall, considering the positions of existing establishments like a fish and chips stand and a health store.
+
+The main variables are the positions of the new stores in the grid, represented by the array x, where each cell can hold one of the six establishments (four new stores and two existing ones) or be empty.
+
+The basic restrictions are:
+- Each new store can only be placed once in the grid.
+- The fish and chips stand is already in cell (2,2), and the health store is in cell (1,0).
+- The hairstylist and clothing store cannot be close to the fish and chips stand.
+- The Japanese restaurant must be close to the health store.
+- The hairstylist and clothing store must be close to the Japanese restaurant.
+- The hairstylist and clothing store cannot be close to the toy store.
+
+The goal of the problem is to find a layout that satisfies all these constraints, either by using hard constraints (where all rules must be followed) or soft constraints (where some rules can be bent if necessary), with the aim of maximizing the number of satisfied constraints.

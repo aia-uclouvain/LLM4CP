@@ -1,0 +1,5 @@
+Project Euler problem 9
+The problem is about finding a special set of three numbers that fit certain rules. 
+The main variables are a, b, and c, which are three natural numbers where a is less than b, and b is less than c. 
+The basic restrictions are that the sum of the squares of the two smaller numbers (a and b) must be equal to the square of the largest number (c), and the sum of all three numbers must be 1000. 
+The goal is to find the product of these three numbers, which is the result of multiplying them together.

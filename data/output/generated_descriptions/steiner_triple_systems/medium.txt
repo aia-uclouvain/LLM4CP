@@ -1,0 +1,17 @@
+The Steiner Triplets Problem
+The Steiner triplets problem is a classic problem in combinatorial mathematics and computer science. 
+
+The problem is about finding a set of triples, where each triple contains three distinct elements from a given set of n elements, such that each pair of elements appears together in exactly one triple.
+
+The main decision variables in this problem are the sets of triples, where each triple is a set of three distinct elements. 
+
+The key constraints in this problem are:
+- Each triple must contain exactly three distinct elements.
+- Each pair of elements must appear together in exactly one triple.
+- Any two triples can have at most one element in common.
+
+The objective of the problem is to find a set of triples that satisfies these constraints. 
+
+In other words, the goal is to find n(n-1)/6 triples, each containing three distinct elements, such that each pair of elements appears together in exactly one triple, and any two triples have at most one element in common. 
+
+This problem has various applications in fields like coding theory, design of experiments, and network design.

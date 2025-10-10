@@ -1,0 +1,21 @@
+name: Twin Letters Problem
+
+description: The Twin Letters problem is a classic puzzle where ten pairs of letters are assigned to the same digit so that the multiplication, including intermediate results, is correct. The problem involves finding the pairs of letters and their corresponding digit values.
+
+variables: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, C1, C2, C3 
+These variables represent the digits to be assigned to the letters in the multiplication problem, where A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T are the digits (0-9) assigned to the letters, and C1, C2, C3 are carry variables used to handle the multiplication.
+
+constraints: 
+100*D + 10*E + F = 100*G + 10*H + I, 
+100*D + 10*E + F = 100*J + 10*K + L, 
+100*D + 10*E + F = 100*M + 10*N + O, 
+(100*A + 10*B + C) * (100*D + 10*E + F) = 10000*P + 1000*Q + 100*R + 10*S + T, 
+T = I, 
+S + 10*C1 = H + L, 
+R + 10*C2 = G + K + O + C1, 
+Q + 10*C3 = J + N + C2, 
+P = M + C3, 
+forall(i in 0..9) (count(x, i, 2))
+These constraints represent the multiplication equations, including the carry restrictions, and the requirement that each digit (0-9) appears exactly twice in the solution.
+
+objective: The objective of the problem is to find a satisfying assignment of digits to the letters, such that all constraints are met, which is achieved by using the "solve satisfy" statement in the MiniZinc model.

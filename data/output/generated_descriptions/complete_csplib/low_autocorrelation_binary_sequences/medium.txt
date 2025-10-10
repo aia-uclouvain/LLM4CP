@@ -1,5 +1,0 @@
-Low Autocorrelation Binary Sequences
-The problem is about finding a binary sequence of a given length with the minimum sum of the squares of its autocorrelations. 
-The main decision variables are the elements of the binary sequence, which can take values of -1 or 1, representing the bits in the sequence.
-The key constraints are that the sequence must have a certain length, and the autocorrelations of the sequence must be calculated correctly. In plain language, this means that for each possible shift in the sequence, the constraint checks the correlation between the original sequence and the shifted sequence by multiplying corresponding elements and summing them up. 
-The objective of the problem is to minimize the sum of the squares of the autocorrelations of the sequence. This means that the goal is to find a sequence where the correlations between the sequence and its shifts are as low as possible, which is achieved by minimizing the sum of the squares of these correlations.

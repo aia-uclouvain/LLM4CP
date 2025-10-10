@@ -1,0 +1,5 @@
+The Family Puzzle
+The problem is about determining the marital relationships and parent-child relationships between three men, their wives, and their sons.
+The main decision variables are the wives (Edith, Doris, Luisa) and the sons (Albert, Henry, Victor), which represent the assignments of each wife to a husband and each son to a set of parents.
+The key constraints are: each man is married to a different woman, each son has a unique set of parents, Snyder is not married to Luisa and is not Henry's father, Edith is not married to Locker and is not Albert's mother, if Albert's father is either Locker or Snyder then Luisa is Victor's mother, and if Luisa is married to Locker then Doris is not Albert's mother.
+The problem's objective is to find a satisfying assignment of wives to husbands and sons to parents that meets all the given constraints, as indicated by the "solve satisfy" statement, which means that the goal is to find a solution that satisfies all the constraints, without any specific minimization or maximization objective.

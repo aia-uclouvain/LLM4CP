@@ -1,0 +1,5 @@
+Pythagorean Triples Problem
+The problem is about finding whole numbers that satisfy the Pythagorean theorem, which is a mathematical concept used to describe the relationship between the lengths of the sides of a right-angled triangle. 
+The main variables are A, B, and C, which represent the lengths of the sides of the triangle, where A and B are the shorter sides and C is the longest side, also known as the hypotenuse.
+The basic restrictions are that A, B, and C must be positive whole numbers, A must be less than B, and B must be less than C, and the relationship between the sides must satisfy the Pythagorean theorem, which states that the sum of the squares of the lengths of the two shorter sides is equal to the square of the length of the longest side.
+The goal of the problem is to find values of A, B, and C that satisfy these conditions, which is known as a Pythagorean triple.

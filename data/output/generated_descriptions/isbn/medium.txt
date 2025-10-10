@@ -1,0 +1,5 @@
+The problem is called the ISBN-13 problem. 
+It is about generating a valid 13-digit International Standard Book Number (ISBN) given the first 12 digits. 
+The main decision variables are the 13-digit ISBN number, represented by the array `isbn`, and the multipliers `mult0` and `mult1` used in the checksum calculation. 
+The key constraints are that the first 12 digits of the ISBN must match a given number, and the last digit must be calculated using a specific formula based on the first 12 digits, where the digits are alternately multiplied by `mult0` and `mult1`, and the results are summed and taken modulo 10. 
+The objective of the problem is to find a valid ISBN number that satisfies the given constraints, specifically to calculate the last digit (the checksum) that makes the entire 13-digit number valid, which is achieved by solving the constraints to find the values of `isbn`, `mult0`, and `mult1` that satisfy the conditions.

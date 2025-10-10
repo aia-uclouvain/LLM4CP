@@ -1,0 +1,7 @@
+Alien Tiles Puzzle
+The Alien Tiles Puzzle is a classic constraint programming problem where the goal is to transform a given start position into a target position by applying a set of rules.
+The main decision variables in this problem are the 2D arrays `x` and `d`, where `x[i,j]` represents the number of times a tile is moved from position `(i,j)` to another position, and `d[i,j]` represents the number of times a tile is moved into position `(i,j)`.
+The key constraints in this problem are: 
+- The total number of moves from and to each position should be equal to the target position value at that position plus four times the number of tiles moved into that position.
+- Symmetry constraints are applied to reduce the search space by ensuring that the solution is symmetric around the center of the puzzle.
+The objective of the problem is to find a solution that satisfies all the constraints, which means finding a sequence of moves that transforms the start position into the target position. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that satisfies all the constraints.

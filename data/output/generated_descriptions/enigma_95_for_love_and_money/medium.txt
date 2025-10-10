@@ -1,0 +1,5 @@
+The problem is called "For Love and Money" or Enigma 95. 
+It is about a woman named Amanda who has seven suitors and wants to choose the best one based on their passion and earning power. 
+The main decision variables are the love scores, money scores, and total scores for each suitor, represented by the arrays `love`, `money`, and `total` in the model. 
+The key constraints are that there are no ties in the love or money scores, the total scores are in alphabetical order of the suitors, and each suitor's total score is the sum of their love and money scores. Additionally, specific constraints are given for each suitor, such as Aloysius being 4th for both love and money, and Desmond scoring 11 for money. 
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints, effectively reproducing Amanda's marks for each suitor.

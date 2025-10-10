@@ -1,0 +1,11 @@
+Generalized Assignment Problem 
+The problem is about assigning jobs to agents in a way that each job is given to only one agent, and the agent has enough resources to handle the job. 
+The main variables are: 
+- Agents (like workers or machines): these are the ones that will do the jobs
+- Jobs (like tasks or projects): these are the things that need to be done
+- Resources (like time, money, or materials): these are what the agents need to do the jobs
+- Assignment (like a schedule): this is the plan for which agent does which job
+The basic restrictions or rules are: 
+- Each job can only be assigned to one agent
+- The agent must have enough resources to do the job
+The goal of the problem is to find the cheapest way to assign all the jobs to the agents, so that each job is done and no agent runs out of resources.

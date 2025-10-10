@@ -1,0 +1,7 @@
+name: Dynamical Optimization Problem
+description: This problem is a dynamical optimization problem that involves finding the optimal control input u(t) to minimize the integral of the state variable x(t) over a given time period, subject to a set of constraints that describe the dynamics of the system.
+variables: x, u 
+x and u are arrays of decision variables, where x represents the state of the system at each time step and u represents the control input at each time step. The state variable x is a function of time, and the control input u is also a function of time.
+constraints: x[j+1] - x[j])/Dt = -x[j+1] + u[j+1], x[1] = 1.0, x[Ng] = 5.0, 0 <= u[j] <= 10 
+These constraints represent the dynamics of the system, which is described by a differential equation dx/dt = -x(t) + u(t), with initial condition x(0) = 1 and final condition x(10) = 5. The constraints also include bounds on the control input u.
+objective: minimize ∫x dt from 0 to 10, which is approximated by the discrete sum of x[j] over all time steps.

@@ -1,0 +1,7 @@
+name: Eye Drop Distribution Problem
+description: The problem is to find an optimal way to distribute eye drops of different types throughout the day, given certain constraints such as the number of drops to take per day, the time range to consider, and the requirement to separate the times to take an eye drop type as much as possible.
+variables: $x, dists, z$ 
+These variables represent the time table of eye drops ($x$), the dispersion factor for each drop type ($dists$), and the total dispersion ($z$), where $x$ is an array of variables representing the type of eye drop to take at each hour, $dists$ is an array of variables representing the dispersion factor for each drop type, and $z$ is the sum of the dispersion factors.
+constraints: $\text{global_cardinality}(x, [i | i in 1..num\_types], occ)$, $make\_drop(x, occ[t], t, dists[t], start, end, hours)$, $x[i] = num\_types \rightarrow \forall j \in i+1..end (x[j] = 0)$, $alldifferent(Y)$, $increasing(Y)$, $YDist[i] = Y[i+1]-Y[i]$, $a[i] = t \leftrightarrow \exists j \in 1..n (Y[j] = i)$, $dist = \sum(i,j \in 1..n-1 \text{ where } i < j) (YDist[j]*bool2int(YDist[j] = YDist[i]))$
+These constraints ensure that the number of drops taken per day for each type is as specified, that the drops are distributed as evenly as possible, and that the last drop taken is of type 3.
+objective: maximize $z$

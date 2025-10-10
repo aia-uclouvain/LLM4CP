@@ -1,0 +1,21 @@
+**It's a Tie Problem**
+The problem is about matching four colleagues with the patterns on their flamboyant ties and determining the relative who presented each tie. 
+
+**Decision Variables**
+The main decision variables are:
+- `ties`: an array representing the pattern on each man's tie (cupids, happy faces, leprechauns, or reindeer).
+- `relative`: an array representing the relative who presented each tie (daughter, father-in-law, sister, or uncle).
+These variables represent the assignments of tie patterns to men and relatives to ties.
+
+**Constraints**
+The key constraints are:
+- Each man has a unique tie pattern and a unique relative who presented the tie.
+- The tie with leprechauns was not presented by a daughter.
+- Mr. Crow's tie does not feature reindeer or happy faces.
+- Mr. Speigler's tie was not presented by his uncle.
+- The tie with happy faces was not presented by a sister.
+- Mr. Evans and Mr. Speigler own the tie with leprechauns and the tie presented by a father-in-law, in some order.
+- Mr. Hurley received his tie from his sister.
+
+**Objective**
+The objective of the problem is to find a satisfying assignment of tie patterns to men and relatives to ties, given the constraints. The problem does not involve minimizing or maximizing a specific objective function; instead, it aims to find a feasible solution that satisfies all the constraints.

@@ -1,0 +1,11 @@
+Curve Fitting Problem
+The problem is about finding the best linear fit to a set of data points, which is a fundamental problem in data analysis and regression analysis. 
+
+The main decision variables are `a` and `b`, which represent the intercept and slope of the linear equation `y = ax + b`, respectively. Additionally, `z` represents the maximum deviation between the observed data points and the predicted values based on the linear equation. The arrays `u` and `v` are auxiliary variables used to model the absolute deviation between the observed and predicted values.
+
+The key constraints are: 
+- Each data point must be within the maximum deviation `z` from the predicted value based on the linear equation.
+- The deviation between the observed and predicted values can be either positive or negative, which is modeled using the `u` and `v` variables.
+- The maximum deviation `z` must be greater than or equal to the absolute deviation for each data point.
+
+The objective of the problem is to minimize the maximum deviation `z`, which means finding the linear equation that best fits the data points with the smallest possible maximum error. In other words, the goal is to find the line that minimizes the worst-case difference between the observed and predicted values.

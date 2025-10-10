@@ -1,0 +1,5 @@
+name: Minimum Vertex Cover Problem (MVCP)
+description: The Minimum Vertex Cover Problem is a classic problem in graph theory and computer science, which involves finding a subset of vertices in a graph such that each edge in the graph is incident to at least one vertex in the subset, and the total weight of the vertices in the subset is minimized.
+variables: $x = (x_1, x_2, ..., x_{num\_nodes})$, where $x_i$ is a binary decision variable that represents whether vertex $i$ is included in the vertex cover ($x_i = 1$) or not ($x_i = 0$).
+constraints: $\forall i \in \{1, 2, ..., num\_edges\}, x_{E[i,1]} + x_{E[i,2]} \geq 1$, which ensures that each edge $(i, j)$ in the graph has at least one of its endpoints included in the vertex cover.
+objective: Minimize $z = \sum_{i=1}^{num\_nodes} w_i \cdot x_i$, where $z$ represents the total weight of the vertices in the vertex cover, and $w_i$ is the weight of vertex $i$.

@@ -1,9 +1,0 @@
-Steel Mill Slab Design Problem
-The Steel Mill Slab Design Problem is a classic constraint programming problem that involves designing the production of steel slabs to meet customer orders while minimizing waste. 
-The main decision variables are the assignment of orders to slabs (sb) and the load (ld) and loss (ls) of each slab. 
-The key constraints are: 
-- each order is assigned to exactly one slab, 
-- the total size of orders assigned to a slab does not exceed its capacity, 
-- the loss of each slab is calculated based on its load, 
-- and no more than two colors are assigned to each slab. 
-The objective of the problem is to minimize the total loss of all slabs, which represents the amount of wasted steel.

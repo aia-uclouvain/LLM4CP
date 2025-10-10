@@ -1,0 +1,8 @@
+The problem is known as the Auction Problem or the Combinatorial Auction Problem. 
+It is about allocating a set of items to a set of bids in a way that maximizes the total value of the selected bids, with the constraint that no item can be allocated to more than one bid.
+
+The main decision variables are `x[i]`, which represent whether the `i-th` bid is selected (1) or not (0). 
+
+The key constraints are that for each item, at most one bid that includes this item can be selected. This means that if two or more bids include the same item, only one of these bids can be chosen.
+
+The objective of the problem is to maximize the total value of the selected bids. This is achieved by summing up the values of all selected bids, where the value of each bid is scaled to an integer. The goal is to find the subset of bids that includes the highest total value while satisfying the constraints that no item is allocated to more than one bid.

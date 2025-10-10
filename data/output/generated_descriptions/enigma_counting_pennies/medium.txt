@@ -1,0 +1,13 @@
+Enigma Problem (Counting Pennies)
+The Enigma problem is about finding a 4-digit number that was subtracted from the sum of 24 different 4-digit numbers, which were formed by rearranging four distinct positive digits.
+The main decision variables are: 
+- `digits`: an array of four variables representing the four distinct positive digits chosen by Penny.
+- `x`: an array of 24 variables representing the 24 different 4-digit numbers that can be formed using the four digits.
+- `digits_sum`: a variable representing the sum of the 24 numbers.
+- `digits_sum_a`: an array of six variables representing the digits of `digits_sum`.
+The key constraints are:
+- The four digits must be distinct and positive.
+- The 24 numbers are formed by rearranging the four digits.
+- The sum of the 24 numbers minus one of the numbers equals the given number 122**0.
+- The digits of `digits_sum` match the given number 122**0, with the last two digits being unknown.
+The objective of the problem is to find the 4-digit number that was subtracted from the sum of the 24 numbers, which is equivalent to finding the values of the `digits` and `x` variables that satisfy all the constraints.

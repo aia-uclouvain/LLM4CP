@@ -1,0 +1,18 @@
+**Gardner's Prime Puzzle**
+The problem is about finding two numbers, `mP` and `nP`, composed of prime digits (2, 3, 5, or 7), such that their product equals the concatenation of `mP` and `nP`.
+
+**Decision Variables**
+The main decision variables are:
+- `mP` and `nP`: the two numbers to be found, represented as integers.
+- `mP_a` and `nP_a`: arrays of prime digits that make up `mP` and `nP`, respectively.
+- `mnP_a`: an array of prime digits that represents the product of `mP` and `nP`.
+- `M` and `N`: the lengths of `mP` and `nP`, respectively.
+
+**Constraints**
+The key constraints are:
+- `mP` and `nP` must be composed of prime digits (2, 3, 5, or 7).
+- The product of `mP` and `nP` must equal the concatenation of `mP` and `nP`.
+- The numbers `mP`, `nP`, and their product must be represented correctly as arrays of digits.
+
+**Objective**
+The objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find two numbers `mP` and `nP` that meet the conditions of the puzzle.

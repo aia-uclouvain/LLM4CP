@@ -1,0 +1,5 @@
+The Wolf, Goat, and Cabbage Problem
+The problem is about a farmer who needs to transport a wolf, a goat, and a cabbage across a bridge, with certain restrictions on what can be left together.
+The main decision variables represent the state of the system at each step, including the location of the farmer, the wolf, the goat, and the cabbage.
+The key constraints are: the wolf and the goat cannot be left together without the farmer, the goat and the cabbage cannot be left together without the farmer, and the farmer can only take one thing at a time across the bridge.
+The objective of the problem is to find the minimum number of steps (or cost) required to transport all three items across the bridge while satisfying the given constraints.

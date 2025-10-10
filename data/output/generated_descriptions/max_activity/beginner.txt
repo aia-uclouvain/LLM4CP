@@ -1,0 +1,12 @@
+Max Activity Problem
+The problem is about assigning kids to activities they prefer, without exceeding the maximum number of participants for each activity. 
+The main variables are the kids, the activities, and the preferences of each kid for the activities. In simple terms, the variables mean: 
+- "x" represents which activity each kid is assigned to
+- "scores" represents how happy each kid is with their assigned activity, based on their preferences
+- "prefs" represents the order of preference for each kid, with 1 being their first choice, 2 being their second choice, and 3 being their third choice
+- "activity_size" represents the maximum number of kids that can be assigned to each activity
+The basic restrictions or rules are: 
+- each kid can only be assigned to one activity
+- the number of kids assigned to each activity cannot exceed the maximum size of that activity
+- each kid's assignment is based on their preferences, with the goal of making them as happy as possible
+The goal of the problem is to maximize the total happiness of all kids, which is represented by the "total_score" variable. This means finding an assignment of kids to activities that makes the most kids happy, while still following the rules about activity sizes and kid preferences.

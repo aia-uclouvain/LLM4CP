@@ -1,0 +1,5 @@
+Tank Attack Puzzle
+The problem is about finding numbers to put on tanks arranged in a grid, so that each tank "attacks" other tanks with a total value equal to the number on it.
+The main variables are x and res. The variable x is like a flag that says whether a certain number is on a certain tank, and res is the actual number on each tank.
+The basic rules are: each tank must have exactly one number, the total "attack" value from other tanks must equal the number on the tank, and the arrangement must be symmetrical. 
+The goal is to find a valid arrangement of numbers on the tanks that satisfies all the rules.

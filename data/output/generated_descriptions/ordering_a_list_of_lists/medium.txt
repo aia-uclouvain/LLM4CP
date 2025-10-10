@@ -1,0 +1,22 @@
+**Matrix Ordering Problem**
+The Matrix Ordering Problem is a constraint programming problem that involves ordering a matrix of values subject to certain constraints. 
+
+**Description**
+The problem requires arranging a matrix of values such that it satisfies two main constraints: 
+1. The matrix must be lower triangular, meaning that the rows must be ordered in ascending lengths, with gaps only in the top right corner. 
+2. If a value appears in more than one row, it must be in the same column across all rows.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: a 2D array representing the resulting ordered matrix, where `x[i, j]` is the value at row `i` and column `j`.
+- `perms`: a 2D array representing the permutations from the original matrix to the resulting matrix, where `perms[i, j]` is the permutation index for the value at row `i` and column `j`.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each row in the resulting matrix must have unique values (except for zeros).
+- The permutation of values in each row must match the original matrix.
+- Zeros in the original matrix must remain in the same position in the resulting matrix.
+- Values that appear in multiple rows must be in the same column across all rows.
+
+**Objective**
+The objective of this problem is to find a satisfying assignment of values to the resulting matrix, such that all constraints are met. The problem does not have a specific objective function to minimize or maximize; instead, it aims to find a feasible solution that satisfies all constraints.

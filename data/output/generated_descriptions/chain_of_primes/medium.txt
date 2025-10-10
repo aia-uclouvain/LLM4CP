@@ -1,0 +1,13 @@
+Chain of Primes
+The Chain of Primes problem is about finding a sequence of ten distinct 2-digit prime numbers where each prime's first digit matches the previous prime's second digit, with additional conditions applied to the fourth and tenth primes.
+
+The main decision variables are the array `x`, which represents the sequence of ten 2-digit prime numbers. Each element `x[i]` in the array corresponds to the `i-th` prime number in the sequence.
+
+The key constraints are: 
+- all primes in the sequence must be distinct, 
+- each prime must be a 2-digit number, 
+- the first digit of each prime (except the first one) must match the second digit of the previous prime, 
+- the fourth prime must be the reverse of the first prime, and 
+- the tenth prime must be the reverse of the seventh prime.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a sequence of primes that satisfies all the given constraints, specifically to determine the third, sixth, and ninth primes in the chain.

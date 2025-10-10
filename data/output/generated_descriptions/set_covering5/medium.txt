@@ -1,0 +1,13 @@
+Set Covering Problem with Employee Preferences
+The problem involves assigning tasks to employees in a security company, taking into account the employees' qualifications, preferences, and work hour constraints. 
+
+The main decision variables are the combinations of tasks assigned to each employee, represented by the array `x`, where `x[i]` is 1 if combination `i` is assigned to an employee and 0 otherwise. The combinations are defined in the `c` array, where `c[i]` is a set of tasks in combination `i`. 
+
+The key constraints are: 
+- Each employee must be assigned exactly one combination of tasks.
+- Each task must be covered exactly once.
+- The total preference points for each employee are calculated based on the assigned tasks and the employee's preferences.
+
+The objective of the problem is to maximize the total preference points, which represents the overall satisfaction of the employees with their assigned tasks. The total preference points are calculated by summing the preference points for each employee, which are determined by the tasks assigned to them and their individual preferences. 
+
+In this problem, there are three employees (Anders, Lotta, and Per) and eight tasks. Each employee has a set of preferred tasks and a limited number of hours to work. The goal is to assign the tasks to the employees in a way that maximizes the total preference points while ensuring that each task is covered exactly once and each employee works the required number of hours.

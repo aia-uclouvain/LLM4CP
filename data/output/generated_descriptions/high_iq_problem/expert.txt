@@ -1,0 +1,33 @@
+name: High IQ Problem
+
+description: The High IQ Problem is a classic problem in constraint programming that involves finding the length of a shaded square in a larger square divided into 24 smaller squares, each with a different integral size. The problem requires determining the lengths of the sides of the smaller squares such that they satisfy certain constraints.
+
+variables: $L_1, L_2, ..., L_{25}$, where $L_i$ represents the length of the side of the $i^{th}$ smaller square. These variables are decision variables that need to be assigned integer values between 1 and a given upper bound $Top$.
+
+constraints: 
+$L_1 < L_2 < ... < L_{25}$, 
+$L_1^2 + L_2^2 + ... + L_{24}^2 = L_{25}^2$, 
+$L_1 + L_3 = L_4$, 
+$L_4 + L_1 = L_5$, 
+$L_4 + L_5 = L_7$, 
+$L_5 + L_7 = L_8$, 
+$L_3 + L_4 + L_7 = L_9$, 
+$L_1 + L_5 + L_8 = L_{11}$, 
+$L_2 + L_{12} = L_{14}$, 
+$L_2 + L_{14} = L_{15}$, 
+$L_2 + L_{15} = L_{16}$, 
+$L_{10} + L_{11} = L_{17}$, 
+$L_7 + L_8 + L_9 = L_{18}$, 
+$L_6 + L_{16} = L_{19}$, 
+$L_6 + L_{19} = L_{20}$, 
+$L_9 + L_{18} = L_{21}$, 
+$L_{10} + L_{17} = L_{22}$, 
+$L_{14} + L_{15} = L_{23}$, 
+$L_{13} + L_{20} = L_{24}$, 
+$L_{21} + L_{22} + L_{23} = L_{25}$, 
+$L_{18} + L_{21} + L_{24} = L_{25}$, 
+$L_{19} + L_{20} + L_{24} = L_{25}$, 
+$L_{15} + L_{16} + L_{19} + L_{23} = L_{25}$. 
+These constraints represent the relationships between the lengths of the sides of the smaller squares, including ordering constraints, sum of squares constraints, and length constraints that define the relationships between the lengths of the sides of the smaller squares.
+
+objective: The objective of the problem is to satisfy all the given constraints, which means finding the lengths of the sides of the smaller squares that satisfy the ordering, sum of squares, and length constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the constraints.

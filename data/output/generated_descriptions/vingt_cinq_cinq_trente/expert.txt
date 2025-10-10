@@ -1,0 +1,5 @@
+name: Alphametic Puzzle
+description: The Alphametic Puzzle is a classic problem in constraint programming where letters in a mathematical equation are replaced by digits, and the task is to find the correct digit for each letter such that the equation holds true. In this specific problem, the equation is "VINGT + CINQ + CINQ = TRENTE" where each letter represents a unique digit from 0 to 9.
+variables: $V, I, N, G, T, C, Q, R, E$ - These variables represent the digits to be assigned to each letter in the equation, with each variable being a decision variable that can take on a value from 0 to 9.
+constraints: $all\_different(fd) \wedge 10000*V + 1000*I + 100*N + 10*G + T + 1000*C + 100*I + 10*N + Q + 1000*C + 100*I + 10*N + Q = 100000*T + 10000*R + 1000*E + 100*N + 10*T + E \wedge V \geq 1 \wedge C \geq 1 \wedge T \geq 1$ - These constraints ensure that each digit is unique, the equation holds true, and the first digit of each number (V, C, T) is non-zero.
+objective: satisfy - The objective of this problem is to find a satisfying assignment of digits to letters such that all constraints are met, rather than minimizing or maximizing a specific value.

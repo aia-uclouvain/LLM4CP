@@ -1,0 +1,13 @@
+name: Nurse Rostering Problem
+description: The Nurse Rostering Problem is a classic problem in the field of constraint programming, which involves creating a schedule for nurses to work at a hospital. The goal is to assign nurses to shifts while satisfying various constraints, such as ensuring that each shift has the required number of nurses, that nurses work a reasonable number of hours, and that they have adequate rest periods.
+variables: plan1d, plan2d, plan2dT, s_min_arrays, s_max_arrays. These variables represent the assignment of nurses to shifts, where plan1d is a one-dimensional array representing the assignment of nurses to shifts over time, plan2d and plan2dT are two-dimensional arrays representing the assignment of nurses to shifts for each week and day, and s_min_arrays and s_max_arrays are helper arrays used to enforce constraints on the minimum and maximum number of consecutive shifts.
+constraints: 
+- plan2d[week, day] == plan1d[(week-1) * daysPerWeek + day]: This constraint ensures that the one-dimensional and two-dimensional arrays are consistent.
+- plan2d[week, daysPerWeek - 1] == plan2d[week, daysPerWeek]: This constraint ensures that weekend days have the same shift.
+- plan1d[day] != plan1d[day+1] -> all_equal(plan1d[day+1..day+s_min]): This constraint ensures that if a nurse is not working the same shift as the previous day, they must work the same shift for at least s_min days.
+- all_equal(plan1d[day..day+s_max]) -> plan1d[day] != plan1d[day + s_max]: This constraint ensures that a nurse cannot work the same shift for more than s_max days.
+- count(j in plan1d[day..day + daysPerWeek * 2])(j=0) >= 2: This constraint ensures that there are at least 2 rest days every 2 weeks.
+- plan1d[day] <= plan1d[day + 1] \/ plan1d[day+1] == 0: This constraint ensures that the order of shifts is valid, with a rest day or a shift with a higher or equal value.
+- global_cardinality(row(plan2dT,day),[0,1,2,3],row(shiftRequirements,day)): This constraint ensures that the number of nurses working each shift meets the requirements.
+These constraints ensure that the schedule is valid and meets the requirements of the hospital.
+objective: satisfy. The objective of the Nurse Rostering Problem is to find a schedule that satisfies all the constraints, rather than minimizing or maximizing a specific value.

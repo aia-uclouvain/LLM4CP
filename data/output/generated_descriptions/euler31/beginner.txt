@@ -1,0 +1,5 @@
+Problem: Making Change for £2
+The problem is about finding different ways to make £2 using eight types of coins in England: 1p, 2p, 5p, 10p, 20p, 50p, £1, and £2.
+The main variables are the number of each type of coin used, which are represented by the array x. For example, x[1] means the number of £2 coins used, x[2] means the number of £1 coins used, and so on.
+The basic restrictions are that the total value of the coins must equal £2, and you can't use a negative number of coins. 
+The goal is to find how many different combinations of coins can be used to make £2.

@@ -1,0 +1,5 @@
+Calvin Puzzle
+The Calvin puzzle is a classic constraint programming problem that involves filling a grid with numbers in a specific sequence, following certain movement rules. 
+The main decision variables in this problem are the values of the grid cells, represented by the 2D array `x`, where `x[i, j]` represents the number placed in the cell at row `i` and column `j`. 
+The key constraints in this problem are: all numbers from 1 to `n*n` must be placed in the grid, and each number must be placed according to the movement rules, which are: if the next number is placed vertically or horizontally, it must be exactly three squares away from the previous number, and if the next number is placed diagonally, it must be exactly two squares away from the previous number. 
+The objective of this problem is to find a solution that satisfies all the constraints, which means finding a valid sequence of numbers that can be placed in the grid according to the movement rules. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that satisfies all the constraints.

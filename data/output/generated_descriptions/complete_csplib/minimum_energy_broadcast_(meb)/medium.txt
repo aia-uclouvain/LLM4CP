@@ -1,5 +1,0 @@
-The Minimum Spanning Tree problem.
-This problem is about finding the most cost-efficient way to connect a set of nodes in a network, where each connection between nodes has a certain cost associated with it.
-The main decision variables are `parents` and `depths`, which represent the parent node of each node in the resulting tree and the depth of each node in the tree, respectively. The `parents` variable is a function that maps each node to its parent node, and the `depths` variable is a function that maps each node to its depth in the tree.
-The key constraints are that each node can only have one parent, and the parent of a node must be a different node with a non-zero link cost. Additionally, the depth of a node must be greater than the depth of its parent. In plain language, this means that the resulting tree must be connected, and the links between nodes must have a non-zero cost.
-The objective of the problem is to minimize the total cost of the tree, which is represented by the `optVar` variable. This variable is calculated as the sum of the maximum link costs between each node and its parent, and the goal is to find the tree with the minimum total cost.

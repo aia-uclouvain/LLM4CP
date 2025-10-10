@@ -1,0 +1,5 @@
+Party Mixing Problem
+The problem is about arranging 27 people at 4 tables so that each person talks to as many different people as possible.
+The main variables are the seats at each table, represented by the array L, which determines where each person will sit.
+The basic restrictions are that people who start at the same table should not stay at the same table, and two neighbors from the same table should not sit beside each other in the new arrangement.
+The goal is to find the optimal seating arrangement that allows each person to talk to as many different people as possible, which is achieved by satisfying the given constraints.

@@ -1,0 +1,5 @@
+Zoo, Buses, and Kids problem. 
+The problem is about finding the cheapest way to transport 300 kids to the London zoo by renting buses with different seat capacities. 
+The main variables are the number of buses with 30 seats and the number of buses with 40 seats that need to be rented, and the total cost of renting these buses. 
+The basic restrictions are that the total number of seats on all the rented buses must be enough to accommodate all 300 kids, and that the number of buses cannot be negative. 
+The goal is to minimize the total cost of renting the buses.

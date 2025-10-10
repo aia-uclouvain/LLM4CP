@@ -1,0 +1,5 @@
+name: All Equal Problem
+description: The All Equal problem is a classical constraint satisfaction problem where the goal is to find an assignment of values to a set of variables such that all variables take the same value.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x$ is an array of $n$ decision variables, each representing a value that can be assigned to a variable, and $n$ is the number of variables.
+constraints: $all\_equal(x)$, which enforces all variables in $x$ to take the same value, and can be mathematically represented as $\forall i, j \in \{1, 2, ..., n\}, x_i = x_j$.
+objective: The objective of the problem is to satisfy the $all\_equal$ constraint, which means finding an assignment of values to the variables $x$ such that all variables take the same value, there is no explicit objective function to minimize or maximize.

@@ -1,0 +1,5 @@
+name: Magic Square Problem
+description: The Magic Square problem is a classic puzzle where a square grid is filled with distinct numbers, typically from 1 to n^2, in such a way that the sum of the numbers in each row, column, and diagonal is the same. In this case, the problem is to fill a 3x3 grid with numbers from 1 to 9, such that the sum of the numbers in each row, column, and diagonal is 15.
+variables: X1, X2, X3, X4, X5, X6, X7, X8, X9 - These are the decision variables representing the numbers to be placed in each cell of the 3x3 grid.
+constraints: all_different(Vars) ∧ X1 + X2 + X3 = 15 ∧ X4 + X5 + X6 = 15 ∧ X7 + X8 + X9 = 15 ∧ X1 + X4 + X7 = 15 ∧ X2 + X5 + X8 = 15 ∧ X3 + X6 + X9 = 15 ∧ X1 + X5 + X9 = 15 ∧ X3 + X5 + X7 = 15 - These constraints ensure that each number from 1 to 9 is used exactly once, and the sum of the numbers in each row, column, and diagonal is 15.
+objective: satisfy - The objective of this problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

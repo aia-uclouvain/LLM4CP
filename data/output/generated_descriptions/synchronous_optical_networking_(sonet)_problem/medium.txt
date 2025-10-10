@@ -1,0 +1,5 @@
+The Synchronous Optical Networking (SONET) problem. 
+The SONET problem is a network design problem where the goal is to set up a network between a given number of nodes, with certain nodes requiring a connection. 
+The main decision variables in this problem are the rings, which are represented by a 2-dimensional matrix where each cell (i, j) is 1 if node j is assigned to ring i, and 0 otherwise. 
+The key constraints in this problem are: (1) if there is a demand between two nodes, then there must exist a ring on which both nodes are installed, and (2) the capacity of each ring must not be exceeded. 
+The objective of the problem is to minimize the total number of Add-Drop Multiplexers (ADMs) used, which is equivalent to minimizing the sum of all cells in the ring matrix.

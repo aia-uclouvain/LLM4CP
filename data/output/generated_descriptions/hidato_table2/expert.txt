@@ -1,0 +1,11 @@
+name: Hidato Puzzle
+description: The Hidato puzzle is a logic puzzle where the goal is to connect numbered tiles in a grid, such that consecutive numbers are adjacent to each other, either horizontally, vertically, or diagonally. The puzzle starts with some numbered tiles already filled in, and the objective is to fill in the remaining tiles with consecutive numbers.
+variables: $x_{i,j}$ for $i = 1, \ldots, r$ and $j = 1, \ldots, c$, where $x_{i,j}$ represents the number to be placed in the $(i, j)$ cell of the grid. These variables are decision variables that need to be assigned a value from the set $\{mmin, \ldots, mmax\}$, where $mmin$ is either $1$ or $-1$ depending on whether the puzzle is rectangular or non-rectangular, and $mmax$ is the maximum number to be placed in the grid.
+constraints: 
+$\forall i \in \{1, \ldots, r\}, \forall j \in \{1, \ldots, c\}: x_{i,j} \in \{mmin, \ldots, mmax\}$, 
+$\forall i \in \{1, \ldots, r\}, \forall j \in \{1, \ldots, c\}: x_{i,j} = puzzle_{i,j}$ if $puzzle_{i,j} > 0$, 
+$\forall i \in \{1, \ldots, r\}, \forall j \in \{1, \ldots, c\}: x_{i,j} = -1$ if $puzzle_{i,j} = -1$, 
+$\forall s \in \{1, \ldots, mmax-1\}: \exists i_1, j_1, i_2, j_2: x_{i_1,j_1} = s \land x_{i_2,j_2} = s+1 \land |i_1-i_2| \leq 1 \land |j_1-j_2| \leq 1 \land (i_1, j_1) \neq (i_2, j_2)$, 
+$all\_different(\{x_{i,j} | i \in \{1, \ldots, r\}, j \in \{1, \ldots, c\}, puzzle_{i,j} \geq 0\})$. 
+These constraints ensure that each cell is assigned a valid number, the given numbers in the puzzle are respected, consecutive numbers are adjacent to each other, and all numbers in the puzzle are distinct.
+objective: The objective of the problem is to satisfy all the constraints, i.e., to find an assignment of numbers to the cells in the grid such that all the constraints are met. There is no explicit objective function to minimize or maximize.

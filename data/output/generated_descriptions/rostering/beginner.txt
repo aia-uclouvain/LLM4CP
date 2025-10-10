@@ -1,0 +1,5 @@
+Rostering problem
+The problem is about assigning workers to different tasks or shifts over a week. 
+The main variables are the workers (four people), the days of the week (Monday to Sunday), and the shifts (three tasks). 
+The basic restrictions are that each worker can only work one shift per day, each worker must work a certain number of days, and the workload of each worker should be balanced. 
+The goal is to create a fair schedule where all workers work approximately the same number of days per week, with a balanced workload.

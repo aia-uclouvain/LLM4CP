@@ -1,0 +1,5 @@
+The problem is called lex_alldifferent. 
+It's about making sure that a set of lists are all unique, meaning no two lists are the same. 
+The main variable is "x", which is a set of lists, where each list has "m" items, and each item can have a value from 1 to 6. 
+The basic restrictions are that all the lists must be different, and each item in the list can only have a value from 1 to 6. 
+The goal is to find a set of lists that satisfy these conditions, and the model will output these lists.

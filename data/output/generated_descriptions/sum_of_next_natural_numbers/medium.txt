@@ -1,0 +1,12 @@
+The problem is known as the "Sum of Next Natural Numbers" problem. 
+It is about finding a sequence of natural increasing numbers and their sum, where the sequence is constructed by grouping natural numbers in a specific way. 
+
+The main decision variables are `x`, an array of `n` variables representing the sequence of natural increasing numbers, and `z`, a variable representing the sum of these numbers. 
+
+The key constraints are: 
+- `alldifferent(x)` ensures that all numbers in the sequence are distinct, 
+- `increasing(x)` ensures that the numbers in the sequence are in increasing order, 
+- `x[n] - x[1] = n-1` ensures that the difference between the last and first numbers in the sequence is `n-1`, which means the sequence consists of consecutive numbers, 
+- `z = n*(n*n + 1) div 2` ensures that the sum of the sequence is equal to the sum of the first `n*n` natural numbers.
+
+The problem's objective is to find a sequence of `n` consecutive natural numbers that satisfy the given constraints, and to calculate their sum `z`. The model is solved as a satisfaction problem, meaning that it aims to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

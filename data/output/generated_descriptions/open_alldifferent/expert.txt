@@ -1,0 +1,5 @@
+name: Open Alldifferent Problem
+description: The Open Alldifferent Problem is a constraint satisfaction problem that involves finding an assignment of values to a set of variables such that all variables in a given subset of indices take distinct values.
+variables: $x = (x_1, x_2, ..., x_n)$, $s$ where $x$ is an array of decision variables representing the values to be assigned, and $s$ is a set of indices for which the corresponding variables in $x$ must take distinct values.
+constraints: $x = (9,1,9,3)$, $open\_alldifferent(x, s)$ where the first constraint assigns a specific value to each variable in $x$, and the second constraint ensures that all variables in $x$ with indices in $s$ take distinct values.
+objective: satisfy

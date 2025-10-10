@@ -1,0 +1,5 @@
+100 doors problem
+The problem is about a row of 100 doors that are initially closed. Someone walks by the doors 100 times, and each time, they open or close some of the doors based on a specific pattern. 
+The main variables are the doors (represented by numbers 1 to 100) and whether each door is open or closed. 
+The basic restrictions are that the first time through, every door is visited and toggled (opened or closed), the second time every 2nd door is visited, the third time every 3rd door, and so on. 
+The goal is to figure out which doors are open and which are closed after all 100 passes. The problem can be simplified to finding the doors whose numbers are perfect squares (like 1, 4, 9, 16), as these are the ones that will remain open.

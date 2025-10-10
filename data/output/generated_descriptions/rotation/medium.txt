@@ -1,0 +1,12 @@
+Rotation Permutation Puzzle
+The Rotation Permutation Puzzle is a classic constraint programming problem where the goal is to find a sequence of rotations to transform an initial configuration of a 4x4 grid into a target configuration, which is typically the identity configuration where each cell contains its own index.
+
+The main decision variables in this problem are the operations to be performed at each step, which can be one of four possible rotations or no operation (i.e., the same configuration as the previous step). The variable `x` represents the configuration of the grid at each step, and `operations` represents the sequence of operations to be performed.
+
+The key constraints in this problem are:
+- The initial configuration of the grid is given.
+- Each step can be either a rotation or no operation.
+- The configuration at each step is obtained by applying the chosen operation to the previous configuration.
+- The goal is to reach the target configuration, which is the identity configuration.
+
+The objective of the problem is to minimize the number of steps required to reach the target configuration, which is represented by the variable `check_ix`. The problem is solved by finding a sequence of operations that transforms the initial configuration into the target configuration in the minimum number of steps.

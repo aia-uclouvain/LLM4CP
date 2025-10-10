@@ -1,8 +1,0 @@
-Magic Hexagon
-The Magic Hexagon problem is a classic constraint programming problem where the goal is to arrange the numbers 1 to 19 in a hexagonal pattern such that all diagonals sum to 38.
-The main decision variables in this problem are the values assigned to each cell in the hexagonal pattern, which are typically represented as variables x[a], x[b], x[c], ..., x[s]. These variables represent the numbers 1 to 19 that need to be arranged in the hexagonal pattern.
-The key constraints in this problem are: 
-- All numbers from 1 to 19 must be used exactly once (all_different constraint).
-- The sum of the numbers in each diagonal must be equal to 38.
-- Some implementations also include symmetry-breaking constraints to reduce the search space, such as x[a] < x[c], x[a] < x[h], etc.
-The objective of this problem is to find a feasible solution that satisfies all the constraints, i.e., to find an arrangement of the numbers 1 to 19 in the hexagonal pattern such that all diagonals sum to 38. There is no explicit objective function to minimize or maximize in this problem.

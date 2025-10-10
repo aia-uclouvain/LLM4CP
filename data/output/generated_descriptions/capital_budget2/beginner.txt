@@ -1,0 +1,12 @@
+Capital Budgeting Problem
+The problem is about deciding how to invest a limited amount of money in different projects to get the best return. 
+The main variables are: 
+- x, which represents whether a project is chosen (1) or not (0)
+- npv, which is the profit or return of each project
+- budget, which is the total amount of money available for investment
+- cash_flow, which is the cost of each project
+The basic restrictions are: 
+- the total cost of chosen projects cannot exceed the available budget
+- each project's cost must be non-negative
+- the budget must be non-negative
+The goal is to maximize the total return (z) by choosing the best combination of projects to invest in, given the limited budget and other constraints.

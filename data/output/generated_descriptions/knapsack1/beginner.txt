@@ -1,0 +1,5 @@
+The name of the problem is the Knapsack Problem. 
+This problem is about a thief who has a bag with a limited capacity and wants to fill it with valuable items like gold, silver, and bronze ingots to maximize the total value. 
+The main variables are the number of each type of ingot the thief can take, and the total value or profit. 
+The basic restrictions are that the total weight of the items cannot exceed the bag's capacity, and the thief can only take a whole number of each item. 
+The goal of the problem is to maximize the total value of the items in the bag, given the weight constraints.

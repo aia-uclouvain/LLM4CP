@@ -1,0 +1,8 @@
+name: Rehearsal Problem
+description: The problem is to schedule a rehearsal for a concert or film, where there are multiple pieces of music or scenes to be rehearsed, and each piece or scene requires a specific subset of players or actors. The goal is to find an order in which to rehearse the pieces or scenes that minimizes the total waiting time of the players or actors.
+variables: $o, a, l, ep, rehearsal\_order, waiting\_time, p\_from, p\_to$ 
+These variables represent the order in which the pieces are rehearsed ($o$), the arrival and departure times of each player ($a$ and $l$), the effective playing time of each player in each piece ($ep$), the order in which the pieces are rehearsed ($rehearsal\_order$), the waiting time of each player ($waiting\_time$), and the first and last pieces rehearsed by each player ($p\_from$ and $p\_to$).
+constraints: $AllDifferent(o), p\_from[p] < p\_to[p], (playing[p][o[i]] == 0) | (a[p] <= i) \& (i <= l[p]), waiting\_time[p] = \sum_{i=1}^{n\_pieces} duration[o[i]] \* ((playing[p][o[i]] == 0) \& (a[p] <= i) \& (i <= l[p]))$ 
+These constraints ensure that each piece is rehearsed only once, that each player arrives before their first piece and leaves after their last piece, that each player is present only when their piece is being rehearsed, and that the waiting time of each player is calculated correctly.
+objective: minimize $\sum_{p=1}^{n\_players} waiting\_time[p]$ 
+The objective is to minimize the total waiting time of all players.

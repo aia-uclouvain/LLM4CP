@@ -1,0 +1,5 @@
+Fill-a-Pix problem
+The problem is about revealing a hidden picture in a grid by painting squares around clues so that the number of painted squares matches the clue value.
+The main variables are the grid size (n), the puzzle grid with clues (puzzle), and the painted squares (x), which represent whether a square is painted (1) or not (0).
+The basic restrictions are that the number of painted squares around each clue, including the clue square, must match the clue value, and each square can either be painted or empty.
+The goal is to find a solution that satisfies all the clue constraints, revealing the hidden picture.

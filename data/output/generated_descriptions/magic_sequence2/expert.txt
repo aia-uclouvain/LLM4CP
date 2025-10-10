@@ -1,0 +1,5 @@
+name: Magic Sequence Problem
+description: The Magic Sequence Problem is a constraint satisfaction problem where we need to find a sequence of integers of length n, such that for all i in the range 0 to n-1, the number i occurs exactly xi times in the sequence, where xi is the value at index i in the sequence.
+variables: $s = [s_0, s_1, ..., s_{n-1}]$, where $s_i$ represents the number of times $i$ appears in the sequence, and is a decision variable that can take any integer value between 0 and n-1.
+constraints: $\forall i \in [0, n-1]: s_i = \sum_{j=0}^{n-1} (s_j = i) \land \sum_{i=0}^{n-1} s_i = n \land \sum_{i=0}^{n-1} i \cdot s_i = n$, which are: (1) the count of each number i in the sequence is equal to the value at index i, (2) the sum of all values in the sequence is equal to n, and (3) the sum of the product of each index and its corresponding value is equal to n.
+objective: The objective of the problem is to find a satisfying assignment, i.e., to solve the problem such that all constraints are satisfied, as indicated by the "solve satisfy" statement in the Minizinc model.

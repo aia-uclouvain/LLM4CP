@@ -1,0 +1,5 @@
+The problem is called the "Global Constraint Arith" problem. 
+It's about a set of light switches, where each switch can be either on (1) or off (0), and a master switch that controls all of them. 
+The main variables are the individual light switches (x) and the master switch (y). 
+The basic restrictions are that the master switch is on only if all the individual light switches are on, and the first two individual switches must be on. 
+The goal of the problem is to find a combination of light switch settings that satisfy these rules.

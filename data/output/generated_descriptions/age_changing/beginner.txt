@@ -1,0 +1,5 @@
+The problem is called Age-changing. 
+It's about a married couple where if you take the wife's age and apply four simple math operations in a certain order, you get the husband's age. 
+The main variables are the wife's age (called "m") and the husband's age (called "h"), which are the two unknown ages we're trying to find. 
+The basic restrictions are that we have to apply four specific math operations (+2, /8, -3, *7) in some order to the wife's age to get the husband's age, and if we apply the same operations in a different order to the husband's age, we should get the wife's age. 
+The goal is to find the two ages that satisfy these conditions.

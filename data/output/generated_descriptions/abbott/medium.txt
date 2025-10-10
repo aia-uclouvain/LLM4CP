@@ -1,0 +1,12 @@
+The Abbott's Window puzzle
+The problem is about finding the maximum number of 1s that can be placed in an 8x8 grid, such that each row, column, and certain diagonals contain an even number of 1s, and the four corners of the grid are always 1.
+
+The main decision variables are the 2D array `x`, where `x[i,j]` represents whether the cell at row `i` and column `j` is 1 (true) or 0 (false), and several 1D arrays `a`, `b`, `c`, `d`, `e`, `f` that represent the counts of 1s in each row, column, and diagonal.
+
+The key constraints are: 
+- Each row contains an even number of 1s.
+- Each column contains an even number of 1s.
+- Certain diagonals contain an even number of 1s.
+- The four corners of the grid are always 1.
+
+The problem's objective is to maximize the total number of 1s in the grid, represented by the variable `total_sum`.

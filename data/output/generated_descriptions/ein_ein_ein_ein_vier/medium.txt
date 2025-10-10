@@ -1,0 +1,5 @@
+Alphametic Puzzle
+The Alphametic Puzzle is a classic problem where letters represent digits in a mathematical equation, and the goal is to find the correct digit for each letter.
+The main decision variables are E, I, N, V, and R, which represent the digits that the corresponding letters stand for in the equation. 
+The key constraints are that each letter must represent a unique digit (i.e., no two letters can represent the same digit), and the equation "EIN + EIN + EIN + EIN = VIER" must be satisfied, where each letter is replaced by its corresponding digit. Additionally, the letters E and V must represent non-zero digits, as they are the leading digits in the numbers.
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the constraints, which is achieved by using the "satisfy" keyword in the MiniZinc model. In other words, the goal is to find an assignment of digits to the letters E, I, N, V, and R such that the equation holds true and all constraints are met.

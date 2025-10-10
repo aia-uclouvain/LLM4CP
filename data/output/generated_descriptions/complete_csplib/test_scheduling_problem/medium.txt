@@ -1,5 +1,0 @@
-Resource Constrained Project Scheduling Problem
-The problem is about scheduling a set of tasks on a limited number of machines and resources, where each task has a specific duration and requires certain machines and resources.
-The main decision variables are `tasks` and `allocs`, where `tasks` represents the schedule of each task, including its start and end times, and `allocs` represents the allocation of each task to a machine.
-The key constraints are: each task must be executed on one of the machines it requires, tasks allocated to the same machine cannot overlap in time, tasks requiring the same resource cannot overlap in time, and the total number of machines used does not exceed the available number of machines.
-The objective is to minimize the maximum completion time of all tasks, which represents the minimum time required to complete all tasks while satisfying the given constraints.

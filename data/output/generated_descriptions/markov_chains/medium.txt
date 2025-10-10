@@ -1,0 +1,8 @@
+Markov Chain Problem
+The problem is about finding the stable state of a Markov chain, which is a mathematical system that undergoes transitions from one state to another according to certain probabilistic rules.
+
+The main decision variables are `x`, an array of `n` variables representing the stable state probabilities of the Markov chain, and `transitions`, an `n x n` matrix representing the transition probabilities between states.
+
+The key constraints are that the stable state probabilities `x` must satisfy the equation `x[i] = sum(j in 1..n) (transitions[i,j]*x[j])`, which means that the probability of being in state `i` is equal to the sum of the probabilities of transitioning from state `j` to state `i`, weighted by the probability of being in state `j`. Additionally, the probabilities `x` must sum to 1, meaning that the total probability of being in any state is 1.
+
+The problem's objective is to find the stable state probabilities `x` that satisfy the constraints, which is done by solving the system of equations. There is no explicit minimization or maximization objective, but rather a satisfaction of the constraints. However, in the reverse mode, the objective is to maximize the sum of the transition probabilities from the first state to all other states, given the stable state probabilities `x`.

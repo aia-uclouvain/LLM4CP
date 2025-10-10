@@ -1,0 +1,5 @@
+The 0/1 Knapsack problem, also referred to here as the xkcd Knapsack problem. 
+This problem is about finding the optimal combination of items, each with a specific price, to include in a knapsack such that the total price equals a target amount, in this case, $15.05.
+The main decision variables are x, an array representing the number of items of each dish to order, and y, a variable representing the number of different dishes ordered.
+The key constraints are that the total price of the ordered items must equal $15.05 and that y represents the number of different dishes ordered, which is calculated by counting the number of non-zero values in the x array.
+The objective of this problem is to maximize y, which means maximizing the number of different dishes ordered, while still meeting the total price constraint of $15.05.

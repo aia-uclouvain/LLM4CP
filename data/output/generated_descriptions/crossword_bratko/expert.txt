@@ -1,0 +1,5 @@
+name: Crossword Puzzle Problem
+description: The problem is to fill in a given crossword puzzle with words from a predefined list, such that each word fits into its corresponding position in the puzzle and all letters are correctly assigned.
+variables: $L_0, L_1, L_2, ..., L_{16}$, where $L_i$ represents the letter assigned to the $i^{th}$ position in the puzzle, and is a decision variable that can take any value from 1 to 26, corresponding to the 26 letters of the alphabet.
+constraints: $L[0] = 1$, $table([L_1,L_2,L_3,L_4,L_5], words5)$, $table([L_9,L_{10},L_{11},L_{12},L_{13},L_{14}], words6)$, $table([L_1,L_6,L_9,L_{15}], words4)$, $table([L_3,L_7,L_{11}], words3)$, $table([L_5,L_8,L_{13},L_{16}], words4)$, and $\forall I,J \in 1..num\_segments$ where $I < J$, $\neg(\forall K \in 1..max\_length) (L[segments[I,K]] = L[segments[J,K]])$, which ensure that the assigned letters form valid words, and that no two segments have the same letter in the same position.
+objective: The objective of the problem is to find a satisfying assignment of letters to the puzzle, such that all constraints are met, with no specific value to minimize or maximize.

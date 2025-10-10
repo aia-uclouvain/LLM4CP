@@ -1,0 +1,5 @@
+Molnar problem
+The problem is about finding a special kind of square matrix, which is like a table with the same number of rows and columns. 
+The main variables are x and y, where x represents the values in the matrix and y represents the squares of those values.
+The basic restrictions are that all values in the matrix must be between 2 and a certain number d, and the matrix must have a special property called a determinant of 1, which is a way of measuring how "mixed up" the values in the matrix are. The same property must also apply to the matrix of squared values. The values in the matrix must also follow a specific order.
+The goal of the problem is to find a matrix that satisfies all these restrictions, with no specific objective to minimize or maximize, just to find a valid solution.

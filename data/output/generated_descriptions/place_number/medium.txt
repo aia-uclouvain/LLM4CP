@@ -1,0 +1,8 @@
+Number Placement Puzzle
+The problem is about placing numbers 1 through 8 on nodes in a graph such that each number appears exactly once and no connected nodes have consecutive numbers.
+
+The main decision variables are the array `x`, where `x[i]` represents the number placed on node `i`. 
+
+The key constraints are that each number from 1 to 8 must be used exactly once, and no two connected nodes can have consecutive numbers (i.e., their difference must be greater than 1). Additionally, a symmetry-breaking constraint is imposed to ensure that the solution is unique.
+
+The objective of the problem is to find a satisfying assignment of numbers to nodes, rather than minimizing or maximizing a specific value. In other words, the goal is to find a valid solution that meets all the constraints, and the model uses the `satisfy` keyword to indicate this.

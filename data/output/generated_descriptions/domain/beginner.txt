@@ -1,0 +1,5 @@
+Domain Problem
+The problem is about making sure a group of numbers are within a certain range.
+The main variables are x, low, and up. x is a list of numbers, low is the smallest allowed number, and up is the largest allowed number.
+The basic rules are that all numbers in the list x must be greater than or equal to low and less than or equal to up.
+The goal is to find values for x, low, and up that satisfy these rules, and then show what these values are.

@@ -1,0 +1,15 @@
+Capital Budgeting Problem
+The Capital Budgeting Problem is about allocating a limited budget to a set of investment projects to maximize the total return, considering the cash flow requirements and potential returns of each project.
+
+The main decision variables are the array `x`, where `x[i]` represents whether investment `i` is selected (1) or not (0). The `x` variables determine which investments to undertake.
+
+The key constraints are:
+- The total cash flow of the selected investments must not exceed the available budget.
+- Each investment's cash flow must be non-negative.
+- The budget must be non-negative.
+Additionally, there are optional constraints that can be applied, such as:
+- Limiting the number of investments to two.
+- Requiring that if investment 2 is selected, then investment 1 must also be selected.
+- Requiring that if investment 2 is selected, then investment 4 must not be selected.
+
+The objective of the problem is to maximize the total return, represented by the variable `z`, which is the sum of the Net Present Values (NPV) of the selected investments. The NPV represents the potential return of each investment. By maximizing `z`, the model aims to find the optimal set of investments that yields the highest total return while satisfying the budget and other constraints.

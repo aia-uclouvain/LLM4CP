@@ -1,0 +1,5 @@
+Word Chain Problem. 
+The problem is about finding a chain of words where each word starts with the last letter of the previous word. 
+The main variables are the words in the given list and the chain of words that need to be found. 
+The basic restrictions are that each word in the chain must start with the last letter of the previous word, and no word can be repeated in the chain. 
+The goal is to find the longest possible chain of words that satisfy these conditions.

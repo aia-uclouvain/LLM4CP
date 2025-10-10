@@ -1,0 +1,14 @@
+name: Magic Square
+description: A magic square is a square grid filled with distinct positive integers in the range from 1 to n^2 such that each row, column, and the two diagonals sum to the same constant, known as the magic constant.
+variables: x ∈ [1..n^2]^(n×n), s ∈ [1..n^3], 
+            x is a 2D array representing the magic square, where x[i,j] is the value at the i-th row and j-th column, and s is a variable representing the magic constant.
+constraints: 
+  ∀i ∈ [1..n]: ∑(x[i,j]) = s, 
+  ∀j ∈ [1..n]: ∑(x[i,j]) = s, 
+  ∑(x[i,i]) = s, 
+  ∑(x[i,n-i+1]) = s, 
+  s = (n * (n^2 + 1)) / 2, 
+  ∀i,j ∈ [1..n]: x[i,j] ≠ x[k,l] ∀(i,j) ≠ (k,l),
+            these constraints ensure that each row, column, and diagonal sum to the same magic constant s, and all numbers in the square are distinct.
+objective: satisfy, 
+            the objective of this problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the given constraints, i.e., to construct a magic square of size n×n.

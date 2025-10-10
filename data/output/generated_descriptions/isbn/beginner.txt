@@ -1,0 +1,5 @@
+The problem is called ISBN13. 
+It's about finding a 13-digit code for a book, which is like a special address that identifies the book. 
+The main variables are the 13 digits of the code (called isbn), and two special numbers (mult0 and mult1) that help figure out the last digit of the code. 
+The basic rules are that the code must follow a specific pattern, where each digit is a number from 0 to 9, and the last digit is calculated using the first 12 digits and the two special numbers. 
+The goal is to find a code that satisfies this pattern, given the first 12 digits, which are mostly already filled in, but the last digit is missing.

@@ -1,0 +1,11 @@
+Decentralization Problem
+The Decentralization Problem is a classic constraint programming problem that involves deciding where to locate departments in different cities to maximize benefits while minimizing communication costs.
+
+The main decision variables are `d[i, j]`, which represent whether department `i` is located in city `j`, and `g[i, j, k, l]`, which represent whether department `i` is located in city `j` and department `k` is located in city `l`. 
+
+The key constraints are: 
+- Each department must be located in exactly one city.
+- At most three departments can be located in each city.
+- The `g` variables must be consistent with the `d` variables, meaning that if `g[i, j, k, l]` is true, then both `d[i, j]` and `d[k, l]` must be true.
+
+The objective of the problem is to maximize the total benefit, which is calculated as the sum of the benefits of each department in each city, minus the communication costs between departments in different cities. The communication costs are calculated based on the distance between the cities and the quantity of communication between the departments. The goal is to find the optimal location for each department to maximize the total benefit while satisfying the constraints.

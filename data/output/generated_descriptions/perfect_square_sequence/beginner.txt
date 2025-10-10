@@ -1,0 +1,5 @@
+Perfect Square Sequence problem
+The problem is about rearranging a list of numbers from 1 to a certain number, like 15 or 25, in a special order. 
+The main variables are the numbers in the list, which are represented by the variable "x". This variable is like a container that holds all the numbers in the list. 
+The basic rules of the problem are that each number in the list must be used only once, and when you add any two numbers that are next to each other in the list, the result must be a perfect square, like 9 or 16. 
+The goal of the problem is to find an order for the numbers that satisfies these rules, and the problem is trying to find one possible solution that works.

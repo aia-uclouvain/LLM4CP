@@ -1,0 +1,5 @@
+Organizing a Day problem. 
+This problem is about planning a day with several tasks that need to be done, such as going to work, checking mail, going shopping, and going to the bank. 
+The main variables are Begins, Ends, and Durations, which represent the start time, end time, and length of each task, respectively. 
+The basic restrictions are that each task must start and end at a specific time, tasks cannot overlap, and some tasks must be finished before others can start, for example, you need to go to the bank before you go shopping. 
+The goal of the problem is to find a schedule that satisfies all the restrictions, and there are also alternative objectives to minimize the start time of certain tasks or the total start time of all tasks.

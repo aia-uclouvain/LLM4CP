@@ -1,0 +1,5 @@
+name: Wolf, Goat, and Cabbage Problem
+description: A farmer needs to transport a wolf, a goat, and a cabbage across a bridge, but he can only take one item at a time. The wolf and the goat cannot be left together, and the goat and the cabbage cannot be left together. The problem is to find a sequence of steps that allows the farmer to transport all items across the bridge safely.
+variables: x[i,j], inFlow, outFlow, total_cost - These variables represent the state of the system at each step, where x[i,j] is a matrix representing the state of the items at each step, inFlow and outFlow represent the flow of items into and out of the bridge, and total_cost represents the total number of steps taken.
+constraints: d[i,j] = M or 1, total_cost <= 7, and the constraints defined in the shortest_path_model_all.mzn file - These constraints represent the possible transitions between states, the limit on the total number of steps, and the rules for transporting the items safely.
+objective: Minimize total_cost, which represents the minimum number of steps required to transport all items across the bridge safely.

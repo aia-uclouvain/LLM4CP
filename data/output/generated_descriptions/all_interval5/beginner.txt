@@ -1,0 +1,10 @@
+All Interval Problem
+The problem is about creating a sequence of musical notes where each note is used exactly once and the differences between consecutive notes are all unique.
+The main variables are: 
+- series: an array of notes, where each note is a number from 0 to n-1, 
+- differences: an array of differences between consecutive notes.
+The basic restrictions are: 
+- each note can only be used once, 
+- the differences between consecutive notes must all be different, 
+- the first note must be less than the last note.
+The goal of the problem is to find a sequence of notes that satisfies these rules.

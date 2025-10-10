@@ -1,0 +1,5 @@
+Lucky Numbers Problem. 
+This problem is about finding a special six-digit number, like a bus ticket number, where the sum of the first three digits is equal to the sum of the last three digits. 
+The main variables are the six digits of the number, represented by x, and the complete six-digit number, represented by a. 
+The basic restrictions are that each digit must be between 0 and 9, and the sum of the first three digits must be equal to the sum of the last three digits. 
+The goal of the problem is to find a number that satisfies these conditions, and the model is designed to find one such "lucky" number.

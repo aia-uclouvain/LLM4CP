@@ -1,0 +1,5 @@
+Tennis Tournament Scheduling
+The problem is about organizing a tennis tournament where each player plays against every other player, with a limited number of tennis courts available. 
+The main variables are the number of players, the number of courts, and a matrix that represents the schedule of matches between players, where each cell in the matrix shows the round number when two players compete.
+The basic restrictions are that each player can only play one match per round, and there must be a break of at least one round between matches for each player. Additionally, the number of matches per round cannot exceed the number of available courts.
+The goal is to find a schedule that allows all players to play against each other in the fewest number of rounds possible, taking into account the limited number of courts and the need for breaks between matches.

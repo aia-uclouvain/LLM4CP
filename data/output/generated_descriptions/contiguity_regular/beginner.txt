@@ -1,0 +1,5 @@
+The problem is called Global Contiguity. 
+It's about arranging a series of 0s and 1s in a line so that all the 1s are together. 
+The main variable is "arr", which is an array of 0s and 1s. 
+The basic restriction is that all the 1s in the array must appear one after the other, without any 0s in between. 
+The goal of the problem is to find an arrangement of 0s and 1s that satisfies this rule.

@@ -1,0 +1,5 @@
+name: Magic Series Problem
+description: The Magic Series Problem is a constraint satisfaction problem where the goal is to find a set of n distinct numbers from the interval [1, n^2] that sum up to the nth magic constant, which is given by the formula M_n = 1/2 * n * (n^2 + 1). 
+variables: x = (x_1, x_2, ..., x_n), where x is an array of decision variables representing the numbers in the magic series, and each x_i is a variable that takes a value from the interval [1, n^2] and represents the ith number in the series.
+constraints: sum(x) * 2 = m ∧ all_different(x) ∧ increasing(x), where sum(x) * 2 = m ensures that the sum of the numbers in the series equals the nth magic constant, all_different(x) ensures that all numbers in the series are distinct, and increasing(x) ensures that the numbers in the series are in increasing order.
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables x, such that all constraints are satisfied, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,9 @@
+Curve Fitting Problem
+The problem is about finding the best line that fits a set of points on a graph. 
+The main variables are: 
+- x and y, which are the points on the graph, 
+- a and b, which are the numbers that define the line (a is where the line starts and b is how steep it is), 
+- z, which is the biggest difference between the line and any of the points, 
+- u and v, which are used to measure how far each point is from the line.
+The basic restrictions are that the line should be as close as possible to all the points, and the biggest difference between the line and any point should be as small as possible.
+The goal is to minimize the biggest difference (z) between the line and any of the points, which means finding the line that best fits all the points.

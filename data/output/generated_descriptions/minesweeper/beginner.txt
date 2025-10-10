@@ -1,0 +1,5 @@
+Minesweeper problem
+The problem is about a game where you have a grid of squares, some of which contain hidden mines. The goal is to figure out where the mines are based on clues given by numbers in some of the squares, which tell you how many mines are adjacent to that square.
+The main variables are the game grid, which is a 2D array of numbers and unknowns (represented by -1), and the mines grid, which is a 2D array of 0s and 1s, where 1 means there is a mine in that square and 0 means there isn't. 
+The basic restrictions or rules of the problem are that the number of mines adjacent to a square must match the number given in that square, and that a square can only contain one mine. 
+The goal of the problem is to find a solution that satisfies all the given clues, meaning that the number of mines adjacent to each square matches the given number, and that there is only one possible solution.

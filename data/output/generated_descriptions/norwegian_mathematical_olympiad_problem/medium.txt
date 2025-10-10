@@ -1,0 +1,8 @@
+The problem is called the "Fruit Problem" or "Delightfully Fruitful Problem". 
+It is about finding the cost of one apple, two bananas, and one cherry given that the cost of b apples, b bananas, and a + b cherries is $77. 
+The main decision variables are a, b, and c, which represent the cost of an apple, a banana, and a cherry, respectively. 
+The key constraints are that the total cost of b apples, b bananas, and a + b cherries must be $77, and the cost of one apple, two bananas, and one cherry must be calculated based on the costs of the individual fruits. 
+The constraints also specify that the costs of the fruits and the total cost must be positive integers. 
+The problem's objective is to find the cost of one apple, two bananas, and one cherry, which is represented by the variable y. 
+The problem is a constraint satisfaction problem, where the goal is to find a solution that satisfies all the given constraints, rather than optimizing a specific objective function. 
+In this case, the solution is y = 18, which means that the cost of one apple, two bananas, and one cherry is $18.

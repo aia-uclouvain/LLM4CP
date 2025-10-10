@@ -1,0 +1,5 @@
+name: Giapetto's Problem
+description: Giapetto's problem is a classic problem in linear optimization and constraint programming. It involves finding the optimal production levels of two products, soldiers and trains, in order to maximize profit while satisfying certain constraints such as limited resources and demand.
+variables: x1, x2 - These are the decision variables representing the number of soldiers (x1) and trains (x2) to be produced.
+constraints: x1 >= 0, x2 >= 0, 2*x1 + x2 <= 100, x1 + x2 <= 80, x1 <= 40 - These constraints represent the non-negativity of production levels, limited finishing capacity (2*x1 + x2 <= 100), limited carpentry capacity (x1 + x2 <= 80), and limited demand for soldiers (x1 <= 40).
+objective: maximize 3*x1 + 2*x2 - The objective is to maximize the total profit, which is calculated as 3 times the number of soldiers produced plus 2 times the number of trains produced.

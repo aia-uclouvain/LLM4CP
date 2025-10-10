@@ -1,0 +1,10 @@
+The Gunport Problem
+The Gunport Problem is about covering a rectangular grid with dominoes, where each domino covers two adjacent cells, and ensuring that no two adjacent cells are left vacant.
+The main decision variables are the `x` array, which represents whether a domino is placed in a particular cell, and the `rt` array, which represents the output matrix. The `x[i,j,k]` variable is 1 if a domino is placed in cell `(i,j)` with index `k`, and 0 otherwise.
+The key constraints are: 
+- each cell is covered by at most one domino, 
+- each domino covers exactly two cells, 
+- each domino is placed in adjacent cells, 
+- no two adjacent cells are left vacant, 
+- the number of vacant cells is at least 4.
+The problem's objective is to satisfy all the constraints, with the additional goal of maximizing the number of vacant cells, which is represented by the `sum_zeros` variable. However, in this specific model, the objective is set to `satisfy`, which means the goal is to find a feasible solution that satisfies all the constraints, rather than maximizing or minimizing a specific objective function.

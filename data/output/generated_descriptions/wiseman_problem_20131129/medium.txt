@@ -1,0 +1,5 @@
+The problem is called the "Friday Puzzle 235" or the "5-Digit Number Puzzle". 
+It is about finding a 5-digit number that satisfies a specific condition when the digit '1' is added to the beginning or end of the number. 
+The main decision variables are arrays representing the digits of the original 5-digit number, the number with '1' added to the beginning, and the number with '1' added to the end. 
+The key constraints are that the number with '1' added to the beginning is three times smaller than the number with '1' added to the end, and that the digits of the original number are the same as the corresponding digits in the modified numbers, with the added '1' in the correct position. 
+The problem's objective is to find a 5-digit number that satisfies these conditions, rather than minimizing or maximizing a specific value.

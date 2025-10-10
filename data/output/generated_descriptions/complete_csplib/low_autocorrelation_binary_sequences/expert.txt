@@ -1,5 +1,0 @@
-name: Low Autocorrelation Binary Sequences
-description: The problem involves finding a binary sequence of length n with minimal autocorrelation, where autocorrelation is measured by the sum of the squares of the autocorrelation coefficients at different lags.
-variables: $x_1, x_2, ..., x_n$, where $x_i$ represents the ith value of the sequence, which can be either -1 or 1.
-constraints: $y_{k,i} = x_i \cdot x_{i+k}$ for $1 \leq k \leq n-1$ and $1 \leq i \leq n-k$, and $c_k = \sum_{i=1}^{n-k} y_{k,i}$ for $1 \leq k \leq n-1$, where $y_{k,i}$ is the product of $x_i$ and $x_{i+k}$, and $c_k$ is the autocorrelation coefficient at lag k.
-objective: Minimize $\sum_{k=1}^{n-1} c_k^2$, which represents the sum of the squares of the autocorrelation coefficients at different lags.

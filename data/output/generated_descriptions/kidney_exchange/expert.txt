@@ -1,0 +1,5 @@
+name: Kidney Exchange Problem
+description: The Kidney Exchange Problem is a classic problem in constraint programming that involves finding the maximum number of possible kidney exchanges between a group of people, where each person has a compatibility set of potential donors. The goal is to maximize the number of exchanges while ensuring that anyone who donates a kidney also receives one.
+variables: $x_i, z$, where $x_i$ represents the index of the person who receives a kidney from person $i$, and $z$ represents the total number of exchanges. The decision variables $x_i$ are used to determine the kidney exchange pairs, and $z$ is a variable that counts the number of exchanges.
+constraints: $alldifferent\_except\_0(x) \wedge \forall i \in \{1, \ldots, num\_people\} (x_i = 0 \vee (x_i \in compatible_i \wedge x_{x_i} > 0))$, which ensures that each person can only receive a kidney from someone who is compatible with them, and that anyone who donates a kidney also receives one.
+objective: Maximize $z$, which represents the total number of kidney exchanges.

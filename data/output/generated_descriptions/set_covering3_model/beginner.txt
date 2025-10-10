@@ -1,0 +1,5 @@
+The problem is called Set Covering. 
+It's about selecting a small group of senators to cover all the different groups in a parliament, so each group has at least one senator. 
+The main variables are: x (which senator is chosen), belongs (which senator belongs to which group), num_senators (total number of senators), num_groups (total number of groups), and numNeeded (the number of senators needed to cover all groups). 
+The basic restrictions are that each group must have at least one senator, and a senator can either be chosen or not chosen. 
+The goal of the problem is to find the smallest number of senators that can cover all the groups, but in this specific case, the goal is to find a solution where exactly 2 senators are chosen to cover all the groups.

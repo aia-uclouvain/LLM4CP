@@ -1,0 +1,8 @@
+The problem is called "Among" or "Among Low Up". 
+It is about finding values for two collections of variables, x and y, such that a certain number of values from x are present in y, within a specified range.
+
+The main decision variables are x and y, which are arrays of variables representing the two collections of values. The variables low and up represent the lower and upper bounds of the range, respectively.
+
+The key constraints are that the values of x must be present in the given array [9,2,4,6], the values of y must be present in the given array [0,2,4,6,8], and the number of values from x that are also in y must be between low and up.
+
+The problem's objective is to satisfy these constraints, specifically to find values for x and y such that the number of common values is within the specified range. In this case, the problem is looking for a solution where between 1 and 3 values from x are also in y. The goal is not to minimize or maximize a specific value, but rather to find a feasible solution that meets the given constraints.

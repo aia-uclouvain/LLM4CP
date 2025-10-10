@@ -1,0 +1,9 @@
+name: Greatest Combination Problem
+
+description: The Greatest Combination Problem is a classic problem in constraint programming that involves finding the greatest combination of numbers in a square grid, where each move must be either down, down to the right, or down to the left, starting from the top row and moving down to the bottom row.
+
+variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the column index of the chosen number in the $i^{th}$ row. These variables determine the path of the greatest combination.
+
+constraints: $\forall i \in \{2, 3, ..., n\}, \exists j \in \{1, 2, ..., m\}, |x_{i-1} - j| \leq 1 \wedge x_i = j$, which ensures that each move is either down, down to the right, or down to the left, and $x_i \in \{1, 2, ..., m\}$, which ensures that the chosen column index is within the grid boundaries.
+
+objective: Maximize $max\_val = \sum_{i=1}^{n} grid[i, x_i]$, which represents the sum of the numbers in the chosen path.

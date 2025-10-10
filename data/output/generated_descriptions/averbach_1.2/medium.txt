@@ -1,0 +1,8 @@
+The problem is known as the "Hearts Problem" or "Three Ladies Problem". 
+It is about determining the nationalities of three women, an American, an Englishwoman, and a Frenchwoman, seated around a circular table, based on the information provided about the cards they passed to each other. 
+
+The main decision variables in this problem are X, Y, Z, American, English, and French, which represent the seating arrangement and nationalities of the women. The variables X, Y, and Z are used to create a table representing the seating arrangement, while American, English, and French are used to assign nationalities to each position.
+
+The key constraints in this problem can be described as follows: each woman has a unique nationality, and the seating arrangement is such that Ms Y passed three hearts to the American woman, who is seated to her right. Additionally, Ms X passed the queen of spades and two diamonds to the person who passed cards to the Frenchwoman, which means Ms X is seated to the left of the Frenchwoman. 
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of nationalities to the women, given the constraints provided. In other words, the goal is to determine the unique arrangement of nationalities that satisfies all the conditions stated in the problem.

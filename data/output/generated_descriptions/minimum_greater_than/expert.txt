@@ -1,0 +1,5 @@
+name: Minimum Greater Than Problem
+description: The Minimum Greater Than Problem is a constraint satisfaction problem that involves finding the smallest value that is strictly greater than a given value within a collection of variables. The problem ensures that there exists at least one variable in the collection that takes a value strictly greater than the smallest value found.
+variables: $var1, var2, variables$ - $var1$ and $var2$ are decision variables representing the smallest value strictly greater than $var2$ and the given value, respectively. $variables$ is an array of decision variables representing the collection of values.
+constraints: $var1 > var2, minimum\_greater\_than(var1, var2, variables), var1 = 5, var2 = 3, variables = [8, 5, 3, 8]$ - These constraints ensure that $var1$ is greater than $var2$, the $minimum\_greater\_than$ constraint holds, and the values of $var1$, $var2$, and $variables$ are assigned as specified.
+objective: The objective of this problem is to satisfy all the given constraints, as it is a constraint satisfaction problem rather than an optimization problem.

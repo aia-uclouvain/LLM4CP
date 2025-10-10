@@ -1,0 +1,11 @@
+Lam's Problem
+The problem involves finding a way to place 11 zeros in each row of a 111 by 111 binary matrix such that each column also has 11 zeros, and each pair of rows has exactly one zero in the same column.
+
+The main decision variables are the elements of the binary matrix `x`, where `x[i, j]` represents the value in the `i-th` row and `j-th` column, which can be either 0 or 1. The variable `m` represents the number of zeros in each row and column.
+
+The key constraints are: 
+- each row must have exactly `m` zeros, 
+- each column must have exactly `m` zeros, and 
+- for any two rows, there must be exactly one column where both rows have a zero.
+
+The objective of the problem is to find a solution that satisfies all the constraints, which is equivalent to finding a projective plane of order 10. In other words, the goal is to determine whether such a binary matrix exists, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the given constraints, rather than optimizing a particular objective function.

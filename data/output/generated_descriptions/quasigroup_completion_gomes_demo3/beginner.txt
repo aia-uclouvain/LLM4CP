@@ -1,0 +1,5 @@
+Quasigroup Completion Problem
+The problem is about filling in a 10x10 grid with colors, where each color can be one of ten different options, and each row and column must have each color exactly once, with some colors already given.
+The main variables are the colors in each cell of the grid, which can be one of ten colors, represented by numbers 1 to 10, where each number corresponds to a specific color, such as dark red, light blue, or yellow.
+The basic restrictions are that each row and column can only have each color once, and some cells already have a color filled in. 
+The goal of the problem is to find a way to fill in the entire grid with colors, following the rules, and maximizing the number of possible solutions is not the goal, but rather finding any solution that satisfies the given constraints.

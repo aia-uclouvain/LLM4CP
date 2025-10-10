@@ -1,0 +1,8 @@
+Magic Series Problem
+The problem is about finding a set of distinct numbers within a given range that sum up to a specific target value, known as the magic constant.
+The main decision variables are the elements of the array `x`, where `x[i]` represents the `i`-th number in the magic series, and its value ranges from 1 to `n^2`.
+The key constraints are: 
+- the sum of the numbers in the series must be equal to the magic constant `M_n = 1/2 * n * (n^2 + 1)`, 
+- all numbers in the series must be distinct, 
+- and the numbers must be in increasing order.
+The objective of the problem is to find a magic series that satisfies these constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a set of distinct numbers that sum up to the magic constant, without any specific optimization criterion.

@@ -1,8 +1,0 @@
-name: Costas Array
-description: A Costas array is a permutation of rows and columns of a matrix such that all displacement vectors between the marks (or 1s) are different, which is useful in radar and sonar signal processing to minimize interference.
-variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ represents the row where the $i^{th}$ mark is placed (on the $i^{th}$ column), and each $x_i$ is a decision variable that can take a value from the set of rows $\{0, 1, ..., n-1\}$.
-constraints: $\begin{aligned} 
-& AllDifferent(x) \\
-& AllDifferent(x_i - x_{i+d}) \; \forall i \in \{1, 2, ..., n-d\}, \forall d \in \{1, 2, ..., n-1\} 
-\end{aligned}$, where the first constraint ensures that all marks are placed on different rows (and columns), and the second constraint ensures that all displacement vectors between the marks are different.
-objective: The problem is a feasibility problem, so there is no objective function to minimize or maximize, the goal is to find a valid assignment of values to the decision variables that satisfy all the constraints.

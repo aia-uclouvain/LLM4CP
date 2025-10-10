@@ -1,0 +1,5 @@
+Circular Chain Problem
+The problem is about a person named George who has a circular chain made of eight linked gold rings of different sizes, with the total weight being 57 ounces. 
+The main variables are the weights of the eight rings in the chain, which are whole numbers representing the weight of each ring in ounces.
+The basic restrictions are that no ring can weigh 3 or 6 ounces, and the chain must be designed so that any whole number of ounces can be removed from it, either as a single link or as a chain of linked rings.
+The goal is to find the weights of the eight rings in order, starting with the two smallest, such that the chain can be broken into any number of ounces from 1 to 57.

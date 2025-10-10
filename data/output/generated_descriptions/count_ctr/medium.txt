@@ -1,0 +1,10 @@
+**Count Constraint Problem**
+The Count Constraint problem is about enforcing a condition on the number of variables in a collection that are assigned to a specific value. 
+The main decision variables are: 
+- `x`: an array of variables representing the collection of values, 
+- `val`: a variable representing the specific value of interest, 
+- `nvar`: a variable representing the minimum or maximum number of occurrences of `val` in `x`. 
+The key constraints are: 
+- `cp1d`: ensures that the array `x` is equal to a given array of values, 
+- `count_ctr`: enforces the condition that the number of occurrences of `val` in `x` satisfies a certain relational operator (e.g., greater than or equal to, less than or equal to) with `nvar`. 
+The objective of the problem is to satisfy the given constraints, specifically the `count_ctr` constraint, which ensures that the count of `val` in `x` meets the specified condition. In this case, the problem is trying to find a solution where the number of occurrences of `val` (which is 5) in `x` is greater than or equal to `nvar`.

@@ -1,0 +1,15 @@
+Online Dating Decision Services
+The problem is about matching people for an online dating service. The goal is to find the best matches between people based on their preferences, such as age, location, and interests.
+The main variables are:
+- Each person's name
+- Their age, gender, and location
+- Their preferred age range and gender for a match
+- Their interests (e.g., hobbies)
+- The number of common interests they have with a potential match
+- The age difference between them and a potential match
+The basic restrictions or rules are:
+- A person can only be matched with someone of an acceptable gender
+- The person's age must be within the acceptable range
+- The person's location must match exactly
+- The number of common interests must be at least the minimum required
+The goal is to maximize the total score of all matches, where the score is based on the number of common interests and the age difference between the matched individuals.

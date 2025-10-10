@@ -1,0 +1,5 @@
+5x5 Puzzle 
+The problem is about a game where you have a 5x5 grid of squares that can be either lit or unlit. When you click on a square, it and the squares next to it (up, down, left, right) will change their state (lit to unlit or unlit to lit). 
+The main variables are the state of each square (x) and the number of times each square has been clicked (d), as well as the total number of clicks (the_sum). 
+The basic rules are that when a square is clicked, it and its neighbors change state, and each click counts as one move. 
+The goal is to light all 25 squares in the fewest number of clicks (minimize the_sum).

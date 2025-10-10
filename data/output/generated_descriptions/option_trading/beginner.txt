@@ -1,0 +1,9 @@
+Option Trading Problem. 
+This problem is about buying and selling options in the stock market, which is a way for people to bet on whether a stock's price will go up or down. 
+The main variables are: 
+- S, which is the price of the stock
+- C, which is the cost of buying an option to buy the stock
+- E, which is the target price of the stock that the option is betting on
+- P, which is the profit made from buying and selling the option. 
+The basic restrictions are that the profit depends on whether the stock price is higher or lower than the target price, and that the cost of buying the option is fixed at $200. 
+The goal is to maximize the profit, which means finding the best stock price and target price to make the most money from buying and selling the option.

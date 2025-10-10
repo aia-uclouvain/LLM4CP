@@ -1,0 +1,13 @@
+Wagner-Whitin Distribution Problem
+The Wagner-Whitin Distribution Problem is a classic problem in operations research and management science that involves finding the optimal production and inventory policy for a multi-period, multi-product system with time-varying demand.
+
+The main decision variables in this problem are the orders and stock levels at each node and period. The orders variable represents the amount of product to be produced or ordered at each node and period, while the stock variable represents the inventory level at each node and period.
+
+The key constraints in this problem can be described as follows: 
+- The initial inventory level at each node is zero.
+- For non-leaf nodes, the inventory level at each period is equal to the previous period's inventory level plus the amount ordered minus the amount shipped to child nodes.
+- For leaf nodes, the inventory level at each period is equal to the previous period's inventory level plus the amount ordered minus the demand at that node and period.
+
+The objective of the problem is to minimize the total cost, which consists of two components: 
+- The holding cost, which is the cost of carrying inventory at each node and period.
+- The production or ordering cost, which is the cost of producing or ordering a product at each node and period. The production or ordering cost is incurred only when an order is placed.

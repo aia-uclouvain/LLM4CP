@@ -1,0 +1,8 @@
+name: Rotation Permutation Puzzle
+description: The Rotation Permutation Puzzle is a problem where we have a 4x4 square of numbers and four possible operations, each involving rotating the numbers in a 3x3 square clockwise. The goal is to find the minimum number of operations required to transform the initial configuration into a sorted configuration, where the numbers are in the order 1 to 16.
+variables: $x_{k,i}, init_i, check_k, operations_k, check\_ix$ 
+These variables represent the following: $x_{k,i}$ is the value of the $i^{th}$ cell in the $k^{th}$ row, $init_i$ is the initial value of the $i^{th}$ cell, $check_k$ is a binary variable indicating whether the $k^{th}$ row is the solution, $operations_k$ is the operation performed to get the $k^{th}$ row, and $check\_ix$ is the index of the solution row.
+constraints: $\check[1] = 0 \land operations[1] = 0 \land x_{1,i} = init_i \land \forall k \in 2..rows (same(x_{k-1}, x_k) \lor \exists ix \in 1..4 (rotate(x_{k-1}, x_k, rotations, ix))) \land \exists k \in 2..rows (\forall i \in 1..n*n (x_{k,i} = i) \land check\_ix = k \land check[k] = 1) \land \sum check = 1$
+These constraints ensure that the first row is the initial configuration, each subsequent row is either the same as the previous row or the result of a rotation operation, and there exists a row that is the solution. The constraints also ensure that there is only one solution row and that all rows after the solution row are the same.
+objective: minimize $check\_ix$ 
+The objective is to minimize the index of the solution row, which corresponds to finding the minimum number of operations required to solve the puzzle.

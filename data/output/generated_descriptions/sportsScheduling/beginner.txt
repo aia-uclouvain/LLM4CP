@@ -1,0 +1,13 @@
+Sports Scheduling Problem
+The problem is about creating a schedule for a sports league where multiple teams play each other. 
+The main variables are: 
+- n: the number of teams
+- schedule: a 3D array that stores which teams play each other in each week and period, with home and away designations
+- game: a 2D array that stores the game number for each week and period
+- allowed: a 2D array that maps game numbers to team pairs and game numbers.
+The basic restrictions are: 
+- each team plays once a week
+- each team plays at most twice in the same period
+- each game is distinct
+- the schedule and game arrays must be consistent with the allowed mappings.
+The goal of the problem is to find a valid schedule that satisfies all the constraints.

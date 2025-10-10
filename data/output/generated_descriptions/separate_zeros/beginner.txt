@@ -1,0 +1,15 @@
+Name of the problem: Separate Zeros
+
+This problem is about taking a list of numbers that includes zeros and rearranging it so that all the zeros are either at the beginning or the end of the list, while keeping the other numbers in the same order as they were in the original list.
+
+The main variables are:
+- `s`: the original list of numbers
+- `s2`: a new list where all the zeros are at the beginning
+- `s3`: a new list where all the zeros are at the end
+
+The basic restrictions or rules of the problem are:
+- The original list `s` is given and cannot be changed
+- The new lists `s2` and `s3` must have the same numbers as `s`, but with all the zeros at the beginning or end, respectively
+- The order of the non-zero numbers in `s2` and `s3` must be the same as in `s`
+
+The goal of the problem is to create the new lists `s2` and `s3` that satisfy these rules, given the original list `s`. There is no specific goal to minimize or maximize anything, but rather to find a valid rearrangement of the numbers.

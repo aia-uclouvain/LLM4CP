@@ -1,0 +1,9 @@
+Minesweeper Problem
+The Minesweeper problem is about finding the location of mines in a grid based on given clues.
+The main decision variables are `mines`, a 2D array where `mines[i,j]` represents whether there is a mine at position `(i,j)` in the grid.
+The key constraints are: 
+- If a cell has a known number of adjacent mines, the number of mines in the neighboring cells must match this number.
+- If a cell has an unknown number of adjacent mines, it may or may not have a mine.
+- If a cell is known to have no adjacent mines, it cannot have a mine.
+- If a cell is known to have a mine, it must be marked as having a mine.
+The objective of the problem is to find a valid configuration of mines that satisfies all the given constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

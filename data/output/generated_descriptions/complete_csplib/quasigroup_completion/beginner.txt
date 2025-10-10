@@ -1,5 +1,0 @@
-Quasigroup with Holes or Latin Square Completion
-The problem is about filling in a puzzle with numbers so that each row and column has each number only once, like a Sudoku puzzle, but without the 3x3 sub-grids. 
-The main variables are the size of the puzzle (N), the initial board with some numbers already filled in (start), and the completed puzzle (puzzle). 
-The basic restrictions are that each row and column must have each number only once, and any numbers already filled in on the initial board must remain in the same place on the completed puzzle. 
-The goal of the problem is to find a completed puzzle that satisfies these rules, there is no specific goal to minimize or maximize, the goal is just to find a valid solution.

@@ -1,0 +1,5 @@
+name: Global Contiguity Problem
+description: The Global Contiguity Problem is a constraint satisfaction problem that enforces all variables of a given collection to be assigned to 0 or 1, with the additional constraint that all variables assigned to value 1 appear contiguously, meaning that there is at most one group of consecutive 1's in the sequence.
+variables: $arr = (arr_1, arr_2, ..., arr_n)$, where $arr_i$ is a decision variable representing the $i^{th}$ element of the sequence, which can take values 0 or 1, and $n$ is the length of the sequence.
+constraints: $\forall i \in \{1, 2, ..., n\}, arr_i \in \{0, 1\}$ and $contiguity(arr)$, where $contiguity(arr)$ is a global constraint that ensures all 1's in the sequence appear contiguously.
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., $satisfy$.

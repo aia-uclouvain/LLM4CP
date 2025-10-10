@@ -1,0 +1,10 @@
+name: Perfect Square Sequence Problem
+description: The problem requires rearranging a sequence of numbers from 1 to n such that the sum of any two consecutive numbers in the sequence is a perfect square. The goal is to find a valid arrangement for a given range of numbers.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x$ is an array of decision variables representing the rearranged sequence of numbers, and each $x_i$ is a variable that takes a value from 1 to $n$, representing the $i^{th}$ number in the sequence.
+constraints: $\begin{aligned}
+&x_i \in \{1, 2, ..., n\} \quad \forall i \in \{1, 2, ..., n\} \\
+&\text{all\_different}(x) \\
+&(x_i + x_{i+1}) \in \text{squares} \quad \forall i \in \{2, 3, ..., n\} \\
+&x_1 < x_n
+\end{aligned}$, where the constraints ensure that each number in the sequence is unique, the sum of any two consecutive numbers is a perfect square, and a symmetry breaking constraint is added to reduce the search space.
+objective: The problem is a satisfaction problem, where the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

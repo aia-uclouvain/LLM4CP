@@ -1,0 +1,12 @@
+name: Kordemsky's Palindrome problem
+
+description: The problem is to find a 10-digit number with all distinct digits, such that when this number is divided by 9, the quotient is a palindrome, i.e., a number that reads the same from both ends.
+
+variables: $x, xa, y, ya$ 
+These variables represent the 10-digit number $x$ and its digits $xa$, and the quotient $y$ and its digits $ya$. $x$ is a 10-digit number, $xa$ is an array of 10 variables representing the digits of $x$, $y$ is the quotient of $x$ divided by 9, and $ya$ is an array of 9 variables representing the digits of $y$.
+
+constraints: $to\_num(xa, x) \land alldifferent(xa) \land to\_num(ya, y) \land y = x \div 9 \land \forall i \in \{1, \ldots, 4\} (ya[i] = ya[9-i+1])$ 
+These constraints ensure that $x$ is a 10-digit number with distinct digits, $y$ is the quotient of $x$ divided by 9, and $y$ is a palindrome. The $to\_num$ predicate is used to convert the array of digits to a number, $alldifferent(xa)$ ensures that all digits of $x$ are distinct, and the last constraint ensures that $y$ is a palindrome by comparing the first half of its digits with the second half in reverse order.
+
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to find a 10-digit number with distinct digits whose quotient when divided by 9 is a palindrome. There is no objective function to minimize or maximize.

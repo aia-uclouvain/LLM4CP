@@ -1,0 +1,5 @@
+Greatest Combination Problem
+The problem is about finding the best path through a grid of numbers, starting from the top and moving down, to get the highest total score. 
+The main variables are the grid, which is a table of numbers, and the path, which is a list of positions in the grid that we choose to visit. 
+The basic restrictions are that we can only move down, and we can only move one position to the left or right, or stay in the same position. 
+The goal is to find the path that gives us the highest total score, by adding up the numbers in the positions we visit.

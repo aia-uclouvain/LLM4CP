@@ -1,0 +1,7 @@
+name: How Old Am I Puzzle
+description: The problem is a classic puzzle where a person is trying to determine their current age based on two pieces of information: six years ago, their brother was twice their age, and in five years, their combined ages will be 40.
+variables: me, him 
+These are the decision variables representing the current ages of the person and their brother, respectively.
+constraints: 2*(me-6) = him-6 ∧ 40 = (me+5) + (him+5) 
+These constraints represent the two conditions given in the problem: the first constraint states that six years ago, the brother's age was twice the person's age, and the second constraint states that in five years, their combined ages will be 40.
+objective: The objective of this problem is to find a solution that satisfies both constraints, as there is no explicit objective function to minimize or maximize, the goal is to find the values of me and him that make the constraints true.

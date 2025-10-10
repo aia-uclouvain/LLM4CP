@@ -1,0 +1,15 @@
+**Maximum Path Sum in a Triangle**
+The problem is about finding the maximum total from top to bottom of a triangle, where each step can only move to adjacent numbers on the row below.
+
+**Decision Variables**
+The main decision variables are `x[i]`, which represent the column index of the number chosen at each row `i`. The variable `total` represents the maximum total sum that can be achieved.
+
+**Constraints**
+The constraints are:
+- Each chosen number must be greater than 0.
+- The difference between the column indices of two consecutive chosen numbers can be either 0 or 1, meaning we can only move to adjacent numbers on the row below.
+- The first chosen number must be in the first column.
+- The total sum is the sum of all chosen numbers.
+
+**Objective**
+The objective is to maximize the `total` sum, which means finding the path from top to bottom of the triangle that results in the largest sum of numbers.

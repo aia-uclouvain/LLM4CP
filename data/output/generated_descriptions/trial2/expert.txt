@@ -1,0 +1,12 @@
+name: The Second Trial (Smullyan) puzzle
+
+description: The problem is a classic puzzle where there are two doors, behind one of which is a lady and behind the other is a tiger. The doors have statements on them, and the goal is to figure out which door hides the lady and which door hides the tiger, based on the given statements. The statement on door 1 is "The lady is behind the other door" and the statement on door 2 is "The tiger is behind door 1". The puzzle states that either both statements are true or both statements are false.
+
+variables: $x_{i,j}, t_i$ 
+These are decision variables where $x_{i,j}$ represents whether door $i$ hides prize $j$ (1 for lady, 2 for tiger), and $t_i$ represents whether the statement on door $i$ is true.
+
+constraints: $\sum_{j=1}^{2} x_{i,j} = 1, x_{1,1}+x_{2,1}-2t_1 \leq 0, x_{1,1}+x_{2,1}-t_1 \geq 0, t_2 = x_{1,2}, t_1 = t_2$ 
+These constraints ensure that each door hides exactly one prize, the statement on door 1 is consistent with the location of the lady, the statement on door 2 is consistent with the location of the tiger, and either both statements are true or both statements are false.
+
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the given constraints, which will reveal the location of the lady and the tiger behind the doors.

@@ -1,0 +1,5 @@
+name: Bananas Problem
+description: The problem is about purchasing a combination of fruits, specifically bananas, oranges, mangoes, and apples, with certain constraints on their quantities and costs, while minimizing the total quantity of bananas and apples purchased.
+variables: $b, o, m, a$ - These variables represent the quantities of bananas, oranges, mangoes, and apples to be purchased, respectively.
+constraints: $b \geq 1, o \geq 1, m \geq 1, a \geq 1, \frac{3b}{5} + \frac{5o}{7} + \frac{7m}{9} + \frac{9a}{3} = 100, b + o + m + a = 100$ - These constraints ensure that at least one unit of each fruit is purchased, the total cost of the fruits does not exceed $100, and the total quantity of fruits purchased is exactly 100.
+objective: Minimize $b + a$ - The objective is to minimize the total quantity of bananas and apples purchased, as the problem states that these fruits are not preferred.

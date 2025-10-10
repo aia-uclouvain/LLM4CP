@@ -1,0 +1,13 @@
+Finding Celebrities problem
+The problem is about finding people at a party who are known by everyone else, but only know other people who are also known by everyone else.
+The main variables are: 
+- the number of people at the party (n), 
+- the relationships between people at the party (graph), 
+- the people each person knows (party), 
+- the set of celebrities (celebrities), 
+- the number of celebrities (num_celebrities).
+The basic restrictions are: 
+- everyone knows themselves, 
+- if a person is a celebrity, everyone else must know them, 
+- if a person is a celebrity, they can only know other celebrities.
+The goal is to find the set of celebrities at the party, which are people who are known by everyone else and only know other celebrities.

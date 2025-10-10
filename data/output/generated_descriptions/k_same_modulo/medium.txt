@@ -1,0 +1,5 @@
+The problem is known as the k_Same_Modulo problem. 
+It is about enforcing a same_modulo constraint between each pair of consecutive sets in a collection of sets, where each set contains the same number of domain variables. 
+The main decision variables are the elements of the 2D array `v`, where `v[i, j]` represents the value of the jth variable in the ith set. 
+The key constraints are that the number of variables in each set that have the same remainder when divided by `M` should be the same for each pair of consecutive sets. 
+The problem's objective is to find an assignment of values to the variables that satisfies the same_modulo constraint, with no explicit objective function to minimize or maximize, the goal is to find a feasible solution.

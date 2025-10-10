@@ -1,0 +1,9 @@
+The problem is called the "Delightfully Fruitful Problem" from the Norwegian Math Olympiad. 
+It's about buying apples, bananas, and cherries. 
+The main variables are: 
+- a, the cost of one apple, 
+- b, the cost of one banana, 
+- c, the cost of one cherry, 
+- y, the total cost of one apple, two bananas, and one cherry. 
+The basic restrictions are that the costs of the fruits are positive integers and that the total cost of a certain combination of fruits is $77. 
+The goal is to find the total cost (y) of one apple, two bananas, and one cherry.

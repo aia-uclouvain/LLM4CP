@@ -1,0 +1,17 @@
+Exodus Puzzle
+The Exodus puzzle is a classic constraint programming problem that involves determining the age of each of five children, their family's country of origin, and the part of the Exodus story each child is presenting.
+The main decision variables in this problem are:
+- `Age`: an array of variables representing the age of each child, with possible values being 3, 5, 7, 8, or 10.
+- `Story`: an array of variables representing the part of the Exodus story each child is presenting, with possible values being Burning Bush, Captivity, Moses's Youth, Passover, or Ten Commandments.
+- `Country`: an array of variables representing the country of origin of each child's family, with possible values being Ethiopia, Kazakhstan, Lithuania, Morocco, or Yemen.
+The key constraints in this problem can be described as follows:
+- Each child has a unique age, story, and country of origin.
+- Debby's family is from Lithuania.
+- The child presenting the Passover story is two years older than Bernice.
+- The child from Yemen is younger than the child from Ethiopia.
+- The child from Morocco is three years older than Ted.
+- Sammy is three years older than the child presenting Moses's Youth.
+- Carl presents the Captivity story.
+- The five-year-old child presents the Ten Commandments story.
+- The child presenting the Burning Bush story is either two or three years older than the child from Kazakhstan.
+The objective of this problem is to find a solution that satisfies all the given constraints, with no specific objective function being minimized or maximized. The goal is to determine the age, country of origin, and Exodus story for each child.

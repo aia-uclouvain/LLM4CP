@@ -1,0 +1,5 @@
+Enigma problem 1535 (Back to front)
+The problem is about finding two 6-digit numbers that have a special property: when you reverse the order of their digits, the new number is a multiple of the original number.
+The main variables are x1 and x2, which represent the two 6-digit numbers, and x1_a and x2_a, which are arrays of digits that make up these numbers.
+The basic restrictions are that x1 and x2 must be 6-digit numbers, and when you reverse the order of the digits of x1, you get x2, and x1 must be greater than x2. Also, x1 must be a multiple of x2.
+The goal of the problem is to find the smaller of the two 6-digit numbers, x2, that satisfies these conditions.

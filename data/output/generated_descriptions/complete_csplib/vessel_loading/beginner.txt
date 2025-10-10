@@ -1,5 +1,0 @@
-Vessel Loading problem
-The Vessel Loading problem is about packing containers of different sizes and classes onto a ship's deck in a way that meets certain rules. 
-The main variables are the positions and orientations of the containers on the deck. 
-The basic restrictions are that each container must be placed within the deck's boundaries, containers cannot overlap, and certain classes of containers must be separated by a minimum distance. 
-The goal of the problem is to find a valid arrangement of containers on the deck that satisfies all the rules.

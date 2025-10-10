@@ -1,0 +1,8 @@
+Enigma problem. 
+This problem is about a game where a person, Penny, thinks of four different positive digits and makes 24 different 4-digit numbers using these digits. She then adds up all these numbers and subtracts one of the numbers from the total. The result is a 6-digit number that starts with "122" and ends with "0". The goal is to find the 4-digit number that Penny subtracted from the total.
+
+The main variables are the four digits chosen by Penny, the 24 numbers made from these digits, the sum of these 24 numbers, and the 6-digit result after subtracting one of the numbers. 
+
+The basic restrictions are that the four digits must be different, the first digit cannot be zero, and the 6-digit result must start with "122" and end with "0". 
+
+The goal is to find the 4-digit number that was subtracted from the total sum of the 24 numbers, which will give us the correct 6-digit result.

@@ -1,0 +1,5 @@
+The Age Problem
+The problem is about determining the ages of three individuals, John, Jim, and Jerry, based on given relationships between their ages.
+The main decision variables are `john`, `jim`, and `jerry`, which represent the ages of each individual.
+The key constraints are: John's age is twice Jim's age, the sum of John's and Jim's ages equals Jerry's age, and the total age of all three is 36. In plain language, these constraints mean that John is older than Jim by a factor of two, the combined age of John and Jim is the same as Jerry's age, and together, the three of them have a total age of 36.
+The problem's objective is to find a solution that satisfies all the given constraints, as indicated by the `solve satisfy` statement, rather than minimizing or maximizing a specific value. The goal is to determine the ages of John, Jim, and Jerry that meet the specified conditions.

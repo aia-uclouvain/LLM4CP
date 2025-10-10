@@ -1,0 +1,10 @@
+The Bus Problem
+A classic puzzle where a teacher is trying to distribute students into buses, with two different distribution methods resulting in either one student or one bus being left over.
+The main decision variables are: 
+- a, representing the total number of students, 
+- b, representing the total number of buses, and 
+- c, representing the number of students per bus in the second distribution method.
+The key constraints are: 
+- when distributing 33 students per bus, there is one student left over, and 
+- when distributing the same number of students per bus (c), there is one bus left over.
+The objective of the problem is to find the values of a, b, and c that satisfy these constraints, effectively determining the total number of students and buses.

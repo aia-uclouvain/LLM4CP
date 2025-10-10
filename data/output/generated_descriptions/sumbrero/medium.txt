@@ -1,0 +1,5 @@
+The Sumbrero problem.
+The Sumbrero problem is a classic constraint programming problem where the goal is to find a set of numbers that satisfy a system of linear equations with constraints.
+The main decision variables are the array `x` of size `cols`, where each element `x[j]` represents a number between 1 and 9 that will be used to satisfy the equations.
+The key constraints are that the sum of the products of each row of the matrix `a` with the corresponding elements of `x` must equal the corresponding element in the `sums` array. Additionally, if `use_alldiff` is true, all elements of `x` must be different.
+The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize, the goal is to find a feasible solution.

@@ -1,0 +1,8 @@
+name: Team Formation Problem
+description: The problem is to divide a set of people with different strengths into two teams of equal size, such that the difference in total strength between the two teams is minimized. The problem is inspired by the real-world scenario of picking teams in sports, where the goal is to create two teams with similar overall abilities.
+variables: $x_i, d$ 
+The decision variables are $x_i$, which represent the team assignment for each person $i$, and $d$, which represents the difference in total strength between the two teams. The variable $x_i$ takes values in $\{1, 2\}$, where $1$ represents team 1 and $2$ represents team 2. The variable $d$ is a non-negative integer that represents the absolute difference in total strength between the two teams.
+constraints: $n \mod 2 = 0, \quad d = \left| \sum_{i=1}^n s_i \cdot \mathbb{I}(x_i = 1) - \sum_{i=1}^n s_i \cdot \mathbb{I}(x_i = 2) \right|, \quad \sum_{i=1}^n \mathbb{I}(x_i = 1) = \frac{n}{2}, \quad x_1 = 1, \quad d \mod 2 = \sum_{i=1}^n s_i \mod 2$
+The constraints are: (1) the number of people $n$ must be even, (2) the difference in total strength $d$ is calculated as the absolute difference between the sum of strengths of people in team 1 and the sum of strengths of people in team 2, (3) each team must have exactly $\frac{n}{2}$ people, (4) the first person is assigned to team 1, and (5) the difference in total strength $d$ must have the same parity as the sum of all strengths.
+objective: minimize $d$ 
+The objective is to minimize the difference in total strength $d$ between the two teams.

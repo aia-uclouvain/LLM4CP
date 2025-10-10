@@ -1,0 +1,5 @@
+The problem is called "Common Modulo". 
+It's about comparing two groups of numbers to see how many numbers in each group fall into the same category when divided by a certain number, called the "modulo". 
+The main variables are "x" and "y", which are the two groups of numbers, "a" and "b", which count how many numbers in each group match the other group's categories, and "m", which is the modulo number. 
+The basic rules are that each number in "x" and "y" must be between 0 and 9, and the numbers are divided into categories based on their remainder when divided by "m". 
+The goal is to find the values of "a" and "b", which represent the number of matches between the categories of "x" and "y".

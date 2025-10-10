@@ -1,0 +1,9 @@
+The problem is called "alldifferent_same_value". 
+It's about comparing two lists of numbers to see if they have any matching pairs and making sure all numbers in one list are unique. 
+The main variables are: 
+- x and y, which are lists of numbers that can be between 1 and 7, 
+- nsame, which counts how many pairs of numbers, one from each list, are the same. 
+The basic rules are: 
+- all numbers in list x must be different from each other, 
+- the model checks each pair of numbers, one from list x and one from list y, to see if they are the same, and counts these matches. 
+The goal is to find a solution where all these rules are satisfied, without trying to minimize or maximize anything.

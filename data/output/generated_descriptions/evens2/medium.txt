@@ -1,0 +1,5 @@
+Evens Puzzle
+The Evens Puzzle is a classic constraint programming problem that involves placing a given number of chips on a grid such that every row and every column contains an even number of chips.
+The main decision variable is a 2D array `place` where `place[i, j]` represents whether a chip is placed at position `(i, j)` on the grid (1 if a chip is present, 0 otherwise).
+The key constraints are: the total number of chips placed on the grid must be equal to a given number (`NCHIP`), and each row and column must have an even number of chips. This means that for each row and column, the sum of the `place` values must be even.
+The objective of the problem is to find a satisfying assignment of chips to positions on the grid, such that all constraints are met. The problem does not have a specific minimization or maximization objective, but rather aims to find a feasible solution that satisfies all constraints.

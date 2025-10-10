@@ -1,0 +1,5 @@
+The problem is called Global Cardinality. 
+It's about making sure that certain numbers appear a specific number of times in a list. 
+The main variables are "variables" which is a list of numbers, and "values" which is a table that says how many times each number should appear. 
+The basic restrictions are that the numbers in the list must match the counts in the table, and every number in the list must be between 1 and 8. 
+The goal is to find a list of numbers that satisfies these conditions, and to show how the numbers and their counts match up.

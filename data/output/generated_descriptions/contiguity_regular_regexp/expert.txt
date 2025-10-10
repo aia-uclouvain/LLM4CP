@@ -1,0 +1,5 @@
+name: Contiguity Problem
+description: The contiguity problem is a classical problem in constraint programming that involves finding an assignment of values to a sequence of variables such that all variables assigned to value 1 appear contiguously. 
+variables: $arr = (arr_1, arr_2, ..., arr_n)$, where $arr_i$ is a decision variable that can take values 0 or 1, representing the assignment of the $i^{th}$ variable in the sequence.
+constraints: $arr_i \in \{0, 1\}$ for $i = 1, ..., n$, and the contiguity constraint, which can be represented by the regular expression $0*(0|1+)0*$, ensuring that all variables assigned to value 1 appear contiguously.
+objective: The objective of the problem is to find a satisfying assignment, as indicated by the "solve satisfy" statement in the model, meaning that the goal is to find an assignment of values to the variables that satisfies all the constraints, without any specific optimization criterion.

@@ -1,0 +1,12 @@
+Langford's Number Problem
+The problem is about arranging a set of numbers, where each number appears a certain number of times, into a sequence such that the distance between consecutive occurrences of each number is equal to the number itself.
+
+The main decision variables are `a` and `pos`, where `a` represents the sequence of numbers and `pos` represents the positions of the numbers in the sequence. The variable `a` is an array of length `k*n`, where `k` is the number of occurrences of each number and `n` is the maximum number in the set. The variable `pos` is also an array of length `k*n`, where each element represents the position of the corresponding number in the sequence.
+
+The key constraints are: 
+- each number appears exactly `k` times in the sequence, 
+- the distance between consecutive occurrences of each number `i` is `i`, 
+- all positions in the sequence are distinct, and 
+- the sequence is symmetric, meaning that the first half of the sequence is not a mirror image of the second half.
+
+The problem's objective is to find a sequence that satisfies all the constraints. The model uses a satisfaction-based approach, where the goal is to find a solution that meets all the constraints, rather than optimizing a specific objective function. The model uses a search strategy to find a solution, and the `solve` statement is used to specify the search strategy and the variables to search.

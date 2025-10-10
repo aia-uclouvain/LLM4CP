@@ -1,0 +1,5 @@
+name: Bus Problem
+description: The problem describes a scenario where a teacher is trying to distribute students into buses. When the teacher puts 33 students in each bus, there is one student left over. However, when the teacher puts a different number of students in each bus, there is one bus left over. The problem asks to find the total number of buses and students.
+variables: $a, b, c$ - These variables represent the total number of students ($a$), the number of buses when 33 students are put in each bus ($b$), and the number of students per bus when a different number of students are put in each bus ($c$).
+constraints: $(a-1) = b \cdot n$ and $a = c \cdot (b-1)$ - The first constraint states that when 33 students are put in each bus, there is one student left over. The second constraint states that when a different number of students are put in each bus, there is one bus left over.
+objective: The objective of the problem is to find a solution that satisfies the given constraints, there is no explicit objective to minimize or maximize a value.

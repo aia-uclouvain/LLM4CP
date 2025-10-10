@@ -1,0 +1,11 @@
+The Moving Coins Problem
+The Moving Coins problem is about rearranging a triangular formation of coins to point in the opposite direction by moving as few coins as possible.
+
+The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` is a binary variable that indicates whether a coin is placed at position `(i, j)` in the grid. The `grid2` array represents the initial positions of the coins, and the `start_positions2` array represents the coordinates of the coins in the initial triangular formation.
+
+The key constraints in this problem can be described as follows: 
+- The number of coins in each column of the grid must be the same as the number of coins in the corresponding column of the initial grid.
+- The coins must be rearranged to form a new triangular formation that points in the opposite direction.
+- The number of coins that are moved from their initial positions to their final positions is minimized.
+
+The objective of the Moving Coins problem is to maximize the number of coins that remain in their original positions, which is equivalent to minimizing the number of coins that need to be moved. This is represented by the variable `z`, which is the sum of the binary variables `x[i, j]` that are equal to the corresponding initial positions `grid2[i, j]`. The goal is to find the arrangement of coins that maximizes `z`, which means that the fewest number of coins need to be moved to achieve the desired rearrangement.

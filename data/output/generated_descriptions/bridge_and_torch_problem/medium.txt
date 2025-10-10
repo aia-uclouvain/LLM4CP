@@ -1,0 +1,13 @@
+Bridge and Torch Problem
+The Bridge and Torch problem is a classic logic puzzle that involves four people trying to cross a narrow bridge at night with only one torch available. The bridge can only hold two people at a time, and each person takes a different amount of time to cross the bridge. The goal is to find a sequence of crossings that allows all four people to cross the bridge in 15 minutes or less.
+
+The main decision variables in this problem are the actions, which represent who moves where at each time step, and the times, which represent how long each move takes. The actions are represented by a 2D array, where each row corresponds to a time step and each column corresponds to a person. The times are represented by a 1D array, where each element corresponds to the time taken for a particular move. The torch_place variable represents the location of the torch at each time step, and the transfered variable represents the set of people who are transferred at each time step.
+
+The key constraints in this problem are:
+- The bridge can only hold two people at a time.
+- The torch must be used when crossing the bridge, and it must be carried by one of the people.
+- When two people cross the bridge together, they must move at the slower person's pace.
+- The total time taken for all crossings must be minimized.
+- All people must end up on the other side of the bridge.
+
+The objective of the problem is to minimize the total time taken for all crossings, which is represented by the total variable. The problem is solved by finding a sequence of actions that satisfies all the constraints and minimizes the total time taken. In this case, the solution involves a sequence of six steps, with a total time of 15 minutes.

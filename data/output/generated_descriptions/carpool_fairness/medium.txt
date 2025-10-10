@@ -1,0 +1,14 @@
+Carpool Fairness Problem
+The Carpool Fairness Problem is about allocating daily driving responsibilities fairly among a group of people sharing a carpool over a certain number of days. 
+
+The main decision variables in this problem are: 
+- `driver`: an array representing who will drive on each day
+- `num_drives`: an array representing how many days each person drives
+- `diffs`: an array representing the difference between the actual driving days and the obligation for each person
+
+The key constraints in this problem are:
+- Each person can only drive on days they participate in the carpool
+- The number of days a person drives should not exceed their obligation
+- The obligation for each person is calculated based on the number of people participating in the carpool on each day
+
+The objective of the Carpool Fairness Problem is to minimize the differences between the actual driving days and the obligation for each person, which represents how fair the schedule is. In other words, the goal is to find a schedule where each person drives as close to their obligation as possible. The problem also considers the pairwise differences between the driving days of each person, aiming to minimize these differences to achieve a fairer schedule.

@@ -1,0 +1,5 @@
+name: Seven11 puzzle
+description: The Seven11 puzzle is a mathematical puzzle where the goal is to find four numbers that sum up to 711 and have a product of 711 * 100 * 100 * 100, with the additional constraint that the numbers are in increasing order.
+variables: $x_1, x_2, x_3, x_4$ - These are the decision variables representing the four numbers to be found, each ranging from 0 to 711.
+constraints: $711 = \sum_{i=1}^{4} x_i \ \wedge \ 711 * 100 * 100 * 100 = \prod_{i=1}^{4} x_i \ \wedge \ x_1 \leq x_2 \leq x_3 \leq x_4$ - These constraints ensure that the sum of the four numbers equals 711, their product equals 711 * 100 * 100 * 100, and that the numbers are in increasing order, respectively.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

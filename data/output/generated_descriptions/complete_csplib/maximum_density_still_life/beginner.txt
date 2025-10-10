@@ -1,5 +1,0 @@
-Maximum Density Still Life
-The problem is about finding the maximum number of cells that can be alive in a grid, following the rules of Conway's Game of Life. 
-The main variables are the cells in the grid, which can be either alive (1) or dead (0). 
-The basic restrictions are that all border cells are dead, alive cells have between 2 and 3 alive neighbors, and dead cells must not have 3 alive neighbors. 
-The goal is to maximize the number of alive cells in the grid.

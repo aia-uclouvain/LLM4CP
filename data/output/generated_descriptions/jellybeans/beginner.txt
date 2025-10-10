@@ -1,0 +1,5 @@
+Jellybeans problem
+The problem is about figuring out the ages and number of jellybeans four children - Alice, Boris, Claire, and David - have. 
+The main variables are the ages and number of jellybeans each child has. In simple terms, "age" means how old each child is, and "beans" means how many jellybeans they have.
+The basic rules are: Alice's age plus her jellybeans equals Boris's age plus his jellybeans, Claire is two years older than Alice has jellybeans, and Alice's age is the total number of jellybeans Alice and Claire have. Also, each child is a different age and has a different number of jellybeans.
+The goal is to find out how old David is and how many jellybeans he has.

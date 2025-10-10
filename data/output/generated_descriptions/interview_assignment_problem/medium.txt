@@ -1,0 +1,30 @@
+**Student-Company Interview Assignment Problem**
+
+The problem involves assigning students to companies for interviews, given the students' preferences and the companies' capacity limits. The goal is to find an assignment that minimizes the total regret of the students, where regret is defined as the difference between the student's preferred company and the company they are assigned to.
+
+**Decision Variables**
+
+The main decision variables are the assignments of students to companies, represented by a matrix of finite domain variables. Each variable represents the company assigned to a student for a particular interview. The variables are constrained to take values between 0 and the number of companies minus 1.
+
+**Constraints**
+
+The key constraints in the problem are:
+
+* Each student is assigned to a different company for each interview.
+* The assignments are ordered, meaning that a student is assigned to a company with a lower index before being assigned to a company with a higher index.
+* The number of students assigned to each company does not exceed the company's capacity limit.
+* The total regret of the students is minimized, where regret is calculated based on the student's preferences and the company they are assigned to.
+
+**Objective**
+
+The objective of the problem is to minimize the total regret of the students. This is achieved by minimizing a weighted sum of the regret values, where the weights are based on the student's preferences. The problem also includes a secondary objective, which is to minimize the maximum regret across all students.
+
+**Additional Constraints**
+
+The problem includes additional constraints, such as:
+
+* The number of interviews each student has is limited to a maximum value.
+* The preferences of the students are used to calculate the regret values.
+* The capacity limits of the companies are used to constrain the number of students assigned to each company.
+
+Overall, the problem is a complex constraint programming problem that requires careful modeling and solving to find an optimal assignment of students to companies.

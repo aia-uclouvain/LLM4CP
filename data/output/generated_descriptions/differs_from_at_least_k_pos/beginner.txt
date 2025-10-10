@@ -1,0 +1,5 @@
+Differ From At Least K Positions problem.
+This problem is about comparing two lists of numbers to see how many places they are different. 
+The main variables are two lists of numbers, a1 and a2, and a number k that represents how many differences we are looking for.
+The basic restrictions are that the two lists must be the same length, and we want to find out if they differ in at least k positions.
+The goal of the problem is to check if the two lists differ in at least k positions, and to find the values of the lists and k that make this true.

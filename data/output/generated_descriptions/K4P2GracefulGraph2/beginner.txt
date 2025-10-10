@@ -1,0 +1,5 @@
+K4P2 Graceful Graph problem. 
+This problem is about finding a way to label the nodes and edges of two specific graphs, K4 and P2, in a special way. 
+The main variables are nodes, which represent the labels of the points in the graphs, and edges, which represent the labels of the connections between these points. 
+The basic restrictions are that each node and each edge must have a unique label, and the difference between the labels of two nodes connected by an edge must be equal to the label of that edge. 
+The goal of the problem is to find a set of labels for the nodes and edges that satisfy these restrictions, which is known as a "graceful" labeling of the graphs.

@@ -1,0 +1,5 @@
+name: Volsay problem
+description: The Volsay problem is a classic problem in operations research and optimization, involving the production of two products, gas and chloride, with limited resources and constraints on their production levels, aiming to maximize the total profit.
+variables: $production_{gas}, production_{chloride}$, where $production_{gas}$ and $production_{chloride}$ represent the amount of gas and chloride produced, respectively, and are decision variables that need to be determined to maximize the total profit.
+constraints: $production_{gas} + production_{chloride} \leq 50$, $3 \cdot production_{gas} + 4 \cdot production_{chloride} \leq 180$, $production_{chloride} \leq 40$, which represent the limitations on the production levels of gas and chloride, including the total production capacity, resource constraints, and individual production limits.
+objective: Maximize $z = 40 \cdot production_{gas} + 50 \cdot production_{chloride}$, where $z$ represents the total profit, and the goal is to find the optimal production levels of gas and chloride that maximize the total profit while satisfying the given constraints.

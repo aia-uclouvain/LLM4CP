@@ -1,0 +1,16 @@
+Changepoint Detection Problem
+The Changepoint Detection Problem is a classic problem in constraint programming and probabilistic programming. It involves identifying a point in a time series data where the underlying distribution or behavior of the data changes.
+
+The main decision variables in this problem are:
+- `cp`: the changepoint, which represents the index in the time series data where the change occurs.
+- `mean1` and `mean2`: the means of the data before and after the changepoint, respectively.
+- `mean_diff1` and `mean_diff2`: the sum of absolute differences between each data point and the mean before and after the changepoint, respectively.
+
+The key constraints in this problem can be described as follows:
+- The data is divided into two segments at the changepoint `cp`.
+- The mean of the data before the changepoint is calculated as the sum of the data points before `cp` divided by the number of data points before `cp`.
+- The mean of the data after the changepoint is calculated as the sum of the data points after `cp` divided by the number of data points after `cp`.
+- The sum of absolute differences between each data point and the mean before the changepoint is calculated as `mean_diff1`.
+- The sum of absolute differences between each data point and the mean after the changepoint is calculated as `mean_diff2`.
+
+The objective of the Changepoint Detection Problem is to minimize the total sum of absolute differences, `z`, which is the sum of `mean_diff1` and `mean_diff2`. This is equivalent to finding the changepoint that best separates the data into two segments with minimal deviation from their respective means.

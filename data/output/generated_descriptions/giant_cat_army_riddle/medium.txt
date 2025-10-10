@@ -1,0 +1,12 @@
+Giant Cat Army Riddle
+The Giant Cat Army Riddle is a classic constraint programming problem that involves building a list of distinct integers by applying a set of operations to an initial value of 0. 
+
+The main decision variables in this problem are the elements of the array `x`, which represents the list of integers being built. Each element `x[i]` represents the `i-th` integer in the list.
+
+The key constraints in this problem are: 
+- The list starts with 0 and the last element must be 14.
+- Each subsequent element is either 5 or 7 more than the previous element, or it is the square root of the previous element, but only if the result is an integer less than or equal to 7.
+- All elements in the list must be distinct integers less than or equal to 60.
+- The list must contain the numbers 2, 10, and 14 in that order, although there can be other numbers between them.
+
+The objective of this problem is to find a list that satisfies all the constraints, with the goal of finding the shortest possible list that meets the conditions. In other words, the problem is trying to minimize the length of the list while still satisfying all the constraints.

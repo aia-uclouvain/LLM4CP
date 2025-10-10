@@ -1,0 +1,11 @@
+Jellybeans Problem
+The Jellybeans problem is a classic constraint programming problem that involves determining the ages and number of jellybeans each of four children - Alice, Boris, Claire, and David - has, given certain conditions.
+
+The main decision variables in this problem are the ages and number of jellybeans for each child, represented by the arrays `age` and `beans` in the Minizinc model. These variables are defined over the sets `age_set` and `bean_set`, which contain the possible ages (6, 7, 8, 9) and number of jellybeans (1, 2, 3, 4) respectively.
+
+The key constraints in this problem can be described as follows: 
+- The sum of Alice's age and her jellybeans must be equal to the sum of Boris's age and his jellybeans.
+- Claire's age is two more than the number of jellybeans Alice has.
+- Alice's age is equal to the total number of jellybeans she and Claire have.
+
+The objective of this problem is not to minimize or maximize a specific variable, but rather to find a satisfying assignment of ages and jellybeans to each child that satisfies all the given constraints. In other words, the goal is to determine David's age and number of jellybeans, given the conditions and the ages and jellybeans of the other children.

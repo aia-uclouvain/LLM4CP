@@ -1,0 +1,5 @@
+The problem is called the Furniture Moving problem. 
+It is about moving a set of furniture items, each requiring a certain number of people and taking a specific amount of time, within a limited timeframe and with a limited number of people available. 
+The main decision variables are: Starts (the start time of each furniture item), Durations (the time it takes to move each item), Resources (the number of people required to move each item), EndTimes (the end time of each item), numPersons (the total number of people available), and end_time (the total time it takes to move all items). 
+The key constraints are: each item must be moved within the available time, the total number of people used must not exceed the limit, and the end time of each item is calculated based on its start time and duration. 
+The objective of the problem is to minimize the total time it takes to move all items (end_time).

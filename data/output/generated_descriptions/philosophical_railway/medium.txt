@@ -1,0 +1,5 @@
+The Philosophical Railway problem. 
+This problem is about determining the occupations of five railway employees: James, Kant, Locke, Mill, and Nietzsche, who are the driver, guard, porter, signalman, and stationmaster. 
+The main decision variables are James, Kant, Locke, Mill, and Nietzsche, which represent the occupations of the five employees, ranging from 1 (driver) to 5 (stationmaster). 
+The key constraints are: each employee has a unique occupation, and the statements made by each employee must be satisfied, with one true and one false statement per employee. For example, Mill's statements are "Nietzsche is the stationmaster" and "James is either the guard or the porter", and exactly one of these must be true. 
+The problem's objective is to find an assignment of occupations to employees that satisfies all the constraints, and the solution will reveal the driver's name.

@@ -1,0 +1,5 @@
+Cookie Bake Off problem
+The problem is about finding the perfect recipe for cookies by analyzing past attempts. 
+The main variables are the amounts of sugar, flour, and butter used in the recipe, and the differences between the actual scores and the predicted scores.
+The basic restrictions are that the total amount of ingredients is 8 cups, and the scores range from 0 to 100. 
+The goal is to minimize the total difference between the actual scores and the predicted scores, which will help in finding the best recipe to achieve a perfect score of 100.

@@ -1,0 +1,11 @@
+Cumulative Scheduling
+The problem is about scheduling tasks to be completed as quickly as possible without using too much of a limited resource. 
+The main variables are: 
+- Tasks (t1 to t7) which have durations (how long they take) and resource requirements (how much of the resource they use)
+- Start times (Ss) which determine when each task begins
+- End time (End) which is the time when all tasks are completed
+- Capacity which is the maximum amount of the resource that can be used at any time.
+The basic restrictions are: 
+- Each task must start after the previous task is completed if they use the same resource
+- The total amount of the resource used by all tasks at any time cannot exceed the capacity.
+The goal is to minimize the End time, which means finding a schedule that allows all tasks to be completed as quickly as possible without exceeding the capacity of the resource.

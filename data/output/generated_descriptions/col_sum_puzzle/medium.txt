@@ -1,0 +1,12 @@
+**Magic Square Problem**
+The Magic Square problem is a classic constraint programming problem where the goal is to fill in a square matrix with numbers such that the sum of each row, column, and diagonal is equal to a given value.
+
+The main decision variables in this problem are the elements of the matrix `x`, which represent the numbers to be filled in. The matrix `x` is a 2D array of size `n x n`, where `n` is the size of the square matrix.
+
+The key constraints in this problem are:
+* The sum of each row must be equal to the given row sum.
+* The sum of each column must be equal to the given column sum.
+* The sum of each diagonal must be equal to the given diagonal sum.
+* The values in the matrix must match the given clues, where a clue is a known value in the matrix.
+
+The objective of this problem is to find a solution that satisfies all the constraints, i.e., to fill in the matrix with numbers such that all the row, column, and diagonal sums are equal to the given values, and the values match the given clues. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that satisfies all the constraints.

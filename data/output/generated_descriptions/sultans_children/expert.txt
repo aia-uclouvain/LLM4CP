@@ -1,0 +1,5 @@
+name: Sultan's Children Problem
+description: The problem is about a sultan who has a secret number of children, and a diplomat who overheard a conversation that gave him a clue to calculate the exact number of children. The clue is that if two children are selected at random, the probability of selecting two boys is exactly 50 percent.
+variables: $b, g$ - These are the decision variables representing the number of boys and girls among the sultan's children, respectively.
+constraints: $2(b(b-1)) = (b+g)(b+g-1), b + g \geq 100, b + g \leq 500$ - These constraints represent the condition that the probability of selecting two boys is 50 percent, and the total number of children is between 100 and 500.
+objective: The objective of the problem is to find the values of $b$ and $g$ that satisfy the given constraints, which will give the total number of children the sultan has. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,5 @@
+The Hardest Logic Puzzle Ever, also known as The First Trial puzzle. 
+This problem is about determining which doors hide a lady and a tiger, based on statements on the doors. 
+The main decision variables are x, which represents whether door i hides prize j (1 for lady, 2 for tiger), and t, which represents whether the statement on door i is true. 
+The key constraints are: each door hides one prize, the statements on the doors are consistent with the arrangement of the lady and the tiger, and only one statement is true. 
+The problem's objective is to find a satisfying assignment of values to the decision variables, such that all constraints are met, which is achieved by using the solve satisfy statement in the Minizinc model.

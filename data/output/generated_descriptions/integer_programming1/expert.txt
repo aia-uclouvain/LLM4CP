@@ -1,0 +1,5 @@
+name: Unique Integer Maximization Problem
+description: The problem is to find three unique integers a, b, and c between 1 and 10 that maximize the expression ab + bc.
+variables: a, b, c - These are decision variables representing three unique integers between 1 and 10.
+constraints: a ∈ [1,10], b ∈ [1,10], c ∈ [1,10], a ≠ b, a ≠ c, b ≠ c, z = a*b + b*c - These constraints ensure that a, b, and c are within the specified range, are unique, and define the objective function z.
+objective: Maximize z = a*b + b*c

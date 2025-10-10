@@ -1,0 +1,5 @@
+Jive Turkeys Puzzle
+The problem is about finding the smallest possible value for a certain quantity, given a set of constraints related to a mathematical equation.
+The main decision variables are x[1], x[2], and x[3], which represent integers that are part of the equation 10000*x[1] + 6790 + x[2] = 72*x[3]. These variables are constrained to be non-negative, with x[1] and x[2] having a maximum value of 9 and x[3] having a maximum value of 1345.
+The key constraints are that the equation 10000*x[1] + 6790 + x[2] = 72*x[3] must be satisfied, and the values of x[1], x[2], and x[3] must be within their specified ranges. In plain language, this means that the left-hand side of the equation, which represents a combination of the values of x[1] and x[2], must be equal to the right-hand side, which represents a multiple of x[3].
+The objective of the problem is to minimize the value of x[3], which means finding the smallest possible value for x[3] that satisfies the given equation and constraints.

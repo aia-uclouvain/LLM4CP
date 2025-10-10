@@ -1,0 +1,5 @@
+The problem is called the Min-N problem. 
+It is about finding the minimum value of a given rank in a collection of variables, where the rank represents the position of the value in the sorted list of distinct values. 
+The main decision variables are `variables`, an array of variables representing the collection of values, `t_min`, the minimum value of the given rank, and `rank`, the position of the minimum value in the sorted list of distinct values. 
+The key constraints are that `t_min` must be one of the values in `variables`, and `rank` represents the number of distinct values in `variables` that are smaller than `t_min`. 
+The problem's objective is to satisfy the constraints, specifically the `min_n` constraint, which ensures that `t_min` is the minimum value of the given `rank` in the collection of variables.

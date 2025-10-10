@@ -1,0 +1,5 @@
+Pigeon Hole Problem
+The Pigeon Hole problem is about placing a certain number of pigeons into a given number of pigeon holes, with the condition that each hole can contain at most one pigeon. 
+The main decision variables in this problem are the `pigeon_holes_ip` variables, which represent a 2D array where `pigeon_holes_ip[i, j]` is 1 if the i-th pigeon is placed in the j-th hole, and 0 otherwise.
+The key constraints are that each pigeon hole can contain at most one pigeon, and each pigeon must be placed in exactly one hole. In plain language, this means that for each hole, the total number of pigeons in it should not exceed 1, and for each pigeon, it should be in exactly one hole.
+The objective of the Pigeon Hole problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies the given constraints, i.e., to determine whether it is possible to place the pigeons in the holes under the given conditions. The problem has a solution if and only if the number of pigeons is less than or equal to the number of holes.

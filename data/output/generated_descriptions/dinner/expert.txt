@@ -1,0 +1,5 @@
+name: Dinner Problem
+description: The Dinner Problem is a classic constraint programming problem where a family is planning to go out for dinner with a certain number of grandparents, parents, and children. The goal is to determine the number of each family member to invite, given certain constraints on the total number of people and the total cost of dinner.
+variables: $G, P, C$ - These variables represent the number of Grandparents ($G$), Parents ($P$), and Children ($C$) going to dinner, which are the decision variables in this problem.
+constraints: $6G + 4P + C = 40, G + P + C = 20, G > 0, P > 0, C > 0$ - These constraints ensure that the total cost of dinner is $20, the total number of people is 20, and there is at least one person from each family group (grandparents, parents, and children) going to dinner.
+objective: satisfy - The objective of this problem is to find a feasible solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

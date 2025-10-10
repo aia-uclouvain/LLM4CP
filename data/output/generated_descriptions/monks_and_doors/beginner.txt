@@ -1,0 +1,5 @@
+Monks and Doors Problem
+The problem is about finding which door in a room is an exit, given that there are eight monks making statements about the doors, but some of them might be lying.
+The main variables are the doors (A, B, C, D) and the monks (M1, M2, ..., M8), where each door variable means whether that door is an exit or not, and each monk variable means whether that monk is telling the truth or not.
+The basic restrictions are the statements made by the monks, such as "Door A is the exit" or "At least one of the doors B and C is the exit", and the rules that exactly one door is an exit.
+The goal of the problem is to find which door is an exit, no matter who is lying and who is telling the truth, and also to determine which monks are truthful.

@@ -1,0 +1,28 @@
+name: Food Manufacture Problem
+
+description: The Food Manufacture Problem is a classic problem in operations research and mathematical programming. It involves a company that produces a food product using different types of oils. The company needs to decide how much of each oil to buy and use each month, as well as how much to produce, in order to maximize its profit. The problem takes into account various constraints such as the availability of oils, storage capacity, production capacity, and quality requirements.
+
+variables: $buys_{m,o}, stock_{m,o}, useoil_{m,o}, useoilb_{m,o}, production_m$ 
+These are the decision variables of the problem, where $buys_{m,o}$ is the amount of oil $o$ bought in month $m$, $stock_{m,o}$ is the amount of oil $o$ in stock at the end of month $m$, $useoil_{m,o}$ is the amount of oil $o$ used in production in month $m$, $useoilb_{m,o}$ is a binary variable indicating whether oil $o$ is used in production in month $m$, and $production_m$ is the amount of food product produced in month $m$.
+
+constraints: 
+$\begin{aligned}
+& stock_{1,o} = 500.0 \\
+& stock_{6,o} + buys_{6,o} - useoil_{6,o} \geq 500.0 \\
+& buys_{m,o} \geq 0, stock_{m,o} \geq 0, useoil_{m,o} \geq 0, useoil_{m,o} \leq M \\
+& stock_{m,o} \leq 1000.0 \\
+& useoil_{m,o} \leq stock_{m,o} + buys_{m,o} \\
+& stock_{m+1,o} = stock_{m,o} + buys_{m,o} - useoil_{m,o} \\
+& 3.0 \cdot production_m \leq \sum_{o} oilhardness_o \cdot useoil_{m,o} \leq 6.0 \cdot production_m \\
+& production_m = \sum_{o} useoil_{m,o} \\
+& useoil_{m,VEG1} + useoil_{m,VEG2} \leq 200.0 \\
+& useoil_{m,OIL1} + useoil_{m,OIL2} + useoil_{m,OIL3} \leq 250.0 \\
+& M \cdot useoilb_{m,o} \geq useoil_{m,o} \\
+& \sum_{o} useoilb_{m,o} \leq 3.0 \\
+& 20.0 \cdot useoilb_{m,o} \leq useoil_{m,o} \\
+& useoilb_{m,VEG1} \leq useoilb_{m,OIL3} \\
+& useoilb_{m,VEG2} \leq useoilb_{m,OIL3}
+\end{aligned}$ 
+These constraints represent the limitations and requirements of the problem, including the initial and final stock levels, non-negativity and upper bounds on the decision variables, balance equations for the stock levels, quality requirements for the produced food, production capacity constraints, and logical constraints for the use of oils.
+
+objective: Maximize $totalprofit = \sum_{m} productprice \cdot production_m - \sum_{m,o} buyingprices_{m,o} \cdot buys_{m,o} - \sum_{m,o} storagecost \cdot stock_{m,o}$, which represents the total profit of the company over the planning horizon.

@@ -1,5 +1,0 @@
-Lam's Problem
-The problem is about finding a way to arrange 11 true values in a square matrix in such a way that each row and column has exactly 11 true values, with a specific restriction on how these values can be distributed across rows. 
-The main variables are a matrix (m) where each cell can be either true or false, and the size of this matrix (indexSize). 
-The basic restrictions are that each row and each column must have exactly 11 true values, and for any two rows, there must be exactly one column where both rows have a false value. 
-The goal is to find such an arrangement that satisfies all these restrictions.

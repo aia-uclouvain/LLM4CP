@@ -1,0 +1,11 @@
+Bus Scheduling Problem
+The problem is about scheduling buses to meet the demand for transportation at different time slots while minimizing the total number of buses used.
+
+The main decision variables are `x[i]`, which represent the number of buses that start their schedule at time slot `i`. The variable `z` represents the total number of buses used.
+
+The key constraints are: 
+- Each time slot must have at least 0 buses scheduled.
+- The total number of buses scheduled for the current and next time slot must meet the demand for the current time slot.
+- The last time slot's demand must be met by buses scheduled for the last and first time slots, ensuring the schedule works "around the clock".
+
+The objective of the problem is to minimize the total number of buses used, represented by the variable `z`. This is achieved by finding the optimal schedule that meets the demand at each time slot while using the fewest buses possible.

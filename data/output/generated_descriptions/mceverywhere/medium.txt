@@ -1,0 +1,10 @@
+McEverywhere problem
+The McEverywhere problem is about determining the minimum number of fast food restaurants needed in a small town so that no resident has to travel more than 4km to reach one. The town is represented by a grid, with some cells containing homes and others being empty. Restaurants can be built on any cell, including those with homes.
+
+The main decision variables are represented by the array `x`, where `x[i,j]` is 1 if a restaurant is built on cell `(i,j)` and 0 otherwise. The `counts` array keeps track of the number of restaurants in the neighborhood of each home.
+
+The key constraints are: 
+- For each home, there must be at least one restaurant within a distance of 4km (or 16 squared km, since the distance is calculated as the square of the Euclidean distance).
+- The number of restaurants is minimized.
+
+The objective of the problem is to minimize the total number of restaurants built, represented by the variable `num_restaurants`. This is achieved by finding the smallest possible set of restaurants that satisfy the constraint of being within 4km of every home.

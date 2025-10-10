@@ -1,0 +1,12 @@
+Scene Allocation Problem
+The problem is about scheduling the filming of scenes for a movie. 
+The main variables are: 
+- shoot: the day when each scene will be filmed
+- isPaid: whether each actor is paid on each day
+- isShot: whether each scene is filmed on each day
+The basic restrictions are: 
+- each scene can only be filmed once
+- at most 5 scenes can be filmed per day
+- all actors in a scene must be present on the day the scene is filmed
+- each actor has a daily fee that must be paid if they are present
+The goal is to minimize the total production cost by finding the best schedule for filming the scenes.

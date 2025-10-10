@@ -1,0 +1,5 @@
+Safe Cracking Puzzle
+The problem is about cracking a safe combination by figuring out the correct sequence of 9 numbers. 
+The main variables are C1 to C9, which represent the 9 numbers in the combination, and LD, which is a list of these numbers.
+The basic restrictions are that all numbers must be different, and there are specific mathematical relationships between some of the numbers, such as C4 - C6 = C7, and C1 * C2 * C3 = C8 + C9. Additionally, some numbers have to be less than others, and no number can be in its own position.
+The goal of the problem is to find a combination of numbers that satisfies all these rules, essentially "cracking" the safe.

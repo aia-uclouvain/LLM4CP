@@ -1,0 +1,11 @@
+Patient No. 21 problem
+The Patient No. 21 problem is a classic constraint programming problem that involves diagnosing a patient based on their symptoms and a set of known patient data. The goal is to determine the most likely diagnosis for Patient No. 21, who is exhibiting symptoms of a stuffy nose, sneezing, and sore throat.
+
+The main decision variables in this problem are the array `x`, which represents the symptoms and diagnosis of Patient No. 21, and the array `dists`, which represents the distances between Patient No. 21 and the other patients. The variable `min_ix` represents the index of the patient with the minimum distance to Patient No. 21.
+
+The key constraints in this problem are:
+- The symptoms of Patient No. 21 are fixed as stuffy nose, sneezing, and sore throat.
+- The distances between Patient No. 21 and the other patients are calculated based on their symptoms.
+- The patient with the minimum distance to Patient No. 21 is selected, and their diagnosis is assigned to Patient No. 21.
+
+The objective of this problem is to minimize the distance between Patient No. 21 and the other patients, which effectively means finding the patient that is most similar to Patient No. 21 in terms of symptoms. By assigning the diagnosis of the most similar patient to Patient No. 21, the model is able to predict the most likely diagnosis for Patient No. 21.

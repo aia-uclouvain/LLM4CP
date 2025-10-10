@@ -1,0 +1,5 @@
+Problem: All Equal 
+This problem is about making sure all the items in a list have the same value. 
+The main variables are the items in the list, which are like boxes that can hold different numbers. 
+The basic rule of this problem is that all the items in the list must have the same number in them. 
+The goal of this problem is to find a list where all the items have the same value, and to show what that list looks like.

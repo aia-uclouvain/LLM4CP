@@ -1,0 +1,5 @@
+Exact Cover Problem
+The Exact Cover Problem is a classic problem in computer science and mathematics that involves finding a subset of sets that exactly covers a given universe of elements.
+The main decision variables in this problem are the sets `s` and the variable `x`, which represents whether a set is chosen (1) or not (0). The sets `s` are defined as `array[1..m] of set of int`, where each set contains a subset of the universe `1..n`.
+The key constraints in this problem are that each element in the universe must be covered by exactly one chosen set. This is achieved through the constraint `sum(j in 1..m) ( x[j]*bool2int(i in s[j])) = 1`, which ensures that for each element `i`, the sum of the chosen sets that contain `i` is equal to 1.
+The objective of the Exact Cover Problem is to find a subset of sets that exactly covers the universe, without any additional constraints on minimization or maximization. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

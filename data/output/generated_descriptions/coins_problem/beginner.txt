@@ -1,0 +1,5 @@
+Coins problem
+The problem is about finding the minimum number of coins needed to make every amount of change from 1 to 100 using 6 different coin denominations. 
+The main variables are the value of each coin, the number of each coin, and which coins are used to make each amount of change. 
+The basic restrictions are that the total value of the coins used to make each amount of change must equal that amount, and that the number of each coin used cannot exceed the total number of that coin available. 
+The goal is to minimize the total number of coins used to make all amounts of change.

@@ -1,0 +1,11 @@
+Global Cardinality with Costs Problem
+The problem is about assigning values to a set of variables in a way that meets certain rules and minimizes the total cost.
+The main variables are: 
+- variables: a set of items that need to be assigned a value
+- values: a set of possible values that can be assigned to the variables, along with how many times each value should be used
+- cost_matrix: a table that shows the cost of assigning each value to each variable
+- cost: the total cost of the assignments.
+The basic restrictions are: 
+- each value should be used exactly as many times as specified
+- the total cost is calculated by adding up the costs of each assignment.
+The goal is to find an assignment of values to variables that meets the rules and has the lowest total cost.

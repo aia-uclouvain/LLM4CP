@@ -1,0 +1,8 @@
+Hanging Weights Puzzle
+The problem is about balancing a system of weights hanging from bars. Imagine a set of scales where weights are placed on either side, and the goal is to find the right weights so that the system is balanced.
+
+The main variables are the weights labeled A to M, which can have values between 1 and 13. These weights are the unknowns that need to be figured out.
+
+The basic restrictions are that the weights on either side of a pivot point must be equal when considering the distance from the pivot. Additionally, a bar hanging beneath another contributes its total weight as if it were a single weight. There are specific equations that govern how the weights relate to each other, such as 4*A = B and 5*C = D.
+
+The goal of the problem is to find the values of the weights A to M that satisfy all the given equations and restrictions, effectively balancing the system. The solution is not about minimizing or maximizing anything, but rather finding a set of values that make the system stable.

@@ -1,0 +1,11 @@
+Dudeney's Tea Mixing Problem
+The problem is about finding the optimal mixture of three different types of tea to achieve a total weight of 20 pounds at a specific total price of 570, while minimizing the total expense.
+
+The main decision variables are `x[i]`, which represent the amount of each type of tea to be used in the mixture. The `price` array represents the price per unit of each type of tea.
+
+The key constraints are: 
+- each type of tea must be used a non-negative number of times, 
+- the total price of the mixture must be exactly 570, 
+- and the total weight of the mixture must be exactly 20 pounds.
+
+The objective of the problem is to minimize the total expense, `minexp`, which is the sum of the prices of all the teas used in the mixture, multiplied by their respective quantities. In other words, the goal is to find the cheapest way to mix 20 pounds of tea at a total price of 570.

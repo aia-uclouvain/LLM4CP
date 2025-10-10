@@ -1,0 +1,13 @@
+Transportation Problem
+The problem is about delivering goods from factories to customers in the cheapest way possible. 
+The main variables are: 
+- the number of factories (num_plants) and customers (num_clients), 
+- how much each factory can produce (capacity), 
+- how much each customer needs (demand), 
+- the cost of sending goods from each factory to each customer (cost), 
+- how much is actually sent from each factory to each customer (x).
+The basic restrictions are: 
+- factories cannot send more goods than they can produce, 
+- customers must receive exactly the amount of goods they need, 
+- goods cannot be sent for free or for a negative cost.
+The goal is to minimize the total cost of delivering all the goods to the customers.

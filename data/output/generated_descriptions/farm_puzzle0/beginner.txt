@@ -1,0 +1,5 @@
+Farm Puzzle
+The problem is about a farmer who has a certain number of pigs and hens on his farm, and we need to figure out how many of each animal he has. 
+The main variables are the number of legs for each animal, which can be either 2 legs for a hen or 4 legs for a pig.
+The basic restriction is that all the animals together have a total of 22 legs. 
+The goal is to find a combination of pigs and hens that adds up to 22 legs in total, which will tell us how many pigs and hens the farmer has.

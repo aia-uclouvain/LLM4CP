@@ -1,0 +1,11 @@
+Table of Numbers Problem
+The problem is about selecting 5 numbers from a 5x5 table such that no two numbers come from the same row and no two numbers come from the same column, and then finding the sum of these 5 numbers.
+
+The main decision variables are the array `x` of size 5x5, where `x[i,j]` represents whether the number at row `i` and column `j` is selected (1) or not (0).
+
+The key constraints are: 
+- each row can only have one selected number, 
+- each column can only have one selected number, 
+- the sum of the selected numbers is calculated and stored in `the_sum`.
+
+The problem's objective is to find a solution that satisfies these constraints, and the sum of the selected numbers is calculated, but not explicitly minimized or maximized, as the problem is a satisfaction problem. The goal is to find one of the possible 120 solutions.

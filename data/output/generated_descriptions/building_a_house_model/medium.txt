@@ -1,0 +1,21 @@
+**Resource-Constrained Project Scheduling Problem**
+The problem is about scheduling a set of tasks with given durations and resource requirements, subject to precedence constraints, to minimize the total project duration.
+
+**Decision Variables**
+The main decision variables are:
+- `start`: an array of variables representing the start time of each task
+- `end`: an array of variables representing the end time of each task
+- `makespan`: a variable representing the total project duration
+- `limitx`: a variable representing the maximum available resource
+
+These variables determine the schedule of tasks and the allocation of resources.
+
+**Key Constraints**
+The key constraints are:
+- Each task must be completed within its given duration
+- Tasks must be scheduled in a way that respects the precedence constraints, i.e., a task cannot start before its predecessors have finished
+- The total resource usage at any time must not exceed the available resource limit
+- The end time of each task is calculated as the start time plus the duration
+
+**Objective**
+The objective is to minimize the `makespan`, which represents the total project duration. The goal is to find a schedule that completes all tasks as early as possible while respecting the precedence constraints and resource limitations.

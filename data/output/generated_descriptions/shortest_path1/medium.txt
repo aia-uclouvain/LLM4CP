@@ -1,0 +1,18 @@
+**Car Replacement Problem**
+The Car Replacement Problem is about determining when to replace a car to minimize the total cost of ownership, considering factors such as maintenance costs, trade-in values, and the cost of purchasing a new car.
+
+**Decision Variables**
+The main decision variables are:
+- `x[i,j]`: a binary variable representing whether to replace the car at the beginning of year `i` and keep it until the beginning of year `j`.
+- `cost[i,j]`: the total cost of owning the car from the beginning of year `i` to the beginning of year `j`, including maintenance costs, trade-in values, and the cost of purchasing a new car.
+- `z`: the total cost of ownership, which is the objective function to be minimized.
+
+**Constraints**
+The key constraints are:
+- The cost of owning a car from year `i` to year `j` is calculated based on the maintenance costs, trade-in values, and the cost of purchasing a new car.
+- The total supply of cars at each year must be equal to the total demand for cars at that year.
+- The number of cars replaced at each year must be equal to the number of cars demanded at that year.
+- The cost of owning a car cannot be negative.
+
+**Objective**
+The objective of the Car Replacement Problem is to minimize the total cost of ownership, `z`, by determining the optimal replacement strategy for the car. The problem aims to find the best time to replace the car to minimize the total cost, considering the trade-off between maintenance costs, trade-in values, and the cost of purchasing a new car.

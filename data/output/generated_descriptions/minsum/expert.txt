@@ -1,0 +1,5 @@
+name: Minimum Sum Subarray Problem
+description: The Minimum Sum Subarray Problem is a classic problem in computer science and mathematics that involves finding the subarray within a given one-dimensional array of integers that has the minimum sum. The problem requires identifying all subarrays with the minimum sum and computing their sum.
+variables: $start \in \{1, \ldots, n\}, end \in \{1, \ldots, n\}, minsum \in \{-abs\_max, \ldots, abs\_max\}$, where $start$ and $end$ represent the starting and ending indices of the subarray, and $minsum$ represents the minimum sum of the subarray. These decision variables are used to determine the subarray with the minimum sum.
+constraints: $end \geq start$ and $minsum = \sum_{k=1}^{n} L_k \cdot \mathbb{I}_{\{start \leq k \leq end\}}$, where the first constraint ensures that the ending index is greater than or equal to the starting index, and the second constraint calculates the sum of the subarray from index $start$ to $end$.
+objective: minimize $minsum$, which represents the minimum sum of the subarray. The goal is to find the subarray with the smallest sum.

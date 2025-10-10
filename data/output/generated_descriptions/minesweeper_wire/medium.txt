@@ -1,0 +1,8 @@
+Minesweeper
+Minesweeper is a classic puzzle game where a player is presented with a grid of cells, some of which contain hidden mines. The goal is to clear all non-mine cells without detonating a mine.
+
+The main decision variables in this problem are the values of each cell in the grid, which can be either a mine or a number indicating how many mines are adjacent to that cell.
+
+The key constraints of the problem are: each cell must be either a mine or a number, the number in each cell must be equal to the number of mines adjacent to it, and the total number of mines in the grid must be consistent with the given information. Additionally, the grid has a fixed size and shape, and some cells may have predetermined values.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a consistent assignment of values to the cells in the grid that satisfies all the constraints. In other words, the goal is to solve the puzzle by correctly identifying the location of all mines and the numbers in the non-mine cells.

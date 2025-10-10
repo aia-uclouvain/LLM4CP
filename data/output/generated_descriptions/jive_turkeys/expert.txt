@@ -1,0 +1,5 @@
+name: Jive Turkeys Puzzle
+description: The Jive Turkeys puzzle is a classic problem in constraint programming that involves finding the smallest possible value for a certain quantity given a set of constraints. The problem is described as a mathematical equation with certain limitations on the values of the variables. The goal is to find the values of the variables that satisfy all the constraints while minimizing a specific quantity.
+variables: $x_1, x_2, x_3$ - These variables represent the decision variables in the problem, where $x_1$, $x_2$, and $x_3$ are integers that must be non-negative, with $x_1$ and $x_2$ having a maximum value of 9 and $x_3$ having a maximum value of 1345.
+constraints: $x_1 \geq 0, x_2 \geq 0, x_3 \geq 0, x_1 \leq 9, x_2 \leq 9, x_3 \leq 1345, 10000x_1 + 6790 + x_2 = 72x_3$ - These constraints represent the limitations on the values of the variables, including non-negativity, upper bounds, and a specific mathematical equation that must be satisfied.
+objective: Minimize $x_3$ - The objective of the problem is to find the smallest possible value of $x_3$ that satisfies all the constraints.

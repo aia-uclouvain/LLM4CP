@@ -1,0 +1,12 @@
+Conference Scheduling Problem
+The Conference Scheduling Problem is about organizing a conference with multiple sessions into a sequence of time slots, where each slot can hold up to three parallel sessions. The goal is to schedule the sessions while respecting certain constraints and minimizing the number of time slots required.
+
+The main decision variables are `sessions` and `slots`. The `sessions` variable represents the time slot assigned to each session, and the `slots` variable represents the set of sessions assigned to each time slot.
+
+The key constraints are:
+- Precedence constraints: certain sessions must take place before others.
+- Parallel constraints: certain sessions cannot be held in parallel.
+- Capacity constraints: each time slot can hold at most three sessions.
+- Channeling constraints: the assignment of sessions to time slots must be consistent between the `sessions` and `slots` variables.
+
+The objective of the problem is to minimize the number of time slots required to schedule all the sessions while respecting the given constraints. This is achieved by minimizing the `num_time_slots` variable, which represents the maximum time slot assigned to any session.

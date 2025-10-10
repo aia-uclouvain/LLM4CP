@@ -1,0 +1,5 @@
+name: Fifty Puzzle
+description: The Fifty Puzzle is a classic problem in constraint programming where the goal is to find the smallest subset of a given set of numbers that sums up to 50. The problem was originally posed by Sam Loyd and is also known as the "Fifty Problem".
+variables: $x_1, x_2, ..., x_{10}$, where $x_i$ is a binary decision variable that represents whether the $i^{th}$ number in the set should be included (1) or not (0) in the subset.
+constraints: $\sum_{i=1}^{10} v_i \cdot x_i = 50$, which ensures that the sum of the selected numbers equals 50, where $v_i$ is the $i^{th}$ number in the set.
+objective: minimize $\sum_{i=1}^{10} x_i$, which means finding the smallest subset of numbers that sums up to 50.

@@ -1,0 +1,8 @@
+name: ISBN13 Check Digit Calculation
+description: The problem is to calculate the check digit of an ISBN13 code, which is a 13-digit code used to identify books and other publications. The check digit is calculated based on the first 12 digits of the code, and it is used to verify the integrity of the code.
+variables: $n, isbn, mult0, mult1$ 
+These variables represent the following: $n$ is the length of the ISBN13 code, $isbn$ is an array of variables representing the 13 digits of the code, and $mult0$ and $mult1$ are variables representing the multiplication factors used in the check digit calculation.
+constraints: $mult0 = 3, mult1 = 1, isbn[n] = (10 - \sum_{i=1}^{n-1} (isbn[i] \cdot mult0 \text{ if } i \text{ is even, } isbn[i] \cdot mult1 \text{ if } i \text{ is odd})) \mod 10$
+These constraints represent the following: the multiplication factors $mult0$ and $mult1$ are fixed to 3 and 1 respectively, and the check digit $isbn[n]$ is calculated based on the first 12 digits of the code using a weighted sum modulo 10.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, which means calculating the check digit of the ISBN13 code. There is no explicit objective function to minimize or maximize.

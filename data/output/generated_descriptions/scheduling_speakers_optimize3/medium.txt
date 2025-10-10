@@ -1,0 +1,5 @@
+The name of the problem is the Scheduling Speakers Problem. 
+This problem is about scheduling a set of speakers to give talks at a conference, where each speaker has a specific duration for their talk and is available to give their talk at certain time slots. 
+The main decision variables are the starting time slots for each speaker, which represent when each speaker will give their talk. 
+The key constraints in plain language are that each speaker can only give their talk at time slots when they are available, and that no two speakers can give their talks at the same time slot. 
+The objective of the problem is to minimize the maximum finish time of all speakers, which means to finish all talks as early as possible.

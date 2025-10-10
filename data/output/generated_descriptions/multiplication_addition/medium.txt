@@ -1,0 +1,14 @@
+**Equation Problem**
+The problem is about finding distinct fractions A/B, C/D, and E/F, where A, B, C, D, E, and F are integers between 2 and a given maximum value, such that their sum equals their product.
+
+**Decision Variables**
+The main decision variables are A, B, C, D, E, and F, which represent the numerators and denominators of the fractions. The variables AB, CD, and EF represent the decimal values of these fractions.
+
+**Constraints**
+The key constraints are:
+- The fractions must be in ascending order (A/B < C/D < E/F).
+- All numerators and denominators must be distinct (all_different([A,B,C,D,E,F])).
+- The sum of the fractions must equal their product (Addition = Multiplication).
+
+**Objective**
+The objective is to find all possible combinations of distinct fractions that satisfy the given constraints, without minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find all solutions that meet the constraints.

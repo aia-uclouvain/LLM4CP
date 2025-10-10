@@ -1,5 +1,0 @@
-The Steiner Triplets problem. 
-The Steiner Triplets problem is about finding a set of triples, where each triple contains three distinct elements from a given set of n elements, such that each pair of triples has at most one element in common.
-The main decision variables in this problem are the sets or triples of elements, where each set contains three elements. These variables represent the triples that need to be found.
-The key constraints in this problem are that each triple must contain exactly three distinct elements, and any two triples can have at most one element in common. 
-The objective of this problem is to find a set of triples that satisfy the given constraints, and the problem does not have a specific objective function to minimize or maximize, it is a satisfaction problem.

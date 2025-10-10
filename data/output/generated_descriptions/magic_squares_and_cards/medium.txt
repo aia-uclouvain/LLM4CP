@@ -1,0 +1,5 @@
+Magic Square Problem
+The problem is about finding the largest constant sum for an order-3 magic square that can be formed with nine cards from a deck, allowing duplicates values. 
+The main decision variables are x, a 2D array representing the values of the cards in the magic square, and s, a variable representing the constant sum of each row, column, and diagonal in the magic square. 
+The key constraints are that each row, column, and diagonal in the magic square must have the same sum, and each value from 1 to 13 can appear at most four times in the magic square, since there are four cards of each value in a deck. 
+The problem's objective is to maximize the constant sum s, meaning to find the largest possible sum that can be achieved in the magic square under the given constraints.

@@ -1,0 +1,5 @@
+Lewis Carroll Coin Puzzle
+The problem is about dividing a set of coins among three people - a buyer, a shopkeeper, and a friend - such that each person receives a specific total value.
+The main decision variables are represented by the 2D array `x`, where `x[i, j]` is a binary variable indicating whether the `i-th` coin is given to the `j-th` person.
+The key constraints are: each person must receive a total value equal to their requirement, and each coin can only be given to one person. In plain language, this means that the sum of the values of the coins given to each person must match their required amount, and no coin can be split or given to more than one person.
+The objective of the problem is to find a satisfying assignment of coins to people, such that all constraints are met, which is achieved by using the `solve satisfy` statement in the Minizinc model.

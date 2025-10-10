@@ -1,0 +1,9 @@
+name: All Interval Problem
+description: The All Interval Problem is a well-known problem in music theory and combinatorial optimization. It involves finding a sequence of musical notes, represented by integers from 0 to n-1, such that each note appears exactly once and the differences between consecutive notes are all different. This problem has applications in music composition, as it can be used to generate melodies with unique and interesting properties.
+variables: series = (series[0], series[1], ..., series[n-1]), where series[i] is a decision variable representing the i-th note in the sequence, and is an element of the set of integers from 0 to n-1. These variables determine the order of the notes in the sequence.
+constraints: 
+series[i] != series[j] for all i, j in classes where i != j, 
+abs(series[i+1] - series[i]) != abs(series[j+1] - series[j]) for all i, j in classes where j < n-1 and i < n-1 and i != j, 
+series[0] < series[n-1]. 
+These constraints ensure that each note appears exactly once, the differences between consecutive notes are all different, and the sequence is ordered in a way that breaks symmetries.
+objective: The problem does not have an explicit objective function to minimize or maximize. Instead, the goal is to find a feasible solution that satisfies all the constraints, i.e., a sequence of notes that meets the conditions of the All Interval Problem.

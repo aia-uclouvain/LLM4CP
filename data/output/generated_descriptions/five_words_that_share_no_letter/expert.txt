@@ -1,0 +1,9 @@
+name: Five Letter Words with No Shared Letters
+description: The problem is to find five different five-letter words from a given list of words such that no letter is shared among the five words. The list of words is obtained from a dictionary of English words.
+variables: x, y 
+x = (x[1], x[2], ..., x[5]) where x[i] is a var 1..num_words, and y = (y[i, j]) for i in 1..5, j in 1..5 where y[i, j] is a var 1..26. 
+These variables represent the indices of the five words to be selected and the individual characters of the selected words, respectively.
+constraints: all_different(x) ∧ increasing(x) ∧ all_different(array1d(y)) ∧ (y[i, j] = words[x[i], j] for all i, j in 1..5)
+These constraints ensure that the five words are distinct and in increasing order, all letters are distinct, and the characters of the selected words match the corresponding letters in the word list.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to find five different five-letter words with no shared letters. There is no explicit objective function to minimize or maximize.
