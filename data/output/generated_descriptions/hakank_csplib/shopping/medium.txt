@@ -1,0 +1,16 @@
+The Marriage Problem, also known as the "Shopping Puzzle". 
+This problem is about determining the marriages between three husbands (Arthur, Bernard, Charles) and three wives (Ann, Barbara, Cynthia) based on certain conditions related to the number of articles and books they bought.
+
+The main decision variables are: 
+- `w[i,j]`, a binary variable representing whether husband `i` is married to wife `j`, 
+- `x[i]`, an integer variable representing the number of articles bought by husband `i`, 
+- `y[j]`, an integer variable representing the number of books bought by wife `j`.
+
+The key constraints are: 
+- Each husband is married to exactly one wife, 
+- Each wife is married to exactly one husband, 
+- Arthur bought 23 more articles than Barbara, 
+- Bernard bought 11 more articles than Ann, 
+- Each husband spent $63 more than his wife on articles and books, where the cost is calculated as the square of the number of items bought.
+
+The objective of this problem is to find a solution that satisfies all the given constraints, as indicated by the `solve satisfy` statement, rather than minimizing or maximizing a specific objective function.

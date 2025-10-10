@@ -1,0 +1,5 @@
+name: Perfect Square Placement
+description: The problem involves placing a set of squares of different sizes into a larger square container in such a way that the squares do not overlap and the entire container is filled. The goal is to find a placement that satisfies these conditions.
+variables: $x_i, y_i$ for $i = 1, 2, ..., n$, where $x_i$ and $y_i$ are the x and y coordinates of the bottom left corner of the $i^{th}$ square, and $n$ is the number of squares. These variables represent the positions of the squares in the container.
+constraints: $\forall i: 0 \leq x_i \leq N - s_i$ and $0 \leq y_i \leq N - s_i$, where $s_i$ is the size of the $i^{th}$ square and $N$ is the size of the container, to ensure the squares are within the container; and $\forall i, j: (x_i + s_i \leq x_j \lor x_j + s_j \leq x_i \lor y_i + s_i \leq y_j \lor y_j + s_j \leq y_i)$ to prevent overlap between squares.
+objective: The objective of this problem is to find a feasible placement of the squares, there is no explicit objective function to minimize or maximize.

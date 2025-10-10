@@ -1,0 +1,10 @@
+name: Numbrix
+description: Numbrix is a logic-based number-placement puzzle where the objective is to fill a grid with digits in sequential order, either horizontally or vertically, without using diagonal paths. The puzzle typically starts with some pre-filled numbers, and the goal is to complete the grid with numbers from 1 to n^2, where n is the size of the grid.
+variables: $x_{i,j,k}$, where $x_{i,j,k}$ is a binary decision variable that equals 1 if cell $(i,j)$ is assigned the number $k$, and 0 otherwise. These variables represent the assignment of numbers to each cell in the grid.
+constraints: 
+$\forall i \in 1..rows, j \in 1..cols, k \in 1..vals: x_{i,j,k} = (givens_{i,j} = k) \\
+\forall i \in 1..rows, j \in 1..cols: \sum_{k=1}^{vals} x_{i,j,k} = 1 \\
+\forall k \in 1..vals: \sum_{i=1}^{rows} \sum_{j=1}^{cols} x_{i,j,k} = 1 \\
+\forall i \in 1..rows, j \in 1..cols, k \in 1..vals-1: x_{i,j,k} \leq \sum_{i2=1}^{rows} \sum_{j2=1}^{cols} x_{i2,j2,k+1} \cdot neighbors_{i,j,i2,j2}$
+These constraints ensure that pre-defined numbers are assigned correctly, each cell is assigned exactly one number, each number is assigned to exactly one cell, and each cell has a neighbor with the next higher value.
+objective: satisfy, which means the objective is to find a feasible solution that satisfies all the constraints, without optimizing any specific value.

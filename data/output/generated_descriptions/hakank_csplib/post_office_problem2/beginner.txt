@@ -1,0 +1,10 @@
+Post office problem 
+The problem is about managing staff at a post office, making sure there are enough workers on each day of the week while keeping costs as low as possible. 
+The main variables are: 
+- x, which represents the number of workers starting on each day of the week 
+- z, which is the total cost of the staff 
+- num_workers, which is the total number of workers 
+The basic restrictions are: 
+- each day must have at least a certain number of workers 
+- workers who start on a given day work for 5 consecutive days, but not on the 6th and 7th days after they start 
+The goal is to minimize the total cost, which depends on how many workers start on each day, with some days being more expensive than others, such as weekends and holidays.

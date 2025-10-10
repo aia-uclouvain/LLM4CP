@@ -1,0 +1,12 @@
+Assignment Problem
+The problem is about assigning tasks to workers in the best way possible, so that the total cost is as low as possible. 
+The main variables are: 
+- x, which represents whether a task is assigned to a worker or not
+- cost, which is the cost of assigning a task to a worker
+- summax, which is the total cost of all assignments.
+The basic restrictions are: 
+- each task can only be assigned to one worker
+- each worker can only be assigned one task, if there are as many workers as tasks
+- if there are more tasks than workers, some workers might not get a task
+- if there are more workers than tasks, some tasks might not be assigned to any worker.
+The goal is to minimize the total cost, which means finding the best way to assign tasks to workers so that the total cost is as low as possible.

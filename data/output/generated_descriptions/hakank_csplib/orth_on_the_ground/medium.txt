@@ -1,0 +1,5 @@
+The problem is called Orthotope on the Ground.
+It is about ensuring that a specific attribute, called ori, of a given orthotope (a type of geometric shape) is fixed to one, based on a specified vertical dimension.
+The main decision variables are the orthotope, represented as a 2D array where each row corresponds to an orthotope and each column represents an attribute (ori, siz, end), and the vertical_dim, which represents the index of the orthotope to be checked.
+The key constraints are that the orthotope array must match a given predefined array, and the vertical_dim must be equal to 1. The orth_on_the_ground constraint ensures that the ori attribute of the specified orthotope is set to one.
+The objective of the problem is to satisfy all the given constraints, meaning that the model is looking for a solution where the orthotope array matches the predefined array, the vertical_dim is 1, and the ori attribute of the specified orthotope is set to one.

@@ -1,0 +1,11 @@
+Labeled Dice Problem
+The problem is about assigning 24 different letters to 4 different dice, with each die having exactly 6 letters, such that each word in a given list of 13 words has one letter on each die.
+
+The main decision variables are the `dice` array, where `dice[i]` represents the die number (1-4) that the `i-th` letter is assigned to.
+
+The key constraints are: 
+- each word must have its letters on different dice, 
+- each die must have exactly 6 letters, 
+- and symmetry breaking constraints to reduce the search space.
+
+The objective of the problem is to find a satisfying assignment of letters to dice, such that all constraints are met, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,9 @@
+name: Quasigroup Completion Problem
+
+description: The Quasigroup Completion Problem is a classic problem in constraint programming that involves completing a partially filled Latin square. A Latin square is an n x n matrix where each row and column contains each of n distinct symbols exactly once. In the Quasigroup Completion Problem, some of the entries in the Latin square are already filled, and the goal is to complete the remaining empty entries such that the resulting matrix is a Latin square.
+
+variables: $x_{i,j}$ for $i = 1..n, j = 1..n$, where $x_{i,j}$ represents the value in the $i^{th}$ row and $j^{th}$ column of the Latin square, and is a decision variable that takes on a value from the set $\{1, 2, ..., n\}$. 
+
+constraints: $\forall i, j, k : x_{i,j} = x_{i,k} \rightarrow j = k$ and $\forall i, j, k : x_{i,j} = x_{k,j} \rightarrow i = k$ and $\forall i : \bigwedge_{j=1}^{n} \bigvee_{k=1}^{n} x_{i,j} = k$ and $\forall j : \bigwedge_{i=1}^{n} \bigvee_{k=1}^{n} x_{i,j} = k$, which ensure that each row and column contains each symbol exactly once, and that the given partial assignments are respected.
+
+objective: The objective of the Quasigroup Completion Problem is to find a feasible completion of the partial Latin square, i.e., to assign values to the empty entries such that the resulting matrix is a Latin square. There is no explicit objective function to minimize or maximize, as the goal is simply to find a valid completion.

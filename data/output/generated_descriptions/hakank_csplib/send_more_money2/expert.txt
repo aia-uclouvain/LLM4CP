@@ -1,0 +1,5 @@
+name: Send More Money Problem
+description: The Send More Money problem is a classic puzzle where the goal is to assign digits to letters in the equation S E N D + M O R E = M O N E Y, such that the equation holds true and each letter represents a unique digit from 0 to 9.
+variables: $S, E, N, D, M, O, R, Y, c1, c2, c3, c4$ - These variables represent the digits assigned to each letter in the equation, where $S, E, N, D, M, O, R, Y$ are the digits for the letters in the equation and $c1, c2, c3, c4$ are carry variables used in the calculation.
+constraints: $D + E = 10c1 + Y, c1 + N + R = 10c2 + E, c2 + E + O = 10c3 + N, c3 + S + M = 10c4 + O, c4 = M, all\_different(S, E, N, D, M, O, R, Y), S \geq 1, M \geq 1$ - These constraints ensure that the equation holds true, each letter represents a unique digit, and the carry variables are used correctly in the calculation.
+objective: satisfy - The objective of the problem is to find an assignment of digits to letters that satisfies all the constraints, rather than minimizing or maximizing a specific value.

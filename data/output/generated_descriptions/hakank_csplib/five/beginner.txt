@@ -1,0 +1,5 @@
+5 x 5 puzzle 
+This problem is about finding the minimum number of moves to solve a 5x5 puzzle. 
+The main variables are x and d, where x represents whether a move is made in a particular position on the puzzle, and d represents the number of times a position is visited or moved to. 
+The basic restrictions are that for each position on the puzzle, the number of moves made to the positions around it (up, down, left, right, and diagonally) must be equal to twice the number of times that position is visited plus one. 
+The goal of the problem is to minimize the total number of moves made, which is represented by the variable "moves".

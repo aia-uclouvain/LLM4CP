@@ -1,0 +1,9 @@
+The Sangraal Problem
+The Sangraal problem is a scheduling problem where the goal is to determine the maximum number of knights that can be freed and prepared within a 20-minute time frame.
+The main decision variables in this problem are the array `x`, which represents the assignment of knights to positions, and the array `d`, which indicates whether a position is finished within the 20-minute time frame. The variable `t` represents the finish time for each position.
+The key constraints in this problem are: 
+- Each knight can only be assigned to one position.
+- Each position can only be assigned to one knight.
+- The finish time for each position is calculated based on the time it takes to free and prepare the assigned knight, as well as the time it takes to free the knights in previous positions.
+- A position is considered finished within the 20-minute time frame if its finish time is less than or equal to 20 minutes.
+The objective of the problem is to maximize the number of positions that are finished within the 20-minute time frame, which is represented by the variable `maxk`. This is achieved by finding the optimal assignment of knights to positions that minimizes the finish times and maximizes the number of positions that can be completed within the given time frame.

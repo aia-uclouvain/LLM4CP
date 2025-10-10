@@ -1,0 +1,5 @@
+Mama's Age problem 
+The problem is about figuring out the age of a mother based on some clues given by her husband and son about their ages. 
+The main variables are the ages of Mama, Papa, and Tommy, which represent how old each of them is. 
+The basic restrictions are that the sum of their ages is 70 years, Papa is six times as old as Tommy, and at some point in the future, Tommy will be half as old as Papa, at which time the sum of their ages will be twice what it is now. 
+The goal of the problem is to find Mama's age, given these clues and restrictions.

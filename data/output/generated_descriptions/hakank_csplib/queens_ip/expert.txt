@@ -1,0 +1,10 @@
+name: Queens Problem
+description: The Queens Problem is a classic combinatorial optimization problem where the goal is to place as many queens as possible on an nxn chess board in a way that they do not fight each other.
+variables: $x_{i,j}$, where $i$ and $j$ are indices representing the rows and columns of the chess board, and $x_{i,j}$ is a binary decision variable that equals 1 if a queen is placed in square $[i,j]$ and 0 otherwise. $obj$ is an integer variable representing the total number of queens placed on the board.
+constraints: 
+$\sum_{j=1}^{n} x_{i,j} \leq 1 \forall i \in 1..n$, 
+$\sum_{i=1}^{n} x_{i,j} \leq 1 \forall j \in 1..n$, 
+$\sum_{i,j \in 1..n | i-j == k} x_{i,j} \leq 1 \forall k \in 2-n..n-2$, 
+$\sum_{i,j \in 1..n | i+j == k} x_{i,j} \leq 1 \forall k \in 3..n+n-1$. 
+These constraints ensure that at most one queen can be placed in each row, column, and diagonal of the chess board.
+objective: Maximize $obj$, which represents the total number of queens placed on the board.

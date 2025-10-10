@@ -1,0 +1,25 @@
+**Rubik's Cube Problem**
+The Rubik's Cube problem is a classic constraint programming problem that involves finding the minimum number of moves required to solve a scrambled Rubik's Cube.
+
+**Description**
+The problem consists of a 3D cube with 54 colored stickers, divided into 6 faces, each with 9 stickers. The goal is to rotate the faces to align the colors on each face, resulting in a solid-colored cube.
+
+**Decision Variables**
+The main decision variables in this problem are:
+
+* `x`: a 2D array representing the state of the cube after each move, where `x[i, j]` represents the position of the `j-th` element after the `i-th` move.
+* `init`: a 1D array representing the initial state of the cube.
+* `operations`: a 1D array representing the sequence of moves applied to the cube.
+* `check_ix`: an integer variable representing the index of the minimum number of moves required to solve the cube.
+
+**Constraints**
+The constraints in this problem can be described in plain language as follows:
+
+* The initial state of the cube is given by the `init` array.
+* Each move is represented by a permutation of the elements, which is applied to the current state of the cube to produce the next state.
+* The sequence of moves is represented by the `operations` array, where each element corresponds to a specific move.
+* The goal is to find the minimum number of moves required to transform the initial state into a solved state, where each face of the cube has a solid color.
+* The `check_ix` variable represents the index of the minimum number of moves required to solve the cube.
+
+**Objective**
+The objective of the problem is to minimize the `check_ix` variable, which represents the minimum number of moves required to solve the cube. In other words, the goal is to find the shortest sequence of moves that transforms the initial state into a solved state.

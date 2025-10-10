@@ -1,0 +1,5 @@
+3SUM problem
+The problem is about finding three numbers in a list that add up to zero. 
+The main variables are the list of numbers and a set of flags that say whether each number is used or not. 
+The basic restrictions are that we can only use each number once, and we must use exactly three numbers. 
+The goal is to find any set of three numbers that add up to zero, or determine that no such set exists.

@@ -1,0 +1,11 @@
+name: Party Mixing Problem
+description: The Party Mixing Problem is a combinatorial optimization problem where a group of people are seated at multiple tables and the goal is to find an optimal rearrangement of the people such that each person talks to as many different people as possible.
+variables: X, L, Tables, Path 
+X is a 2D array of variables representing the new seat assignment of each person, L is a 1D array of variables representing the same information as X but in a linear form, Tables is a 2D array of variables representing the table assignment of each person, and Path is a 1D array of variables representing the order in which people move to their new seats. These variables are used to model the seating arrangement and the movement of people between tables.
+constraints: 
+circuit(L), 
+1+(X[I,J]-1) div NumAtTables != 1+(((I-1)*NumAtTables+J)-1) div NumAtTables, 
+1+(X[I,J-1]-1) div NumAtTables != 1+(X[I,J]-1) div NumAtTables, 
+1+(X[I,J+1]-1) div NumAtTables != 1+(X[I,J]-1) div NumAtTables 
+These constraints ensure that the new seating arrangement forms a single cycle (or circuit), each person moves to a different table, and two neighbors from the same table do not sit beside each other in the new configuration.
+objective: The objective of the problem is to satisfy all the constraints, which implicitly maximizes the number of different people each person talks to.

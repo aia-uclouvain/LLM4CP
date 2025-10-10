@@ -1,0 +1,5 @@
+Rubik's Cube Problem
+The problem is about solving a Rubik's Cube, which is a 3D puzzle where you have to rotate the pieces to make each face a solid color. 
+The main variables are the 48 pieces of the cube, the 6 basic moves (rotating a face clockwise or counter-clockwise), and the number of moves to solve the cube.
+The basic restrictions are that each move can only rotate one face of the cube, and the goal is to make each face a solid color. 
+The goal of the problem is to find the minimum number of moves to solve the cube, given a specific initial configuration.

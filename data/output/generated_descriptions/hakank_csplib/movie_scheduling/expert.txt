@@ -1,0 +1,12 @@
+name: Movie Scheduling Problem
+
+description: The Movie Scheduling Problem is a classic problem in constraint programming that involves scheduling a set of movies with given time intervals to maximize the number of movies that can be shown without any overlaps. The problem consists of a set of movies, each with a specific start and end time, and the goal is to select a subset of movies that can be shown without any conflicts.
+
+variables: $x_1, x_2, ..., x_{num\_movies}, z$ 
+These variables represent the decision variables of the problem, where $x_i$ is a binary variable that indicates whether the $i^{th}$ movie is selected (1) or not (0), and $z$ is an integer variable that represents the total number of selected movies.
+
+constraints: $\forall i, j \in 1..num\_movies \text{ where } i < j: (x_i = 1 \land x_j = 1) \rightarrow no\_overlap(data[i,1], data[i,2], data[j,1], data[j,2])$ 
+These constraints ensure that if two movies are selected, their time intervals do not overlap. The $no\_overlap$ predicate checks if the start time of one movie is after the end time of the other movie, or vice versa.
+
+objective: Maximize $z$ 
+The objective of the problem is to maximize the total number of selected movies, which is represented by the variable $z$. This means that the solver will try to find a subset of movies that can be shown without any conflicts, while maximizing the number of movies in the subset.

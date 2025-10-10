@@ -1,0 +1,9 @@
+Latin Square Card Puzzle
+The problem is about arranging a set of cards, each with a unique value and suit, in a square grid such that no value or suit appears twice in any row, column, or diagonal.
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the card placed at row `i` and column `j` in the grid. Each card is represented by a unique integer, with the value of the card given by `x[i, j] mod m` and the suit given by `x[i, j] div m`.
+The key constraints are: 
+- each card must be unique, 
+- no value or suit can appear twice in any row or column, 
+- no value or suit can appear twice in either of the two main diagonals. 
+Additionally, a symmetry-breaking constraint is imposed to ensure that the solution is unique.
+The objective of the problem is to find a satisfying assignment of cards to the grid, such that all constraints are met. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the given constraints.

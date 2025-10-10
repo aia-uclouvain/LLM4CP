@@ -1,0 +1,12 @@
+Bin Packing Problem
+The problem is about packing items of different weights into bins that have a limited capacity, in a way that uses the fewest number of bins possible. 
+The main variables are: 
+- m, the number of items to pack
+- w, the weights of the items
+- c, the capacity of each bin
+- x, which shows which item is packed in which bin
+- used, which shows if a bin is used or not
+The basic restrictions are: 
+- each item can only be packed in one bin
+- a bin cannot be overflowing, meaning the total weight of items in a bin cannot exceed its capacity
+The goal is to minimize the number of bins used to pack all the items.

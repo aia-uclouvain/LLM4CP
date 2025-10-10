@@ -1,0 +1,5 @@
+The name of the problem is the Queens problem. 
+This problem is about placing as many queens as possible on a chessboard of size nxn, such that no two queens attack each other. 
+The main decision variables are x[i,j], which represent whether a queen is placed in square [i,j] on the chessboard. 
+The key constraints are that at most one queen can be placed in each row, column, and diagonal of the chessboard, ensuring that no two queens attack each other. 
+The problem's objective is to maximize the number of queens placed on the chessboard, which is represented by the variable obj, the sum of all x[i,j] values.

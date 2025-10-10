@@ -1,0 +1,8 @@
+0-1 Knapsack Problem
+The 0-1 Knapsack Problem is a classic constraint programming problem that involves finding the optimal subset of items to include in a knapsack with limited capacity, such that the total value of the items is maximized.
+
+The main decision variables in this problem are the array `x` of binary variables, where `x[i]` represents whether the `i-th` item is included in the knapsack (1) or not (0). The `total_weight` and `total_value` variables represent the total weight and value of the items included in the knapsack, respectively.
+
+The key constraints in this problem are that the total weight of the items included in the knapsack cannot exceed the knapsack's capacity (400 dag), and each item can only be included once. In plain language, this means that the tourist cannot carry more than 4 kg of items, and they cannot take a fraction of an item or include the same item multiple times.
+
+The objective of the problem is to maximize the total value of the items included in the knapsack, subject to the capacity constraint. In other words, the tourist wants to choose the items to bring on the trip such that their total value is as high as possible, without exceeding the knapsack's weight limit.

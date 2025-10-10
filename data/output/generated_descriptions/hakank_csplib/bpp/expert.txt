@@ -1,0 +1,8 @@
+name: Bin Packing Problem (BPP)
+description: The Bin Packing Problem is a classic problem in computer science and operations research that involves packing a set of items of different weights into a minimum number of bins, each with a limited capacity. The goal is to find the most efficient way to pack the items into the bins, minimizing the number of bins used.
+variables: $x_{i,j}, used_j, bin\_total_j, obj$ 
+These variables represent the following: $x_{i,j}$ is a binary variable that indicates whether item $i$ is packed in bin $j$, $used_j$ is a binary variable that indicates whether bin $j$ is used, $bin\_total_j$ is the total weight of items packed in bin $j$, and $obj$ is the total number of bins used.
+constraints: $\sum_{j \in J} x_{i,j} = 1, \sum_{i \in I} w_i \cdot x_{i,j} \leq c \cdot used_j, bin\_total_j = \sum_{i \in I} w_i \cdot x_{i,j}, bin\_total_j \geq 0$ 
+These constraints ensure that each item is packed in exactly one bin, the total weight of items in each bin does not exceed its capacity, the total weight of items in each bin is calculated correctly, and the total weight of items in each bin is non-negative.
+objective: minimize $obj = \sum_{j \in J} used_j$ 
+The objective is to minimize the total number of bins used, which is equivalent to minimizing the number of bins that are actually used to pack the items.

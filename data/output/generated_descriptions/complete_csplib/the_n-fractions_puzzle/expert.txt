@@ -1,5 +1,5 @@
 name: Fractions Problem
 description: The problem is to find distinct non-zero digits such that the equation A/BC + D/EF + G/HI = 1 holds, where A, B, C, D, E, F, G, H, and I are the digits.
 variables: A, B, C, D, E, F, G, H, I, D1, D2, D3, Vars = [A, B, C, D, E, F, G, H, I], where A, B, C, D, E, F, G, H, and I are decision variables representing the digits, D1, D2, and D3 are auxiliary variables representing the values of BC, EF, and HI respectively, and Vars is an array of the digit variables.
-constraints: all_different(Vars) ∧ D1 = 10*B+C ∧ D2 = 10*E+F ∧ D3 = 10*H+I ∧ A*D2*D3 + D*D1*D3 + G*D1*D2 = D1*D2*D3 ∧ A*D2 ≥ D*D1 ∧ D*D3 ≥ G*D2 ∧ 3*A ≥ D1 ∧ 3*G ≤ D2, which are constraints that ensure the digits are distinct, calculate the values of D1, D2, and D3, satisfy the equation, break symmetries, and add redundant constraints to help the solver.
-objective: The problem is a satisfaction problem, where the objective is to find an assignment of values to the variables that satisfies all the constraints, rather than minimizing or maximizing a specific value.
+constraints: all_different(Vars) ∧ D1 = 10*B+C ∧ D2 = 10*E+F ∧ D3 = 10*H+I ∧ A*D2*D3 + D*D1*D3 + G*D1*D2 = D1*D2*D3 ∧ A*D2 ≥ D*D1 ∧ D*D3 ≥ G*D2 ∧ 3*A ≥ D1 ∧ 3*G ≤ D2, which are constraints ensuring that all digits are distinct, the values of D1, D2, and D3 are calculated correctly, the equation holds, and symmetry is broken.
+objective: satisfy, the objective is to find a solution that satisfies all the constraints, there is no explicit value to minimize or maximize.

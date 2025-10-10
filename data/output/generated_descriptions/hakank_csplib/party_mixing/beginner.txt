@@ -1,0 +1,5 @@
+Party Mixing Problem
+The problem is about arranging people at tables so that each person talks to as many different people as possible. 
+The main variables are the number of tables, the number of chairs at each table, and the arrangement of people at the tables. 
+The basic restrictions are that each person must move to a different table, and people who were originally at the same table should not sit next to each other at the new table. 
+The goal is to find an arrangement where each person talks to as many different people as possible.

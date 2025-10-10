@@ -1,0 +1,8 @@
+Magic Sequence Problem
+The Magic Sequence problem is about finding a sequence of integers where each integer represents the frequency of its own occurrence in the sequence.
+The main decision variables are the elements of the array `s`, where `s[i]` represents the number of times the integer `i` appears in the sequence.
+The key constraints are: 
+- each integer `i` occurs exactly `s[i]` times in the sequence, 
+- the total length of the sequence is `n`, and 
+- the sum of the products of each integer and its frequency equals `n`.
+The objective of the problem is to find a sequence that satisfies these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

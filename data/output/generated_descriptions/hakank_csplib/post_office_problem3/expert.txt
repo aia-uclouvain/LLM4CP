@@ -1,0 +1,21 @@
+name: Post Office Problem
+
+description: The post office problem is a classic problem in operations research and constraint programming. A post office needs to hire full-time employees to meet its daily requirements. Each full-time employee must work for a certain number of consecutive days and then receive two days off. The post office wants to minimize the number of employees it needs to hire to meet its demand, which varies by day of the week.
+
+variables: $x, x_{worked}, excess, tot\_days, num\_workers, z, days\_to\_work$ 
+These variables represent the following: 
+- $x$ is the number of workers that started on each day, 
+- $x_{worked}$ is the number of workers that worked on each day, 
+- $excess$ is the number of extra workers per day, 
+- $tot\_days$ is the total number of work days, 
+- $num\_workers$ is the total number of workers, 
+- $z$ is the objective function value, which is the total number of work days, 
+- $days\_to\_work$ is the number of days each person works.
+
+constraints: $\forall day \in DAYS (x_{worked}[day] = \sum_{k=0}^{days\_to\_work-1} x[(n+day-k) \mod n])$, $x_{worked}[day] \geq need[day]$, $excess[day] = x_{worked}[day] - need[day]$ 
+These constraints ensure that: 
+- the number of workers that worked on each day is calculated based on the number of workers that started on each day and the number of days each person works, 
+- the number of workers that worked on each day meets the daily requirements, 
+- the excess workers per day are calculated as the difference between the number of workers that worked and the daily requirements.
+
+objective: Minimize $z$, the total number of work days, which represents the total number of workers needed to meet the post office's demand.

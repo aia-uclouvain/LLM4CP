@@ -19,7 +19,7 @@ def config_parser():
 
     # I/O params
     parser.add_argument('--storage_dir', type=str,
-                        default='./data/vector_dbs/complete_csplib',
+                        default='./data/vector_dbs/hakank_csplib',
                         help='Vector DB directory path.')
 
     parser.add_argument('--output_dir', type=str,
@@ -31,15 +31,15 @@ def config_parser():
                         help='Results directory path.')
 
     parser.add_argument('--mixed_db_txt', type=str,
-                        default="./data/input/complete_csplib",
+                        default="./data/input/hakank_csplib",
                         help='.txt directory input path.')
 
     parser.add_argument("--descriptions_dir", type=str,
-                        default="data/output/generated_descriptions/complete_csplib",
+                        default="data/output/generated_descriptions/hakank_csplib",
                         help="path of the folder containing the generated descriptions")
 
     parser.add_argument("--merged_mzn_source_path", type=str,
-                        default="./data/input/complete_csplib",
+                        default="./data/input/hakank_csplib",
                         help="path to the merged MiniZinc source code files")
 
     # Deployment

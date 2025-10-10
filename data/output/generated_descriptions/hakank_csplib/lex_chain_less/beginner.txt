@@ -1,0 +1,5 @@
+Lex Chain Less Problem
+The problem is about comparing and ordering sets of numbers in a specific way, like alphabetizing words. 
+The main variables are sets of numbers, like lists of digits, and they mean the individual sets of numbers being compared.
+The basic restrictions are that each set of numbers must be in a specific order, and each set must be "less than" the next set in a specific way, similar to how "apple" comes before "banana" in the dictionary.
+The goal of the problem is to find a set of numbers that satisfies these ordering rules, and to output the sets of numbers in the correct order.

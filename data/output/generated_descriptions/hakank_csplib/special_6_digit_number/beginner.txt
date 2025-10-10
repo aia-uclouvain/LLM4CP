@@ -1,0 +1,5 @@
+The problem is called the "Special 6 digit number" problem. 
+It's about finding a 6-digit number where, when you multiply it by 1, 2, 3, 4, 5, and 6, you get a special kind of table. 
+The main variables are the digits of the 6-digit number (a, b, c, d, e, f) and the numbers you get when you multiply the original number by 1, 2, 3, 4, 5, and 6. 
+The basic restrictions are that each row and each column of the table must have the digits 0-9 without repeating any digit, and each row is the original number multiplied by a different number. 
+The goal is to find a 6-digit number that meets these conditions.

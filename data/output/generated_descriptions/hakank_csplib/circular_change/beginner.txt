@@ -1,0 +1,9 @@
+Circular Change Problem
+The problem is about counting the number of changes between consecutive values in a list, considering the list as a circle.
+The main variables are: 
+- x, which is a list of numbers that can be between 1 and 4, 
+- c, which is the total number of changes between consecutive values in the list.
+The basic restrictions are: 
+- the list is considered as a circle, meaning the first and last values are also consecutive, 
+- a change is counted when two consecutive values are not equal.
+The goal is to find a list of numbers where the total number of changes between consecutive values is equal to a given number, in this case 4.

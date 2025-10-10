@@ -1,0 +1,5 @@
+Labeled Dice Problem
+The problem is about labeling four dice with 24 different letters so that each word in a given list of 13 words has one letter on each die.
+The main variables are the 24 letters and the four dice, where each letter is assigned to one die.
+The basic restrictions are that each word must have one letter on each die, each die must have exactly 6 letters, and the letters on each die must be different.
+The goal is to find an assignment of letters to dice that satisfies these restrictions.

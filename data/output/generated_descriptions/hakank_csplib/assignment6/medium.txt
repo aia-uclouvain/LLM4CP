@@ -1,0 +1,19 @@
+**Assignment Problem**
+The assignment problem is a classic combinatorial optimization problem that involves assigning a set of agents to a set of tasks in a way that minimizes the total cost.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x[i,j]`: a binary variable that represents whether task `j` is assigned to agent `i`.
+- `assigned[i]`: a variable that represents the task assigned to agent `i`.
+- `costs[i]`: a variable that represents the cost of assigning the task to agent `i`.
+- `z`: a variable that represents the total cost of the assignment.
+
+**Constraints**
+The key constraints in this problem are:
+- Each agent can perform at most one task.
+- Each task must be assigned exactly to one agent.
+- The cost of assigning a task to an agent is non-negative.
+- The total cost of the assignment is the sum of the costs of assigning each task to an agent.
+
+**Objective**
+The objective of the assignment problem is to minimize the total cost `z` of the assignment, which is the sum of the costs of assigning each task to an agent. In other words, the goal is to find the cheapest way to assign the tasks to the agents.

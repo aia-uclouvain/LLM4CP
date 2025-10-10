@@ -1,5 +1,17 @@
-Perfect Square Placement problem
-The Perfect Square Placement problem is a classic constraint programming problem that involves placing a set of squares of different sizes into a larger square container. 
-The main decision variables in this problem are the x and y coordinates of the bottom-left corner of each square. 
-The key constraints in this problem are that each square must be placed within the container, and no two squares can overlap. 
-The objective of the problem is to find a placement of all the squares within the container such that no two squares overlap and all squares are placed within the container.
+Perfect Squares Problem
+The Perfect Squares problem is a classic constraint programming problem that involves packing squares of different sizes into a larger square container. The goal is to find a placement of the squares such that they do not overlap and the entire container is filled.
+
+Main Decision Variables
+The main decision variables in this problem are the x and y coordinates of the bottom-left corner of each square. These variables determine the position of each square within the container.
+
+Key Constraints
+The key constraints in this problem are:
+
+*   Each square must be placed within the container, i.e., its x and y coordinates must be less than the width and height of the container, respectively.
+*   No two squares can overlap, i.e., the x and y coordinates of each square must be such that they do not intersect with any other square.
+*   The entire container must be filled, i.e., the sum of the areas of all the squares must be equal to the area of the container.
+
+Objective
+The objective of this problem is to find a feasible placement of the squares that satisfies all the constraints. There is no explicit objective function to minimize or maximize, but rather a set of constraints that must be satisfied.
+
+In the given implementations, the problem is modeled using different programming languages and constraint programming libraries, including Prolog, ESSENCE, Java, and Python. Each implementation defines the decision variables, constraints, and objective of the problem in a way that is specific to the chosen language and library.

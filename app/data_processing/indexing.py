@@ -100,7 +100,7 @@ class Storage:
 
         # Storage directories for indices
         self.storage_dirs = {
-            level: os.path.join("./data/vector_dbs/code_as_text", level)
+            level: os.path.join("./data/vector_dbs/complete_csplib", level)
             for level in self.expertise_levels
         }
 

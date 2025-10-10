@@ -1,0 +1,5 @@
+The Golden Spiral problem. 
+The Golden Spiral problem is about finding points on a logarithmic spiral curve, known as the Golden Spiral, which is defined by a specific mathematical equation. 
+The main decision variables are theta, r, x, and y, which represent the angle, radius, and Cartesian coordinates of a point on the curve, respectively. 
+The key constraints are that the angle and radius must be non-negative, and the relationships between the polar coordinates (r, theta) and the Cartesian coordinates (x, y) must satisfy the equations of the Golden Spiral, specifically r = e^(0.30649*theta), x = r*cos(theta), and y = r*sin(theta). 
+The problem's objective is to find a point on the curve that satisfies these constraints, rather than minimizing or maximizing a specific value, as indicated by the "solve satisfy" statement, which aims to find a feasible solution that meets all the given constraints.

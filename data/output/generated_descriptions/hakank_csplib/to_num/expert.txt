@@ -1,0 +1,5 @@
+name: Digit Assignment Problem
+description: The problem is to assign digits to a fixed-size number, represented as an array of digits, such that the resulting number satisfies certain conditions, including being greater than or equal to 50,000, being even, and having all digits different, with the third digit being 4.
+variables: $n, x_1, x_2, ..., x_{10}$, where $n$ is an integer representing the resulting number and $x_1, x_2, ..., x_{10}$ are decision variables representing the digits of the number, with $x_i$ being the $i^{th}$ digit.
+constraints: $n = \sum_{i=1}^{10} x_i \cdot 10^{10-i}, x_3 = 4, n \geq 50,000, n \mod 2 = 0, \text{all\_different}(x_1, x_2, ..., x_{10})$, which are constraints that ensure the number is correctly formed, the third digit is 4, the number is greater than or equal to 50,000, the number is even, and all digits are different, respectively.
+objective: The objective of the problem is to find a satisfying assignment, as indicated by the `solve satisfy` statement, meaning that the goal is to find values for the decision variables that satisfy all the constraints, rather than minimizing or maximizing a specific value.
