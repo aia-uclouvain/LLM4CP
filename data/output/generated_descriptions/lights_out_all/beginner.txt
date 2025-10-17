@@ -1,0 +1,11 @@
+Lights Out Variant Puzzle
+The problem is about turning off all the lights in a grid, but with a twist: when you flip one light switch, all the lights in the same row and column also flip.
+The main variables are: 
+- s0, which represents the initial state of the lights (on or off)
+- s, which represents the solution (the final state of the lights after flipping some switches)
+- y, which is a helper variable to calculate the final state
+- m, which is the total number of lights that are on in the final state
+The basic restrictions are: 
+- When a light switch is flipped, all the lights in the same row and column also flip
+- The goal is to turn off all the lights
+The goal of the problem is to minimize the total number of lights that are on in the final state (m), which means finding the minimum number of switch flips needed to turn off all the lights.

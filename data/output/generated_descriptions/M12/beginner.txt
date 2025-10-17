@@ -1,0 +1,5 @@
+M12 Problem
+The M12 problem is about solving a puzzle where you have a set of 12 elements that need to be rearranged to their original order. 
+The main variables are the elements themselves, the operations (merge, reverse, same) that can be applied to the elements, and the number of steps (rows) it takes to solve the puzzle. 
+The basic restrictions are that each operation can only be applied once per step, and the goal is to find the shortest sequence of operations that returns the elements to their original order. 
+The goal of the problem is to minimize the number of steps (check_ix) it takes to solve the puzzle.

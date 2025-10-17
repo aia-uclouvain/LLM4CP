@@ -1,0 +1,5 @@
+Quasigroup Completion Problem
+The problem is about filling in missing colors in a pattern of colored squares. 
+The main variables are the colors of each square, which can be one of four colors: dark red, light blue, dark blue, or light red.
+The basic restrictions are that each row and column must have each color exactly once, and that certain squares already have a color filled in. 
+The goal is to find a way to fill in all the missing colors so that the pattern is complete and follows the rules, but in this case, the problem has no solution.

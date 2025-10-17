@@ -1,0 +1,13 @@
+name: Latin Square Card Puzzle
+description: The problem is to arrange all the jacks, queens, kings, and aces from a deck of cards in a square so that no suit or value appears twice in any row, column, or the two main diagonals.
+variables: $x_{i,j}$ where $i,j \in \{1,2,...,n\}$, these are decision variables representing the card in the $i^{th}$ row and $j^{th}$ column of the square, where each card is identified by a unique integer.
+constraints: 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} x_{i,j} \in \{0,1,...,m*n-1\}$, 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} \bigwedge_{k=1}^{n} \bigwedge_{l=1}^{n} (i \neq k \vee j \neq l) \rightarrow x_{i,j} \neq x_{k,l}$, 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} \bigwedge_{k=1}^{n} (i \neq k) \rightarrow x_{i,j} \mod m \neq x_{k,j} \mod m$, 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} \bigwedge_{k=1}^{n} (j \neq k) \rightarrow x_{i,j} \mod m \neq x_{i,k} \mod m$, 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} \bigwedge_{k=1}^{n} (i \neq k) \rightarrow x_{i,i} \div m \neq x_{k,k} \div m$, 
+$\bigwedge_{i=1}^{n} \bigwedge_{j=1}^{n} \bigwedge_{k=1}^{n} (i \neq k) \rightarrow x_{i,n-i+1} \div m \neq x_{k,n-k+1} \div m$, 
+$x_{1,1} = 0$, 
+these constraints ensure that each card appears only once in the square, and that no suit or value appears twice in any row, column, or diagonal.
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

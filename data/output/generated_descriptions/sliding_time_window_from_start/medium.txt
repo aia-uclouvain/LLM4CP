@@ -1,0 +1,17 @@
+**Sliding Time Window from Start Problem**
+The Sliding Time Window from Start problem is about scheduling tasks within a given time frame while ensuring that the total duration of tasks overlapping with a specific time window does not exceed a certain limit.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `tasks`: a 2D array representing the tasks, where each task is characterized by its origin (start time) and duration.
+- `occupied`: an array representing the number of tasks occupying each time entry within the sliding time window.
+- `limitx`: a variable representing the maximum allowed total duration of tasks overlapping with the sliding time window.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- Each task has a specific start time and duration, and these tasks are scheduled within a given time frame.
+- A sliding time window of a specified size moves over the time frame, and the total duration of tasks overlapping with this window at any point in time must not exceed the specified limit.
+- The `occupied` array keeps track of the number of tasks that overlap with each time entry within the sliding time window.
+
+**Objective**
+The objective of the Sliding Time Window from Start problem is to satisfy the given constraints, ensuring that the total duration of tasks overlapping with the sliding time window does not exceed the specified limit. In other words, the problem aims to find a feasible schedule for the tasks that meets the constraints, rather than optimizing a specific objective function.

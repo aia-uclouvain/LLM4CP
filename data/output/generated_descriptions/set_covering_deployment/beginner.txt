@@ -1,0 +1,5 @@
+Set Covering Deployment problem.
+The problem is about placing armies in cities to ensure each city is protected, either by having an army in the city itself or having a backup army in a nearby city.
+The main variables are X and Y, where X represents the presence of an army in a city and Y represents the presence of a backup army in a city.
+The basic restrictions are that a city must have an army if it has a backup army, and each city must be protected by either an army in the city or a backup army in a nearby city.
+The goal of the problem is to minimize the total number of armies, which includes both regular armies (X) and backup armies (Y).

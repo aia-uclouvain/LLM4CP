@@ -1,0 +1,5 @@
+The problem is called the Simple PERT model. 
+It's about planning a series of activities that depend on each other, like a construction project where some tasks can't start until others are finished. 
+The main variables are Times, which is how long each activity takes, Start, which is when each activity begins, and Dependencies, which shows which activities rely on others. 
+The basic rules are that each activity can't start until the ones it depends on are finished, and the time it takes to complete an activity is fixed. 
+The goal is to find the earliest possible time to start each activity so that the last activity, called "Send", finishes as soon as possible.

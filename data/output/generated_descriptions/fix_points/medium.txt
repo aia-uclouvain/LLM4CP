@@ -1,0 +1,5 @@
+The problem is known as the Fixed Points problem. 
+It is about finding an array of values where a certain number of elements are equal to their index position. 
+The main decision variables are x, an array of variables representing the values to be assigned, and z, a variable representing the number of fixed points in the array. 
+The key constraints are that the number of fixed points, z, must be equal to the sum of the boolean values indicating whether each element in x is equal to its index, and z must be equal to a given value, in this case 4. 
+The objective of the problem is not to minimize or maximize a value, but rather to find a satisfying assignment of values to x such that the constraints are met, specifically to find an array x with exactly 4 fixed points.

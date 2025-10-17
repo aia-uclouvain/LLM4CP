@@ -1,0 +1,5 @@
+The problem is called "Languages at a Round Table". 
+It's about 5 people from different countries - France, England, Poland, Italy, and Turkey - sitting at a round table. Each person can speak their own language and one other language. 
+The main variables are the people's native languages and the foreign languages they know. 
+The basic rules are that each person can talk to the people sitting next to them, one in their own language and one in the foreign language they know. 
+The goal is to figure out what foreign language the Turkish person knows, given some clues about who knows what language.

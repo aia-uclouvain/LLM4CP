@@ -1,0 +1,5 @@
+Gathering 4 Garder matrix problem 
+The problem is about filling a 10x10 grid with numbers from 1 to 20 in such a way that each row and each column contains exactly two numbers. 
+The main variables are the grid cells (x) and the two numbers in each row (x_rows) and column (x_cols). 
+The basic restrictions are that each row and column can only have two numbers, and these numbers must either add up to or multiply to the value given in the row or column margin. 
+The goal is to find a solution that satisfies all these conditions, which means filling the grid in a way that meets all the rules.

@@ -1,0 +1,7 @@
+The problem is called the Satisfiability Problem. 
+It is about finding all possible interpretations of a given propositional formula that make it true. 
+The main decision variables are x, an array of 0..1 variables, where each x[i] represents the truth value of a proposition, with 0 being false and 1 being true. 
+The key constraints are: 
+- at least one of the following conditions must be true: both the first and second propositions are true, or both the third and fourth propositions are true, 
+- and at least one of the following conditions must be true: the first proposition is different from the third proposition, or the second proposition is different from the fourth proposition. 
+The problem's objective is to find all satisfying assignments, which means finding all possible combinations of truth values for the propositions that satisfy the given constraints, rather than minimizing or maximizing a specific objective function.

@@ -1,0 +1,5 @@
+Strimko problem.
+The problem is about filling a square grid with numbers so that each row, column, and a special kind of connected path called a "stream" contains each number exactly once.
+The main variables are the numbers in the grid, represented by "x", which can be any number from 1 to n, where n is the size of the grid. The "streams" variable represents which stream each cell in the grid belongs to. The "placed" variable represents some numbers that are already given in the grid.
+The basic restrictions are that each row and column must contain each number exactly once, and each stream must also contain each number exactly once. Additionally, the numbers that are already given in the grid must be placed correctly.
+The goal of the problem is to find a way to fill the entire grid with numbers so that all the restrictions are satisfied, which is known as "satisfying" the problem.

@@ -1,0 +1,5 @@
+Clock Triplet Problem
+The Clock Triplet Problem is about rearranging the numbers 1 to 12 on a clock face in a circular manner such that no three adjacent numbers have a sum greater than 21.
+The main decision variables are the array x, where x[i] represents the number placed at the i-th position on the clock face, and triplet_sum, which represents the maximum sum of any triplet of adjacent numbers.
+The key constraints are that all numbers from 1 to 12 must be used exactly once, the numbers must be arranged in a circular manner, and the sum of any three adjacent numbers must not exceed 21. Additionally, the model ensures that the first number is 12 and that the second number is greater than the last number.
+The objective of the problem is to find an arrangement that satisfies these constraints, with the goal of minimizing the maximum sum of any triplet of adjacent numbers, which is represented by the variable triplet_sum. In this case, the model is trying to verify if 21 is indeed the smallest possible maximum sum of a triplet.

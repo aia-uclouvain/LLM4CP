@@ -1,0 +1,8 @@
+name: Finding Celebrities Problem
+description: The problem is to find the celebrities at a party, where a celebrity is a person that everybody at the party knows, but that only knows other celebrities. The problem is defined by a graph of who knows who at the party, and the goal is to identify the set of celebrities.
+variables: $n, graph, party, celebrities, num\_celebrities$ 
+These variables represent the following: $n$ is the number of persons at the party, $graph$ is a matrix representing who knows who, $party$ is an array of sets where each set contains the people known by each person, $celebrities$ is the set of celebrities, and $num\_celebrities$ is the number of celebrities.
+constraints: $num\_celebrities \geq 1, set2matrix(party, graph), \forall i \in 1..n ((i \in celebrities \rightarrow \forall j \in 1..n (graph[j,i] = 1)) \wedge (i \in celebrities \rightarrow \sum_{j \in 1..n} graph[i,j] = num\_celebrities))$ 
+These constraints ensure that there is at least one celebrity, that the graph is correctly constructed from the party array, and that each celebrity is known by everyone and only knows other celebrities.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, which means finding the set of celebrities at the party.

@@ -1,0 +1,13 @@
+The problem is called Least Square. 
+It's about finding the best way to draw a curve that fits a set of given points on a graph, where each point has a temperature and a percentage of gas. 
+The main variables are: 
+- t, which represents the temperatures at different points, 
+- F, which represents the percentages of gas at those points, 
+- a, which represents the coefficients of the curve equation that we're trying to find, 
+- z, which represents how well the curve fits the points. 
+The basic restrictions or rules are: 
+- the curve must be of a specific type, a polynomial of degree 4, 
+- the curve must pass through or close to the given points, 
+- the curve must satisfy two specific conditions at temperatures 20 and 700, 
+- the slope of the curve must be non-negative at all points. 
+The goal of the problem is to minimize z, which means finding the curve that best fits the given points.

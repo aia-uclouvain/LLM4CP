@@ -1,0 +1,12 @@
+The Ormat Game
+The Ormat Game is about covering colored squares in a grid with transparent plastic overlays that have patterns of black dots. 
+The main variables are: 
+- problem: a grid with some colored and some blank cells
+- x: which overlays to use
+- num_overlays: the total number of overlays used
+- overlays: the patterns of black dots on each overlay
+The basic restrictions are: 
+- each colored cell in the grid must be covered by at least one overlay
+- no blank cell in the grid can be covered by an overlay
+- each overlay can be used or not used
+The goal is to minimize the number of overlays used to cover all the colored cells in the grid.

@@ -1,0 +1,5 @@
+The Arrow Problem
+The Arrow problem is about finding a path through a 3x3 grid of digits that maximizes the numerical value of the digits visited in order, without revisiting any cell.
+The main decision variables are `x`, an array of variables representing the order in which the cells are visited, and `num`, a variable representing the numerical value of the path.
+The key constraints are that each cell can only be visited once, and each step must be to a neighboring cell (horizontally or vertically, but not diagonally). The path must also start at one of the cells and visit each cell exactly once. Additionally, the numerical value of the path must be greater than 84937561.
+The objective of the problem is to maximize the numerical value of the path, `num`, which is calculated by concatenating the digits visited in order. The model uses a predicate `toNum` to convert the array of visited cells into a single numerical value. The solver searches for a solution that maximizes this value, subject to the constraints.

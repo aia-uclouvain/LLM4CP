@@ -1,0 +1,11 @@
+Max Flow Problem
+The Max Flow problem is about finding the maximum amount of flow that can be sent through a network of nodes and arcs, where each arc has a limited capacity.
+
+The main decision variables in this problem are the flow variables, which represent the amount of flow sent from one node to another. In this model, the flow variables are represented by a 2D array `flow`, where `flow[i, j]` represents the amount of flow sent from node `i` to node `j`.
+
+The key constraints in this problem are: 
+- The flow on each arc cannot exceed its capacity, ensuring that the network's limitations are respected.
+- The flow into each node must be equal to the flow out of that node, maintaining a balance and preventing the creation of "sinks" or "sources" within the network.
+- The flow on each arc must be non-negative, as negative flow does not make sense in this context.
+
+The objective of the Max Flow problem is to maximize the total flow sent from the source node to the sink node, which in this case is represented by the variable `z` and is the flow from node 5 back to node 1. The goal is to find the maximum possible value of `z` while satisfying all the constraints.

@@ -1,0 +1,5 @@
+Number Theoretic Puzzle
+The problem is about finding three-digit numbers that, when multiplied by their successor, result in a number that is a concatenation of itself.
+The main decision variables are x and y, which represent the three-digit number and its successor, respectively. The arrays x_a and y_a represent the digits of x and y, while z represents the product of x and y, and z_a represents the digits of z.
+The key constraints are that x and y are consecutive numbers (y = x + 1), the product of x and y equals z (x * y = z), and the first three digits of z are the same as the last three digits of z (z_a[i] = z_a[i+3] for i in 1..3).
+The objective of the problem is to find all possible values of x that satisfy the given constraints, which is achieved by using the satisfy keyword in the solve statement, indicating that the goal is to find a solution that meets all the constraints rather than optimizing a specific objective function.

@@ -1,0 +1,5 @@
+The Sangraal Problem. 
+This problem is about freeing knights who are imprisoned by the Foul Fiend in a castle, so they can recover and be ready for the arrival of the Sangraal, which will happen in 20 minutes. 
+The main variables are the knights (Agravain, Bors, Caradoc, Dagonet, Ector, Feirefiz, Gareth, Harry), the time it takes to free each knight (1-6 minutes), and the time each knight needs to recover (5, 10, or 15 minutes). 
+The basic restrictions are that each knight can only be freed once, each position in the freeing order can only have one knight, and the total time to free and recover a knight must be within 20 minutes. 
+The goal is to maximize the number of knights that can be freed and recovered within the 20-minute time limit, so they can be ready for the Sangraal's arrival.

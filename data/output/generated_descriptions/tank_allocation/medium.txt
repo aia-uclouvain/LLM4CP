@@ -1,0 +1,11 @@
+Tank Allocation Problem
+The Tank Allocation Problem is about allocating different types of cargo to a set of tanks, where each tank has a limited capacity and certain constraints apply. The goal is to maximize the number of empty tanks while ensuring that all cargo is allocated and the constraints are satisfied.
+
+The main decision variables in this problem are the allocation of cargo to tanks, represented by the matrix "allocation" where each entry allocation[tank] represents the type of cargo (or no cargo, represented by 0) assigned to tank "tank". 
+
+The key constraints in this problem are: 
+- The total volume of each cargo type allocated to tanks must be greater than or equal to the volume that needs to be shipped.
+- No tank can be allocated a cargo that is in its set of impossible cargos.
+- No tank can be neighbors with a tank containing an incompatible cargo type.
+
+The objective of the problem is to maximize the number of empty tanks, which is achieved by maximizing the sum of tanks where the allocated cargo is 0 (representing no cargo or an empty tank).

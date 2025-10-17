@@ -1,0 +1,5 @@
+name: Divisible by 7
+description: The problem is to arrange three cubes with numbers 6, 3, and 1 on their sides in a line to form a 3-digit number that is divisible by 7, with the additional constraint that each cube must be used and the number 6 can also be considered as 9.
+variables: $x = (x_1, x_2, x_3)$, where $x_i \in \{1, 3, 6, 9\}$ represents the number on the $i^{th}$ cube, and $z$ is a derived variable representing the 3-digit number formed by the cubes.
+constraints: $x_1 \neq x_2 \neq x_3$, $z \mod 7 = 0$, and $(countx(x, 6, 1) \wedge countx(x, 9, 0)) \vee (countx(x, 9, 1) \wedge countx(x, 6, 0))$, which ensure that all cubes are used, the formed number is divisible by 7, and either 6 or 9 is used but not both.
+objective: The objective is to find a satisfying assignment, i.e., to solve the problem as a satisfaction problem, there is no explicit objective function to minimize or maximize.

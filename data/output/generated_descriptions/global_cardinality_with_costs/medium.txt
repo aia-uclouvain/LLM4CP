@@ -1,0 +1,11 @@
+Global Cardinality with Costs Problem
+The Global Cardinality with Costs problem is about assigning a set of variables to a set of values while satisfying certain constraints and minimizing the total cost of the assignments.
+The main decision variables are: 
+- `variables`: an array of variables to be assigned to values, 
+- `values`: a 2D array where each row represents a value and its occurrence, 
+- `cost_matrix`: a 2D array where each element represents the cost of assigning a variable to a value, 
+- `cost`: the total cost of the assignments.
+The key constraints are: 
+- Each value should be assigned to a specific number of variables, 
+- The total cost is calculated by summing the costs of each assignment.
+The objective of the problem is to satisfy the constraints while minimizing the total cost of the assignments.

@@ -1,0 +1,5 @@
+Chandelier Balancing Problem
+The Chandelier Balancing Problem is about finding the optimal placement of weights on a chandelier to perfectly balance it. 
+The main decision variables are a, b, c, d, e, f, g, h, and i, which represent the weights placed in each of the nine triangles of the chandelier. 
+The key constraints are: each triangle can hold only one weight, all weights must be used, and the weights must be placed such that the chandelier is perfectly balanced. This means that the total weight on each arm of the chandelier must be equal, and the weight distribution must satisfy the specific balance conditions given for each part of the chandelier. 
+The objective of the problem is to find a feasible solution that satisfies all the constraints, thereby achieving a perfectly balanced chandelier. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a solution that meets the balance requirements.

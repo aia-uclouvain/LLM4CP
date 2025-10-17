@@ -1,0 +1,12 @@
+Pi Day Sudoku 2011
+The problem is about filling a grid representing a pie with 12 wedges, divided into three types of regions: six rings, six pairs of opposite wedges, and six adjacent pairs of wedges of the same color, such that the numbers 1-12 appear exactly once in each region.
+
+The main decision variables are represented by the array `x`, where `x[i, j]` is the number assigned to the cell in the `i-th` row and `j-th` column of the grid. This variable represents the value that will be assigned to each cell in the pie grid.
+
+The key constraints are: 
+- Each row (ring) must contain the numbers 1-12 exactly once.
+- Each pair of opposite wedges must contain the numbers 1-12 exactly once.
+- Each pair of adjacent wedges of the same color must contain the numbers 1-12 exactly once.
+- Any given number can only be used once in each region.
+
+The problem's objective is to find a solution that satisfies all the constraints, which means finding a valid assignment of numbers to the grid such that all regions contain the numbers 1-12 exactly once. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints.

@@ -1,0 +1,12 @@
+**Color Fairies Problem**
+The Color Fairies problem is a classic constraint programming problem that involves determining the color preferences of fairies based on the number of pearls they give to children on different nights. 
+
+The main decision variables in this problem are the `x` variables, which represent whether a fairy is attracted to a particular color. The `visit` variables represent whether a fairy visits the children on a particular night, and the `star` variables represent whether a child has a star of a particular color. The `pearl` variables represent the number of pearls a child receives on a particular night.
+
+The key constraints in this problem are:
+- The number of pearls a child receives on a particular night is consistent with the visits of the fairies and the colors of the stars the child has.
+- Each fairy is attracted to a single color.
+- At least one fairy is attracted to the color turquoise.
+- Exactly one fairy is attracted to the color earth.
+
+The objective of this problem is to find a solution that satisfies all the constraints, which is a classic example of a satisfaction problem. In other words, the goal is to determine the color preferences of the fairies such that all the constraints are met, without necessarily optimizing a particular objective function.

@@ -1,0 +1,6 @@
+Kaprekar's Routine Problem
+The problem is about finding a specific constant, known as Kaprekar's constant, which is obtained by repeatedly applying a simple operation to a number. 
+The main decision variables are arrays `y` and `x`, which represent the digits of the original number and the result of the operation, respectively. `y_num` and `x_num` are the decimal equivalents of `y` and `x`. 
+The key constraints are that `y` must be a decreasing sequence of digits, `y` and `x` must have the same digits (in some order), and the operation of subtracting the reverse of `y` from `y` must result in `x`. 
+The objective is to find a solution that satisfies these constraints, which will give us Kaprekar's constant for a given base and length of the numbers. 
+In this problem, we are not minimizing or maximizing any specific value, but rather searching for a solution that meets the given constraints. The solution will give us the value of Kaprekar's constant, which is a fixed point that the operation converges to.

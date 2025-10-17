@@ -1,0 +1,5 @@
+Latin Squares problem. 
+This problem is about filling a square table with different symbols, so that each symbol appears exactly once in each row and exactly once in each column. 
+The main variables are the symbols in the table, represented by "x", which can take values from 1 to n, where n is the size of the table. 
+The basic restrictions are that each symbol can only appear once in each row and once in each column, and the first row and first column must contain all the symbols in order. 
+The goal of the problem is to find a way to fill the table that satisfies these rules, which is known as a "Latin square".

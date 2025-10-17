@@ -1,0 +1,12 @@
+Round Robin Tournament Scheduling
+The problem involves scheduling a round robin tournament for a given number of teams, where each team plays every other team exactly once, and the schedule is divided into weeks and periods.
+
+The main decision variables are the schedule, which represents the matches between teams at each week and period. The schedule can be represented by variables such as `sched` in the Essence model or `m`, `x`, and `y` in the PyCSP3 model, where `m` represents the match at each week and period, and `x` and `y` represent the teams playing in each match.
+
+The key constraints are:
+- Each team plays every other team exactly once.
+- Each team plays at most two times in each period.
+- Each week, all teams are different, meaning each team plays each week.
+- The schedule is symmetric, meaning that if team A plays team B at week W and period P, then team B plays team A at the same week and period.
+
+The problem's objective is to find a valid schedule that satisfies all the constraints, without a specific objective function to minimize or maximize. The goal is to find a feasible solution that allows all teams to play each other exactly once, while respecting the constraints on the schedule.

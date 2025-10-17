@@ -1,0 +1,5 @@
+Pi Day Sudoku 2010
+This problem is about solving a Sudoku puzzle, which is a game where you have to fill in numbers on a grid. 
+The main variables are the numbers that go in each square of the grid, which are represented by the variable x. 
+The basic restrictions or rules of the problem are that each row, column, and small square (3x3) can only have each number once, and some numbers are already given. 
+The goal of the problem is to fill in all the numbers so that the rules are satisfied, which means finding a solution that works for the entire grid.

@@ -1,0 +1,12 @@
+Lost at Sea problem
+The Lost at Sea problem is a classic constraint programming problem that involves finding a lost ship in a grid of ocean cells with varying probabilities of the ship's location. The goal is to maximize the probability of finding the ship by searching a limited number of cells.
+
+The main decision variables in this problem are the coordinates (x, y) of the cells to be searched, represented by the arrays x and y, and the path, represented by the array path. These variables determine the order in which the cells are searched.
+
+The key constraints in this problem are:
+- Each cell can only be searched once.
+- The search can only move to adjacent cells (up, down, left, or right).
+- The search is limited to a maximum of 10 cells.
+- The probability of finding the ship is calculated by summing the probabilities of the searched cells.
+
+The objective of the problem is to maximize the probability of finding the ship, which is calculated by summing the probabilities of the searched cells, represented by the variable sum_points. The problem aims to find the optimal sequence of cells to search in order to maximize this probability.

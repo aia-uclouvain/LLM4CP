@@ -1,0 +1,5 @@
+The problem is called Balance Partition. 
+It's about dividing a set of numbers into groups in a way that the groups are as balanced as possible. 
+The main variables are x, which represents the numbers to be divided, partitions, which represents the groups, and bal, which represents the difference between the largest and smallest group sizes. 
+The basic restrictions are that each number can only be in one group, and the groups are predefined. 
+The goal is to find a way to divide the numbers into the groups such that the difference between the largest and smallest group sizes is as small as possible, which is represented by the variable bal.

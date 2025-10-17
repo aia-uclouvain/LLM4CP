@@ -1,0 +1,5 @@
+name: Fibonacci Numbers
+description: The problem is to calculate the first n Fibonacci numbers, which are a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1, but in this case starting with 1 and 1.
+variables: $fib[1..n]$, where $fib[i]$ represents the i-th Fibonacci number, which is a decision variable that will be assigned a value by the solver.
+constraints: $fib[1] = 1 \wedge fib[2] = 1 \wedge \forall i \in \{3, ..., n\} (fib[i] = fib[i-1] + fib[i-2])$, which are the initial conditions for the first two Fibonacci numbers and the recursive formula to calculate the remaining numbers.
+objective: The objective of the problem is not to minimize or maximize a specific value, but rather to satisfy the given constraints, which means to calculate the first n Fibonacci numbers correctly.

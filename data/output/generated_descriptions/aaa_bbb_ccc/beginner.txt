@@ -1,0 +1,5 @@
+The problem is called "AAA + BBB + CCC = BAAC". 
+It's about finding three different digits (A, B, and C) that make a mathematical equation true when used in a specific way. 
+The main variables are A, B, and C, which represent single digits from 1 to 9. 
+The basic restrictions are that A, B, and C must all be different from each other, and when used to form the numbers AAA, BBB, CCC, and BAAC, they must satisfy the equation AAA + BBB + CCC = BAAC. 
+The goal is to find values for A, B, and C that make this equation true, which means finding a solution that satisfies all the given conditions.

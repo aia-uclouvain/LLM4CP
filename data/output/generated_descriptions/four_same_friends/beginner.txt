@@ -1,0 +1,11 @@
+Four alike pals problem
+The problem is about four friends who are similar in certain ways. Each pair of friends has the same first name, last name, or birth date. 
+The main variables are: 
+- first name: the first name of each friend
+- last name: the last name of each friend
+- birth date: the birth date of each friend
+- z: the total number of different first names, last names, and birth dates among the friends
+The basic restrictions are: 
+- each pair of friends must have something in common (first name, last name, or birth date)
+- no three friends can have the same first name, last name, or birth date
+The goal is to find the smallest number of different first names, last names, and birth dates (z) that still satisfies these conditions.

@@ -1,0 +1,5 @@
+name: Ormat Game Problem
+description: The Ormat game is a puzzle where a player is presented with a grid of squares, some of which are filled with a specific symbol, and the goal is to find a solution that satisfies certain rules. The game starts with a partially filled grid, and the player must fill in the remaining squares according to specific constraints.
+variables: $x_{i,j}$, where $i$ and $j$ represent the row and column indices of the grid, respectively. These variables represent the state of each square in the grid, with $x_{i,j} = 1$ indicating a filled square and $x_{i,j} = 0$ indicating an empty square.
+constraints: $\sum_{i=1}^{n} x_{i,j} = \sum_{j=1}^{n} x_{i,j}$ for all $i$ and $j$, $x_{i,j} \in \{0,1\}$ for all $i$ and $j$, and the initial grid configuration is given. These constraints ensure that each row and column has the same number of filled squares, and that each square can only be filled or empty.
+objective: The objective of the problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find a solution that satisfies all the given constraints.

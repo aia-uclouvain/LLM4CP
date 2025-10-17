@@ -1,0 +1,5 @@
+The problem is called "all_different_consecutive_values". 
+It's about arranging a set of numbers in a special way. 
+The main variables are a list of numbers called "x", which can take values from 1 to 10. 
+The basic restrictions are that all numbers in the list must be different, and the difference between the largest and smallest numbers must be equal to the number of items in the list minus one, meaning there are no gaps in the numbers used. 
+The goal is to find a list of numbers that satisfies these rules.

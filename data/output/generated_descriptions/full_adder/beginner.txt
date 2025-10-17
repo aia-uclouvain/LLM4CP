@@ -1,0 +1,5 @@
+Full Adder problem. 
+This problem is about designing a simple electronic circuit that can add two binary numbers (which are either 0 or 1) and a carry from a previous addition, and produce a result and a new carry. 
+The main variables are I1, I2, and I3, which represent the two binary numbers and the carry, and O1 and O2, which represent the result and the new carry. 
+The basic restrictions are that the circuit must follow the rules of binary addition, which means that when you add two numbers and a carry, you get a result and a new carry. 
+The goal of the problem is to find values for I1 and I2 that satisfy these rules, given that I3 (the carry) is 0 and O2 (the new carry) is 1.

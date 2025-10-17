@@ -1,0 +1,14 @@
+**Costas Array Problem**
+The Costas array problem is a classic constraint programming problem that involves finding a specific type of permutation array. 
+
+The problem is about finding an order-n permutation array, where each row of the triangular difference table has distinct distances. 
+
+The main decision variables in this problem are the `costas` array, which represents the permutation, and the `differences` array, which represents the triangular difference table. The `costas` array is a permutation of the numbers 1 to n, and the `differences` array is a 2D array that stores the differences between the elements of the `costas` array.
+
+The key constraints in this problem are:
+- The `costas` array must be a permutation of the numbers 1 to n, meaning that each number can only appear once.
+- The `differences` array must be calculated based on the `costas` array, where each element is the difference between two elements of the `costas` array.
+- Each row of the `differences` array must have distinct elements, meaning that no two elements in the same row can be the same.
+- The lower triangular part of the `differences` array is fixed to -n+1, which removes variants of the difference matrix for the same Costas array.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find all possible solutions that satisfy the given constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. The model is designed to generate all possible Costas arrays of a given length, without any optimization objective.

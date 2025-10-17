@@ -1,0 +1,13 @@
+Water Bucket Problem
+The problem is about pouring water between three buckets to achieve a specific goal. 
+Imagine you have three buckets with different capacities, and you want to divide the water in one bucket into two other buckets. 
+You can pour water from one bucket to another, but you can only pour as much water as the destination bucket can hold.
+
+The main variables are the amounts of water in each bucket at each step. 
+These variables represent how much water is in each bucket after each pouring operation.
+
+The basic restrictions are that each bucket can only hold a certain amount of water, and when pouring water from one bucket to another, either the source bucket becomes empty or the target bucket becomes full. 
+Additionally, the total amount of water remains the same throughout the process.
+
+The goal of the problem is to find the minimum number of pouring operations required to achieve the desired distribution of water in the buckets. 
+In other words, you want to divide the water into two buckets in the fewest number of steps possible.

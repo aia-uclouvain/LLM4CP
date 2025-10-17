@@ -1,0 +1,16 @@
+**Knapsack Problem**
+The Knapsack problem is a classic constraint programming problem that involves selecting a subset of projects to invest in, given certain constraints such as budget, personnel, and project dependencies.
+
+**Decision Variables**
+The main decision variables in this problem are represented by the array `x`, where `x[i]` is a binary variable that indicates whether project `i` is selected (1) or not (0). The other decision variables are derived from `x`, including `total_persons`, `total_budget`, `total_projects`, and `total_values`, which represent the total personnel required, total budget used, total number of projects selected, and total value of the selected projects, respectively.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- The total budget used by the selected projects cannot exceed the maximum budget.
+- The total personnel required by the selected projects cannot exceed the maximum personnel available.
+- The total number of projects selected cannot exceed the maximum number of projects allowed.
+- Some projects cannot be selected together (e.g., project 1 and project 10).
+- Some projects require other projects to be selected (e.g., project 3 requires project 15).
+
+**Objective**
+The objective of this problem is to maximize the total value of the selected projects, represented by `total_values`, while satisfying all the constraints. In other words, the goal is to select a subset of projects that yields the highest total value without exceeding the budget, personnel, and project limits, and while respecting project dependencies and exclusions.

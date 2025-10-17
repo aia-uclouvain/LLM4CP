@@ -1,0 +1,5 @@
+Photo Problem
+The problem is about arranging seven people - Betty, Chris, Donald, Fred, Gary, Mary, and Paul - in a row for a photo, considering their preferences for standing next to specific individuals.
+The main variables are the positions of each person in the row, represented by the array "positions", and the number of satisfied preferences, represented by the variable "z".
+The basic restrictions are that each person can only stand in one position, and the positions must be different for each person. Additionally, the preferences of each person are represented by a matrix, where a 1 indicates that the person wants to stand next to the corresponding individual.
+The goal of the problem is to find an arrangement that maximizes the number of satisfied preferences, which is represented by the variable "z". In other words, the aim is to find a way to arrange the people in a row such that as many people as possible are standing next to the individuals they prefer.

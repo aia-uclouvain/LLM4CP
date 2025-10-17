@@ -1,0 +1,12 @@
+Smullyan's Portia problem
+The problem is about determining the location of a portrait in one of three caskets, Gold, Silver, or Lead, based on the inscriptions on the caskets. The inscriptions provide clues about the location of the portrait, but some of them may be false.
+
+The main decision variables are `portrait` and `inscriptions`, which represent the location of the portrait and the truth values of the inscriptions, respectively. `portrait` is an array of boolean variables, where `portrait[i]` is true if the portrait is in the `i-th` casket, and false otherwise. `inscriptions` is also an array of boolean variables, where `inscriptions[i]` is true if the inscription on the `i-th` casket is true, and false otherwise.
+
+The key constraints are:
+- The portrait is in exactly one casket.
+- The inscriptions on the caskets provide clues about the location of the portrait, but some of them may be false.
+- For example, in Problem 67a, the Gold casket says "The portrait is in this casket", the Silver casket says "The portrait is not in this casket", and the Lead casket says "The portrait is not in the Gold casket".
+- The constraints ensure that the inscriptions are consistent with the location of the portrait.
+
+The objective of the problem is to find the location of the portrait, which is the value of the `portrait` variable. The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. The solution is the casket where the portrait is located, which is determined by the value of the `portrait` variable.

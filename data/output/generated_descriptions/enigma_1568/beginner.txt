@@ -1,0 +1,5 @@
+The problem is called "Odd puzzle" or "Enigma problem 1568". 
+It's about finding a six-digit number, called PUZZLE, that is odd and is the result of a multiplication of two three-digit numbers. 
+The main variables are the digits of the numbers: O, D, P, U, Z, L, and E, which represent different digits from 0 to 9. 
+The basic restrictions are that each letter stands for a different digit, the same letter always stands for the same digit, and the first digit of a number cannot be zero. 
+The goal is to find the six-digit odd number PUZZLE that satisfies the given multiplication conditions, specifically that it is the result of the multiplication of two three-digit numbers and that it is an odd number.

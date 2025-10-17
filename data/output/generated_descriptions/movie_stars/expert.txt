@@ -1,0 +1,8 @@
+name: Movie Stars Problem
+description: The Movie Stars problem is a classic problem in constraint programming and recommendation systems. It involves predicting the rating that a customer, Evan, will give to a movie, "Prognosis Negative", based on the ratings of other customers for the same movie and other movies. The problem uses a nearest neighbor approach, where the distance between Evan's ratings and the ratings of other customers is calculated, and the rating of the customer with the minimum distance is used as the predicted rating for Evan.
+variables: $x = (x_1, x_2, ..., x_{num\_r}), dists = (dists_1, dists_2, ..., dists_{num\_p}), min\_ix$ 
+These variables represent the predicted ratings of Evan for all movies, the distances between Evan's ratings and the ratings of other customers, and the index of the customer with the minimum distance, respectively.
+constraints: $x_i = testcase_i \forall i \in 1..num\_r-1, dist(data_{p,i}, testcase_i, dists_p) \forall p \in 1..num\_p, min\_index(min\_ix, dists), x_{the\_case} = data_{min\_ix, the\_case}$ 
+These constraints ensure that the known ratings of Evan are assigned to the corresponding variables, the distances between Evan's ratings and the ratings of other customers are calculated, the index of the customer with the minimum distance is determined, and the predicted rating for the unknown movie is assigned the rating of the customer with the minimum distance.
+objective: minimize $min\_dist$ 
+The objective of the problem is to minimize the minimum distance between Evan's ratings and the ratings of other customers, which corresponds to finding the customer that is most similar to Evan.

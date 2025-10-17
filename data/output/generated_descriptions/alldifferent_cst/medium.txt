@@ -1,0 +1,14 @@
+**All Different with Constraints (alldifferent_cst) Problem**
+
+The All Different with Constraints problem is about assigning values to a set of variables such that all the resulting expressions, formed by adding or multiplying each variable with a corresponding constant, are distinct.
+
+The main decision variables in this problem are `x`, an array of variables that can take values between 1 and 9, and `cst`, an array of constants. The `x` variables represent the values to be assigned, while the `cst` constants are used to form the expressions that must be distinct.
+
+The key constraints in this problem are:
+
+* The `all_different_cst` constraint, which ensures that all the expressions formed by adding each variable in `x` with its corresponding constant in `cst` are distinct.
+* The `all_different_cst_mult` constraint, which is an experimental version that ensures all the expressions formed by multiplying each variable in `x` with its corresponding constant in `cst` are distinct.
+
+The problem's objective is to find an assignment of values to the `x` variables such that all the constraints are satisfied, i.e., all the resulting expressions are distinct. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that satisfies all the constraints.
+
+In the context of this problem, the `all_different_cst` constraint can be thought of as a way to ensure that all the "adjusted" values, where each value is adjusted by adding a constant, are unique. This can be useful in a variety of applications, such as scheduling, resource allocation, or assignment problems, where distinctness is a critical requirement.

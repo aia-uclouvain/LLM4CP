@@ -1,0 +1,5 @@
+Calculs d'enfer puzzle 
+The problem is about finding a set of 26 numbers, each represented by a letter from a to z, that satisfy a set of equations and rules. 
+The main variables are the 26 numbers, each represented by a letter from a to z, which can have any integer value between -100 and 100. 
+The basic restrictions or rules of the problem are that each number must be unique, and the numbers must satisfy a set of 12 equations, such as z+e+r+o = 0 and t+e+n = 10. 
+The goal of the problem is to minimize the maximum absolute value of these numbers, which means finding the set of numbers that satisfies all the rules and has the smallest largest absolute value.

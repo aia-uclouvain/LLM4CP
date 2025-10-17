@@ -1,0 +1,5 @@
+name: 0/1 Knapsack Problem
+description: The 0/1 Knapsack Problem is a classic problem in combinatorial optimization where a tourist needs to pack a set of items of different weights and values into a knapsack with a limited capacity, with the goal of maximizing the total value of the items packed while not exceeding the knapsack's weight limit.
+variables: $x_1, x_2, ..., x_{22}$, where $x_i$ is a binary decision variable representing whether the $i^{th}$ item is included in the knapsack (1) or not (0).
+constraints: $total\_weight = \sum_{i=1}^{22} x_i \* items_{i,1} \leq 400$, where $total\_weight$ is the total weight of the items packed, and $items_{i,1}$ is the weight of the $i^{th}$ item. 
+objective: Maximize $total\_value = \sum_{i=1}^{22} x_i \* items_{i,2}$, where $total\_value$ is the total value of the items packed, and $items_{i,2}$ is the value of the $i^{th}$ item.

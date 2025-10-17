@@ -1,0 +1,5 @@
+The problem is called Scheduling or Building a House. 
+It's about building a house as quickly as possible by doing different tasks like erecting walls, carpentry for the roof, and painting, in the right order. 
+The main variables are the tasks, their duration (how many days each task takes), and when each task starts and ends. 
+The basic restrictions are that some tasks must be finished before others can start, like you can't start painting until the walls are erected and the roof is done. 
+The goal is to find the order and timing of the tasks that allows the house to be built in the shortest amount of time, which is called the makespan.

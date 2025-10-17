@@ -1,0 +1,5 @@
+name: Krypto Puzzle
+description: The Krypto puzzle is a mathematical game where a player is given a set of numbers and an objective number, and must use basic arithmetic operations (addition, subtraction, multiplication, and division) to combine the given numbers to equal the objective number, using each given number exactly once.
+variables: $cardsp, x, ops$, where $cardsp$ is a permutation of the given numbers, $x$ represents the intermediate results of the arithmetic operations, and $ops$ represents the operations to be performed between the numbers.
+constraints: $permutation(cards, cardsp)$, $x[1] = cardsp[1]$, $opx(x[i], x[i-1], cardsp[i], ops[i-1])$ for $i = 2..n$, $x[n] = objective$, and optionally $cards[i] = cardsp[i]$ for $i = 1..n$ if $ordered$ is true, which ensure that the given numbers are used exactly once, the operations are performed correctly, and the final result equals the objective number.
+objective: The objective of the problem is to satisfy the given constraints, i.e., to find a valid solution that combines the given numbers to equal the objective number using basic arithmetic operations.

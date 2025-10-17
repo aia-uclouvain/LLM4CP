@@ -1,0 +1,5 @@
+The Hundred Fowls puzzle. 
+This problem is about finding the number of cocks, hens, and chicks that can be bought with 100 coins, given their respective prices. 
+The main decision variables are cock, hen, and chicks, which represent the number of cocks, hens, and chicks to be bought. 
+The key constraints are that the total cost of the birds should equal 100 coins, the total number of birds should be 100, and the number of chicks should be a multiple of 3, as they are sold in groups of three. 
+The problem's objective is to find a feasible solution that satisfies all the constraints, as indicated by the "solve satisfy" statement, rather than minimizing or maximizing a specific objective function.

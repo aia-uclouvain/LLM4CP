@@ -1,0 +1,5 @@
+name: Lucky Number Problem
+description: The Lucky Number Problem is a classic problem in constraint programming that originates from a Russian superstition. The problem states that a six-digit bus ticket number is considered "lucky" if the sum of the first three digits equals the sum of the last three digits.
+variables: $x_1, x_2, ..., x_6, a$, where $x_i$ represents the $i^{th}$ digit of the six-digit ticket number and $a$ represents the ticket number as a whole, which is a decimal number formed by the digits $x_i$. 
+constraints: $\sum_{i=1}^{3} x_i = \sum_{i=4}^{6} x_i, \quad a = \sum_{i=1}^{6} 10^{6-i} \cdot x_i, \quad x_i \in \{0, 1, ..., 9\}$, which represent the condition for a ticket number to be lucky, the relationship between the ticket number and its digits, and the domain of the digits, respectively.
+objective: The objective of the problem is to find a solution that satisfies the given constraints, which means finding a "lucky" six-digit ticket number. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets the constraints.

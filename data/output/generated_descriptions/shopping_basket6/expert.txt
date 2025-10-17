@@ -1,0 +1,15 @@
+name: Optimizing Shopping Basket Problem
+
+description: The problem is to find the optimal way to purchase a set of items from different shops, each with its own price for the item and delivery cost, such that the total cost is minimized. The delivery cost of a shop is only incurred if the total cost of items purchased from that shop is below a certain limit.
+
+variables: $x_i \in \{1, 2, ..., num\_shops\}$ for $i \in \{1, 2, ..., num\_items\}$, $shop\_costs_j$ for $j \in \{1, 2, ..., num\_shops\}$, $punish_j$ for $j \in \{1, 2, ..., num\_shops\}$, $item\_costs_i$ for $i \in \{1, 2, ..., num\_items\}$, $total$. 
+These variables represent the shop from which to buy each item ($x_i$), the total cost of items purchased from each shop ($shop\_costs_j$), the delivery cost incurred by each shop ($punish_j$), the cost of each item ($item\_costs_i$), and the total cost of all items and delivery costs ($total$).
+
+constraints: $\forall i \in \{1, 2, ..., num\_items\}: costs[i, x_i] > 0$, 
+$total = \sum_{i=1}^{num\_items} costs[i, x_i] + \sum_{j=1}^{num\_shops} delivery\_costs_j \* bool2int(\sum_{i=1}^{num\_items} costs[i, j] \* bool2int(x_i == j) > 0 \wedge \sum_{i=1}^{num\_items} costs[i, j] \* bool2int(x_i == j) < delivery\_costs\_limits_j)$, 
+$\forall j \in \{1, 2, ..., num\_shops\}: shop\_costs_j = \sum_{i=1}^{num\_items} costs[i, j] \* bool2int(x_i == j)$, 
+$\forall j \in \{1, 2, ..., num\_shops\}: punish_j = delivery\_costs_j \* bool2int(\sum_{i=1}^{num\_items} costs[i, j] \* bool2int(x_i == j) > 0 \wedge \sum_{i=1}^{num\_items} costs[i, j] \* bool2int(x_i == j) < delivery\_costs\_limits_j)$, 
+$\forall i \in \{1, 2, ..., num\_items\}: item\_costs_i = costs[i, x_i]$. 
+These constraints ensure that each item is purchased from a shop that sells it, the total cost is calculated correctly, the cost of items purchased from each shop is calculated correctly, the delivery cost incurred by each shop is calculated correctly, and the cost of each item is calculated correctly.
+
+objective: minimize $total$

@@ -1,0 +1,5 @@
+The Hardest Logic Puzzle Ever, also known as the Werewolfes IV puzzle. 
+This problem is about determining the identities of three people, where each person is either a knight (who always tells the truth) or a knave (who always lies), and one of them is a werewolf. 
+The main decision variables are x and y, where x[i] represents whether person i is a knight (1) or a knave (0), and y[i] represents whether person i is a werewolf (1) or not (0). 
+The key constraints are: the sum of the number of knights and three times the number of the first person being a knight must be between 3 and 10, the third person's statement about the second person being a knight must be true, only one person can be a werewolf, and the werewolf must be a knight. 
+The problem's objective is to find a solution that satisfies all the given constraints, as indicated by the "solve satisfy" statement, rather than minimizing or maximizing a specific variable.

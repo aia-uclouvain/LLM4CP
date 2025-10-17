@@ -1,0 +1,5 @@
+The Minimum Greater Than problem.
+This problem is about finding the smallest value that is strictly greater than a given value within a collection of variables.
+The main decision variables are `var1`, `var2`, and `variables`, where `var1` represents the smallest value strictly greater than `var2`, `var2` is the reference value, and `variables` is an array of values.
+The key constraints are that `var1` must be greater than `var2`, there must exist at least one variable in `variables` that is greater than `var2`, and `var1` must be the smallest such value. Additionally, both `var1` and `var2` must exist in the `variables` array.
+The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the given constraints, specifically the `minimum_greater_than` constraint, which ensures that `var1` is the smallest value strictly greater than `var2` among the values in `variables`.

@@ -1,0 +1,5 @@
+name: Scheduling Problem (Bratko)
+description: The problem is a classic scheduling example where a set of tasks need to be completed in a specific order, with certain time constraints between them. The goal is to find the optimal schedule that minimizes the total time required to complete all tasks.
+variables: Ta, Tb, Tc, Td, Tf - These variables represent the completion times of tasks A, B, C, D, and F, respectively, and are decision variables that the solver will assign values to in order to find the optimal schedule.
+constraints: Ta + 2 <= Tb, Ta + 2 <= Tc, Tb + 3 <= Td, Tc + 5 <= Tf, Td + 4 <= Tf - These constraints represent the time dependencies between the tasks, where each constraint specifies the minimum time that must elapse between the completion of one task and the start of another.
+objective: minimize Tf - The objective of the problem is to minimize the completion time of task F (Tf), which represents the total time required to complete all tasks.

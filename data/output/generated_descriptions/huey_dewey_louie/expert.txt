@@ -1,0 +1,5 @@
+name: Huey, Dewey and Louie problem
+description: The problem involves three cub scouts, Huey, Dewey, and Louie, who are being questioned by their uncle about their potential guilt. Each of them makes a statement, and their uncle, knowing that they cannot tell a lie, tries to determine who is guilty based on these statements.
+variables: $h, d, l$ - These variables represent the guilt status of Huey, Dewey, and Louie, respectively, where $h$, $d$, and $l$ are boolean values indicating whether each individual is guilty ($true$) or not guilty ($false$).
+constraints: $(d \leftrightarrow l) \land (h \rightarrow d) \land \neg(d \land l)$ - These constraints represent the statements made by each cub scout: Huey's statement that Dewey and Louie have equal share in the guilt, Dewey's statement that if Huey is guilty then he is also guilty, and Louie's statement that Dewey and he are not both guilty.
+objective: satisfy - The objective of the problem is to find a satisfying assignment of values to the variables that satisfies all the constraints, effectively determining the guilt status of each cub scout.

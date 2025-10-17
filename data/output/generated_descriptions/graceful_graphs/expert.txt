@@ -1,0 +1,5 @@
+name: Graceful Graph Problem
+description: The Graceful Graph Problem is a well-known problem in graph theory and computer science, which involves finding a labeling of the nodes and edges of a graph such that the labels of the edges are determined by the absolute difference between the labels of the nodes they connect, and all labels are distinct.
+variables: $nodes = (n_1, n_2, ..., n_{|V|}), edges = (e_1, e_2, ..., e_{|E|})$ where $n_i$ represents the label of node $i$ and $e_j$ represents the label of edge $j$. These variables represent the labeling of the nodes and edges of the graph.
+constraints: $\forall i \in E: |n_{u(i)} - n_{v(i)}| = e_i, \forall i \in E: e_i \neq e_j, \forall i \in V: n_i \neq n_j$ where $u(i)$ and $v(i)$ are the nodes connected by edge $i$. These constraints ensure that the labels of the edges are determined by the absolute difference between the labels of the nodes they connect, and all labels are distinct.
+objective: The objective of the problem is to find a labeling that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

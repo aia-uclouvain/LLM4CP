@@ -1,0 +1,10 @@
+Circular Ordering Problem
+The problem is about arranging numbers in a circle so that each number is one more than the previous number, and the last number connects back to the first number.
+The main variables are:
+- n: the maximum number in the sequence (like 1 to 5)
+- m: the total number of positions in the circle
+- x: the actual numbers in the circle, where each position has a number from 1 to n
+The basic restrictions are:
+- Each number in the circle must be one more than the previous number (wrapping around to 1 after n)
+- The total number of positions (m) must be a multiple of the maximum number (n)
+The goal is to find a valid arrangement of numbers that satisfies these rules, without trying to minimize or maximize anything.

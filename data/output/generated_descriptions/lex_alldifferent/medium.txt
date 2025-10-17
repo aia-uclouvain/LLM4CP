@@ -1,0 +1,7 @@
+**Lexicographically All Different Problem**
+The problem is about ensuring that all vectors in a given collection are distinct, where two vectors are considered distinct if there exists at least one component where they differ.
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the `j-th` component of the `i-th` vector.
+The key constraints are:
+* The `lex_alldifferent` constraint, which ensures that all vectors in the collection are distinct by checking if there exists at least one component where each pair of vectors differs.
+* The `cp2d` constraint, which enforces that the decision variables `x` match a given 2D array of values.
+The problem's objective is to find an assignment of values to the decision variables `x` that satisfies the `lex_alldifferent` and `cp2d` constraints, which is achieved by solving the `satisfy` problem. In other words, the goal is to verify whether the given vectors can be made distinct by adjusting their components while still matching the given values.

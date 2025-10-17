@@ -1,0 +1,5 @@
+Doubly Square Dates Problem
+The problem is about finding specific dates that can be represented in two different ways, as day.month.year and as month.day.year, where each element has two digits, and the resulting numbers are perfect squares.
+The main decision variables are day, month, and year, which represent the day, month, and year of the date, respectively. The variables day_month_year_a and month_day_year_a are arrays that represent the digits of the date in the two different orders.
+The key constraints are that the day, month, and year must be valid (i.e., day between 1 and 31, month between 1 and 12, and year between 0 and 99), and that the numbers formed by the digits in the two different orders must be perfect squares. Additionally, the month and day must not be the same.
+The objective of the problem is to find the next two doubly square dates after 4 April 2001, where the square that comes from the order day.month.year is not the same as the square that comes from the order month.day.year. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find specific solutions that satisfy the given constraints.

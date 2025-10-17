@@ -1,0 +1,5 @@
+The problem is called "k_same" or "Global Constraint k_same". 
+It's about having several sets of numbers and making sure that each set has the same numbers, but not necessarily in the same order. 
+The main variables are the sets of numbers, which are like tables where each row is a set and each column is a position in the set. 
+The basic restrictions are that each set must have the same numbers as the other sets, just possibly in a different order. 
+The goal of the problem is to find a way to assign numbers to each set so that all sets have the same numbers, and to show what those numbers are.

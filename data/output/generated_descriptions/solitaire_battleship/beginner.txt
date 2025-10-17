@@ -1,0 +1,12 @@
+Solitaire Battleship
+The problem is about finding the locations of different types of ships, such as battleships, cruisers, destroyers, and submarines, on a 10x10 grid, given some hints about their locations.
+The main variables are: 
+- grid: a 10x10 grid where each cell can be either 0 (empty) or 1 (occupied by a ship)
+- column_tallies and row_tallies: the number of occupied cells in each column and row
+- hint: a 10x10 grid of hints, where each cell can have a value from 0 to 7, representing different types of hints, such as water, circle, middle, top, bottom, right, left, or no hint.
+The basic restrictions or rules of the problem are: 
+- the number of occupied cells in each column and row must match the given tallies
+- if a cell has a water hint, it must be empty
+- if a cell has a circle hint, it must be occupied and all surrounding cells must be empty
+- other hints, such as middle, top, bottom, right, and left, also have specific rules about which cells must be occupied or empty.
+The goal of the problem is to find a solution that satisfies all the given hints and restrictions, effectively locating all the ships on the grid.

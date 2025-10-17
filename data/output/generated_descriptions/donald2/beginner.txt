@@ -1,0 +1,5 @@
+Donald + Gerald = Robert problem
+The problem is about adding two names, "DONALD" and "GERALD", and getting a third name, "ROBERT", where each letter represents a digit from 0 to 9.
+The main variables are the letters in the names, which represent digits: D, O, N, A, L, G, E, R, B, and T, and the carry variables c1 to c6, which are used to handle the addition of numbers.
+The basic restrictions are that each letter must represent a unique digit, and when adding the numbers, the result must be correct, taking into account any carry from the previous addition.
+The goal of the problem is to find an assignment of digits to the letters such that the addition of "DONALD" and "GERALD" equals "ROBERT", with the constraint that the first letter of each name cannot be zero.

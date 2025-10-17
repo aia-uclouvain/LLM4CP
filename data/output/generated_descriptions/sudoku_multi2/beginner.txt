@@ -1,0 +1,5 @@
+Multi Sudoku
+The problem is about solving two connected Sudoku puzzles at the same time. 
+The main variables are s1 and s2, which represent the two Sudoku boards. 
+The basic restrictions are that each row, column, and 3x3 box in both boards must contain the numbers 1-9 without repeating any number, and the overlapping parts of the two boards must be the same. 
+The goal is to find a solution that satisfies these rules for both boards.

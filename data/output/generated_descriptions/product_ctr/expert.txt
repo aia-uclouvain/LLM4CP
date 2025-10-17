@@ -1,0 +1,5 @@
+name: Product Constraint Problem
+description: The problem is a constraint satisfaction problem where the goal is to find values for a set of variables such that their product satisfies a certain comparison constraint with a target value.
+variables: $variables = [x_1, x_2, ..., x_n]$, where $x_i$ are decision variables representing the values to be found, and $n$ is the number of variables. $ctr$ is a decision variable representing the comparison operator, and $t_var$ is a decision variable representing the target value.
+constraints: $x_i \in [1, 4]$ for $i = 1, 2, ..., n$, $res = \prod_{i=1}^{n} x_i$, $cmp(res, t_var, ctr)$, where $cmp$ is a predicate that enforces the comparison constraint, and $cp1d(variables, [2,1,4])$ which is a constraint that checks if the variables are equal to a given array.
+objective: The objective of the problem is to satisfy all the constraints, there is no explicit objective function to minimize or maximize.

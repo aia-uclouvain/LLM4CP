@@ -1,0 +1,9 @@
+Social Golfer Problem
+The Social Golfer Problem is about organizing a group of people into smaller groups, ensuring that each person interacts with as many different people as possible. 
+The main decision variable is L, an array representing the seating arrangement, where L[i] denotes the position of the person initially seated at position i.
+The key constraints are: 
+- each person must move to a different table, 
+- two people from the same table cannot sit beside each other in the new configuration, 
+- the seating arrangement must form a single cycle (or circuit) with no sub-cycles, 
+- each position in the seating arrangement must be unique.
+The objective of the Social Golfer Problem is to find a seating arrangement that satisfies these constraints, effectively maximizing the number of different people each person interacts with.

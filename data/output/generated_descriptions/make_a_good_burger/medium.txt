@@ -1,0 +1,20 @@
+**Make a Good Burger Problem**
+The Make a Good Burger problem is a classic constraint programming problem that involves creating a burger with a combination of ingredients while meeting certain health and taste requirements.
+
+**Main Decision Variables**
+The main decision variables in this problem are the quantities of each ingredient to include in the burger, represented by the array `x`. Each element `x[i]` represents the number of servings of the `i-th` ingredient, which can range from 1 to 5.
+
+**Key Constraints**
+The key constraints in this problem are:
+* The total sodium content of the burger must be less than 3000 mg.
+* The total fat content of the burger must be less than 150 grams.
+* The total calorie content of the burger must be less than 3000 calories.
+* The number of servings of ketchup and lettuce must be the same.
+* The number of servings of pickles and tomatoes must be the same.
+* Each ingredient must be included at least once and no more than five times.
+
+**Problem Objective**
+The problem has two objectives:
+* Minimize the total cost of the burger.
+* Maximize the total cost of the burger.
+The goal is to find the most expensive and the least expensive burger that meets all the constraints.

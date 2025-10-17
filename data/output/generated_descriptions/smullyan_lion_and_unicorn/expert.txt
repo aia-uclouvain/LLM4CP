@@ -1,0 +1,5 @@
+name: Smullyan's Lion and Unicorn problem
+description: The problem is based on a story where lions and unicorns make statements about their lying days. Lions lie on Mondays, Tuesdays, and Wednesdays, while unicorns lie on Thursdays, Fridays, and Saturdays. The goal is to determine the current day of the week based on the statements made by the lion and the unicorn.
+variables: $today \in \{0, 1, 2, 3, 4, 5, 6\}$, which represents the current day of the week, where Monday is 0 and Sunday is 6.
+constraints: $says(lion[1+today], lion[1+((today - 1) mod 7)] = false  \wedge lion[1+((today + 1) mod 7)] = false)$, which represents the statement made by the lion, indicating that the lion lied yesterday and will lie again tomorrow.
+objective: The objective is to satisfy the given constraints, which means finding a day of the week that satisfies the lion's statement. The problem does not involve minimizing or maximizing a specific value, but rather finding a feasible solution that meets the given conditions.

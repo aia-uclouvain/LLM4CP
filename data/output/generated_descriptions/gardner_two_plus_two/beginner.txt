@@ -1,0 +1,5 @@
+Gardner's TWO+TWO=FOUR problem. 
+This problem is about solving a simple addition puzzle where each letter represents a different digit. 
+The main variables are T, W, O, F, U, and R, which represent the digits in the addition problem. 
+The basic restrictions are that each letter must be a different digit, T must be 7, and O must be an even number. 
+The goal is to find the only possible value for W that makes the equation true, given the constraints.

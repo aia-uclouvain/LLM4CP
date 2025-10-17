@@ -1,0 +1,5 @@
+Smullyan's Portia problem
+The problem is about finding a portrait in one of three caskets, Gold, Silver, or Lead, based on inscriptions on the caskets. 
+The main variables are "portrait" and "inscriptions", where "portrait" means which casket the portrait is in, and "inscriptions" means what is written on each casket.
+The basic restrictions are that only one casket can have the portrait, and the inscriptions on the caskets must be true or false based on the problem rules. 
+The goal of the problem is to figure out which casket the portrait is in, based on the inscriptions.

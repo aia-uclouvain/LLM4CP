@@ -1,0 +1,5 @@
+name: Set Covering Problem
+description: The Set Covering Problem is a classical problem in computer science and operations research that involves finding the smallest subset of a collection of sets that covers all elements in the universe. In this specific instance, the problem is to select a committee of senators such that at least one senator from each group (southern, northern, liberals, conservative, democrats, and republicans) is included.
+variables: $x_i$ (i = 1..10), where $x_i$ is a binary decision variable indicating whether senator $i$ is included in the committee. These variables represent the selection of senators for the committee.
+constraints: $\sum_{i=1}^{10} belongs[g, i] \cdot x_i \geq 1$ (g = 1..6), where $belongs[g, i]$ is a binary coefficient indicating whether senator $i$ belongs to group $g$. These constraints ensure that at least one senator from each group is included in the committee.
+objective: Minimize $\sum_{i=1}^{10} x_i$, which represents the total number of senators selected for the committee. The objective is to find the smallest possible committee that satisfies the constraints.

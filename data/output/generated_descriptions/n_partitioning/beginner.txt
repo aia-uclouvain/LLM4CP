@@ -1,0 +1,5 @@
+3-Partition Problem
+The problem is about dividing a set of numbers into groups of three, where the sum of the numbers in each group is the same.
+The main variables are the groups of numbers (a) and the sum of the numbers in each group (a_sum). In simple terms, "a" represents the groups of numbers we are trying to create, and "a_sum" represents the target sum for each group.
+The basic restrictions are that each number can only be in one group, each group must have exactly three numbers, and the sum of the numbers in each group must be the same. 
+The goal of the problem is to determine if it's possible to divide the set of numbers into groups of three with the same sum, and if so, to find one such division.

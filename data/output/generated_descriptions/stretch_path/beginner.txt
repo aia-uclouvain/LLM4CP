@@ -1,0 +1,5 @@
+The name of the problem is Stretch Path. 
+This problem is about finding a sequence of values that can be divided into stretches, where each stretch is a series of identical values. 
+The main variables are x, val, lmin, and lmax. The variable x represents the sequence of values, val represents the possible values in the sequence, lmin represents the minimum length of each stretch, and lmax represents the maximum length of each stretch. 
+The basic restrictions or rules of the problem are that each stretch must have a length between lmin and lmax, and the values in each stretch must be the same. 
+The goal of the problem is to find a sequence of values that satisfies these rules and can be divided into stretches with the given lengths.

@@ -1,0 +1,8 @@
+name: Same Interval Problem
+description: The Same Interval Problem is a constraint satisfaction problem where we have two collections of variables and a size interval. The goal is to find an assignment of values to the variables such that the number of variables in each collection that take a value in each interval is the same.
+variables: $n, variables1_1, variables1_2, ..., variables1_n, variables2_1, variables2_2, ..., variables2_n, size\_interval$ 
+These are the decision variables where $n$ is the number of variables in each collection, $variables1_i$ and $variables2_i$ are the $i^{th}$ variable in the first and second collections respectively, and $size\_interval$ is the size of the interval.
+constraints: $size\_interval = 3, variables1 = [1,7,6,0,1,7], variables2 = [8,8,8,0,1,2], \forall i \in \{0, 1, ..., \lfloor \frac{8}{size\_interval} \rfloor\} \sum_{k=1}^{n} (variables1_k \geq i \cdot size\_interval \wedge variables1_k < i \cdot size\_interval + size\_interval) = \sum_{k=1}^{n} (variables2_k \geq i \cdot size\_interval \wedge variables2_k < i \cdot size\_interval + size\_interval)$
+These constraints ensure that the size interval is 3, the initial values of the variables are as given, and the number of variables in each collection that take a value in each interval is the same.
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of values to the variables, i.e., an assignment that satisfies all the constraints.

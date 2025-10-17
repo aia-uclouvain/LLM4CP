@@ -1,0 +1,5 @@
+name: Ormat Game Problem
+description: The Ormat game is a puzzle where a player is presented with a grid of cells, some of which contain a mark. The goal is to find a set of rows and columns that cover all the marked cells, with the constraint that each row and column can be selected only once.
+variables: $x_{i}, y_{j}$ for $i, j = 1 \ldots n$, where $x_{i}$ represents whether row $i$ is selected and $y_{j}$ represents whether column $j$ is selected. These variables determine which rows and columns are chosen to cover the marked cells in the grid.
+constraints: $\sum_{i=1}^{n} x_{i} \geq 1$, $\sum_{j=1}^{n} y_{j} \geq 1$, $\forall i, j: (x_{i} + y_{j} \geq 1) \vee (problem_{ij} = 0)$, where $problem_{ij}$ represents the mark in cell $(i, j)$. These constraints ensure that at least one row and one column are selected, and that each marked cell is covered by either a selected row or a selected column.
+objective: minimize $\sum_{i=1}^{n} x_{i} + \sum_{j=1}^{n} y_{j}$, which represents the total number of rows and columns selected to cover all the marked cells.

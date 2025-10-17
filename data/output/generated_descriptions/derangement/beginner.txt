@@ -1,0 +1,5 @@
+Derangement Problem
+The problem is about rearranging a set of items in a specific way. 
+The main variables are the items to be rearranged, represented by the array x, where each item is a number from 1 to n (n is the total number of items). 
+The basic restrictions are that each item must be rearranged to a different position, and no item can stay in its original position. 
+The goal of the problem is to find a rearrangement that satisfies these rules, which is called a derangement.

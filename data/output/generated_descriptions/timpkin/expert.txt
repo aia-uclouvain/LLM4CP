@@ -1,0 +1,5 @@
+name: Mrs Timpkin's Age problem
+description: The problem describes the age of Mrs. Timpkin, where 18 years ago, her husband was three times as old as she was, and now he is twice as old as she is. The goal is to find Mrs. Timpkin's current age.
+variables: $T, W$ - These variables represent the current ages of Mr. and Mrs. Timpkin, respectively.
+constraints: $T - 18 = 3 * (W - 18) \land T = 2 * W$ - The first constraint represents the relationship between Mr. and Mrs. Timpkin's ages 18 years ago, where Mr. Timpkin was three times as old as Mrs. Timpkin. The second constraint represents the current relationship between their ages, where Mr. Timpkin is twice as old as Mrs. Timpkin.
+objective: The objective of the problem is to satisfy the given constraints, as it is a satisfaction problem, not an optimization problem.

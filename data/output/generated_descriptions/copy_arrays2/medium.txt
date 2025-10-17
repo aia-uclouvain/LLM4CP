@@ -1,0 +1,5 @@
+Array Copy Problem
+The Array Copy Problem is about creating a copy of a given array, which can be one-dimensional or two-dimensional, with the same size and elements as the original array.
+The main decision variables are `x` and `y`, where `x` is a one-dimensional array of variables and `y` is a two-dimensional array of variables. These variables represent the elements of the arrays to be copied.
+The key constraints are that the sizes of the original and copied arrays must be the same, and the elements of the copied array must be equal to the corresponding elements of the original array. This is achieved through the `cp1d` and `cp2d` predicates, which ensure that the arrays have the same size and elements.
+The objective of the problem is to satisfy the constraints, i.e., to create a copy of the given array. There is no explicit objective function to minimize or maximize, and the goal is to find a solution that satisfies all the constraints. The `solve satisfy` statement in the model indicates that the goal is to find a feasible solution that satisfies all the constraints.

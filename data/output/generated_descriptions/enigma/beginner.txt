@@ -1,0 +1,5 @@
+Enigma puzzle
+The problem is about decoding a secret message where each letter is represented by a unique digit from 0 to 9. 
+The main variables are x and y, where x represents which digit corresponds to each letter, and y is used to display the decoded message in a simpler way.
+The basic restrictions are that each digit can only represent one letter, and each letter can only be represented by one digit. The problem also includes a set of equations that the decoded message must satisfy, which are based on the original secret message.
+The goal of the problem is to find a solution that satisfies all the restrictions and equations, effectively decoding the secret message.

@@ -1,0 +1,5 @@
+Table of Numbers Problem
+The problem is about selecting 5 numbers from a 5x5 table in such a way that no two numbers are from the same row or column.
+The main variables are the numbers in the table (t) and the selection of numbers (x), which means choosing a number from each row and column without repeating any row or column.
+The basic restrictions are that each row and each column can only be used once, and the goal is to find the sum of the selected numbers (the_sum).
+The goal of the problem is to find the sum of the 5 selected numbers, which is represented by the variable the_sum, by choosing the numbers in such a way that satisfies the restrictions.

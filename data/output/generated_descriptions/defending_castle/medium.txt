@@ -1,0 +1,5 @@
+Defending the Castle puzzle
+The problem is about positioning defenders around a square castle to maximize the number of defenders on each side, given a specific arrangement and a total of 28 fighters.
+The main decision variables are p and q, which represent the number of defenders in each position of the arrangement. 
+The key constraints are that the total number of defenders is 28, the number of defenders on each side is the same, and the number of defenders in the corner positions is greater than or equal to the number of defenders in the side positions.
+The objective of the problem is to maximize the number of defenders on each side, which is represented by the variable z, calculated as 2p + q.

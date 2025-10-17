@@ -1,0 +1,5 @@
+name: Least Difference Problem
+description: The problem requires finding the smallest difference between two numbers, ABCDE and FGHIJ, where each digit from 0 to 9 is used exactly once. The goal is to minimize the difference between these two numbers.
+variables: A, B, C, D, E, F, G, H, I, J, these are decision variables representing the digits of the two numbers, where each variable is a digit from 0 to 9.
+constraints: all_different(x), this constraint ensures that each digit from 0 to 9 is used exactly once in the two numbers.
+objective: minimize difference, where difference = (10000*A+1000*B+100*C+10*D+E) - (10000*F+1000*G+100*H+10*I+J), the objective is to find the smallest possible value of this difference.

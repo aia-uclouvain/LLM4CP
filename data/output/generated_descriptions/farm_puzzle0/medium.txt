@@ -1,0 +1,5 @@
+Farm Puzzle
+The problem is about determining the number of pigs and hens on a farm, given that there are 7 animals in total and they have a combined total of 22 legs.
+The main decision variables are animal1 to animal7, each representing the number of legs of an individual animal, which can be either 2 (for a hen) or 4 (for a pig).
+The key constraint is that the total number of legs of all animals must add up to 22. In plain language, this means that if we count the legs of each animal, the total count should be equal to 22.
+The problem's objective is not to minimize or maximize a specific value, but rather to find a satisfying assignment of legs to animals, such that the total number of legs is 22. The goal is to determine the possible combinations of pigs and hens that satisfy this constraint.

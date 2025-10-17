@@ -1,0 +1,5 @@
+Planet Colonization 
+The problem is about finding the best place to establish a colony on a new planet. The planet is divided into 20 areas, and each area has a different distance to four essential resources: food, oxygen, water, and energy. 
+The main variables are the landing site (where the colony will be established) and the resources (food, oxygen, water, and energy). 
+The basic restrictions are that the colony needs to be close to all four resources to survive, and the distance between the colony and each resource is calculated by the number of units it takes to get to the resource. 
+The goal is to minimize the total distance the colony needs to travel to all four resources, which means finding the area that is closest to all the resources.

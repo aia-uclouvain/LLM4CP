@@ -1,0 +1,5 @@
+name: Permutation Problem
+description: The problem is to find a permutation of a given array, which is a rearrangement of its elements. In this case, we have two arrays, x and y, where y should be a permutation of x, meaning it contains the same elements but possibly in a different order.
+variables: $x = [x_1, x_2, ..., x_n], y = [y_1, y_2, ..., y_n], p = [p_1, p_2, ..., p_n]$ where $x$ and $y$ are arrays of decision variables representing the original and permuted arrays, and $p$ is an array of decision variables representing the permutation, where $p_i$ is the index of the element in $x$ that should be placed at position $i$ in $y$.
+constraints: $y_i = x_{p_i} \forall i \in \{1, 2, ..., n\}, \text{all\_different}(p)$ which ensures that $y$ is a permutation of $x$ by assigning each element of $x$ to a unique position in $y$.
+objective: The objective of the problem is to satisfy the given constraints, which means finding a permutation $p$ such that $y$ is a valid rearrangement of $x$. There is no explicit objective function to minimize or maximize.

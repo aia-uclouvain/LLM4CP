@@ -1,0 +1,9 @@
+Penguin Problem
+The problem is about determining which birds can fly based on certain assumptions and rules about birds, penguins, and eagles.
+The main decision variables are `flies`, an array of variables representing whether each bird can fly, where `flies[Tweety]` and `flies[Toto]` correspond to whether Tweety the penguin and Toto the eagle can fly, respectively.
+The key constraints are: 
+- Penguins are abnormal birds and cannot fly.
+- Eagles are normal birds and can fly.
+- A bird can fly if it is not abnormal.
+- Tweety is a penguin and Toto is an eagle.
+The problem's objective is to find a solution that satisfies all the constraints, determining which birds can fly, rather than minimizing or maximizing a specific value. The solution will indicate whether Tweety and Toto can fly based on the given rules and assumptions.

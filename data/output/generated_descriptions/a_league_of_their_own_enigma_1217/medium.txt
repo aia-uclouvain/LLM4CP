@@ -1,0 +1,18 @@
+**A League of Their Own**
+The problem is about determining the outcome of a round-robin football tournament between four teams: Fagan's, George, Harlequin, and Inkerman. Each team played each other twice, once at home and once away.
+
+**Decision Variables**
+The main decision variables are:
+- `games`: a 3D array representing the outcome of each match between two teams, with values 0 (loss), 1 (draw), or 2 (win).
+- `scores`: a 2D array representing the number of wins, draws, losses, and points for each team.
+
+**Constraints**
+The key constraints are:
+- Each team plays every other team twice, with the outcome of the home and away matches being symmetric.
+- The teams finished in alphabetical order, with Fagan's winning the tournament, but George winning more games.
+- There were more away wins than home wins.
+- Each column in the table (Won, Drawn, Lost, Points) contains four different numbers.
+- The total number of matches played is 24 (6 matches per team, with each match played twice).
+
+**Objective**
+The objective is to find the outcome of each match, including which matches were drawn, given the constraints above. The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

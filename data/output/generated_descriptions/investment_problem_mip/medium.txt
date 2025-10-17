@@ -1,0 +1,22 @@
+**Investment Problem**
+The Investment Problem is a classic constraint programming problem that involves finding the optimal investment strategy to maximize returns while not exceeding a given budget.
+
+**Description**
+A portfolio manager has a fixed budget of $100 million to invest in eight different opportunities, each with its own return on investment. The manager must decide how much to invest in each opportunity, with the goal of maximizing the total annual return.
+
+**Decision Variables**
+The main decision variables are:
+- `x[i, j]`: a binary variable indicating whether to invest $10 million in opportunity `j` at level `i` (0-4).
+- `choices[j]`: the amount invested in opportunity `j` (0-4).
+- `the_returns[j]`: the total return from opportunity `j`.
+- `not_invested`: the amount of budget not invested in any opportunity.
+
+**Constraints**
+The key constraints are:
+- The total amount invested in each opportunity cannot exceed $40 million (4 units of $10 million).
+- The total amount invested in all opportunities cannot exceed the budget of $100 million (10 units of $10 million).
+- The return from each opportunity is calculated based on the amount invested.
+- The total return is the sum of the returns from all opportunities plus the return from any uninvested budget.
+
+**Objective**
+The objective is to maximize the total annual return (`z`) by finding the optimal investment strategy. The problem can be solved using constraint programming techniques, such as mixed-integer linear programming (MILP) or dynamic programming. In this case, the MiniZinc model uses a solve satisfy approach to find a solution that maximizes the total return.

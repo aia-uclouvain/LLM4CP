@@ -1,0 +1,5 @@
+name: Number Puzzle Problem
+description: The problem is to find all combinations of five numbers that add up to 100, with the condition that each number must be divisible by either 2 or 5.
+variables: $x_1, x_2, x_3, x_4, x_5$ - These are decision variables representing the five numbers in the puzzle, where each $x_i$ is a variable that can take any integer value between 1 and 100.
+constraints: $\sum_{i=1}^{5} x_i = 100 \wedge \forall i \in \{1, 2, 3, 4, 5\} (x_i \mod 2 = 0 \vee x_i \mod 5 = 0) \wedge x_1 \leq x_2 \leq x_3 \leq x_4 \leq x_5$ - These constraints ensure that the sum of the five numbers equals 100, each number is divisible by either 2 or 5, and the numbers are in non-decreasing order to break symmetry.
+objective: The problem does not have a specific objective function to minimize or maximize, as it is a feasibility problem aiming to find all possible combinations of numbers satisfying the given conditions.

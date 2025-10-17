@@ -1,0 +1,5 @@
+The name of the problem is Smullyan Knights and Knaves. 
+This problem is about a group of people, some of whom always tell the truth (called knights) and others who always lie (called knaves). 
+The main variables are the people (represented by p), who can be either a knight (always tells the truth) or a knave (always lies). 
+The basic restrictions or rules of the problem are that a knight always speaks the truth and a knave always lies, and each person says something about themselves or others. 
+The goal of the problem is to figure out who is a knight and who is a knave based on what they say.

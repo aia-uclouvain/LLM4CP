@@ -1,0 +1,5 @@
+The problem is called "Smooth". 
+It's about a sequence of numbers that should not change too much from one to the next, with "too much" being defined by a certain threshold or limit. 
+The main variables are: nchange, which is the number of times the numbers in the sequence change by more than the threshold, tolerance, which is the threshold or limit, and x, which is the sequence of numbers. 
+The basic restrictions are that the sequence of numbers should have a certain number of changes (nchange) and that these changes should be above a certain threshold (tolerance), and the numbers in the sequence should be between 1 and 5. 
+The goal of the problem is to find a sequence of numbers that satisfies these restrictions, specifically a sequence that has exactly one change greater than the tolerance of 2, and matches a given example sequence.

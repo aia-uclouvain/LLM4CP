@@ -1,0 +1,5 @@
+name: Lexicographic Different Vectors Problem
+description: The problem involves finding two vectors of integers that differ in at least one component, where each component is an integer between 1 and 7, and the vectors have a fixed length of 4 components.
+variables: $vector1 = (x_1, x_2, x_3, x_4), vector2 = (y_1, y_2, y_3, y_4)$, where $x_i$ and $y_i$ are decision variables representing the components of the two vectors, and are integers between 1 and 7.
+constraints: $cp1d(vector1, [5,2,7,1]) \wedge cp1d(vector2, [5,3,7,1]) \wedge lex\_different(vector1, vector2)$, where $cp1d$ is a constraint that checks if two vectors are equal, and $lex\_different$ is a constraint that checks if two vectors differ in at least one component.
+objective: The objective of the problem is to satisfy the given constraints, i.e., to find two vectors that differ in at least one component, where the first vector is equal to $[5,2,7,1]$ and the second vector is equal to $[5,3,7,1]$.

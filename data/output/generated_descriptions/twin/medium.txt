@@ -1,0 +1,5 @@
+The Twin Problem
+The Twin problem is a classic constraint programming problem that involves enforcing a specific relationship between pairs of variables. 
+The main decision variables in this problem are the pairs of variables, where each pair consists of two variables, x and y, that can take on values from 0 to 9. 
+The key constraints in this problem are that if two pairs have the same x value, then they must also have the same y value, and vice versa. 
+The objective of the Twin problem is to find an assignment of values to the pairs of variables that satisfies the given constraints, with no specific objective function to minimize or maximize, the goal is to find a solution that satisfies all the constraints.

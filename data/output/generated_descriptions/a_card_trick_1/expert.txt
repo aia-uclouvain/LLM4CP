@@ -1,0 +1,19 @@
+name: Donald Preece's Card Puzzle
+
+description: The problem is to arrange a standard deck of 52 playing cards into a 4x13 rectangle such that each suit appears once in each column, each face value appears once in each row, two cards with the same value never appear together in a column, each row contains four cards of one suit and three of each of the others, any two columns share exactly one value, and any two values occur together in exactly one column.
+
+variables: $suites_{i,j}, values_{i,j}$ where $i \in \{1,2,3,4\}$ and $j \in \{1,2,...,13\}$. These variables represent the suit and face value of the card in the $i^{th}$ row and $j^{th}$ column of the rectangle, where $suites_{i,j}$ is the suit of the card (1 = Hearts, 2 = Spades, 3 = Clubs, 4 = Diamonds) and $values_{i,j}$ is the face value of the card (1 = Ace, 2 = 2, ..., 13 = King).
+
+constraints: 
+$\forall v \in \{1,2,...,13\} ( \sum_{i=1}^{4} \sum_{j=1}^{13} (values_{i,j} = v) = 4 )$,
+$\forall v \in \{1,2,3,4\} ( \sum_{i=1}^{4} \sum_{j=1}^{13} (suites_{i,j} = v) = 13 )$,
+$\forall j \in \{1,2,...,13\} ( \sum_{i=1}^{4} \sum_{k=1}^{4} (suites_{i,j} = k) = 4 )$,
+$\forall i \in \{1,2,3,4\} ( \sum_{j=1}^{13} \sum_{k=1}^{13} (values_{i,j} = k) = 13 )$,
+$\forall j \in \{1,2,...,13\} ( \sum_{i=1}^{4} \sum_{k=1}^{13} (values_{i,j} = k) = 4 )$,
+$\forall i \in \{1,2,3,4\} ( \exists! j \in \{1,2,...,13\} (suites_{i,j} = v) )$,
+$\forall j \in \{1,2,...,13\} ( \exists! i \in \{1,2,3,4\} (values_{i,j} = v) )$,
+$\forall j_1, j_2 \in \{1,2,...,13\} ( j_1 < j_2 \rightarrow | \{ k | values_{i,j_1} = k \wedge values_{i,j_2} = k \} | = 1 )$,
+$\forall v_1, v_2 \in \{1,2,...,13\} ( v_1 < v_2 \rightarrow \sum_{j=1}^{13} ( \exists i \in \{1,2,3,4\} (values_{i,j} = v_1) \wedge \exists i \in \{1,2,3,4\} (values_{i,j} = v_2) ) = 1 )$.
+These constraints ensure that each suit appears once in each column, each face value appears once in each row, two cards with the same value never appear together in a column, each row contains four cards of one suit and three of each of the others, any two columns share exactly one value, and any two values occur together in exactly one column.
+
+objective: The objective of this problem is to satisfy all the given constraints, which means finding a feasible arrangement of the cards that meets all the conditions. There is no explicit objective function to minimize or maximize.

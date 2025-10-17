@@ -1,0 +1,5 @@
+name: Place Number Puzzle
+description: The Place Number Puzzle is a classic problem in constraint programming where the goal is to place the numbers 1 through 8 on a set of connected nodes in such a way that each number appears exactly once and no two connected nodes have consecutive numbers.
+variables: $x = [x_1, x_2, ..., x_8]$, where $x_i$ represents the number assigned to node $i$, and each $x_i$ is a decision variable that can take on any value from 1 to 8.
+constraints: $\forall i \in \{1, 2, ..., 8\}, 1 \leq x_i \leq 8 \ \wedge \ all\_different(x) \ \wedge \ \forall (i, j) \in graph, |x_i - x_j| > 1 \ \wedge \ x_1 < x_8$, which represent the constraints that each number appears exactly once, no two connected nodes have consecutive numbers, and a symmetry breaking constraint to reduce the search space.
+objective: The objective of the problem is to find a satisfying assignment of numbers to nodes, i.e., to solve the problem as a satisfaction problem, there is no value to minimize or maximize.

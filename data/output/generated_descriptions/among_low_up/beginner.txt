@@ -1,0 +1,14 @@
+Name of the problem: Among Low Up
+
+The problem is about finding values for two sets of numbers, x and y, where a certain number of values from x are also found in y. 
+
+The main variables are: 
+- x and y, which are sets of numbers
+- low and up, which represent the minimum and maximum number of values from x that should be found in y
+
+The basic restrictions or rules of the problem are: 
+- The values of x and y are between 0 and 9
+- The number of values from x that are also in y should be at least "low" and at most "up"
+- "low" should be at least 0 and "up" should be at most the total number of values in x
+
+The goal of the problem is to find values for x and y that satisfy these rules, given that low is 1 and up is 3, and specific values are assigned to x and y.

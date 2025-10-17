@@ -1,0 +1,13 @@
+The problem is called Scheduling or Building a House. 
+It's about planning and organizing the construction of a house, where there are many tasks that need to be done in a specific order. 
+The main variables are: 
+- duration: how long each task takes, 
+- height: how much resources (like workers or equipment) each task needs, 
+- start and end: when each task begins and finishes, 
+- makespan: the total time it takes to complete all tasks, 
+- limitx: the maximum amount of resources available at any time. 
+The basic restrictions are: 
+- each task must start after the previous one is finished (if they are related), 
+- each task takes a certain amount of time, 
+- there are limited resources available. 
+The goal is to minimize the makespan, which means finding the shortest possible time to complete all tasks while following the rules and restrictions.

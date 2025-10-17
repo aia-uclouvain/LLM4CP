@@ -1,0 +1,5 @@
+name: Arithmetic Sliding Constraint Problem
+description: The problem is to find values for a sequence of variables such that the sum of all subsequences satisfies a given relational operator with a target value.
+variables: $x = (x_1, x_2, ..., x_n)$, where $x_i$ are decision variables representing the elements of the sequence, and $z$ is a decision variable representing the target value.
+constraints: $x = (0, 0, 1, 2, 0, 0, -3)$, $\forall i \in \{1, 2, ..., n\}: \sum_{j=1}^{i} x_j < z$, $z = 4$, where the first constraint assigns fixed values to the sequence $x$, the second constraint enforces the arithmetic sliding constraint, and the third constraint fixes the target value $z$.
+objective: The objective of the problem is to satisfy all the given constraints, which is achieved by finding values for $x$ and $z$ that meet the conditions specified by the constraints.

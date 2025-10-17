@@ -1,0 +1,5 @@
+Dynamical Optimization 
+The problem is about controlling a process over time to achieve a certain goal. Imagine you have a machine that can be controlled to change its state, and you want to find the best way to control it to reach a desired state at a certain time. 
+The main variables are x and u. The variable x represents the state of the machine at different times, and u represents the control or input that is applied to the machine at those times. 
+The basic restrictions or rules are that the state of the machine changes according to a specific rule that involves the current state and the control applied, and that the control must be within certain limits. Additionally, the machine starts in a certain state and must end in a certain state. 
+The goal is to minimize the total amount of control applied over time, which is represented by the variable cost. In other words, the problem is trying to find the best way to control the machine to reach the desired state while using as little control as possible.

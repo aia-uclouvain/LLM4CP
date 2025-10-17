@@ -1,0 +1,17 @@
+Agricultural Pricing Problem
+The Agricultural Pricing Problem is about determining the optimal prices for agricultural products such as milk, butter, and cheese to maximize revenue. 
+
+The main decision variables are: 
+- milk, butt, cha, chb: the prices of milk, butter, cheese type 1, and cheese type 2 respectively.
+- xm, xb, xca, xcb: the quantities of milk, butter, cheese type 1, and cheese type 2 produced.
+- q: a free variable representing the difference between the production and consumption of cheese type 1 and cheese type 2.
+- lmilk, lbutt, lcha, lchb, lq, mq: arrays of variables representing the proportions of each product at different price points.
+
+The key constraints are:
+- Non-negativity constraints: all prices and quantities must be non-negative.
+- Production constraints: the production of each product is limited by the available resources.
+- Demand constraints: the demand for each product is a function of its price.
+- Balance constraints: the production and consumption of each product must be balanced.
+- Proportion constraints: the proportions of each product at different price points must sum to 1.
+
+The objective of the problem is to maximize the revenue, which is a function of the prices and quantities of the agricultural products. The revenue is calculated as the sum of the products of the prices and quantities of each product, minus the costs of production. The problem is solved using a maximize constraint in the MiniZinc model.

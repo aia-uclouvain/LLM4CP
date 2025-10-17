@@ -1,0 +1,5 @@
+Set Covering Problem
+The problem is about forming a committee of 10 senators, making sure that at least one senator from each of six different groups is included. 
+The main variables are the senators and the groups they belong to. In simple terms, the variables represent which senator is chosen for the committee and which group they are from. 
+The basic restrictions are that each group must have at least one representative in the committee, and a senator can only be from one group at a time. 
+The goal of the problem is to minimize the number of senators needed to form the committee while still meeting the requirement of having at least one representative from each group.

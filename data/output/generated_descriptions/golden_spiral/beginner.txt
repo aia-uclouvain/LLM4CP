@@ -1,0 +1,8 @@
+Golden Spiral problem
+The problem is about creating a mathematical curve called the Golden Spiral, which is a special kind of spiral that gets wider by a certain amount as it turns.
+The main variables are theta, r, x, and y, which mean: 
+- theta is the angle of turn, 
+- r is the distance from the center, 
+- x and y are the coordinates on a map where the spiral is drawn.
+The basic restrictions are that theta and r must be positive numbers, and x and y must be between -20 and 20.
+The goal of the problem is to find values of theta, r, x, and y that satisfy the rules of the Golden Spiral, which means that the distance from the center increases by a certain amount as the spiral turns, and the x and y coordinates match this spiral shape.

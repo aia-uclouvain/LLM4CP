@@ -1,0 +1,8 @@
+**Job Shop Scheduling Problem**
+The Job Shop Scheduling Problem is a classic constraint programming problem that involves scheduling a set of tasks on a set of machines, subject to certain constraints. 
+
+The main decision variables in this problem are `tasks` and `allocs`, which represent the tasks to be scheduled and the allocation of tasks to machines, respectively. The `tasks` variable is an interval variable that represents the start and end times of each task, while the `allocs` variable is an optional interval variable that represents the allocation of a task to a machine.
+
+The key constraints in this problem can be described as follows: each task must be executed on one of the machines that it is compatible with, and no two tasks can be executed on the same machine at the same time. Additionally, if a task requires a certain resource, no other task that requires the same resource can be executed at the same time. The cumulative capacity of all machines is also limited.
+
+The objective of the Job Shop Scheduling Problem is to minimize the maximum completion time of all tasks, also known as the makespan. This means that the goal is to find a schedule that allows all tasks to be completed as quickly as possible, while still satisfying all the constraints.

@@ -1,0 +1,5 @@
+Bales of Hay problem 
+The problem is about figuring out how much each of five bales of hay weighs. 
+The main variables are the weights of the five bales of hay, which are represented by the variable "bales". 
+The basic restrictions are that each bale must weigh between 0 and 50 kilograms, and the total weight of each possible pair of bales must match one of the given weights (80, 82, 83, 84, 85, 86, 87, 88, 90, and 91 kilograms). 
+The goal of the problem is to find the weight of each bale, and to determine if there is a unique solution or multiple possible solutions.

@@ -1,0 +1,5 @@
+The problem is called "alldifferent_on_intersection". 
+It's about making sure that when two lists of numbers have some numbers in common, each of those common numbers appears only once in each list. 
+The main variables are "x" and "y", which are lists of numbers. 
+The basic restrictions are that "x" must be equal to a specific list of numbers [5,9,1,5], and "y" must be equal to another specific list of numbers [2,1,6,9,6,2]. Also, the numbers that appear in both "x" and "y" must appear only once in each list. 
+The goal of the problem is to find values for "x" and "y" that satisfy these restrictions.

@@ -1,0 +1,12 @@
+Conference Scheduling Problem
+The problem is about scheduling talks for a conference with multiple speakers, each available at certain time slots, to finish all talks as early as possible.
+The main variables are: 
+- starting_slot: the time slot when a speaker starts their talk
+- ending_slot: the time slot when a speaker finishes their talk
+- speaker_availability: the time slots when a speaker is available to give their talk
+- app_durations: the duration of each speaker's talk
+The basic restrictions are: 
+- a speaker can only give their talk during their available time slots
+- no two speakers can give their talks at the same time
+- each speaker must give their talk for the predetermined duration
+The goal is to minimize the time when all talks finish, i.e., to finish all talks as early as possible.

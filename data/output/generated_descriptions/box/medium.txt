@@ -1,0 +1,12 @@
+Box Design Problem
+The Box Design Problem is about designing a box with minimum cost while meeting various requirements such as area, volume, marketing, and aesthetic constraints.
+
+The main decision variables are `d`, `w`, and `h`, which represent the depth, width, and height of the box, respectively. These variables are floats, indicating that the dimensions of the box can be any real number.
+
+The key constraints are:
+- The surface area of the box must be at least 888.0, which is represented by the equation `2.0*(h*d + h*w + d*w) >= 888.0`.
+- The volume of the box must be at least 1512.0, represented by `h*d*w >= 1512.0`.
+- The box's height-to-width ratio must be between 0.518 and 0.718 for aesthetic purposes, enforced by `h/w <= 0.718` and `h/w >= 0.518`.
+- The box's footprint, represented by `d*w`, must be less than or equal to 252.0 to meet marketing requirements.
+
+The objective of the problem is to minimize the cost `z`, which is calculated as `2.0*(0.05*(d*w + d*h) + 0.1*w*h)`, representing the total cost of designing the box. The goal is to find the optimal dimensions (`d`, `w`, `h`) that result in the minimum cost `z` while satisfying all the given constraints.

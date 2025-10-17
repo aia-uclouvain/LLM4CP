@@ -1,0 +1,5 @@
+The problem is called "Increasing Except 0". 
+It's about arranging a set of numbers in order from smallest to largest, but ignoring any zeros. 
+The main variable is "x", which is an array of numbers that can be between 0 and a certain maximum value (in this case, 5). 
+The basic restrictions are that when we compare two numbers in the array, if neither of them is zero, the number on the left must be smaller or equal to the number on the right. 
+The goal of the problem is to find an arrangement of numbers that satisfies this rule, and the model uses a method to search for a solution that meets this condition.

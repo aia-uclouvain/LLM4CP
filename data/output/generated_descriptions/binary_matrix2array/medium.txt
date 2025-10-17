@@ -1,0 +1,5 @@
+Binary Matrix to Array Conversion Problem
+The problem is about converting a binary matrix into an array, where each row in the matrix corresponds to a value in the array.
+The main decision variables are `x`, a binary matrix, and `a`, an array of integers, where `x[i, j]` represents the presence or absence of a connection between row `i` and column `j`, and `a[i]` represents the value corresponding to row `i`.
+The key constraints are that each row in the matrix has exactly one connection, and the value in the array is calculated by summing the column indices of the connections in the corresponding row. Additionally, the matrix must match a given predefined matrix.
+The objective is to find a solution that satisfies these constraints, with no explicit minimization or maximization goal, as indicated by the `solve satisfy` statement. The model is used to find a feasible solution that converts the given binary matrix into an array, and the solution is then output to show the resulting array and matrix.

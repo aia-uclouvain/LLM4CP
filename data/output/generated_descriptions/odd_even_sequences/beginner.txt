@@ -1,0 +1,5 @@
+The name of the problem is Odd-Even Sequences. 
+This problem is about creating sequences of numbers from 1 to n, where each sequence starts with an odd number and then alternates between even and odd numbers, ending with the number n. 
+The main variables are the numbers in the sequence, represented by the array x, where each x[i] is a number in the sequence. 
+The basic restrictions or rules of the problem are that the sequence must start with an odd number, alternate between even and odd numbers, end with the number n, and each number in the sequence must be larger than the previous one, except for zeros which are used to represent empty spaces at the end of the sequence. 
+The goal of the problem is to count how many such sequences exist for a given number n.

@@ -1,0 +1,5 @@
+name: Cube Sum Problem
+description: The Cube Sum Problem is a classic problem in constraint programming that involves finding the smallest number of cubes that sum up to a given number m, with the condition that at least two different cubes are used.
+variables: $x_1, x_2, ..., x_n, z$ - These variables represent the cubes used to sum up to m, where $x_i$ is the value of the i-th cube and z is the number of cubes used.
+constraints: $all\_different\_except\_0(x)$, $increasing(x)$, $x_i \geq 0$, $x_i \leq m$, $m = \sum_{i=1}^{n} x_i^3$, $z \geq 2$, $z = \sum_{i=1}^{n} bool2int(x_i > 0)$ - These constraints ensure that all non-zero cubes are different, the cubes are in increasing order, each cube is within the range [0, m], the sum of the cubes equals m, at least two cubes are used, and z accurately represents the number of non-zero cubes.
+objective: Minimize $z$ - The objective of the problem is to find the smallest number of cubes (z) that sum up to the given number m.

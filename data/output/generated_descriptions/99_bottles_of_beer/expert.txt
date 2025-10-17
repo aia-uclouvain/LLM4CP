@@ -1,0 +1,5 @@
+name: 99 Bottles of Beer
+description: The problem is to print out the entire "99 bottles of beer on the wall" song, which follows a specific lyrical pattern where the number of bottles decreases by one in each verse, with grammatical support for "1 bottle of beer" being optional.
+variables: None, the model does not contain any decision variables, it is a satisfaction problem where the goal is to print out a specific song.
+constraints: 1=1, this is a trivial constraint that is always satisfied, it is used here to satisfy the requirement of having at least one constraint in the model.
+objective: The objective of this problem is not to minimize or maximize a specific value, but rather to print out the song using the given pattern, the model uses the output statement to achieve this.

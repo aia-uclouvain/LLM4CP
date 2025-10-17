@@ -1,0 +1,5 @@
+Survo Puzzle
+The Survo puzzle is about filling a table with numbers so that each row and column adds up to a certain total. 
+The main variables are the numbers in the table, the row totals, and the column totals. 
+The basic restrictions are that each number can only be used once, and the sum of the numbers in each row and column must match the given totals. 
+The goal is to find a solution that satisfies all these conditions, there is no specific goal to minimize or maximize.

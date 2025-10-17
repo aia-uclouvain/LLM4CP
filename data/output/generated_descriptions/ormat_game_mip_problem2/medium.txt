@@ -1,0 +1,5 @@
+The Ormat Game problem.
+The Ormat Game is a classic constraint programming problem where the goal is to find a configuration of a given grid such that certain rules are satisfied. 
+The main decision variables in this problem are the elements of a 2D array, where each element represents a cell in the grid and can take on a specific value.
+The key constraints in this problem are that each row, column, and possibly other regions of the grid must satisfy certain conditions, such as containing a specific pattern or sequence of values. 
+The objective of the Ormat Game problem is to find a valid configuration of the grid that satisfies all the given constraints, and in some cases, to minimize or maximize a specific metric, such as the number of certain patterns in the grid.

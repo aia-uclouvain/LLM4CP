@@ -1,0 +1,5 @@
+Laplace problem
+The problem is about finding the temperature at different points in a square plate, where the temperature at the edges of the plate is already known. 
+The main variables are the temperature at each point in the plate, represented by x. 
+The basic restrictions are that the temperature at each point is related to the temperatures at the points around it, and that the temperature at the edges of the plate is fixed. 
+The goal is to find the temperature at each point in the plate that satisfies these restrictions, with a focus on minimizing the temperature at a specific point.

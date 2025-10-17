@@ -1,0 +1,5 @@
+The Set Cover Problem
+The Set Cover Problem is about finding the smallest subset of elements that covers all sets in a given collection. 
+The main decision variable is a set `s` of ids, which represents the chosen subset of elements. 
+The key constraints are that only one member should be chosen from each group, and that each group should be represented by at least one chosen member. 
+The objective of the problem is to minimize the size of the chosen subset, i.e., the number of elements in `s`.

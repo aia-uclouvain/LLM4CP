@@ -1,0 +1,11 @@
+All Interval Series Problem
+The problem is about finding a sequence of musical notes, where each note is a pitch class, such that every possible interval between two consecutive notes occurs exactly once, and the sequence starts with a note that is lower than the last note.
+
+The main decision variable is `series`, an array of `n` variables, each representing a pitch class, where `n` is the total number of pitch classes. Each variable in the `series` array represents a note in the sequence, and its value is the pitch class of that note.
+
+The key constraints are: 
+- Each pitch class occurs exactly once in the sequence, meaning that no two notes in the sequence have the same pitch class. 
+- The differences between consecutive notes are all different, meaning that every possible interval between two consecutive notes occurs exactly once. 
+- The sequence starts with a note that is lower than the last note, which is a symmetry-breaking constraint to reduce the search space.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a sequence that satisfies all the constraints. In other words, the goal is to find a valid All Interval Series, which is a sequence of notes that meets the conditions specified by the constraints.

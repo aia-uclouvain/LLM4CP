@@ -1,0 +1,13 @@
+Data Envelopment Analysis (DEA) 
+The Data Envelopment Analysis (DEA) problem is a method used to quantify the relative efficiency of decision-making units (DMUs) by finding the efficient frontier in multiple input and multiple output data. 
+
+The main decision variables in this problem are theta and lambda. Theta represents the efficiency score of each DMU, which is a value between 0 and 1, where 1 represents the most efficient unit and 0 represents the least efficient unit. Lambda represents the weights assigned to each DMU in the calculation of the efficiency score.
+
+The key constraints in the DEA problem can be described as follows: 
+- Each DMU's efficiency score must be greater than or equal to 0.
+- The weights assigned to each DMU (lambda) must be non-negative.
+- The weighted sum of the outputs of all DMUs must be greater than or equal to the output of the DMU being evaluated.
+- The weighted sum of the inputs of all DMUs must be less than or equal to the input of the DMU being evaluated, multiplied by its efficiency score.
+- The sum of the weights assigned to all DMUs for each DMU being evaluated must be equal to 1.
+
+The objective of the DEA problem is to minimize the sum of the efficiency scores of all DMUs. This is achieved by finding the optimal weights (lambda) that maximize the efficiency score of each DMU, while satisfying the constraints mentioned above. The result is a set of efficiency scores that represent the relative efficiency of each DMU, allowing for comparison and evaluation of their performance.

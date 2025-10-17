@@ -1,0 +1,5 @@
+The Island of Bahava problem. 
+This problem is about figuring out the types of people living on a fictional island, where there are three types of people: knights who always tell the truth, knaves who always lie, and normals who sometimes tell the truth and sometimes lie. 
+The main variables are mr_p and mrs_p, which represent the types of husbands and wives, with 1 being a knight, 2 being a normal, and 3 being a knave. 
+The basic rules are that a knight must marry a knave, a knave must marry a knight, and a normal must marry a normal, and each person makes statements about themselves or their spouse that must be true or false based on their type. 
+The goal of the problem is to determine the types of the husbands and wives based on the statements they make, with the solution satisfying all the given conditions and rules.

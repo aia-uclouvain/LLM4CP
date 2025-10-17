@@ -1,0 +1,5 @@
+The Athletics Committee problem. 
+This problem is about selecting a committee from a group of people in a way that follows certain rules about friendships. 
+The main variables are "friends" which shows who is friends with whom, and "x" which shows who is on the committee. 
+The basic restrictions are that no one on the committee can have three or more friends on the committee, and everyone not on the committee must have exactly three friends on the committee. 
+The goal of the problem is to find a way to choose the committee so that these rules are followed, and to see if this is even possible.

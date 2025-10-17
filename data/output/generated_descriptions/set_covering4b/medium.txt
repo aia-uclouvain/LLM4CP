@@ -1,0 +1,5 @@
+Set Partitioning and Set Covering Problem
+The problem is about selecting a subset of alternatives to cover a set of objects, where each alternative covers a specific subset of objects, and each object must be covered exactly or at least once.
+The main decision variables are `x`, which represents a binary choice of whether to select an alternative, and `a`, which represents the set of objects covered by each alternative.
+The key constraints are that each object must be covered exactly or at least once by the selected alternatives. This is achieved by ensuring that for each object, the sum of the selected alternatives that cover it is equal to 1 (for set partitioning) or greater than or equal to 1 (for set covering).
+The objective of the problem is to minimize the total cost of the selected alternatives, which is represented by the variable `z`. The cost of each alternative is given by the `costs` array, and the total cost is calculated by summing the costs of the selected alternatives.

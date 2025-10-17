@@ -1,0 +1,13 @@
+name: K Consecutive Integers Problem
+description: The K Consecutive Integers Problem is a constraint satisfaction problem where we have an array of integers of size n, and the integers that can be used to fill the array are in the range 1-k. Each integer i has a minimum number of consecutive occurrences, denoted by ci. The goal is to find a sequence of integers that satisfies these constraints.
+variables: x = (x[1], x[2], ..., x[n]), starts = (starts[1], starts[2], ..., starts[n]), z. 
+These are decision variables where x[i] represents the integer at position i in the sequence, starts[i] is a variable that indicates whether x[i] starts a new sequence of consecutive integers, and z represents the total number of sequences.
+constraints: 
+assert(k == length(c)), 
+∀a ∈ 1..n, b ∈ 1..k : (starts[a] = b) → (∀d ∈ 0..c[b]-1 : x[a+d] = b ∧ ∀d ∈ 1..c[b]-1 : starts[a+d] = 0 ∧ (if a > 1 then x[a-1] ≠ b else true) ∧ (if a ≤ n-c[b] then x[a+c[b]] ≠ b else true)), 
+starts[1] > 0, 
+∀i ∈ 2..n : (starts[i] > 0 ⇔ x[i] ≠ x[i-1]), 
+∀i ∈ 1..n : (starts[i] > 0 → x[i] = starts[i]), 
+z = ∑[bool2int(starts[i] > 0) | i ∈ 1..n]. 
+These constraints ensure that the sequence of integers satisfies the given constraints, including the minimum number of consecutive occurrences for each integer, and the relationship between the starts and x variables.
+objective: satisfy. The problem is a satisfaction problem, where the goal is to find a sequence of integers that satisfies the given constraints, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,12 @@
+name: Einstein's Puzzle
+description: Einstein's Puzzle is a classic logic puzzle that requires the solver to determine the characteristics of five houses, each with a different color, inhabited by people of different nationalities, with different pets, drinking different beverages, and smoking different brands of cigarettes. The puzzle provides 15 clues that must be used to deduce the correct arrangement of the houses and their characteristics.
+variables: $s = [s_1, s_2, s_3, s_4, s_5], a = [a_1, a_2, a_3, a_4, a_5], d = [d_1, d_2, d_3, d_4, d_5], k = [k_1, k_2, k_3, k_4, k_5], c = [c_1, c_2, c_3, c_4, c_5]$, where $s_i$ represents the state (nationality) of the $i^{th}$ house, $a_i$ represents the animal (pet) in the $i^{th}$ house, $d_i$ represents the drink in the $i^{th}$ house, $k_i$ represents the brand of cigarette smoked in the $i^{th}$ house, and $c_i$ represents the color of the $i^{th}$ house.
+constraints: $\begin{aligned}
+&\text{alldifferent}(s) \land \text{alldifferent}(a) \land \text{alldifferent}(d) \land \text{alldifferent}(k) \land \text{alldifferent}(c) \\
+&\land s[\text{Brit}] = c[\text{red}] \land s[\text{Sweed}] = a[\text{dogs}] \land s[\text{Dane}] = d[\text{tea}] \land c[\text{green}] = d[\text{coffee}] \\
+&\land k[\text{Pall Mall}] = a[\text{birds}] \land c[\text{yellow}] = k[\text{Dunhill}] \land d[\text{milk}] = 3 \land s[\text{Norwegian}] = 1 \\
+&\land k[\text{Blue Master}] = d[\text{beer}] \land s[\text{German}] = k[\text{Prince}] \land c[\text{green}] = c[\text{white}]-1 \\
+&\land |k[\text{Blends}] - a[\text{cats}]| = 1 \land |a[\text{horses}] - k[\text{Dunhill}]| = 1 \land |s[\text{Norwegian}] - c[\text{blue}]| = 1 \\
+&\land |k[\text{Blends}] - d[\text{water}]| = 1
+\end{aligned}$, which represent the 15 clues provided in the puzzle, including the constraints on the nationalities, pets, drinks, cigarette brands, and colors of the houses, as well as the relationships between them.
+objective: The objective of the problem is to satisfy all the given constraints, i.e., to find an arrangement of the houses and their characteristics that satisfies all 15 clues, with no specific value to minimize or maximize.

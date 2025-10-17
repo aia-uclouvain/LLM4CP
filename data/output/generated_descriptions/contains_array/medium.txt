@@ -1,0 +1,11 @@
+The problem is called the "Digit Set Problem" or "Number Reconstruction Problem". 
+It is about reconstructing a number from a given set of digits, where each digit can be used multiple times, and the goal is to find a specific arrangement of these digits that forms a predetermined number.
+
+The main decision variables are `x`, an array of variables representing the digits of the reconstructed number, `el`, a variable representing a specific digit that must be present in the reconstructed number, and `num`, a variable representing the reconstructed number.
+
+The key constraints are: 
+- `contains(el, x)` ensures that the digit `el` is present in the reconstructed number `x`.
+- `toNum(x, num, 10.0)` converts the array of digits `x` into a single number `num` using base 10.
+- `num = 123402345` specifies the target number that the reconstructed number `x` should represent.
+
+The objective of the problem is to satisfy all the given constraints, which means finding an arrangement of the digits in `x` such that the digit `el` is present, the resulting number `num` is equal to the target number 123402345, and all other constraints are met. The problem does not have a specific minimization or maximization objective, but rather seeks a feasible solution that satisfies all the constraints.

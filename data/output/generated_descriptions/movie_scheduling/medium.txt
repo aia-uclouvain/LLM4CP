@@ -1,0 +1,8 @@
+Movie Scheduling Problem
+The problem is about scheduling a set of movies with given time intervals to maximize the number of movies that can be shown without any overlaps.
+
+The main decision variables are `x`, an array of binary variables where `x[i]` represents whether the `i-th` movie is scheduled (1) or not (0), and `z`, an integer variable that represents the total number of scheduled movies.
+
+The key constraints are that for any pair of scheduled movies, their time intervals must not overlap. This is enforced by the `no_overlap` predicate, which checks if the start time of one movie is after the end time of the other, or vice versa.
+
+The objective of the problem is to maximize `z`, the total number of scheduled movies, which means finding the largest set of non-overlapping movies that can be shown. The solver searches for a solution that satisfies the constraints and maximizes the number of scheduled movies, using a search strategy that prioritizes assigning values to the `x` variables based on the `first_fail` and `indomain_min` heuristics.

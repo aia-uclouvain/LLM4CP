@@ -1,0 +1,5 @@
+Exact Cover Problem
+The problem is about finding a way to cover a set of items using a collection of sets, where each item is covered exactly once.
+The main variables are the sets (A, B, C, D, E, F) and the items (1, 2, 3, 4, 5, 6, 7). The variable x represents which sets are chosen to cover the items.
+The basic restrictions are that each item must be covered by exactly one set, and a set can either be chosen or not chosen to cover the items.
+The goal of the problem is to find a combination of sets that covers all the items exactly once, which is known as an exact cover.

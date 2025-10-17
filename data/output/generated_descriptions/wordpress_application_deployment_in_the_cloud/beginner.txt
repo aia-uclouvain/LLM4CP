@@ -1,0 +1,13 @@
+The problem is called Virtual Machine Allocation. 
+It's about finding the best way to distribute different parts of a web application across multiple virtual machines, while making sure each part has enough resources like memory and processing power. 
+The main variables are: 
+- AssignmentMatrix: which part of the application is assigned to which virtual machine
+- VMType: what kind of virtual machine is used for each assignment
+- OccupancyVector: whether a virtual machine is being used or not
+- Price: the cost of using each virtual machine
+The basic restrictions are: 
+- Each virtual machine has limited resources, so the total requirements of all parts assigned to it cannot exceed those limits
+- Certain parts of the application need to be deployed a minimum number of times
+- Some parts cannot be deployed on the same virtual machine as others
+- The cost of using a virtual machine depends on its type and whether it's being used
+The goal is to minimize the total cost of using all the virtual machines.

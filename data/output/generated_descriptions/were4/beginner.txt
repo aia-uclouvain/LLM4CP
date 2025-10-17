@@ -1,0 +1,5 @@
+Werewolfes IV 
+This problem is about figuring out who is a knight, who is a knave, and who is a werewolf among three people. 
+The main variables are x and y. The variable x represents whether a person is a knight (1) or a knave (0), and the variable y represents whether a person is a werewolf (1) or not (0).
+The basic rules are: there is only one werewolf, the werewolf must be a knight, and certain statements made by the people must be true or false based on their identity. 
+The goal of the problem is to find a solution that satisfies all the given conditions, which means finding out who is a knight, who is a knave, and who is the werewolf.

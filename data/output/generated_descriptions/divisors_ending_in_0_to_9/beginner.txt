@@ -1,0 +1,5 @@
+Divisors Ending in 0 to 9 Puzzle
+The problem is about finding the smallest number that has divisors ending in all digits from 0 to 9. 
+The main variable is "n", which is the number we are trying to find. 
+The basic restriction is that "n" must have divisors that end in each of the digits 0 through 9. 
+The goal is to find the smallest possible "n" that meets this condition, meaning we want to minimize "n".

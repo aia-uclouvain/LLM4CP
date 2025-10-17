@@ -1,0 +1,5 @@
+Voltage Divider Problem
+The problem is about designing an electronic circuit called a voltage divider, which is used to reduce the voltage of an electrical signal. 
+The main variables are: V (the input voltage), I (the input current), R1 and R2 (the resistances of two resistors), VD (the output voltage), and ID (the output current). 
+The basic restrictions are: the output voltage (VD) must be between 5.4 and 5.5, the output current (ID) must be 0.1, the input voltage (V) must be one of two specific values (9 or 12), and the resistances (R1 and R2) must be one of three specific values (5, 9, or 14). 
+The goal is to find values for the input voltage, input current, and resistances that satisfy these restrictions and make the circuit work.

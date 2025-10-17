@@ -1,0 +1,8 @@
+Five Translator Problem
+The Five Translator Problem is a classic constraint programming problem that involves determining the languages spoken by five translators, each with their native language and two additional languages. 
+
+The main decision variables in this problem are represented by the array `x`, where `x[i]` is a set of languages spoken by the `i-th` translator. Each translator speaks their native language and two other languages, making a total of three languages per translator.
+
+The key constraints in this problem can be described as follows: each translator speaks their native language, all translators speak exactly three languages, and there are specific constraints on which languages each translator can or cannot speak. For example, the Englishman speaks German, the Spaniard speaks French, and the German does not speak Spanish. Additionally, there are constraints on which translators can communicate with each other in specific languages, such as the Spaniard and Englishman being able to talk to each other in German. 
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the given constraints. In other words, the goal is to determine the languages spoken by each translator in a way that meets all the conditions specified in the problem. The problem is solved using a satisfaction-based approach, where the model is executed to find a solution that satisfies all the constraints, without optimizing a specific objective function.

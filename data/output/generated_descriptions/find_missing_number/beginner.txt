@@ -1,0 +1,18 @@
+The name of the problem is "Find missing number in MiniZinc" or "Find missing number from a given randomized concatenated string of numbers". 
+
+This problem is about finding a missing number in a long string of numbers that are concatenated together in a random order. For example, imagine taking all the numbers from 1 to 250, mixing them up, and then combining them into one long string of digits, but leaving out one of the numbers. The goal is to figure out which number is missing.
+
+The main variables are: 
+- `n`: the maximum number in the original sequence (e.g., 250).
+- `digits_all`: a list of all the digits of the numbers from 1 to `n`.
+- `digits_missing`: a list of the digits from the concatenated string with a number missing.
+- `missing`: the missing number.
+- `x`: a list that assigns each position in `digits_all` to a number from 1 to `n`.
+- `start_pos`: a list of the start positions of each number in the concatenated string.
+
+The basic restrictions or rules are: 
+- Each number from 1 to `n` must appear exactly once in the `x` list, except for the missing number.
+- The `digits_missing` list must match the `digits_all` list, except for the missing number.
+- The start positions of each number must be distinct.
+
+The goal of the problem is to find the missing number, which is the number that is not present in the `digits_missing` list. The problem tries to find this missing number by comparing the sum of the digits of all numbers and the sum of the digits in the `digits_missing` list, as well as the length of the missing number.

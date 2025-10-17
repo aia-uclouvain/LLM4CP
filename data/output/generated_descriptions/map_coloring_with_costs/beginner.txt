@@ -1,0 +1,5 @@
+Map Coloring with Costs
+The problem is about coloring a map of South America with different colors, where each country must be colored differently from its neighboring countries, and there is a cost associated with using each color.
+The main variables are the countries on the map and the colors assigned to each country. The countries are represented by names like "Galapagos Islands" and "Brazil", while the colors are represented by names like "Red" and "Green", each with a corresponding cost.
+The basic restrictions are that no two neighboring countries can have the same color, and each country must be assigned one of the available colors. The available colors are limited to a maximum of 4 different colors.
+The goal of the problem is to find the cheapest way to color the entire map, by minimizing the total cost of the colors used. The cost of each color is different, ranging from $100 for "Red" to $800 for "Black".

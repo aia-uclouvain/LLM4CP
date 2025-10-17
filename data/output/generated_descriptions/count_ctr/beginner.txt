@@ -1,0 +1,5 @@
+The problem is called the Global Constraint Count. 
+It's about counting how many times a certain value appears in a list of numbers and checking if this count meets a specific condition. 
+The main variables are: x, which is a list of numbers, val, which is the value we're looking for in the list, nvar, which is the minimum or maximum number of times val should appear in the list, and relop, which is a comparison operator that determines whether we're looking for a minimum or maximum count. 
+The basic restrictions are that the list x must contain the numbers 4, 5, 5, 4, 5, the value val must be 5, and the count of val in the list x must be greater than or equal to nvar. 
+The goal is to find a count of the value val in the list x that satisfies the given condition, which in this case is that the count is greater than or equal to nvar.

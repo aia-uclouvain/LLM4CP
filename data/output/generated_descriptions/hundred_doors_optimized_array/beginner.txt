@@ -1,0 +1,5 @@
+100 doors problem
+The problem is about a row of 100 doors that are initially closed. Someone walks by the doors 100 times, and each time, they open or close some of the doors based on a specific rule. 
+The main variables are the doors, which are represented by an array x where x[j] means the state of door j (0 for closed, 1 for open).
+The basic rule is that on the first pass, every door is toggled (opened or closed), on the second pass, every 2nd door is toggled, on the third pass, every 3rd door is toggled, and so on, until the last pass where only the 100th door is toggled.
+The goal of the problem is to find out which doors are open and which are closed after all 100 passes, and the solution shows that only the doors whose numbers are perfect squares (like 1, 4, 9, 16) will remain open.

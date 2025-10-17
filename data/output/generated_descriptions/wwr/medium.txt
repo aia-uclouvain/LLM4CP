@@ -1,0 +1,5 @@
+The problem is called an Alphametic Problem, specifically "WRONG + WRONG = RIGHT". 
+This problem is about finding the values of letters in an equation where each letter represents a unique digit from 0 to 9, such that when the equation is evaluated, it holds true. 
+The main decision variables are W, R, O, N, G, I, H, and T, which represent the digits to be assigned to each letter in the equation. 
+The key constraints are that each letter must be assigned a unique digit, and when the equation "WRONG + WRONG = RIGHT" is evaluated using these digits, it must be true. Additionally, there is a constraint that the digit represented by O must be 0. 
+The problem's objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find values for the letters such that the equation holds true, with each letter having a unique digit and O being 0.

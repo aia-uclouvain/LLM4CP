@@ -1,0 +1,5 @@
+The problem is called "Persistent Numbers". 
+It's about finding the smallest number that takes a certain number of steps to reduce to a single digit by multiplying its digits together. 
+The main variables are the number to start with and the digits of the numbers at each step. 
+The basic restrictions are that the digits must be multiplied together to get the next number, and this process must be repeated until a single digit is reached. 
+The goal is to find the smallest number that takes a specific number of steps, in this case, five steps, to reduce to a single digit.

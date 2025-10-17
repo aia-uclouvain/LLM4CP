@@ -1,0 +1,13 @@
+Nonogram Puzzle
+The Nonogram puzzle is a classic constraint programming problem that involves solving a graphical puzzle using logical deductions. 
+
+The main decision variables in this problem are the values of the 2D array `x`, where `x[i, j]` represents the color of the cell at row `i` and column `j`, with 1 indicating a white cell and 2 indicating a black cell.
+
+The key constraints in this problem can be described as follows: 
+- Each row and column must satisfy a set of rules, which are defined by the `row_rules` and `col_rules` arrays. 
+- These rules specify the lengths of consecutive blocks of black cells in each row and column. 
+- Additionally, there are some fixed black cells that are specified by the `blacks` array, and these cells must be black in the solution.
+
+The objective of the Nonogram puzzle is not to minimize or maximize a specific function, but rather to find a solution that satisfies all the constraints. In other words, the goal is to find a coloring of the grid such that each row and column satisfies its corresponding rules, and all the fixed black cells are correctly placed. 
+
+The problem is solved using a constraint programming approach, where the `make_automaton` predicate is used to enforce the rules for each row and column. The `solve` statement uses an integer search strategy to find a solution that satisfies all the constraints.

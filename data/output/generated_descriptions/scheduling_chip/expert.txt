@@ -1,0 +1,5 @@
+name: Cumulative Scheduling Problem
+description: The Cumulative Scheduling Problem is a classic problem in constraint programming that involves scheduling a set of tasks with given durations and resource requirements, while minimizing the maximum end time of all tasks and not exceeding a given resource capacity.
+variables: $End, LO, LE$ - These are the decision variables where $End$ is the maximum end time, $LO$ is an array representing the start time of each task, and $LE$ is an array representing the end time of each task.
+constraints: $LO[i] + LD[i] = LE[i], maximum(End, LE), cumulative(LO, LD, LR, Limit)$ - These constraints ensure that the end time of each task is the sum of its start time and duration, the maximum end time is the maximum of all task end times, and the cumulative resource usage at any time does not exceed the given resource limit.
+objective: Minimize $End$ - The objective of the problem is to minimize the maximum end time of all tasks.

@@ -1,0 +1,8 @@
+name: Shortest Path Problem
+description: The shortest path problem is a classic problem in graph theory and operations research that involves finding the path with the minimum total weight or cost between two nodes in a weighted graph. The problem has numerous applications in fields such as logistics, transportation, and network optimization.
+variables: $x_{i,j}, rhs_i, outFlow_i, inFlow_i$ 
+These variables represent the decision variables in the problem: $x_{i,j}$ is a binary variable indicating whether there is a connection from node $i$ to node $j$, $rhs_i$ is a variable indicating whether node $i$ is the start node, end node, or an intermediate node, and $outFlow_i$ and $inFlow_i$ are variables representing the out-flow and in-flow of node $i$.
+constraints: $\forall i \in 1..n: rhs_i = \begin{cases} 1 & \text{if } i = start \\ -1 & \text{if } i = end \\ 0 & \text{otherwise} \end{cases}, \forall i,j \in 1..n: x_{i,j} \geq 0, \forall i \in 1..n: outFlow_i = \sum_{j \in 1..n} x_{i,j}, \forall j \in 1..n: inFlow_j = \sum_{i \in 1..n} x_{i,j}, \forall i \in 1..n: outFlow_i - inFlow_i = rhs_i, \forall i \in 1..n: x_{i,i} = 0, \forall i,j \in 1..n: d_{i,j} = M \rightarrow x_{i,j} = 0$
+These constraints ensure that the start node has an out-flow of 1, the end node has an in-flow of 1, and all other nodes have an out-flow equal to their in-flow. They also ensure that all connections have a non-negative weight, that there are no self-loops, and that there are no connections between nodes that are not connected in the original graph.
+objective: minimize $\sum_{i,j \in 1..n} d_{i,j} \cdot x_{i,j}$ 
+The objective is to minimize the total weight of the path from the start node to the end node.

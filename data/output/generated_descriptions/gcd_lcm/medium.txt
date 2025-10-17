@@ -1,0 +1,8 @@
+Greatest Common Divisor (GCD) and Least Common Multiple (LCM) Problem
+The problem is about finding the greatest common divisor (GCD) and least common multiple (LCM) of two numbers, a and b, within a given range.
+
+The main decision variables are a, b, gg, and ll, which represent the two input numbers, their GCD, and their LCM, respectively.
+
+The key constraints are that a is less than b, the GCD is greater than 1, and the GCD and LCM of a and b must satisfy the mathematical definitions of these operations. Specifically, the GCD is the largest number that divides both a and b without a remainder, and the LCM is the smallest number that is a multiple of both a and b.
+
+The problem's objective is to find values of a and b that satisfy these constraints, rather than minimizing or maximizing a specific quantity. The model uses the "solve satisfy" statement, which means it aims to find any solution that satisfies all the given constraints, without optimizing a particular objective function.

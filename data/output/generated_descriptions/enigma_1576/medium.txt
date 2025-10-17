@@ -1,0 +1,13 @@
+The problem is called the "Holly and the Ivy" problem. 
+It is about arranging 16 squares, each with a picture of holly, ivy, mistletoe, or fir trees, and one of four background colors (gold, silver, red, or white), into a 4x4 grid such that each row and column contains one square of each plant and one square of each background color.
+
+The main decision variables are `plants` and `colors`, which are 4x4 arrays representing the plant and background color of each square in the grid. 
+
+The key constraints are: 
+- each row and column must contain one square of each plant and one square of each background color, 
+- the top row must have the colors gold, silver, red, and white from left to right, 
+- one row must start with a fir tree on a white background, 
+- the holly on a gold background must touch the ivy on a silver background, 
+- no two mistletoe squares can touch, not even at their corners.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a feasible arrangement of the squares that satisfies all the given constraints.

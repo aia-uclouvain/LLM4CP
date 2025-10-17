@@ -1,0 +1,14 @@
+name: McEverywhere problem
+
+description: The problem is to determine the minimum number of fast food restaurants (McEverywhere) needed in a town so that no resident has to travel more than 4km to reach one. The town is represented by a 10x10 grid, where some cells contain homes and others are empty. Restaurants can be built on any cell, including those with homes. The distance between two cells is calculated using the Euclidean distance (1km for adjacent cells and 1.41km for diagonal cells).
+
+variables: $x_{i,j}, num\_restaurants, counts_{i,j}$ 
+These variables represent the decision variables in the problem: $x_{i,j}$ is a binary variable indicating whether a restaurant is built at cell $(i,j)$, $num\_restaurants$ is the total number of restaurants built, and $counts_{i,j}$ is the number of restaurants within the 4km radius of the home at cell $(i,j)$.
+
+constraints: $\forall i, j \in 1..n, homes_{i,j} = 1: \exists ri, rj \in 1..n, d \in 0..max\_dist (dist(ri,rj, i,j, d) \wedge x_{ri,rj} = 1)$, 
+$\forall i, j \in 1..n: counts_{i,j} = \sum_{ri,rj \in 1..n, d \in 0..max\_dist} (bool2int(dist(ri,rj, i,j, d) \wedge x_{ri,rj} = 1))$, 
+$num\_restaurants = \sum_{i,j \in 1..n} x_{i,j}$ 
+These constraints ensure that: (1) for each home, there exists at least one restaurant within the 4km radius, (2) the number of restaurants within the 4km radius of each home is calculated correctly, and (3) the total number of restaurants is calculated correctly.
+
+objective: minimize $num\_restaurants$ 
+The objective is to minimize the total number of restaurants built, which represents the minimum number of McEverywhere restaurants needed to satisfy the condition that no resident has to travel more than 4km to reach one.

@@ -1,0 +1,9 @@
+Pi Day Sudoku 2008
+The problem is a variation of the classic Sudoku puzzle, where each row, column, and jigsaw region must contain exactly the first twelve digits of pi, including repeats: 3.14159265358.
+The main decision variables are represented by the array `x`, where `x[i,j]` is the value of the cell at row `i` and column `j`. The values of `x[i,j]` range from 1 to 9, representing the digits 1 to 9, and are used to fill in the Sudoku grid.
+The key constraints are: 
+- Each row must contain each digit the correct number of times.
+- Each column must contain each digit the correct number of times.
+- Each jigsaw region must contain each digit the correct number of times.
+- Given hints must be respected, i.e., if a cell already has a value, that value must be kept.
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to fill in the Sudoku grid such that each row, column, and jigsaw region contains exactly the first twelve digits of pi, including repeats. The problem does not have an explicit objective function to minimize or maximize, but rather seeks a feasible solution that meets all the constraints.

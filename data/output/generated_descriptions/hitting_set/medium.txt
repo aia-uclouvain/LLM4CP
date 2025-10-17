@@ -1,0 +1,17 @@
+**Vertex Cover Problem**
+The Vertex Cover problem is a classic problem in graph theory and computer science. 
+
+**Problem Description**
+Given a graph, the goal is to find the smallest subset of vertices that covers all edges in the graph. In other words, we want to select the minimum number of vertices such that every edge in the graph is incident to at least one of the selected vertices.
+
+**Decision Variables**
+The main decision variables in this problem are represented by the array `x`, where `x[i]` is a binary variable that indicates whether vertex `i` is included in the cover (1) or not (0).
+
+**Constraints**
+The key constraint in this problem is that every edge in the graph must be covered by at least one vertex in the cover. This is represented by the `hitting_set` predicate, which ensures that for every vertex `i`, there exists a vertex `j` in the cover that is connected to `i`.
+
+**Objective**
+The objective of the problem is to minimize the size of the cover, which is represented by the variable `k`. The model uses the `minimize` keyword to specify that the goal is to find the smallest possible cover.
+
+**Overall**
+The Vertex Cover problem is an NP-hard problem, which means that the running time of traditional algorithms increases exponentially with the size of the input graph. The Minizinc model provided uses a constraint programming approach to solve this problem, which can be more efficient than traditional algorithms for certain types of graphs.

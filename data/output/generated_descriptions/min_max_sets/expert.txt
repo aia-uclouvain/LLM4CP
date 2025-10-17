@@ -1,0 +1,7 @@
+name: Minimum and Maximum Values in a Set
+description: The problem is to find the minimum and maximum values in a set of integers, where the set has a fixed cardinality. The set is a subset of a given range of integers, and the minimum and maximum values are the smallest and largest integers in the set, respectively.
+variables: S, mn, mx 
+S is a set of integers, mn is the minimum value in the set S, and mx is the maximum value in the set S. These variables are decision variables, meaning their values are determined by the solver.
+constraints: card(S) = 4, min_set(S, mn), max_set(S, mx) 
+These constraints ensure that the set S has exactly 4 elements, mn is the minimum value in S, and mx is the maximum value in S. The min_set and max_set constraints are defined using predicates that check if a value is in the set and if it is less than or equal to (or greater than or equal to) all other values in the set.
+objective: The objective of the problem is to satisfy all the constraints, meaning to find a set S with 4 elements and determine its minimum and maximum values. There is no explicit objective function to minimize or maximize.

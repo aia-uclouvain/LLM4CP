@@ -1,0 +1,5 @@
+Max Consecutive Values in a Row problem. 
+This problem is about filling a square grid with different values (0, 1, or 2) in such a way that there are no more than a certain number (m) of the same values next to each other in a row or column. 
+The main variables are the size of the grid (n), the maximum number of consecutive values (m), and the values in each cell of the grid (x). 
+The basic restrictions are that each cell can only have one of the allowed values (0, 1, or 2), and there cannot be more than m of the same values in a row or column. 
+The goal of the problem is to find a way to fill the grid that satisfies these restrictions.

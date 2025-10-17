@@ -1,0 +1,18 @@
+**Shortest Path Problem**
+The shortest path problem is a classic constraint programming problem that involves finding the shortest path between two nodes in a graph. 
+
+**Description**
+The problem is about navigating through a graph, which is a collection of nodes connected by edges, to find the shortest possible path from a starting node to a target node. The graph can be directed, meaning edges have a direction, or undirected, meaning edges can be traversed in both directions.
+
+**Decision Variables**
+The main decision variable is `x`, an array of integers representing the path taken from the start node to the target node. Each element `x[i]` in the array corresponds to a node in the graph, with `x[1]` being the start node and the last non-zero element being the target node. The value of `x[i]` is the node visited at step `i`, or 0 if no node is visited at that step.
+
+**Constraints**
+The key constraints in the problem are:
+- **All Different Except 0**: All non-zero values in the `x` array must be different, ensuring that each node is visited at most once.
+- **Start Node**: The first element of the `x` array must be the start node.
+- **Target Node**: The last non-zero element of the `x` array must be the target node.
+- **Path Constraints**: Each element in the `x` array (except the first) must be connected to the previous element by an edge in the graph, ensuring that the path is valid.
+
+**Objective**
+The objective of the problem is to minimize the `path_length`, which is the number of non-zero elements in the `x` array, representing the shortest possible path from the start node to the target node.

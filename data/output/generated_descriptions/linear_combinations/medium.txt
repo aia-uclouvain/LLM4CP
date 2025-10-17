@@ -1,0 +1,22 @@
+**Recover Origin of Pair Differences Problem**
+
+The Recover Origin of Pair Differences problem is about finding the original set of numbers given a set of linear combinations of pairs of these numbers. The problem statement is as follows: suppose there is a set of numbers x_1, x_2, ..., x_n, and we are given a set of differences L_ij = x_i - x_j, but we don't know the indices i and j. The goal is to find as many of the original numbers as possible from the given differences.
+
+**Decision Variables**
+
+The main decision variables in this problem are:
+- `n`: the length of the solution, representing the number of original numbers.
+- `x`: an array of variables representing the original numbers, where `x[i]` is the i-th original number.
+
+**Constraints**
+
+The key constraints in this problem can be described as follows:
+- All the original numbers must be different and in increasing order.
+- The first original number is 1, and the last original number is the maximum possible value.
+- The sum of the differences between consecutive original numbers is equal to the sum of the differences between consecutive given differences, plus the first given difference.
+- For each given difference, there must exist a pair of original numbers whose difference is equal to the given difference.
+- For each pair of original numbers, their difference must be present in the given differences.
+
+**Objective**
+
+The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The goal is to recover as many of the original numbers as possible from the given differences.

@@ -1,0 +1,5 @@
+3 Coins Problem
+The problem is about flipping coins to make them all show the same side, either heads or tails, in just three moves.
+The main variables are the coins, which can be either heads (0) or tails (1), and the moves, which are the steps taken to flip the coins.
+The basic restrictions are that only one coin can be flipped at a time, and the coins must all be either heads or tails after three moves.
+The goal is to find a sequence of three moves that makes all the coins show the same side, either all heads or all tails.

@@ -1,0 +1,12 @@
+The Open Among problem.
+The Open Among problem is about finding a subset of variables that take their values from a given set of values within a specific range of positions.
+The main decision variables are: 
+- `variables`: an array of variables representing the values to be assigned, 
+- `nvar`: the number of variables that take their value from the set `values`, 
+- `s`: the set of positions where the `open_among` constraint is applied, 
+- `values`: the set of allowed values.
+The key constraints are: 
+- `s` defines the range of positions to consider, 
+- `nvar` specifies the exact number of variables within `s` that must take their value from `values`, 
+- `open_among` ensures that exactly `nvar` variables within the positions in `s` have values from `values`.
+The objective of the Open Among problem is to satisfy the given constraints, specifically the `open_among` constraint, which is a satisfaction problem rather than an optimization problem, meaning it aims to find a solution that meets all the constraints rather than minimizing or maximizing a particular objective function.

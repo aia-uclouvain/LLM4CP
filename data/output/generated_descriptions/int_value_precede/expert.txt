@@ -1,0 +1,5 @@
+name: Int Value Precede Problem
+description: The Int Value Precede problem is a constraint satisfaction problem that involves finding an assignment of values to a set of variables such that if a specific value T occurs in the assignment, its first occurrence must be preceded by an occurrence of another specific value S.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x$ is an array of decision variables representing the assignment of values to a set of $n$ variables, and each $x_i$ is a variable that can take on integer values between 0 and 6.
+constraints: $cp1d(x, [4, 0, 6, 1, 0]) \wedge int\_value\_precede(0, 1, x)$, where $cp1d(x, y)$ is a constraint that enforces $x$ to be equal to $y$, and $int\_value\_precede(S, T, x)$ is a constraint that enforces the first occurrence of $T$ in $x$ to be preceded by an occurrence of $S$ if $T$ occurs in $x$.
+objective: The objective of the problem is to find a satisfying assignment of values to the variables $x$ such that all constraints are satisfied, which is achieved by solving the problem with the $solve satisfy$ statement in MiniZinc.

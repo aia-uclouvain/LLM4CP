@@ -1,0 +1,5 @@
+Pi Day Sudoku 2008
+The problem is about solving a special kind of Sudoku puzzle where each row, column, and region must contain the first twelve digits of pi, including repeats. 
+The main variables are the numbers in the Sudoku grid, which represent the digits of pi. 
+The basic restrictions are that each row, column, and region must contain exactly the first twelve digits of pi, with the correct number of repeats for each digit. 
+The goal of the problem is to fill in the Sudoku grid so that it satisfies all the restrictions, effectively solving the puzzle.

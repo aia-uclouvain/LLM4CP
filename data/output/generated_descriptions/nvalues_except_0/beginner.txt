@@ -1,0 +1,14 @@
+Name of the problem: nvalues_except_0
+
+The problem is about counting how many different numbers (except 0) are in a list of numbers. 
+
+The main variables are: 
+- variables: a list of numbers that can be between 0 and a certain maximum value (in this case, 6).
+- limitx: a single number that we want to compare with the count of different numbers in the list.
+- relop: a code that represents a comparison operator (like less than, equal to, or greater than).
+
+The basic restrictions or rules are: 
+- The list of numbers (variables) can only contain numbers between 0 and the maximum value.
+- The comparison operator (relop) is used to compare the count of different numbers in the list with the limitx value.
+
+The goal of the problem is to find a list of numbers (variables) such that the count of different numbers (except 0) in the list satisfies the comparison operator (relop) with the limitx value. In other words, the problem wants to check if the number of distinct non-zero values in the list is equal to, less than, greater than, or within a certain range of the limitx value.

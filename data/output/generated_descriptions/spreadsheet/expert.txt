@@ -1,0 +1,5 @@
+name: Spreadsheet Problem
+description: The problem models a simple spreadsheet with cells B1, B4, B5, C4, C5, D4, D5, E7, and E8, where some cells have fixed values and others are calculated based on these values using basic arithmetic operations.
+variables: $B1, B4, B5, C4, C5, D4, D5, E7, E8$ - These are the decision variables representing the values of the cells in the spreadsheet, where $B1, B4, B5, C4, C5$ are input values and $D4, D5, E7, E8$ are calculated values.
+constraints: $B1 = 0.17, B4 = 3.5, B5 = 1.7, C4 = 1.5, C5 = 4.5, D4 = B4 \times C4, D5 = B5 \times C5, E7 = D4 + D5, E8 = E7 \times (1.0 + B1)$ - These constraints represent the fixed values of some cells and the calculations used to determine the values of other cells.
+objective: satisfy - The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy all the given constraints and calculate the values of the cells in the spreadsheet.

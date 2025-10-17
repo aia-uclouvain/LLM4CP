@@ -1,0 +1,26 @@
+**Team Formation Problem**
+The problem is about forming teams of employees with certain constraints to ensure a balanced and diverse team composition.
+
+**Decision Variables**
+The main decision variables are:
+- `team`: a set of employees assigned to each team
+- `team_departments`: the number of employees from each department in each team
+- `team_sex`: the number of employees of each sex in each team
+- `team_size`: the size of each team
+- `which_team`: the team assigned to each employee
+
+**Constraints**
+The key constraints are:
+- Each team should have a similar size, with a maximum difference of one employee
+- Each team should have an even distribution of sexes and departments
+- Managers should be assigned to different teams if possible
+- Employees can only be assigned to one team
+- The number of employees in each team from each department and sex should be consistent with the overall team size
+
+**Objective**
+The objective is to minimize the number of violations of the constraints, specifically:
+- The difference in the number of males and females in each team
+- The difference in the number of employees from each department in each team
+- The number of managers assigned to the same team
+
+In other words, the goal is to form teams that are as balanced and diverse as possible, while also separating managers and respecting the constraints on team size and composition.

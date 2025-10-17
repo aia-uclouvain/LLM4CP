@@ -1,0 +1,5 @@
+The problem is called the Remarkable Sequence problem, also known as Langford's Number problem. 
+It is about finding a sequence of numbers where each number from 1 to 9 appears exactly three times, and the distance between consecutive occurrences of each number is equal to the number itself. 
+The main decision variables are the elements of the array `a`, which represents the sequence of numbers, where `a[i]` is the number at position `i` in the sequence. 
+The key constraints are that each number appears exactly three times, the distance between consecutive occurrences of each number is equal to the number itself, and the sequence consists of 27 elements. 
+The problem's objective is to find all possible remarkable sequences that satisfy these constraints, with no specific objective function to minimize or maximize, but rather to generate all valid solutions.

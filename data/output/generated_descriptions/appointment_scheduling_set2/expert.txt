@@ -1,0 +1,5 @@
+name: Appointment Scheduling Problem
+description: The problem involves scheduling N people into N time slots, where each person has a set of available time slots. The goal is to find a schedule that assigns each person to a time slot such that every person is assigned to exactly one time slot and every time slot has exactly one person assigned to it.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the assignment of person $i$ to a time slot, and its value is an integer between 1 and $n$.
+constraints: $\forall i \in \{1, 2, ..., n\}: x_i \in s_i \wedge \text{alldifferent}(x)$, where $s_i$ is the set of available time slots for person $i$, and the alldifferent constraint ensures that each time slot is assigned to at most one person.
+objective: The problem is a satisfaction problem, meaning that the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

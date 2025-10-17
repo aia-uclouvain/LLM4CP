@@ -1,0 +1,5 @@
+name: Safe Cracking Puzzle
+description: The Safe Cracking Puzzle is a classic problem in constraint programming where the goal is to find a combination of numbers that satisfies a set of given conditions, allowing the safe to be opened. The problem involves a series of mathematical relationships and constraints between the numbers, requiring a solution that meets all the conditions simultaneously.
+variables: $C_1, C_2, C_3, C_4, C_5, C_6, C_7, C_8, C_9$, which represent the combination of numbers on the safe's dial, with each variable $C_i$ being a digit from 1 to 9.
+constraints: $C_4 - C_6 = C_7 \wedge C_1 \cdot C_2 \cdot C_3 = C_8 + C_9 \wedge C_2 + C_3 + C_6 < C_8 \wedge C_9 < C_8 \wedge \forall i \in \{1, \ldots, 9\} (C_i \neq i)$, which are the conditions that the combination of numbers must satisfy, including arithmetic relationships, inequalities, and a constraint that each digit must be different from its position.
+objective: satisfy, which means the objective is to find a solution that satisfies all the constraints, without any specific optimization goal such as minimizing or maximizing a particular value.

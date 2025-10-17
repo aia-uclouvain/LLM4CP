@@ -1,0 +1,12 @@
+name: Quasigroup Existence Problem
+description: The Quasigroup existence problem is a classic problem in constraint programming that involves finding an m-order quasigroup, which is an mxm multiplication table of integers 1..m, where each element occurs exactly once in each row and column and certain multiplication axioms hold.
+variables: $quasiGroup_{i,j}$, where $i,j \in \{0,1,...,n-1\}$, are decision variables representing the value at row $i$ and column $j$ in the quasigroup table, which is an $n \times n$ matrix.
+constraints: 
+$\forall i \in \{0,1,...,n-1\}: \forall j \in \{0,1,...,n-1\}: quasiGroup_{i,j} \in \{0,1,...,n-1\}$, 
+$\forall i \in \{0,1,...,n-1\}: \text{all\_different}([quasiGroup_{i,j}]_{j \in \{0,1,...,n-1\}})$, 
+$\forall j \in \{0,1,...,n-1\}: \text{all\_different}([quasiGroup_{i,j}]_{i \in \{0,1,...,n-1\}})$, 
+$\forall i \in \{0,1,...,n-1\}: \forall j \in \{0,1,...,n-1\}: quasiGroup_{quasiGroup_{quasiGroup_{i,j},j},j} = i$, 
+$\forall i \in \{0,1,...,n-1\}: \forall j \in \{0,1,...,n-1\}: (quasiGroup_{i,j} = i) \leftrightarrow (quasiGroup_{j,i} = i)$, 
+$\forall i \in \{0,1,...,n-1\}: quasiGroup_{i,n-1} + 2 \geq i$, 
+are constraints that ensure the quasigroup properties, including row and column uniqueness, multiplication axioms, and symmetry-breaking constraints.
+objective: The objective of the problem is to find a feasible solution, i.e., to satisfy all the constraints, as there is no explicit objective function to minimize or maximize.

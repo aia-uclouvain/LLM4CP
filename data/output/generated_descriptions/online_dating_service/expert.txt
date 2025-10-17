@@ -1,0 +1,21 @@
+name: Online Dating Decision Services Problem
+description: The problem is to find the best matches between people based on their preferences, such as age, gender, city, and interests, while satisfying certain constraints, such as acceptable age range, matching interests, and reciprocal matches.
+variables: $x_p, y_p, age\_diff_p, common\_interests_p, complete\_match_p, z$ 
+These variables represent the following: 
+- $x_p$ is the best match for person $p$, 
+- $y_p$ is the set of people matched to person $p$, 
+- $age\_diff_p$ is the age difference between person $p$ and their best match, 
+- $common\_interests_p$ is the number of common interests between person $p$ and their best match, 
+- $complete\_match_p$ is a binary variable indicating whether person $p$ is in a complete match (i.e., they are each other's best match), 
+- $z$ is the total score of all matches, calculated as the sum of common interests minus the sum of age differences.
+constraints: $\forall p \in name: x_p \neq p \land people[x_p, Sex] \in gender_p \land people[x_p, Age] \in people[p, MinAge]..people[p, MaxAge] \land people[x_p, City] = people[p, City] \land common\_interests_p = |interests[x_p] \cap interests_p| \land common\_interests_p \geq people[p, MinInterests] \land age\_diff_p = |people[p, Age] - people[x_p, Age]| \land complete\_match_p = \begin{cases} 1 & \text{if } p = x[x_p] \\ 0 & \text{otherwise} \end{cases}$
+These constraints ensure that:
+- a person is not matched to themselves, 
+- the gender of the best match is acceptable, 
+- the age of the best match is within the acceptable range, 
+- the city of the best match is the same, 
+- the number of common interests is at least the minimum required, 
+- the age difference is calculated correctly, 
+- a complete match is detected correctly.
+objective: maximize $z$ = $10 \times \sum common\_interests_p - \sum age\_diff_p$ 
+The objective is to maximize the total score of all matches, which is calculated as the sum of common interests minus the sum of age differences, with a weight of 10 for common interests.

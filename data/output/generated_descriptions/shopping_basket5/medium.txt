@@ -1,0 +1,22 @@
+**Shopping Basket Optimization Problem**
+
+The Shopping Basket Optimization Problem is a classic constraint programming problem that involves finding the optimal way to purchase a set of items from multiple shops, each with its own prices and delivery costs.
+
+**Decision Variables**
+
+The main decision variable in this problem is `x`, which represents the shop to buy each item from. Specifically, `x[i]` is the shop where item `i` should be purchased from.
+
+**Constraints**
+
+The key constraints in this problem can be described in plain language as follows:
+
+* Each item must be purchased from exactly one shop.
+* If an item is not available at a shop, it cannot be purchased from that shop.
+* The total cost of purchasing all items from a shop, including delivery costs, must be minimized.
+* If the total cost of purchasing items from a shop is below a certain limit, a delivery cost is added to the total cost.
+
+**Objective**
+
+The objective of the problem is to minimize the total cost of purchasing all items, including delivery costs. This is achieved by finding the optimal assignment of items to shops, taking into account the prices and delivery costs of each shop.
+
+In summary, the Shopping Basket Optimization Problem is a complex constraint programming problem that requires finding the optimal way to purchase a set of items from multiple shops, while minimizing the total cost, including delivery costs. The problem involves decision variables that represent the shop to buy each item from, and constraints that ensure each item is purchased from exactly one shop, and that the total cost is minimized.

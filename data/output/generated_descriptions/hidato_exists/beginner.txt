@@ -1,0 +1,5 @@
+Hidato Puzzle
+The Hidato puzzle is about connecting numbered tiles in a grid to form a continuous path. 
+The main variables are the grid size (r and c) and the values of the tiles (x). 
+The basic restrictions are that each number can only be used once, and consecutive numbers must be adjacent to each other (horizontally, vertically, or diagonally). 
+The goal is to find a solution that connects all the numbers from 1 to the total number of tiles in the grid.

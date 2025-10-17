@@ -1,0 +1,16 @@
+Max Flow Problem
+The Max Flow problem is about finding the maximum amount of flow that can be sent through a network from a source node to a sink node, without exceeding the capacity of any edge in the network.
+
+The main decision variables are:
+- `x[i, j]`: the amount of flow sent from node `i` to node `j`.
+- `outFlow[i]`: the total amount of flow sent out of node `i`.
+- `inFlow[i]`: the total amount of flow sent into node `i`.
+- `total`: the total amount of flow sent from the source node to all other nodes.
+
+The key constraints are:
+- The flow sent from one node to another cannot exceed the capacity of the edge between them.
+- The total amount of flow sent out of a node must be equal to the total amount of flow sent into that node, except for the source and sink nodes.
+- The source node sends flow to other nodes, but does not receive any flow.
+- The sink node receives flow from other nodes, but does not send any flow.
+
+The objective of the problem is to maximize the total amount of flow sent from the source node, which is represented by the `total` variable. In other words, the goal is to find the maximum amount of flow that can be sent through the network without exceeding the capacity of any edge.

@@ -1,0 +1,5 @@
+name: Distance Between
+description: The Distance Between problem is a constraint satisfaction problem that involves finding the distance between two sets of variables, where the distance is defined as the number of times a certain condition is true. The condition is that a comparison operator holds for one set of variables but not for the other set.
+variables: $x_1, x_2, ..., x_n, y_1, y_2, ..., y_n, d$ - These are the decision variables, where $x_i$ and $y_i$ are arrays of variables representing the two sets, and $d$ is the distance between the two sets.
+constraints: $x = [3,4,6,2,4], y = [2,6,9,3,6], distance\_between(d, x, y, -2)$ - These constraints define the values of the $x$ and $y$ arrays and the distance between them, where the distance is calculated using the $distance\_between$ predicate with a comparison operator $<$.
+objective: maximize $d$ - The objective of the problem is to maximize the distance $d$ between the two sets of variables.

@@ -1,0 +1,16 @@
+Rogo problem
+The Rogo problem is about finding a path in a grid that collects as many points as possible. Imagine you are in a maze and you want to find a way to visit as many treasure chests as you can. The path must be a certain length and must not visit the same spot twice.
+
+The main variables are: 
+- x and y, which represent the coordinates of each step in the path, like the address of each spot you visit.
+- points, which represent the points collected at each step, like the treasure you find in each chest.
+- sum_points, which is the total number of points collected, like the total amount of treasure you find.
+
+The basic restrictions or rules are: 
+- The path must be a certain length.
+- You cannot visit the same spot twice.
+- You cannot go through black cells, which are like obstacles in the maze.
+- Each step must be next to the previous step, like moving to an adjacent room.
+- The path must start and end at the same spot, like closing a loop.
+
+The goal of the problem is to maximize the total number of points collected, which means finding the path that visits the most treasure chests.

@@ -1,0 +1,5 @@
+Send More Money problem. 
+This problem is about finding a way to assign numbers to letters in a mathematical equation so that the equation is true. 
+The main variables are the letters (S, E, N, D, M, O, R, Y) which represent digits from 0 to 9. 
+The basic restrictions are that each letter must represent a unique digit, and when we add up the numbers represented by the letters on the left side of the equation, it must equal the sum of the numbers on the right side, taking into account any carry-over from adding numbers. 
+The goal is to find an assignment of digits to letters that makes the equation true, with the restriction that the letter "M" cannot represent the digit 0.

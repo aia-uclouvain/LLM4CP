@@ -1,0 +1,9 @@
+The problem is known as the Robot Kinematic Application. 
+It is about finding the values of sine and cosine of six joints in a robot arm that satisfy a set of given constraints, which are derived from the kinematic equations of the robot. 
+The main decision variables are two arrays, s and c, where s[i] and c[i] represent the sine and cosine of the angle of the i-th joint in the robot arm. 
+The key constraints are: 
+- each sine and cosine value must be non-negative and their squares must sum up to 1 (which is a fundamental property of sine and cosine functions), 
+- and a set of linear and nonlinear equations that relate the sine and cosine values of different joints, which are derived from the kinematic equations of the robot. 
+These constraints can be thought of as restrictions on the possible movements of the robot arm. 
+The problem's objective is to find a solution that satisfies all the constraints, which means finding a set of sine and cosine values for the joints that make the robot arm reach a specific position or satisfy certain conditions. 
+In other words, the goal is not to minimize or maximize a specific value, but rather to find a feasible solution that meets all the requirements.

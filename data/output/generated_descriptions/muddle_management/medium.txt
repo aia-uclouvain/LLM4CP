@@ -1,0 +1,12 @@
+Meeting Scheduling Problem
+The Meeting Scheduling Problem is about scheduling a series of meetings for six managers with different attendance requirements, while respecting certain precedence constraints and minimizing the number of timeslots needed.
+
+The main decision variables are the time slots for each meeting, represented by the array `x`, where `x[m]` denotes the time slot assigned to meeting `m`. The variable `z` represents the maximum time slot used, which is the objective to be minimized.
+
+The key constraints are:
+- Each manager must attend their required meetings in different time slots.
+- The meeting on sales must happen before the one on marketing.
+- Both production and quality control meetings must happen before the timetabling meeting.
+- Each meeting can be assigned to any available time slot, but the same time slot cannot be used for two meetings that a manager is required to attend.
+
+The objective of the problem is to minimize the maximum time slot used, `z`, which represents the smallest possible number of timeslots needed to schedule all the meetings while satisfying the constraints. In other words, the goal is to find a schedule that allows the managers to finish their meetings as early as possible, so they can attend their golf game after lunch.

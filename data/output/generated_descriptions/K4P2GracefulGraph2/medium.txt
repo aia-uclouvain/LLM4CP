@@ -1,0 +1,5 @@
+The name of the problem is the Graceful Graph problem. 
+This problem is about finding a labeling of the nodes in a graph such that the absolute difference between the labels of two nodes connected by an edge is unique for each edge. 
+The main decision variables are `nodes`, which represent the labels assigned to each node in the graph, `graph`, which represents the edges in the graph, and `edges`, which represent the absolute difference between the labels of two nodes connected by an edge. 
+The key constraints are that the absolute difference between the labels of two nodes connected by an edge must be equal to the corresponding edge label, all edge labels must be unique, and all node labels must be unique. 
+The problem's objective is to find a labeling that satisfies these constraints, with no explicit objective function to minimize or maximize, the goal is to find a feasible solution.

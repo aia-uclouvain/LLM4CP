@@ -1,0 +1,5 @@
+name: Random Instance Generation with Constraint Satisfaction
+description: This problem generates random instances of a constraint satisfaction problem and solves them using a MiniZinc model. The model creates an array of random integers and uses them to define constraints for a set of decision variables. The goal is to find values for the decision variables that satisfy all the constraints.
+variables: $x[1..n]$ - These are the decision variables, which are integers that need to be assigned values such that the constraints are satisfied. They are defined as an array of integers, where $n$ is the number of variables.
+constraints: $\forall i \in 1..n-1: x[i] \geq 0 \land x[i+1] + x[i] = rand[i] + rand[i+1]$ - These constraints ensure that each decision variable is non-negative and that the sum of each pair of consecutive variables equals the sum of the corresponding random integers.
+objective: satisfy - The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

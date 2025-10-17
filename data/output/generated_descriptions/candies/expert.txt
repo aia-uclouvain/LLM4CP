@@ -1,0 +1,5 @@
+name: Candies Problem
+description: The problem is about a teacher, Alice, who wants to distribute candies to her students based on their performance ratings. Each student must receive at least one candy, and if a student has a higher rating than their neighbor, they must receive more candies. The goal is to minimize the total number of candies given.
+variables: $x_1, x_2, ..., x_n$ - These are the decision variables representing the number of candies each student receives, where $n$ is the number of students. $z$ is an auxiliary variable representing the total number of candies given, where $z = \sum_{i=1}^{n} x_i$.
+constraints: $x_i \geq 1 \forall i \in \{1, 2, ..., n\}$, $x_{i-1} < x_i \forall i \in \{2, 3, ..., n\}$ if $inp_{i-1} < inp_i$, $x_{i-1} > x_i \forall i \in \{2, 3, ..., n\}$ if $inp_{i-1} > inp_i$ - These constraints ensure that each student receives at least one candy, and that the number of candies given to each student is consistent with their performance rating compared to their neighbors.
+objective: Minimize $z$ - The objective is to minimize the total number of candies given, which is represented by the variable $z$.

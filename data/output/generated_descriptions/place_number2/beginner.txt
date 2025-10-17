@@ -1,0 +1,5 @@
+Number Cross Puzzle
+The problem is about placing numbers in a cross-shaped grid so that no two adjacent cells have numbers that are next to each other.
+The main variables are the numbers to be placed in the grid, which are represented by the array x. Each number in the array corresponds to a cell in the grid.
+The basic restrictions are that each number can only be used once, and no two adjacent cells can have numbers that are next to each other. Adjacent cells are those that are directly above, below, to the left, or to the right of each other, as well as diagonally adjacent.
+The goal of the problem is to find all possible solutions that satisfy these restrictions, given a specific grid size, such as a 12-sized cross.

@@ -1,0 +1,5 @@
+Matching problem of OR'ers. 
+This problem is about matching people with each other based on their compatibility scores. 
+The main variables are the pairs of people (x) and their corresponding compatibility scores (s). 
+The basic restrictions are that each person can only be matched with one other person, and the pairs must be unique. 
+The goal of the problem is to maximize the total compatibility score of all the pairs.

@@ -1,0 +1,12 @@
+Narcissistic Numbers problem.
+This problem is about finding special numbers that are equal to the sum of a certain power of their digits. 
+The main variables are: 
+- n, which is the number of digits in the number, 
+- x, which is an array representing the digits of the number, 
+- num, which is the number itself, 
+- base, which is the base of the number system (like 10 for decimal).
+The basic restrictions are: 
+- the number must be greater than 0, 
+- the first digit must be greater than 0, 
+- the number must be equal to the sum of the nth power of its digits.
+The goal of the problem is to find a number that satisfies these conditions, specifically a number that is equal to the sum of the nth power of its digits.

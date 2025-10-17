@@ -1,0 +1,11 @@
+Open Atleast Problem
+The Open Atleast problem is about ensuring that a certain number of variables within a specified subset of a collection are assigned a specific value.
+The main decision variables are: 
+- `variables`: an array of variables representing the collection of values, 
+- `s`: a set of indices representing the subset of the collection, 
+- `n`: the minimum number of variables required to have the specific value, 
+- `value`: the specific value that the variables should be assigned to.
+The key constraints are: 
+- the `open_atleast` constraint, which ensures that at least `n` variables in the subset `s` of the collection `variables` are assigned the `value`, 
+- the `cp1d` constraint, which checks if two arrays are identical.
+The problem's objective is to satisfy all the given constraints, specifically the `open_atleast` constraint, which is demonstrated with a specific example where `s = {2,3,4}`, `n = 2`, `value = 4`, and `variables = [4,2,4,4]`.

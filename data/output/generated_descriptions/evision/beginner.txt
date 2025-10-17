@@ -1,0 +1,5 @@
+Equal Vision puzzle
+The problem is about placing watchmen in a grid so that each watchman can see a certain number of empty cells. 
+The main variables are x, which represents whether a cell is empty or occupied, and n, which represents the number of empty cells visible to a watchman in a cell.
+The basic restrictions are that each watchman can see a certain number of empty cells in four directions (up, down, left, right, and two diagonals), and that the number of visible empty cells is limited by the presence of other watchmen.
+The goal is to minimize the total number of empty cells, which means maximizing the number of watchmen that can be placed in the grid while still meeting the visibility requirements.

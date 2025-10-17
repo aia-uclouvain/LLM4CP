@@ -1,0 +1,5 @@
+The problem is called the Alldifferent_on_intersection problem. 
+It is about ensuring that the values common to two collections occur only once in each collection. 
+The main decision variables are x and y, which represent two arrays of integers. 
+The key constraints are that the values in x and y must match given predefined arrays, and the alldifferent_on_intersection constraint ensures that common values between x and y appear only once in each. 
+The problem's objective is to find an assignment of values to x and y that satisfies these constraints, with no explicit minimization or maximization goal, as the solve satisfy statement in the model indicates that the goal is to find a feasible solution.

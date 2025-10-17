@@ -1,0 +1,5 @@
+Five Element problem
+The problem is about selecting five numbers from a 5x5 grid of numbers, such that no two numbers are from the same row or column, and the largest of these five numbers is as small as possible.
+The main variables are x and y. The variable x is like a map that shows which numbers are selected from the grid, and the variable y represents the five selected numbers. 
+The basic restrictions are that only one number can be chosen from each row and each column, and the chosen numbers must come from the given grid.
+The goal is to minimize the largest of the five chosen numbers, meaning we want to find the smallest possible maximum value among the selected numbers.

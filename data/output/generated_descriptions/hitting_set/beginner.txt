@@ -1,0 +1,5 @@
+Vertex Cover problem
+The Vertex Cover problem is about finding the smallest set of nodes in a graph that connects to every other node. 
+The main variables are the nodes in the graph and a set of nodes called the "hitting set" or "vertex cover". 
+The basic restrictions are that every node in the graph must be connected to at least one node in the hitting set. 
+The goal is to minimize the size of the hitting set, which means finding the smallest set of nodes that still connects to every other node.

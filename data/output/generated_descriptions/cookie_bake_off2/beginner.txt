@@ -1,0 +1,5 @@
+Cookie Bake Off problem
+The problem is about finding the best recipe for baking cookies that will get a perfect score of 100 from a judge. The recipe consists of three ingredients: sugar, flour, and butter. The total amount of these ingredients is 8 cups. 
+The main variables are the amounts of sugar, flour, and butter in the recipe, represented by x. These variables determine how much of each ingredient to use in the recipe.
+The basic restrictions or rules of the problem are that the total amount of the three ingredients must be 8 cups, and the amounts of sugar, flour, and butter must be non-negative. The problem also uses data from 15 previous recipes, including the amounts of sugar, flour, and butter used and the corresponding judge's scores.
+The goal of the problem is to find the recipe that has the best chance of achieving a perfect score of 100, by minimizing the difference between the predicted scores and the actual scores of the previous recipes.

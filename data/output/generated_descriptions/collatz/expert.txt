@@ -1,0 +1,11 @@
+name: Collatz Conjecture Problem
+
+description: The Collatz Conjecture is a famous unsolved problem in mathematics, which concerns a sequence defined as follows: start with any positive integer, then each term is obtained from the previous term as follows: if the previous term is even, the next term is one half the previous term, and if the previous term is odd, the next term is 3 times the previous term plus 1. The conjecture is that no matter what value of the starting number, the sequence will always reach 1. The problem modeled here is to find the sequence of numbers that starts with a given number n and reaches 1, and to determine the length of this sequence.
+
+variables: $x_1, x_2, ..., x_{max\_len}, len$ 
+These are the decision variables, where $x_i$ represents the i-th number in the Collatz sequence, and $len$ represents the length of the sequence until it reaches 1 for the first time.
+
+constraints: $x_1 = n$, $x_i \geq 1$, $x_{i-1} \geq 1$, $x_i = \frac{x_{i-1}}{2}$ if $x_{i-1}$ is even, $x_i = \frac{3x_{i-1}+1}{2}$ if $x_{i-1}$ is odd, $\exists i \in \{1, 2, ..., max\_len\}$ such that $x_i = 1$ and $len = i-1$ and $\forall j \in \{1, 2, ..., i-1\}$, $x_j > 1$
+These constraints ensure that the sequence starts with the given number n, that each number in the sequence is obtained from the previous one according to the Collatz rules, that the sequence reaches 1, and that the length of the sequence is correctly calculated.
+
+objective: The objective of the problem is to find a sequence of numbers that satisfies the Collatz rules and reaches 1, and to determine the length of this sequence. The problem does not have a specific objective function to minimize or maximize, but rather it is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints.

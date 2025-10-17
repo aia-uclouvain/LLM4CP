@@ -1,0 +1,5 @@
+Map coloring problem. 
+This problem is about coloring a map of Australia with different colors, so that no two neighboring countries have the same color. 
+The main variables are the countries (represented by the variable "country") and the connections between them (represented by the variable "connections"), which show which countries share a border. 
+The basic restrictions are that each country must be colored, and no two neighboring countries can have the same color. 
+The goal of the problem is to find a way to color the map that satisfies these rules, and there are also alternative goals such as minimizing or maximizing the total "cost" of the coloring, where each color has a different cost.

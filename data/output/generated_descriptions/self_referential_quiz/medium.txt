@@ -1,0 +1,5 @@
+Self-Referential Quiz puzzle 
+The Self-Referential Quiz puzzle is a classic constraint programming problem where a set of questions are given, and each question refers to the answers of other questions. 
+The main decision variables in this problem are Q1 to Q10, which represent the answers to each question. Each answer is an element of the set {1, 2, 3, 4, 5}, where 1 corresponds to option A, 2 to option B, and so on. 
+The key constraints in this problem can be described as follows: each question's answer depends on the answers of other questions. For example, Q1's answer depends on whether Q4's answer is A, and Q2's answer depends on whether two consecutive questions have the same answer. The constraints also involve conditions such as "the first question with answer A" or "the only two consecutive questions with identical answers". 
+The objective of this problem is to find an assignment of answers to each question that satisfies all the given constraints. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that meets all the conditions.

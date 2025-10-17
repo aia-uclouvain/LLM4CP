@@ -1,0 +1,5 @@
+name: Least Difference Problem
+description: The Least Difference Problem is a constraint programming problem where the goal is to find two numbers, X and Y, that are formed by using the digits 0-9 exactly once, such that the difference between X and Y is minimized.
+variables: A, B, C, D, E, F, G, H, I, J, X, Y, difference. These variables represent the digits of the two numbers X and Y, where A, B, C, D, E are the digits of X and F, G, H, I, J are the digits of Y, and X and Y are the resulting numbers, and difference is the difference between X and Y.
+constraints: scalar_product(bases, [A,B,C,D,E], X), scalar_product(bases, [F,G,H,I,J], Y), all_different(FD), difference > 0, difference = X - Y. These constraints ensure that the numbers X and Y are formed by using the digits 0-9 exactly once, that the difference between X and Y is positive, and that the difference is calculated correctly.
+objective: minimize difference

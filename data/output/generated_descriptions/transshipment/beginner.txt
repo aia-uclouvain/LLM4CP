@@ -1,0 +1,12 @@
+Transshipment problem
+The problem is about transporting goods from some cities to other cities in the most cost-effective way. 
+The main variables are: 
+- cities: the places where goods are sent from or received
+- cost: how much it costs to transport goods between two cities
+- supply: how much goods each city has to send
+- demand: how much goods each city needs to receive
+- delivery: how much goods are actually transported between two cities
+The basic restrictions or rules are: 
+- each city can only send as much goods as it has
+- each city must receive at least as much goods as it needs
+The goal of the problem is to minimize the total cost of transporting goods between cities.

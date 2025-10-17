@@ -1,0 +1,5 @@
+Round Robin Tournament Scheduling
+The problem is about organizing a sports tournament where each team plays every other team the same number of times, with no team playing another team more than once in the same week. 
+The main variables are teams, weeks, and periods, which represent the different teams in the tournament, the weeks in which the tournament takes place, and the time slots within each week. 
+The basic restrictions are that each team plays every other team exactly once, each team plays at most two times in each period, and all matches are different with no team playing twice against another team. 
+The goal of the problem is to find a schedule for the tournament that satisfies these restrictions, essentially creating a fair and balanced schedule for all teams.

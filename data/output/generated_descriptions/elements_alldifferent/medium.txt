@@ -1,0 +1,6 @@
+**Elements Alldifferent Problem**
+The Elements Alldifferent problem is a classic constraint programming problem that involves finding a one-to-one correspondence between two sets of items.
+The problem revolves around two main entities: a table and a set of items, both of which have specific values associated with them.
+The main decision variables in this problem are the `element_table` and `items` arrays, which represent the table and the set of items, respectively. Each element in these arrays is a pair of values that must be matched between the table and the items.
+The key constraints in this problem are that each item must be equal to one of the entries in the table, and all the variables in the items array must take distinct values. In other words, each item in the set must be uniquely matched with an entry in the table, and no two items can be matched with the same entry.
+The objective of the Elements Alldifferent problem is to satisfy these constraints, meaning that the goal is to find an assignment of values to the `element_table` and `items` arrays such that all the constraints are met. This is a satisfaction problem, rather than an optimization problem, so there is no objective function being minimized or maximized. The problem is simply to find a feasible solution that satisfies all the constraints.

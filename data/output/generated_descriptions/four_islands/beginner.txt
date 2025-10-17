@@ -1,0 +1,5 @@
+Four Islands puzzle 
+The problem is about figuring out the names of four islands, what each island exports, and what tourist attraction each island has. 
+The main variables are the names of the islands (Pwana, Quero, Rayou, Skern), what they export (alabaster, bananas, coconuts, durian fruit), and their tourist attractions (hotel, ice skating rink, jai alai stadium, koala preserve). 
+The basic restrictions are that each island has a unique name, export, and attraction, and that certain islands are connected by bridges in specific ways. For example, the island with the koala preserve is south of Pwana, and the island with the resort hotel is east of the island that exports durian fruit. 
+The goal of the problem is to figure out the name, export, and tourist attraction of each island, given the clues provided.

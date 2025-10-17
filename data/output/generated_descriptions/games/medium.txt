@@ -1,0 +1,5 @@
+The name of the problem is the Two-Person Zero-Sum Game problem. 
+This problem is about finding the optimal mixed strategy for two players in a game where one player's gain is equal to the other player's loss. 
+The main decision variables are X, which represents the probability of each strategy for the column player, and w, which represents the expected payoff for the row player. 
+The key constraints are that the expected payoff for the row player must be greater than or equal to zero for all possible strategies, and the probabilities of the column player's strategies must sum to one. 
+The problem's objective is to maximize the expected payoff w for the row player, which is equivalent to minimizing the expected loss for the column player.

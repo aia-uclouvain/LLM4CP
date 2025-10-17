@@ -1,0 +1,5 @@
+name: In Same Partition Problem
+description: The In Same Partition Problem is a constraint satisfaction problem where the goal is to assign two variables to values that belong to the same partition of a given collection of sets. The problem involves finding values for two variables, var1 and var2, such that they both belong to the same set in the collection.
+variables: $s, var1, var2$ - These are the decision variables where $s$ is an array of sets representing the partitions, and $var1$ and $var2$ are integer variables to be assigned to values in the same partition.
+constraints: $cp1d(s, [{1,3}, {4}, {2,6}]), in\_same\_partition(var1, var2, s)$ - The constraints ensure that the array of sets $s$ is equal to the given collection of sets, and that $var1$ and $var2$ are assigned to values in the same partition.
+objective: satisfy - The objective of the problem is to find a satisfying assignment for the variables, i.e., to find values for $var1$ and $var2$ that belong to the same partition in the collection of sets.

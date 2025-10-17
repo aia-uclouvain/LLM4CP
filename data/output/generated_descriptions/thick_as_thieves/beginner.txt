@@ -1,0 +1,5 @@
+Thick as Thieves 
+The problem is about figuring out who committed a robbery at a jewelry store. 
+The main variables are whether each of six suspects - Artie, Bill, Crackitt, Dodgy, Edgy, and Fingers - is guilty or not, and whether each of them told the truth or lied. 
+The basic restrictions are that at least four of the suspects are innocent and tell the truth, while the guilty ones lie, and that the getaway car was too small to hold more than two people. 
+The goal is to determine who committed the robbery, based on the statements made by the suspects and the rules about who is telling the truth and who is lying.

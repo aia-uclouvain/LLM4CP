@@ -1,0 +1,5 @@
+Shift Scheduling Problem
+The Shift Scheduling Problem is a classic constraint programming problem that involves scheduling tasks into shifts while satisfying certain constraints. 
+The main decision variables in this problem are the tasks, which are represented by their origin and end times, and the shifts, which are represented by an array of variables that identify the shift for each task. 
+The key constraints in this problem are that the difference between the end of the last task of a shift and the origin of the first task of a shift should not exceed a certain maximum range, and that two tasks belong to the same shift if they are close enough to each other or overlap. 
+The objective of this problem is to find a feasible schedule that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

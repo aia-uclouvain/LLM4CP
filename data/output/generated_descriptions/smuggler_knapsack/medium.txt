@@ -1,0 +1,8 @@
+The 0/1 Knapsack Problem
+The 0/1 knapsack problem is a classic problem in constraint programming that involves finding the optimal way to pack a set of items of different sizes and values into a knapsack of limited capacity. 
+
+The main decision variables in this problem are the array `x`, where `x[i]` represents the quantity of item `i` to include in the knapsack. 
+
+The key constraints in this problem are that the total size of the items included in the knapsack cannot exceed its capacity, which is represented by the constraint `sum(i in 1..n) (x[i]*units[i]) <= c`. This means that the total size of all items packed must be less than or equal to the knapsack's capacity `c`. 
+
+The objective of the 0/1 knapsack problem is to maximize the total value of the items included in the knapsack, which is represented by the variable `TotalProfit`. This is calculated by summing the product of the quantity of each item `x[i]` and its corresponding profit `profits[i]`. The goal is to find the combination of items that results in the highest total profit while not exceeding the knapsack's capacity.

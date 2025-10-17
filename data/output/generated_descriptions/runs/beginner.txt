@@ -1,0 +1,5 @@
+Number of Runs in a Sequence problem. 
+This problem is about finding a sequence of numbers where some numbers can be the same, and then counting how many times the sequence "switches" to a different number. 
+The main variables are x, which is a list of numbers, and r, which is the total number of "runs" or switches in the sequence. 
+The basic restrictions are that the list of numbers x must match a given list [1,1,2,2,1,1], and the number of runs r must be calculated based on how many times the numbers in x switch. 
+The goal of the problem is to find a sequence x that satisfies these conditions and calculate the number of runs r.

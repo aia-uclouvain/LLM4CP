@@ -1,0 +1,5 @@
+Prime numbers problem. 
+This problem is about finding a number that is only divisible by 1 and itself, which is known as a prime number. 
+The main variables are: nn, which is the number being checked, num_divisors, which is the count of numbers that can divide nn, divisor, which is the set of numbers that can divide nn, and is_prime, which indicates whether nn is a prime number or not. 
+The basic restrictions are that a number is only considered prime if it has exactly two divisors (1 and itself), and the problem checks all numbers up to a certain limit (m = 120 in this case). 
+The goal of the problem is to find a number (nn) that satisfies the condition of being a prime number, and to determine its divisors and whether it is prime or not.

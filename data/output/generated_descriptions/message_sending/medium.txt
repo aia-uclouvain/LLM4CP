@@ -1,0 +1,9 @@
+The Message Sending Puzzle
+The Message Sending Puzzle is about finding all possible paths for a message to be sent from Craig to Robert through a network of students, where each student tells every other student they meet that the teacher is waiting for Robert.
+The main decision variables are the array `x`, where `x[i]` represents the `i-th` student in the path from Craig to Robert. The value of `x[i]` is the ID of the student, and `0` indicates that there is no edge (i.e., no meeting) between the previous student and the next student in the path.
+The key constraints are: 
+- `all_different_except_0(x)`: ensures that all students in the path are distinct, except for the `0` values that indicate no edge.
+- `x[1] = Craig`: specifies that the path starts with Craig.
+- `last_not_0(x, Robert)`: ensures that the last non-zero value in the path is Robert, meaning that the path ends with Robert.
+- `all_paths(x, graph)`: ensures that each student in the path meets the next student, according to the given graph of student meetings.
+The objective of the problem is to find all possible paths from Craig to Robert, given the constraints of the student meetings. The model uses a satisfaction-based approach, where the goal is to find all feasible solutions that satisfy the constraints, rather than optimizing a specific objective function.

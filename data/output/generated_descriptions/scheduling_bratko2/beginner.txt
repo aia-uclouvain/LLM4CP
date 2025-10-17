@@ -1,0 +1,13 @@
+Scheduling Problem
+The problem is about scheduling tasks to be completed in a certain order, with some tasks needing to be done before others, and with limited resources.
+The main variables are: 
+- Ds (Durations): how long each task takes to complete
+- Rs (Resources): how many resources each task needs
+- Ss (Start times): when each task starts
+- End (End time): when all tasks are finished
+- Capacity: the maximum number of resources available
+The basic restrictions or rules are: 
+- Each task must start after the previous task is finished if they are related
+- The total resources used by all tasks at any time cannot exceed the available capacity
+- Each task must be completed within a certain time frame
+The goal of the problem is to minimize the End time, which means to finish all tasks as early as possible.

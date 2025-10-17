@@ -1,0 +1,10 @@
+Contiguity Constraint Problem
+The problem is about finding a sequence of decisions (yes or no) that minimizes a certain value, given some random weights and rules about consecutive decisions.
+The main variables are: 
+- w: an array of random weights (0 or 1) 
+- y: an array of decisions (0 for no, 1 for yes) 
+- z: the total value of the decisions, calculated by multiplying each decision by its corresponding weight and summing them up.
+The basic restrictions or rules are: 
+- The total value (z) must be greater than or equal to a certain threshold (A) 
+- If a decision is made (y[i] is 1), then all subsequent decisions must also be made (consecutive ones).
+The goal of the problem is to minimize the total value (z) while satisfying the rules and restrictions.

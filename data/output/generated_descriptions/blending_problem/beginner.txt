@@ -1,0 +1,15 @@
+Blending Problem
+The problem is about a farmer who wants to find the best mix of different types of animal feed (corn, tankage, and alfalfa) to give to his pigs. He wants to make sure the pigs get the nutrients they need, but he also wants to keep costs low.
+
+The main variables are:
+- Mix: the amount of each type of feed to use
+- Total cost: the total cost of the feed
+- Daily requirements met: which nutritional requirements are being met
+
+The basic restrictions or rules are:
+- The pigs need a certain amount of carbohydrates, protein, and vitamins every day
+- Each type of feed has a different amount of these nutrients
+- The farmer wants to use at most two types of feed
+- The farmer wants to meet at least two of the nutritional requirements
+
+The goal is to minimize the total cost of the feed while meeting the nutritional requirements.

@@ -1,0 +1,8 @@
+Office Blocked Problem
+The Office Blocked problem is about assigning six employees to offices on two floors of a building, with three offices on each floor, subject to certain constraints.
+The main decision variables are `floor` and `room`, which represent the floor and room numbers assigned to each employee, respectively. The `floor` variable takes values 1 or 2, and the `room` variable takes values 1, 2, or 3.
+The key constraints are: 
+- Arthur's office is directly above Bella's, and Bella's office is next to Duncan's.
+- Elizabeth's office number is smaller than Francesca's.
+- Craig and Francesca are in adjacent rooms.
+The problem's objective is to find a satisfying assignment of employees to offices, such that all constraints are met, as indicated by the `solve satisfy` statement. In other words, the goal is to determine who works where, given the constraints.

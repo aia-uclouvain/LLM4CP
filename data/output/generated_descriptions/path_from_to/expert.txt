@@ -1,0 +1,11 @@
+name: Path From To Problem
+description: The Path From To problem is a classic problem in graph theory and constraint programming. It involves finding a path between two given nodes in a directed graph. The graph is represented by an adjacency matrix, where a value of 1 at position (i, j) indicates a directed edge from node i to node j, and a value of 0 indicates no edge. The goal is to find a path from a specified start node to a specified end node.
+
+variables: $g_{i,j}, from, to, paths_i$ 
+These variables represent the following: $g_{i,j}$ is the adjacency matrix of the graph, where $g_{i,j} = 1$ if there is an edge from node i to node j, and $g_{i,j} = 0$ otherwise. $from$ and $to$ are the start and end nodes of the path, respectively. $paths_i$ is an array representing the path from the start node to the end node, where $paths_i$ is the i-th node in the path.
+
+constraints: $g_{paths_{i-1}, paths_i} > 0, \forall i \in 2..len$, $paths_1 = from$, $\exists j \in 1..len (paths_j = to \land \nexists k \in 1..len (k \neq j \land paths_k = to))$, $cp2d(g, \tilde{g})$
+These constraints ensure the following: the path constraint ensures that each edge in the path is present in the graph. The start node constraint ensures that the first node in the path is the start node. The end node constraint ensures that the path ends at the end node and that there are no other nodes in the path that are equal to the end node. The cp2d constraint ensures that the graph is equal to a given graph.
+
+objective: satisfy
+The objective of the problem is to find a path from the start node to the end node that satisfies all the constraints, rather than minimizing or maximizing a specific value.

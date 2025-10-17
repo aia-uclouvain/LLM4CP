@@ -1,0 +1,5 @@
+Pool-ball triangles problem
+The problem is about arranging numbered pool balls in a triangle shape in a specific way. 
+The main variables are the positions of the pool balls, represented by the numbers 1 to 15, and the differences between the numbers of the balls above and below them.
+The basic restrictions are that each ball below two balls must have a number that is the difference between the numbers of the two balls above it, and all the balls must have different numbers.
+The goal of the problem is to find an arrangement of the pool balls that satisfies these restrictions, which is a classic puzzle with no clear objective to minimize or maximize, but rather to find a valid solution.

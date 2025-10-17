@@ -1,0 +1,23 @@
+**Black Hole Solitaire Problem**
+
+The Black Hole Solitaire problem is a classic constraint programming problem. The game starts with 17 stacks of 3 cards each and the Ace of Spades in the middle, known as the "black hole". The objective is to remove all the cards from the stacks onto the black hole by placing them in a sequence where each card has a rank one greater or one less than the previous card.
+
+**Decision Variables**
+
+The main decision variables in this problem are:
+
+* `blackHole`: a sequence of cards representing the order in which they are placed on the black hole.
+* `cardSequence`: a mapping of each card to its position in the `blackHole` sequence.
+
+**Constraints**
+
+The key constraints in this problem can be described in plain language as follows:
+
+* Each card can only be placed on the black hole once.
+* The sequence of cards on the black hole must satisfy the rule that each card has a rank one greater or one less than the previous card.
+* The cards in each stack must be played in the order they appear in the stack.
+* If two cards have the same rank, the one that is on top of a stack should be played first.
+
+**Objective**
+
+The objective of the problem is to find a sequence of cards that satisfies all the constraints and removes all the cards from the stacks onto the black hole. There is no explicit objective function to minimize or maximize, but rather a feasibility problem where the goal is to find a valid solution that satisfies all the constraints.

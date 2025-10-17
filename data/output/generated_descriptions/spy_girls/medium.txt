@@ -1,0 +1,6 @@
+The Spy Girls puzzle 
+is a classic constraint satisfaction problem. 
+The problem is about determining the rank, first name, and last name of each agent in the Spy Girls Agency, given a set of clues about their relative rankings and names. 
+The main decision variables are the ranks of the agents, represented by the variables `jane`, `sylvia`, `hillary`, `kate`, `amanda`, `brookes`, `adams`, `darling`, `cooper`, and `miller`, which are all assigned a value from 1 (highest) to 5 (lowest). 
+The key constraints are: each agent has a unique rank and last name, Sylvia is ranked higher than Adams but not the highest, Hillary's rank is higher than Darling but not as high as Brookes, Amanda is ranked higher than Kate or Hillary but not the highest, Adams is ranked higher than Miller but lower than Cooper, and Miller is not ranked the lowest. 
+The objective is to find an assignment of ranks and names that satisfies all the given constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

@@ -1,0 +1,11 @@
+The problem is called the Maximum Frequency Problem. 
+It is about finding the maximum number of occurrences of any value in a given array of integers. 
+The main decision variables are: 
+- `a`, the input array of integers, 
+- `gcc`, an array where each index represents a unique value in `a` and the corresponding value represents the number of occurrences of that value, 
+- `z`, the maximum number of occurrences of any value in `a`, and 
+- `max_val`, the value that occurs the maximum number of times in `a`. 
+The key constraints are: 
+- the `global_cardinality` constraint, which counts the number of occurrences of each value in `a` and stores these counts in `gcc`, 
+- the `max` function, which finds the maximum value in `gcc` and assigns it to `z`. 
+The problem's objective is to find the value of `z`, which represents the maximum frequency of any value in the array, and `max_val`, the value that has this maximum frequency.

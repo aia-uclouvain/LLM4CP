@@ -1,0 +1,11 @@
+Kidney Exchange Problem
+The problem is about matching people who need a kidney transplant with compatible donors. 
+The main variables are: 
+- x: which kidney does person p get (or 0 if he/she gets no kidney)
+- y: a matrix representing the exchange between people
+- z: the total number of people who get a kidney
+The basic restrictions are: 
+- a person can only get a kidney from someone who is compatible with them
+- if a person gets a kidney, the donor must also receive a kidney
+- each person can only give one kidney and receive one kidney
+The goal is to maximize the number of people who get a kidney, which means finding the largest possible number of compatible exchanges.

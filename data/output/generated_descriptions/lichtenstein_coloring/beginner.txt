@@ -1,0 +1,12 @@
+Lichtenstein Coloring Problem
+The problem is about coloring a map of Liechtenstein with the fewest colors possible, so that no two areas that share a border have the same color.
+The main variables are: 
+- color: the color assigned to each area on the map
+- color_communes: the color assigned to each commune (or region) on the map
+- color_used: whether a particular color is used on the map
+- n_colors: the total number of colors used on the map
+The basic restrictions are: 
+- areas that share a border cannot have the same color
+- all areas within the same commune must have the same color
+- each commune must have at least one area colored
+The goal is to minimize the number of colors used (n_colors), which means finding the smallest number of colors needed to color the entire map without violating the rules.

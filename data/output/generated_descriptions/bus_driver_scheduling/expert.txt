@@ -1,0 +1,12 @@
+name: Bus Driver Scheduling Problem
+
+description: The Bus Driver Scheduling Problem is a set partitioning problem that involves scheduling bus drivers to cover a set of tasks, where each task represents a piece of work that needs to be done. The goal is to select a subset of possible shifts that covers each task once and only once, with the objective of minimizing the number of shifts used.
+
+variables: $x_i$ (where $i$ ranges from 1 to the number of shifts), $sched$ 
+These are decision variables that represent whether a shift is selected ($x_i$) or the partition of tasks into shifts ($sched$). In the context of the problem, $x_i$ is a binary variable that is 1 if the $i^{th}$ shift is selected and 0 otherwise, while $sched$ is a partition of tasks into shifts.
+
+constraints: $\sum_{i: t \in shift_i} x_i = 1$ for each task $t$, $tot\_shifts = \sum_{i} x_i$, $tot\_shifts \geq min\_num\_shifts$, $sched$ is a partition from $Tasks$, $s \in shifts$ for all $s \in parts(sched)$
+These constraints ensure that each task is covered by exactly one shift, the total number of shifts is calculated, the total number of shifts is greater than or equal to the minimum number of shifts, and the schedule is a valid partition of tasks into shifts.
+
+objective: Minimize $tot\_shifts$ or $|parts(sched)|$ 
+The objective of the problem is to minimize the total number of shifts used to cover all tasks.

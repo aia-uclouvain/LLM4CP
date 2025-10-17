@@ -1,0 +1,8 @@
+Multiplicative Sequence Problem
+The problem is about finding a sequence of positive whole numbers that satisfies certain properties, specifically a multiplicative property where the value at the product of two relatively prime indices is the product of the values at those indices.
+The main decision variables are the elements of the array `x`, where `x[i]` represents the `i`-th number in the sequence.
+The key constraints are: 
+- the sequence is strictly increasing, meaning each number is greater than the previous one, 
+- the second number in the sequence is 2, 
+- and the multiplicative property, which states that the value at the product of two relatively prime indices `i` and `j` is the product of the values at those indices, i.e., `x[i*j] = x[i]*x[j]`.
+The problem's objective is to find a sequence that satisfies these constraints, specifically to determine the possible value(s) for the 1000th number in the sequence, `x[1000]`.

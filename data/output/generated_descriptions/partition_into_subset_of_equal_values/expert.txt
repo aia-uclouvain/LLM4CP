@@ -1,0 +1,9 @@
+name: Partition Problem
+description: The problem is to divide a given set of numbers into a specified number of subsets such that the sum of the numbers in each subset is equal. In other words, the goal is to partition the set of numbers into subsets with equal sums.
+variables: x[i], where i = 1..n, x[i] ∈ {1, 2, ..., num_subsets} 
+These are decision variables that represent the subset to which each number in the set belongs, where n is the number of elements in the set and num_subsets is the number of subsets.
+constraints: 
+∀p ∈ {1, 2, ..., num_subsets-1}: ∑[s[i]*bool2int(x[i] == p) | i in 1..n] == ∑[s[i]*bool2int(x[i] == p+1) | i in 1..n], 
+x[1] = 1 
+These constraints ensure that the sum of the numbers in each subset is equal and introduce symmetry breaking by assigning the first number to the first subset.
+objective: The objective of the problem is to find a feasible solution that satisfies the constraints, i.e., to find a partition of the set into subsets with equal sums. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a solution that meets the given constraints.

@@ -1,0 +1,5 @@
+Benjamin Franklin's 8x8 Magic Square
+The problem is about creating a special kind of square grid where numbers are arranged in a specific way to meet certain conditions. 
+The main variables are the numbers in each cell of the grid, which are represented by variables like a1, a2, etc. These variables mean the value of the cell in the grid.
+The basic restrictions or rules of the problem are that each row, column, and certain diagonals must add up to the same total, and each 2x2 subsquare must also add up to the same total. Additionally, the numbers in the grid must be different from each other.
+The goal of the problem is to find a arrangement of numbers that satisfies all these conditions, which is known as a "magic square".

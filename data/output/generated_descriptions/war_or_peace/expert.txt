@@ -1,0 +1,5 @@
+name: War or Peace problem
+description: The War or Peace problem is a classic problem in constraint programming where there are N countries and each pair of countries is either at war or has a peace treaty. The problem states that each pair of countries that has a common enemy must have a peace treaty, and the goal is to find the minimum number of peace treaties required.
+variables: $x_{i,j}$ where $i,j \in \{1,2,...,N\}$, which represent the relationship between country $i$ and country $j$, where $x_{i,j} = 0$ indicates war and $x_{i,j} = 1$ indicates peace.
+constraints: $\forall i \in \{1,2,...,N-1\}, \forall j \in \{i+1,i+2,...,N\}: (x_{i,j} = 0 \land \forall k \in \{1,2,...,i-1\}: (x_{k,i} = 1 \lor x_{k,j} = 1)) \lor (x_{i,j} = 1)$, which ensures that if two countries are at war, all other countries must have a peace treaty with at least one of them, and $x_{i,j} = 1$ which ensures that two countries can also have a peace treaty.
+objective: minimize $countpeaces = \sum_{i,j \in \{1,2,...,N\}} (x_{i,j} = 1)$, which represents the total number of peace treaties.

@@ -1,0 +1,7 @@
+name: Enigma Number 1573 (Sat, Sun, Mon, Tue)
+description: The problem is based on two multiplication sums where different letters represent different digits, and the same letter represents the same digit. The goal is to find the numerical total of the two five-digit products, given that a MONTH is exactly divisible by 28, 30, and 31.
+variables: $S, A, T, M, O, N, U, E, H, a, b, c, d, SAT, SAT\_tmp, SAT1, SAT2, MON, MON\_tmp, MON1, MON2, SUNab, TUEcd, MONTH, total$ 
+These variables represent the digits in the multiplication sums, temporary variables for calculations, and the total sum of the two five-digit products.
+constraints: $S > 0 \wedge T > 0 \wedge all\_different(x) \wedge SUNab = SAT \* SAT\_tmp \wedge TUEcd = MON \* MON\_tmp \wedge SUNab = SAT1 + SAT2 \* 10 \wedge TUEcd = MON1 + MON2 \* 10 \wedge MONTH \mod 28 = 0 \wedge MONTH \mod 30 = 0 \wedge MONTH \mod 31 = 0$ 
+These constraints ensure that the first digits of SAT and MON are not zero, all digits are distinct, the multiplication sums are correct, and the MONTH is divisible by 28, 30, and 31.
+objective: The objective of the problem is to find the total sum of the two five-digit products, $total = SUNab + TUEcd$.

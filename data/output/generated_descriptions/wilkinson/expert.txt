@@ -1,0 +1,5 @@
+name: Wilkinson's Problem
+description: Wilkinson's problem is a non-linear problem that involves finding the minimum value of a variable x that satisfies a given constraint, which is a non-linear equation with a high degree polynomial.
+variables: x, where x is a real-valued decision variable representing the value to be minimized.
+constraints: 0.0 = (x+1.0)*(x+2.0)*(x+3.0)*(x+4.0)*(x+5.0)*(x+6.0)*(x+7.0)*(x+8.0)*(x+9.0)*(x+10.0)*(x+11.0)*(x+12.0)*(x+13.0)*(x+14.0)*(x+15.0)*(x+16.0)*(x+17.0)*(x+18.0)*(x+19.0)*(x+20.0) + 0.00000011920928955078*x^19, which is a non-linear constraint that restricts the possible values of x to those that satisfy this equation, and x ≥ -100.0 ∧ x ≤ 10.0, which defines the bounds of the variable x.
+objective: minimize x, which means finding the smallest possible value of x that satisfies the given constraints.

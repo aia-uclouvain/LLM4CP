@@ -1,0 +1,18 @@
+**Are You The One Problem**
+The Are You The One problem is a classic constraint programming problem inspired by the MTV reality TV show of the same name. 
+
+**Problem Description**
+The problem involves a group of men and women who are secretly paired into male-female couples via a matchmaking algorithm. The contestants try to identify all of these "perfect matches" by living together and gathering information through a "truth booth" and a "matching ceremony". 
+
+**Decision Variables**
+The main decision variables in this problem are represented by the `assign` array, where `assign[b, g]` is a binary variable that equals 1 if boy `b` is assigned to girl `g` in the matching, and 0 otherwise.
+
+**Key Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each boy is assigned to exactly one girl.
+- Each girl is assigned to exactly one boy.
+- The number of correct matches in each week's matching ceremony is consistent with the given information.
+- The outcome of each truth booth is consistent with the given information, i.e., if a couple is a perfect match, they are assigned to each other.
+
+**Objective**
+The objective of this problem is not to minimize or maximize a specific function, but rather to find a feasible solution that satisfies all the given constraints, i.e., to find the perfect matches between the boys and girls. The problem is solved using a satisfaction-based approach, where the goal is to find an assignment of boys to girls that satisfies all the constraints.

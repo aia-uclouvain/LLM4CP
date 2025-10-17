@@ -1,0 +1,7 @@
+name: Dimes Puzzle
+description: The problem is about a person who wants to buy stamps of different denominations (1-cent, 2-cent, 3-cent, 5-cent, and 10-cent) with exactly enough dimes (10-cent coins) to purchase them. The person wants four stamps of two types and three stamps of the other types, but the specific types are unknown. The goal is to determine the number of stamps of each type that the person wants to buy.
+variables: $values = [v_1, v_2, v_3, v_4, v_5], amount = [a_1, a_2, a_3, a_4, a_5], amount\_gcc = [agc_3, agc_4], cents$ 
+These variables represent the values of the stamps ($values$), the number of stamps of each type ($amount$), the number of types with 3 or 4 stamps ($amount\_gcc$), and the total cost of the stamps in cents ($cents$).
+constraints: $all\_different(values) \land increasing(values) \land values = [1,2,3,5,10] \land cents = \sum_{i=1}^{5} (values_i \* amount_i) \land cents \mod 10 = 0 \land global\_cardinality(amount, amount\_gcc) \land (amount\_gcc = [2,3] \lor amount\_gcc = [3,2])$ 
+These constraints ensure that the stamp values are distinct and increasing, the total cost is a multiple of 10 cents, the number of stamps of each type satisfies the global cardinality constraint, and the number of types with 3 or 4 stamps is either [2,3] or [3,2].
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

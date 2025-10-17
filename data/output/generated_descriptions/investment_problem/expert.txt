@@ -1,0 +1,12 @@
+name: Investment Problem
+
+description: The investment problem is a classic problem in operations research and finance where a portfolio manager has a fixed budget to invest in different opportunities, each with its own return. The goal is to maximize the total annual return without exceeding the budget. The investment opportunities have different returns based on the amount invested, and there is also an option to invest in a ninth opportunity, which represents the return on unused funds.
+
+variables: $x_1, x_2, ..., x_8, y, z, the\_returns_1, the\_returns_2, ..., the\_returns_8$ 
+These variables represent the amount invested in each opportunity ($x_1$ to $x_8$), the amount of unused funds ($y$), the total annual return ($z$), and the return from each opportunity ($the\_returns_1$ to $the\_returns_8$).
+
+constraints: $z = \sum_{i=1}^{8} returns_{x_i,i} + y \* not\_invested\_returns$, $\sum_{i=1}^{8} x_i + y \leq budget$, $0 \leq x_i \leq 4$, $y \geq 0$, $the\_returns_i \geq 0$, $the\_returns_i = returns_{x_i,i}$ 
+These constraints ensure that the total annual return ($z$) is calculated correctly, the total investment does not exceed the budget, each investment opportunity has a valid investment amount, the unused funds are non-negative, the returns from each opportunity are non-negative, and the returns from each opportunity are calculated correctly based on the investment amount.
+
+objective: Maximize $z$ 
+The objective of the problem is to maximize the total annual return ($z$) by finding the optimal investment amounts for each opportunity.

@@ -1,0 +1,5 @@
+The problem is called "nvalues". 
+It's about counting how many different values are in a list of numbers. 
+The main variables are "x", which is the list of numbers, and "nvv", which is the count of different values in the list. 
+The basic rule is that the count of different values in the list should be equal to, less than, greater than, or a combination of these, a certain limit. 
+The goal is to find a list of numbers where the count of different values meets this rule, and to determine what this count is.

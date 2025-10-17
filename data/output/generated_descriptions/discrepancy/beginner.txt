@@ -1,0 +1,5 @@
+The problem is called Discrepancy. 
+It's about finding values for a set of items (called variables) where some of these values are considered "bad" and we want exactly a certain number of these items to have one of their bad values. 
+The main variables are: variables (the items we're trying to find values for), bad (the bad values for each item), and k (the number of items that should have a bad value). 
+The basic restrictions are that each item can only take a value from 1 to 5, and we have a list of bad values for each item. 
+The goal is to find values for the items such that exactly k items have one of their bad values, and in this case, k is 2.

@@ -1,0 +1,5 @@
+The problem is called "Enigma 1575" or "All our days". 
+It is about finding a set of non-zero digits to replace the letters in the names of the days of the week, such that each day's corresponding number is divisible by its own ordinal number (1 to 7) and not divisible by any higher digit. 
+The main decision variables are the letters (m, o, t, u, w, h, f, s, a) which represent the digits to replace the letters in the days of the week, and the days array which represents the resulting numbers for each day. 
+The key constraints are that each letter must be replaced by a unique non-zero digit, the numbers for each day must be formed by combining the corresponding letters, and each day's number must be divisible by its own ordinal number but not by any higher digit. 
+The problem's objective is to find a solution that satisfies all these constraints, and the resulting "famous number" is a specific number formed by combining some of the digits.

@@ -1,0 +1,5 @@
+The problem is known as the "How Old Am I" puzzle. 
+It is about determining the current ages of two individuals, the narrator and their brother, based on two given conditions related to their ages at different points in time. 
+The main decision variables are "me" and "him", which represent the current ages of the narrator and their brother, respectively. 
+The key constraints are that six years ago, the brother was twice as old as the narrator, and in five years, the sum of their ages will be 40. 
+The problem's objective is to find a solution that satisfies these conditions, rather than minimizing or maximizing a specific value, as it is a satisfaction problem where the goal is to find values for "me" and "him" that make the constraints true.

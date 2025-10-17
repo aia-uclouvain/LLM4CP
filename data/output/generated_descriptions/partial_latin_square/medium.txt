@@ -1,0 +1,8 @@
+Partial Latin Square
+The Partial Latin Square problem is about arranging symbols in a grid such that each row and column contains distinct symbols, with the added complexity that each cell has its own set of possible symbols to choose from.
+
+The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the symbol assigned to the cell at row `i` and column `j`. The `s` array represents the set of possible symbols for each cell.
+
+The key constraints are that each row and column must contain distinct symbols, and each cell's symbol must be chosen from its own set of possible symbols. In plain language, this means that no two cells in the same row or column can have the same symbol, and each cell's symbol must be one of the options specified for that cell.
+
+The problem's objective is to find a valid arrangement of symbols that satisfies these constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution. The model uses a satisfaction-based approach, where the solver searches for a solution that meets all the constraints.

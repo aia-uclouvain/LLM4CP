@@ -1,0 +1,5 @@
+Job Scheduling with Worker Assignments. 
+This problem is about scheduling jobs with a certain number of workers, where each job has a specific duration and requires a certain number of workers. 
+The main variables are the start and end times of each job, the assignment of workers to each job, and the earliest end time of all jobs. 
+The basic restrictions are that each job must be completed within its duration, each worker can only work on one job at a time, and some jobs may have precedence over others, meaning they must be completed before others can start. 
+The goal of the problem is to minimize the earliest end time of all jobs, which means finding the most efficient way to schedule the jobs and assign workers to them.

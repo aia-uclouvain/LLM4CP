@@ -1,0 +1,14 @@
+Cumulative Scheduling Problem
+The Cumulative Scheduling Problem is about scheduling a set of tasks on a single resource with limited capacity, where each task has a fixed duration and requires a certain amount of the resource. The goal is to find a schedule that minimizes the completion time for all tasks while not exceeding the resource capacity.
+
+The main decision variables are:
+- `Ss`: an array of variables representing the start time of each task
+- `End`: a variable representing the completion time of the schedule
+- `Capacity`: a variable representing the available capacity of the resource, which is fixed at 13 in this problem
+
+The key constraints are:
+- Each task must be completed after its start time plus its duration
+- The total resource usage of all tasks at any time must not exceed the available capacity
+- The completion time of the schedule must be greater than or equal to the completion time of each task
+
+The objective of the problem is to minimize the completion time `End`, which represents the time when all tasks are completed. The problem is solved using a branch-and-bound search algorithm, which explores different possible schedules and selects the one with the minimum completion time.

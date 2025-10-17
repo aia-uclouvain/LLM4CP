@@ -1,0 +1,5 @@
+Birthday Magic problem. 
+This problem is about figuring out someone's birthdate and age based on a special square with numbers. 
+The main variables are the numbers in the square (x), the person's age (age), the day of the month they were born (day), the month they were born (month), and the year they were born (year). 
+The basic restrictions are that the numbers in the square must add up to the same total in each row and column, and the square has some given numbers already filled in. The day, month, and year of birth are also hidden in the square. 
+The goal is to find the person's birthdate and age, given that the year they are currently living in is 2007.

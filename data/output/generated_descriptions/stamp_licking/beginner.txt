@@ -1,0 +1,5 @@
+The Gentle Art of Stamp-licking puzzle. 
+This problem is about placing different stamps on a grid in a way that follows certain rules. 
+The main variables are x, a, y, and z. The x variable shows which stamp is placed on each square of the grid, the a variable checks if a stamp on a square is in line with the same stamp on another square, the y variable shows the final result of which stamp is on each square, and the z variable is the total value of all stamps placed on the grid. 
+The basic rules are that each square can only have one stamp, a stamp on a square cannot be in line with the same stamp on another square, and a square cannot be both occupied by a stamp and attacked by the same stamp value. 
+The goal is to maximize the total value of all stamps placed on the grid, which means placing the highest value stamps on the grid while following the rules.

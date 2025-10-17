@@ -1,0 +1,5 @@
+The problem is called the Precedence Constraint Problem. 
+It is about finding a sequence of values that satisfies a specific order constraint, where each value in the sequence must appear before any larger value. 
+The main decision variables are the elements of the array `x`, which represent the sequence of values to be determined. 
+The key constraints are that the sequence must contain the smallest possible value, and for each value `i` in the sequence, all smaller values must also be present in the sequence and appear before `i`. 
+The problem's objective is to find a sequence that satisfies these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

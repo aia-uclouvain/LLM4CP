@@ -1,0 +1,5 @@
+The Five Elements problem.
+This problem involves selecting five numbers from a given 5x5 matrix such that no two numbers are from the same row or column, and the maximum of the five selected numbers is as small as possible.
+The main decision variables are x, a 5x5 matrix where x[i,j] represents whether the number at row i and column j is selected (1) or not (0), and y, an array of size 5 where y[j] represents the selected number in column j.
+The key constraints are: each row and each column can only have one selected number, and for each column, there must exist a row where the number is selected. In plain language, this means that we can only choose one number from each row and each column, and we must choose a number from every column.
+The objective of the problem is to minimize the maximum of the five selected numbers, meaning we want to find the smallest possible largest number among the selected numbers.

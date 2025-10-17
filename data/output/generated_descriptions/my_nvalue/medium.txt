@@ -1,0 +1,8 @@
+**N-Value Problem**
+The N-Value problem is about counting the number of distinct values in a collection of variables. 
+
+The main decision variables are `x`, an array of variables, and `nvv`, the count of different values in `x`. `x` represents a collection of variables that can take on different values, and `nvv` represents the number of unique values in this collection.
+
+The key constraints are that all values in `x` should be within a certain range, and the number of distinct values in `x` should be equal to `nvv`. This is achieved through the `mynvalue` predicate, which ensures that all values in `x` are in a set `s`, and that the values not in `x` are not in `s`. The `atleast_nvalue` and `atmost_nvalue` predicates are variations of this constraint, where the number of distinct values is greater than or equal to, or less than or equal to, a given value, respectively.
+
+The problem's objective is to find an assignment of values to `x` such that the number of distinct values in `x` is equal to `nvv`, which is set to 2 in the given model. In other words, the goal is to find a solution where `x` contains exactly 2 unique values.

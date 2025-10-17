@@ -1,0 +1,5 @@
+The name of the problem is Change Partition. 
+This problem is about grouping a set of items into categories and counting how many times the category changes when looking at the items one by one. 
+The main variables are: variables (the items to be grouped), partitions (the categories), and nchange (the number of times the category changes). 
+The basic restrictions or rules of the problem are: each item must belong to one category, and each category must have at least one item. 
+The goal of the problem is to find a way to group the items into categories such that the number of category changes is equal to a given value (in this case, 2).

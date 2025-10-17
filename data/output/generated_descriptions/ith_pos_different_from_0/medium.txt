@@ -1,0 +1,5 @@
+The problem is called the "Ith Position Different From 0" problem. 
+It is about finding the position of the ith non-zero item in a sequence of variables. 
+The main decision variables are x, an array of variables representing the sequence, ith, the position of the non-zero item to find, and pos, the actual position of the ith non-zero item. 
+The key constraints are that the sequence x must match a given sequence, the position pos must be equal to a given value, the ith value must be equal to a given value, and the ith_pos_different_from_0 constraint must hold, meaning that pos corresponds to the position of the ith non-zero item in the sequence x. 
+The problem's objective is to satisfy all the given constraints, specifically to verify that the given position pos indeed corresponds to the ith non-zero item in the sequence x.

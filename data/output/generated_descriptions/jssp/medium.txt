@@ -1,0 +1,15 @@
+Job-Shop Scheduling Problem
+The Job-Shop Scheduling Problem (JSSP) is a classic constraint programming problem that involves scheduling a set of jobs on a set of machines, subject to certain constraints. The goal is to find a schedule that minimizes the maximum completion time of all jobs.
+
+The main decision variables in this problem are:
+- `x[i, a]`: the starting time of job `i` on machine `a`
+- `Y[i, j, a]`: a binary variable that indicates whether job `i` is scheduled before job `j` on machine `a`
+- `z`: the maximum completion time of all jobs, also known as the makespan
+
+The key constraints in this problem can be described in plain language as follows:
+- Each machine can handle at most one job at a time
+- Each job has a specified processing order through the machines
+- A job can only be processed on a machine after it has been completely processed on the previous machine in its processing order
+- The starting time of a job on a machine must be greater than or equal to the completion time of the previous job on the same machine
+
+The objective of the problem is to minimize the makespan `z`, which is the maximum completion time of all jobs. In other words, the goal is to find a schedule that completes all jobs as early as possible, while satisfying all the constraints.

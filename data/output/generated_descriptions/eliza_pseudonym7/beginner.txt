@@ -1,0 +1,16 @@
+Eliza Pseudonym of Puzzlania 
+This problem is about six friends - Anna, Barbra, Carla, Delilah, Eliza, and Fiona - who subscribed to an internet mailing list over a six-day period from Monday to Saturday. Each day, a different word was featured, and no two women subscribed on the same day. The task is to figure out the day each woman subscribed and the day each word was featured.
+
+The main variables are the days each woman subscribed (anna, barbra, carla, delilah, eliza, fiona) and the days each word was featured (abulia, betise, caryatid, dehisce, euhemerism, floruit). These variables represent the day of the week, from 1 (Monday) to 6 (Saturday), when each woman joined the mailing list and when each word was highlighted.
+
+The basic restrictions or rules are: 
+- Each woman subscribed on a different day.
+- Each word was featured on a different day.
+- Exactly one woman has a name starting with the same letter as the word featured on her subscription day.
+- The word "caryatid" was featured two days before Fiona subscribed.
+- Carla subscribed on Friday.
+- Anna subscribed one day after the word "euhemerism" was featured.
+- The word on Wednesday did not end with "e".
+- Barbra subscribed three days after the word "dehisce" was featured.
+
+The goal is to find the day each woman subscribed and the day each word was featured, satisfying all the given rules and restrictions.

@@ -1,0 +1,12 @@
+De Bruijn Matrix Problem
+The problem is about creating a special kind of matrix, called a De Bruijn matrix, which has unique properties. 
+The main variables are: 
+- x: a 2D matrix where each cell can have a value from 0 to base-1 (where base is a given number, like 2 for binary or 10 for decimal).
+- y: an array of numbers, where each number corresponds to a sub-matrix (a smaller square within the larger matrix).
+- dim: the size of the matrix (number of rows and columns).
+- base: the base of the numbers used in the matrix (like 2 for binary or 10 for decimal).
+- m: the size of the sub-matrices.
+The basic restrictions are: 
+- Each sub-matrix must be unique when converted to a number in the given base.
+- The matrix is "wrapped around", meaning that the last row and column are connected to the first row and column.
+The goal is to find a matrix that satisfies these conditions, which is a complex problem in computer science and mathematics.

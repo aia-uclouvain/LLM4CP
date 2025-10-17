@@ -1,0 +1,5 @@
+name: Sudoku 25x25
+description: The problem is a 25x25 Sudoku puzzle, where the goal is to fill in the missing numbers in a 25x25 grid such that each row, column, and 5x5 sub-grid contains the numbers 1-25 without repeating any number.
+variables: $A_{11}, A_{12}, ..., A_{55}, B_{11}, B_{12}, ..., B_{55}, ..., Y_{11}, Y_{12}, ..., Y_{55}$, which represent the values to be filled in each cell of the 25x25 grid.
+constraints: $\bigwedge_{i=1}^{25} \bigwedge_{j=1}^{25} (1 \leq A_{ij} \leq 25) \wedge \bigwedge_{k=1}^{25} \bigwedge_{l=1}^{25} (A_{kl} \neq A_{km} \wedge A_{kl} \neq A_{nl}) \wedge \bigwedge_{m=1}^{5} \bigwedge_{n=1}^{5} \bigwedge_{p=1}^{5} \bigwedge_{q=1}^{5} (A_{mp} \neq A_{nq})$, which ensure that each cell contains a value between 1 and 25, each row and column contains each value exactly once, and each 5x5 sub-grid contains each value exactly once.
+objective: satisfy, meaning the goal is to find a solution that satisfies all the constraints, there is no objective function to minimize or maximize.

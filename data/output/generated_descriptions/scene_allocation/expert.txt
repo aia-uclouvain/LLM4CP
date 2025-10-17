@@ -1,0 +1,20 @@
+name: Scene Allocation Problem
+
+description: The Scene Allocation Problem is a classic problem in constraint programming that involves deciding when to shoot scenes for a movie. Each scene involves a number of actors, and at most 5 scenes can be filmed per day. The goal is to minimize the production costs, which are determined by the fees of the actors, representing the amount to be paid per day they spend in the studio.
+
+variables: $shoot_{1..maxScene}, isPaid_{1..numActors, 1..maxDay}, isShot_{1..maxScene, 1..maxDay}$ 
+These are the decision variables, where $shoot_s$ represents the day when scene $s$ is shot, $isPaid_{a,d}$ represents whether actor $a$ is paid on day $d$, and $isShot_{s,d}$ represents whether scene $s$ is shot on day $d$.
+
+constraints: 
+$\begin{aligned}
+&global\_cardinality\_low\_up(shoot, [1,2,3,4,5], [0,0,0,0,0], [5,5,5,5,5]) \\
+&\forall s \in 2..maxScene: shoot_s \leq 1 + \max\{shoot_p | p \in 1..s-1\} \\
+&\forall s \in 1..maxScene, a \in appears_s, d \in 1..maxDay: isShot_{s,d} \leq isPaid_{a,d} \\
+&\forall s \in 1..maxScene: \sum_{d \in 1..maxDay} isShot_{s,d} = 1 \\
+&\forall d \in 1..maxDay: \sum_{s \in 1..maxScene} isShot_{s,d} \leq 5 \\
+&\forall s \in 1..maxScene: isShot_{s,shoot_s} = 1 \\
+&shoot_1 = 1
+\end{aligned}$ 
+These constraints ensure that at most 5 scenes are shot per day, that all actors required for a scene are present on the day the scene is shot, that each scene is shot exactly once, that the number of scenes shot per day does not exceed 5, that a scene is shot on the day it is scheduled, and that scene 1 is shot on day 1, respectively.
+
+objective: Minimize $cost = \sum_{a \in 1..numActors, d \in 1..maxDay} pay_a \cdot isPaid_{a,d}$, which represents the total production cost.

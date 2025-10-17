@@ -1,0 +1,9 @@
+name: Crossbar problem
+
+description: The Crossbar problem is a classic problem in constraint programming. It involves finding a set of values that satisfy certain constraints. The problem consists of a set of variables, each with a domain of possible values, and a set of constraints that restrict the values that can be assigned to the variables. The goal is to find an assignment of values to the variables that satisfies all the constraints.
+
+variables: $V_1, V_2, ..., V_{20}$, where each $V_i$ is a decision variable that represents a value in the set $\{0, 1, ..., 20\}$. These variables are used to represent the values that need to be assigned to each position in the crossbar.
+
+constraints: $V_1 \in \{2,4,6,7,8,9,10,11,16,18,20\} \land V_2 \in \{2,3,4,8,10,12,17,19,20\} \land ... \land V_{20} \in \{3,5,6,7,8,9,11,12,13,14,16,18,20\} \land \text{all\_different}(List)$, where $List = [V_1, V_2, ..., V_{20}]$. These constraints restrict the values that can be assigned to each variable and ensure that all values in the list are distinct.
+
+objective: The objective of the problem is to find a satisfying assignment, i.e., to find values for the variables $V_1, V_2, ..., V_{20}$ that satisfy all the constraints. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that meets all the constraints.

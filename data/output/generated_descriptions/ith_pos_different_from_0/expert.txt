@@ -1,0 +1,8 @@
+name: Ith Pos Different From 0
+description: The Ith Pos Different From 0 problem is a constraint satisfaction problem that involves finding the position of the ith non-zero item in a sequence of variables. The problem is defined by a sequence of variables and two parameters, ith and pos, where pos is the position of the ith non-zero item in the sequence.
+variables: $x = (x_1, x_2, ..., x_n), ith, pos$ 
+These are the decision variables of the problem, where $x$ is an array of variables representing the sequence, $ith$ is the index of the non-zero item to be found, and $pos$ is the position of the ith non-zero item in the sequence.
+constraints: $cp1d(x, [3,0,0,8,6]), pos = 4, ith = 2, ith\_pos\_different\_from\_0(ith, pos, x)$ 
+These constraints ensure that the sequence $x$ is equal to the given sequence $[3,0,0,8,6]$, the position $pos$ is fixed to 4, the index $ith$ is fixed to 2, and the $ith\_pos\_different\_from\_0$ constraint holds, which means that $pos$ is the position of the $ith$ non-zero item in the sequence $x$.
+objective: satisfy 
+The objective of the problem is to satisfy all the given constraints, which means finding a sequence $x$ that meets the $ith\_pos\_different\_from\_0$ constraint and the other constraints.

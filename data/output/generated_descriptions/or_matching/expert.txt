@@ -1,0 +1,8 @@
+name: Matching Problem of OR'ers
+description: The problem is to match a set of people (OR'ers) into pairs based on their compatibility scores, with the goal of maximizing the total compatibility of all pairs. The problem also identifies the person who is left out if there is an odd number of people.
+variables: $x_{i,j}, s_i$ 
+These are decision variables where $x_{i,j}$ represents the $j^{th}$ person in the $i^{th}$ pair, and $s_i$ represents the compatibility score of the $i^{th}$ pair.
+constraints: $alldifferent([x_{i,j} | i \in 1..m, j \in 1..2]), s_i = scores[x_{i,1}, x_{i,2}], x_{i,1} < x_{i,2}, x_{i-1,1} < x_{i,1}$ 
+These constraints ensure that each person is assigned to at most one pair, the compatibility score of each pair is calculated correctly, and symmetry breaking constraints are applied to reduce the search space.
+objective: maximize $total = \sum_{i=1}^{m} s_i$ 
+The objective is to maximize the total compatibility of all pairs.

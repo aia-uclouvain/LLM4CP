@@ -1,0 +1,11 @@
+Transportation Problem
+The Transportation Problem is a classic problem in operations research and management science that involves finding the most cost-effective way to transport goods from a set of sources (such as factories or plants) to a set of destinations (such as markets or warehouses).
+
+The main decision variables in this problem are the shipment quantities, represented by the variable x, which is a two-dimensional array where x[i,j] represents the quantity of goods shipped from plant i to market j.
+
+The key constraints in this problem are: 
+- the supply limit at each plant, which states that the total quantity of goods shipped from a plant cannot exceed its capacity, 
+- the demand at each market, which states that the total quantity of goods shipped to a market must be greater than or equal to its demand, and 
+- the non-negativity constraint, which states that the quantity of goods shipped from a plant to a market cannot be negative.
+
+The objective of the Transportation Problem is to minimize the total transportation cost, which is calculated by multiplying the quantity of goods shipped from each plant to each market by the cost of shipping per unit and summing these costs over all possible routes. The cost of shipping per unit is calculated based on the distance between the plant and the market, as well as a freight cost per case per thousand miles.

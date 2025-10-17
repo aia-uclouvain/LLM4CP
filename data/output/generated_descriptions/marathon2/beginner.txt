@@ -1,0 +1,5 @@
+Marathon Puzzle 
+The problem is about figuring out the order in which six runners, Dominique, Ignace, Naren, Olivier, Philippe, and Pascal, finished a marathon. 
+The main variables are the names of the runners, which represent the position they finished in. 
+The basic restrictions are: Olivier didn't finish last, Dominique, Pascal, and Ignace finished before Naren and Olivier, Dominique improved from last year, Philippe finished in the top four, Ignace didn't finish second or third, Pascal finished three positions ahead of Naren, and neither Ignace nor Dominique finished fourth. 
+The goal is to find the order in which the runners finished, satisfying all the given conditions.

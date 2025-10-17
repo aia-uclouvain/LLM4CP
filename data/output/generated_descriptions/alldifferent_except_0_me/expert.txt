@@ -1,0 +1,5 @@
+name: All Different Except 0 with Increasing Sequence
+description: The problem is a constraint satisfaction problem where we need to find an increasing sequence of numbers from 0 to n, with the possibility of having zeros in the sequence, such that all non-zero numbers are distinct.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the $i^{th}$ element in the sequence, and it can take any integer value from 0 to n.
+constraints: $\forall i, j \in \{1, 2, ..., n\} \text{ where } i \neq j: (x_i > 0 \wedge x_j > 0) \rightarrow x_i \neq x_j \wedge x_i < x_{i+1}$, which means all non-zero elements in the sequence must be distinct and the sequence must be increasing.
+objective: The objective of the problem is to satisfy all the given constraints, there is no explicit objective function to minimize or maximize.

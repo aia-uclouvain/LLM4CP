@@ -1,0 +1,823 @@
+1) IMPLEMENTATION IN .mod
+/*
+
+  Magic Hexagon in AMPL+CP.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+  This AMPL model was created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my AMPL page: http://www.hakank.org/ampl/
+
+*/
+
+set letters;
+param n;
+
+var x{letters} >= 0 <= 19 integer;
+
+#
+# constraints
+#
+s.t. c1: alldiff{i in letters} x[i];
+
+s.t. c2:
+  x['a'] + x['b'] + x['c'] =  38 and
+  x['d'] + x['e'] + x['f'] + x['g'] =  38 and
+  x['h'] + x['i'] + x['j'] + x['k'] + x['l'] =  38 and 
+  x['m'] + x['n'] + x['o'] + x['p'] =  38 and 
+  x['q'] + x['r'] + x['s'] =  38 and 
+  x['a'] + x['d'] + x['h'] =  38 and 
+  x['b'] + x['e'] + x['i'] + x['m'] =  38 and 
+  x['c'] + x['f'] + x['j'] + x['n'] + x['q'] =  38 and 
+  x['g'] + x['k'] + x['o'] + x['r'] =  38 and 
+  x['l'] + x['p'] + x['s'] =  38 and 
+  x['c'] + x['g'] + x['l'] =  38 and 
+  x['b'] + x['f'] + x['k'] + x['p'] =  38 and 
+  x['a'] + x['e'] + x['j'] + x['o'] + x['s'] =  38 and 
+  x['d'] + x['i'] + x['n'] + x['r'] =  38 and 
+  x['h'] + x['m'] + x['q'] =  38 and 
+
+  x['a'] < x['c'] and
+  x['a'] < x['h'] and
+  x['a'] < x['l'] and
+  x['a'] < x['q'] and
+  x['a'] < x['s'] and
+  x['c'] < x['h']
+;
+
+data;
+
+set letters = a b c d e f g h i j k l m n o p q r s;
+
+option show_stats 2;
+
+option solver gecode;
+option gecode_options "icl=def var_branching=size_min val_branching=min outlev=1 outfreq=1 timelimit=30";
+
+# option solver ilogcp;
+# option ilogcp_options "optimizer=cp alldiffinferencelevel=1 debugexpr=0 logperiod=1 logverbosity=0";
+
+solve;
+
+display x;
+
+
+for{i in letters} printf "%d, ", x[i];
+printf "\n";
+
+
+2) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Examples:
+  python MagicHexagon.py
+  python MagicHexagon.py -data=[4,10]
+"""
+
+from pycsp3 import *
+
+n, s = data or (4, 3)
+domain = range(s, s + 3 * n * n - 3 * n + 1)
+assert sum(domain) % (2 * n - 1) == 0, "No magic hexagon for order=" + str(n) + " and start=" + str(s)
+magic = sum(domain) // (2 * n - 1)
+d = n + n - 1  # longest diameter
+
+
+def scope(i, right):
+    v1 = max(0, d // 2 - i) if right else max(0, i - d // 2)
+    v2 = d // 2 - v1
+    return [x[j + v1][i - max(0, v2 - j if right else j - v2)] for j in range(d - abs(d // 2 - i))]
+
+
+# x represents the hexagon; on row x[i], only the first n - |n/2 - i| cells are useful (here, n = 'd').
+x = VarArray(size=[d, d], dom=lambda i, j: domain if j < d - abs(d // 2 - i) else None)
+
+satisfy(
+    AllDifferent(x),
+
+    # all rows sum to the magic value
+    [Sum(x[i]) == magic for i in range(d)],
+
+    # all right-sloping diagonals sum to the magic value
+    [Sum(scope(i, True)) == magic for i in range(d)],
+
+    # all left-sloping diagonals sum to the magic value
+    [Sum(scope(i, False)) == magic for i in range(d)],
+
+    # tag(symmetry-breaking)
+    [
+        x[0][0] < x[0][n - 1],
+        x[0][0] < x[n - 1][d - 1],
+        x[0][0] < x[d - 1][n - 1],
+        x[0][0] < x[d - 1][0],
+        x[0][0] < x[n - 1][0],
+        x[0][n - 1] < x[n - 1][0]
+    ]
+)
+
+
+3) IMPLEMENTATION IN .essence
+language ESSENCE 1.2.0
+$ prob023.essence: Magic Hexagon
+$ Problem details available at http://www.csplib.org/Problems/prob023/
+$ 03 September 2007
+$
+
+$ d: the diameter of the hexagon (length of the longest row)
+given d : int(1..)
+
+$ d must be an odd integer
+where d % 2 = 1
+
+$ o: the order of the hexagon (length of the shortest row)
+$ maxval: the maximum value that will appear in the hexagon
+$ maxsum: the maximum value that a row could sum to
+$ Value: the domain consisting of the integers contained in the hexagon
+letting o be d/2 + 1,
+        maxval be 3 * o**2 - 3 * o + 1,
+        maxsum be sum i : int(maxval + 1 - d..maxval) . i,
+        Value be domain int(1..maxval)
+
+$ hexagon: the hexagon is represented by a matrix. for any row i, we are only
+$          interested in the first d - |d/2 + 1 - i| elements of the row
+$ s: the magic number that all rows and diagonals sum to
+find hexagon : matrix indexed by [int(1..d),int(1..d)] of Value,
+     s : int(1..maxsum)
+
+such that
+$ all elements are different (and therefore all values are included)
+    forAll r1,r2 : int(1..d) . forAll i1 : int(1..d - |o - r1|) .
+        forAll i2 : int(1..d - |o - r2|) . r1 != r2 \/ i1 != i2 ->
+            hexagon[r1,i1] != hexagon[r2,i2],
+$ all rows sum to s
+    forAll r : int(1..d) . (sum i : int(1..d - |o - r|) . hexagon[r,i]) = s,
+$ all right-sloping diagonals sum to s
+    forAll r : int(1..d) . (sum i : int(1..d - |o - r|) .
+        hexagon[i + max({0,o-r}), r - max({0,o-(i + max({0,o-r}))})]) = s,
+$ all left-sloping diagonals sum to s
+    forAll r : int(1..d) . (sum i : int(1..d - |o - r|) .
+        hexagon[i + max({0,r-o}), r - max({0,(i + max({0,r-o}))-o})]) = s
+
+
+4) IMPLEMENTATION IN .py
+#!/usr/bin/python
+"""
+Magic hexagon in Numberjack.
+
+Prob023: Magic Hexagon
+http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+'''
+A magic hexagon consists of the number 1 to 19 arranged in a hexagonal pattern:
+
+   A,B,C
+  D,E,F,G
+ H,I,J,K,L
+  M,N,O,P
+   Q,R,S
+
+We have a constraint that all diagonals sum to 38. That is,
+   A+B+C = D+E+F+G = ... = Q+R+S = 38, A+D+H = B+E+I+M = ... = L+P+S = 38,
+   C+G+L = B+F+K+P = ... = H+M+Q = 38.
+'''
+
+Compare with the following models:
+* SICStus Prolog: http://www.hakank.org/sicstus/magic_hexagon.pl
+* ECLiPSe: http://www.hakank.org/eclipse/magic_hexagon.ecl
+
+This model was created by Hakan Kjellerstrand (hakank@bonetmail.com)
+See also my Numberjack page http://www.hakank.org/numberjack/
+
+"""
+from Numberjack import *
+
+class MyAllDiff(Predicate):
+    
+    def __init__(self, vars):
+        Expression.__init__(self, "MyAllDiff")
+        self.set_children(vars)
+
+    def decompose(self):
+        return [var1 != var2 for var1, var2 in pair_of(self.children)]
+
+
+def model(libs):
+
+    N = 19
+    LD = VarArray(N, 1, N, 'LD')
+    a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s = LD
+
+    model = Model (
+        AllDiff(LD),
+        # MyAllDiff(LD), # FIX!
+        a + b + c ==  38,
+        d + e + f + g ==  38,
+        h + i + j + k + l ==  38, 
+        m + n + o + p ==  38, 
+        q + r + s ==  38, 
+        a + d + h ==  38, 
+        b + e + i + m ==  38, 
+        c + f + j + n + q ==  38, 
+        g + k + o + r ==  38, 
+        l + p + s ==  38, 
+        c + g + l ==  38, 
+        b + f + k + p ==  38, 
+        a + e + j + o + s ==  38, 
+        d + i + n + r ==  38, 
+        h + m + q ==  38, 
+        a < c,
+        a < h,
+        a < l,
+        a < q,
+        a < s,
+        c < h
+        )
+
+    print model
+
+    for library in libs:
+        solver = model.load(library) # Load up model into solver
+        print ''
+        if solver.solve():
+            solver.printStatistics()
+            print 'LD:', LD
+            print ''
+            num_solutions = 1
+            while solver.getNextSolution() == SAT: 
+                num_solutions += 1
+                print 'LD:', LD
+                print ''
+            print 'Number of solutions: ', num_solutions
+            print 'Nodes:', solver.getNodes(), ' Time:', solver.getTime()
+            print 'getPropags:', solver.getPropags()
+            print 'getBacktracks:', solver.getBacktracks()
+            print 'getFailures:', solver.getFailures()
+        else:
+            print 'No solution'
+        print ''
+
+
+model(['Mistral'])
+
+
+
+
+5) IMPLEMENTATION IN .cpp
+/*
+  
+  Magic Hexagon in Gecode.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+  Compare with the following models:
+  * MiniZinc: http://www.hakank.org/minizinc/magic_hexagon.mzn
+  * SICStus Prolog: http://www.hakank.org/sicstus/magic_hexagon.ecl
+  * ECLiPSe: http://www.hakank.org/eclipse/magic_hexagon.ecl
+
+  This Gecode model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Gecode page: http://www.hakank.org/gecode/ .
+
+*/
+
+#include <gecode/driver.hh>
+#include <gecode/int.hh>
+#include <gecode/minimodel.hh>
+
+using namespace Gecode;
+
+using std::cout;
+using std::endl;
+using std::setw;
+using std::string;
+
+
+class MagicHexagon : public Script {
+protected:
+
+  static const int len = 19;
+
+  IntVarArray x;
+
+public:
+
+  MagicHexagon(const Options& opt) 
+    : 
+    x(*this, len, 1, len)
+  {
+
+    IntVar
+      a(x[0]),
+      b(x[1]),
+      c(x[2]),
+      d(x[3]),
+      e(x[4]),
+      f(x[5]),
+      g(x[6]),
+      h(x[7]),
+      i(x[8]),
+      j(x[9]),
+      k(x[10]),
+      l(x[11]),
+      m(x[12]),
+      n(x[13]),
+      o(x[14]),
+      p(x[15]),
+      q(x[16]),
+      r(x[17]),
+      s(x[18]);
+    
+    distinct(*this, x, opt.icl());
+
+    // Not very beautiful, but experimental...
+    rel(*this,
+        a + b + c ==  38 &&
+        d + e + f + g ==  38 &&
+        h + i + j + k + l ==  38 && 
+        m + n + o + p ==  38 && 
+        q + r + s ==  38 && 
+        a + d + h ==  38 && 
+        b + e + i + m ==  38 && 
+        c + f + j + n + q ==  38 && 
+        g + k + o + r ==  38 && 
+        l + p + s ==  38 && 
+        c + g + l ==  38 && 
+        b + f + k + p ==  38 && 
+        a + e + j + o + s ==  38 && 
+        d + i + n + r ==  38 && 
+        h + m + q ==  38 && 
+        
+        a < c &&
+        a < h &&
+        a < l &&
+        a < q &&
+        a < s &&
+        c < h
+        );
+
+    // branching
+    branch(*this, x, INT_VAR_SIZE_MIN(), INT_VAL_MIN());
+
+  }
+
+  // Print solution
+  virtual void
+  print(std::ostream& os) const {
+    os << "x: " << x << endl;
+    os << endl;
+
+  }
+
+
+  // Constructor for cloning s
+  MagicHexagon(bool share, MagicHexagon& s) : Script(share,s) {
+    x.update(*this, share, s.x);
+  }
+
+  // Copy during cloning
+  virtual Space*
+  copy(bool share) {
+    return new MagicHexagon(share,*this);
+  }
+};
+
+
+int
+main(int argc, char* argv[]) {
+
+  Options opt("MagicHexagon");
+
+  opt.solutions(0);
+  opt.icl(ICL_DOM);
+
+  opt.parse(argc,argv);
+
+  Script::run<MagicHexagon,DFS,Options>(opt);
+    
+  return 0;
+}
+
+
+
+
+6) IMPLEMENTATION IN .pl
+/*
+
+  Magic Hexagon in SICStus Prolog.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+  Compare with the following model:
+  * MiniZinc: http://www.hakank.org/minizinc/magic_hexagon.mzn
+
+
+  Model created by Hakan Kjellerstrand, hakank@bonetmail.com
+  See also my SICStus Prolog page: http://www.hakank.org/sicstus/
+
+*/
+
+:-use_module(library(clpfd)).
+:-use_module(library(lists)).
+
+go :-
+        LD = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S],
+        domain(LD,1,19),
+
+        all_distinct(LD),
+
+        A + B + C #=  38,
+        D + E + F + G #=  38,
+        H + I + J + K + L #=  38, 
+        M + N + O + P #=  38, 
+        Q + R + S #=  38, 
+        A + D + H #=  38, 
+        B + E + I + M #=  38, 
+        C + F + J + N + Q #=  38, 
+        G + K + O + R #=  38, 
+        L + P + S #=  38, 
+        C + G + L #=  38, 
+        B + F + K + P #=  38, 
+        A + E + J + O + S #=  38, 
+        D + I + N + R #=  38, 
+        H + M + Q #=  38, 
+        
+        A #< C,
+        A #< H,
+        A #< L,
+        A #< Q,
+        A #< S,
+        C #< H,
+        
+        labeling([ff,bisect,up], LD),
+
+        write(LD),nl,
+        fd_statistics.
+
+
+7) IMPLEMENTATION IN .py
+# Magic Hexagon
+#
+# Arrange the numbers 1 to 19 in the following pattern:
+#   A B C
+#  D E F G
+# H I J K L
+#  M N O P
+#   Q R S
+# such that all diagonals must sub to 38.
+#
+# Examples of diagonals:
+# Horizontal: ABC, DEFG, ...
+# Left to right: HMQ, DINR, ...
+# Right to left: ADH, BEIM, ...
+#
+# CSPLib Problem 023 - http://www.csplib.org/Problems/prob023/
+
+from Numberjack import *
+
+
+def get_model():
+    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s \
+        = VarArray(19, 1, 19)
+
+    model = Model(
+        AllDiff([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s]),
+
+        a + b + c == 38,
+        d + e + f + g == 38,
+        h + i + j + k + l == 38,
+        m + n + o + p == 38,
+        q + r + s == 38,
+
+        a + d + h == 38,
+        b + e + i + m == 38,
+        c + f + j + n + q == 38,
+        g + k + o + r == 38,
+        l + p + s == 38,
+
+        c + g + l == 38,
+        b + f + k + p == 38,
+        a + e + j + o + s == 38,
+        d + i + n + r == 38,
+        h + m + q == 38,
+
+        a < c, a < h, a < l, a < q, a < s, c < h,
+    )
+
+    return a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, model
+
+
+def solve(param):
+    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, model \
+        = get_model()
+
+    solver = model.load(param['solver'])
+    solver.setVerbosity(param['verbose'])
+    solver.solve()
+
+    if solver.is_sat():
+        print "  ", str(a).zfill(2), str(b).zfill(2), str(c).zfill(2)
+
+        print " ", str(d).zfill(2), str(e).zfill(2), str(f).zfill(2), \
+            str(g).zfill(2)
+
+        print str(h).zfill(2), str(i).zfill(2), str(j).zfill(2), \
+            str(k).zfill(2), str(l).zfill(2)
+
+        print " ", str(m).zfill(2), str(n).zfill(2), str(o).zfill(2), \
+            str(p).zfill(2)
+
+        print "  ", str(q).zfill(2), str(r).zfill(2), str(s).zfill(2)
+    elif solver.is_unsat():
+        print "Unsatisfiable"
+    else:
+        print "Unknown"
+
+
+if __name__ == '__main__':
+    default = {'solver': 'Mistral', 'verbose': 0}
+    param = input(default)
+    solve(param)
+
+
+
+8) IMPLEMENTATION IN .mod
+/*
+
+  Magic Hexagon in AMPL+CP.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+  This is a symbolic version of
+     http://www.hakank.org/ampl/magic_hexagon.mod
+
+  This AMPL model was created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my AMPL page: http://www.hakank.org/ampl/
+
+*/
+
+set letters;
+param n;
+
+param num_sums;
+param max_sums;
+param sums{1..num_sums, 1..max_sums} symbolic default "-";
+
+param num_less;
+param less2{1..num_less, 1..2} symbolic;
+
+var x{letters} >= 1 <= 19 integer;
+
+#
+# constraints
+#
+s.t. c1: alldiff{i in letters} x[i];
+
+s.t. c2{i in 1..num_sums}:
+    sum{j in 1..max_sums: sums[i,j] != "-"} x[sums[i,j]] = 38
+;
+
+s.t. c3{i in 1..num_less}:
+    x[less2[i,1]] < x[less2[i,2]]
+;
+
+data;
+
+set letters = a b c d e f g h i j k l m n o p q r s;
+
+
+param num_sums := 15;
+param max_sums := 5;
+
+param sums: 1 2 3 4 5 := 
+ 1  a  b  c  .  .
+ 2  d  e  f  g  .
+ 3  h  i  j  k  l
+ 4  m  n  o  p  .
+ 5  q  r  s  .  .
+ 6  a  d  h  .  .
+ 7  b  e  i  m  .
+ 8  c  f  j  n  q
+ 9  g  k  o  r  .
+10  l  p  s  .  .
+11  c  g  l  .  .
+12  b  f  k  p  .
+13  a  e  j  o  s
+14  d  i  n  r  .
+15  h  m  q  .  . 
+;
+
+param num_less := 6;
+param less2: 1 2 := 
+1  a c
+2  a h
+3  a l
+4  a q
+5  a s
+6  c h
+;
+
+
+option show_stats 2;
+
+option solver gecode;
+option gecode_options "icl=def var_branching=size_min val_branching=min outlev=1 outfreq=1 timelimit=30";
+
+# option solver ilogcp;
+# option ilogcp_options "optimizer=cp alldiffinferencelevel=1 debugexpr=0 logperiod=1 logverbosity=0";
+
+solve;
+
+display x;
+
+for{i in letters} printf "%d, ", x[i];
+printf "\n";
+
+9) IMPLEMENTATION IN .mzn
+% 
+% Magic Hexagon in MiniZinc.
+%
+% Prob023: Magic Hexagon
+% http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+% http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+% 
+
+% 
+% Model created by Hakan Kjellerstrand, hakank@bonetmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+%
+
+include "globals.mzn"; 
+
+set of int: N = 1..19;
+var N: a;
+var N: b;
+var N: c;
+var N: d;
+var N: e;
+var N: f;
+var N: g;
+var N: h;
+var N: i;
+var N: j;
+var N: k;
+var N: l;
+var N: m;
+var N: n;
+var N: o;
+var N: p;
+var N: q;
+var N: r;
+var N: s;
+
+array[N] of var N: LD = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s];
+
+solve satisfy;
+
+constraint
+  all_different(LD) /\
+
+  a + b + c =  38 /\
+  d + e + f + g =  38 /\
+  h + i + j + k + l =  38 /\ 
+  m + n + o + p =  38 /\ 
+  q + r + s =  38 /\ 
+  a + d + h =  38 /\ 
+  b + e + i + m =  38 /\ 
+  c + f + j + n + q =  38 /\ 
+  g + k + o + r =  38 /\ 
+  l + p + s =  38 /\ 
+  c + g + l =  38 /\ 
+  b + f + k + p =  38 /\ 
+  a + e + j + o + s =  38 /\ 
+  d + i + n + r =  38 /\ 
+  h + m + q =  38 /\ 
+
+  a < c /\
+  a < h /\
+  a < l /\
+  a < q /\
+  a < s /\
+  c < h
+;
+
+output
+[
+  show(LD)
+];
+
+10) IMPLEMENTATION IN .pi
+/*
+
+  Magic hexagon in Picat.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+import cp.
+
+main => go.
+
+go =>
+
+   LD = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S],
+   LD :: 1..19,
+
+   all_different(LD),
+
+   A + B + C #=  38,
+   D + E + F + G #=  38,
+   H + I + J + K + L #=  38, 
+   M + N + O + P #=  38, 
+   Q + R + S #=  38, 
+   A + D + H #=  38, 
+   B + E + I + M #=  38, 
+   C + F + J + N + Q #=  38, 
+   G + K + O + R #=  38, 
+   L + P + S #=  38, 
+   C + G + L #=  38, 
+   B + F + K + P #=  38, 
+   A + E + J + O + S #=  38, 
+   D + I + N + R #=  38, 
+   H + M + Q #=  38, 
+   
+   A #< C,
+   A #< H,
+   A #< L,
+   A #< Q,
+   A #< S,
+   C #< H,
+   
+   solve([ff], LD),
+
+   writeln(LD),
+   nl.
+
+
+
+11) IMPLEMENTATION IN .pl
+/*
+
+  Magic Hexagon in B-Prolog.
+
+  Prob023: Magic Hexagon
+  http://www.comp.rgu.ac.uk/staff/ha/ZCSP/prob023/prob023.pdf
+  http://www.cse.unsw.edu.au/~tw/csplib/prob/prob023/
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+
+go :-
+        LD = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S],
+        domain(LD,1,19),
+
+        all_distinct(LD),
+
+        A + B + C #=  38,
+        D + E + F + G #=  38,
+        H + I + J + K + L #=  38, 
+        M + N + O + P #=  38, 
+        Q + R + S #=  38, 
+        A + D + H #=  38, 
+        B + E + I + M #=  38, 
+        C + F + J + N + Q #=  38, 
+        G + K + O + R #=  38, 
+        L + P + S #=  38, 
+        C + G + L #=  38, 
+        B + F + K + P #=  38, 
+        A + E + J + O + S #=  38, 
+        D + I + N + R #=  38, 
+        H + M + Q #=  38, 
+        
+        A #< C,
+        A #< H,
+        A #< L,
+        A #< Q,
+        A #< S,
+        C #< H,
+        
+        labeling([ff], LD),
+
+        writeln(LD),
+        nl.
+
+
+
+

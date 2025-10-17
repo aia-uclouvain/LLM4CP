@@ -1,0 +1,5 @@
+Fair Xmas Duty 
+The problem is about creating a fair schedule for four people - Adam, Boris, Cecile, and Danielle - to be on duty during the Christmas and New Year's holidays. 
+The main variables are the people (Adam, Boris, Cecile, and Danielle) and the days they are on duty, as well as the points associated with each day (some days are more valuable than others). 
+The basic restrictions are that each person cannot be on duty for more than two days in a row, and there are some days when certain people cannot work. 
+The goal is to minimize the total differences in points between each pair of people, meaning the schedule should be as fair as possible so that everyone gets a similar number of points.

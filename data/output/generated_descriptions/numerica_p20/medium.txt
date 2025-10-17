@@ -1,0 +1,5 @@
+Circle-Parabola Intersection Problem
+The problem is about finding the intersection points of a circle and a parabola, which are defined by two equations: x^2 + y^2 = 1 and x^2 = y.
+The main decision variables are x and y, which represent the coordinates of the intersection points.
+The key constraints are that the points must lie on both the circle (x^2 + y^2 = 1) and the parabola (x^2 = y), meaning the distance of the point from the origin must be 1 (for the circle) and the y-coordinate must be equal to the square of the x-coordinate (for the parabola).
+The problem's objective is to find all possible intersection points, which is achieved by satisfying the given constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find the values of x and y that make both equations true at the same time.

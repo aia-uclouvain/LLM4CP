@@ -1,0 +1,14 @@
+The Crowded Chessboard puzzle
+The Crowded Chessboard puzzle is about placing different types of chess pieces (queens, bishops, knights, and rooks) on a chessboard in such a way that the total number of pieces is minimized while ensuring that no piece attacks another piece of the same type.
+
+The main decision variables in this problem are represented by the 3D array `x`, where `x[i, j, k]` is a binary variable that indicates whether a piece of type `k` is placed on the square at position `(i, j)` on the board. The types of pieces are represented by the values 1 (queen), 2 (bishop), 3 (knight), and 4 (rook).
+
+The key constraints in this problem can be described as follows: 
+- Each type of piece must be placed a specific number of times on the board, as specified by the `N` array.
+- Each square on the board can be occupied by at most one piece.
+- No queen can attack another queen, which means that no two queens can be in the same row, column, or diagonal.
+- No bishop can attack another bishop, which means that no two bishops can be in the same diagonal.
+- No rook can attack another rook, which means that no two rooks can be in the same row or column.
+- No knight can attack another knight, which means that no two knights can be in a position to jump over each other.
+
+The objective of this problem is to minimize the total number of pieces placed on the board, which is represented by the variable `z`. The problem is solved using a constraint programming approach, where the constraints are defined using the MiniZinc language, and the solution is found using a search algorithm.

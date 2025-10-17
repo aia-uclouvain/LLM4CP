@@ -1,0 +1,5 @@
+The Local Art Theft problem. 
+This problem is about figuring out who committed a crime after interviewing six suspects. Each suspect made statements about who they think did not commit the crime. The police know that exactly four of the suspects lied once, and the rest of the statements are true.
+The main variables are the suspects (Alan, Brian, Charlie, Dave, Eddie, and Freddie) and whether they are telling the truth or not. There's also a variable to keep track of how many people each suspect accused.
+The basic rules are that each suspect's statement must be either true or false, and exactly four suspects lied. If a suspect says someone did not commit the crime, then that person must not have committed the crime if the suspect is telling the truth.
+The goal is to find out who committed the crime by figuring out who is telling the truth and who is lying, based on their statements and the rule that exactly four suspects lied.

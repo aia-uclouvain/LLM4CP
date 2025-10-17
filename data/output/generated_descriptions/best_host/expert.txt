@@ -1,0 +1,5 @@
+name: Seating Arrangement Problem
+description: The problem is to find a seating arrangement for six guests at a dinner party such that the number of conflicts between guests who do not get along is minimized. Each guest has a preference for who they want to sit next to, and the goal is to find an arrangement that satisfies these preferences as much as possible.
+variables: $x_1, x_2, ..., x_6$ - These are decision variables that represent the seating arrangement, where $x_i$ is the guest seated at position $i$.
+constraints: $x[1] = Andrew$, $all\_different(x)$, $x[a] \in prefs[x[i]] \wedge x[b] \in prefs[x[i]]$ for all $i$ - These constraints ensure that Andrew is seated at position 1 (symmetry breaking), each guest is seated at a unique position, and each guest is seated next to their preferred guests.
+objective: The objective is to satisfy all the constraints, which means finding a seating arrangement that minimizes the number of conflicts between guests who do not get along.

@@ -1,0 +1,5 @@
+Numbrix 
+The problem is about filling a grid with numbers in sequential order, either horizontally or vertically, without using diagonal paths. 
+The main variables are the grid cells, where each cell can be assigned a number from 1 to the total number of cells in the grid. 
+The basic restrictions are that each cell can only be assigned one number, each number can only be used once, and each cell must have a neighboring cell with the next higher number. 
+The goal of the problem is to find a solution that satisfies all these restrictions and fills the entire grid with numbers in sequential order.

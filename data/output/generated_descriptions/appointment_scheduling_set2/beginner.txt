@@ -1,0 +1,13 @@
+Appointment Scheduling Problem
+The problem is about scheduling appointments between an employer and N people. Each person has a schedule with free and busy time slots, and the goal is to find a schedule where each person is assigned to a time slot that they are available for.
+
+The main variables are:
+- n: the number of people to be scheduled
+- s: a set of available time slots for each person
+- x: the assignment of people to time slots
+
+The basic restrictions or rules are:
+- Each person can only be assigned to a time slot that they are available for
+- Each time slot can only be assigned to one person
+
+The goal of the problem is to find a schedule that satisfies these rules, or to determine if it is impossible to find such a schedule. In other words, the goal is to assign each person to a time slot in such a way that all people are scheduled and all time slots are used exactly once.

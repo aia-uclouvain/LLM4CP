@@ -1,0 +1,12 @@
+Nim Game
+The Nim game is a classic mathematical game where two players take turns removing one or more objects (in this case, matchsticks) from a pile, with the goal of being the player who removes the last object.
+
+The main decision variables in this problem are `x`, which represents the number of matchsticks taken by each player at each turn, and `who`, which represents the player who makes each move. The `winner` variable represents the player who wins the game at each turn.
+
+The key constraints in this problem are:
+- Each player must take at least one and at most `max_num_to_take` matchsticks at each turn.
+- A player cannot take zero matchsticks before any real move has been made.
+- The cumulative sum of matchsticks taken by all players must be calculated at each turn, and the winner is determined when this cumulative sum equals the total number of matchsticks.
+- The total number of matchsticks taken cannot exceed the initial number of matchsticks.
+
+The objective of this problem is to determine the winner of the game, given the initial number of matchsticks and the maximum number of matchsticks that can be taken at each turn. The model does not explicitly minimize or maximize a specific variable, but rather satisfies the constraints to find a valid solution. However, the solve statement with the `maximize` keyword is commented out, suggesting that the model can be used to maximize the number of turns won by a specific player.

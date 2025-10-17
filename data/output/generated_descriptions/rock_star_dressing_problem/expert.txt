@@ -1,0 +1,9 @@
+name: Rock Star Dressing Problem
+
+description: The Rock Star Dressing Problem is a constraint satisfaction problem where a rock star has a set of shirts, ties, and pants, and there are certain fashion sense requirements that must be satisfied to find a satisfactory outfit. The rock star has four shirts (red, green, orange, and blue), two ties (pink and yellow), and four pants (black, khaki, purple, and blue). The fashion sense requirements specify which shirts can be worn with which ties and which pants.
+
+variables: $s \in \{red, green, orange, blue\}, t \in \{pink, yellow\}, p \in \{black, khaki, purple, blue\}$, where $s$ represents the shirt, $t$ represents the tie, and $p$ represents the pants, and they are decision variables that need to be assigned a value to form a satisfactory outfit.
+
+constraints: $(p, s) \in \{(khaki, green), (blue, red), (purple, orange), (black, blue)\} \land (s, t) \in \{(red, yellow), (green, yellow), (blue, yellow), (blue, pink)\} \land (t, p) \in \{(yellow, blue), (yellow, black), (pink, black), (pink, purple), (pink, khaki)\}$, where these constraints represent the fashion sense requirements that must be satisfied, specifically which pants can be worn with which shirts, which shirts can be worn with which ties, and which ties can be worn with which pants.
+
+objective: The objective of the problem is to find a satisfactory outfit that satisfies all the fashion sense requirements, which is achieved by solving the constraint satisfaction problem.

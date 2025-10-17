@@ -1,0 +1,8 @@
+The Enigma problem. 
+It is about finding a six-digit number, ENIGMA, where all digits are different and non-zero, such that when the first two digits are moved to the end, the resulting number, IGMAEN, is 20% larger than the original number.
+
+The main decision variables are e, n, i, g, m, and a, which represent the individual digits of the ENIGMA number, and enigma and igmaen, which represent the complete six-digit numbers.
+
+The key constraints are that all digits must be different, and the digits must be non-zero. Additionally, the constraint that the resulting number IGMAEN is 20% larger than ENIGMA is represented by the equation 10*igmaen = 12*enigma, which means that IGMAEN is 1.2 times ENIGMA.
+
+The objective of the problem is to find a solution that satisfies all the constraints, specifically to find the value of the ENIGMA number. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that meets all the given conditions.

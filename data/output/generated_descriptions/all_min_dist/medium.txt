@@ -1,0 +1,8 @@
+The problem is called the Minimum Distance Problem. 
+It is about finding an assignment of values to a set of variables such that the absolute difference between any two variables is greater than or equal to a given minimum distance.
+
+The main decision variables are `x`, an array of variables representing the values to be assigned, and `c`, a variable representing the minimum distance between any two variables in `x`. 
+
+The key constraints are that the absolute difference between any two variables in `x` must be greater than or equal to `c`, and `c` must be greater than 0. In plain language, this means that for any two values in `x`, the difference between them must be at least as large as the minimum distance `c`.
+
+The problem's objective is to satisfy these constraints, specifically to find values for `x` and `c` such that all pairs of variables in `x` have an absolute difference of at least `c`, given that `c` is 2.

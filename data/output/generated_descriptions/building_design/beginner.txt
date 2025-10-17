@@ -1,0 +1,15 @@
+Building Design Problem
+The problem is about designing a rectangular building that is partially buried underground to save energy costs for heating and cooling. 
+The main variables are: 
+- the number of stories in the building (n), 
+- the depth of the building below ground (d), 
+- the height of the building above ground (h), 
+- the length of the building (l), and 
+- the width of the building (w).
+The basic restrictions or rules are: 
+- the total floor space must be at least 20,000 square meters, 
+- the length and width of the building cannot be more than 50 meters, 
+- the ratio of the length to the width must be the golden ratio (1.618), 
+- each story must be 3.5 meters high, and 
+- the annual energy costs for heating and cooling must not exceed $225,000.
+The goal is to minimize the cost of excavating the building, which is directly related to the volume of the building below ground (z = d*l*w).

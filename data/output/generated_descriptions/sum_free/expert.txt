@@ -1,0 +1,5 @@
+name: Sum-Free and Product-Free Set Problem
+description: The problem is to find a set of numbers that satisfies two conditions: the sum of any two numbers in the set is not in the set (sum-free), and the product of any two numbers in the set is not in the set (product-free). Additionally, the problem includes some extra constraints such as limiting the count of each number in the set and setting the total sum of the numbers in the set to a specific value.
+variables: $x = [x_1, x_2, ..., x_{10}]$, where $x_i$ is a decision variable representing the $i^{th}$ element in the set, which is an integer between 1 and 20.
+constraints: $\forall i, j, k \in \{1, 2, ..., 10\}: x_k \neq x_i + x_j \land x_k \neq x_i \cdot x_j \land \forall i \in \{1, 2, ..., 100\}: \text{count}(x_i = i) \leq 3 \land \sum_{i=1}^{10} x_i = 100$, which represent the sum-free and product-free conditions, the limit on the count of each number, and the total sum constraint, respectively.
+objective: satisfy, which means the problem is a satisfaction problem where the goal is to find a feasible solution that satisfies all the constraints, rather than optimizing a specific objective function.

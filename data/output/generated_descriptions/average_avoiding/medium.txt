@@ -1,0 +1,15 @@
+**Average Avoiding Problem**
+The Average Avoiding Problem is a classic constraint programming problem. 
+It involves arranging a set of numbers in a specific order such that the average of any two numbers does not lie between them.
+
+**Decision Variables**
+The main decision variable in this problem is an array `x` of length `n`, where `n` is the number of numbers to be arranged. Each element `x[i]` represents the number at position `i` in the arrangement.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- For any two positions `i` and `j` in the arrangement, the average of the numbers at these positions should not be equal to the number at any position `k` between `i` and `j`.
+- The arrangement should be a permutation of the input numbers, meaning each number should appear exactly once in the arrangement.
+- The model also includes some symmetry breaking constraints to reduce the search space and improve the solving efficiency.
+
+**Objective**
+The objective of this problem is to find a valid arrangement that satisfies all the constraints. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that meets all the conditions.

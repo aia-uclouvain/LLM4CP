@@ -1,0 +1,11 @@
+Minimum Modulo Problem
+The Minimum Modulo problem is about finding the minimum value in a collection of integers based on a specific partial ordering, which is determined by the modulo operation.
+The main decision variables are: 
+- `variables`: an array of integers representing the collection of domain variables, 
+- `t_min`: an integer representing the minimum value of the collection according to the partial ordering, 
+- `m`: an integer representing the modulo value used for the partial ordering.
+The key constraints are: 
+- each element in `variables` must be within a certain range (1 to 9 in this case), 
+- `t_min` must be equal to one of the elements in `variables` that has the minimum modulo `m` value, 
+- the `minimum_modulo` constraint ensures that `t_min` is the minimum value in `variables` based on the partial ordering.
+The objective of the problem is to satisfy the given constraints, specifically to find a solution where `t_min` is the minimum value in `variables` according to the modulo `m` partial ordering, given the fixed values of `variables` and `m`.

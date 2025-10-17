@@ -1,0 +1,5 @@
+Nonogram problem
+The Nonogram problem is about filling in a grid of squares with colors, where each row and column has a set of clues that describe the pattern of filled-in squares. 
+The main variables are the grid of squares (board), the row rules (row_rules), and the column rules (col_rules). The board is a 2D array where each cell can be either filled (1) or empty (0). The row and column rules are arrays of numbers that describe the pattern of filled-in squares in each row and column.
+The basic restrictions are that each row and column must match the given rules, and that there must be at least one blank square between each group of filled-in squares. 
+The goal of the problem is to find a solution that satisfies all the rules, which means filling in the grid such that each row and column matches the given pattern.

@@ -1,0 +1,11 @@
+Transportation Problem
+The problem is about finding the most cost-effective way to transport goods from a set of plants to a set of clients, where each plant has a limited capacity and each client has a certain demand.
+
+The main decision variables are the `x` variables, which represent the amount of goods transported from each plant to each client. Specifically, `x[i,j]` represents the amount of goods transported from plant `i` to client `j`.
+
+The key constraints are:
+- The amount of goods transported from each plant to all clients cannot exceed the plant's capacity.
+- The amount of goods transported from all plants to each client must meet the client's demand.
+- The amount of goods transported from each plant to each client must be non-negative.
+
+The problem's objective is to minimize the total transportation cost, which is calculated by multiplying the amount of goods transported from each plant to each client by the corresponding cost and summing these products. The total transportation cost is represented by the variable `z`.

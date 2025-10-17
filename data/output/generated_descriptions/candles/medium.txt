@@ -1,0 +1,5 @@
+The Candles problem. 
+This problem is about determining the ages of seven children and the number of candles their uncle, Barney, bought for their birthday cake, given that the children were born on six consecutive Thanksgivings and Barney bought two more candles this year than last year. 
+The main decision variables are `varsnow` and `varsthen`, which represent the ages of the children this year and last year, respectively, and `now` and `lastyear`, which represent the total number of candles bought this year and last year, respectively. 
+The key constraints are that each child is either one year older than the previous child or the same age, each child's age this year is one more than their age last year, the children's ages this year and last year span six consecutive years, and the total number of candles bought this year is two more than last year and equal to the sum of the children's ages. 
+The problem's objective is to find a solution that satisfies all these constraints, as indicated by the `solve satisfy` statement, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,5 @@
+The Devil's Word problem. 
+It is about finding a way to add or subtract a set of given numbers to reach a specific total, in this case, 666. 
+The main decision variables are `plus` and `minus`, which are arrays of binary variables representing whether each number in the array `arr` should be added or subtracted to reach the total. 
+The key constraints are that each number can only be either added or subtracted, and the sum of the numbers with their respective signs must equal the total. 
+The problem's objective is to find a solution that satisfies these constraints, with the option to minimize the number of subtractions.

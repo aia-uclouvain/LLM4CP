@@ -1,0 +1,5 @@
+name: All Different Modulo
+description: The All Different Modulo problem is a constraint satisfaction problem that involves finding an assignment of values to a set of variables such that all variables have distinct remainders when divided by a given modulus. 
+variables: $x = (x_1, x_2, ..., x_n)$, $m$: $x$ is an array of decision variables representing the values to be assigned, and $m$ is a decision variable representing the modulus.
+constraints: $x_i \in [1, 25]$, $m \in [1, 5]$, $cp1d([25,1,14,3],x)$, $m = 5$, $all\_different\_modulo(x,m)$: these constraints ensure that each $x_i$ is within the range $[1, 25]$, $m$ is within the range $[1, 5]$, the values of $x$ are fixed to $[25,1,14,3]$, $m$ is fixed to $5$, and all $x_i$ have distinct remainders when divided by $m$.
+objective: The objective of the problem is to satisfy all the given constraints, which is achieved by setting the solve statement to "satisfy".

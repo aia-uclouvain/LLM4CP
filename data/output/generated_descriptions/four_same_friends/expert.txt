@@ -1,0 +1,16 @@
+name: Four Alike Pals Problem
+
+description: The Four Alike Pals problem is a constraint satisfaction problem that involves finding four friends who are alike in many ways. The problem states that for all pairs of friends, they must have the same first name, last name, or birth date. However, no three friends can have the same first name, last name, or birth date. The goal is to determine if such a group of four friends can exist and find the smallest number of different first names, last names, and birth dates required.
+
+variables: $first\_name = (first\_name_1, first\_name_2, first\_name_3, first\_name_4), last\_name = (last\_name_1, last\_name_2, last\_name_3, last\_name_4), birthday = (birthday_1, birthday_2, birthday_3, birthday_4), z$ 
+These variables represent the first name, last name, and birth date of each of the four friends, and $z$ represents the maximum number of different values among the first names, last names, and birth dates.
+
+constraints: 
+$\forall i, j \in \{1, 2, 3, 4\} \text{ where } i < j: first\_name_i = first\_name_j \lor last\_name_i = last\_name_j \lor birthday_i = birthday_j$
+$\forall i \in \{1, 2, 3, 4\}: 1 \leq first\_name_i, last\_name_i, birthday_i \leq n$
+$global\_cardinality\_low\_up(first\_name, cover, limit\_low, limit\_high)$
+$global\_cardinality\_low\_up(last\_name, cover, limit\_low, limit\_high)$
+$global\_cardinality\_low\_up(birthday, cover, limit\_low, limit\_high)$
+These constraints ensure that each pair of friends has at least one attribute in common, and that no three friends have the same first name, last name, or birth date.
+
+objective: Minimize $z$, which represents the maximum number of different values among the first names, last names, and birth dates.

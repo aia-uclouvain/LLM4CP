@@ -1,0 +1,6 @@
+The name of the problem is Barbell/Dumbbell Weights. 
+This problem is about finding the best way to put weights on a barbell or dumbbells to reach a certain total weight. 
+The main variables are the total weight, the number of weight plates of each type, and the weight of the barbell or dumbbells. 
+In simple terms, the total weight is the sum of the weights of the plates and the barbell or dumbbells, the number of weight plates of each type is how many plates of a certain weight we use, and the weight of the barbell or dumbbells is the weight of the bar or dumbbells themselves without any plates. 
+The basic restrictions or rules of the problem are that we must have enough weight plates of each type, and for each type of weight, we must have a certain number of plates (two for a barbell and four for dumbbells). 
+The goal of the problem can be either to find the maximum total weight we can achieve or to find the minimum number of weight plates needed to reach a certain total weight.

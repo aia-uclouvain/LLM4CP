@@ -1,0 +1,5 @@
+name: Minimum Except 0 Problem
+description: The Minimum Except 0 Problem is a constraint satisfaction problem where we have a set of non-negative variables and we want to find the minimum value among them, ignoring any variables that take the value 0. If all variables are 0, then the minimum value is a predefined default value.
+variables: $t_min, variables = [x_1, x_2, ..., x_n]$ where $x_i$ are decision variables representing the values in the collection and $t_min$ is a decision variable representing the minimum value among them, with $x_i$ being non-negative integers and $t_min$ being an integer.
+constraints: $t_min = \min(\{x_i | x_i > 0\}) \vee (t_min = t_default \wedge \forall i (x_i = 0))$ where $t_default$ is the default minimum value, which means that either $t_min$ is the minimum value among the non-zero variables or $t_min$ is the default value if all variables are 0.
+objective: The objective of the problem is to satisfy the given constraints, which means finding values for the variables that make the constraints true, rather than minimizing or maximizing a specific value.

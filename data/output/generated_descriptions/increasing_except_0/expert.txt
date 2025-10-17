@@ -1,0 +1,5 @@
+name: Increasing Sequence with Exceptions
+description: The problem involves finding a sequence of numbers that is increasing, with the exception that any zeros in the sequence are disregarded when determining the increasing order. This means that the sequence can contain zeros, and these zeros do not affect the overall increasing trend of the sequence.
+variables: $x_1, x_2, ..., x_n$, where $x_i$ represents the $i^{th}$ element in the sequence, and is a decision variable that can take on any integer value between 0 and $n$.
+constraints: $\forall i, j \in \{1, 2, ..., n\}, i < j: (x_i \neq 0 \wedge x_j \neq 0) \rightarrow x_i \leq x_j$, which ensures that the sequence is increasing when disregarding zeros, and $x_i \in \{0, 1, 2, ..., n\}$, which defines the domain of each decision variable.
+objective: The problem is a satisfaction problem, meaning that the objective is to find a sequence that satisfies the given constraints, rather than minimizing or maximizing a specific value.

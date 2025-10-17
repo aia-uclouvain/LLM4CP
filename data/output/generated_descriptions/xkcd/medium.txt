@@ -1,0 +1,5 @@
+The 0/1 Knapsack Problem, also related to the xkcd Knapsack problem. 
+This problem is about finding the optimal combination of items, each with a specific price, to reach a total cost of exactly $15.05.
+The main decision variables are `x[i]`, which represent the quantity of each item `i` to be ordered, where `i` ranges from 1 to `num_prices`.
+The key constraints are that the total cost of the ordered items must be exactly $15.05, and the quantity of each item must be a non-negative integer. 
+The problem's objective is to find a combination of items that satisfies the total cost constraint, rather than minimizing or maximizing a specific value, as indicated by the `solve satisfy` statement.

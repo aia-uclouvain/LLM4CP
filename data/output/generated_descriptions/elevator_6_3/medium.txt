@@ -1,0 +1,8 @@
+Elevator Puzzle
+The Elevator Puzzle is a classic constraint programming problem that involves finding the optimal sequence of elevator stops to visit a set of floors while minimizing the total number of stops.
+
+The main decision variables in this problem are the array `x` which represents the floor that the elevator visits at each stop. 
+
+The key constraints in this problem are that the elevator must visit each floor the required number of times, as specified in the input data `c`, and that the elevator can only visit one floor at a time. The constraint that the elevator starts and ends at the bottom floor is also implied.
+
+The objective of the Elevator Puzzle is to minimize the total number of stops made by the elevator, which is equivalent to finding the shortest possible sequence of floors that satisfies all the constraints. In other words, the goal is to find the most efficient way for the elevator to visit all the required floors while making as few stops as possible.

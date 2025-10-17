@@ -1,0 +1,8 @@
+Binero (Binairo, Takuzu, Binary Puzzle)
+The Binero problem is a grid-based puzzle where the goal is to fill a 2n x 2n grid with ones and zeroes, given some initial values. 
+The main decision variables in this problem are the values of the grid cells, represented by the array x, where x[i,j] is the value of the cell at row i and column j. 
+The key constraints in this problem are: 
+- Each row and column must have an equal number of zeros and ones. 
+- No more than two consecutive cells in a row or column can have the same value. 
+- No two rows or columns can be identical. 
+The objective of the problem is to find a solution that satisfies all these constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

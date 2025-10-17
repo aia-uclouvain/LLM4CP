@@ -1,0 +1,5 @@
+name: Hardy's 1729 problem
+description: The problem is to find the smallest number that can be expressed as the sum of two cubes in two different ways, which is a famous problem in number theory.
+variables: $X1, X2, Y1, Y2, Z$ - These variables represent the numbers involved in the sum of cubes, where $X1$ and $X2$ are the bases of the two cubes in the first representation, $Y1$ and $Y2$ are the bases of the two cubes in the second representation, and $Z$ is the resulting sum.
+constraints: $X1 \leq X2$, $Y1 \leq Y2$, $X1 \neq Y1$, $X1 \neq Y2$, $X1 \leq Y1$, $X1*X1*X1 + X2*X2*X2 = Z$, $Y1*Y1*Y1 + Y2*Y2*Y2 = Z$ - These constraints ensure that the numbers are positive, break symmetries to reduce the search space, and enforce the condition that $Z$ is the sum of two cubes in two different ways.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. However, the problem is often associated with finding the smallest possible value of $Z$ that meets the conditions, which is 1729.

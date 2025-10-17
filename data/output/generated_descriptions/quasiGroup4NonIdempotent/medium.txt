@@ -1,0 +1,14 @@
+Quasigroup Existence Problem
+The Quasigroup existence problem is about finding a multiplication table of integers where each element occurs exactly once in each row and column, and certain multiplication axioms hold. 
+
+The main decision variables are the `quasiGroup` array, which represents the multiplication table, and the `qgDiagonal` array, which stores the diagonal elements of the multiplication table. The `quasiGroup` array is a 2D array where `quasiGroup[i, j]` represents the result of multiplying `i` and `j`, and the `qgDiagonal` array stores the result of multiplying each element with itself.
+
+The key constraints are: 
+- each row and column must contain each element exactly once, 
+- the result of multiplying two elements in a specific order and then multiplying the results in the reverse order must be the first element, 
+- the diagonal elements must all be different, 
+- the multiplication must be anti-Abelian, meaning that the result of multiplying two different elements in one order is not the same as multiplying them in the reverse order, 
+- if the result of multiplying an element with itself is another element, then the result of multiplying that other element with itself must be the original element, 
+- and some symmetry-breaking constraints to reduce the search space.
+
+The problem's objective is to find a satisfying assignment for the `quasiGroup` array, meaning an assignment that satisfies all the constraints. The model uses the `solve satisfy` statement, which means it will try to find any solution that satisfies all the constraints, without trying to minimize or maximize any specific objective function.

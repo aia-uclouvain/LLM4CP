@@ -1,0 +1,18 @@
+**Sudoku Problem**
+The problem is a classic Sudoku puzzle, which is a well-known constraint satisfaction problem.
+
+**Description**
+The goal of Sudoku is to fill a 25x25 grid with numbers from 1 to 25, such that each row, column, and 5x5 sub-grid contains each number exactly once. The problem is defined by a set of variables, constraints, and an objective function.
+
+**Decision Variables**
+The decision variables are the values of the cells in the 25x25 grid, represented by variables such as `A11`, `A12`, ..., `Y55`. Each variable can take on a value from 1 to 25.
+
+**Constraints**
+The constraints of the problem are:
+* Each row must contain each number from 1 to 25 exactly once.
+* Each column must contain each number from 1 to 25 exactly once.
+* Each 5x5 sub-grid must contain each number from 1 to 25 exactly once.
+* Some cells have pre-assigned values, which must be respected.
+
+**Objective**
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to fill the grid with numbers from 1 to 25 such that each row, column, and 5x5 sub-grid contains each number exactly once. There is no explicit objective function to minimize or maximize, but rather a satisfaction problem where the goal is to find a feasible solution.

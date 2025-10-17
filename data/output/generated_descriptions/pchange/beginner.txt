@@ -1,0 +1,5 @@
+Price Change Puzzle
+The problem is about three dealers who sell items at two different prices. 
+The main variables are the number of items each dealer sells at each price and the two prices. 
+The basic restrictions are that each dealer can only sell a certain total number of items, the number of items sold at each price cannot be negative, and the total number of items sold by each dealer is the sum of the items sold at each price. Additionally, the total amount of money made by the first dealer at both prices must be equal to the total amount of money made by the other two dealers at both prices, and the second price must be at least one more than the first price. 
+The goal of the problem is to find a solution that satisfies all these restrictions.

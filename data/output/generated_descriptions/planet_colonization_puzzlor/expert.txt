@@ -1,0 +1,8 @@
+name: Planet Colonization
+description: The problem is to determine the best landing site on a newly discovered planet to minimize the total distance to four essential resources: food, oxygen, water, and energy. The planet is divided into 20 areas, and each area is a potential site for the colony. The distance between each area and the resources is given, and the goal is to find the area that minimizes the total distance to all four resources.
+variables: $landing\_site, cost, energy\_selected, food\_selected, water\_selected, oxygen\_selected$ 
+These variables represent the decision variables in the problem: $landing\_site$ is the area where the colony will be established, $cost$ is the total distance from the landing site to all four resources, and $energy\_selected, food\_selected, water\_selected, oxygen\_selected$ are the specific areas where the respective resources are located.
+constraints: $cost = distance[landing\_site, energy\_selected] + distance[landing\_site, food\_selected] + distance[landing\_site, water\_selected] + distance[landing\_site, oxygen\_selected]$ 
+These constraints ensure that the total distance from the landing site to all four resources is calculated correctly. The constraints also imply that the landing site and the resource locations are within the 20 areas of the planet.
+objective: minimize $cost$ 
+The objective of the problem is to minimize the total distance from the landing site to all four resources, which is represented by the variable $cost$.

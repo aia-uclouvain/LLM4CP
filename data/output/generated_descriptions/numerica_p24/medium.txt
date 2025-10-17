@@ -1,0 +1,10 @@
+Neuropsysiology Problem
+The problem is about finding values for a set of variables that satisfy a system of nonlinear equations, which arises from a neuropsysiology context.
+
+The main decision variables are the array `x` of `m` variables, where each `x[i]` represents a value that contributes to satisfying the given constraints.
+
+The key constraints can be described as follows: the problem requires that certain combinations of the variables `x` satisfy specific equations, including equations involving squares and cubes of the variables. Specifically, the constraints involve: 
+- the sum of squares of certain pairs of variables being equal to 1, 
+- and more complex equations involving products of cubes of the variables, which must equal given constants `C`.
+
+The objective of the problem is not to minimize or maximize a specific function, but rather to find a solution that satisfies all the given constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. In other words, the goal is to find values for the variables `x` such that all the constraints are met, without optimizing a particular objective function.

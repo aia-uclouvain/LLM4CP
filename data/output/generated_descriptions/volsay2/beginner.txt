@@ -1,0 +1,5 @@
+Volsay problem
+The problem is about deciding how much of two products, gas and chloride, to produce in order to make the most money, given certain limitations on production.
+The main variables are production of gas and chloride, which represent how much of each product to make, and z, which is the total amount of money made from selling these products.
+The basic restrictions are that the total production of gas and chloride cannot exceed a certain amount, and there are also limits on the individual production of gas and chloride, as well as a limit on the total resources used to produce them.
+The goal is to maximize the total amount of money made, which is calculated by multiplying the amount of each product produced by its price and adding these amounts together.

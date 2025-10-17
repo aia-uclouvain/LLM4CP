@@ -1,0 +1,10 @@
+Covering Array Problem
+The problem is about creating a special kind of table with rows and columns, where each cell can have one of a few different values. 
+The main variables are: 
+- CA (or p and v in the Python version), which is the table we're trying to create, 
+- t, which is the size of a subset of rows, 
+- k, which is the total number of rows, 
+- g, which is the number of different values a cell can have, and 
+- b, which is the total number of columns.
+The basic restrictions are that any subset of t rows must contain all possible combinations of values, and that the table must be filled in a way that makes sense. 
+The goal is to determine if it's possible to create such a table with the given number of rows, columns, and values, and if so, to find one example of it.

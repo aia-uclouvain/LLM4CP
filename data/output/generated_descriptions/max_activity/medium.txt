@@ -1,0 +1,13 @@
+**Max Activity Problem**
+The Max Activity problem is a classic constraint programming problem that involves assigning a group of kids to a set of activities based on their preferences. 
+
+The problem revolves around assigning each kid to one activity while respecting their preferences as much as possible, without exceeding the maximum number of participants allowed for each activity.
+
+The main decision variables in this problem are `x` and `scores`. The variable `x` represents the activity assigned to each kid, and `scores` represents the score or preference value associated with each kid's assigned activity.
+
+The key constraints in this problem can be described as follows: 
+- Each kid must be assigned to one of their preferred activities.
+- The number of kids assigned to each activity must not exceed the maximum allowed size for that activity.
+- The score for each kid is determined by their preference for the assigned activity, with higher preferences resulting in higher scores.
+
+The objective of the problem is to **maximize the total score**, which represents the overall satisfaction of the kids with their assigned activities. In other words, the goal is to find an assignment that respects the kids' preferences as much as possible while adhering to the activity size constraints.

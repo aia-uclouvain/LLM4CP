@@ -1,0 +1,5 @@
+name: Remainder Puzzle
+description: The Remainder Puzzle is a classic problem in constraint programming where we need to find the smallest possible number n such that when it is divided by 3, 4, 5, and 6, the remainders are 1, 2, 3, and 4 respectively. This problem is also known as the Chinese Remainder Theorem problem.
+variables: $x = [x_1, x_2, x_3, x_4], n$, where $x_i$ represents the quotient when $n$ is divided by $i+2$ (i.e., 3, 4, 5, 6) and $n$ is the number we are trying to find.
+constraints: $x_i \geq 1, i = 1..4; n \geq 1; -3x_1 + n = 1; -4x_2 + n = 2; -5x_3 + n = 3; -6x_4 + n = 4$, which represent the conditions that the quotients must be positive integers, $n$ must be a positive integer, and the remainders when $n$ is divided by 3, 4, 5, and 6 are 1, 2, 3, and 4 respectively.
+objective: minimize $n$

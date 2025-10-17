@@ -1,0 +1,5 @@
+The problem is known as the "Language Puzzle" or "International Meeting Problem". 
+It is about determining which languages each person knows, given a summary of the number of people who know each language. 
+The main decision variables are the `mat` matrix, where `mat[p, l]` represents whether person `p` knows language `l` (1 if they know it, 0 if they don't), and the `num_lang` array, where `num_lang[p]` represents the number of languages person `p` knows. 
+The key constraints are that the number of people who know each language must match the given summary, and that the number of languages each person knows can be calculated from the `mat` matrix. 
+The objective of the problem is to find a solution that satisfies these constraints, with the given model using a satisfiability or optimization approach (maximizing or minimizing the number of languages the first person knows).

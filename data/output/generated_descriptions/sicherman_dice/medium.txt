@@ -1,0 +1,11 @@
+Sicherman Dice Problem
+The Sicherman Dice problem is about finding two non-standard six-sided dice with positive integers on their faces, such that the probability distribution of their sum is the same as that of two standard six-sided dice.
+
+The main decision variables in this problem are `x1` and `x2`, which represent the numbers on the faces of the two dice. Each `x1` and `x2` is an array of six variables, ranging from 1 to `m` (the maximum integer value), where `m` is set to 10 in this model.
+
+The key constraints in this problem are:
+- The probability distribution of the sum of the two dice must be the same as that of two standard dice. This is achieved by ensuring that the number of ways to get each possible sum (from 2 to 12) is the same as the standard distribution.
+- The numbers on each die must be in increasing order, which is a symmetry-breaking constraint to reduce the search space.
+- Each die must have unique numbers, which is also a symmetry-breaking constraint.
+
+The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The model uses the `solve satisfy` statement to find a solution that meets all the constraints, and the `int_search` function to search for the solution in a specific order (smallest, indomain_min, complete). The model outputs the numbers on the faces of the two dice, `x1` and `x2`.

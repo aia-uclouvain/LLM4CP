@@ -1,0 +1,15 @@
+Perfect Square Placement problem
+The Perfect Square Placement problem is a classic constraint programming problem that involves packing a set of squares of different sizes into a larger square container. The goal is to find a placement of the squares such that they do not overlap and the container is filled as much as possible.
+
+Main decision variables
+The main decision variables in this problem are the x and y coordinates of the bottom-left corner of each square. These variables determine the position of each square in the container.
+
+Key constraints
+The key constraints in this problem are:
+
+*   Each square must be placed within the container, i.e., its x and y coordinates must be within the bounds of the container.
+*   No two squares can overlap, i.e., the area of each square must not intersect with the area of any other square.
+*   The sum of the areas of all squares must be equal to the area of the container.
+
+Problem's objective
+The objective of the problem is to find a placement of the squares that satisfies all the constraints. In other words, the goal is to pack the squares into the container in a way that minimizes empty space and does not allow any overlaps between the squares.

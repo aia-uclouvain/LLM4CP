@@ -1,0 +1,8 @@
+name: Book Buy Puzzle
+description: The problem describes a scenario where two fathers, Peter and Paul, and their two sons, Tom and Dick, buy books. The goal is to determine the number of books each person buys, given certain constraints on the total amount spent by each family.
+variables: w, x, y 
+w is a binary variable indicating whether Peter is Tom's father, x_i is the number of books bought by father i, and y_j is the number of books bought by son j. These variables represent the decisions to be made in the problem.
+constraints: y[2] = 1, x[1] = y[1]+1, x[1]*x[1] + w*y[1]*y[1] + (1-w)*y[2]*y[2] = 65, x[2]*x[2] + (1-w)*y[1]*y[1] + w*y[2]*y[2] = 65 
+These constraints represent the conditions that must be satisfied: Dick buys one book, Peter buys one more book than Tom, and each family spends $65, where the cost of the books is the square of the number of books bought.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

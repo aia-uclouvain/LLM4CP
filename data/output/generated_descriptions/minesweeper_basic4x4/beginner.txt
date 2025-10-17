@@ -1,0 +1,5 @@
+Minesweeper problem
+The problem is about a game where you have to figure out where mines are hidden in a grid. 
+The main variables are the grid cells, which can either have a mine (represented by X) or not have a mine (represented by 0 or 1, where 1 means a safe cell with a number indicating how many mines are nearby).
+The basic restrictions are that each cell can either have a mine or not, and the numbers in the safe cells must match the number of mines surrounding them. 
+The goal is to correctly identify which cells have mines and which do not, based on the given numbers in the safe cells.

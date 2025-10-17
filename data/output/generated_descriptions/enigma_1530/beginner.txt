@@ -1,0 +1,5 @@
+Tom Daley problem 
+The problem is about finding a five-digit number represented by the letters DALEY, where each letter stands for a different digit, and no number starts with a zero. 
+The main variables are the letters T, O, M, D, A, L, E, and Y, which represent different digits. 
+The basic restrictions are that each letter must be a different digit, the numbers TOM and DALEY must not start with a zero, and the equation TOM * 13 = DALEY must be satisfied. 
+The goal is to find the five-digit number represented by DALEY.

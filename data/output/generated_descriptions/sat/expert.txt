@@ -1,0 +1,12 @@
+name: Satisfiability Problem (SAT)
+description: The Satisfiability Problem is a classic problem in computer science and mathematics that involves determining whether a given Boolean formula can be satisfied by assigning values to its variables. In this problem, we have a set of clauses, each of which is a disjunction of literals (variables or their negations). The goal is to find an assignment of values to the variables such that all clauses are satisfied, or to determine that no such assignment exists.
+
+variables: $x_1, x_2, ..., x_n, y_1, y_2, ..., y_m$ 
+These are the decision variables, where $x_i$ represents the value of the $i^{th}$ variable (0 or 1) and $y_i$ is an auxiliary variable that represents whether the $i^{th}$ clause is satisfied (0) or not (1).
+
+constraints: $\sum_{j \in C_i} (x_j \cdot \delta(j) + (1-x_{-j}) \cdot (1-\delta(j))) + y_i \geq 1, \forall i \in \{1, 2, ..., m\}$ 
+where $\delta(j) = 1$ if $j > 0$ and $\delta(j) = 0$ if $j < 0$. 
+These constraints ensure that each clause is satisfied, or if not, the corresponding auxiliary variable $y_i$ is set to 1.
+
+objective: minimize $\sum_{i=1}^{m} y_i$ 
+The objective is to minimize the number of unsatisfied clauses, which is equivalent to minimizing the sum of the auxiliary variables $y_i$. If the minimum value is 0, then all clauses can be satisfied, and the problem is satisfiable. Otherwise, the problem is unsatisfiable, and the minimum value represents the number of clauses that cannot be satisfied.

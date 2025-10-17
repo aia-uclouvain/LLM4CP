@@ -1,0 +1,5 @@
+name: 0/1 Knapsack Problem (Number of Days Problem)
+description: The problem is a variant of the 0/1 knapsack problem, where we have a set of items, each with a weight (number of days) and a value (price), and we want to select a subset of these items such that the total weight equals a given target weight (number of days) and the total value is minimized.
+variables: $x_1, x_2, ..., x_{num\_days} \in \{0,1\}$, $days \in \mathbb{Z}$, $total\_cost \in \mathbb{Z}$ - These variables represent the decision to include ($x_i = 1$) or exclude ($x_i = 0$) each item (reservation price) in the optimal solution, the total number of days, and the total cost of the selected items, respectively.
+constraints: $total\_cost = \sum_{i=1}^{num\_days} x_i \* data_{i,2}$, $days = \sum_{i=1}^{num\_days} x_i \* data_{i,1}$, $days = 13$ - These constraints ensure that the total cost is calculated correctly, the total number of days is calculated correctly, and the total number of days equals the target value (13 days).
+objective: Minimize $total\_cost$

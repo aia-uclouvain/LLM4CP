@@ -1,0 +1,5 @@
+The problem is called the Bipartite Graph Problem. 
+It's about dividing a group of connected items into two separate groups, where items in the same group are not directly connected to each other. 
+The main variables are the items (called nodes) and the connections between them (called edges), as well as the two groups (called sets) that we want to divide the items into. 
+The basic restrictions are that the connections between items must be two-way (if item A is connected to item B, then item B must also be connected to item A), and we can't have a situation where an odd number of items are connected to each other in a loop. 
+The goal is to find a way to divide the items into two groups such that items in the same group are not directly connected to each other.

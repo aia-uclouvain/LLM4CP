@@ -1,0 +1,5 @@
+Enigma 1575 
+The problem is about finding a set of numbers that replace the letters in the days of the week, such that each day's number is divisible by its position in the week. 
+The main variables are the numbers that replace the letters in the days of the week, such as m, o, t, u, w, h, f, s, and a, which represent the digits that replace the corresponding letters. 
+The basic restrictions are that each day's number must be divisible by its position in the week, but not by any higher number, and that all the digits used must be different. 
+The goal is to find a set of numbers that satisfy these conditions and form a famous number, which is a specific number formed by combining the digits of the days of the week.

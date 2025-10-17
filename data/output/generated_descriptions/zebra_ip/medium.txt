@@ -1,0 +1,23 @@
+Zebra Problem
+The Zebra problem is a classic logic puzzle that involves determining the characteristics of five houses, including their colors, the nationalities of their inhabitants, the pets they own, the drinks they consume, and the cigarettes they smoke.
+
+The main decision variables in this problem are the colors, nationalities, drinks, smokes, and pets of the five houses. These variables represent the different attributes of each house and are used to satisfy the given constraints.
+
+The key constraints in the Zebra problem can be described in plain language as follows: 
+- Each house has a unique color, nationality, drink, smoke, and pet.
+- The Englishman lives in the red house.
+- The Spaniard owns a dog.
+- Coffee is drunk in the green house.
+- The Ukrainian drinks tea.
+- The green house is immediately to the right of the ivory house.
+- The Old Gold smoker owns snails.
+- Kools are smoked in the yellow house.
+- Milk is drunk in the middle house.
+- The Norwegian lives in the first house.
+- The man who smokes Chesterfields lives in the house next to the man with the fox.
+- Kools are smoked in the house next to the house where the horse is kept.
+- The Lucky Strike smoker drinks orange juice.
+- The Japanese smokes Parliaments.
+- The Norwegian lives next to the blue house.
+
+The objective of the Zebra problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints. In other words, the goal is to determine the characteristics of the five houses in a way that is consistent with the provided information. The problem is solved when all the constraints are satisfied, and the characteristics of the houses are uniquely determined.

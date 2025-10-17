@@ -1,0 +1,5 @@
+name: Guards and Apple Problem
+description: A boy wants to give an apple to a girl and has to pass through five gates, each with a guard. He bribes each guard with half of his apples, plus one, and after giving the apple to the girl, he has no apples left. The problem is to find out how many apples the boy had initially.
+variables: $x_1, x_2, ..., x_6$ - These variables represent the number of apples the boy has after passing through each gate, where $x_1$ is the initial number of apples and $x_6$ is the number of apples left after giving one to the girl, which is 1.
+constraints: $x_6 = 1, x_{i+1} = \frac{x_i}{2} - 1, x_i \mod 2 = 0$ for $i = 1..5$ - These constraints ensure that the boy has 1 apple left after giving one to the girl, and that the number of apples after passing through each gate is half of the previous number minus one, and that the number of apples at each step is even.
+objective: The objective of the problem is to find the initial number of apples $x_1$ that satisfies all the constraints.

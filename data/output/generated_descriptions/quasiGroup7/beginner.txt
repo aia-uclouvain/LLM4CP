@@ -1,0 +1,5 @@
+Quasigroup problem 
+The problem is about finding a special kind of multiplication table where each row and column has unique numbers and follows certain rules. 
+The main variables are the numbers in the multiplication table, which represent the result of "multiplying" two numbers together in a special way. 
+The basic restrictions are that each row and column must have unique numbers, and the table must follow a specific rule that relates the numbers in different positions. 
+The goal of the problem is to find a table that satisfies all these rules, which is known as a quasigroup.

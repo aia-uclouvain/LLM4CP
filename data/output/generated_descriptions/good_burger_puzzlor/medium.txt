@@ -1,0 +1,11 @@
+Good Burger Problem
+The Good Burger problem is about creating a burger with a combination of ingredients that meets certain health requirements and taste quality standards while maximizing the cost.
+The main decision variables are the quantities of each ingredient to include in the burger, represented by the array `x`, where `x[i]` is the number of servings of the `i-th` ingredient.
+The key constraints are: 
+- each ingredient must be used at least once and no more than five times, 
+- the total sodium content must be less than 3,000 mg, 
+- the total fat content must be less than 150 grams, 
+- the total calorie content must be less than 3,000 calories, 
+- the servings of ketchup and lettuce must be the same, and 
+- the servings of pickles and tomatoes must be the same.
+The objective of the problem is to maximize the total cost of the burger, which is calculated by multiplying the quantity of each ingredient by its cost and summing these values.

@@ -1,0 +1,19 @@
+**Cutting Stock Problem with Bookshelves**
+The problem involves cutting wooden planks into pieces to build bookshelves, with the goal of maximizing the total width of the shelves.
+
+**Decision Variables**
+The main decision variables are:
+- `pieces`: a matrix representing the length of each piece cut from the planks. The first two pieces are the uprights, and the rest are the shelves.
+- `pfrom`: a matrix representing the index of the plank from which each piece is cut.
+
+**Constraints**
+The key constraints are:
+- Each plank can be cut into multiple pieces, but the total length of the pieces cut from a plank cannot exceed the plank's length, considering a cutting loss.
+- The first two pieces (uprights) must be equal in length.
+- All other pieces (shelves) must be equal in length.
+- The uprights must be at least as long as the total vertical space required for the shelves, including the thickness of the planks and the vertical gap between shelves.
+- If a maximum width is specified, the width of the shelves cannot exceed it.
+- If a minimum number of shelves is specified, at least that many shelves must be included.
+
+**Objective**
+The objective is to maximize the total width of the shelves, calculated as the sum of the lengths of all pieces minus the lengths of the two uprights. In the satisfaction version of the problem, the goal is to find a solution where the total width of the shelves equals a given width.

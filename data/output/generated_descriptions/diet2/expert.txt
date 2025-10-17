@@ -1,0 +1,8 @@
+name: Diet Problem
+description: The diet problem is a classic problem in operations research and optimization that involves finding the most cost-effective diet that meets the daily nutritional requirements of an individual. The problem considers a set of foods, each with its nutritional content and cost, and aims to determine the optimal amount of each food to purchase in order to meet the daily nutritional requirements at the minimum cost.
+variables: $x_f$ for $f \in F$, $cost$ 
+These are the decision variables, where $x_f$ represents the dollars of food $f$ to be purchased daily, and $cost$ represents the total food bill.
+constraints: $cost \geq 0$, $\sum_{f \in F} a_{f,n} \cdot x_f = b_n$ for $n \in N$
+These are the constraints, where the first one ensures that the total cost is non-negative, and the second one ensures that the daily nutritional requirements for each nutrient $n$ are met by the purchased foods.
+objective: minimize $cost$ 
+The objective of the problem is to minimize the total cost of the diet, which is the sum of the costs of all the foods purchased.

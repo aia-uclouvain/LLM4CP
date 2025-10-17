@@ -1,0 +1,15 @@
+De Bruijn Sequence Problem
+The problem is about creating a special sequence of numbers, called a De Bruijn sequence, using a set of rules. 
+The main variables are: 
+- base: the number of different values that can be used in the sequence (like 0 and 1 for binary), 
+- n: the number of values to consider at a time, 
+- m: the length of the sequence, 
+- x: the sequence of numbers, 
+- binary: the sequence in a binary (base 2) representation, 
+- bin_code: the sequence in the base representation, 
+- gcc: the count of each value in the sequence. 
+The basic restrictions are: 
+- all numbers in the sequence must be different, 
+- the sequence must follow a specific pattern where the first elements of each number are the same as the last elements of the previous number, 
+- the sequence must have a specific length and use a specific base. 
+The goal is to find a sequence that satisfies these rules and has an equal number of occurrences of each value when possible.

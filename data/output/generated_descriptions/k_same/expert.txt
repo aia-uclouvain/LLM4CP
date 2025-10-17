@@ -1,0 +1,5 @@
+name: k_same Problem
+description: The k_same problem is a constraint satisfaction problem where we have multiple sets of variables, each containing the same number of domain variables. The goal is to find an assignment of values to these variables such that the multisets of values assigned to each set are all identical.
+variables: $x_{i,j}$ where $i \in \{1, \ldots, n\}$ and $j \in \{1, \ldots, m\}$, which are decision variables representing the value assigned to the $j^{th}$ variable in the $i^{th}$ set.
+constraints: $\forall i \in \{2, \ldots, n\}, \forall k \in \{1, \ldots, 9\}, (i_gcc[k] = j_gcc[k])$, which ensures that the multiset of values assigned to each set is the same, and $x_{i,j} \in \{1, \ldots, 9\}$, which defines the domain of the variables.
+objective: The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies the given constraints.

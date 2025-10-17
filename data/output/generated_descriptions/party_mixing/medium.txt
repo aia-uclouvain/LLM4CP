@@ -1,0 +1,16 @@
+**Party Mixing Problem**
+The Party Mixing problem is a classic constraint programming problem that involves arranging people at tables to maximize the number of different people each person talks to.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `X`: a 2D array representing the table and chair assignments for each person, where `X[I, J]` is the person assigned to table `I` and chair `J`.
+- `L`: a 1D array representing the person assigned to each chair, where `L[K]` is the person assigned to chair `K`.
+
+**Constraints**
+The key constraints in this problem are:
+- Each person must move to a different table.
+- For more than two tables, two neighbors from the same old table cannot sit beside each other in the new configuration.
+- There should be no sub-circuits (sub-loops) in the assignment, meaning that each person can only be assigned to one chair, and each chair can only be assigned to one person.
+
+**Objective**
+The objective of this problem is to find an assignment of people to chairs that satisfies the constraints and allows each person to talk to as many different people as possible. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets the constraints.

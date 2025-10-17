@@ -1,0 +1,5 @@
+The problem is called the Enigma puzzle 1293. 
+It's about finding a way to convert temperatures from Celsius to Fahrenheit using a special trick where you reverse the digits of the temperature. 
+The main variables are the temperature in Celsius (C), the temperature in Fahrenheit (F), the base of the number system (Base), and the two digits of the temperature in the new base (D1 and D2). 
+The basic rules are that the temperature in Celsius and Fahrenheit must be related by a specific formula, and the digits D1 and D2 must be less than the base. 
+The goal is to find two examples of temperatures between the freezing and boiling points of water where this trick works exactly, meaning that reversing the digits of the temperature in the new base gives the correct temperature in the other unit.

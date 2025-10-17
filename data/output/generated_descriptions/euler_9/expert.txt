@@ -1,0 +1,5 @@
+name: Pythagorean Triplet Problem
+description: The problem is to find a set of three natural numbers, a < b < c, that form a Pythagorean triplet, where a^(2) + b^(2) = c^(2) and a + b + c = 1000, and then calculate the product abc.
+variables: a, b, c, prod. These variables represent the three natural numbers that form the Pythagorean triplet (a, b, c) and their product (prod), where a, b, and c are the sides of a right-angled triangle and prod is the product of these sides.
+constraints: a < b, b < c, a^(2) + b^(2) = c^(2), a + b + c = 1000. These constraints ensure that the numbers form a valid Pythagorean triplet in increasing order and that their sum equals 1000.
+objective: The objective of the problem is to find the values of a, b, and c that satisfy the given constraints and then calculate the product abc, which is stored in the variable prod. The problem does not explicitly require minimization or maximization, but rather finding the unique solution that satisfies the constraints.

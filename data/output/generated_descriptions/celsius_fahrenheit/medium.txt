@@ -1,0 +1,5 @@
+Temperature Conversion Problem
+The Temperature Conversion Problem is about finding a pair of temperatures, one in Celsius and one in Fahrenheit, that satisfy a conversion relationship between the two scales.
+The main decision variables are C (Celsius) and F (Fahrenheit), which represent the temperatures in the respective units. Additionally, there are integer variables Ci and Fi, which are used to constrain C and F to be integers.
+The key constraints are that the temperatures C and F must satisfy the conversion formula, and that both C and F must be integers. The conversion formula is implemented using the convert predicate, which ensures that C and F are related by the formula C = (F - 32.0) * 5.0 / 9.0. The integer constraints are implemented using the int2float function, which maps the integer variables Ci and Fi to the float variables C and F.
+The objective of the problem is to find a satisfying assignment of values to C and F, rather than to minimize or maximize a specific objective function. The solve satisfy statement indicates that the goal is to find a solution that satisfies all the constraints, without any particular optimization criterion.

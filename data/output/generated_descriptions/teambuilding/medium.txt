@@ -1,0 +1,13 @@
+Teambuilding Problem
+The Teambuilding Problem is about organizing 10 teams of 6 people from a group of 30 new employees and 30 existing employees, working in 6 different services. 
+
+The main decision variables in this problem are the team assignments for each person, represented by the `team` array, where `team[i]` denotes the team number assigned to person `i`. 
+
+The key constraints in this problem can be described as follows: 
+- Each team must have exactly 3 existing employees and 3 new employees.
+- No team can have more than 4 people from the same service.
+- Employees from services A and B cannot be in the same team, and employees from services E and F cannot be in the same team.
+- A new employee who is coached by an existing employee must be in the same team as their coach.
+- There are also specific constraints for certain individuals, such as person 5 wanting to be with either person 41 or person 51.
+
+The objective of the Teambuilding Problem is to find a feasible team configuration that satisfies all the given constraints, rather than minimizing or maximizing a specific objective function. The goal is to assign teams to all employees while respecting the rules and restrictions imposed by the problem.

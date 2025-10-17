@@ -1,0 +1,5 @@
+Talisman Square
+The problem is about arranging integers from 1 to n^2 in an n×n array such that the difference between any integer and its neighbor is greater than or equal to a certain value k.
+The main decision variables are the elements of the 2D array x, where x[i,j] represents the integer placed at row i and column j in the array.
+The key constraints are that all integers from 1 to n^2 must be used exactly once, and the difference between any integer and its horizontal, vertical, or diagonal neighbor must be at least k.
+The objective is to find a feasible arrangement that satisfies these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

@@ -1,0 +1,5 @@
+Non-Dominating Queens Problem
+The problem is about placing a certain number of queens on a chessboard in such a way that no queen attacks or dominates any other queen or empty square, and the goal is to minimize the number of squares that are attacked or occupied by the queens.
+The main variables are x and a, where x represents whether a square on the board is occupied by a queen, and a represents whether a square is attacked or dominated by any queen.
+The basic restrictions are that each queen must be placed on the board, and no queen can attack or dominate any other queen or empty square, meaning that no two queens can be in the same row, column, or diagonal.
+The goal is to minimize the total number of squares that are attacked or occupied by the queens, which is represented by the variable numa.

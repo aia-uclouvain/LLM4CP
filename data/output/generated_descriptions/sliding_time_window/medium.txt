@@ -1,0 +1,11 @@
+The Sliding Time Window Problem
+The Sliding Time Window problem is a classic constraint programming problem that involves scheduling tasks within a given time frame while ensuring that the total duration of tasks overlapping with any time window of a specified size does not exceed a certain limit.
+
+The main decision variables in this problem are the tasks, represented by a 2D array where each task is defined by its origin (start time) and duration. The variable `limitx` represents the maximum allowed overlap of tasks within any time window, and the `sums` array stores the total overlap of tasks for each possible time window.
+
+The key constraints in this problem can be described as follows: 
+- Each task must start and end within the given time frame (`max_time`).
+- For any time window of size `window_size`, the total overlap of all tasks with this time window must not exceed the specified limit (`limitx`).
+- The overlap of tasks with a time window is calculated by summing the durations of tasks that intersect with the time window.
+
+The objective of the Sliding Time Window problem is to find a schedule for the tasks that satisfies the given constraints, specifically ensuring that the total overlap of tasks within any time window does not exceed the specified limit. The problem does not involve minimizing or maximizing a specific objective function; instead, it focuses on finding a feasible solution that satisfies all the constraints.

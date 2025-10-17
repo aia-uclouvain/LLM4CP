@@ -1,0 +1,8 @@
+Appointment Scheduling Problem
+The problem is about scheduling interviews between an employer and N people, where each person has a free-busy schedule for N interview slots. 
+The main decision variables are represented by a 2D array `x`, where `x[i, j]` is 1 if person `j` is assigned to slot `i`, and 0 otherwise. 
+The key constraints are: 
+- each person must be assigned to exactly one slot, 
+- each slot must be assigned to exactly one person, and 
+- a person can only be assigned to a slot if they are free at that time. 
+The problem's objective is to find a feasible assignment of people to slots, if one exists, and return an error otherwise.

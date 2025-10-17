@@ -1,0 +1,5 @@
+Send More Money problem
+The problem is about finding a solution to a cryptarithm, where letters represent digits, and the goal is to make a mathematical equation valid.
+The main decision variables are S, E, N, D, M, O, R, and Y, which represent the digits from 0 to 9 that each letter corresponds to.
+The key constraints are that each letter must represent a unique digit, the first letter of each word (S and M) must not be zero, and the equation "SEND + MORE = MONEY" must be mathematically valid, taking into account the place value of each digit.
+The problem's objective is to find a solution that satisfies all the constraints, which is a feasible solution, rather than optimizing a specific objective function. In other words, the goal is to find a set of digits that makes the equation true, rather than minimizing or maximizing a particular value.

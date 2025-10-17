@@ -1,0 +1,18 @@
+Voltage Divider Problem
+The Voltage Divider Problem is about finding the optimal configuration of a voltage divider circuit, which consists of two resistors connected in series, given certain constraints on the input voltage, output voltage, and current.
+
+The main decision variables are: 
+- V: the input voltage 
+- I: the total current 
+- R1 and R2: the resistances of the two resistors 
+- VD: the output voltage 
+- ID: the current through the output resistor
+
+The key constraints are: 
+- The voltage divider equation must hold, which relates the input voltage, output voltage, and the two resistances 
+- The output voltage must be within a certain range (5.4 to 5.5 volts) 
+- The current through the output resistor is fixed at 0.1 amps 
+- The input voltage must be one of two possible values (9 or 12 volts) 
+- The resistances of the two resistors must be chosen from a set of three possible values (5, 9, or 14 ohms)
+
+The objective of the problem is to find a configuration that satisfies all the constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

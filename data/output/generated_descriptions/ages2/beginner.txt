@@ -1,0 +1,5 @@
+The Age Problem. 
+This problem is about figuring out the ages of three people, John, Jim, and Jerry, based on some clues about their ages. 
+The main variables are John, Jim, and Jerry, which represent the ages of each person. 
+The basic restrictions are that John is twice as old as Jim, the combined age of John and Jim is equal to Jerry's age, and the total age of all three is 36. 
+The goal is to find the age of each person, which means finding the values of John, Jim, and Jerry that satisfy all the given conditions.

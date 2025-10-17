@@ -1,0 +1,5 @@
+Freight Transfer problem. 
+This problem is about transporting a certain amount of goods (42 tons of freight) using a fleet of trucks that come in different sizes and have different costs. 
+The main variables are the number of trucks to use of each size (x), the total cost (z), and the total amount of goods transported (transported). In simple terms, x means how many trucks of each size to use, z is the total cost of using these trucks, and transported is the total amount of goods moved. 
+The basic restrictions are that we can only use a certain number of trucks of each size (available), each truck can only carry a certain amount of goods (capacity), and we must transport at least the required amount of goods (42 tons). 
+The goal of the problem is to minimize the total cost (z) of transporting the required amount of goods.

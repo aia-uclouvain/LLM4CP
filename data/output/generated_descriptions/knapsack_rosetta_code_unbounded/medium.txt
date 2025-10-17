@@ -1,0 +1,15 @@
+**Unbounded Knapsack Problem**
+The Unbounded Knapsack Problem is a classic problem in constraint programming and operations research. It involves finding the optimal number of items to include in a knapsack with limited capacity, where each item has a weight, volume, and value.
+
+**Decision Variables**
+The main decision variables in this problem are the quantities of each item to include in the knapsack, represented by the array `x`. Each element `x[i]` represents the number of units of item `i` to include.
+
+**Key Constraints**
+The key constraints in this problem are:
+* The total weight of all items in the knapsack must not exceed 25 units.
+* The total volume of all items in the knapsack must not exceed 0.25 cubic units.
+* The number of units of each item must be a non-negative integer.
+* The total value of all items in the knapsack must be at least 54500 units (to ensure a valid solution).
+
+**Objective**
+The objective of the Unbounded Knapsack Problem is to maximize the total value of the items in the knapsack, subject to the constraints on weight, volume, and item quantities. In other words, the goal is to find the combination of items that yields the highest total value while not exceeding the knapsack's capacity.

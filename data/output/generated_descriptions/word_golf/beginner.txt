@@ -1,0 +1,11 @@
+Word Golf 
+The problem is about transforming one word into another by changing one letter at a time, with each new word being a valid English word. 
+The main variables are: 
+- start and end words, which are the initial and final words in the transformation
+- words, which is a list of valid English words that can be used in the transformation
+- x, which represents the words in the transformation ladder
+- ladder_num, which assigns a word from the list to each position in the ladder
+The basic restrictions are: 
+- each new word can only differ from the previous word by one letter
+- all words in the transformation must be valid English words from the given list
+The goal is to find a sequence of words that transforms the start word into the end word, with each step being a valid word, and the sequence having a fixed length.

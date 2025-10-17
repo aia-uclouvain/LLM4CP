@@ -1,0 +1,11 @@
+name: Strata Puzzle
+description: The Strata puzzle is a strategic game where the goal is to layer colored ribbons to match a given pattern by making a sequence of moves, with the objective of finding the optimal number of moves to achieve the target configuration.
+variables: $move\_color, move\_row, move\_column, y, num\_moves$ 
+These variables represent the moves to be made: $move\_color$ is the color of the ribbon to be placed, $move\_row$ and $move\_column$ specify the position where the ribbon will be placed, $y$ represents the configuration of the board after each move, and $num\_moves$ is the total number of moves made.
+constraints: $\forall r \in 1..rows, c \in 1..cols: y[0,r,c] = 0$, 
+$\forall m \in 1..max\_num\_moves: (move\_color[m] > 0 \rightarrow (move\_row[m] > 0 \lor move\_column[m] > 0))$, 
+$\forall r \in 1..rows, c \in 1..cols, m \in 1..max\_num\_moves: y[m,r,c] = y[m-1,r,c] \lor y[m,r,c] = move\_color[m]$, 
+$\forall r \in 1..rows, c \in 1..cols: y[num\_moves,r,c] = puzzle[r,c]$ 
+These constraints ensure the initial configuration of the board is empty, each move is valid and updates the board configuration correctly, and the final configuration matches the target pattern.
+objective: minimize $num\_moves$ 
+The objective is to minimize the total number of moves required to achieve the target configuration of the board.

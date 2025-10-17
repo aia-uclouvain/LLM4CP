@@ -1,0 +1,19 @@
+name: Missing Number in Concatenated String
+description: The problem is to find a missing number in a concatenated string of numbers from 1 to n, where the string is missing one number. The numbers in the string are concatenated in random order, and the goal is to identify the missing number.
+variables: x, start_pos, missing, missing_a 
+These variables represent the following: 
+- x is an array of variables representing the number assigned to each position in the concatenated string, 
+- start_pos is an array of variables representing the start positions of each number in the string, 
+- missing is a variable representing the missing number, 
+- missing_a is an array of variables representing the digits of the missing number.
+constraints: 
+missing = to_num(missing_a) 
+∧ diff_digit_sum = sum(missing_a) 
+∧ all_different(start_pos) 
+∧ ∀i ∈ 1..n (if missing != i then ∀j ∈ 0..len-1 (digits_missing[p+j] = s[j+1] ∧ x[p+j] = i ∧ start_pos[i] = p) else digit_sum(i) = diff_digit_sum ∧ len = diff_len ∧ ∀j ∈ 0..len-1 (x[p+j] = i ∧ start_pos[i] = p)) 
+∧ ∀i ∈ num_digits_missing+1..num_digits_all (x[i] = missing) 
+∧ start_pos[missing] = num_digits_missing+1 
+∧ ∀i ∈ 1..n (count(x,i,digit_length(i)))
+These constraints ensure that the missing number is correctly identified, the start positions of each number are distinct, and each number appears the correct number of times in the string.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, which means finding the missing number in the concatenated string.

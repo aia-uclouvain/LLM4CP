@@ -1,0 +1,12 @@
+The High IQ Problem
+The High IQ Problem is a classic constraint programming problem that involves determining the length of a shaded square in a larger square divided into 24 smaller squares, each with a different integral size.
+
+The main decision variables in this problem are the lengths of the sides of the 24 smaller squares (L1 to L25) and two additional variables (LHS and RHS) used to verify the solution. These variables represent the lengths of the sides of the squares.
+
+The key constraints in this problem can be described as follows: 
+- All the lengths of the squares must be different.
+- The lengths of the squares must be in increasing order.
+- The sum of the squares of the lengths of the first 24 squares must be equal to the square of the length of the 25th square.
+- There are also several length constraints that relate the lengths of the squares to each other, such as the sum of the lengths of certain squares being equal to the length of another square.
+
+The objective of this problem is not to minimize or maximize a specific variable, but rather to find a solution that satisfies all the given constraints. In other words, the goal is to determine the lengths of the squares such that all the constraints are met, and the sum of the squares of the lengths of the first 24 squares is equal to the square of the length of the 25th square.

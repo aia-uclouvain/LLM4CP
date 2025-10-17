@@ -1,0 +1,5 @@
+The name of the problem is the Pool-ball triangles problem. 
+This problem is about arranging numbered pool balls in a triangular formation such that the number of each ball below two balls is the difference of the numbers of those two balls. 
+The main decision variables are x and subs, where x represents the numbers of the balls in the triangle and subs represents the indices of the numbers to subtract to get the numbers below. 
+The key constraints are that the numbers below two balls must be the difference of the numbers of those two balls, all numbers in the triangle must be different, and there is a symmetry-breaking constraint to reduce the search space. 
+The problem's objective is to find a satisfying assignment of numbers to the balls, i.e., it is a satisfaction problem rather than an optimization problem, so there is no objective function being minimized or maximized, the goal is to find a solution that satisfies all the constraints.

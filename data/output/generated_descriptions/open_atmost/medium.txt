@@ -1,0 +1,14 @@
+Open Atmost Problem
+The Open Atmost problem is about constraining the number of variables within a specific subset of indices that can take a certain value.
+The main decision variables are: 
+- `variables`: an array of variables representing the values to be assigned, 
+- `s`: a set of indices, 
+- `n`: the maximum number of variables that can take the value `value`, 
+- `value`: the specific value that the variables in `s` should not exceed `n` occurrences of.
+The key constraints are: 
+- The number of variables in `s` that take the value `value` should not exceed `n`, 
+- The `variables` array should match a given array `[2,2,4,5]`, 
+- The set `s` should be equal to `{2,3,4}`, 
+- The maximum number `n` should be equal to `1`, 
+- The `value` should be equal to `2`.
+The objective of the problem is to satisfy all the given constraints, specifically to demonstrate the usage of the `open_atmost` constraint, which ensures that at most `n` variables in the subset `s` are assigned the `value`.

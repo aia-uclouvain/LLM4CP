@@ -1,0 +1,5 @@
+The name of the problem is the "Tokyo Elevator Puzzle". 
+This problem is about finding the best order for an elevator to visit different floors in a building, given certain rules about which floors need to be visited and in what order. 
+The main variables are the floors that need to be visited, represented by the array "c", and the order in which the elevator visits these floors, represented by the variable "x". 
+The basic restrictions or rules of the problem are that the elevator must visit certain floors in a specific order, and it can only visit each floor once. 
+The goal of the problem is to find the shortest possible sequence of elevator stops that satisfies all the given rules and restrictions, but the specific goal is not explicitly stated in the provided code.

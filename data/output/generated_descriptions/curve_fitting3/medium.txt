@@ -1,0 +1,8 @@
+Curve Fitting Problem
+The Curve Fitting Problem is about finding the best-fitting line to a set of given data points. 
+
+The main decision variables are X and Y, which represent the intercept and slope of the line, respectively, and arrays Ex and Ey, which represent the variances from the line for the x and y coordinates of each data point.
+
+The key constraints are that the sum of the variances for both the x and y coordinates should be zero, and each data point should lie on the line with some variance. In plain language, this means that the line should be the best possible fit to all the data points, with the variances representing how far each point is from the line.
+
+The problem's objective is to find the line that minimizes the sum of the squared variances, which is equivalent to finding the line that best fits the data points. However, in this specific model, the objective is to satisfy the given constraints, and the solution is the best-fitting line to the data points, which is then output in the format "y = a + bx", where a is the intercept and b is the slope.

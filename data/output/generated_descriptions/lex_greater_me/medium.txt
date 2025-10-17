@@ -1,0 +1,5 @@
+The problem is called Lexicographically Strictly Greater. 
+It is about comparing two vectors of integers to determine if one is lexicographically strictly greater than the other. 
+The main decision variables are vector1 and vector2, which represent the two vectors being compared. 
+The key constraints are that vector1 must be equal to [5,2,7,1] and vector2 must be equal to [5,2,6,2], and vector1 must be lexicographically strictly greater than vector2. 
+The problem's objective is to satisfy these constraints, which means finding values for vector1 and vector2 that meet the conditions, and in this case, it is already given that vector1 = [5,2,7,1] and vector2 = [5,2,6,2], and the model will verify if vector1 is indeed lexicographically strictly greater than vector2.

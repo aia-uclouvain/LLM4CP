@@ -1,0 +1,14 @@
+Name of the problem: Not In Constraint
+
+This problem is about making sure a certain value does not appear in a given list of values. Think of it like having a set of numbers and wanting to check if a specific number is not among them.
+
+The main variables are: 
+- "values" which is a list of numbers, 
+- "v" which is a single number that we want to check against the list.
+
+The basic restrictions or rules are: 
+- The list "values" must be equal to a specific given list, in this case [1,3], 
+- The single number "v" must be equal to 2, 
+- The number "v" must not appear in the list "values".
+
+The goal of the problem is to find a solution where all these rules are satisfied, which in this case is to confirm that the number 2 is not in the list [1,3].

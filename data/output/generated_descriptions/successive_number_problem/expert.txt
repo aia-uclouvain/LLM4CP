@@ -1,0 +1,7 @@
+name: Number Theoretic Puzzle
+description: The problem is to find all three-digit numbers such that when the number is multiplied by its successor, the result is a number that is a concatenation of the original number with itself.
+variables: $x, y, z, x_a, y_a, z_a$ 
+These variables represent the numbers involved in the problem: $x$ is the original three-digit number, $y$ is the successor of $x$, $z$ is the product of $x$ and $y$, and $x_a$, $y_a$, $z_a$ are arrays of digits representing the numbers $x$, $y$, and $z$ respectively.
+constraints: $toNum(x_a, x)$, $toNum(y_a, y)$, $toNum(z_a, z)$, $y = x + 1$, $x * y = z$, $z_a[i] = z_a[i+3]$ for $i = 1..3$ 
+These constraints ensure that the numbers $x$, $y$, and $z$ are correctly represented by their digit arrays, that $y$ is the successor of $x$, that the product of $x$ and $y$ equals $z$, and that the first three digits of $z$ are the same as the last three digits of $z$.
+objective: The objective of the problem is to find all possible values of $x$ that satisfy the given constraints, there is no explicit objective function to minimize or maximize.

@@ -1,0 +1,17 @@
+name: Smullyan Knight, Knave, and Normal Island of Bahava problems
+
+description: The problem is based on a classic puzzle by Raymond Smullyan, where there are three types of people: knights (who always tell the truth), knaves (who always lie), and normals (who sometimes tell the truth and sometimes lie). The problem involves determining the types of two couples, Mr. and Mrs. A and Mr. and Mrs. B, based on their statements about each other and the rules of marriage on the Island of Bahava, where a knight must marry a knave, a knave must marry a knight, and a normal must marry a normal.
+
+variables: $mr_p = [mr_p_1, mr_p_2], mrs_p = [mrs_p_1, mrs_p_2]$ where $mr_p_i, mrs_p_i \in \{knight, normal, knave\}$. These variables represent the types of Mr. and Mrs. A and Mr. and Mrs. B, respectively.
+
+constraints: 
+$\begin{aligned}
+&marriage\_rules(mr_p, mrs_p) \\
+&says(mr_p_i, statement) \\
+&mr_p[2] = knight \wedge mrs_p[2] = knave \\
+&says(mr_p_1, \neg(mrs_p_1 = normal)) \\
+&says(mrs_p_1, \neg(mr_p_1 = normal))
+\end{aligned}$ 
+These constraints represent the rules of marriage on the Island of Bahava, the statements made by each person, and the constraints on the types of Mr. and Mrs. A and Mr. and Mrs. B.
+
+objective: satisfy

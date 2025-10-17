@@ -1,0 +1,11 @@
+The 0/1 Knapsack Problem with Weighted Sum Constraint
+The problem is about finding the optimal combination of items with varying weights and coefficients that maximizes or minimizes a weighted sum while satisfying a given constraint.
+
+The main decision variables are `x` and `coeffs`, which represent the items and their corresponding coefficients, respectively. `x` is an array of variables with a domain of 0 to 5, indicating the presence or absence of an item, while `coeffs` is an array of variables with a domain of -3 to 2, representing the coefficients of the items.
+
+The key constraints are:
+- The `cp1d` constraint ensures that the `coeffs` array is equal to a given array `[1, 2, -3]`.
+- The `weighted_sum` constraint calculates the weighted sum of the `coeffs` and `x` arrays and assigns it to the variable `s`.
+- The `cmp` predicate is used to compare the weighted sum `s` with a given limit using a specified comparison operator.
+
+The problem's objective is to find a solution that satisfies the given constraints, specifically the weighted sum constraint. The model uses the `satisfy` keyword, indicating that the goal is to find a feasible solution that meets all the constraints, rather than optimizing a specific objective function. The `int_search` annotation is used to specify the search strategy for the solver.

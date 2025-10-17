@@ -1,0 +1,12 @@
+Cumulative Scheduling Problem
+The Cumulative Scheduling Problem is about scheduling tasks with given durations and resource requirements, such that the total resource usage at any time does not exceed a certain limit.
+The main decision variables are: 
+- Origins (O1, O2): representing the start times of tasks 
+- Durations (D1, D2): representing the durations of tasks 
+- Heights (H1, H2): representing the resource requirements of tasks 
+These variables determine when each task starts, how long it takes, and how many resources it requires.
+The key constraints are: 
+- Each task has a specific duration and resource requirement 
+- The start time of each task must be within a certain range 
+- The total resource usage of all tasks at any time must not exceed the given limit (in this case, 4)
+The objective of the problem is to find a schedule that satisfies all the constraints, without necessarily minimizing or maximizing a specific objective function. The goal is to find a feasible solution that meets all the requirements.

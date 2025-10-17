@@ -1,0 +1,5 @@
+Assignment Problem
+The problem is about assigning workers to products in a way that maximizes profit. 
+The main variables are workers and products, which represent the people doing the work and the things they are working on. There's also a variable that keeps track of whether a worker is assigned to a product or not, and another that calculates the total profit.
+The basic restrictions are that each worker can only work on one product, and each product can only have one worker assigned to it.
+The goal is to maximize the total profit by finding the best assignment of workers to products.

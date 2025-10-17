@@ -1,0 +1,5 @@
+3-in-a-row puzzle
+The problem is about filling a grid with two colors, blue and white, in such a way that no three squares of the same color are in a row or column, and each row and column has an equal number of blue and white squares.
+The main variables are the squares in the grid, which can be either blue (represented by 1) or white (represented by 0).
+The basic restrictions are that no three squares of the same color can be in a row or column, and each row and column must have an equal number of blue and white squares.
+The goal of the problem is to find a way to fill the grid that satisfies these restrictions.

@@ -1,0 +1,5 @@
+Resource Constrained Project Scheduling Problem (RCPSP)
+The problem is about scheduling jobs that require certain resources, like machines or workers, to complete a project as quickly as possible. 
+The main variables are the starting times of the jobs, which are the points in time when each job begins.
+The basic restrictions are that some jobs must be completed before others can start, and there are limited resources available for the jobs, so not all jobs can be done at the same time. 
+The goal is to find a schedule that allows the project to be completed as quickly as possible, by minimizing the time when the last job is finished.

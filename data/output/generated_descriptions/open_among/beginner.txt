@@ -1,0 +1,9 @@
+The problem is called "Open Among". 
+It's about checking if a certain number of items in a list have specific values. 
+The main variables are: 
+- "variables" which is a list of items, 
+- "values" which is a set of specific values we're looking for, 
+- "nvar" which is the number of items in the list that should have those specific values, 
+- "s" which is a set of positions in the list where we're looking for those values. 
+The basic restrictions are that "nvar" items in the list, at positions specified by "s", should have values from the "values" set. 
+The goal is to check if this condition is satisfied, given the list of items and the set of specific values.

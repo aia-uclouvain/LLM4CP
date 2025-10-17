@@ -1,0 +1,14 @@
+Sports Scheduling Problem
+The Sports Scheduling Problem is about creating a schedule for a set of teams to play each other in a series of games, with certain constraints to ensure a fair and feasible schedule.
+
+The main decision variables are:
+- `schedule`: a 3D array representing the schedule of games, where `schedule[w, p, h]` represents the team playing at home or away in week `w`, period `p`, and home/away `h`.
+- `game`: a 2D array representing the game being played, where `game[w, p]` represents the game being played in week `w`, period `p`.
+
+The key constraints are:
+- Each team plays once a week: every team must play exactly one game in each week.
+- Every team plays at most twice in the same period: no team can play more than two games in the same period.
+- Distinct games: each game can only be played once.
+- Channeling between schedule and game: the schedule and game arrays must be consistent, meaning that the teams playing in a game must match the teams scheduled to play in that game.
+
+The objective of the problem is to find a feasible schedule that satisfies all the constraints, with no specific objective function to minimize or maximize. The goal is to find a valid schedule, not to optimize any particular metric.

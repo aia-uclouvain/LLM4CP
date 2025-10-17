@@ -1,0 +1,25 @@
+name: Zebra Puzzle
+description: The Zebra Puzzle is a logic puzzle where five houses of different colors are inhabited by people of different nationalities, who own different pets, drink different beverages, and smoke different brands of cigarettes. The puzzle provides a set of clues to determine the color of each house, the nationality of its inhabitant, their pet, drink, and cigarette brand.
+variables: $color_{h,c}, nationality_{h,n}, drink_{h,d}, smoke_{h,s}, pet_{h,p}, colors_h, nationalities_h, drinks_h, smokes_h, pets_h$ where $h$ represents a house, $c$ a color, $n$ a nationality, $d$ a drink, $s$ a smoke, and $p$ a pet. These variables represent the assignment of colors, nationalities, pets, drinks, and cigarette brands to each house.
+constraints: 
+$\sum_{c} color_{h,c} = 1, \sum_{h} color_{h,c} = 1, 
+\sum_{n} nationality_{h,n} = 1, \sum_{h} nationality_{h,n} = 1, 
+\sum_{d} drink_{h,d} = 1, \sum_{h} drink_{h,d} = 1, 
+\sum_{s} smoke_{h,s} = 1, \sum_{h} smoke_{h,s} = 1, 
+\sum_{p} pet_{h,p} = 1, \sum_{h} pet_{h,p} = 1, 
+nationality_{h,Englishman} = color_{h,red}, 
+nationality_{h,Spaniard} = pet_{h,dog}, 
+drink_{h,coffee} = color_{h,green}, 
+nationality_{h,Ukranian} = drink_{h,tea}, 
+color_{h,green} = color_{h-1,ivory} \text{ for } h > 1, 
+smoke_{h,Old\_Gold} = pet_{h,snails}, 
+smoke_{h,Kools} = color_{h,yellow}, 
+drink_{3,milk} = 1, 
+nationality_{1,Norwegian} = 1, 
+(1 - smoke_{h,Chesterfield}) + (pet_{h-1,fox}) + (pet_{h+1,fox}) \geq 1, 
+(1 - smoke_{h,Kools}) + (pet_{h-1,horse}) + (pet_{h+1,horse}) \geq 1, 
+smoke_{h,Lucky\_Strike} = drink_{h,orange\_juice}, 
+nationality_{h,Japanese} = smoke_{h,Parliament}, 
+(1 - nationality_{h,Norwegian}) + (color_{h-1,blue}) + (color_{h+1,blue}) \geq 1$ 
+These constraints ensure that each house has a unique color, nationality, pet, drink, and cigarette brand, and that the given clues are satisfied.
+objective: satisfy

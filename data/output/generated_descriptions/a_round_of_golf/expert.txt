@@ -1,0 +1,26 @@
+name: A Round of Golf
+description: The problem is about determining the full name, job, and golf score of four workers at a golf course, given certain clues about their relationships and scores. The workers are Jack, Bill, Paul, and Frank, and they have different jobs: short-order cook, maintenance man, pro-shop clerk, and caddy. Each worker scored a different number of strokes, between 70 and 85. The clues provide information about the relative scores and jobs of the workers.
+variables: $first\_name = [Jack, Bill, Paul, Frank]$, $last\_name = [Green, Clubb, Sands, Carter]$, $job = [cook, maintenance\_man, clerk, caddy]$, $score = [s_1, s_2, s_3, s_4]$ where $s_i$ is the score of worker $i$. These variables represent the first name, last name, job, and score of each worker.
+constraints: 
+$\begin{aligned}
+&all\_different(last\_name) \\
+&all\_different(job) \\
+&all\_different(score) \\
+&Bill \neq maintenance\_man \\
+&score[Bill] < score[Jack] \\
+&score[Bill] < score[Paul] \\
+&score[Bill] < score[Frank] \\
+&Clubb \neq Paul \\
+&score[Clubb] = score[clerk] + 10 \\
+&Frank \neq caddy \\
+&Frank \neq Sands \\
+&caddy \neq Sands \\
+&(score[Frank] = score[Sands] + 4 \wedge score[caddy] = score[Sands] + 7) \\
+&\vee (score[Frank] = score[Sands] + 7 \wedge score[caddy] = score[Sands] + 4) \\
+&Frank \neq Carter \\
+&score[Carter] = 78 \\
+&score[Frank] < score[Carter] \\
+&\forall i \in r: score[i] \neq 81
+\end{aligned}$ 
+These constraints represent the given clues and ensure that each worker has a unique last name, job, and score, and that the scores satisfy the conditions specified in the clues.
+objective: The objective of the problem is to satisfy all the constraints, i.e., to find an assignment of values to the variables that satisfies all the given conditions. There is no explicit objective function to minimize or maximize.

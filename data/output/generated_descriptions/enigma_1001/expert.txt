@@ -1,0 +1,13 @@
+name: Enigma 1001: What the hex?
+description: The problem is to fill a hexagon of circles with non-zero digits such that the six three-figure numbers formed by reading the sides of the hexagon clockwise are all different multiples of a particular two-figure number, with the number in the top row being twice that two-figure number, and no two adjacent digits are the same.
+variables: $X = [X_1, X_2, ..., X_{12}]$, $Multipliers = [M_1, M_2, ..., M_6]$, $Divisor$, $Numbers = [N_1, N_2, ..., N_6]$ where $X_i$ represents the digit in the $i^{th}$ circle, $M_i$ represents the multiplier for the $i^{th}$ number, $Divisor$ represents the two-figure number that the three-figure numbers are multiples of, and $N_i$ represents the $i^{th}$ three-figure number.
+constraints: 
+$\forall i \in \{1, 2, ..., 5\}: N_{i+1} = 100X_{2i+1} + 10X_{2i+2} + X_{2i+3}$, 
+$N_6 = 100X_{11} + 10X_{12} + X_1$, 
+$M_1 = 2$, 
+$\forall i \in \{1, 2, ..., 6\}: N_i = M_i \cdot Divisor$, 
+$M_i \neq M_j \forall i \neq j$, 
+$\forall i \in \{2, 3, ..., 12\}: X_i \neq X_{i-1}$, 
+$X_{12} \neq X_1$ 
+where the constraints ensure that the three-figure numbers are formed correctly, the multipliers are different, and no two adjacent digits are the same.
+objective: The problem is a satisfaction problem, meaning that the objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

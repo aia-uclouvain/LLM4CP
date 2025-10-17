@@ -1,0 +1,11 @@
+The problem is called the "sum_set" problem. 
+It's about finding a way to add up some numbers in a specific set, where each number has a certain value or weight. 
+The main variables are: 
+- x, which is like a table with two columns where each row has a number and its corresponding weight, 
+- s, which is a set of numbers that we care about, 
+- total, which is the sum of the weights of the numbers in the set s. 
+The basic restrictions are: 
+- the numbers and their weights are given in the table x, 
+- the set s contains specific numbers that we're interested in, 
+- the sum of the weights of the numbers in s should be equal to a certain value, which is 9 in this case. 
+The goal is to find a solution where the sum of the weights of the numbers in the set s equals the given total value, which is 9.

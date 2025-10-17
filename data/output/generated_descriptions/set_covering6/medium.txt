@@ -1,0 +1,5 @@
+Set Covering Problem
+The Set Covering Problem is about finding the optimal subset of tests that cover all the changed parts of a binary and have the least cost to run.
+The main decision variables are `x[i]`, which represent whether test `i` is included in the optimal subset of tests or not. The `mat` array represents the coverage of each test, where `mat[i, j]` is 1 if test `i` covers block `j` and 0 otherwise.
+The key constraints are that each block must be covered by at least one test, which is represented by the constraint `sum(i in 1..num_t) (x[i]*mat[i,j]) >= 1` for each block `j`. This means that for each block, the sum of the tests that cover it must be at least 1.
+The objective of the problem is to minimize the total cost of the tests, which is represented by the variable `total_cost` and calculated as the sum of the costs of the tests that are included in the optimal subset. The cost of each test is represented by the `t_costs` array. The goal is to find the subset of tests that covers all the blocks and has the minimum total cost.

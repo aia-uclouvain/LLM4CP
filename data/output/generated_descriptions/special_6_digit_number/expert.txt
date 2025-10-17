@@ -1,0 +1,5 @@
+name: Special 6 Digit Number Problem
+description: The problem is to find a 6-digit number abcdef such that when multiplied by 2, 3, 4, 5, and 6, the resulting numbers form a Latin square, where each row and column contains the digits 0-9 without repetition.
+variables: $x_{i,j}, y_i$ where $i \in \{1, \ldots, n\}$ and $j \in \{1, \ldots, n\}$. The variables $x_{i,j}$ represent the digits of the numbers in the Latin square, and $y_i$ represents the number in the $i^{th}$ row.
+constraints: $\forall i \in \{1, \ldots, n\}: y_i = to\_num([x_{i,j} | j \in \{1, \ldots, n\}]) \land y_i = i \cdot y_1 \land all\_different([x_{i,j} | j \in \{1, \ldots, n\}]) \land all\_different([x_{j,i} | j \in \{1, \ldots, n\}])$. These constraints ensure that each row is a multiple of the first row, that each row and column contains different digits, and that the digits are correctly converted to and from numbers.
+objective: The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

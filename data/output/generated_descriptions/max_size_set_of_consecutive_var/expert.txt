@@ -1,0 +1,11 @@
+name: Max Size Set of Consecutive Variables
+
+description: The problem is to find the largest set of variables that take their values in a set of consecutive values. In other words, given a collection of variables, the goal is to identify the largest subset of variables that have values that are consecutive integers.
+
+variables: $n, variables_{1..n}, max\_set$ 
+These are the decision variables where $n$ is the number of variables, $variables_{1..n}$ is an array of variables that can take integer values between 1 and 9, and $max\_set$ is a variable that represents the size of the largest set of variables with consecutive values.
+
+constraints: $max\_set = 6, max\_size\_set\_of\_consecutive\_var(max\_set, variables)$ 
+These constraints ensure that the size of the largest set of variables with consecutive values is equal to 6 and that the $max\_size\_set\_of\_consecutive\_var$ predicate is satisfied, which checks if the largest set of variables with consecutive values has a size equal to $max\_set$.
+
+objective: The objective of the problem is to satisfy the given constraints, which means finding an assignment of values to the variables such that the size of the largest set of variables with consecutive values is equal to $max\_set$. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies the constraints.

@@ -1,0 +1,15 @@
+name: Unknown Multiplication Problem
+description: The problem is to find the values of digits X1 to X20 such that the multiplication of a 3-digit number (X1X2X3) by another 3-digit number (X4X5X6) equals the sum of two 3-digit numbers (X7X8X9 and X10X11X12) and a 2-digit number (X13X14X15), with the additional constraint that each digit from 0 to 9 appears exactly twice.
+variables: X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12, X13, X14, X15, X16, X17, X18, X19, X20, Y, Z1, Z2, Z3. These variables represent the digits of the numbers involved in the multiplication and addition, where X1 to X20 are the digits to be found, and Y, Z1, Z2, Z3 are intermediate calculations.
+constraints: 
+Y = 100*X1 + 10*X2 + X3, 
+Z1 = 100*X7 + 10*X8 + X9, 
+Z2 = 100*X10 + 10*X11 + X12, 
+Z3 = 100*X13 + 10*X14 + X15, 
+X6*Y = Z1, 
+X5*Y = Z2, 
+X4*Y = Z3, 
+100*X7 + 10*X8 + X9 + 1000*X10 + 100*X11 + 10*X12 + 10000*X13 + 1000*X14 + 100*X15 = 10000*X16 + 1000*X17 + 100*X18 + 10*X19 + X20, 
+global_cardinality(LD, array1d(0..9, set2array(0..9)), array1d(0..9,[2,2,2,2,2,2,2,2,2,2])). 
+These constraints represent the relationships between the digits, including the multiplication and addition equations, and the constraint that each digit appears exactly twice.
+objective: The objective of the problem is to satisfy all the given constraints, as indicated by the "solve satisfy" statement, meaning that there is no specific value to minimize or maximize, but rather to find a solution that meets all the conditions.

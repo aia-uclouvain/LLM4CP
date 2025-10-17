@@ -1,0 +1,5 @@
+The problem is called the "Coin Problem". 
+It's about having a certain amount of money, £41.58, made up of different coins, and wanting to find the minimum number of coins that add up to this amount, with the condition that there must be the same number of each coin type. 
+The main variables are the number of each coin type (x) and the total number of coins (num_coins). 
+The basic restrictions are that the total value of the coins must equal £41.58, each coin type must have the same number of coins or none at all, and the number of coins cannot be negative. 
+The goal is to minimize the total number of coins.

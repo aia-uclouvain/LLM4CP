@@ -1,0 +1,9 @@
+name: Smullyan Knights and Knaves problems
+
+description: The problem involves determining the nature of individuals, either knights who always tell the truth or knaves who always lie, based on their statements about themselves or others. The goal is to identify the type of each individual given their statements and the rules that knights always speak the truth and knaves always lie.
+
+variables: $p = [p_1, p_2, p_3]$ where $p_i \in \{1, 2\}$, $p_i = 1$ represents a knight and $p_i = 2$ represents a knave. These variables represent the type of each person, with $p_1$, $p_2$, and $p_3$ corresponding to persons A, B, and C respectively.
+
+constraints: The constraints are defined by the predicate $says(kind, says)$ which ensures that a knight always speaks the truth and a knave always lies. The specific constraints for each problem are defined using this predicate, such as $says(p_1, p_1 = knave)$, $says(p_2, says(p_1, p_1 = knave))$, and so on. These constraints model the statements made by each person about themselves or others.
+
+objective: The objective of the problem is to satisfy all the constraints, i.e., to find an assignment of types to each person that is consistent with their statements and the rules that knights always tell the truth and knaves always lie. The problem does not involve minimizing or maximizing a specific value, but rather finding a feasible solution that satisfies all the constraints.

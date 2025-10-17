@@ -1,0 +1,11 @@
+Optimal Picking One Element from Each List Problem
+The problem is about picking one item from each of several lists to create a new list, in a way that minimizes the number of times the items in the new list change from one to another.
+The main variables are: 
+- n: the number of lists
+- s: the lists of items
+- x: the items picked from each list
+- sum_diffs: the number of times the items in the new list change from one to another
+The basic restrictions or rules are: 
+- pick one item from each list
+- the picked items must be in the corresponding lists
+The goal of the problem is to minimize the number of times the items in the new list change from one to another, which is measured by sum_diffs.

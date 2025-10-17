@@ -1,0 +1,10 @@
+Monorail Puzzle
+The problem is about creating a closed loop through all the stations (dots) by drawing rails, where the loop must pass through each station exactly once and close back on itself.
+The main variables are: 
+- x and y, which represent the coordinates of the stations in the path
+- path, which represents the order of the stations in the path
+The basic restrictions or rules of the problem are: 
+- The loop must pass through each station exactly once
+- The loop must close back on itself
+- Only valid connections between stations are allowed, which are connections between adjacent stations
+The goal of the problem is to find a valid path that satisfies all the restrictions and rules, essentially solving the Monorail Puzzle.

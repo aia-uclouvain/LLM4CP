@@ -1,0 +1,5 @@
+Sudoku Pi Day 2015
+The problem is about filling in a special Sudoku grid with numbers so that each row, column, and block has the numbers 1-9 exactly once, and also making sure that certain areas of the grid contain the digits of the mathematical constant Pi (3.1415926) in the correct order.
+The main variables are the grid cells (x), which represent the numbers to be filled in, and the sequences (seqs), which define the areas where the Pi digits should appear.
+The basic restrictions are that each row, column, and block must have the numbers 1-9 exactly once, and that the areas defined by the sequences must contain the Pi digits in the correct order.
+The goal of the problem is to find a solution that satisfies all these restrictions, effectively filling in the entire grid with numbers while meeting the special Pi-themed conditions.

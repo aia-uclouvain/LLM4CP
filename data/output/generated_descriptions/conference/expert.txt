@@ -1,0 +1,14 @@
+name: Conference Scheduling Problem
+
+description: The problem involves scheduling 11 sessions of equal length into a sequence of time slots, where each slot can accommodate up to 3 parallel sessions. There are precedence constraints between certain sessions, as well as constraints that prevent certain sessions from being scheduled in parallel. The goal is to minimize the number of time slots required to schedule all the sessions.
+
+variables: $s_1, s_2, ..., s_{11} \in \{1, 2, ..., 11\}$, $slots_1, slots_2, ..., slots_{11} \in \mathcal{P}(\{1, 2, ..., 11\})$, $num\_time\_slots \in \{1, 2, ..., 11\}$, where $s_i$ represents the time slot assigned to session $i$, $slots_j$ represents the set of sessions scheduled in time slot $j$, and $num\_time\_slots$ represents the total number of time slots used.
+
+constraints: 
+- $s_{precedences_{i,1}} < s_{precedences_{i,2}}$ for $i = 1, 2, 3$, 
+- $s_s \neq s_{pp}$ for $s = 1, 2, ..., 8$ and $pp \in parallel_s$, 
+- $int\_set\_channel(s, slots)$, 
+- $|slots_j| \leq 3$ for $j = 1, 2, ..., 11$, 
+where the first constraint enforces the precedence relationships between sessions, the second constraint prevents certain sessions from being scheduled in parallel, the third constraint ensures that the sessions and slots variables are consistent, and the fourth constraint limits the number of sessions that can be scheduled in each time slot.
+
+objective: Minimize $num\_time\_slots$

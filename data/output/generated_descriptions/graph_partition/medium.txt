@@ -1,0 +1,12 @@
+Graph Partitioning Problem
+The Graph Partitioning Problem is a classic problem in computer science and operations research that involves dividing a graph into a specified number of partitions, such that the number of nodes in each partition is the same, and the number of edges between each partition is minimized.
+
+The main decision variables in this problem are the partitions, represented by the variable `x`, which is an array of sets, where each set represents a partition. The variable `edges_between` represents the total number of edges between the partitions.
+
+The key constraints in this problem are:
+- The graph must be partitioned into a specified number of partitions (`m`).
+- The number of nodes in each partition must be the same.
+- The number of edges between the partitions must be minimized.
+- Node 1 must be in the first partition (symmetry breaking constraint).
+
+The objective of the problem is to minimize the number of edges between the partitions, represented by the variable `edges_between`. The problem can be solved using different approaches, including satisfaction (finding a feasible solution) and optimization (finding the solution with the minimum number of edges between the partitions).

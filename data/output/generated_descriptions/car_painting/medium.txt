@@ -1,0 +1,12 @@
+Car Painting Problem
+The Car Painting Problem is a classic constraint programming problem that involves sequencing cars in an assembly line to minimize the number of paint changeovers, also known as purgings. 
+
+The main decision variables are `x`, which represents the position of each car in the sequence, and `num_purgings`, which represents the total number of purgings. The `x` variable is an array of length `n`, where `n` is the number of cars, and each element `x[i]` represents the position of the `i-th` car in the sequence.
+
+The key constraints are: 
+- Each car can be painted only once, ensured by the `alldifferent` constraint on `x`.
+- Each car must be painted within three positions of its original position, ensured by the constraint `abs(x[i]-i) <= 3` for each car `i`.
+- The number of purgings is calculated based on the color changes between consecutive cars in the sequence.
+- The total distance of changed positions is calculated as the sum of the absolute differences between the original and new positions of each car.
+
+The objective of the problem is to minimize the number of purgings, `num_purgings`, which represents the total number of paint changeovers. The problem can also be solved to minimize the total distance of changed positions, but this requires a fixed number of purgings.

@@ -1,0 +1,5 @@
+2D Bin Packing Problem
+The problem is about packing different shapes into a box without overlapping them. 
+The main variables are the position of each shape in the box (x), the type of shape used (kind), and the size of the box (lower and upper limits).
+The basic restrictions are that no two shapes can overlap, and each shape must be placed within the box. 
+The goal is to minimize the total size of the box (sum_upper) while packing all the shapes.

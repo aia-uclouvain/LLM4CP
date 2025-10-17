@@ -1,0 +1,11 @@
+Balanced Incomplete Block Design (BIBD)
+The Balanced Incomplete Block Design problem is about finding an arrangement of objects into blocks such that each block contains a specific number of objects, each object appears in a certain number of blocks, and every pair of objects appears together in a specified number of blocks.
+
+The main decision variables in this problem are the binary matrices or relations that represent the assignment of objects to blocks. In the given models, these variables are represented as `m`, `x`, `bibd`, or `Cells`, and they indicate whether an object is included in a block or not.
+
+The key constraints in the BIBD problem can be described as follows:
+- Each row (object) must have a specific number of blocks assigned to it (i.e., the sum of the row must be equal to `r`).
+- Each column (block) must have a specific number of objects assigned to it (i.e., the sum of the column must be equal to `k`).
+- The dot product (or scalar product) of any two distinct rows must be equal to `lambda`, meaning that every pair of objects appears together in exactly `lambda` blocks.
+
+The objective of the BIBD problem is not to minimize or maximize a specific function, but rather to find a feasible solution that satisfies all the given constraints. In other words, the goal is to construct a binary matrix or relation that represents a valid Balanced Incomplete Block Design.

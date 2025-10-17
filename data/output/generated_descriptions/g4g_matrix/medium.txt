@@ -1,0 +1,12 @@
+Gathering 4 Garder matrix problem 
+The problem is about placing numbers 1 through 20 in a 10x10 grid such that each row and column contains exactly two numbers, and either the sum or product of these two numbers equals the value given in the row and column margins.
+
+The main decision variables are x[i,j], which represent the number placed in the ith row and jth column of the grid, and x_rows[i,j] and x_cols[i,j], which represent the two numbers in the ith row and column, respectively.
+
+The key constraints are: 
+- Each row and column contains exactly two numbers.
+- The two numbers in each row and column are identified and stored in x_rows and x_cols.
+- Either the sum or product of the two numbers in each row equals the row margin, and either the sum or product of the two numbers in each column equals the column margin.
+- Each number 1 through 20 is used exactly once in the grid.
+
+The objective of the problem is to find a solution that satisfies all the constraints, which is a classic constraint satisfaction problem and does not involve minimizing or maximizing a specific objective function. The goal is to find a valid placement of numbers in the grid that meets all the given conditions.

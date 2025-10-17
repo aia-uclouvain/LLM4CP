@@ -1,0 +1,10 @@
+name: Hidato Puzzle
+description: The Hidato puzzle is a logic puzzle where a rectangular grid is given with some numbers already filled in. The goal is to fill in the remaining empty cells with consecutive numbers such that each number is connected to the previous and next number either horizontally, vertically, or diagonally.
+variables: $x_{i,j}$, where $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, c\}$. These variables represent the numbers to be filled in each cell of the grid, where $r$ and $c$ are the number of rows and columns in the grid, respectively.
+constraints: 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} (x_{i,j} \in \{1, \ldots, r \cdot c\})$ 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} (puzzle_{i,j} > 0 \rightarrow x_{i,j} = puzzle_{i,j})$ 
+$\bigwedge_{s=1}^{r \cdot c - 1} \exists i_1, j_1, i_2, j_2 \in \{1, \ldots, r\} \times \{1, \ldots, c\} (x_{i_1, j_1} = s \wedge x_{i_2, j_2} = s + 1 \wedge |i_1 - i_2| \leq 1 \wedge |j_1 - j_2| \leq 1 \wedge (i_1, j_1) \neq (i_2, j_2))$ 
+$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} \bigwedge_{k=1}^{r} \bigwedge_{l=1}^{c} (x_{i,j} = x_{k,l} \rightarrow (i, j) = (k, l))$. 
+These constraints ensure that each cell contains a number between 1 and $r \cdot c$, that the given numbers in the puzzle are respected, that consecutive numbers are connected, and that all numbers are distinct.
+objective: The objective of the problem is to find a satisfying assignment of numbers to the grid, there is no explicit objective function to minimize or maximize.

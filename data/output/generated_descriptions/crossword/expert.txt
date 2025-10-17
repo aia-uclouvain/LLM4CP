@@ -1,0 +1,8 @@
+name: Crossword Puzzle Problem
+description: The problem is to fill in a crossword puzzle with a given set of words, where each word corresponds to a specific position in the puzzle. The words must overlap at certain positions, and the goal is to find an assignment of words to positions that satisfies all the overlap constraints.
+variables: E1, E2, E3, E4, E5, E6, E7, E8, A 
+These are the decision variables, where E1 to E8 represent the indices of the words to be assigned to each position in the crossword puzzle, and A is a 2D array representing the words, with each row corresponding to a word and each column corresponding to a letter in the word.
+constraints: A[E1, 3] = A[E2, 1], A[E1, 5] = A[E3, 1], A[E4, 2] = A[E2, 3], A[E4, 3] = A[E5, 1], A[E4, 4] = A[E3, 3], A[E7, 1] = A[E2, 4], A[E7, 2] = A[E5, 2], A[E7, 3] = A[E3, 4], A[E8, 1] = A[E6, 2], A[E8, 3] = A[E2, 5], A[E8, 4] = A[E5, 3], A[E8, 5] = A[E3, 5] 
+These constraints represent the overlap requirements between the words, ensuring that the letters at the specified positions are the same.
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of words to positions, meaning that all the overlap constraints are met, rather than minimizing or maximizing a specific value.

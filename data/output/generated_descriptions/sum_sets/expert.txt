@@ -1,0 +1,5 @@
+name: Set Sum Problem
+description: The problem is to find a subset of integers from 1 to n and calculate the sum of the integers in this subset. The model is designed to demonstrate how to sum the integers in a set in MiniZinc.
+variables: $s, s_{total}$, where $s$ is a set of integers representing the subset of integers from 1 to n, and $s_{total}$ is an integer representing the sum of the integers in set $s$.
+constraints: $i \in s \leftrightarrow tmp[i] = 1, \  s_{total} = \sum_{i=1}^{m} (i \cdot tmp[i])$, where the first constraint ensures that the temporary array $tmp$ accurately represents the set $s$, and the second constraint calculates the sum of the integers in set $s$.
+objective: The objective of the problem is to satisfy the given constraints, there is no explicit objective to minimize or maximize a value, the goal is to find a feasible solution that meets the constraints.

@@ -1,0 +1,17 @@
+Facility Location Problem
+The Facility Location Problem is a classic problem in operations research and computer science that involves finding the optimal location for a set of facilities to serve a given set of customers or regions.
+
+The main decision variables in this problem are:
+- `open`: a binary variable that represents whether a warehouse is open (1) or not (0) in each of the four cities (New York, Los Angeles, Chicago, and Atlanta).
+- `ships`: a variable that represents the number of units shipped from each warehouse to each region.
+
+The key constraints in this problem can be described as follows:
+- Each warehouse can ship at most 100 units per week.
+- The demands of each region must be met.
+- A warehouse can only ship units if it is open.
+- The total cost is calculated based on the fixed cost of keeping each warehouse open and the cost of shipping units from each warehouse to each region.
+- If the New York warehouse is opened, then the Los Angeles warehouse must also be opened.
+- At most three warehouses can be opened.
+- Either the Atlanta or the Los Angeles warehouse must be opened.
+
+The objective of the problem is to minimize the total weekly cost of meeting the demands of the regions, subject to the above constraints. The total cost includes the fixed cost of keeping each warehouse open and the cost of shipping units from each warehouse to each region.

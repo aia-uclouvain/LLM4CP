@@ -1,0 +1,6 @@
+Soccer Tournament Problem
+The problem is about a soccer tournament where five teams play against each other once. 
+The main variables are the number of points each team gets and the result of each game between two teams. 
+In simple terms, the number of points a team gets is based on whether they win, tie, or lose a game, and the result of each game is either a win (3 points), a tie (1 point), or a loss (0 points). 
+The basic restrictions are that each team plays every other team once, a team can't play against itself, and the points for each game are awarded based on the result. 
+The goal is to find out how many points the fifth team got, given that the other four teams got 1, 2, 5, and 7 points.

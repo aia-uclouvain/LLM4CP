@@ -1,0 +1,8 @@
+Quasigroup Completion Problem
+The Quasigroup Completion Problem is about filling in missing values in a partially filled table, where each row and column must contain each color exactly once, and each pair of colors must appear together exactly once.
+The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents the color that should be placed in the `i-th` row and `j-th` column of the table.
+The key constraints are: 
+- each row must contain each color exactly once, 
+- each column must contain each color exactly once, and 
+- each pair of colors must appear together exactly once in the table.
+The objective of the Quasigroup Completion Problem is to find a valid completion of the table, which means finding an assignment of colors to the missing cells such that all the constraints are satisfied. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

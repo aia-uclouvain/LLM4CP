@@ -1,0 +1,14 @@
+Pandigital Numbers Problem
+The problem is about finding a special arrangement of digits from 1 to 9 (or 0 to 9) that can be divided into three groups: two numbers and their product (or sum). 
+The main variables are: 
+- x: an array of digits from 1 to 9 (or 0 to 9)
+- num1 and num2: the two numbers
+- res: the product (or sum) of num1 and num2
+- len1 and len2: the lengths of num1 and num2
+- vop: the operation, either multiplication or addition
+The basic restrictions are: 
+- each digit can only be used once
+- the numbers must be in a specific base (up to 10)
+- the leading digit of each number must be non-zero
+- the product (or sum) of the two numbers must be equal to the third group of digits
+The goal is to find an arrangement of digits that satisfies these conditions, with a focus on multiplication.

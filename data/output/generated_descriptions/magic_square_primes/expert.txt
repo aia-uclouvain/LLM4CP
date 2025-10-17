@@ -1,0 +1,5 @@
+name: Magic Square Primes
+description: The Magic Square Primes problem is a classic problem in constraint programming that involves creating a square matrix filled with prime numbers, where the sum of each row, column, and diagonal is the same, and the goal is to minimize the total sum of the numbers in the matrix or the largest used prime number.
+variables: $x_{i,j}$ for $i, j = 1, \ldots, n$, where $x_{i,j}$ represents the prime number in the $i$-th row and $j$-th column of the matrix, and $total$ which represents the total sum of each row, column, and diagonal.
+constraints: $\bigwedge_{i=1}^{n} \sum_{j=1}^{n} x_{i,j} = total$, $\bigwedge_{j=1}^{n} \sum_{i=1}^{n} x_{i,j} = total$, $\sum_{i=1}^{n} x_{i,i} = total$, $\sum_{i=1}^{n} x_{i,n-i+1} = total$, and $x_{i,j} \neq x_{k,l}$ for $i \neq k$ or $j \neq l$, where the first four constraints ensure that the sum of each row, column, and diagonal is the same, and the last constraint ensures that all prime numbers in the matrix are distinct.
+objective: Minimize $total$ or the largest used prime number.

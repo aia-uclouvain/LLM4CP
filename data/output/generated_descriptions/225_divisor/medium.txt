@@ -1,0 +1,5 @@
+The problem is known as the "Smallest Number Divisible by 225 with Only 1s and 0s" or the "225 Divisor Problem". 
+This problem is about finding the smallest number that consists only of the digits 1 and 0 and is divisible by 225. 
+The main decision variables are x, an array of binary variables (0 or 1) representing the digits of the number, and y, a variable representing the actual number formed by the digits in x. 
+The key constraints are that the number y must be formed by concatenating the digits in x, and y must be divisible by 225. 
+The problem's objective is to minimize y, meaning to find the smallest possible number that meets the given conditions.

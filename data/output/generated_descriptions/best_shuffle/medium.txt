@@ -1,0 +1,8 @@
+**Best Shuffle Problem**
+The Best Shuffle problem is about rearranging the characters of a given string such that the maximum number of character positions are changed.
+The main decision variables are `shuffle`, an array of variables representing the new positions of the characters, and `num_same`, a variable representing the number of positions where the character value did not change.
+The key constraints are: 
+- `alldifferent(shuffle)`, which ensures that each character is assigned a unique new position, 
+- `num_same = sum(I in 1..len) ( bool2int( word[shuffle[I]] = word[I]) )`, which calculates the number of positions where the character value did not change, and 
+- `num_same = 0`, which sets the objective to minimize the number of unchanged positions.
+The objective of the problem is to minimize `num_same`, i.e., to find a shuffle where the maximum number of character positions are changed. In other words, the goal is to find a rearrangement of the characters where as few characters as possible remain in their original positions.

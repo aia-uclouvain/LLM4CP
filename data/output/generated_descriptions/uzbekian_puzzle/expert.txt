@@ -1,0 +1,5 @@
+name: Uzbekian Puzzle
+description: The Uzbekian Puzzle is a classic constraint programming problem where a salesman meets five traders in five different cities. The goal is to find the order in which the salesman visited the cities given certain conditions about the meetings and the cities.
+variables: $vstCty_{1..5}, mtTrader_{1..5}$, where $vstCty_i$ represents the order in which the salesman visited city $i$ and $mtTrader_i$ represents the order in which the salesman met trader $i$.
+constraints: $mtTrader_{Ruza} < mtTrader_{Sharaf}$, $mtTrader_{Ruza} > vstCty_{Samarkand}$, $vstCty_{Fergana} = vstCty_{Samarkand} + 2$, $vstCty_{Tashkent} = 3$, $mtTrader_{Abdulhamid} = vstCty_{Bukhara} + 1$, $vstCty_{Kokand} = mtTrader_{Kurban} + 2$, $alldifferent(mtTrader)$, $alldifferent(vstCty)$, which ensure that the meetings and city visits are ordered correctly and that each trader and city is visited exactly once.
+objective: The objective of the problem is to satisfy all the given constraints, i.e., to find a feasible solution that meets all the conditions. There is no explicit objective function to minimize or maximize.

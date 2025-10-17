@@ -1,0 +1,8 @@
+Crypto Problem
+The Crypto problem is a classic constraint programming problem where numbers from 1 to 26 are assigned to the letters of the alphabet. The goal is to find the value of each letter such that the sum of the values assigned to the letters in each word equals a given total.
+
+The main decision variables in this problem are the values assigned to each letter of the alphabet, represented by variables A to Z. These variables are defined as part of the set LETTERS, which contains integers from 1 to 26.
+
+The key constraints in this problem can be described in plain language as follows: each letter of the alphabet must be assigned a unique number from 1 to 26, and the sum of the values assigned to the letters in each word must equal the given total for that word. For example, the sum of the values assigned to the letters B, A, L, L, E, and T must equal 45, which is the given total for the word BALLET.
+
+The problem's objective is to find an assignment of values to the letters such that all the constraints are satisfied. This is a satisfaction problem, where the goal is to find a solution that meets all the constraints, rather than optimizing a specific objective function. The problem is solved using a constraint programming approach, where the constraints are defined and a search algorithm is used to find a solution that satisfies all the constraints.

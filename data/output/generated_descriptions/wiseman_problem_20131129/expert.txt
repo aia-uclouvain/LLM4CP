@@ -1,0 +1,7 @@
+name: Friday Puzzle 235
+description: The problem is about finding a 5-digit number that satisfies a specific condition. When '1' is added to the beginning of the number, it becomes three times smaller than when '1' is added to the end of the number.
+variables: $n, number_a, number, one_before_a, one_before, one_after_a, one_after$ 
+These variables represent the following: $n$ is the number of digits in the number, $number_a$ is an array of variables representing the digits of the original number, $number$ is the original 5-digit number, $one_before_a$ and $one_after_a$ are arrays of variables representing the digits of the numbers with '1' added to the beginning and end respectively, and $one_before$ and $one_after$ are the numbers with '1' added to the beginning and end respectively.
+constraints: $to_num(number_a, number)$, $to_num(one_before_a, one_before)$, $to_num(one_after_a, one_after)$, $one_before_a[1] = 1$, $one_after_a[n+1] = 1$, $one_before_a[i+1] = number_a[i]$ for $i$ in $1..n$, $one_after_a[i] = number_a[i]$ for $i$ in $1..n$, $one_before * 3 = one_after$ 
+These constraints ensure that the numbers are correctly constructed from their digit arrays, that '1' is added to the beginning and end of the original number, and that the condition about the numbers with '1' added is satisfied.
+objective: The objective of the problem is to find a solution that satisfies all the constraints, which is a satisfaction problem, not a minimization or maximization problem.

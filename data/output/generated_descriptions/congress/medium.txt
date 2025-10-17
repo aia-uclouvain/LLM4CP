@@ -1,0 +1,5 @@
+The Congress Puzzle
+The Congress puzzle is a classic constraint programming problem that involves scheduling talks by five researchers of different nationalities on different days. 
+The main decision variables are `talkp` and `talkn`, which represent the day on which each researcher gives their talk and the day on which each nationality gives their talk, respectively. 
+The key constraints are: each researcher talks on a different day, each nationality talks exactly once, Michael is not Japanese, Eric is French and talks before the 10th, Arabinda talks on the 9th, the Chinese researcher who is not Hitoshi talks on the 8th before Michael, and Hitoshi talks after the Indian and before the American. 
+The objective of the problem is to find a satisfying assignment of days to researchers and nationalities, such that all the given constraints are met, which is achieved by using the `solve satisfy` statement in the Minizinc model.

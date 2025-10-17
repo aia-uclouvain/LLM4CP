@@ -1,0 +1,9 @@
+Open Atmost Problem
+The problem is about limiting the number of times a certain value appears in a specific part of a list. 
+The main variables are: 
+- a list of numbers (called "variables"), 
+- a specific part of the list (called "s"), 
+- a maximum number (called "n"), 
+- and a target value (called "value"). 
+The basic restrictions are that the list must have a certain length and the specific part of the list must be within that list. 
+The goal is to ensure that the target value appears at most a certain number of times in the specific part of the list.

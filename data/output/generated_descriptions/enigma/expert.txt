@@ -1,0 +1,5 @@
+name: Enigma Puzzle
+description: The Enigma puzzle is a classic problem where a set of letters (O, N, E, T, W, H, R, L, V, Y) must be assigned to a set of digits (0-9) in such a way that a given set of equations is satisfied. The equations are formed by replacing each letter with its corresponding digit in two mathematical expressions, and the goal is to find an assignment that makes the two expressions equal.
+variables: $x_{i,j}, y_i$ where $i \in \{1, \ldots, 10\}$ and $j \in \{1, \ldots, 10\}$. $x_{i,j}$ is a binary variable that equals 1 if digit $i-1$ represents letter $j$, and 0 otherwise. $y_i$ is an integer variable that represents the digit assigned to the $i^{th}$ letter.
+constraints: $\forall i \in \{1, \ldots, 10\}: \sum_{j=1}^{10} x_{i,j} = 1, \forall j \in \{1, \ldots, 10\}: \sum_{i=1}^{10} x_{i,j} = 1, x_{i,j} \in \{0,1\}, y_i = \sum_{j=1}^{10} j \cdot x_{i,j}$. The equation constraint is given by the long equation in the model, which represents the equality of the two mathematical expressions after replacing letters with their corresponding digits.
+objective: satisfy

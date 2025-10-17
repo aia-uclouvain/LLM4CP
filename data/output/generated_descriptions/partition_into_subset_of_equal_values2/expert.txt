@@ -1,0 +1,8 @@
+name: Partition Problem
+description: The problem is to divide a given set of numbers into a specified number of subsets such that the sum of the numbers in each subset is equal. The problem requires finding a partition of the set into subsets with equal sums, if such a partition exists.
+variables: $x_i$, where $i$ ranges from $1$ to $n$, $x_i \in \{1, 2, ..., num\_subsets\}$. These variables represent the subset to which each number $s_i$ belongs, where $n$ is the total number of numbers in the set and $num\_subsets$ is the number of subsets.
+constraints: 
+- $sum(s) \mod num\_subsets == 0$ (the sum of the numbers should be divisible by the number of subsets)
+- $\forall p \in \{1, 2, ..., num\_subsets-1\}: \sum_{i=1}^{n} s_i \* bool2int(x_i == p) == \sum_{i=1}^{n} s_i \* bool2int(x_i == p+1)$ (the sum of the numbers in each subset should be equal)
+- $x_1 = 1$ (symmetry breaking constraint to ensure that the first number belongs to the first subset)
+objective: The objective of the problem is to satisfy the given constraints, i.e., to find a partition of the set into subsets with equal sums, if such a partition exists. The problem does not involve minimizing or maximizing a specific value.

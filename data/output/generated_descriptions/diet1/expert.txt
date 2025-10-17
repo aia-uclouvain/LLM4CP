@@ -1,0 +1,8 @@
+name: Diet Problem
+description: The Diet Problem is a classic problem in operations research and constraint programming. It involves finding the optimal combination of foods to meet certain nutritional requirements while minimizing cost. The problem is defined by a set of foods, each with its nutritional content and cost, and a set of nutritional requirements that must be met. The goal is to determine the quantity of each food to purchase in order to meet the nutritional requirements at the lowest possible cost.
+variables: $x_i, price_i$ 
+These are the decision variables, where $x_i$ represents the quantity of food $i$ to purchase and $price_i$ is the cost of food $i$. 
+constraints: $x_i \geq 0, \sum_{i=1}^{n} x_i \cdot calories_i \geq limits_1, \sum_{i=1}^{n} x_i \cdot chocolate_i \geq limits_2, \sum_{i=1}^{n} x_i \cdot sugar_i \geq limits_3, \sum_{i=1}^{n} x_i \cdot fat_i \geq limits_4, cost \leq 90$ 
+These constraints ensure that the quantity of each food purchased is non-negative, the total nutritional content of the purchased foods meets the minimum requirements, and the total cost does not exceed a certain limit.
+objective: Minimize $cost = \sum_{i=1}^{n} price_i \cdot x_i$ 
+The objective is to minimize the total cost of the purchased foods, which is calculated as the sum of the product of the quantity and cost of each food.

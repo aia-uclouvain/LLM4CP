@@ -1,0 +1,5 @@
+name: Cardinality Atmost Problem
+description: The Cardinality Atmost Problem is a constraint satisfaction problem that involves finding an assignment of values to a set of variables such that the number of occurrences of each value from a given set does not exceed a specified maximum limit.
+variables: $nvar \in \{0, \ldots, 9\}, variables = (variables_1, \ldots, variables_n) \in \{1, \ldots, 9\}^n, values = (values_1, \ldots, values_m) \in \{1, \ldots, 9\}^m$ - $nvar$ represents the maximum number of occurrences, $variables$ is an array of decision variables representing the values to be assigned, and $values$ is an array of given values.
+constraints: $nvar = 2, variables = [2,1,7,1,2], values = [5,7,2,9], \forall i \in \{1, \ldots, m\}: \sum_{j=1}^{n} (values_i = variables_j) \leq nvar$ - these constraints specify the given values, the maximum number of occurrences, and the cardinality atmost constraint, which ensures that the number of occurrences of each value does not exceed $nvar$.
+objective: satisfy - the objective is to find a feasible assignment of values to the variables that satisfies all the given constraints.

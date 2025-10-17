@@ -1,0 +1,5 @@
+The problem is known as the Maximization of a Unimodal Function, specifically the function x - exp(x). 
+This problem is about finding the maximum value of the given function within a specified range, in this case, between -1.0 and 3.0. 
+The main decision variable is x, which represents the input to the function, and z, which represents the output or the value of the function at x. 
+The key constraints are that x must be within the range -1.0 to 3.0, and z is equal to the function x - exp(x). 
+The objective of this problem is to maximize the value of z, or in other words, to find the maximum value of the function x - exp(x) within the given range.

@@ -1,0 +1,8 @@
+Bin Packing Problem
+The Bin Packing Problem is about assigning items of different weights to a set of bins, each with a fixed capacity, such that the total weight of items in each bin does not exceed the capacity.
+
+The main decision variables are `bins` and `weights`, which represent the assignment of items to bins and the weights of the items, respectively. The `bins` variable is an array where each element represents the bin to which the corresponding item is assigned, and the `weights` variable is an array where each element represents the weight of the corresponding item. The `capacity` variable represents the maximum weight capacity of each bin.
+
+The key constraints are that each item must be assigned to a bin, and the total weight of items in each bin must not exceed the capacity. This is achieved through the `bin_packing2` predicate, which ensures that for each bin, the sum of the weights of the items assigned to it does not exceed the capacity.
+
+The objective of the problem is to find a feasible solution, i.e., an assignment of items to bins such that the total weight of items in each bin does not exceed the capacity. Unlike the classical bin-packing problem, which aims to minimize the number of bins used, this problem focuses on finding a valid assignment of items to bins, given the capacity constraint.

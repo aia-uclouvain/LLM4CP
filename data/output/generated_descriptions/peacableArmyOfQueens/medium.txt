@@ -1,0 +1,12 @@
+**Peacable Army of Queens Problem**
+
+The Peacable Army of Queens problem is a classic constraint programming problem that involves placing two equally-sized armies of queens on a chessboard without any queen attacking another queen from the opposing army. 
+
+The main decision variables in this problem are the positions of the queens on the chessboard, represented by a 2D array `board` where each cell can take a value of 0 (empty field), 1 (white queen), or 2 (black queen). The variable `amountOfQueens` represents the total number of queens of each color on the board.
+
+The key constraints in this problem can be described as follows: 
+- The number of white queens must be equal to the number of black queens.
+- No queen can attack another queen from the opposing army, meaning that there cannot be a queen from one army in the same row, column, or diagonal as a queen from the other army.
+- The problem starts with a white queen placed in the north-west corner of the board.
+
+The objective of this problem is to maximize the size of the armies, i.e., to find the largest possible number of queens of each color that can be placed on the board without any queen attacking another queen from the opposing army.

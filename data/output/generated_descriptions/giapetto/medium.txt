@@ -1,0 +1,12 @@
+Giapetto's Problem
+The problem is about finding the optimal production levels of two products, soldiers and trains, to maximize profit while satisfying various constraints such as limited resources and demand.
+
+The main decision variables are x1 and x2, which represent the number of soldiers and trains produced, respectively. These variables determine the production levels of the two products.
+
+The key constraints are: 
+- Non-negativity constraints, which ensure that the production levels of both products are not negative.
+- A finishing constraint, which limits the total time spent on finishing the products, with soldiers requiring twice as much time as trains.
+- A carpentry constraint, which limits the total time spent on carpentry work for both products.
+- A demand constraint, which limits the production level of soldiers to meet the demand.
+
+The objective of the problem is to maximize the total profit, which is calculated as 3 times the number of soldiers produced plus 2 times the number of trains produced. The goal is to find the optimal production levels of soldiers and trains that result in the highest profit while satisfying all the constraints.

@@ -1,0 +1,8 @@
+The problem is called the Set Sum problem. 
+It's about selecting a group of numbers from a larger set of numbers and finding their total sum. 
+The main variables are: 
+- "s" which is the group of numbers we are selecting, 
+- "n" which is the total count of numbers we can choose from, 
+- "s_total" which is the sum of the numbers in the selected group. 
+The basic restrictions are that we can only choose numbers between 1 and "n", and each number can either be included or not included in the group. 
+The goal is to find a group of numbers and their sum, without any specific objective to minimize or maximize, the problem simply aims to find a valid solution that satisfies the given conditions.

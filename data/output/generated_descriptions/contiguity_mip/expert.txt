@@ -1,0 +1,10 @@
+name: Contiguity Constraint Problem
+description: The Contiguity Constraint Problem is a classic problem in constraint programming that involves finding a subset of consecutive elements in a sequence that satisfies certain conditions. In this problem, we have a sequence of weights and we want to find a contiguous subsequence such that the sum of the weights in the subsequence is greater than or equal to a given threshold. The goal is to minimize the sum of the weights in the subsequence.
+
+variables: $y = (y_1, y_2, ..., y_n), z, c$ 
+These are the decision variables where $y_i$ is a binary variable that indicates whether the $i^{th}$ element is included in the subsequence, $z$ is the sum of the weights in the subsequence, and $c$ is the number of elements in the subsequence.
+
+constraints: $z = \sum_{i=1}^{n} w_i \cdot y_i, z \geq A, n \cdot (1 - y_i + y_{i+1}) \geq \sum_{t=i+1}^{n} y_t \forall i \in \{1, 2, ..., n-1\}$
+These constraints ensure that the sum of the weights in the subsequence is calculated correctly, the sum of the weights is greater than or equal to the threshold $A$, and the subsequence is contiguous.
+
+objective: minimize $z$

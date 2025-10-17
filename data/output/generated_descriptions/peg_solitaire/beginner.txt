@@ -1,0 +1,5 @@
+Peg Solitaire
+The problem is about a game where you have a board with pegs and holes, and you need to jump pegs over each other to remove them from the board. 
+The main variables are the state of the board at each time step (x) and the moves made at each time step (y). 
+The basic restrictions are that you can only jump a peg over another peg to an empty hole, and you can't move a peg to a hole that already has a peg. 
+The goal is to find a sequence of moves that transforms the initial board into the final board in a given number of steps.

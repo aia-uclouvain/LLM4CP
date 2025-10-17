@@ -1,0 +1,5 @@
+Euler problem 52
+This problem is about finding the smallest positive whole number that, when multiplied by 2, 3, 4, 5, and 6, results in numbers that have the same digits, just in a different order.
+The main variables are x, which represents the number we're looking for, and digits, which represents the individual digits of the numbers x, 2x, 3x, 4x, 5x, and 6x. 
+The basic restrictions are that x must be a positive whole number, and when multiplied by 2, 3, 4, 5, and 6, the resulting numbers must have the same digits as x, just in a different order.
+The goal of the problem is to find the smallest x that satisfies these conditions, which means we want to minimize x.

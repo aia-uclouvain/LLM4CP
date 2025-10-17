@@ -1,0 +1,8 @@
+name: Five Element Problem
+description: The problem is to choose five elements from a given 5x5 matrix, such that no two elements are from the same row or column, and the maximum of the five chosen elements is as small as possible.
+variables: $x_{i,j}, y_j$ 
+These are decision variables where $x_{i,j}$ is a binary variable that equals 1 if the element in the $i^{th}$ row and $j^{th}$ column is chosen, and 0 otherwise. $y_j$ represents the chosen element in the $j^{th}$ column.
+constraints: $\sum_{j=1}^{n} x_{i,j} = 1, \sum_{i=1}^{n} x_{i,j} = 1, \exists i \in [1,n] (x_{i,j} = 1 \land y_j = matrix_{i,j})$ 
+These constraints ensure that exactly one element is chosen from each row and each column, and that the value of $y_j$ is equal to the chosen element in the $j^{th}$ column.
+objective: minimize $\max(y_j)$ 
+The objective is to minimize the maximum of the five chosen elements.

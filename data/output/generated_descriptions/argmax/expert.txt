@@ -1,0 +1,5 @@
+name: Argmax/Argmin Problem
+description: The problem is to find an assignment of values to a set of variables x such that the value at a specific position pos is the maximum, and the value at another position (in this case, 2) is the minimum, with the additional constraint that all values in x are distinct.
+variables: $x = [x_1, x_2, ..., x_n], pos$ - These are the decision variables where $x$ is an array of $n$ variables, each representing a value, and $pos$ is the position of the maximum value.
+constraints: $alldifferent(x) \wedge argmax_gt(pos,x) \wedge argmin_lt(2,x)$ - These constraints ensure that all values in $x$ are distinct, the value at position $pos$ is greater than all other values in $x$, and the value at position 2 is less than all other values in $x$.
+objective: satisfy - The objective of this problem is to find a feasible solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

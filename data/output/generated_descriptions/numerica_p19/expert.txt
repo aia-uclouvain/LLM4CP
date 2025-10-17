@@ -1,0 +1,5 @@
+name: Numerical Root Finding Problem
+description: This problem is a numerical root finding problem, where the goal is to find the value of a variable that satisfies a given polynomial equation. The equation is a fourth-degree polynomial, and the problem is to find the value of x that makes the equation equal to zero.
+variables: x, where x is a continuous decision variable representing the root of the polynomial equation.
+constraints: x*x*x*x - 12.0*x*x*x + 47.0*x*x - 60.0*x + 24.0 = 0.0, which is a polynomial equation constraint that the variable x must satisfy.
+objective: The objective of the problem is to satisfy the given constraint, i.e., to find a value of x that makes the polynomial equation equal to zero. The problem does not have a minimization or maximization objective, but rather a satisfaction objective, where the goal is to find a value of x that satisfies the given equation.

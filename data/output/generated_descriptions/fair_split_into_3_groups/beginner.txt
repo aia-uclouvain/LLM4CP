@@ -1,0 +1,5 @@
+The problem is called the 3-Group Split problem. 
+It's about dividing a group of items into three smaller groups in a way that makes the group with the highest total value as small as possible. 
+The main variables are the items (each with a distinct value) and the groups they will be divided into. 
+The basic restrictions are that each item can only be in one group, and there are three groups. 
+The goal is to minimize the total value of the group with the highest value, meaning we want to distribute the items in a way that makes the most valuable group as small as possible.

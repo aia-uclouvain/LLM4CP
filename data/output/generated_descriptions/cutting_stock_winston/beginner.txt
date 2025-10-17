@@ -1,0 +1,8 @@
+Cutting Stock Problem
+The problem is about a company called Woodco that sells lumber of different lengths, specifically 3-ft, 5-ft, and 9-ft pieces. The company needs to cut these pieces from larger 17-ft boards to meet customer demand. 
+
+The main variables are the number of times each cutting combination is used, represented by the variable x. This variable has six parts, each representing a different way to cut a 17-ft board. For example, one combination might cut a 17-ft board into five 3-ft pieces, while another combination might cut a 17-ft board into four 3-ft pieces and one 5-ft piece.
+
+The basic restrictions or rules of the problem are that the company must meet the customer demand for each length of lumber, which is 25 3-ft boards, 20 5-ft boards, and 15 9-ft boards. The company can only cut the lumber in the six specified combinations, and each combination results in a certain amount of waste.
+
+The goal of the problem is to minimize the total number of times the company needs to cut a 17-ft board, which is represented by the variable total_sum. In other words, the company wants to use as few 17-ft boards as possible to meet the customer demand.

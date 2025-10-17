@@ -1,0 +1,11 @@
+name: Resource-Constrained Project Scheduling Problem (RCPSp)
+description: The Resource-Constrained Project Scheduling Problem is a classic problem in operations research and constraint programming. It involves scheduling a set of activities or tasks with given durations and resource requirements, subject to precedence constraints and limited resource availability. The goal is to find a schedule that minimizes the total project duration, also known as the makespan, while satisfying all the constraints.
+
+variables: $Ss_1, Ss_2, ..., Ss_n, End, Capacity$ 
+These are the decision variables of the problem, where $Ss_i$ represents the start time of task $i$, $End$ represents the total project duration, and $Capacity$ represents the available resource capacity.
+
+constraints: $Capacity \geq 1$, $End \geq Ss_i + Ds_i$, $cumulative(Ss, Ds, Rs, Capacity)$, $Ss_{prec_{i,2}} \geq Ss_{prec_{i,1}} + Ds_{prec_{i,1}}$ 
+These constraints ensure that the available resource capacity is at least 1, the total project duration is greater than or equal to the completion time of each task, the resource capacity is not exceeded at any time, and the precedence constraints are satisfied, where $prec_{i,1}$ and $prec_{i,2}$ represent the indices of the preceding and succeeding tasks in the $i^{th}$ precedence constraint.
+
+objective: minimize $End$ 
+The objective of the problem is to minimize the total project duration, $End$, which represents the makespan of the project.

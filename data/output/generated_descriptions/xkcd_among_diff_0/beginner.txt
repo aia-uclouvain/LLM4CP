@@ -1,0 +1,5 @@
+xkcd Knapsack problem
+The problem is about ordering food from a menu to get a total bill of exactly $15.05. 
+The main variables are x, which represents how many items of each dish to order, and y, which represents the number of different dishes ordered.
+The basic restrictions are that the total cost of the ordered food must be exactly $15.05, and the number of items of each dish must be a whole number.
+The goal of the problem is to maximize the number of different dishes ordered, which means finding the combination of dishes that gives a total bill of $15.05 while ordering the most variety of dishes.

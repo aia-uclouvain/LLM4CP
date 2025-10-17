@@ -1,0 +1,10 @@
+Einstein Puzzle
+The problem is about figuring out the characteristics of five houses in a row, where each house has a different owner with a unique nationality, favorite color, pet, drink, and cigarette brand.
+The main variables are the characteristics of each house: 
+- Nationality (A): which nationality lives in each house
+- Color (B): the color of each house
+- Pet (C): the type of pet in each house
+- Drink (D): the favorite drink of the owner in each house
+- Smoke (E): the favorite cigarette brand of the owner in each house
+The basic restrictions are that each house must have a unique combination of characteristics, and there are specific clues that relate the characteristics of one house to another, such as "the person who owns a cat lives next to the person who drinks milk".
+The goal of the problem is to figure out the characteristics of each house, specifically to determine which nationality owns the fish.

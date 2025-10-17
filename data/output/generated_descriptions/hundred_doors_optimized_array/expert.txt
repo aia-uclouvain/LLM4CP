@@ -1,0 +1,5 @@
+name: 100 Doors Problem
+description: The problem involves 100 doors in a row, initially all closed. The task is to determine the state of the doors after 100 passes, where in each pass, every nth door is toggled, and n ranges from 1 to 100. The problem can also be optimized by only considering the doors whose numbers are perfect squares of integers.
+variables: $x[j]$ where $j \in \{1, 2, ..., 100\}$, which represent the state of each door, where $x[j] = 1$ if the door is open and $x[j] = 0$ if the door is closed.
+constraints: $\forall j \in \{1, 2, ..., 100\}, (\exists i \in \{1, 2, ..., 100\}, i*i = j) \leftrightarrow x[j] = 1$, which ensures that only the doors whose numbers are perfect squares are open.
+objective: The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

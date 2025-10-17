@@ -1,0 +1,11 @@
+Generalized Knapsack Problem
+The Generalized Knapsack Problem is a classic constraint programming problem that involves finding the optimal way to pack items of different weights and benefits into a knapsack with limited capacity. 
+
+The main decision variables in this problem are the array `x`, where `x[i]` represents the number of copies of item `i` to include in the knapsack. 
+
+The key constraints in this problem are: 
+- The total weight of the items in the knapsack cannot exceed the maximum weight capacity of the knapsack (`tot_weight <= max_weight`).
+- The number of copies of each item included in the knapsack cannot exceed the maximum number of copies available for that item (`x[i] <= limits[i]`).
+- The total benefit of the items in the knapsack is calculated by summing the benefits of each item, where the benefit of each item depends on the number of copies included (`tot_benefit = sum(i in 1..n) (benefits[i,x[i]])`).
+
+The objective of the Generalized Knapsack Problem is to maximize the total benefit of the items in the knapsack, subject to the constraints on weight and item availability. In other words, the goal is to find the combination of items that yields the highest total benefit while not exceeding the knapsack's weight capacity and not taking more copies of each item than are available.

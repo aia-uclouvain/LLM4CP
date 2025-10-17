@@ -1,0 +1,5 @@
+The problem is called Sortedness. 
+It is about finding a permutation of an array of integers such that the resulting array is sorted, while also satisfying certain constraints on the original and sorted arrays. 
+The main decision variables are x, s, and p, where x represents the original array of integers, s represents the sorted version of x, and p represents the permutation of the indices in x to obtain the sorted version. 
+The key constraints are that s must be the sorted version of x, the array p must be a valid permutation of the indices in x, and certain elements in x and s must have specific values. 
+The problem's objective is to find a solution that satisfies all the given constraints, with no specific objective function being minimized or maximized, as indicated by the "solve satisfy" statement.

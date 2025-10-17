@@ -1,0 +1,9 @@
+The 13-Link Chain Puzzle
+The 13-Link Chain Puzzle is a classic problem that involves finding the minimum number of links to break in a 13-link chain to be able to weigh items from 1 to 13 ounces in 1-ounce increments using a balance scale.
+The main decision variables in this problem are the sets `weights` and `s`, where `weights` represents the set of link lengths that can be used to weigh items, and `s` is an array of sets, where each set `s[j]` represents the combination of link lengths that can be used to weigh `j` ounces.
+The key constraints in this problem are: 
+- the total length of the chain is 13 links, 
+- each link length from 1 to 13 ounces can be represented by a combination of the link lengths in `weights`, 
+- if a link length is not in `weights`, it cannot be used to weigh any item, 
+- and if two link lengths are in `weights`, their sum cannot also be in `weights` (for chains with more than 25 links).
+The objective of this problem is to minimize the number of different link lengths in `weights`, which represents the minimum number of links that need to be broken to achieve the desired weighing capability.

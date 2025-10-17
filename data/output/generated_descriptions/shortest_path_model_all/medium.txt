@@ -1,0 +1,5 @@
+The Shortest Path Problem
+The problem is about finding the shortest path between two nodes in a weighted graph.
+The main decision variables are `x[i,j]`, which represent the connection between nodes `i` and `j` in the resulting path, and `rhs[i]`, which indicates whether node `i` is the start node, end node, or an intermediate node.
+The key constraints are: each node has a flow balance, meaning the number of edges entering a node is equal to the number of edges leaving it, except for the start node which has one more edge leaving and the end node which has one more edge entering; the graph does not contain any loops; and there can be no connection between two nodes if the distance between them is unknown or infinite.
+The objective of the problem is to minimize the total cost, which is the sum of the distances of all edges in the resulting path, although the provided model is set to satisfy all constraints rather than minimize the total cost.

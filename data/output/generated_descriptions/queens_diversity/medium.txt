@@ -1,0 +1,13 @@
+N-Queens Problem with Degree of Diversity
+The N-Queens problem is a classic constraint programming problem where the goal is to place N queens on an NxN chessboard such that no two queens attack each other. In this variation, the objective is to diversify a set of solutions, using two extra constraints: lex_chain_less and soft_alldifferent.
+
+The main decision variables are:
+- x: a 2D array representing the positions of the queens on the chessboard, where x[i, j] is the row where the queen is placed in column j for solution i.
+- soft_cost: an array representing the costs associated with the soft_alldifferent constraints for each column.
+
+The key constraints are:
+- Queens constraint: each row must contain a queen, and no two queens can be in the same column or on the same diagonal.
+- Lex_chain_less constraint: the rows must be lexicographically sorted.
+- Soft_alldifferent constraint: for each column, the number of pairs of queens that have the same value (i.e., are in the same row) is minimized.
+
+The objective of the problem is to minimize the total cost, which is the sum of the soft costs for all columns. The soft cost for a column is the number of pairs of queens that have the same value in that column. The goal is to find a set of solutions that satisfy the queens and lex_chain_less constraints while minimizing the total cost.

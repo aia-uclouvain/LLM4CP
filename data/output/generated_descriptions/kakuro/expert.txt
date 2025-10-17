@@ -1,0 +1,10 @@
+name: Kakuro puzzle
+description: The Kakuro puzzle is a mathematical puzzle where the objective is to fill in the missing numbers in a grid such that each row and column sum up to a given value, and no number is repeated in any row or column. The puzzle consists of a grid with some numbers already filled in, and the remaining blank cells need to be filled with numbers from 1 to 9.
+variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the values to be filled in the grid, with $x_{i,j}$ being the value in the $i^{th}$ row and $j^{th}$ column.
+constraints: 
+$\forall i \in 1..num\_blanks: x_{blanks_{2*(i-1)+1}, blanks_{2*(i-1)+2}} = 0$
+$\forall p \in 1..num\_p: \sum_{i=1}^{num\_hints} x_{P_{p, 2*(i-1)+1}, P_{p,2*(i-1)+2}} = P_{p, 2*num\_hints+1}$
+$\forall p \in 1..num\_p: all\_different(x_{P_{p, 2*(i-1)+1}, P_{p,2*(i-1)+2}})$
+$\forall p \in 1..num\_p, \forall i \in 1..num\_hints: x_{P_{p, 2*(i-1)+1}, P_{p,2*(i-1)+2}} > 0$
+These constraints ensure that the blank cells are filled with 0, the sum of the numbers in each row and column equals the given value, all numbers in each row and column are distinct, and all numbers are greater than 0.
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, as there is no explicit objective function to minimize or maximize. The goal is to fill in the grid such that all constraints are met.

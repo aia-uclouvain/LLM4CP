@@ -1,0 +1,5 @@
+name: Assign and Nvalues Problem
+description: The Assign and Nvalues problem is a constraint satisfaction problem where we have a set of items, each with a specific value, and a set of bins. The goal is to assign each item to a bin such that the number of distinct values in each bin satisfies a certain condition, which is defined by a relational operator (e.g., less than or equal to, greater than or equal to, etc.) and a limit.
+variables: $limitx, bins$, where $limitx$ is the limit on the number of distinct values in each bin and $bins$ is an array of decision variables representing the number of distinct values in each bin.
+constraints: $limitx = 2, assign\_and\_nvalues(items, relop, limitx)$, where the first constraint fixes the value of $limitx$ to 2 and the second constraint ensures that the number of distinct values in each bin satisfies the condition defined by $relop$ and $limitx$.
+objective: satisfy, which means the objective is to find an assignment of items to bins that satisfies all the constraints, without any specific optimization criterion (i.e., neither minimize nor maximize a specific value).

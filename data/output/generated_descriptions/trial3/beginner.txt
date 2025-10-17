@@ -1,0 +1,5 @@
+The Third Trial puzzle. 
+This problem is about two doors, behind one of which is a lady and the other a tiger. 
+The main variables are x, which shows what is behind each door (a lady or a tiger), and t, which shows whether a statement on each door is true or false. 
+The basic restrictions are that each door must have either a lady or a tiger, and the statements on the doors must follow certain rules: the first door says that if the lady is not behind it, then the tiger is behind the other door, and the second door says that the lady is behind the first door if and only if the statement on the first door is true. Also, either both statements must be true or both must be false. 
+The goal of the problem is to find a solution that satisfies all these rules, meaning to figure out what is behind each door and whether the statements on the doors are true or false.

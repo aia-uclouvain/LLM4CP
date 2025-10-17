@@ -1,0 +1,8 @@
+Set Covering Problem
+The Set Covering Problem is about selecting the smallest subset of elements that covers all the required groups or sets. 
+The main decision variables in this problem are the senators, represented by the array x, where x[i] is true if senator i is selected for the committee and false otherwise. 
+The key constraints are: 
+- each group must have at least one representative in the committee, 
+- a senator can only be selected once, 
+- the committee must consist of 10 senators. 
+The objective of the problem is to minimize the number of senators in the committee while ensuring that all groups are represented.

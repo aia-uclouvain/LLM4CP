@@ -1,0 +1,20 @@
+**Finding Celebrities Problem**
+The Finding Celebrities problem is a classic constraint programming problem that involves identifying celebrities at a party. 
+**Description**
+The problem is about finding individuals who are known by everyone at the party, but only know other celebrities themselves. 
+**Decision Variables**
+The main decision variables in this problem are:
+- `n`: the number of people at the party
+- `graph`: a matrix representing who knows whom at the party
+- `party`: an array of sets, where each set represents the people known by a particular individual
+- `celebrities`: a set of people who are identified as celebrities
+- `num_celebrities`: the number of celebrities at the party
+**Constraints**
+The key constraints in this problem can be described as follows:
+- Each person knows themselves
+- The `graph` matrix is derived from the `party` array, where `graph[i, j]` is 1 if person `i` knows person `j`, and 0 otherwise
+- Every person at the party knows the celebrities
+- The celebrities only know other celebrities
+- There is at least one celebrity at the party
+**Objective**
+The objective of this problem is to identify the set of celebrities at the party, which is represented by the `celebrities` variable. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies all the constraints.

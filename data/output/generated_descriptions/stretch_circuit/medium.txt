@@ -1,0 +1,21 @@
+**Stretch Circuit Problem**
+The Stretch Circuit problem is a classic constraint programming problem that involves finding a sequence of values that satisfy certain constraints.
+
+**Problem Description**
+The problem is about finding a sequence of values, represented by the decision variables `x`, that form stretches of consecutive equal values. Each stretch has a minimum and maximum length, and the values in each stretch must be different from the values in adjacent stretches.
+
+**Decision Variables**
+The main decision variables are:
+- `x`: an array of variables representing the sequence of values.
+- `val`: an array of variables representing the possible values for each stretch.
+- `lmin` and `lmax`: arrays of variables representing the minimum and maximum lengths for each stretch.
+
+**Constraints**
+The key constraints are:
+- Each stretch must have a length within the specified minimum and maximum bounds.
+- The values in each stretch must be the same.
+- The values in each stretch must be different from the values in adjacent stretches.
+- The sequence must form a circuit, meaning that the last stretch is connected to the first stretch.
+
+**Objective**
+The objective of the problem is to find a sequence of values that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the constraints.

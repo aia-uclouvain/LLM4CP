@@ -1,0 +1,14 @@
+Tunapalooza Problem
+The Tunapalooza problem is a classic constraint programming problem that involves matching rock band names with the type of music they play and the prearranged meeting spot of two friends, Tim and Kerri, during their performances.
+
+The main decision variables in this problem are the rock band names (Ellyfish, Korrupt, Retread Ed and the Flat Tires, and Yellow Reef), the music genres (country, grunge, reggae, and speed metal), and the meeting spots (carnival games, information booth, mosh pit, and T-shirt vendor). These variables represent the possible assignments of music genres to rock bands and meeting spots to the friends during each performance.
+
+The key constraints in this problem can be described in plain language as follows: 
+- Korrupt does not play country or grunge music.
+- Tim and Kerri do not meet at the carnival games during Ellyfish's performance.
+- The friends do not meet at the T-shirt vendor during the reggae band's show.
+- Exactly two of the following statements are true: Ellyfish plays grunge music, Tim and Kerri do not meet at the information booth during Retread Ed and the Flat Tires' performance, and the friends do not meet at the T-shirt vendor while Yellow Reef is playing.
+- The country and speed metal acts are either Retread Ed and the Flat Tires or the act during which Tim and Kerri meet at the mosh pit.
+- The reggae band is neither Korrupt nor the act during which the friends meet at the information booth.
+
+The objective of this problem is to find a valid assignment of music genres to rock bands and meeting spots to the friends during each performance, satisfying all the given constraints. The problem does not involve minimizing or maximizing a specific objective function; instead, it aims to find a feasible solution that meets all the constraints.

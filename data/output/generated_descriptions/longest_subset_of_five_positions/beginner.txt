@@ -1,0 +1,9 @@
+The problem is called the Longest Subset of Five-Positions Five-Elements Permutations. 
+
+This problem is about finding the longest list of sequences, where each sequence has five positions and each position can have one of five elements. The sequences must be arranged in such a way that any two sequences do not share more than one identical element in the same position.
+
+The main variables are the sequences, represented by a 2D array `x`, where `x[i, j]` represents the element in the `j-th` position of the `i-th` sequence. 
+
+The basic restrictions or rules of the problem are that any two sequences can only share one identical element in the same position, and the sequences must be ordered in a specific way to avoid duplicates.
+
+The goal of the problem is to find the longest list of sequences that satisfy these rules, with the aim of maximizing the number of sequences. In this case, the problem is trying to find a list of at least 25 sequences that meet the conditions.

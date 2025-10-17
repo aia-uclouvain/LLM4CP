@@ -1,0 +1,5 @@
+The Tokyo Elevator Puzzle
+The problem is about finding the minimum number of elevators required to connect all pairs of floors in a building, given the possible connections each elevator can make.
+The main decision variables are `x[i]`, which represent whether elevator `i` is used (1) or not (0).
+The key constraints are that each pair of floors must be connected by at least one elevator. This means that for any two floors `j` and `k`, there must be at least one elevator `i` that can reach both floors (`c[i,j]*c[i,k]*x[i]`) and is used (`x[i]`).
+The objective of the problem is to minimize the total number of elevators used, which is represented by the variable `sumx`. This is achieved by finding the smallest possible set of elevators that still satisfies the constraint of connecting all pairs of floors.

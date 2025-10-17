@@ -1,0 +1,9 @@
+name: Unbounded Knapsack Problem
+
+description: The problem is about a traveller who has to leave a place and can take as many items as he likes, given that they fit in his knapsack and he can carry them. The items have different values, weights, and volumes, and the traveller wants to maximize the total value of the items he takes. The knapsack has a limited capacity in terms of weight and volume.
+
+variables: $x_1, x_2, x_3$ - These are the decision variables representing the number of units of each item to take, where $x_1$ is the number of vials of panacea, $x_2$ is the number of ampules of ichor, and $x_3$ is the number of bars of gold.
+
+constraints: $total\_weight = \sum_{i=1}^{3} x_i \* weight_i \leq 250$, $total\_volume = \sum_{i=1}^{3} x_i \* volume_i \leq 250$, $x_i \geq 0$ for $i = 1, 2, 3$ - These constraints represent the limitations of the knapsack's capacity in terms of weight and volume, and the non-negativity of the number of units of each item.
+
+objective: Maximize $total\_value = \sum_{i=1}^{3} x_i \* value_i$ - The objective is to maximize the total value of the items taken, where $value_i$ is the value of each unit of item $i$.

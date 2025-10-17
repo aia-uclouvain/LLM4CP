@@ -1,0 +1,5 @@
+The problem is called the Global Constraint K_Same problem. 
+It is about ensuring that multiple sets of variables have the same multiset of values assigned to them. 
+The main decision variables are the 2D array x, where x[i, j] represents the value assigned to the jth variable in the ith set. 
+The key constraints are that the multisets of values assigned to each set are identical, meaning that the same values appear the same number of times in each set, regardless of their order. 
+The problem's objective is to find an assignment of values to the variables such that the k_same constraint is satisfied, and the values are between 1 and 9.

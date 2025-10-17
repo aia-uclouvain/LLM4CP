@@ -1,0 +1,5 @@
+Money Change Problem
+The problem is about finding the best way to give someone a certain amount of money using different coins. 
+The main variables are the number of coins, the value of the money to be given, the values of the available coins, and how many of each coin to use. 
+The basic restrictions are that you can't use a negative number of coins and the total value of the coins must equal the amount of money to be given. 
+The goal is to find a way to give the money using the available coins, and there are options to either find any solution, use the fewest coins possible, or prioritize using certain coins over others.

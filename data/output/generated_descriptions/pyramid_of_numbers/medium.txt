@@ -1,0 +1,12 @@
+Pyramid of Numbers
+The Pyramid of Numbers problem involves finding the values of a pyramid where each brick is the sum of the two bricks situated below it. The pyramid has a specific structure with some given numbers and some missing numbers that need to be determined.
+
+The main decision variables in this problem are the values of the bricks in the pyramid, represented by the array `x`. The variables `X`, `Y`, and `Z` represent the three missing numbers at the base of the pyramid.
+
+The key constraints in this problem are:
+- Each brick in the pyramid is the sum of the two bricks below it.
+- The middle missing number `Y` is the sum of the other two missing numbers `X` and `Z`.
+- The given numbers in the pyramid must be matched with the corresponding values in the `x` array.
+- The indices of the numbers to add are calculated based on the triangle numbers.
+
+The objective of this problem is to find a solution that satisfies all the constraints, which means finding the values of the bricks in the pyramid that meet the given conditions. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the constraints.

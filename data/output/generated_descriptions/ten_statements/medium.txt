@@ -1,0 +1,5 @@
+The Hardest Logic Puzzle Ever, also known as the Ten Statements Problem. 
+This problem is about determining the truth values of ten statements that refer to the number of true statements among them. 
+The main decision variables are the array x, where x[i] represents whether the ith statement is true (x[i] = 1) or false (x[i] = 0). 
+The key constraints are that each statement's truth value is equivalent to the total number of true statements being equal to the statement's number, and at least one statement must be true. 
+The problem's objective is to find a solution that satisfies all the constraints, which essentially means finding the number of true statements among the ten given statements, with the implicit goal of maximizing the number of true statements while still being consistent with the given constraints.

@@ -1,0 +1,5 @@
+Crossword Puzzle Problem
+The problem is about filling in a crossword puzzle with words. 
+The main variables are the letters to be filled in, represented by L, which can take values from 1 to 26, corresponding to the 26 letters of the alphabet.
+The basic restrictions or rules of the problem are that certain combinations of letters must form valid words, and no two words can be identical. 
+The goal of the problem is to find a solution that satisfies all the constraints, filling in the crossword puzzle with valid words.

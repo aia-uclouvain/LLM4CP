@@ -1,0 +1,888 @@
+1) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Examples:
+  python SocialGolfers.py
+  python SocialGolfers.py -data=[5,3,6]
+  python SocialGolfers.py -data=[5,3,6] -variant=01
+"""
+
+from pycsp3 import *
+
+nGroups, size, nWeeks = data or (4, 4, 5)  # size is the size of the groups
+nPlayers = nGroups * size
+
+if not variant():
+    # g[w][p] is the group admitting on week w the player p
+    g = VarArray(size=[nWeeks, nPlayers], dom=range(nGroups))
+
+    satisfy(
+        # ensuring that two players don't meet more than one time
+        [(g[w1][p1] != g[w1][p2]) | (g[w2][p1] != g[w2][p2]) for w1, w2 in combinations(nWeeks, 2) for p1, p2 in combinations(nPlayers, 2)],
+
+        # respecting the size of the groups
+        [Cardinality(g[w], occurrences={i: size for i in range(nGroups)}) for w in range(nWeeks)],
+
+        # tag(symmetry-breaking)
+        [
+            LexIncreasing(g, matrix=True),
+
+            [g[0][p] == p // size for p in range(nPlayers)],
+
+            [g[w][k] == k for k in range(size) for w in range(1, nWeeks)]
+        ]
+    )
+elif variant("01"):
+    # x[w][g][p] is 1 iff on week w the group g admits the player p
+    x = VarArray(size=[nWeeks, nGroups, nPlayers], dom={0, 1})
+
+    # tw[p1][p2][w] is 1 iff players p1 and p2 play together on week w
+    tw = VarArray(size=[nPlayers, nPlayers, nWeeks], dom=lambda p1, p2, w: {0, 1} if p1 < p2 else None)
+
+    # twg[p1][p2][w][g] is 1 iff players p1 and p2 play together on week w in group g
+    twg = VarArray(size=[nPlayers, nPlayers, nWeeks, nGroups], dom=lambda p1, p2, w, g: {0, 1} if p1 < p2 else None)
+
+    satisfy(
+        # each week, each player plays exactly once
+        [Sum(x[w][g][p] for g in range(nGroups)) == 1 for w in range(nWeeks) for p in range(nPlayers)],
+
+        # each week, each group contains exactly the right number of players
+        [Sum(x[w][g]) == size for w in range(nWeeks) for g in range(nGroups)],
+
+        # two players cannot meet twice
+        [Sum(tw[p1][p2]) <= 1 for p1, p2 in combinations(nPlayers, 2)],
+
+        # deciding when two players play together
+        [Sum(twg[p1][p2][w]) == tw[p1][p2][w] for p1, p2 in combinations(nPlayers, 2) for w in range(nWeeks)],
+
+        # deciding when two players play in the same group
+        [x[w][g][p1] * x[w][g][p2] == twg[p1][p2][w][g] for w in range(nWeeks) for g in range(nGroups) for p1, p2 in combinations(nPlayers, 2)],
+
+        # tag(symmetry-breaking)
+        [
+            # each week, groups are strictly ordered
+            [LexDecreasing(x[w], strict=True) for w in range(nWeeks)],
+
+            # weeks are strictly ordered (it suffices to consider the first group)
+            LexDecreasing([x[w][0] for w in range(nWeeks)], strict=True),
+
+            # golfers are strictly ordered
+            LexDecreasing([[x[w][g][p] for w in range(nWeeks) for g in range(nGroups)] for p in range(nPlayers)], strict=True)
+        ]
+
+    )
+
+
+2) IMPLEMENTATION IN .pl
+/*
+
+  Social golfer problem in B-Prolog.
+
+  CSPLib problem 10:
+  http://www.csplib.org/Problems/prob010/index.html
+  """
+  The coordinator of a local golf club has come to you with the following 
+  problem. In her club, there are 32 social golfers, each of whom play golf 
+  once a week, and always in groups of 4. She would like you to come up 
+  with a schedule of play for these golfers, to last as many weeks as 
+  possible, such that no golfer plays in the same group as any other golfer 
+  on more than one occasion.
+
+  Possible variants of the above problem include: finding a 10-week schedule 
+  with ``maximum socialisation''; that is, as few repeated pairs as possible 
+  (this has the same solutions as the original problem if it is possible 
+  to have no repeated pairs), and finding a schedule of minimum length 
+  such that each golfer plays with every other golfer at least once 
+  (``full socialisation'').
+
+  The problem can easily be generalized to that of scheduling m groups of 
+  n golfers over p weeks, such that no golfer plays in the same group as any 
+  other golfer twice (i.e. maximum socialisation is achieved). 
+  """
+
+
+  This model is a translation of the OPL code from 
+  http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=010
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+go :-
+        Weeks = 5,
+        Groups = 7,
+        GroupSize = 3,
+        Golfers is Groups * GroupSize,
+
+        Golfer = 1..Golfers,
+        Week = 1..Weeks,
+        Group = 1..Groups,
+       
+
+        % decision variables
+        new_array(Assign,[Golfers,Weeks]),
+        array_to_list(Assign,Vars),
+        Vars :: 1..Groups,
+      
+        % C1: Each group has exactly groupSize players
+        foreach(Gr in Group, W in Week,
+                 sum([(Assign[G,W] #= Gr) : G in Golfer]) #= GroupSize
+                ),
+
+        % C2: Each pair of players only meets at most once
+        foreach(G1 in Golfer,G2 in Golfer, W1 in Week, W2 in Week,
+                (G1 \= G2,
+                 W1 \= W2 ->
+                     (Assign[G1,W1] #= Assign[G2,W1]) + 
+                     (Assign[G1,W2] #= Assign[G2,W2]) #=< 1
+                ;
+                     true
+                )),
+
+
+        labeling([ff], Vars),
+
+        Rows @= Assign^rows,
+        foreach(Row in Rows, writeln(Row)),
+        nl.
+
+
+3) IMPLEMENTATION IN .mzn
+% golfers.mzn
+% vim: ft=zinc ts=4 sw=4 et tw=0
+% Ralph Becket <rafe@csse.unimelb.edu.au>
+% Mon Oct 29 13:56:25 EST 2007
+%
+% The social golfers problem, see
+% http://www.dcs.st-and.ac.uk/~ianm/CSPLib/prob/prob001/data.txt
+%
+% A club has a number of golfers that play rounds in groups (the number of
+% golfers is a multiple of the number of groups).  Each round, a golfer
+% plays with a group of different people, such that the same pair of golfers
+% never play together twice.
+
+include "globals.mzn";
+
+int: n_groups;                          % The number of groups.
+int: n_per_group;                       % The size of each group.
+int: n_rounds;                          % The number of rounds.
+
+int: n_golfers = n_groups * n_per_group;
+
+set of int: groups = 1..n_groups;
+set of int: group = 1..n_per_group;
+set of int: rounds = 1..n_rounds;
+set of int: golfers = 1..n_golfers;
+
+array [rounds, groups] of var set of golfers: round_group_golfers;
+
+    % Each group has to have the right size.
+    %
+constraint
+    forall (r in rounds, g in groups) (
+        card(round_group_golfers[r, g]) = n_per_group
+    );
+
+    % Each group in each round has to be disjoint.
+    %
+constraint
+    forall (r in rounds) (
+        all_disjoint (g in groups) (round_group_golfers[r, g])
+    );
+
+    % Symmetry breaking.
+    %
+% constraint
+%     forall (r in rounds, g in groups where g < n_groups) (
+%         round_group_golfers[r, g] < round_group_golfers[r, g + 1]
+%     );
+
+    % Each pair may play together at most once.
+    %
+constraint
+    forall (a, b in golfers where a < b) (
+        sum (r in rounds, g in groups) (
+            bool2int({a, b} subset round_group_golfers[r, g])
+        )
+    <=
+        1
+    );
+
+solve satisfy;
+
+output [    ( if   g = 1
+              then "\nround " ++ show(r) ++ ":   "
+              else "   "
+              endif
+            ) ++
+            show(round_group_golfers[r, g])
+       |    r in rounds, g in groups
+       ];
+
+
+%-----------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------%
+
+
+4) IMPLEMENTATION IN .mzn
+% golfers.mzn
+% vim: ft=zinc ts=4 sw=4 et tw=0
+% Ralph Becket <rafe@csse.unimelb.edu.au>
+% Mon Oct 29 13:56:25 EST 2007
+%
+% The social golfers problem, see
+% http://www.dcs.st-and.ac.uk/~ianm/CSPLib/prob/prob001/data.txt
+%
+% A club has a number of golfers that play rounds in groups (the number of
+% golfers is a multiple of the number of groups).  Each round, a golfer
+% plays with a group of different people, such that the same pair of golfers
+% never play together twice.
+
+include "globals.mzn";
+
+int: n_groups;                          % The number of groups.
+int: n_per_group;                       % The size of each group.
+int: n_rounds;                          % The number of rounds.
+
+int: n_golfers = n_groups * n_per_group;
+
+set of int: rounds = 1..n_rounds;
+set of int: golfers = 1..n_golfers;
+set of int: places = 1..n_golfers;
+
+array [rounds, places] of var golfers: round_place_golfer;
+array [golfers, golfers] of var 0..n_rounds: golfer_golfer_round;
+
+    % Each member of each group must be distinct.
+    %
+constraint
+    forall (r in rounds) (
+        alldifferent (p in places) (round_place_golfer[r, p])
+    );
+
+    % Break some symmetry by strictly ordering each group in each round.
+    %
+constraint
+    forall (r in rounds, p in places) (
+        if p mod n_per_group != 0
+        then round_place_golfer[r, p] < round_place_golfer[r, p + 1]
+        else true
+        endif
+    );
+
+    % Each pair can play together at most once.
+    %
+constraint
+    forall (r in rounds, g in 0..(n_groups - 1), i, j in 1..n_per_group
+            where i < j) (
+        golfer_golfer_round[
+            round_place_golfer[r, n_per_group * g + i],
+            round_place_golfer[r, n_per_group * g + j]
+        ] = r
+    );
+
+solve
+    :: int_search([round_place_golfer[r, p] | r in rounds, p in places],
+        first_fail, indomain_min, complete)
+    satisfy;
+
+output [
+    "Social golfers:\n\n", 
+    "Groups        : ", show(n_groups), "\n", 
+    "No. per group : ", show(n_per_group), "\n",
+    "No. of rounds : ", show(n_rounds), "\n"
+] ++ [
+    ( if p = 1 then "\nround " ++ show(r) ++ ":" else "" endif ) ++
+    ( if p mod n_per_group = 1 then "   " else " " endif ) ++
+    show_int(2, round_place_golfer[r, p]) | r in rounds, p in places
+];
+
+%-----------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------%
+
+
+5) IMPLEMENTATION IN .pl
+/*
+ * SICSTUS CLPFD DEMONSTRATION PROGRAM
+ * Purpose   : Social Golfer Problem
+ * Author    : Mats Carlsson
+ *
+ * We have 32 golfers, individual play.
+ * We will golf for W weeks.
+ * Set up the foursomes so that each person only golfs with the same
+ * person once.
+ *
+ * | ?- golf(8,4,9,[min],bycolall,bounds).
+ */
+
+:- module(golf, [golf/6]).
+
+:- use_module(library(lists)).
+:- use_module(library(clpfd)).
+
+golf(G, S, W, LabelOpt, VarOrder, Consistency) :-
+	Opt = [consistency(Consistency)],
+	golfer(G, S, W, Schedule, Byrow, Bycol, Opt),
+	var_order(VarOrder, Byrow, Bycol, All),
+	(   foreach(Set,All),
+	    param(LabelOpt)
+	do  labeling(LabelOpt, Set)
+	),
+	(   foreach(Round,Schedule),
+	    count(Wk,1,_)
+	do  format('Week ~d:\n', [Wk]),
+	    (   foreach(Four,Round)
+	    do  format('                    ~d ~d ~d ~d\n', Four)
+	    )
+	).
+
+var_order(bycol, _, All, All).
+var_order(byrow, All, _, All).
+var_order(bycolall, _, Cols, [All]) :-
+	append(Cols, All).
+var_order(byrowall, Rows, _, [All]) :-
+	append(Rows, All).
+
+golfer(G, S, W, Schedule, PlayersByRow, PlayersByCol, Opt) :-
+	schedule(0, G, S, W, Schedule, PlayersByRow, PlayersByCol, Opt),
+	Schedule = [FirstS|RestS],
+	append(FirstS, Players),
+	labeling([enum], Players), !,
+	(   foreach(Week,RestS),
+	    param(S)
+	do  (   foreach([P|Ps],Week),
+		param(S)
+	    do  P/S #= Q0,
+		(   foreach(P1,Ps),
+		    fromto(Q0,Q1,Q2,_),
+		    param(S)
+		do  P1/S #= Q2,
+		    Q1 #< Q2
+		)
+	    ),
+	    seed_week(0, S, Week)
+	),
+	ordered_players_by_week(PlayersByRow),
+	players_meet_disjoint(Schedule, G, S, Opt),
+	first_s_alldiff(0, S, RestS, Opt).
+
+
+schedule(W, _, _, W, [], [], [], _) :- !.
+schedule(I, G, S, W, [Week|Schedule], [ByRow|ByRows], [ByCol|ByCols], Opt) :-
+	(   for(_,1,G),
+	    foreach(Group,Week),
+	    param([G,S])
+	do  length(Group, S),
+	    GS is G*S-1,
+	    domain(Group, 0, GS)
+	),
+	append(Week, ByRow),
+	all_different(ByRow, Opt),
+	transpose(Week, WeekT),
+	append(WeekT, ByCol),
+	J is I+1,
+	schedule(J, G, S, W, Schedule, ByRows, ByCols, Opt).
+
+players_meet_disjoint(Schedule, G, S, Opt) :-
+	append(Schedule, Groups),
+	groups_meets(Groups, Tuples, [], MeetVars, []),
+	GS is G*S,
+	(   foreach([A,B,C],Tuples),
+	    param([GS,Opt])
+	do  scalar_product([GS,1], [A,B], #=, C, Opt)
+	),
+	all_distinct(MeetVars, Opt).
+
+groups_meets([], Tuples, Tuples) --> [].
+groups_meets([Group|Groups], Tuples1, Tuples3) -->
+	group_meets(Group, Tuples1, Tuples2),
+	groups_meets(Groups, Tuples2, Tuples3).
+
+group_meets([], Tuples, Tuples) --> [].
+group_meets([P|Ps], Tuples1, Tuples3) -->
+	group_meets(Ps, P, Tuples1, Tuples2),
+	group_meets(Ps, Tuples2, Tuples3).
+
+group_meets([], _, Tuples, Tuples) --> [].
+group_meets([Q|Qs], P, [[P,Q,PQ]|Tuples1], Tuples2) --> [PQ],
+	group_meets(Qs, P, Tuples1, Tuples2).
+
+seed_week(S, S, Week) :- !,
+	S1 is S-1,
+	seed_week(Week, S1).
+seed_week(I, S, [[I|_]|Week]) :-
+	J is I+1,
+	seed_week(J, S, Week).
+
+seed_week([], _).
+seed_week([[J|_]|Week], I) :-
+	I #< J,
+	seed_week(Week, J).
+
+ordered_players_by_week([W|Ws]) :-
+	ordered_players_by_week(Ws, W).
+
+ordered_players_by_week([], _).
+ordered_players_by_week([W|Ws], V) :-
+	W = [_,Y|_],
+	V = [_,X|_],
+	X #< Y,
+	ordered_players_by_week(Ws, W).
+
+first_s_alldiff(S, S, _Schedule, _) :- !.
+first_s_alldiff(I, S, Schedule, Opt) :-
+	(   foreach(Week,Schedule),
+	    foreach(Ith,Part),
+	    param(I)
+	do  nth0(I, Week, [_|Ith])
+	),
+	append(Part, Conc),
+	all_different(Conc, Opt),
+	J is I+1,
+	first_s_alldiff(J, S, Schedule, Opt).
+
+
+
+6) IMPLEMENTATION IN .pl
+/*
+
+  Social golfer problem in B-Prolog.
+
+  CSPLib problem 10:
+  http://www.csplib.org/Problems/prob010/index.html
+  """
+  The coordinator of a local golf club has come to you with the following 
+  problem. In her club, there are 32 social golfers, each of whom play golf 
+  once a week, and always in groups of 4. She would like you to come up 
+  with a schedule of play for these golfers, to last as many weeks as 
+  possible, such that no golfer plays in the same group as any other golfer 
+  on more than one occasion.
+
+  Possible variants of the above problem include: finding a 10-week schedule 
+  with ``maximum socialisation''; that is, as few repeated pairs as possible 
+  (this has the same solutions as the original problem if it is possible 
+  to have no repeated pairs), and finding a schedule of minimum length 
+  such that each golfer plays with every other golfer at least once 
+  (``full socialisation'').
+
+  The problem can easily be generalized to that of scheduling m groups of 
+  n golfers over p weeks, such that no golfer plays in the same group as any 
+  other golfer twice (i.e. maximum socialisation is achieved). 
+  """
+
+
+  This model is a translation of the OPL code from 
+  http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=010
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+go :-
+        Weeks = 5,
+        Groups = 7,
+        GroupSize = 3,
+        Golfers is Groups * GroupSize,
+
+        Golfer = 1..Golfers,
+        Week = 1..Weeks,
+        Group = 1..Groups,
+       
+
+        % decision variables
+        new_array(Assign,[Golfers,Weeks]),
+        array_to_list(Assign,Vars),
+        Vars :: 1..Groups,
+      
+        % C1: Each group has exactly groupSize players
+        foreach(Gr in Group, W in Week,
+                 sum([(Assign[G,W] #= Gr) : G in Golfer]) #= GroupSize
+                ),
+
+        % C2: Each pair of players only meets at most once
+        foreach(G1 in Golfer,G2 in Golfer, W1 in Week, W2 in Week,
+                (G1 \= G2,
+                 W1 \= W2 ->
+                     (Assign[G1,W1] #= Assign[G2,W1]) + 
+                     (Assign[G1,W2] #= Assign[G2,W2]) #=< 1
+                ;
+                     true
+                )),
+
+        % SBSA: Symmetry-breaking by selective assignment
+        % On the first week, the first groupSize golfers play in group 1, the 
+        % second groupSize golfers play in group 2, etc. On the second week, 
+        % golfer 1 plays in group 1, golfer 2 plays in group 2, etc.
+        foreach(G in Golfer, Assign[G,1] #= ((G-1) // GroupSize) + 1),
+
+        foreach(G in Golfer,
+                (G =< GroupSize -> Assign[G,2] #= G;true)),
+
+        labeling([ff], Vars),
+
+        Rows @= Assign^rows,
+        foreach(Row in Rows, writeln(Row)),
+        nl.
+
+
+7) IMPLEMENTATION IN .mzn
+% golfers.mzn
+% vim: ft=zinc ts=4 sw=4 et tw=0
+% Ralph Becket <rafe@csse.unimelb.edu.au>
+% Mon Oct 29 13:56:25 EST 2007
+%
+% The social golfers problem, see
+% http://www.dcs.st-and.ac.uk/~ianm/CSPLib/prob/prob001/data.txt
+%
+% A club has a number of golfers that play rounds in groups (the number of
+% golfers is a multiple of the number of groups).  Each round, a golfer
+% plays with a group of different people, such that the same pair of golfers
+% never play together twice.
+
+include "globals.mzn";
+
+int: n_groups;                          % The number of groups.
+int: n_per_group;                       % The size of each group.
+int: n_rounds;                          % The number of rounds.
+
+int: n_golfers = n_groups * n_per_group;
+
+set of int: groups = 1..n_groups;
+set of int: group = 1..n_per_group;
+set of int: rounds = 1..n_rounds;
+set of int: golfers = 1..n_golfers;
+
+array [rounds, groups, group] of var golfers: round_group_i_golfer;
+
+    % Each member of each group must be distinct.
+    %
+constraint
+    forall (r in rounds) (
+        alldifferent (g in groups, i in group) (round_group_i_golfer[r, g, i])
+    );
+
+    % We also break some symmetry
+    % here by strictly ordering each group.
+    %
+constraint
+    forall (r in rounds, g in groups, i in group where i < n_per_group) (
+        round_group_i_golfer[r, g, i] < round_group_i_golfer[r, g, i + 1]
+    );
+
+    % Each pair can play together at most once.
+    %
+constraint
+    forall (a, b in golfers where a < b) (
+        sum (r in rounds, g in groups, i, j in group where i < j) (
+            bool2int(
+                round_group_i_golfer[r, g, i] = a
+            /\  round_group_i_golfer[r, g, j] = b
+            )
+        )
+    <=
+        1
+    );
+
+solve satisfy;
+
+output [
+    "Social golfers:\n\n", 
+    "Groups        : ", show(n_groups), "\n", 
+    "No. per group : ", show(n_per_group), "\n",
+    "No. of rounds : ", show(n_rounds), "\n"
+] ++ [
+    ( if g = 1 /\ i = 1 then "\nround " ++ show(r) ++ ":" else "" endif) ++
+    ( if i = 1 then "   " else " " endif) ++
+    show_int(2, round_group_i_golfer[r, g, i]) 
+    |  r in rounds, g in groups, i in group
+];
+
+%-----------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------%
+
+
+8) IMPLEMENTATION IN .pi
+/*
+
+  Social golfer problem in Picat.
+
+  CSPLib problem 10:
+  http://www.csplib.org/Problems/prob010/index.html
+  """
+  The coordinator of a local golf club has come to you with the following 
+  problem. In her club, there are 32 social golfers, each of whom play golf 
+  once a week, and always in groups of 4. She would like you to come up 
+  with a schedule of play for these golfers, to last as many weeks as 
+  possible, such that no golfer plays in the same group as any other golfer 
+  on more than one occasion.
+
+  Possible variants of the above problem include: finding a 10-week schedule 
+  with ``maximum socialisation''; that is, as few repeated pairs as possible 
+  (this has the same solutions as the original problem if it is possible 
+  to have no repeated pairs), and finding a schedule of minimum length 
+  such that each golfer plays with every other golfer at least once 
+  (``full socialisation'').
+
+  The problem can easily be generalized to that of scheduling m groups of 
+  n golfers over p weeks, such that no golfer plays in the same group as any 
+  other golfer twice (i.e. maximum socialisation is achieved). 
+  """
+
+  This model is a translation of the OPL code from 
+  http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=010
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cp.
+
+main => go.
+
+go =>
+
+   Weeks = 5,
+   Groups = 7,
+   GroupSize = 3,
+   Golfers = Groups * GroupSize,
+
+   Golfer = 1..Golfers,
+   Week = 1..Weeks,
+   Group = 1..Groups,
+       
+
+   % decision variables
+   Assign = new_array(Golfers,Weeks),
+   Assign :: 1..Groups,
+      
+   % C1: Each group has exactly groupSize players
+   foreach(Gr in Group, W in Week)
+       sum([(Assign[G,W] #= Gr) : G in Golfer]) #= GroupSize
+   end,
+
+   % C2: Each pair of players only meets at most once
+   foreach(G1 in Golfer,G2 in Golfer, W1 in Week, W2 in Week)
+      if G1 != G2, W1 != W2 then
+           (Assign[G1,W1] #= Assign[G2,W1]) + 
+           (Assign[G1,W2] #= Assign[G2,W2]) #=< 1
+      end
+   end,
+
+   % SBSA: Symmetry-breaking by selective assignment
+   % On the first week, the first groupSize golfers play in group 1, the 
+   % second groupSize golfers play in group 2, etc. On the second week, 
+   % golfer 1 plays in group 1, golfer 2 plays in group 2, etc.
+   foreach(G in Golfer) Assign[G,1] #= ((G-1) // GroupSize) + 1 end,
+
+   foreach(G in Golfer)
+      if G =< GroupSize then Assign[G,2] #= G end
+   end,
+
+   solve([ff], Assign),
+
+   foreach(Row in Assign) writeln(Row) end,
+   nl.
+
+
+9) IMPLEMENTATION IN .mzn
+%
+% Social golfer in Minizinc.
+% 
+% Translated from OPL code from
+%
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=010
+%
+% """
+% Problem description
+% In a golf club there are 32 social golfers who play once a week in 8 groups of 4. The problem amounts to find a schedule for as many as possible weeks, such that no two golfers play in the same group more than once.
+
+% Here we consider the decisional version of the problem (wrt the number of weeks 'weeks'), where the number of players and the group size are given as input.
+% 
+% Problem input
+% 
+% * groups, the number of groups to be formed each week
+% * groupSize, the size of each group
+% * weeks, the number of weeks for which a scheduling is requested 
+% 
+% Search space
+% The set of all possible group assignments to all players in each of the weeks weeks.
+% 
+% Constraints
+%
+% * C1: Each group has exactly groupSize players
+% * C2: Each pair of players only meets at most once
+% """
+%
+% Model created by Hakan Kjellerstrand, hakank@bonetmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+%
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+%
+int: weeks = 4;
+int: groups = 3;
+int: groupSize = 3;
+int: golfers = groups * groupSize;
+
+set of int: Golfer = 1..golfers;
+set of int: Week = 1..weeks;
+set of int: Group = 1..groups;
+
+% Search space: The set of all possible group assignments to all 
+% players in each of the weeks
+array[Golfer, Week] of var Group: assign;
+
+% solve satisfy;
+% solve :: int_search([assign[i,j] | i in Golfer, j in Week ], "first_fail", "indomain", "complete") satisfy;
+solve :: int_search([assign[i,j] | i in Golfer, j in Week ], 
+        first_fail, indomain_min, complete) satisfy;
+
+constraint
+   % C1: Each group has exactly groupSize players
+   forall (gr in Group, w in Week)( % c1
+     sum (g in Golfer) (bool2int(assign[g,w] = gr)) = groupSize
+   )
+   /\
+   % C2: Each pair of players only meets at most once
+   forall (g1, g2 in Golfer, w1, w2 in Week  where g1 != g2 /\ w1 != w2) (
+     (bool2int(assign[g1,w1] = assign[g2,w1]) + bool2int(assign[g1,w2] = assign[g2,w2])) <= 1
+   )
+  /\
+  % SBSA: Symmetry-breaking by selective assignment
+  % On the first week, the first groupSize golfers play in group 1, the 
+  % second groupSize golfers play in group 2, etc. On the second week, 
+  % golfer 1 plays in group 1, golfer 2 plays in group 2, etc.
+  forall(g in Golfer) (
+    assign[g,1]=((g-1) div groupSize) + 1 % 
+  )
+  /\
+  forall(g in Golfer where g <= groupSize)(
+    assign[g,2]=g
+  )
+
+;
+
+output [
+  if j = 1 then "\n" else " " endif ++
+  show(assign[i,j])
+  | i in Golfer, j in Week
+] ++ ["\n"];
+
+
+
+
+10) IMPLEMENTATION IN .pi
+/*
+
+  Social golfer problem in Picat.
+
+  CSPLib problem 10:
+  http://www.csplib.org/Problems/prob010/index.html
+  """
+  The coordinator of a local golf club has come to you with the following 
+  problem. In her club, there are 32 social golfers, each of whom play golf 
+  once a week, and always in groups of 4. She would like you to come up 
+  with a schedule of play for these golfers, to last as many weeks as 
+  possible, such that no golfer plays in the same group as any other golfer 
+  on more than one occasion.
+
+  Possible variants of the above problem include: finding a 10-week schedule 
+  with ``maximum socialisation''; that is, as few repeated pairs as possible 
+  (this has the same solutions as the original problem if it is possible 
+  to have no repeated pairs), and finding a schedule of minimum length 
+  such that each golfer plays with every other golfer at least once 
+  (``full socialisation'').
+
+  The problem can easily be generalized to that of scheduling m groups of 
+  n golfers over p weeks, such that no golfer plays in the same group as any 
+  other golfer twice (i.e. maximum socialisation is achieved). 
+  """
+
+
+  This model is a translation of the OPL code from 
+  http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=010
+
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cp.
+
+
+main => go.
+
+go =>
+
+   Weeks = 5,
+   Groups = 7,
+   GroupSize = 3,
+   Golfers = Groups * GroupSize,
+
+   Golfer = 1..Golfers,
+   Week = 1..Weeks,
+   Group = 1..Groups,
+       
+
+   % decision variables
+   Assign = new_array(Golfers,Weeks),
+   Assign :: 1..Groups,
+      
+   % C1: Each group has exactly groupSize players
+   foreach(Gr in Group, W in Week)
+       sum([(Assign[G,W] #= Gr) : G in Golfer]) #= GroupSize
+   end,
+
+   % C2: Each pair of players only meets at most once
+   foreach(G1 in Golfer,G2 in Golfer, W1 in Week, W2 in Week)
+      if G1 != G2, W1 != W2 then
+         (Assign[G1,W1] #= Assign[G2,W1]) + 
+         (Assign[G1,W2] #= Assign[G2,W2]) #=< 1
+      end
+   end,
+
+
+   solve([ff], Assign),
+
+   foreach(Row in Assign) writeln(Row) end,
+   nl.
+
+
+11) IMPLEMENTATION IN .essence
+language Essence 1.3
+$ prob010.essence: Social Golfer Problem
+$ Problem details available at http://www.csplib.org/Problems/prob010/
+$
+$ In a golf club there are a number of golfers who wish to play together in g
+$ groups of size s. Find a schedule of play for w weeks such that no pair of
+$ golfers play together more than once.
+
+given w, g, s : int(1..)
+
+letting Golfers be new type of size g * s
+
+find sched : set (size w) of
+                $ regular is implied by numParts g and partSize s
+                partition (regular, numParts g, partSize s) from Golfers
+
+such that
+
+forAll g1, g2 : Golfers, g1 != g2 .
+    (sum week in sched . toInt(together({g1, g2}, week))) <= 1
+
+

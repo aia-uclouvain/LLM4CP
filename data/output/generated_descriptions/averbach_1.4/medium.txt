@@ -1,0 +1,5 @@
+The problem is called "The Five Gentlemen" or "The Poker Playing Gentlemen". 
+It is about five gentlemen - Baker, Dyer, Farmer, Glover, and Hosier - who are seated around a circular table playing poker, with each gentleman being the namesake of the profession of one of the others. 
+The main decision variables are the seating positions of the gentlemen (Baker, Dyer, Farmer, Glover, Hosier) and their corresponding professions (baker, dyer, farmer, glover, hosier), which represent the assignment of each gentleman to a profession. 
+The key constraints are: each gentleman has a unique profession, the dyer is seated two places to the left of Mr Hosier, the baker sits two places to Mr Baker's right, the farmer is seated to the left of Mr Farmer, and Mr Dyer is on the glover's right. 
+The problem's objective is to find the seating positions and professions of the gentlemen that satisfy all the given constraints, with the ultimate goal of determining the name of the dyer.

@@ -1,0 +1,11 @@
+Safe Cracking Puzzle
+The problem is about finding a combination of 9 digits that satisfies a set of given constraints, representing a safe cracking puzzle.
+The main decision variables are C1 to C9, which represent the 9 digits of the combination, and LD, an array of these variables. Each variable C1 to C9 can take a value from 1 to 9, representing a digit in the combination.
+The key constraints are: 
+- all digits in the combination must be different, 
+- the difference between the 4th and 6th digits must be equal to the 7th digit, 
+- the product of the 1st, 2nd, and 3rd digits must be equal to the sum of the 8th and 9th digits, 
+- the sum of the 2nd, 3rd, and 6th digits must be less than the 8th digit, 
+- the 9th digit must be less than the 8th digit, 
+- no digit can be in its corresponding position (i.e., the 1st digit cannot be 1, the 2nd digit cannot be 2, and so on).
+The objective of the problem is to find a combination that satisfies all these constraints, which is a satisfaction problem, not an optimization problem, so there is no specific value being minimized or maximized, but rather a feasible solution is being sought.

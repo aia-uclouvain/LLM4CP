@@ -1,0 +1,5 @@
+The name of the problem is the Fractions problem. 
+This problem is about finding a set of distinct non-zero digits (from 1 to 9) that can be assigned to the variables A, B, C, D, E, F, G, H, and I, such that a specific mathematical equation is satisfied. 
+The main variables are A, B, C, D, E, F, G, H, and I, which represent the digits to be assigned. 
+The basic restrictions or rules of the problem are that each digit can only be used once, and the equation A/BC + D/EF + G/HI = 1 must be satisfied, where BC, EF, and HI are two-digit numbers formed by the corresponding digits. 
+The goal of the problem is to find a set of distinct digits that satisfy the given equation.

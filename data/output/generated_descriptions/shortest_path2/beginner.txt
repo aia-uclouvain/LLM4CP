@@ -1,0 +1,5 @@
+Shortest Path Problem. 
+This problem is about finding the shortest way to get from one place to another, where there are many possible paths and each part of the path has a certain cost or distance. 
+The main variables are the distances between places (d), the total cost of the path (total_cost), and the flow of traffic or movement between places (inFlow, outFlow, x). In simple terms, these variables represent how far apart places are, how much it costs to travel the whole path, and how much traffic or movement goes from one place to another. 
+The basic restrictions are that you have to start at a certain place (start), end at another certain place (end), and you can only travel between places that are connected. The distances between places are also fixed. 
+The goal of the problem is to minimize the total cost of traveling from the start to the end, which means finding the shortest and cheapest path.

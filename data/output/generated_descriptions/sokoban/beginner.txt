@@ -1,0 +1,15 @@
+Sokoban 
+Sokoban is a puzzle game where a player, called the porter, has to move crates into specific target positions in a warehouse. The warehouse is like a big grid, and the porter and crates can only move up, down, left, or right, one step at a time. The goal is to get all the crates into their target positions.
+
+The main variables are: 
+- sokPosn, which is the position of the porter at each time step, 
+- move, which is the direction the porter moves at each time step, 
+- crateGoalPosns, which is the position of each crate at each time step.
+
+The basic restrictions or rules are: 
+- The porter and crates cannot move through walls, 
+- The porter can only push one crate at a time, 
+- The porter and crates can only move up, down, left, or right, 
+- Each crate must be moved into its target position.
+
+The goal of the problem is to find a sequence of moves for the porter to push all the crates into their target positions in a certain number of steps.

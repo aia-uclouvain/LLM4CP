@@ -1,0 +1,5 @@
+The problem is called Next Greater Element.
+It is about finding the smallest possible value in a sorted list that is strictly greater than a given value, while ensuring the list is sorted in strictly increasing order.
+The main decision variables are var1, var2, and variables, which represent the given value, the next greater value, and the sorted list, respectively.
+The key constraints are that var2 must be the smallest value in the list that is greater than var1, and all values before var2 in the list must be less than var1, ensuring var2 is the smallest possible entry.
+The problem's objective is to satisfy these constraints, specifically to find the next greater element var2 for a given var1 in a sorted list, rather than minimizing or maximizing a specific value.

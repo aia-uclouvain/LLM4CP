@@ -1,0 +1,32 @@
+**De Bruijn Torus Problem**
+
+The De Bruijn Torus problem is a classic constraint programming problem that involves finding a 2D matrix of size `rows` x `cols` with sub-matrices of size `m1` x `m2` that satisfy certain properties. The problem is a generalization of the De Bruijn sequence, which is a binary string of length `2^n` that contains every possible binary string of length `n` exactly once.
+
+**Decision Variables**
+
+The main decision variables in this problem are:
+
+* `x`: a 2D array of size `(rows+extra1) x (cols+extra2)` where `extra1` and `extra2` are the number of extra rows and columns added to the matrix to simplify the calculations. The elements of `x` are integers between 0 and `base-1`, where `base` is the base of the numbers used in the problem.
+* `y`: an array of size `rows*cols` that represents the converted sub-matrices to numbers in base `base`.
+
+**Constraints**
+
+The key constraints in this problem are:
+
+* The sub-matrices of size `m1` x `m2` must be distinct, i.e., no two sub-matrices can be the same.
+* The matrix `x` must be symmetric, i.e., the first row and column are repeated in the last row and column.
+* The numbers in `y` must be distinct, i.e., no two numbers can be the same.
+
+**Objective**
+
+The objective of this problem is to find a solution that satisfies all the constraints. There is no explicit objective function to minimize or maximize.
+
+**Additional Constraints**
+
+The problem also includes additional constraints, such as:
+
+* The number of occurrences of each value in `x` is the same.
+* All rows and columns in `x` are distinct.
+* The diagonals and Sudoku sub-grids (if the matrix is a square) are distinct.
+
+These constraints can be added or removed depending on the specific problem instance.

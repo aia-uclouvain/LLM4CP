@@ -1,0 +1,8 @@
+Torn Number Puzzle
+The Torn Number Puzzle is a classic constraint programming problem that involves finding a four-digit number with distinct digits that can be divided into two parts, and when these parts are added together and squared, the result is the original four-digit number.
+
+The main decision variables in this problem are D0, D1, D2, and D3, which represent the four digits of the number. These variables are integers that range from 0 to 9, with D3 being non-zero to ensure that the number is a four-digit number.
+
+The key constraints in this problem can be described as follows: the four digits must be distinct, the number formed by the first two digits (D1 and D0) and the number formed by the last two digits (D3 and D2) must be added together and squared to give the original four-digit number, and none of the parts can be 30 or 25, which are the given examples in the problem statement.
+
+The objective of this problem is to find a four-digit number that satisfies all the given constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a number that meets the conditions of the puzzle, which is a satisfaction problem rather than an optimization problem.

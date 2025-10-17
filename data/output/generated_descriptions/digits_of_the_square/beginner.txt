@@ -1,0 +1,5 @@
+The problem is called the Digits of the Square puzzle. 
+It's about finding a special four-digit number where the last four digits of its square are the same as the original number. 
+The main variables are: n, which is the four-digit number we're trying to find, n_a, which are the individual digits of n, n_squared, which is the square of n, and n_squared_a, which are the individual digits of n_squared. 
+The basic restrictions are that n must be a four-digit number, and when we square it, the last four digits must match the original number. 
+The goal is to find this special number n that meets these conditions.

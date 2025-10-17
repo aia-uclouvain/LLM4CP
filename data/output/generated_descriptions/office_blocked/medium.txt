@@ -1,0 +1,9 @@
+Office Blocked problem
+The Office Blocked problem is about assigning six employees - Arthur, Bella, Craig, Duncan, Elizabeth, and Francesca - to six offices on two floors of a building, with three offices on each floor, subject to certain constraints.
+The main decision variables are the office assignments for each employee, represented by variables such as `arthur`, `bella`, `craig`, `duncan`, `elizabeth`, and `francesca`, which take values from 1 to 6, representing the six offices.
+The key constraints are: 
+- Arthur's office is directly above Bella's, 
+- Bella's office is next to Duncan's, 
+- Elizabeth's office number is less than Francesca's, and 
+- Craig's and Francesca's offices are adjacent.
+The objective of the problem is to find a satisfying assignment of employees to offices, such that all constraints are met, which is achieved by using the `solve satisfy` statement in the Minizinc model.

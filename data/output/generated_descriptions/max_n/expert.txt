@@ -1,0 +1,7 @@
+name: Max_n Problem
+description: The Max_n problem is a constraint satisfaction problem that involves finding the maximum value of a given rank in a collection of variables. The rank of a value is defined as the number of distinct values that are larger than it. The problem requires finding the maximum value of a specified rank, given a set of variables with assigned values.
+variables: $n, variables_{1..n}, t_{max}, rank$ 
+These variables represent the following: $n$ is the number of variables, $variables_{1..n}$ is an array of decision variables that can take values from a given domain, $t_{max}$ is the maximum value of the specified rank, and $rank$ is the rank of the maximum value.
+constraints: $t_{max} \in \{1..7\}, variables_{1..n} \in \{1..7\}, rank \in \{0..n-1\}, t_{max} = variables_i, \forall i \in \{1..n\}, rank = \sum_{i=1}^{n} (variables_i > t_{max})$ 
+These constraints ensure that $t_{max}$ is a value in the domain of the variables, each variable $variables_{1..n}$ is assigned a value from the domain, the rank is calculated correctly, and $t_{max}$ is one of the values assigned to the variables.
+objective: The objective of the problem is to satisfy all the given constraints, there is no explicit objective function to minimize or maximize.

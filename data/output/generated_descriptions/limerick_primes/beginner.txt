@@ -1,0 +1,5 @@
+Limerick Primes problem. 
+This problem is about finding special prime numbers that follow the rhyme scheme of a limerick, a type of humorous poem. 
+The main variables are p, which is a 5-digit prime number, and x, which is an array of digits that make up the number p. 
+The basic restrictions are that p must be a prime number, and its digits must follow the pattern AABBA, where A is an odd digit and B is any digit other than A. 
+The goal of the problem is to find a prime number p that satisfies these conditions, and to determine the digits that make up p.

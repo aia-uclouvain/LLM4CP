@@ -1,0 +1,5 @@
+Local Art Theft Problem
+The problem is about figuring out who committed a crime after interviewing six suspects. 
+The main variables are the names of the suspects: Alan, Brian, Charlie, Dave, Eddie, and Freddie, which represent whether each person is telling the truth or not.
+The basic restrictions are that each suspect makes statements about who did not commit the crime, and exactly four of the suspects are lying once. 
+The goal is to find out who committed the crime by analyzing the statements and lies.

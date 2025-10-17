@@ -1,0 +1,12 @@
+name: GATHER + HOMAGE = MARTIN problem
+
+description: The problem is a cryptarithmetic puzzle where the goal is to assign digits to letters in the equation GATHER + HOMAGE = MARTIN such that the equation holds true. Each letter represents a unique digit from 0 to 9.
+
+variables: G, A, T, H, E, R, O, M, I, N, x 
+These are decision variables representing the digits assigned to each letter in the equation, where x is an array of these variables.
+
+constraints: alldifferent(x), 100000*G + 10000*A + 1000*T + 100*H + 10*E + R + 100000*H + 10000*O + 1000*M + 100*A + 10*G + E = 100000*M + 10000*A + 1000*R + 100*T + 10*I + N, A*A = H, G*G = O, G > 0, H > 0, M > 0 
+These constraints ensure that each letter is assigned a unique digit, the equation GATHER + HOMAGE = MARTIN holds true, and additional relationships between letters (A*A = H, G*G = O) are satisfied. The constraints G > 0, H > 0, M > 0 ensure that the first digit of each word is not zero.
+
+objective: satisfy 
+The objective of the problem is to find an assignment of digits to letters that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

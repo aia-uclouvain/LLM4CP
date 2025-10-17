@@ -1,0 +1,11 @@
+Three Jugs Problem
+The Three Jugs problem is a classic constraint programming problem that involves finding the shortest sequence of operations to measure a certain amount of liquid using three jugs of different capacities.
+
+The main decision variables in this problem are the flow of liquid between the jugs, represented by the `x` matrix, where `x[i,j]` is 1 if there is a flow from jug `i` to jug `j`, and 0 otherwise. The `rhs` array represents the requirements for each jug, where `rhs[i]` is 1 if jug `i` is the source, -1 if it's the sink, and 0 otherwise. The `outFlow` and `inFlow` arrays represent the total flow out of and into each jug, respectively.
+
+The key constraints in this problem are: 
+- Each jug can only have one outgoing flow and one incoming flow at a time.
+- The total flow out of a jug must be equal to the total flow into that jug, unless it's the source or sink jug.
+- The flow between jugs must be consistent with the given distances between them, represented by the `d` matrix.
+
+The objective of this problem is to minimize the total distance of the flow, represented by the `z` variable, which is the sum of the distances of all flows between jugs. In other words, the goal is to find the shortest sequence of operations to measure the desired amount of liquid.

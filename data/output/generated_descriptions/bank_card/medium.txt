@@ -1,0 +1,8 @@
+Bank Card Code Problem
+The problem is about finding a 4-digit PIN code for a bank card, where the code is represented by the digits a, b, c, and d. 
+The main decision variables are a, b, c, and d, which represent the individual digits of the PIN code, and the array x, which is a collection of these digits.
+The key constraints are: 
+- all digits must be different, 
+- the two-digit number formed by the last two digits (cd) must be three times the two-digit number formed by the first two digits (ab), 
+- and the two-digit number formed by the last digit and the first digit (da) must be two times the two-digit number formed by the second and third digits (bc).
+The problem's objective is to find a solution that satisfies all the given constraints, as it is a satisfaction problem, not an optimization problem, meaning it aims to find a feasible solution rather than minimizing or maximizing a specific value.

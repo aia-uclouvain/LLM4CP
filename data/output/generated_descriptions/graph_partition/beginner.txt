@@ -1,0 +1,5 @@
+Graph Partition Problem
+The problem is about dividing a group of connected items, like a network of friends, into smaller equal-sized groups such that the number of connections between these groups is as small as possible.
+The main variables are the number of nodes (items) and the number of partitions (groups), and the variable x which represents the partitions themselves, with each partition being a set of nodes.
+The basic restrictions are that the number of nodes in each partition must be the same, and the goal is to minimize the number of connections (edges) between the partitions.
+The goal of the problem is to minimize the number of edges between the partitions, which means finding the best way to divide the nodes into equal-sized groups with the fewest connections between them.

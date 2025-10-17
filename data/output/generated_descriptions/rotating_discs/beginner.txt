@@ -1,0 +1,5 @@
+Rotating Disc Problem
+The problem is about turning four concentric discs so that each section, or octant, has the same total value of 12. 
+The main variables are the discs and their rotations. The discs are divided into eight sections, each with a certain value. The rotation of each disc determines which section is in which octant.
+The basic rules are that each disc can be rotated to any of its eight positions, and each octant must have a total value of 12. 
+The goal is to find a way to rotate the discs so that all octants have the same total value of 12.

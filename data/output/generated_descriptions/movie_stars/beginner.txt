@@ -1,0 +1,5 @@
+Movie Stars problem
+The problem is about predicting how a person, named Evan, will rate a movie called "Prognosis Negative" based on how other people have rated the same movie and other movies. 
+The main variables are the ratings given by different people to different movies, and the unknown rating that Evan will give to "Prognosis Negative". 
+The basic restrictions are that each person's rating for a movie is between 1 and 5, and that we can only use the given ratings to make the prediction. 
+The goal is to find the most likely rating that Evan will give to "Prognosis Negative" by comparing his ratings for other movies to the ratings given by other people.

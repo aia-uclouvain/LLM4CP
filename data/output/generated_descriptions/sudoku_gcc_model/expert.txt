@@ -1,0 +1,5 @@
+name: Sudoku
+description: The Sudoku problem is a classic puzzle where the goal is to fill a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 sub-grid contains each number exactly once.
+variables: $x_{i,j}$ for $i, j = 1, \ldots, n$, where $x_{i,j}$ represents the value of the cell at row $i$ and column $j$ in the grid, and is a decision variable that takes a value from 1 to $n$.
+constraints: $\forall i \in \{1, \ldots, n\}: global\_cardinality\_old([x_{i,j} | j \in 1..n], occ)$, $\forall j \in \{1, \ldots, n\}: global\_cardinality\_old([x_{i,j} | i \in 1..n], occ)$, $\forall i, j \in \{0, \ldots, reg-1\}: global\_cardinality\_old([x_{r,c} | r \in i*reg+1..i*reg+reg, c \in j*reg+1..j*reg+reg], occ)$, which ensure that each row, column, and 3x3 sub-grid contains each number exactly once.
+objective: The problem does not have an explicit objective function to minimize or maximize, the goal is to find a feasible solution that satisfies all the constraints.

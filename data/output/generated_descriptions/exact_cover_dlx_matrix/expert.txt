@@ -1,0 +1,5 @@
+name: Exact Cover Problem
+description: The Exact Cover Problem is a classic problem in computer science and mathematics, where we have a universe of elements and a collection of sets, and we need to find a subset of these sets such that each element in the universe is covered exactly once. In this problem, we have a universe U = {1, 2, 3, 4, 5, 6, 7} and a collection of sets S = {A, B, C, D, E, F}, where each set contains a subset of elements from the universe.
+variables: $x_1, x_2, ..., x_m$ where $x_i \in \{0, 1\}$, these variables represent the decision to include (1) or not include (0) each set in the cover.
+constraints: $\sum_{i=1}^{m} x_i \cdot mat_{i,j} = 1, \forall j \in \{1, 2, ..., n\}$, these constraints ensure that each element in the universe is covered exactly once by the selected sets, where $mat_{i,j}$ is a matrix representing the presence (1) or absence (0) of element $j$ in set $i$.
+objective: The objective of the problem is to satisfy the constraints, i.e., to find a subset of sets that covers each element in the universe exactly once, there is no explicit objective function to minimize or maximize.

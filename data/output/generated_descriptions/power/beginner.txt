@@ -1,0 +1,5 @@
+Problem name: my_pow 
+This problem is about calculating the result of raising a number to a certain power. 
+The main variables are "n" which is the base number, "num" which is the result of the power operation, and "len" which is the power to which the base number is raised. 
+The basic restrictions are that "n" must be 3 and "len" must be 4. 
+The goal of the problem is to find the result of 3 raised to the power of 4, which is stored in the variable "num".

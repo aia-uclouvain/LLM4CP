@@ -1,0 +1,9 @@
+name: All Different Partition Problem
+description: The All Different Partition problem is a constraint satisfaction problem that involves partitioning a set of variables into distinct subsets, such that each variable takes a value that belongs to a unique subset. The problem requires finding an assignment of values to the variables that satisfies the partitioning constraints.
+variables: $x = [x_1, x_2, ..., x_n], s = [s_1, s_2, ..., s_n]$ where $x_i$ is a variable that takes a value from a given set $ss$, and $s_i$ is a set of values from $ss$ that represents the partition to which $x_i$ belongs. In other words, $x$ is an array of variables that take values from the set $ss$, and $s$ is an array of sets that represent the partitions.
+constraints: $\text{all\_different\_partition}(x, s, ss)$ which is equivalent to: 
+- $\text{partition\_set}(s, ss)$: The sets in $s$ form a partition of $ss$.
+- $\text{all\_different}(x)$: All variables in $x$ take distinct values.
+- $\forall i \in \{1, 2, ..., n\}, \sum_{j=1}^{n} (x_i \in s_j) = 1$: Each variable $x_i$ belongs to exactly one set $s_j$.
+- $\forall i \in \{1, 2, ..., n\}, \sum_{j=1}^{n} (x_j \in s_i) \leq 1$: Each set $s_i$ contains at most one variable $x_j$.
+objective: The objective of the problem is to find a satisfying assignment, i.e., to satisfy all the constraints, rather than to minimize or maximize a specific value.

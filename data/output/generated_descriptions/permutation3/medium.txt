@@ -1,0 +1,5 @@
+Permutation Problem
+The problem is about finding a permutation of a given array, which means rearranging its elements to create a new array.
+The main decision variables are `x`, `y`, and `p`. `x` and `y` represent the original and permuted arrays, respectively, while `p` represents the permutation itself, where `p[i]` is the index of the element in `x` that should be placed at position `i` in `y`.
+The key constraints are that `y` should be a permutation of `x`, meaning that every element in `x` appears exactly once in `y`, and that the permutation `p` should be valid, meaning that every index in `p` is unique and corresponds to a valid position in `x`. In plain language, this means that each element in `x` must be mapped to a unique position in `y`, and no two elements in `x` can be mapped to the same position in `y`.
+The objective of the problem is not to minimize or maximize a specific value, but rather to find a valid permutation of the given array `x` that satisfies the constraints. In other words, the goal is to find a rearrangement of the elements in `x` such that the resulting array `y` is a valid permutation of `x`.

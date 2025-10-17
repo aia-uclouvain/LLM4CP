@@ -1,0 +1,5 @@
+The problem is known as the Numerica problem. 
+It is about finding values for two variables, x[1] and x[2], that satisfy two given equations. 
+The main decision variables are x[1] and x[2], which are floating-point numbers that can take any value between -10^8 and 10^8, and they represent the solutions to the problem. 
+The key constraints are that the sum of the squares of x[1] and x[2] must equal 1, and the square of x[1] must equal x[2]. 
+The problem's objective is to find all possible combinations of x[1] and x[2] that satisfy these constraints, rather than minimizing or maximizing a specific value.

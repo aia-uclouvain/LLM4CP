@@ -1,0 +1,5 @@
+Tripuzzle 
+The problem is about solving a puzzle where you have to fit together triangular pieces of different colors into a larger triangle, making sure that the colors on the edges of the pieces match up correctly. 
+The main variables are the position and orientation of each triangular piece, and the color of each spot on the piece. 
+The basic restrictions are that each position in the larger triangle can only be occupied by one piece in one orientation, each piece can only be used once, and the colors on the edges of the pieces must match up correctly. 
+The goal of the problem is to find a solution that satisfies all of these restrictions, which means finding a way to fit all the pieces together into a larger triangle with matching colors on the edges.

@@ -1,0 +1,18 @@
+**Conference Scheduling Problem**
+The Conference Scheduling Problem is a classic constraint programming problem that involves scheduling a set of speakers to present their talks at a conference with a limited number of time slots.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `starting_slot`: an array of variables representing the starting time slot for each speaker.
+- `ending_slot`: an array of variables representing the ending time slot for each speaker.
+- `m`: a 2D array of variables representing the schedule, where `m[t,s]` is 1 if speaker `s` is presenting at time slot `t`, -1 if the speaker is busy, and 0 otherwise.
+
+**Constraints**
+The key constraints in this problem are:
+- Each speaker's talk must start and end within the available time slots.
+- No two speakers can present at the same time slot.
+- Each speaker can only present at time slots when they are available.
+- The allocated time slots for each speaker must be contiguous.
+
+**Objective**
+The objective of this problem is to minimize the maximum ending time slot of all speakers, which means finishing all talks as early as possible. This is achieved by minimizing the variable `z`, which represents the maximum ending time slot of all speakers.

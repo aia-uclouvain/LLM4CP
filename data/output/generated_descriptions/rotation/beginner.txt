@@ -1,0 +1,17 @@
+Rotation Permutation Puzzle
+The problem is about solving a puzzle where you have a 4x4 grid of numbers and you can perform four different rotation operations on a 3x3 sub-grid within the 4x4 grid. The goal is to find the minimum number of rotations required to transform the initial grid into a grid where the numbers are in order from 1 to 16.
+
+The main variables are: 
+- `x`: a 2D array representing the state of the grid at each step, 
+- `init`: an array representing the initial state of the grid, 
+- `operations`: an array representing the rotation operations performed at each step, 
+- `check`: an array indicating whether a solution has been found at each step, 
+- `check_ix`: the step at which the solution is found.
+
+The basic restrictions or rules of the problem are: 
+- Each rotation operation can only be performed on a 3x3 sub-grid, 
+- The numbers outside the 3x3 sub-grid remain unchanged, 
+- The rotation operations are performed clockwise, 
+- Each step can either be a rotation operation or no operation (i.e., the grid remains the same).
+
+The goal of the problem is to minimize `check_ix`, which represents the minimum number of steps required to transform the initial grid into a grid where the numbers are in order from 1 to 16.

@@ -1,0 +1,12 @@
+Discrete Lot Sizing Problem
+The problem is about planning the production of items in a factory to meet customer demands while minimizing costs. 
+The main variables are: 
+- production dates: when each item should be produced
+- item demands: how many of each item are needed and by when
+- changeover costs: the cost of switching from producing one item to another
+- stocking costs: the cost of storing items before they are needed
+The basic restrictions are: 
+- each item must be produced before its demand date
+- the factory can only produce one item at a time
+- there are costs associated with switching between items and storing items
+The goal is to minimize the total cost, which includes the cost of switching between items and the cost of storing items before they are needed.

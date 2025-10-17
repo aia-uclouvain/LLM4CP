@@ -1,0 +1,5 @@
+name: Coins Puzzle
+description: The problem is to place coins on a quadratic grid of size 31x31 in such a way that each row and each column contains exactly 14 coins, and the sum of the quadratic horizontal distance from the main diagonal of all cells containing a coin is minimized.
+variables: $x_{i,j}$ where $i,j \in \{1, \ldots, 31\}$, $z$: $x_{i,j}$ represents whether a coin is placed in cell $(i,j)$ of the grid (1 if a coin is placed, 0 otherwise), and $z$ represents the total quadratic horizontal distance from the main diagonal of all cells containing a coin.
+constraints: $\sum_{j=1}^{31} x_{i,j} = 14$ for all $i \in \{1, \ldots, 31\}$, $\sum_{i=1}^{31} x_{i,j} = 14$ for all $j \in \{1, \ldots, 31\}$, $z = \sum_{i=1}^{31} \sum_{j=1}^{31} x_{i,j} (|i-j|)^2$: these constraints ensure that each row and each column contains exactly 14 coins, and that the total quadratic horizontal distance from the main diagonal of all cells containing a coin is calculated correctly.
+objective: minimize $z$

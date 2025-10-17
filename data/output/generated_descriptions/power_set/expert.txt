@@ -1,0 +1,5 @@
+name: Power Set Problem
+description: The Power Set Problem is a classic problem in combinatorial mathematics and computer science, which involves generating all possible subsets of a given set. In this problem, the goal is to create a power set of a set with n elements, which means generating all possible subsets of the set, including the empty set and the set itself.
+variables: $a = \{a_1, a_2, ..., a_{2^n}\}$, where $a_i$ is a set of integers from 1 to n, representing all possible subsets of the set with n elements.
+constraints: $powerset(n, a) \wedge increasing(a)$, where $powerset(n, a)$ ensures that $a$ is a power set of the set with n elements, and $increasing(a)$ is a symmetry-breaking constraint that orders the subsets in $a$.
+objective: The objective of the problem is to satisfy the constraints, i.e., to generate all possible subsets of the set with n elements, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a particular objective function.

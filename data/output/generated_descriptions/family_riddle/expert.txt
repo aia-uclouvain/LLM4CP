@@ -1,0 +1,21 @@
+name: Family Riddle Problem
+description: The problem describes two families, Leo's and Rene's, each with three boys and three girls. The ages of the children in each family are distinct and under 10 years old. The youngest child in Leo's family is a girl, and in Rene's family, a newborn girl has just been born. The problem requires finding the ages of the children in each family such that the sum of the ages of the girls equals the sum of the ages of the boys, the sum of the squared ages of the boys equals the sum of the squared ages of the girls, and the total sum of the ages of all children in each family is 60.
+variables: $leo\_boys = (x_{11}, x_{12}, x_{13}), leo\_girls = (x_{21}, x_{22}, x_{23}), rene\_boys = (x_{31}, x_{32}, x_{33}), rene\_girls = (x_{41}, x_{42}, x_{43})$ where $x_{ij}$ represents the age of the $j^{th}$ child in the $i^{th}$ family (1: Leo boys, 2: Leo girls, 3: Rene boys, 4: Rene girls), and the decision variables are the ages of the children in each family.
+constraints: 
+$\begin{aligned}
+&all\_different(leo\_boys \cup leo\_girls) \\
+&all\_different(rene\_boys \cup rene\_girls) \\
+&\min(rene\_girls) = 0 \\
+&\min(leo\_girls) < \min(leo\_boys) \\
+&\sum_{i=1}^{3} leo\_boys_i = \sum_{i=1}^{3} leo\_girls_i \\
+&\sum_{i=1}^{3} rene\_boys_i = \sum_{i=1}^{3} rene\_girls_i \\
+&\sum_{i=1}^{3} leo\_boys_i^2 = \sum_{i=1}^{3} leo\_girls_i^2 \\
+&\sum_{i=1}^{3} rene\_boys_i^2 = \sum_{i=1}^{3} rene\_girls_i^2 \\
+&\sum_{i=1}^{3} (leo\_boys_i + leo\_girls_i + rene\_boys_i + rene\_girls_i) = 60 \\
+&leo\_boys_1 < leo\_boys_2 < leo\_boys_3 \\
+&leo\_girls_1 < leo\_girls_2 < leo\_girls_3 \\
+&rene\_boys_1 < rene\_boys_2 < rene\_boys_3 \\
+&rene\_girls_1 < rene\_girls_2 < rene\_girls_3
+\end{aligned}$ 
+where the constraints ensure that the ages of the children in each family are distinct, the youngest child in each family is a girl, the sum of the ages of the girls equals the sum of the ages of the boys, the sum of the squared ages of the boys equals the sum of the squared ages of the girls, the total sum of the ages of all children in each family is 60, and the ages are in increasing order.
+objective: The objective of the problem is to find a feasible solution that satisfies all the given constraints, as there is no explicit objective function to minimize or maximize. The goal is to determine the ages of the children in each family that meet the specified conditions.

@@ -1,0 +1,5 @@
+The problem is called the "Runs" problem. 
+It is about finding a sequence of numbers that satisfies certain constraints, specifically a sequence with a given number of "runs" where a run is a sequence of identical numbers. 
+The main decision variables are x, an array of variables representing the sequence of numbers, and r, a variable representing the number of runs in the sequence. 
+The key constraints are that the sequence x must be equal to a given sequence [1,1,2,2,1,1], and the number of runs r in the sequence x must be calculated correctly based on the number of switches between different numbers in the sequence. 
+The problem's objective is to find a sequence that satisfies these constraints, specifically to find a sequence with a given number of runs, but since the solve statement is "solve satisfy", the objective is to find any sequence that satisfies the given constraints, rather than minimizing or maximizing a specific value.

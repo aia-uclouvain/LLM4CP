@@ -1,0 +1,14 @@
+Team Formation Problem
+The Team Formation Problem is about dividing a group of people into two teams, with the goal of making the teams as balanced as possible in terms of the total "strength" or ability of each team. 
+
+The main decision variables are:
+- `x`: an array of variables representing the team assignment for each person, where `x[i]` is 1 if person `i` is assigned to team 1 and 2 if person `i` is assigned to team 2.
+- `d`: a variable representing the difference in total strength between the two teams.
+
+The key constraints are:
+- Each team must have the same number of players.
+- The first person is assigned to team 1 to break symmetry.
+- The difference in total strength between the two teams must be calculated correctly.
+- The difference in total strength must be consistent with the total strength of all players.
+
+The objective of the problem is to minimize the difference in total strength between the two teams, `d`. This means that the solver will try to find a team assignment that makes the total strength of the two teams as close as possible.

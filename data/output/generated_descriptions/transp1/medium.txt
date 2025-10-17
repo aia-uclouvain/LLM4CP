@@ -1,0 +1,13 @@
+Transportation Problem
+The Transportation Problem is a classic problem in operations research and management science that involves finding the most cost-effective way to transport goods from a set of sources to a set of destinations.
+
+The problem revolves around a set of cities, each with a certain supply or demand for a set of products. The goal is to determine the optimal amount of each product to transport from each city to another, while minimizing the total transportation cost.
+
+The main decision variables in this problem are the amounts of each product to transport from each city to another, represented by the `Trans` array. Each element `Trans[p,o,d]` represents the amount of product `p` to transport from city `o` to city `d`.
+
+The key constraints in this problem can be described as follows:
+- The total amount of each product transported from each city must equal the supply of that product in that city.
+- The total amount of each product transported to each city must equal the demand for that product in that city.
+- The total amount of all products transported between any two cities must not exceed the capacity of the transportation link between those cities.
+
+The objective of the problem is to minimize the total transportation cost, which is calculated as the sum of the costs of transporting each product from each city to another, multiplied by the amount of that product being transported. This is represented by the `z` variable, which is the objective function being minimized.

@@ -1,0 +1,5 @@
+name: Longest Subset of Five-Positions Five-Elements Permutations
+description: The problem is to find the longest subset of permutations of five elements (1 to 5) in five positions, such that any two permutations in the subset have at most one element in the same position. In other words, for any two permutations, there is at most one position where the elements are the same.
+variables: $x_{i,j}$, where $i \in \{1, \ldots, m\}$ and $j \in \{1, \ldots, n\}$. These variables represent the elements in each position of the permutations, where $x_{i,j}$ is the element in the $j^{th}$ position of the $i^{th}$ permutation.
+constraints: $\sum_{k=1}^{n} (x_{i,k} = x_{j,k}) \leq 1$ for all $i \in \{1, \ldots, m\}$ and $j \in \{i+1, \ldots, m\}$, and $lex2(x)$. The first constraint ensures that any two permutations have at most one element in the same position. The second constraint is a symmetry-breaking constraint, which ensures that the permutations are ordered lexicographically.
+objective: Maximize $m$, the number of permutations in the subset.

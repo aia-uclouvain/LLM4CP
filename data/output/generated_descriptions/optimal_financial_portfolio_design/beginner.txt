@@ -1,0 +1,9 @@
+Optimal Partial Design (OPD) 
+The problem is about finding the best way to arrange 0s and 1s in a table with a certain number of rows and columns, such that each row has a specific number of 1s, and the similarity between any two rows is as small as possible.
+The main variables are: 
+- The number of rows (v) and columns (b) in the table, and the number of 1s in each row (r). 
+- The table itself, where each cell can be either 0 or 1.
+The basic restrictions are: 
+- Each row must have exactly 'r' number of 1s. 
+- The table should be arranged in a way that minimizes the similarity between any two rows.
+The goal is to minimize the maximum similarity between any two rows, which is measured by the dot product of the two rows.

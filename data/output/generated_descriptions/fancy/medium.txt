@@ -1,0 +1,14 @@
+Mr. Greenguest Puzzle
+The problem is about finding the cheapest way for Mr. Greenguest to participate in a dress party with specific rules regarding the color of his attire.
+The main decision variables are: 
+- t (bool): whether to buy a green tie
+- h (bool): whether to buy a green hat
+- r (bool): whether Mr. Greenguest is wearing a green shirt (he already owns one)
+- s (bool): whether to buy green socks
+- n (bool): whether Mr. Greenguest is not dressed according to the rules
+These variables represent the choices Mr. Greenguest has to make in order to participate in the party.
+The key constraints are: 
+- If Mr. Greenguest wears a green tie, he must wear a green shirt, unless he is not following the rules.
+- A guest can only wear green socks and a green shirt if he wears a green tie or a green hat, unless he is not following the rules.
+- A guest wearing a green shirt or a green hat, or not wearing green socks, must wear a green tie, unless he is not following the rules.
+The objective of the problem is to minimize the total cost, which includes the cost of buying a green tie ($10), a green hat ($2), and green socks ($12), as well as an entrance fee of $11 if Mr. Greenguest does not follow the rules.

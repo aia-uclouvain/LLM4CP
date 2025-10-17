@@ -1,0 +1,12 @@
+100 Doors Problem
+The problem involves a row of 100 doors, all initially closed, and a series of 100 passes where each door's state is toggled according to specific rules.
+
+The main decision variables are represented by a 100x100 matrix `x`, where `x[i, j]` is a binary variable indicating the state of door `j` after pass `i` (0 for closed, 1 for open). The variable `s` represents the set of doors that are open after the last pass.
+
+The key constraints can be described as follows: 
+- In the first pass, all doors are toggled (i.e., opened).
+- In subsequent passes, only the doors whose indices are multiples of the current pass number are toggled.
+- Doors that are not toggled in a pass retain their state from the previous pass.
+- The final state of each door is determined by the number of times it was toggled, which is equivalent to the number of factors its index has.
+
+The objective of the problem is not to minimize or maximize a specific value, but rather to determine the final state of each door after all passes have been completed. However, an interesting pattern emerges: only the doors whose indices are perfect squares of integers remain open after the last pass. This is because perfect squares have an odd number of factors, resulting in an odd number of toggles, which leaves the door open.

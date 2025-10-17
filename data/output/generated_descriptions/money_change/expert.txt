@@ -1,0 +1,5 @@
+name: Money Change Problem
+description: The money change problem is a classic problem in constraint programming and operations research that involves finding the minimum number of coins of different denominations needed to make change for a given amount of money, with the option to prioritize certain coins over others.
+variables: $x_1, x_2, ..., x_n$, where $x_i$ represents the number of coins of denomination $coins_i$ used to make the change.
+constraints: $x_i \geq 0, \forall i \in \{1, 2, ..., n\}$ and $\sum_{i=1}^{n} x_i \cdot coins_i = value$, which ensure that the number of coins used is non-negative and the total value of the coins used equals the amount to be changed.
+objective: The objective of the problem can be either to satisfy the constraints (i.e., find a feasible solution), minimize the total number of coins used ($minimize \sum_{i=1}^{n} x_i$), or maximize the priority of the coins used ($maximize \sum_{i=1}^{n} x_i \cdot prio_i$).

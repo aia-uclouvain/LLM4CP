@@ -1,0 +1,5 @@
+name: Assignment Problem (also referred to as the Marriage Theorem)
+description: The problem involves assigning a group of men to a group of women such that each man is assigned to exactly one woman and each woman is assigned to exactly one man, with the goal of maximizing the total happiness of all couples, where the happiness of each couple is given by a compatibility matrix.
+variables: $x_{i,j}$, where $x_{i,j}$ is a binary decision variable that equals 1 if man $i$ is assigned to woman $j$ and 0 otherwise. These variables represent the assignment of men to women.
+constraints: $\sum_{j=1}^{cols} x_{i,j} = 1 \forall i \in 1..rows$, $\sum_{i=1}^{rows} x_{i,j} = 1 \forall j \in 1..cols$, where the first set of constraints ensures that each man is assigned to exactly one woman and the second set ensures that each woman is assigned to exactly one man.
+objective: Maximize $\sum_{i=1}^{rows} \sum_{j=1}^{cols} x_{i,j} \cdot cost_{i,j}$, which represents the total happiness of all couples.

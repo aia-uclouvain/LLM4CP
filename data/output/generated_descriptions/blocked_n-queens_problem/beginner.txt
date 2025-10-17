@@ -1,0 +1,14 @@
+N-Queens Problem with Blocked Squares
+
+The problem is about placing queens on a chessboard in such a way that no two queens attack each other, with some squares on the board being blocked and unable to hold a queen. 
+
+The main variables are the positions of the queens on the board, which can be represented as a matrix where each row and column corresponds to a row and column on the chessboard.
+
+The basic restrictions or rules of the problem are:
+- Each row and column can only hold one queen.
+- No two queens can be on the same diagonal.
+- Queens cannot be placed on blocked squares.
+
+The goal of the problem is to find a placement of queens on the board such that all the rules are satisfied, or to determine that no such placement exists. 
+
+In other words, the problem is trying to solve the classic N-Queens problem, but with the added complication of some squares being blocked and unavailable for queen placement.

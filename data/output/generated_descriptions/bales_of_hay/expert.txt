@@ -1,0 +1,5 @@
+name: Bales of Hay Problem
+description: The problem involves determining the individual weights of five bales of hay, given the weights of all possible combinations of two bales, without knowing which weight corresponds to which pair of bales.
+variables: $b_1, b_2, b_3, b_4, b_5$ - These are the decision variables representing the weights of each of the five bales of hay.
+constraints: $b_i + b_j = w, i < j, \forall w \in \{80, 82, 83, 84, 85, 86, 87, 88, 90, 91\}, b_1 \leq b_2 \leq b_3 \leq b_4 \leq b_5$ - These constraints ensure that the sum of the weights of each pair of bales matches one of the given combination weights, and that the weights of the bales are in non-decreasing order.
+objective: The objective of the problem is to find a satisfying assignment of weights to the bales, rather than minimizing or maximizing a specific value.

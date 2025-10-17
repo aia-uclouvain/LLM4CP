@@ -1,0 +1,5 @@
+Collatz Conjecture problem 
+The problem is about a sequence of numbers that starts with a given number and follows a simple rule to generate the next number in the sequence. 
+The main variables are: n, which is the starting number, x, which is the sequence of numbers, and len, which is the length of the sequence until it reaches 1. 
+The basic restrictions or rules of the problem are: if the current number is even, the next number is half of it, and if the current number is odd, the next number is 3 times the current number plus 1, divided by 2. The sequence must start with the given number n and must reach 1 at some point. 
+The goal of the problem is to find the sequence of numbers that starts with n and follows the given rules, and to determine the length of this sequence until it reaches 1.

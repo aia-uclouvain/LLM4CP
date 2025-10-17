@@ -1,0 +1,8 @@
+name: Move One Coin Problem
+description: The problem involves rearranging a line of coins by moving exactly one coin to achieve a specific goal state, where the number of collected coins from left to right is in decreasing order.
+variables: from, to 
+These are the decision variables representing the position of the coin to be moved and the position where it will be moved to, respectively.
+constraints: init[from] = 1, init[to] = 0, from != to, goal[k] = init[k] for all k != from and k != to 
+These constraints ensure that the coin to be moved is initially in position 'from', the target position 'to' is empty, the coin is not moved to its original position, and all other positions remain unchanged after the move.
+objective: satisfy 
+The objective of the problem is to find a feasible solution that satisfies all the constraints, rather than optimizing a specific value.

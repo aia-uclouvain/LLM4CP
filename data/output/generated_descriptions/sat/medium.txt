@@ -1,0 +1,15 @@
+**Satisfiability Problem (SAT)**
+The Satisfiability Problem is a classic problem in computer science and mathematics that involves determining whether a given Boolean formula can be satisfied by assigning values to its variables.
+
+**Main Decision Variables:**
+The main decision variables in this problem are:
+- `x`: an array of binary variables representing the values of the Boolean variables in the formula. Each `x[i]` represents the value of the `i-th` variable, where `x[i] = 1` means the variable is true and `x[i] = 0` means it is false.
+- `y`: an array of auxiliary binary variables, where each `y[i]` represents whether the `i-th` clause is satisfied or not.
+
+**Key Constraints:**
+The key constraints in this problem can be described as follows:
+- Each clause in the formula must be satisfied, meaning that at least one of the variables or their negations in the clause must be true.
+- The `y` variables are used to track whether a clause is satisfied or not. If a clause is not satisfied, its corresponding `y` variable is set to 1.
+
+**Objective:**
+The objective of the Satisfiability Problem is to minimize the number of unsatisfied clauses, which is represented by the `unsat` variable. The `unsat` variable is calculated as the sum of all `y` variables. The goal is to find an assignment of values to the `x` variables that minimizes the number of unsatisfied clauses. If the minimum value of `unsat` is 0, it means that all clauses can be satisfied, and the formula is satisfiable. Otherwise, the formula is unsatisfiable, and the minimum value of `unsat` represents the number of clauses that cannot be satisfied.

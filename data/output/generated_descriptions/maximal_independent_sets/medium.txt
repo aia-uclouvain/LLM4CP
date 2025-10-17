@@ -1,0 +1,12 @@
+Maximal Independent Set Problem
+The Maximal Independent Set Problem is a classic problem in graph theory and computer science. 
+It involves finding a set of vertices in a graph such that no two vertices in the set are connected by an edge, and the set is not a subset of any other independent set.
+
+The main decision variables in this problem are the vertices of the graph, represented by the array `x` in the Minizinc model. Each element `x[i]` is a binary variable that indicates whether vertex `i` is included in the maximal independent set (1) or not (0).
+
+The key constraints in this problem are:
+- Each vertex can either be included in the maximal independent set or not.
+- If a vertex is included in the maximal independent set, none of its neighbors can be included.
+- The maximal independent set must not be a subset of any other independent set.
+
+The objective of the Maximal Independent Set Problem is to find a maximal independent set with the maximum cardinality, i.e., the largest possible number of vertices. In the Minizinc model, this is achieved by maximizing the variable `k`, which represents the cardinality of the maximal independent set.

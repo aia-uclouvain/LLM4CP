@@ -1,0 +1,856 @@
+1) IMPLEMENTATION IN .essence
+language Essence 1.3
+$ prob001.essence: Car Sequencing
+$ Problem details available at http://www.csplib.org/Problems/prob001/
+
+given n_cars, n_classes, n_options : int(1..)
+
+letting Slots  be domain int(1..n_cars),
+        Class  be domain int(1..n_classes),
+        Option be domain int(1..n_options)
+
+given quantity : function (total) Class  --> int(1..),
+      maxcars  : function (total) Option --> int(1..),
+      blksize  : function (total) Option --> int(1..),
+      usage    : relation of ( Class * Option )
+
+find car : function (total) Slots --> Class
+
+such that
+    forAll c : Class . |preImage(car,c)| = quantity(c),
+    forAll opt : Option .
+        forAll s : int(1..n_cars+1-blksize(opt)) .
+            (sum i : int(s..s+blksize(opt)-1) . toInt(usage(car(i),opt))) <= maxcars(opt)
+
+
+2) IMPLEMENTATION IN .pl
+/*
+ * SICSTUS CLPFD DEMONSTRATION PROGRAM
+ * Purpose   : Car Sequencing Problem
+ * Author    : Mats Carlsson
+ *
+ * For example:
+ * | ?- cars(minslack, '26/82').
+ */
+
+:- module(cars, [cars/2]).
+:- use_module(library(lists)).
+:- use_module(library(ordsets)).
+:- use_module(library(avl)).
+:- use_module(library(clpfd)).
+
+:- discontiguous
+	problem/4,
+	capacities/2,
+	sizes/2,
+	class/4.
+:- dynamic
+	problem/4,
+	capacities/2,
+	sizes/2,
+	class/4.
+
+cars(ff, Key) :-
+	system(Key, Vars, _, _),
+	labeling([ff], Vars),
+	writeq(Vars),
+	nl.
+cars(minslack, Key) :-
+	system(Key, Vars, OptionsVarsT, Ks),
+	problem(Key, NbCars, _, _),
+	capacities(Key, Ps),
+	sizes(Key, Qs),
+	(   foreach(P,Ps),
+	    foreach(Q,Qs),
+	    foreach(K,Ks),
+	    foreach(Slack-J,Options1),
+	    count(J,1,_),
+	    param(NbCars)
+	do  slack_length(P, Q, K, NbCars, Slack0),
+	    Slack is Slack0 - Q
+	),
+	keysort(Options1, Options2),
+	(   foreach(_-Option,Options2),
+	    param(OptionsVarsT)
+	do  nth1(Option, OptionsVarsT, L1),
+	    labeling([down], L1)
+	),
+	writeq(Vars),
+	nl.
+
+slack_length(P, Q, K, N, L) :-
+	L is N - (K + (Q-P)*max((K-P-1)//P,0)) + 1.
+	
+system(Key, ClassVars, OptionVarsT, DemandsPerOption) :-
+	problem(Key, NbCars, NbOptions, NbClasses),
+	capacities(Key, Capacities),
+	sizes(Key, Sizes),
+	NbCl1 is NbClasses-1,
+	length(ClassVars, NbCars),
+	domain(ClassVars, 0, NbCl1),
+	findall(Demand, class(Key,_,Demand,_), Demands1),
+	findall(Row, class(Key,_,_,Row), Rows),
+	sumlist(Demands1, NbCars), % sanity check
+	(   foreach(D1,Demands1),
+	    foreach(I-D1,Demands2),
+	    count(I,0,_)
+	do  true
+	),
+	global_cardinality(ClassVars, Demands2),
+	transpose(Rows, Columns),
+	(   foreach(Col,Columns),
+	    foreach(D2,DemandsPerOption),
+	    param(Demands1)
+	do  scalar_product(Demands1, Col, #=, D2)
+	),
+	findall([Class|Row], class(Key,Class,_,Row), ClassesRows),
+	(   foreach(C,ClassVars),
+	    foreach([C|O],ClassOptionVars),
+	    foreach(O,OptionVars),
+	    param(NbOptions)
+	do  length(O, NbOptions),
+	    domain(O, 0, 1)
+	),
+	table(ClassOptionVars, ClassesRows),
+	transpose(OptionVars, OptionVarsT),
+	(   foreach(Use,OptionVarsT),
+	    foreach(Cap,Capacities),
+	    foreach(Size,Sizes),
+	    foreach(Demand1,DemandsPerOption)
+	do  capacity(Use, Cap, Size, Demand1)
+	).
+
+
+% Capacity constraints in terms of finite automata.
+% capacity(Vars, P, Q, K).
+capacity(Vars, 1, 2, K) :- !,
+	ac_automaton(Vars, K, s0,
+		     [arc(s0,0,s0),
+		      arc(s0,1,s1),
+				%
+		      arc(s1,0,s0)
+		     ]).
+capacity(Vars, 1, 3, K) :- !,
+	ac_automaton(Vars, K, s0,
+		  [arc(s0,0,s0),
+		   arc(s0,1,s1),
+		   %
+		   arc(s1,0,s2),
+		   %
+		   arc(s2,0,s0)
+		  ]).
+capacity(Vars, 2, 3, K) :- !,
+	ac_automaton(Vars, K, s0,
+		  [arc(s0,0,s0),
+		   arc(s0,1,s1),
+		   %
+		   arc(s1,0,s0),
+		   arc(s1,1,s2),
+		   %
+		   arc(s2,0,s0)
+		  ]).
+capacity(Vars, 1, 5, K) :- !,
+	ac_automaton(Vars, K, s0,
+		  [arc(s0,0,s0),
+		   arc(s0,1,s1),
+		   %
+		   arc(s1,0,s2),
+		   %
+		   arc(s2,0,s3),
+		   %
+		   arc(s3,0,s4),
+		   %
+		   arc(s4,0,s0)
+		  ]).
+capacity(Vars, 2, 5, K) :- !,
+	ac_automaton(Vars, K, s0000,
+		  [arc(s0000,0,s0000),
+		   arc(s0000,1,s0001),
+		   %
+		   arc(s0001,0,s0010),
+		   arc(s0001,1,s0011),
+		   % 
+		   arc(s0010,0,s0100),
+		   arc(s0010,1,s0101),
+		   % 
+		   arc(s0011,0,s0110),
+		   % 
+		   arc(s0100,0,s0000),
+		   arc(s0100,1,s1001),
+		   % 
+		   arc(s0101,0,s1010),
+		   % 
+		   arc(s0110,0,s1100),
+		   % 
+		   arc(s1001,0,s0010),
+		   % 
+		   arc(s1010,0,s0100),
+		   % 
+		   arc(s1100,0,s0000)
+		  ]).
+
+ac_automaton(Vars, K, Start, Arcs1) :-
+	Start0 =.. [Start,0],
+	ac_closure([Start0], [Start0], Closure, K, Arcs1, Arcs2, []),
+	(   foreach(Node,Closure),
+	    fromto(Sinks,Sinks0,Sinks1,[]),
+	    param(K)
+	do  (   arg(1, Node, K) -> Sinks0 = [sink(Node)|Sinks1]
+	    ;   Sinks0 = Sinks1
+	    )
+	),
+	automaton(Vars, [source(Start0)|Sinks], Arcs2).
+
+ac_closure([], Closure, Closure, _, _) --> [].
+ac_closure([FromI|L1], Sofar1, Closure, K, Arcs) -->
+	ac_arcs(Arcs, FromI, K, Incr),
+	{sort(Incr, Incr1)},
+	{ord_union(Sofar1, Incr1, Sofar2, L2)},
+	{append(L1, L2, L3)},
+	ac_closure(L3, Sofar2, Closure, K, Arcs).
+
+ac_arcs([], _, _, []) --> [].
+ac_arcs([arc(From,Via,To)|Arcs], FromI, K, [ToJ|Incr]) -->
+	{FromI =.. [From,I]},
+	{J is I+Via},
+	{J =< K},
+	{ToJ =.. [To,J]}, !,
+	[arc(FromI,Via,ToJ)],
+	ac_arcs(Arcs, FromI, K, Incr).
+ac_arcs([_|Arcs], FromI, K, Incr) -->
+	ac_arcs(Arcs, FromI, K, Incr).
+
+% problem(ID, #cars, #options, #classes).
+% capacities(ID, [for each option, the maximum number of cars with that option in a block]).
+% sizes(ID, [for each option, the block size to which the maximum number refers]).
+% class(ID, class, #cars, [for each option, whether or not this class requires it (1 or 0)]).
+
+problem(tiny, 10, 5, 6).
+capacities(tiny, [1,2,1,2,1]).
+sizes(tiny, [2,3,3,5,5]).
+class(tiny, 0, 1, [1,0,1,1,0]).
+class(tiny, 1, 1, [0,0,0,1,0]).
+class(tiny, 2, 2, [0,1,0,0,1]).
+class(tiny, 3, 2, [0,1,0,1,0]).
+class(tiny, 4, 2, [1,0,1,0,0]).
+class(tiny, 5, 2, [1,1,0,0,0]).
+
+%---------------------------------
+% Problem 4/72  (Regin & Puget #1)
+%---------------------------------
+
+problem('4/72', 100, 5, 22).
+capacities('4/72', [1,2,1,2,1]).
+sizes('4/72', [2,3,3,5,5]).
+class('4/72', 0, 6, [1,0,0,1,0]).
+class('4/72', 1, 10,[1,1,1,0,0]).
+class('4/72', 2, 2, [1,1,0,0,1]).
+class('4/72', 3, 2, [0,1,1,0,0]).
+class('4/72', 4, 8, [0,0,0,1,0]).
+class('4/72', 5, 15,[0,1,0,0,0]).
+class('4/72', 6, 1, [0,1,1,1,0]).
+class('4/72', 7, 5, [0,0,1,1,0]).
+class('4/72', 8, 2, [1,0,1,1,0]).
+class('4/72', 9, 3, [0,0,1,0,0]).
+class('4/72', 10, 2, [1,0,1,0,0]).
+class('4/72', 11, 1, [1,1,1,0,1]).
+class('4/72', 12, 8, [0,1,0,1,0]).
+class('4/72', 13, 3, [1,0,0,1,1]).
+class('4/72', 14, 10,[1,0,0,0,0]).
+class('4/72', 15, 4, [0,1,0,0,1]).
+class('4/72', 16, 4, [0,0,0,0,1]).
+class('4/72', 17, 2, [1,0,0,0,1]).
+class('4/72', 18, 4, [1,1,0,0,0]).
+class('4/72', 19, 6, [1,1,0,1,0]).
+class('4/72', 20, 1, [1,0,1,0,1]).
+class('4/72', 21, 1, [1,1,1,1,1]).
+
+
+%--------------
+% Problem 16/81
+%--------------
+
+problem('16/81', 100,5,26).
+capacities('16/81', [1,2,1,2,1]).
+sizes('16/81', [2,3,3,5,5]).
+class('16/81', 0, 10, [1,0,0,0,0]).
+class('16/81', 1, 2, [0,0,0,0,1]).
+class('16/81', 2, 8, [0,1,0,1,0]).
+class('16/81', 3, 8, [0,0,0,1,0]).
+class('16/81', 4, 6, [0,1,1,0,0]).
+class('16/81', 5, 11, [0,1,0,0,0]).
+class('16/81', 6, 3, [0,0,1,0,0]).
+class('16/81', 7, 2, [0,0,1,1,0]).
+class('16/81', 8, 7, [1,1,0,0,0]).
+class('16/81', 9, 2, [1,0,0,1,1]).
+class('16/81', 10, 4, [1,0,1,0,0]).
+class('16/81', 11, 7, [1,0,0,1,0]).
+class('16/81', 12, 1, [1,1,1,0,1]).
+class('16/81', 13, 3, [0,1,1,1,0]).
+class('16/81', 14, 4, [0,1,0,0,1]).
+class('16/81', 15, 5, [1,1,1,0,0]).
+class('16/81', 16, 2, [1,1,0,0,1]).
+class('16/81', 17, 1, [1,0,1,1,1]).
+class('16/81', 18, 2, [1,0,1,1,0]).
+class('16/81', 19, 3, [1,0,0,0,1]).
+class('16/81', 20, 2, [0,1,1,0,1]).
+class('16/81', 21, 1, [0,1,0,1,1]).
+class('16/81', 22, 3, [1,1,0,1,0]).
+class('16/81', 23, 1, [0,0,1,1,1]).
+class('16/81', 24, 1, [1,1,1,1,1]).
+class('16/81', 25, 1, [1,1,1,1,0]).
+
+
+%--------------
+% Problem 41/66
+%--------------
+problem('41/66', 100,5,19).
+capacities('41/66', [1,2,1,2,1]).
+sizes('41/66', [2,3,3,5,5]).
+class('41/66', 0, 7, [1,0,0,0,0]).
+class('41/66', 1, 9, [0,1,1,0,0]).
+class('41/66', 2, 4, [0,0,0,1,0]).
+class('41/66', 3, 2, [0,1,0,1,1]).
+class('41/66', 4, 6, [0,0,1,0,0]).
+class('41/66', 5, 18, [0,1,0,0,0]).
+class('41/66', 6, 6, [0,1,0,0,1]).
+class('41/66', 7, 6, [0,0,0,0,1]).
+class('41/66', 8, 1, [1,1,0,1,1]).
+class('41/66', 9, 10, [1,1,0,0,0]).
+class('41/66', 10, 2, [1,0,0,0,1]).
+class('41/66', 11, 11, [0,1,0,1,0]).
+class('41/66', 12, 5, [0,0,1,1,0]).
+class('41/66', 13, 1, [0,1,1,1,0]).
+class('41/66', 14, 1, [0,1,1,0,1]).
+class('41/66', 15, 3, [1,0,1,0,0]).
+class('41/66', 16, 3, [1,1,1,0,0]).
+class('41/66', 17, 3, [1,1,0,1,0]).
+class('41/66', 18, 2, [1,1,1,1,0]).
+
+%-------------
+%Problem 26/82
+%-------------
+problem('26/82', 100,5,24).
+capacities('26/82', [1,2,1,2,1]).
+sizes('26/82', [2,3,3,5,5]).
+class('26/82', 0, 2, [1,1,0,1,0]).
+class('26/82', 1, 13, [0,1,0,0,0]).
+class('26/82', 2, 10, [0,1,0,1,0]).
+class('26/82', 3, 14, [1,1,0,0,0]).
+class('26/82', 4, 5, [0,0,0,1,0]).
+class('26/82', 5, 2, [0,1,0,1,1]).
+class('26/82', 6, 2, [0,1,1,0,0]).
+class('26/82', 7, 8, [1,0,0,1,0]).
+class('26/82', 8, 5, [0,0,1,1,0]).
+class('26/82', 9, 3, [1,1,1,0,0]).
+class('26/82', 10, 9, [1,0,0,0,0]).
+class('26/82', 11, 6, [1,1,0,0,1]).
+class('26/82', 12, 2, [1,1,1,1,0]).
+class('26/82', 13, 2, [0,0,0,0,1]).
+class('26/82', 14, 1, [1,1,1,0,1]).
+class('26/82', 15, 2, [0,1,1,1,0]).
+class('26/82', 16, 2, [1,0,1,0,0]).
+class('26/82', 17, 1, [1,0,0,0,1]).
+class('26/82', 18, 1, [1,0,1,1,0]).
+class('26/82', 19, 6, [0,0,1,0,0]).
+class('26/82', 20, 1, [1,1,1,1,1]).
+class('26/82', 21, 1, [0,0,1,1,1]).
+class('26/82', 22, 1, [0,1,1,0,1]).
+class('26/82', 23, 1, [0,0,1,0,1]).
+
+
+3) IMPLEMENTATION IN .mzn
+% 
+% Car sequencing in MiniZinc.
+% 
+% This is based on the OPL3 model car.mod.
+%
+% Compare with the Comet model
+% http://www.hakank.org/comet/car.co
+%
+% 
+% This MiniZinc model was created by Hakan Kjellerstrand, hakank@bonetmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+%
+% Model modified to match CSPLib data format by Chris Mears.
+%
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+%
+% include "globals.mzn"; 
+int: numclasses;
+int: numoptions;
+int: numcars;
+set of int: Classes = 1..numclasses;
+set of int: Options = 1..numoptions;
+set of int: Slots = 1..numcars;
+
+array[Classes] of int: numberPerClass;
+
+array[Classes,Options] of int: optionsRequired;
+array[Options] of int: windowSize;
+array[Options] of int: optMax;
+
+array[Options] of int: optionNumberPerClass = [sum(j in Classes) (numberPerClass[j] * optionsRequired[j,i]) | i in Options];
+
+% decision variables
+
+array[Slots] of var Classes: slot;
+array[Options, Slots] of var 0..1: setup;
+
+
+var int: z = sum(s in Classes) (s*slot[s]);
+
+% solve minimize z;
+solve :: int_search(slot, input_order, indomain_min, complete)
+  satisfy;
+
+constraint
+  forall(c in Classes ) (
+    sum(s in Slots ) (bool2int(slot[s] = c)) = numberPerClass[c]
+  )
+  /\
+  forall(o in Options, s in 1..numcars - windowSize[o] + 1) (
+    sum(j in s..s + windowSize[o]- 1) (setup[o,j]) <= optMax[o]
+  )
+  /\
+  forall(o in Options, s in Slots ) (
+    setup[o,s] = optionsRequired[slot[s],o]
+  )
+  /\
+  forall(o in Options, i in 1..optionNumberPerClass[o]) (
+    sum(s in 1..(numcars - i * windowSize[o])) (setup[o,s]) >=
+           (optionNumberPerClass[o] - i * optMax[o])
+  )
+;
+
+% for solve satisfy
+% constraint z = 82;
+
+
+output [
+ "z: " ++ show(z) ++ "\n" ++
+ "slot: " ++ show(slot) ++ "\n"
+] ++
+[
+  if j = 1 then "\n" else " " endif ++ 
+    show(setup[i,j])
+  | i in Options, j in Slots
+];
+
+
+4) IMPLEMENTATION IN .pi
+/*
+
+  Car sequencing in Picat.
+
+  This model is based on the car sequencing model in
+  Pascal Van Hentenryck
+  "The OPL Optimization Programming Language", page 184ff.
+  (Via other implementations:
+     http://www.hakank.org/google_or_tools/car.py
+     http://www.hakank.org/minizinc/car.mzn
+     http://www.hakank.org/bprolog/car.pl
+  )
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my Picat page: http://www.hakank.org/picat/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cp.
+
+
+main => go.
+
+go =>
+        
+   NbCars = 6,
+   Cars = 1..NbCars,
+   NbOptions = 5,
+   Options = 1..NbOptions,
+   NbSlots = 10,
+   Slots = 1..NbSlots,
+   Demand = [1, 1, 2, 2, 2, 2],
+   Option = [[1, 0, 0, 0, 1, 1],
+        [0, 0, 1, 1, 0, 1],
+        [1, 0, 0, 0, 1, 0],
+        [1, 1, 0, 1, 0, 0],
+        [0, 0, 1, 0, 0, 0]],
+   Capacity = [[1,2],
+          [2,3],
+          [1,3],
+          [2,5],
+          [1,5]],
+
+   % OptionDemand = [],
+   % foreach(I in Options)
+   %    OD #= sum([ Demand[J]*Option[I,J] : J in Cars]),
+   %    OptionDemand := OptionDemand ++ [OD]
+   % end,
+
+   OptionDemand = [sum([Demand[J]*Option[I,J] : J in Cars]) : I in Options],
+
+   %
+   % decision variables
+   %
+   Slot = new_list(NbSlots),
+   Slot :: 1..NbCars,
+
+   Setup = new_array(NbOptions,NbSlots),
+   Setup :: 0..1,
+
+   % To minimize
+   Z #= sum([S*Slot[S] : S in Cars]),
+
+   %
+   % Constraints
+   %
+   foreach(C in Cars)
+      sum([(Slot[S] #= C) : S in Slots]) #= Demand[C]
+   end,
+
+   foreach(O in Options, S in 1..(NbSlots - Capacity[O,2] + 1))
+      sum([Setup[O,J] : J in S..S + Capacity[O,2]- 1]) #=< Capacity[O,1]
+   end,
+
+   %% This don't work
+   % foreach(O in Options, S in Slots)
+   %    Setup[O,S] #= Option[O,Slot[S]]
+   % end,
+   %% Instead one has to use a couple of element/3.
+   foreach(O in Options, S in Slots)
+      element(S,Slot,SlotS),
+      matrix_element(Option,O,SlotS,SS),
+      Setup[O,S] #= SS
+   end,
+
+   foreach(O in Options, I in 1..OptionDemand[O])
+       sum([Setup[O,S] : S in 1..(NbSlots - I * Capacity[O,2])]) #>=
+                       (OptionDemand[O] - I * Capacity[O,1])
+   end,
+
+
+   Vars = Slot ++ Setup,
+   solve([$min(Z)], Vars),
+
+   writeln(z=Z),
+   printf("slot:\n%w\n", Slot),
+   printf("setup:\n"),
+   foreach(Row in Setup) writeln(Row.to_list()) end,
+
+   nl.
+
+
+% matrix_element(X, I, J, Val) =>
+%    element(I, X, Row),
+%    element(J, Row, Val).
+
+matrix_element(X, I, J, Val) =>
+   freeze(I, (element(I, X, Row),freeze(J,element(J,Row,Val)))).
+
+
+5) IMPLEMENTATION IN .pl
+/*
+
+  Car sequencing in B-Prolog.
+
+  Based on the OPL3 model car.mod.
+
+  This model is based on the car sequencing model in
+  Pascal Van Hentenryck
+  'The OPL Optimization Programming Language', page 184ff.
+  (Via other implementations:
+     http://www.hakank.org/google_or_tools/car.py
+     http://www.hakank.org/minizinc/car.mzn
+  )
+
+  Model created by Hakan Kjellerstrand, hakank@gmail.com
+  See also my B-Prolog page: http://www.hakank.org/bprolog/
+
+*/
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+go :-
+        
+        NbCars = 6,
+        Cars = 1..NbCars,
+        NbOptions = 5,
+        Options = 1..NbOptions,
+        NbSlots = 10,
+        Slots = 1..NbSlots,
+        Demand = [1, 1, 2, 2, 2, 2],
+        Option = [[1, 0, 0, 0, 1, 1],
+                  [0, 0, 1, 1, 0, 1],
+                  [1, 0, 0, 0, 1, 0],
+                  [1, 1, 0, 1, 0, 0],
+                  [0, 0, 1, 0, 0, 0]],
+        Capacity = [[1,2],
+                    [2,3],
+                    [1,3],
+                    [2,5],
+                    [1,5]],
+
+        %% This don't work:
+        % OptionDemand @= [sum([Demand[J]*Option[I,J] : J in Cars]) : I in Options],
+        % Have to use an accumulator ac/2
+        foreach(I in Options,ac(OptionDemandTmp,[]),[OD],
+                (
+                    OD #= sum([ Demand[J]*Option[I,J] : J in Cars]),
+                    OptionDemandTmp^1 = [OD|OptionDemandTmp^0]
+                )
+               ),
+        reverse(OptionDemandTmp,OptionDemand),
+
+        %
+        % decision variables
+        %
+        length(Slot,NbSlots),
+        Slot :: 1..NbCars,
+
+        new_array(Setup,[NbOptions,NbSlots]),
+        array_to_list(Setup,SetupVars),
+        SetupVars :: 0..1,
+
+        % To minimize
+        Z #= sum([S*Slot[S] : S in Cars]),
+
+        %
+        % Constraints
+        %
+        foreach(C in Cars,
+                sum([(Slot[S] #= C) : S in Slots]) #= Demand[C]
+               ),
+        foreach(O in Options, 
+                S in 1..NbSlots - Capacity[O,2] + 1,              
+                sum([Setup[O,J] : J in S..S + Capacity[O,2]- 1]) #=< Capacity[O,1]
+               ),
+
+        %% This don't work
+        % foreach(O in Options, S in Slots,
+        %         Setup[O,S] #= Option[O,Slot[S]]
+        %        ),
+        %% Instead one has to use a couple of element/3.
+        foreach(O in Options, S in Slots,
+                [SlotS,SS],
+                (element(S,Slot,SlotS),
+                 matrix_element(Option,O,SlotS,SS),
+                 Setup[O,S] #= SS
+                )),
+
+        foreach(O in Options, I in 1..OptionDemand[O],
+                (
+                    sum([Setup[O,S] : S in 1..(NbSlots - I * Capacity[O,2])]) #>=
+                    (OptionDemand[O] - I * Capacity[O,1])
+                )
+              ),
+
+        term_variables([Slot,SetupVars], Vars),
+        minof(labeling(Vars),Z),
+
+        writeln(z:Z),
+        writeln(slot:Slot),
+        SetupRows @= Setup^rows,
+        foreach(Row in SetupRows, writeln(Row)),
+
+        nl.
+
+        
+matrix_element(X, I, J, Val) :-
+        element(I, X, Row),
+        element(J, Row, Val).
+
+
+6) IMPLEMENTATION IN .eprime
+language ESSENCE' 1.0
+
+
+given numcars : int(1..)
+
+given numclasses : int(1..)
+given numoptions : int(1..)
+
+given optMax : matrix indexed by [ int(1..numoptions) ] of int(0..)
+given windowSize : matrix indexed by [ int(1..numoptions) ] of int(0..)
+
+
+given optionsRequired : matrix indexed by [ int(1..numclasses), int(1..numoptions) ] of bool 
+
+given numberPerClass : matrix indexed by [ int(1..numclasses) ] of int(1..)
+
+
+$ Decision variables
+
+find seq: matrix indexed by [ int(1..numcars) ] of int(1..numclasses)
+
+such that
+
+forAll option : int(1..numoptions) . 
+    forAll windowStart : int(1..numcars-windowSize[option]+1) . 
+        (sum pos : int(windowStart..windowStart+windowSize[option]-1) . 
+            seq[pos] in toSet([ class | class : int(1..numclasses), optionsRequired[class, option]]) 
+        )<=optMax[option],
+
+forAll option : int(1..numoptions) . 
+    (sum pos : int(1..numcars) . 
+        seq[pos] in toSet([ class | class : int(1..numclasses), optionsRequired[class, option]]) 
+    )=
+    (
+        sum class : int(1..numclasses) . optionsRequired[class, option]*numberPerClass[class]
+    ),
+
+gcc(seq, [ i | i : int(1..numclasses)], numberPerClass)
+
+
+
+7) IMPLEMENTATION IN .co
+/*
+
+  Car sequencing in Comet.
+
+  This is based on the OPL3 model car.mod.
+
+  This Comet model was created by Hakan Kjellerstrand (hakank@bonetmail.com)
+  Also, see my Comet page: http://www.hakank.org/comet 
+
+ */
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cotfd;
+
+int t0 = System.getCPUTime();
+
+int nbCars = 6;
+int nbOptions = 5;
+int nbSlots = 10;
+range Cars = 1..nbCars;
+range Options = 1..nbOptions;
+range Slots = 1..nbSlots;
+
+int demand[Cars] = [1, 1, 2, 2, 2, 2];
+
+
+int option[Options,Cars] =
+[
+ [ 1, 0, 0, 0, 1, 1],
+ [ 0, 0, 1, 1, 0, 1],
+ [ 1, 0, 0, 0, 1, 0],
+ [ 1, 1, 0, 1, 0, 0],
+ [ 0, 0, 1, 0, 0, 0]
+ ];
+
+
+tuple Tcapacity {
+   int l;
+   int u;
+}
+
+Tcapacity capacity[Options] = 
+[
+ Tcapacity(1,2),
+ Tcapacity(2,3),
+ Tcapacity(1,3),
+ Tcapacity(2,5),
+ Tcapacity(1,5)
+];
+
+int optionDemand[i in Options] = sum(j in Cars) demand[j] * option[i,j];
+
+cout << "optionDemand: " << optionDemand<< endl;
+
+Solver<CP> m();
+
+var<CP>{int} slot[Slots](m,Cars);
+var<CP>{int} setup[Options,Slots](m,0..1);
+
+Integer num_solutions(0);
+
+// exploreall<m> {
+minimize<m> sum(s in Cars) s*slot[s] subject to {
+
+  forall(c in Cars )
+    m.post(sum(s in Slots ) (slot[s] == c) == demand[c]);
+
+  forall(o in Options, s in 1..nbSlots - capacity[o].u + 1)
+    m.post(sum(j in s..s + capacity[o].u - 1) setup[o,j] <= capacity[o].l);
+
+  forall(o in Options, s in Slots )
+    m.post(setup[o,s] == option[o,slot[s]]);
+
+  forall(o in Options, i in 1..optionDemand[o])
+    m.post(sum(s in 1..(nbSlots - i * capacity[o].u)) setup[o,s] >=
+           (optionDemand[o] - i * capacity[o].l));
+
+
+} using {
+      
+  label(m);
+
+  num_solutions := num_solutions + 1;
+
+  cout << slot << endl;
+  forall(o in Options) {
+    cout << capacity[o].l << "/" << capacity[o].u << ": " ;
+    forall(s in Slots) {
+      cout << setup[o,s] << " ";
+    }
+  cout << endl;
+  }
+  cout << endl;
+    
+
+
+}
+
+
+cout << "\nnum_solutions: " << num_solutions << endl;
+    
+int t1 = System.getCPUTime();
+cout << "time:      " << (t1-t0) << endl;
+cout << "#choices = " << m.getNChoice() << endl;
+cout << "#fail    = " << m.getNFail() << endl;
+cout << "#propag  = " << m.getNPropag() << endl;
+
+
+
+8) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Data can come:
+ - either directly from a JSON file
+ - or from an intermediate parser
+
+Example:
+  python CarSequencing.py -data=dingbas.json
+"""
+
+from pycsp3 import *
+from math import ceil
+
+classes, limits = data
+demands = [demand for demand, _ in classes]
+nCars, nClasses, nOptions = sum(demands), len(classes), len(limits)
+
+
+# c[i] is the class of the ith assembled car
+c = VarArray(size=nCars, dom=range(nClasses))
+
+# o[i][k] is 1 if the ith assembled car has option k
+o = VarArray(size=[nCars, nOptions], dom={0, 1})
+
+satisfy(
+    # building the right numbers of cars per class
+    Cardinality(c, occurrences={j: demands[j] for j in range(nClasses)}),
+
+    # computing assembled car options
+    (c[i], *o[i]) in {(j, *options) for j, (_, options) in enumerate(classes)} for i in range(nCars),
+
+    # respecting option frequencies
+    [Sum(o[i:i + den, k]) <= num for k, (num, den) in enumerate(limits) for i in range(nCars) if i <= nCars - den]
+)
+
+

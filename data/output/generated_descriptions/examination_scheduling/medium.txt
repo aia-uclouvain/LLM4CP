@@ -1,0 +1,13 @@
+Examination Scheduling Problem
+The Examination Scheduling Problem is a classic constraint programming problem that involves assigning exams to time slots and rooms while satisfying various constraints. 
+The main decision variables in this problem are: 
+- `s`: a 2D array representing the schedule, where `s[i, j]` is the exam assigned to time slot `i` and room `j`.
+- `xrooms`: an array representing the room assigned to each exam.
+- `xslots`: an array representing the time slot assigned to each exam.
+- `xdays`: an array representing the day assigned to each exam.
+The key constraints in this problem are: 
+- Each exam must be assigned to exactly one time slot and one room.
+- Students in the same year should not take more than two exams in the same day.
+- Exams that require large rooms can only be assigned to those rooms.
+- The number of used rooms should be minimized.
+The objective of this problem is to minimize the number of used rooms (`z`) while satisfying all the constraints.

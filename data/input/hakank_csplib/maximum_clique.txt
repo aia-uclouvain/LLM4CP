@@ -1,0 +1,91 @@
+1) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Data can come:
+ - either directly from a JSON file
+ - or from an intermediate parser
+
+Example:
+  python Clique.py -data=Cl10.json
+"""
+
+from pycsp3 import *
+
+matrix = data
+n = len(matrix)
+
+# x[i] is 1 iff the ith node belongs to the clique
+x = VarArray(size=n, dom={0, 1})
+
+satisfy(
+    # forbidding the presence of any two nodes that are not bidirectionally linked
+    (x[i], x[j]) not in {(1, 1)} for i, j in combinations(range(n), 2) if matrix[i][j] != 1 or matrix[j][i] != 1
+)
+
+maximize(
+    # maximizing the size of the clique
+    Sum(x)
+)
+
+
+2) IMPLEMENTATION IN .essence
+$ Maximum Clique Problem (CSPLib 074)
+$ Naive model for a largest clique in a graph presented as a list of edges.
+$ Edges are pairs of vertices in a relation; (u,v) is interpreted as {u,v}.
+$ Vertices are numbered 1 to n, all are regarded as part of the graph.
+$
+$ Andras Salamon <Andras.Salamon@st-andrews.ac.uk>
+$ 2017-07-07
+
+language Essence 1.3
+letting n be 5
+letting vertices be domain int(1..n)
+letting G be relation((1,2),(1,4),(2,3),(3,4),(3,5),(4,5))
+
+find C : matrix indexed by [vertices] of bool $ vertices in clique
+find size : vertices $ number of vertices in the clique
+
+$ the clique includes at most one of any pair of non-neighbouring vertices
+such that
+size = sum([toInt(C[u]) | u : vertices]),
+forAll v : int(2..n) . forAll u : int(1..(v-1)) .
+    (!((u,v) in G) /\ !((v,u) in G)) -> (!C[u] \/ !C[v])
+
+maximising size
+
+
+3) IMPLEMENTATION IN .mzn
+% Maximum Clique Problem (CSPLib 074)
+% Very naive model. This is not a good way of solving it, but it is easy to
+% understand.
+%
+% Ciaran McCreesh, c.mccreesh.1@research.gla.ac.uk
+% 2015-09-05
+
+% --- instance, specified as an adjacency matrix, which must be symmetric, using ---
+% --- 0s and 1s rather than true and false because it looks prettier             ---
+int: n = 5;
+array[1..n, 1..n] of int: adj =
+    [| 0, 1, 0, 1, 0
+     | 1, 0, 1, 0, 0
+     | 0, 1, 0, 1, 1
+     | 1, 0, 1, 0, 1
+     | 0, 0, 1, 1, 0 |];
+
+% --- naive model ---
+
+% decision variables: which vertices are in the clique?
+array[1..n] of var bool: c;
+var int: size;
+
+% how many vertices have we selected?
+constraint size = sum(c);
+
+% we can only pick one of any non-adjacent pair of vertices
+constraint forall (i, j in 1..n where i < j /\ 0 == adj[i,j]) (bool2int(c[i]) + bool2int(c[j]) <= 1);
+
+solve maximize size;
+
+
+

@@ -1,0 +1,15 @@
+**All Different Interval Problem**
+The All Different Interval problem is a classic constraint programming problem that involves assigning values to a set of variables such that each variable belongs to a distinct interval. 
+
+The main decision variables in this problem are:
+- `x`: an array of variables representing the values to be assigned
+- `intervals`: a 2D array representing the intervals for each variable
+- `size_interval`: a variable representing the size of each interval
+
+The key constraints in this problem are:
+- All variables must take distinct values (all_different constraint)
+- Each variable must belong to an interval of a specified size (size_interval)
+- The intervals must be non-overlapping and distinct
+- Each variable must be within its assigned interval
+
+The objective of this problem is to find an assignment of values to the variables `x` such that all constraints are satisfied, and the intervals are distinct and non-overlapping. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all constraints.

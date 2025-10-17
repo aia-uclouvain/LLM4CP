@@ -1,0 +1,5 @@
+The name of the problem is "Are You The One". 
+This problem is about a reality TV show where a group of men and women are paired into couples, and the contestants have to figure out who their perfect match is. 
+The main variables are the boys and girls, and the "assign" variable which means a boy is matched with a girl. 
+The basic restrictions are that each boy can only be matched with one girl, and each girl can only be matched with one boy. The contestants also get clues each week, such as how many couples they got right and which couples are not a match. 
+The goal of the problem is to find all the perfect matches, which means figuring out who is paired with who.

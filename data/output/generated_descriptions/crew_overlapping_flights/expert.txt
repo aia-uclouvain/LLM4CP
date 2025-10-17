@@ -1,0 +1,9 @@
+name: Crew Scheduling Problem
+description: The problem involves scheduling flights for a set of pilots with different attributes, such as captain or first officer, while ensuring that each flight has the required crew and that no pilot is assigned to overlapping flights. The goal is to minimize the standard deviation of flown hours between pilots.
+variables: $z, crew_{f,p}$ 
+$z$ is an integer variable representing the number of persons assigned to at least one flight, and $crew_{f,p}$ is a binary variable that equals 1 if person $p$ is assigned to flight $f$, and 0 otherwise.
+constraints: $\forall f \in 1..numFlights: \sum_{i=1}^{numPersons} crew_{f,i} = requiredCrew_{f,1}$, 
+$\forall f \in 1..numFlights, j \in 1..2: \sum_{i=1}^{numPersons} attributes_{i,j} \cdot crew_{f,i} \geq requiredCrew_{f,j+1}$, 
+$\forall f1, f2 \in 1..numFlights, f1 < f2: \neg (FDP_{f1,1} \geq FDP_{f2,1} \wedge FDP_{f1,2} \leq FDP_{f2,2}) \vee \neg (FDP_{f2,1} \geq FDP_{f1,1} \wedge FDP_{f2,2} \leq FDP_{f1,2}) \vee \neg \exists p \in 1..numPersons: crew_{f1,p} = 1 \wedge crew_{f2,p} = 1$
+These constraints ensure that each flight has the required number of crew members, that each flight has the required attributes (captain or first officer), and that no pilot is assigned to overlapping flights.
+objective: minimize $z$

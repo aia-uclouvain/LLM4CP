@@ -1,0 +1,7 @@
+100 Doors Problem
+The 100 doors problem is a classic puzzle that involves toggling the state of 100 doors in a row over 100 passes. 
+The main decision variables in this problem are represented by the array `x`, where `x[j]` is 1 if the `j`-th door is open and 0 if it is closed after the last pass. 
+The key constraints in this problem can be described as follows: each door is initially closed, and on each pass, every `i`-th door is toggled, where `i` is the pass number. 
+The problem's objective is to determine the state of the doors after the last pass, specifically which doors are open and which are closed. 
+In other words, the goal is to find the set `s` of door numbers that are open after the 100th pass. 
+It is worth noting that the problem has an interesting property: only the doors whose numbers are perfect squares of integers will remain open after the last pass.

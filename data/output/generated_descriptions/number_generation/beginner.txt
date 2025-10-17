@@ -1,0 +1,5 @@
+The problem is called "Number Generation" or "Devil's Word". 
+It is about finding a way to combine a list of numbers using basic math operations like addition, subtraction, multiplication, and division to get a specific total. 
+The main variables are "x" which is a list of numbers, "ops" which is a list of operations to be performed between the numbers, and "total" which is the target result. 
+The basic restrictions are that each operation can only be one of the four basic math operations, and the numbers and operations must be combined in a specific way to get the total. 
+The goal is to find a combination of numbers and operations that adds up to the target total, which in this case is 666, and also matches a specific list of numbers that spell out a message.

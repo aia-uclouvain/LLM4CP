@@ -1,0 +1,5 @@
+The problem is called "Atmost Nvalue". 
+It's about having a list of numbers and wanting to know if the list has a certain number of unique values. 
+The main variables are "x" which is the list of numbers, and "nval" which is the maximum number of unique values allowed. 
+The basic restrictions are that the list "x" must be equal to a given list of numbers, and the number of unique values in "x" must be less than or equal to "nval". 
+The goal of the problem is to find a list "x" that satisfies these restrictions, given that "nval" is 4.

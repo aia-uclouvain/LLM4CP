@@ -1,0 +1,5 @@
+Coins Puzzle
+The problem is about placing coins on a large grid, like a chessboard, in a specific way. 
+The main variables are the grid size (n), the number of coins per row and column (c), and the coin grid (x) which shows where each coin is placed.
+The basic rules are that each row and each column must have exactly 14 coins, and each cell can only have one coin. 
+The goal is to place the coins in such a way that the total distance of all coins from the main diagonal of the grid is as small as possible, which is measured by the variable z.

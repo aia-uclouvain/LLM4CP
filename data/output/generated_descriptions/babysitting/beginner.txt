@@ -1,0 +1,5 @@
+Babysitting puzzle
+The problem is about figuring out the full names and ages of five children that Bonnie takes care of. 
+The main variables are the first names (Keith, Libby, Margo, Nora, Otto) and last names (Fell, Gant, Hall, Ivey, Jule) of the children, and their ages (which range from 2 to 6 years old).
+The basic restrictions are: each child has a unique first name, last name, and age, and there are specific relationships between the children's ages, such as one child being a certain number of years older than another.
+The goal is to determine each child's full name and age, by satisfying all the given conditions and relationships between the children's ages and names.

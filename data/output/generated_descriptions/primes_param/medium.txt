@@ -1,0 +1,5 @@
+The problem is known as the "Sum of Primes" problem. 
+It is about finding a set of distinct prime numbers that sum up to another prime number. 
+The main decision variables are x, an array of n variables where each variable represents a prime number, and z, which represents the sum of these prime numbers. 
+The key constraints are that all the prime numbers in x must be different and that they must be in increasing order. 
+The problem's objective is to find a set of distinct prime numbers that satisfy these constraints, with the sum of these prime numbers being a prime number.

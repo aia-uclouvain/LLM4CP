@@ -1,0 +1,11 @@
+Maximum Cut Problem
+The Maximum Cut Problem is a classic problem in computer science and operations research that involves finding the optimal partition of a set of nodes in a network into two disjoint sets, such that the sum of the weights of the edges between the two sets is maximized.
+
+The main decision variables in this problem are the binary variables `x[i]`, where `x[i] = 0` means that node `i` is in set `V1` and `x[i] = 1` means that node `i` is in set `V2`. The variables `t[i, j]` represent the major bit of the sum `x[i] + x[j]`, and are used to model the "exclusive or" condition between `x[i]` and `x[j]`.
+
+The key constraints in this problem are:
+- Each node is assigned to either set `V1` or set `V2`, represented by the binary variables `x[i]`.
+- The "exclusive or" condition between `x[i]` and `x[j]` is modeled using the variables `t[i, j]`, such that `x[i] + x[j] - 2 * t[i, j]` is between 0 and 1.
+- The objective function `z` is equal to the sum of the weights of the edges between the two sets, which is calculated using the variables `x[i]`, `x[j]`, and `t[i, j]`.
+
+The objective of the Maximum Cut Problem is to maximize the sum of the weights of the edges between the two sets, represented by the variable `z`. This is achieved by finding the optimal partition of the nodes into two disjoint sets, such that the sum of the weights of the edges between the two sets is maximized.

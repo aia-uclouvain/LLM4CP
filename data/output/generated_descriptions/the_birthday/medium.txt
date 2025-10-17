@@ -1,0 +1,8 @@
+The Birthday Problem
+The Birthday problem is a classic decision-making problem under uncertainty, where an individual, Frank, must decide whether to bring flowers to his potentially birthday-celebrating partner, Kitty, without knowing for certain if it is indeed her birthday.
+
+The main decision variables in this problem are represented by the array `x`, where `x[1]` and `x[2]` denote the probability of Frank choosing to bring no gift (Nothing) and flowers, respectively. These variables represent the likelihood of each action being taken.
+
+The key constraints in this problem can be described as follows: Frank's decision to bring or not bring flowers should be made in a way that maximizes his expected payoff, considering the uncertainty about Kitty's birthday. The constraint `sum(x) = 1.0` ensures that the probabilities of the two possible actions (bringing flowers or not) add up to 1, meaning that one of the actions must be chosen. The constraint `v <= sum([m[i,j]*x[i] | i in 1..2])` ensures that the expected payoff `v` is less than or equal to the weighted sum of the payoffs for each possible action, where the weights are the probabilities of each action.
+
+The objective of the Birthday problem is to maximize the expected payoff `v`, which represents the best possible outcome for Frank, given the uncertainty about Kitty's birthday. The expected payoff is calculated based on the probabilities of each action and the corresponding payoffs, as defined in the payoff matrix `m`. The solution to the problem provides the optimal probabilities for each action, `x[1]` and `x[2]`, and the maximum expected payoff `v`.

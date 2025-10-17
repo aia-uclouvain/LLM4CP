@@ -1,0 +1,13 @@
+name: Tents Puzzle
+
+description: The Tents Puzzle is a classic problem in constraint programming where a square or rectangular grid contains some trees and empty spaces. The goal is to place tents in the empty spaces such that each tree has a tent either horizontally or vertically adjacent to it, and each tent has a tree adjacent to it. Additionally, no two tents can be adjacent to each other, either horizontally, vertically, or diagonally. The puzzle also provides row and column constraints, indicating the number of tents that must be placed in each row and column.
+
+variables: $x_{i,j} \in \{0, 1, 2\}$, where $x_{i,j}$ represents the state of the cell at row $i$ and column $j$, with $0$ indicating an empty space, $1$ indicating a tree, and $2$ indicating a tent.
+
+constraints: 
+$\forall i, j \in \{1, \ldots, n\}: (puzzle_{i,j} = T \rightarrow x_{i,j} = T \land \exists a, b \in \{-1, 0, 1\}: x_{i+a,j+b} = E) \land (x_{i,j} = E \rightarrow \exists a, b \in \{-1, 0, 1\}: x_{i+a,j+b} = T \land \nexists a, b \in \{-1, 0, 1\}: x_{i+a,j+b} = E)$
+$\sum_{i,j} x_{i,j} = E = \sum_{i,j} x_{i,j} = T$
+$\forall i \in \{1, \ldots, n\}: \sum_{j} x_{i,j} = E = rows_i \land \sum_{j} x_{j,i} = E = cols_i$
+, which ensure that each tree has a tent, each tent has a tree, no two tents are adjacent, and the row and column constraints are satisfied.
+
+objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, as the problem is a satisfaction problem and does not involve minimizing or maximizing a specific value.

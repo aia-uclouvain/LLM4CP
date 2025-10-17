@@ -1,0 +1,8 @@
+The problem is known as the Coin Change Problem or the Change Making Problem. 
+It is about finding the number of ways to make a certain amount of money using a given set of coins, where each coin has a specific denomination and can be used any number of times.
+
+The main decision variables in this problem are the array `x`, where `x[i]` represents the number of coins of denomination `coins[i]` used to make the total amount.
+
+The key constraints in this problem are that the total value of the coins used must equal the target amount of £2 (200p), and that the number of coins of each denomination used must be a non-negative integer.
+
+The problem's objective is to find all possible combinations of coins that sum up to £2, rather than minimizing or maximizing a specific value. However, the model provided uses the `solve satisfy` statement, which means it will stop as soon as it finds one feasible solution that satisfies the constraints. To find all possible combinations, a different approach would be needed, such as using the `solve :: int_search` statement with an appropriate search strategy.

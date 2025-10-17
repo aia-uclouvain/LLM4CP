@@ -1,0 +1,5 @@
+Problem 18 
+This problem is about finding the maximum total sum of numbers that can be obtained by moving from the top to the bottom of a triangle, where each step can only be to an adjacent number on the row below. 
+The main variables are the triangle, which is a two-dimensional array of numbers, and x, which is an array of variables representing the path to be taken from the top to the bottom of the triangle. 
+The basic restrictions or rules of the problem are that each step can only be to an adjacent number on the row below, and the path must start at the top of the triangle. 
+The goal of the problem is to maximize the total sum of numbers obtained by moving from the top to the bottom of the triangle.

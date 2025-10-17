@@ -1,0 +1,8 @@
+The Added Corner Puzzle problem. 
+This problem involves placing the numbers 1 through 8 in a specific arrangement of circles and squares such that the number in each square is equal to the sum of the numbers in the adjacent circles.
+
+The main decision variables are A, B, C, D, E, F, G, and H, which represent the numbers to be placed in the circles and squares. Each variable is assigned a value between 1 and 8.
+
+The key constraints are that each number from 1 to 8 is used exactly once, and the numbers in the squares are equal to the sum of the numbers in the adjacent circles. Specifically, the constraints are: the number in the top-middle square (B) is the sum of the numbers in the top-left and top-right circles (A and C), the number in the middle-left square (D) is the sum of the numbers in the top-left circle and the bottom-left circle (A and F), the number in the middle-right square (E) is the sum of the numbers in the top-right circle and the bottom-right circle (C and H), and the number in the bottom-middle square (G) is the sum of the numbers in the bottom-left and bottom-right circles (F and H).
+
+The objective of the problem is to find an assignment of numbers to the circles and squares that satisfies all the constraints, which is a satisfaction problem rather than an optimization problem, meaning that the goal is to find a feasible solution that meets all the requirements rather than to minimize or maximize a specific objective function.

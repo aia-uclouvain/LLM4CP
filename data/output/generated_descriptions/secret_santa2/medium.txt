@@ -1,0 +1,9 @@
+Secret Santa Problem
+The Secret Santa problem is a classic constraint programming problem where a group of people participate in a gift exchange, and each person is randomly assigned to give a gift to another person in the group.
+The main decision variables in this problem are the `santas` array, which represents the person each individual is assigned to give a gift to, and the `santa_distance` array, which represents the distance or time since the last time a person was assigned to give a gift to the same person.
+The key constraints in this problem are: 
+1. No person can be assigned to give a gift to themselves.
+2. No person can be assigned to give a gift to their spouse.
+3. No person can be assigned to give a gift to the same person two years in a row.
+4. The assignment of people to give gifts should maximize the time since the last time a person was assigned to give a gift to the same person.
+The objective of this problem is to maximize the total distance or time since the last time each person was assigned to give a gift to the same person, represented by the variable `z`. This means that the solution should try to assign people to give gifts to those they have not given gifts to in a long time, while still satisfying the constraints.

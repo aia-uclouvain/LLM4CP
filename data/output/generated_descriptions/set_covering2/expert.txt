@@ -1,0 +1,5 @@
+name: Set Covering Problem
+description: The Set Covering Problem is a classical problem in operations research and computer science that involves finding the minimum number of sets that cover all elements in a given universe. In this specific instance, the problem is applied to a campus setting where security telephones need to be installed at street corners to cover all connected streets. The goal is to minimize the number of security telephones while ensuring that all streets are covered.
+variables: $x_1, x_2, ..., x_n$ - These are binary decision variables where $x_j = 1$ if a security telephone is installed at corner $j$, and $x_j = 0$ otherwise.
+constraints: $\forall i \in \text{streets}, \sum_{j \in \text{corner}[i]} x_j \geq 1$ - These constraints ensure that each street is covered by at least one security telephone installed at one of its corners.
+objective: Minimize $z = \sum_{j=1}^{n} x_j$ - The objective is to minimize the total number of security telephones installed, which is equivalent to minimizing the sum of the binary decision variables $x_j$.

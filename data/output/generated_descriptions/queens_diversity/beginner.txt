@@ -1,0 +1,11 @@
+N-Queens Problem with Degree of Diversity
+The problem is about placing queens on a chessboard in such a way that no two queens attack each other, and also trying to make the solutions as different from each other as possible.
+The main variables are: 
+- x: a 2D array representing the positions of the queens on the chessboard, where x[i, j] is the row number of the queen in the jth column of the ith solution.
+- soft_cost: an array representing the costs of having the same value in the same column across different solutions.
+- total_cost: the total cost of all the soft costs, which is the sum of the soft costs.
+The basic restrictions or rules of the problem are: 
+- Each row and each column can only have one queen.
+- No two queens can be on the same diagonal.
+- The solutions should be lexicographically sorted, meaning that the rows of the solutions should be in a specific order.
+- The goal is to minimize the total cost, which means making the solutions as different from each other as possible.

@@ -1,0 +1,5 @@
+name: Minimum NValue Problem
+description: The Minimum NValue Problem is a constraint satisfaction problem that involves finding the minimum number of times a value is taken by a set of variables. The problem is to determine the smallest frequency of any value in a given set of variables.
+variables: $t_min, variables = [var_1, var_2, ..., var_n]$, where $t_min$ is a decision variable representing the minimum frequency, and $variables$ is an array of decision variables representing the values taken by each variable, with each $var_i$ being a variable that can take any value from 1 to $n$.
+constraints: $global\_cardinality(variables, occ)$, $occ[i] > 0 \rightarrow t_min \leq occ[i]$, $\exists i \in index\_set(occ) (t_min = occ[i])$, where $occ$ is an array of variables representing the frequency of each value, and the constraints ensure that $t_min$ is the minimum frequency of any value.
+objective: The objective of the problem is to satisfy the constraints, with no explicit objective function to minimize or maximize, as the goal is to find a feasible solution that meets the constraints.

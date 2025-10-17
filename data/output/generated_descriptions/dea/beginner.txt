@@ -1,0 +1,16 @@
+Data Envelopment Analysis (DEA) 
+The problem is about measuring how efficiently different organizations or units are using their resources to produce outputs. Imagine you have many companies, each with its own set of resources like money, employees, and equipment, and each producing its own set of products or services. The goal is to compare these companies to see which ones are using their resources in the best way to produce their outputs.
+
+The main variables are: 
+- Decision Making Units (DMUs): These are the organizations or units being compared, like companies.
+- Inputs: These are the resources used by the DMUs, such as the number of employees or the amount of money spent.
+- Outputs: These are the products or services produced by the DMUs.
+- Theta: This measures the efficiency of each DMU, with 1 being the most efficient.
+- Lambda: This is used to compare the inputs and outputs of different DMUs to determine their efficiency.
+
+The basic restrictions or rules are: 
+- Each DMU must use its inputs to produce its outputs.
+- The efficiency of a DMU is determined by how well it uses its inputs compared to other DMUs.
+- The total efficiency of all DMUs should be minimized, meaning we want to find the lowest possible efficiency scores that still satisfy all the rules.
+
+The goal of the problem is to minimize the total efficiency of all DMUs, which means finding the most efficient way to use resources to produce outputs across all organizations.

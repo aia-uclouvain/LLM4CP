@@ -1,0 +1,5 @@
+The problem is called Global Cardinality No Loop. 
+It's about assigning values to a set of variables in such a way that each value is assigned to a certain number of variables, and also making sure that a certain number of variables are assigned the same value as their position. 
+The main variables are "variables" which are the variables being assigned values, "values" which are the possible values that can be assigned, and "nloop" which is the number of variables that are assigned the same value as their position. 
+The basic restrictions are that each value must be assigned to the correct number of variables, and the correct number of variables must be assigned the same value as their position. 
+The goal of the problem is to find an assignment of values to variables that satisfies these restrictions.

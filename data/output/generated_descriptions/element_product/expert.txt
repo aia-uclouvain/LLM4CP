@@ -1,0 +1,5 @@
+name: Element Product Problem
+description: The Element Product Problem is a constraint satisfaction problem that involves finding the product of an element in a table and a given variable. The problem is defined by a table of integers, an index, a multiplier, and a result. The goal is to satisfy the constraints that the result is equal to the product of the element at the given index in the table and the multiplier.
+variables: $x, y, z, element\_table$ - These are the decision variables where $x$ is the multiplier, $y$ is the index, $z$ is the result, and $element\_table$ is the table of integers.
+constraints: $element\_table = [6,9,2,9], x = 5, y = 3, z = element\_table[y] \* x$ - These constraints define the table, the multiplier, the index, and the relationship between the result and the product of the element at the given index and the multiplier.
+objective: satisfy - The objective of the problem is to satisfy all the given constraints, there is no explicit objective function to minimize or maximize.

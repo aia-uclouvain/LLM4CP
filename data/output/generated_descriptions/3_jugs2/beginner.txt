@@ -1,0 +1,5 @@
+The name of the problem is the 3 Jugs Problem. 
+This problem is about finding the shortest path between two points in a network. 
+The main variables are the distance between nodes, the start node, the end node, and the flow of traffic through the network, which represent how far apart things are, where you start, where you want to go, and how things move through the system. 
+The basic restrictions or rules of the problem are that you can only move through the network in certain ways, and you want to find the shortest path, which means you want to take the least amount of steps to get from the start to the end. 
+The goal of the problem is to minimize the total cost, or the total number of steps, it takes to get from the start node to the end node.

@@ -1,0 +1,36 @@
+name: Fill-in the squares problem (Brainjammer)
+
+description: The problem is to fill in a 5x5 grid with numbers from 1 to 25, such that each number is used only once, and a set of given constraints are satisfied. The constraints include conditions on the sum of each row and column, the properties of certain numbers in specific positions, and relationships between numbers in different positions.
+
+variables: $a_0, a_1, a_2, a_3, a_4, b_0, b_1, b_2, b_3, b_4, c_0, c_1, c_2, c_3, c_4, d_0, d_1, d_2, d_3, d_4, e_0, e_1, e_2, e_3, e_4, ALL_0, ALL_1, ..., ALL_{24}, a_{sum}, b_{sum}, c_{sum}, d_{sum}, e_{sum}$ 
+These are decision variables representing the values to be filled in the 5x5 grid, where $a_i, b_i, c_i, d_i, e_i$ represent the values in the corresponding rows, $ALL_i$ represents the value in the $i^{th}$ position when the grid is flattened, and $a_{sum}, b_{sum}, c_{sum}, d_{sum}, e_{sum}$ represent the sum of the values in each row.
+
+constraints: 
+$a_{sum} == \sum_{i=0}^{4} a_i, 
+b_{sum} == \sum_{i=0}^{4} b_i, 
+c_{sum} == \sum_{i=0}^{4} c_i, 
+d_{sum} == \sum_{i=0}^{4} d_i, 
+e_{sum} == \sum_{i=0}^{4} e_i, 
+ALL_i == a_i, ALL_{i+5} == b_i, ALL_{i+10} == c_i, ALL_{i+15} == d_i, ALL_{i+20} == e_i, 
+\forall i \in [0,4], a_i + b_i + c_i + d_i + e_i \equiv 1 \mod 2, 
+a_{sum} \equiv 0 \mod 2, b_{sum} \equiv 0 \mod 2, c_{sum} \equiv 1 \mod 2, d_{sum} \equiv 0 \mod 2, e_{sum} \equiv 0 \mod 2, 
+a_{sum} \leq b_{sum}, a_{sum} \leq c_{sum}, a_{sum} \leq d_{sum}, a_{sum} \leq e_{sum}, 
+a_0 + b_1 + c_2 + d_3 + e_4 > e_0 + d_1 + c_2 + b_3 + a_4, 
+a_3 + b_3 > c_3 + d_3 + e_3, 
+a_0 + b_0 == d_0 + e_0, 
+a_0 > e_0, 
+a_0 \in Primes, a_2 \in Primes, b_0 \in Primes, 
+(a_2 + e_2) \in Primes, 
+a_4 \in Squares, d_0 \in Squares, d_2 \in Squares, e_0 \in Squares, 
+b_1 + 1 == c_1, c_1 + 1 == d_1, 
+b_2 + 1 == c_2, c_2 + 1 == d_2, 
+b_4 + d_4 == a_4 + c_4, 
+c_0^2 + c_4^2 == e_2^2, 
+c_4 > 9, 
+d_4 \equiv 0 \mod e_4, 
+e_0 + e_2 == e_1 + e_3 + e_4, 
+\forall i \in [0,24], ALL_i \neq ALL_j \forall j \neq i$
+These constraints ensure that the filled-in numbers satisfy the given conditions, including the properties of the sums of rows and columns, the properties of certain numbers, and the relationships between numbers in different positions.
+
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the given constraints, with no specific objective function to minimize or maximize.

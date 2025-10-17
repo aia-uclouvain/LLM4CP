@@ -1,0 +1,10 @@
+Permutation Number Problem
+The problem is about finding all possible arrangements of a set of numbers, like 1 to 6, in a specific order, and then calculating a special number for each arrangement.
+The main variables are: 
+- x, which represents the arrangement of numbers
+- perm_num, which is the special number calculated for each arrangement, also known as the permutation number
+- even_odd, which indicates whether the permutation number is even or odd
+The basic restrictions are: 
+- each number can only be used once in the arrangement
+- the arrangement must be a valid permutation of the numbers
+The goal is to find all possible arrangements and their corresponding permutation numbers, and to identify whether each permutation number is even or odd.

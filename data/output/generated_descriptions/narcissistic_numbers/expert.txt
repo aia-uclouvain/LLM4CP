@@ -1,0 +1,8 @@
+name: Narcissistic Numbers
+description: A narcissistic number is an n-digit number that is the sum of the nth powers of its digits, also known as an Armstrong number or perfect digital invariant. The problem is to find such numbers.
+variables: $n, x_1, x_2, ..., x_n, num$ 
+These variables represent the number of digits $n$, the digits of the number $x_1, x_2, ..., x_n$, and the number itself $num$ in base $base$. The $x_i$ are decision variables that represent the digits of the narcissistic number, and $num$ is the number represented by these digits.
+constraints: $num > 0, x_1 > 0, toNum(x, num, base), my\_pow(x_i, n, pows_i), num = \sum_{i=1}^{n} pows_i$ 
+These constraints ensure that the number is greater than 0, the first digit is not 0, the number can be represented by its digits in base $base$, the nth power of each digit can be calculated, and the sum of the nth powers of the digits equals the number itself.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to find a narcissistic number. There is no explicit objective function to minimize or maximize.

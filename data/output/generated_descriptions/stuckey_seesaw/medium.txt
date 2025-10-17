@@ -1,0 +1,5 @@
+Seesaw Problem
+The problem is about balancing on a seesaw with three people, Liz, Fi, and Sara, who have different weights.
+The main decision variables are Liz, Fi, and Sara, which represent the positions of each person on the seesaw, with negative values indicating a position to the left of the fulcrum and positive values indicating a position to the right.
+The key constraints are: the total weight of the people on the seesaw must be balanced, and each person must be at least 3 units away from the others. Additionally, a symmetry-breaking constraint is included to ensure that Sara is on the right side of the fulcrum.
+The problem's objective is to find a satisfying assignment of positions for Liz, Fi, and Sara that meets the given constraints, rather than minimizing or maximizing a specific objective function. The goal is to find a feasible solution that balances the seesaw while respecting the distance constraints between the people.

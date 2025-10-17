@@ -1,0 +1,19 @@
+The Rehearsal Problem
+A concise description of what the problem is about:
+The Rehearsal Problem is a classic constraint programming problem that involves scheduling a rehearsal for a concert or a film. The problem consists of a set of pieces of music or film scenes, each with a specific duration and a set of players or actors required for each piece. The goal is to find an order in which the pieces can be rehearsed to minimize the total time that players are waiting to play, i.e., the total time when players are present but not currently playing.
+
+Main decision variables and what they represent:
+The main decision variables in this problem are:
+- `o` (or `rehearsal_order`): an array of variables representing the order in which the pieces are rehearsed.
+- `a` (or `p_from`): an array of variables representing the starting time of each player.
+- `l` (or `p_to`): an array of variables representing the ending time of each player.
+- `ep` (in some variants): a 2D array of variables representing whether a player is effectively playing in a given slot.
+
+Key constraints in plain language:
+The key constraints in this problem are:
+- All pieces of music must be played in some order.
+- A player must be present when a piece of music requires them.
+- A player can arrive at rehearsals immediately before the first piece in which they are involved and depart immediately after the last piece in which they are involved.
+
+Problem's objective:
+The objective of the Rehearsal Problem is to minimize the total waiting time of players, which is the total time when players are present but not currently playing. This is achieved by finding an optimal order in which the pieces can be rehearsed.

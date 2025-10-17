@@ -1,0 +1,8 @@
+Relief Mission
+The problem is about delivering relief supplies to people in need after a disaster. Imagine a map with several villages, and two packages of relief supplies that can be dropped from the air. The goal is to find the best locations to drop these packages so that the total distance the villagers have to travel to get the supplies is as short as possible.
+
+The main variables are the locations where the two packages will be dropped, and the distances that each villager will have to travel to get to the nearest package. 
+
+The basic restrictions or rules of the problem are that each package can be dropped in any location, and each villager will travel to the nearest package. The distance between two locations is calculated using a straight line.
+
+The goal of the problem is to minimize the total distance that all villagers must travel to get the relief supplies. In other words, we want to find the locations for the two packages that will result in the shortest total distance traveled by all the villagers.

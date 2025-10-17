@@ -1,0 +1,11 @@
+Graph Coloring Problem
+The Graph Coloring Problem is about finding the minimum number of colors needed to color a given graph such that no two adjacent nodes have the same color.
+
+The main decision variables are x[i,c] and u[c], where x[i,c] represents whether node i is assigned color c, and u[c] represents whether color c is used.
+
+The key constraints are: 
+- each node must be assigned exactly one color, 
+- adjacent nodes cannot be assigned the same color, 
+- there must be no loops in the graph, meaning a node cannot be connected to itself.
+
+The objective of the problem is to minimize the number of colors used, which is represented by the variable obj, the sum of all u[c] values. In other words, the goal is to find the smallest possible set of colors that can be used to color the graph without violating the constraints.

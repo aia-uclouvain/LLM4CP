@@ -1,0 +1,5 @@
+Pi Day Sudoku 2011
+This problem is about filling in a special kind of Sudoku puzzle with 12 numbers, where the puzzle is shaped like a pie with 12 wedges. 
+The main variables are the numbers that go in each cell of the puzzle, which can be any number from 1 to 12.
+The basic rules are that each number can only be used once in each row, once in each pair of opposite wedges, and once in each pair of adjacent wedges of the same color. 
+The goal is to fill in the entire puzzle so that all the rules are followed, and every number from 1 to 12 is used exactly once in each region of the pie.

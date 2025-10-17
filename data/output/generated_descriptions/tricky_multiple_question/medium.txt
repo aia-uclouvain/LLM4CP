@@ -1,0 +1,11 @@
+The Liar Paradox Problem
+The problem is about a self-referential paradox in a multiple-choice question, where each option refers to the truth of the other options.
+The main decision variables are `x[1..6]`, which represent whether each option (1 to 6) is true or false.
+The key constraints are:
+- Option 1 is true if and only if all the other options are true.
+- Option 2 is true if and only if none of the other options are true.
+- Option 3 is true if and only if both options 1 and 2 are true.
+- Option 4 is true if and only if at least one of options 1, 2, or 3 is true.
+- Option 5 is true if and only if none of options 1, 2, 3, or 4 are true.
+- Option 6 is true if and only if none of the other options are true.
+The problem's objective is to find a satisfying assignment of truth values to the options, such that all the constraints are met, which is achieved by using the `solve satisfy` statement in the Minizinc model.

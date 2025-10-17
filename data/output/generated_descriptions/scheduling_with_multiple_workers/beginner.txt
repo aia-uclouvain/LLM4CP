@@ -1,0 +1,14 @@
+Scheduling with Multiple Workers
+The problem is about assigning tasks to machines with limited resources, such as memory, to minimize the time it takes to complete all tasks or the number of machines used.
+The main variables are: 
+- start_time: when each task starts
+- end_time: when each task ends
+- machine: which machine is assigned to each task
+- machine_used_ram: how much memory is used by each machine at each time
+- machines_used: the number of machines used
+- last_time: the time when all tasks are completed
+The basic restrictions are: 
+- each task must be completed on one machine without interruption
+- a machine can work on multiple tasks at the same time if it has enough memory
+- each machine has a limited amount of memory
+The goal is to minimize either the time it takes to complete all tasks (last_time) or the number of machines used (machines_used).

@@ -1,0 +1,5 @@
+name: Lewis Carroll Coin Puzzle
+description: The Lewis Carroll coin puzzle is a classic problem in which three people - a buyer, a shopkeeper, and a friend - need to exchange coins such that each person receives a specific amount of money. The puzzle states that the buyer needs to receive 63 units, the shopkeeper needs to receive 160 units, and the friend needs to receive 85 units. There are 10 coins of different denominations available, and each coin can only be given to one person.
+variables: $x_{i,j}$, where $x_{i,j} \in \{0,1\}$ represents whether coin $i$ is given to person $j$ or not. 
+constraints: $\forall j \in P: \sum_{i \in C} value_i \cdot x_{i,j} = requ_j$ and $\forall i \in C: \sum_{j \in P} x_{i,j} = 1$, which ensure that each person receives the required amount of money and each coin is given to exactly one person.
+objective: satisfy, the objective is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

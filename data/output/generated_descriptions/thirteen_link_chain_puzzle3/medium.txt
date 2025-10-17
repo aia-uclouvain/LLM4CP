@@ -1,0 +1,10 @@
+The 13-Link Chain Puzzle
+The 13-Link Chain Puzzle is about finding the minimum number of links to break in a 13-link chain to be able to weigh items from 1 to 13 ounces in 1-ounce increments using a balance scale.
+The main decision variables are `weights` and `x`, where `weights` represents the weights used to achieve the desired measurements and `x` represents the coefficients of these weights, indicating whether they are used on the left or right side of the balance scale.
+The key constraints are: 
+- each weight can be used to achieve the desired measurements, 
+- each measurement from 1 to 13 ounces can be achieved by combining the weights, 
+- a weight is used only if its corresponding coefficient is non-zero, 
+- the weights are distinct and non-decreasing, 
+- and no two weights can be added to get another weight.
+The objective of the problem is to minimize the product of the number of weights used and the maximum coefficient value, which represents the minimum number of links to break in the chain to achieve the desired measurements.

@@ -1,0 +1,8 @@
+name: Mortgage Problem
+description: The Mortgage Problem is a classic problem in constraint programming that involves calculating the monthly payment, interest rate, or principal amount of a mortgage based on given values of the other two parameters. The problem models a mortgage as a series of monthly payments, where each payment reduces the outstanding principal amount and covers the interest accrued over the month.
+variables: P, I, R, mortgage[i] 
+P is the principal amount, I is the interest rate, R is the monthly payment, and mortgage[i] is an array representing the outstanding principal amount at each month i. These variables represent the key components of a mortgage, including the initial loan amount, the interest rate, the monthly payment, and the outstanding balance over time.
+constraints: mortgage[i] >= 0.0, mortgage[1] = P + (P * I) - R, mortgage[i] = mortgage[i-1] + (mortgage[i-1] * I) - R 
+These constraints ensure that the outstanding principal amount is never negative, and that the monthly payment and interest accrued are calculated correctly. The first constraint sets the initial outstanding principal amount, and the second constraint calculates the outstanding principal amount at each subsequent month based on the previous month's balance, interest rate, and monthly payment.
+objective: minimize P 
+The objective of the problem is to minimize the principal amount P, although the problem can also be formulated to calculate the interest rate R or the monthly payment I by changing the declarations of the variables.

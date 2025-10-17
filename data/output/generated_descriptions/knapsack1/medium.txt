@@ -1,0 +1,11 @@
+The 0/1 Knapsack Problem
+The 0/1 knapsack problem is a classic problem in combinatorial optimization and constraint programming, where the goal is to maximize the total value of items in a knapsack without exceeding its weight capacity.
+
+The main decision variables in this problem are the `take` array, which represents whether an item is included (1) or excluded (0) from the knapsack. Each item has a corresponding value and weight, represented by the `values` and `weights` arrays, respectively.
+
+The key constraints in this problem are: 
+- each item can either be included or excluded from the knapsack (i.e., `take[i]` is either 0 or 1), 
+- the total weight of the included items cannot exceed the knapsack's capacity, 
+- and the number of items taken must be a non-negative integer.
+
+The objective of the 0/1 knapsack problem is to maximize the total value of the items included in the knapsack, represented by the `profit` variable, which is calculated as the sum of the values of the included items. In other words, the goal is to find the optimal subset of items to include in the knapsack to achieve the highest total value while not exceeding the knapsack's weight capacity.

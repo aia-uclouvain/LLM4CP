@@ -1,0 +1,12 @@
+name: Rack Configuration Problem
+
+description: The Rack Configuration Problem is a discrete optimization problem that involves plugging electronic cards into racks with electronic connectors. The goal is to determine the minimum number of racks needed and the rack models to use in order to plug all the cards while minimizing the total cost. Each card has a specific power requirement and demand, and each rack model has a maximal power supply, number of connectors, and price.
+
+variables: $m_i, p_i, s_i, c_i, nc_{ij}$ 
+These variables represent the decision variables in the problem: $m_i$ is the model used for the ith rack, $p_i$ is the power of the model used for the ith rack, $s_i$ is the size (number of connectors) of the model used for the ith rack, $c_i$ is the cost (price) of the model used for the ith rack, and $nc_{ij}$ is the number of cards of type j put in the ith rack.
+
+constraints: $(m_i, p_i, s_i, c_i) \in table, \sum_{j} nc_{ij} \leq s_i, \sum_{j} nc_{ij} \cdot cardPowers_j \leq p_i, \sum_{i} nc_{ij} = cardDemands_j$
+These constraints ensure that: the rack model used is valid, the number of cards plugged into a rack does not exceed the number of connectors, the total power of the cards plugged into a rack does not exceed the power of the rack model, and all cards are plugged into some rack.
+
+objective: Minimize $\sum_{i} c_i$ 
+The objective is to minimize the total cost of the rack models used by all the racks needed.

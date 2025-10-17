@@ -1,0 +1,10 @@
+Sumbrero problem
+The problem is about finding a set of numbers that satisfy certain conditions, like a puzzle. 
+The main variables are: 
+- x, which represents a set of numbers from 1 to 9 that will be assigned to each of 7 columns (A to G).
+- a, which is a table showing how each number in x contributes to a total sum for each of 9 rows.
+- sums, which is a list of target totals for each row.
+The basic restrictions or rules are: 
+- each number in x multiplied by its corresponding value in the table a must add up to the target total in sums for each row.
+- if use_alldiff is true, all numbers in x must be different.
+The goal of the problem is to find a set of numbers for x that satisfy all the conditions, which means finding a solution that makes all the equations true.

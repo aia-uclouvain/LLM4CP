@@ -1,0 +1,5 @@
+The name of the problem is the Shortest Path Problem. 
+This problem is about finding the shortest way to get from one point to another in a network of roads or paths. 
+The main variables are the nodes (like cities or intersections), the edges (like roads between cities), and the length of each edge (like the distance between cities). There's also a variable that keeps track of which edges are used in the shortest path. 
+The basic restrictions are that you have to start at a certain point, end at another certain point, and only use the edges that exist in the network. You can't just make up new roads or paths. 
+The goal of the problem is to minimize the total distance traveled, which means finding the shortest possible path from the starting point to the ending point.

@@ -1,0 +1,5 @@
+Gardner's Graph Coloring Problem
+The problem is about coloring a map with a limited number of colors so that no two areas that share a border have the same color.
+The main variables are the colors assigned to each area on the map, represented by the variable x, which can have one of four color values (1, 2, 3, or 4).
+The basic restrictions are that no two neighboring areas can have the same color, and each area must be assigned one of the four available colors.
+The goal of the problem is to find a way to color the entire map using the four available colors, such that all areas have a color and no two neighboring areas have the same color, which is known as a "satisfying" solution.

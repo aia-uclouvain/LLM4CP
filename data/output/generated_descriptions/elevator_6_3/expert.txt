@@ -1,0 +1,5 @@
+name: Elevator Puzzle
+description: The Elevator Puzzle is a classic problem in constraint programming that involves finding the optimal sequence of elevator stops to visit a set of floors, given certain constraints. The problem is defined by a set of floors, a set of visits to be made, and a set of constraints that define which floors can be visited at each step. The goal is to find a sequence of elevator stops that satisfies all the constraints and minimizes the total number of stops.
+variables: $x[i]$ where $i \in 1..m$, $x[i]$ represents the floor visited at step $i$. 
+constraints: $\sum_{j=1}^{n} c[i,j] = 1$ for $i \in 1..m$, $x[i] \in 1..n$ for $i \in 1..m$, where $c[i,j]$ is a binary coefficient indicating whether floor $j$ can be visited at step $i$. These constraints ensure that each step visits exactly one floor and that the visited floor is valid for that step.
+objective: The objective of the problem is not explicitly stated in the provided model, but based on the context, it is likely to minimize the total number of stops, which can be represented as minimizing $\sum_{i=1}^{m} 1$.

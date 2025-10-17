@@ -1,0 +1,16 @@
+Timetable problem
+The problem is about creating a schedule for a set of courses to be taught in a limited number of rooms over a certain number of periods, while ensuring that certain constraints are met. 
+The main variables are: 
+- courses: the different classes being taught
+- periods: the time slots when classes can be taught
+- rooms: the physical spaces where classes can be held
+- timetable: a schedule showing which classes are taught in which time slots
+- available: a matrix showing which time slots are available for each class
+- conflict: a matrix showing which classes cannot be taught at the same time
+- requirement: the number of time slots each class needs. 
+The basic restrictions or rules of the problem are: 
+- classes with common students cannot be taught at the same time
+- classes can only be taught in available time slots
+- no more classes can be taught in a time slot than there are rooms available
+- each class must be taught the required number of times. 
+The goal of the problem is to create a schedule that satisfies all these constraints.

@@ -1,0 +1,12 @@
+Three Dimensional Nought and Crosses 
+The problem is about a 3D version of the classic Tic-Tac-Toe game, where two players, X and O, take turns placing their symbols in a 3D grid. 
+The main variables are: 
+- d: which represents whether a particular line in the 3D grid has been won by player X (crosses) or not, 
+- g: which represents whether a particular line in the 3D grid has been won by player O (noughts) or not, 
+- obj: the total number of lines won by player O. 
+The basic restrictions are: 
+- Each line can only be won by one player, 
+- A line is won when all its cells are occupied by the same player's symbol, 
+- There are 14 lines that must be won by player X, 
+- Each line can only be won once. 
+The goal of the problem is to minimize the total number of lines won by player O, which means finding the minimum number of lines that player O needs to win in order to win the game.

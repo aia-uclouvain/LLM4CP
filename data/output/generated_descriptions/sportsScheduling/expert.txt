@@ -1,0 +1,10 @@
+name: Sports Scheduling
+description: The Sports Scheduling problem is a classic problem in constraint programming that involves scheduling a set of teams to play against each other over a series of weeks, with the goal of ensuring that each team plays every other team exactly once. The problem requires finding a schedule that satisfies a set of constraints, including ensuring that each team plays at most one game per week, and that every team plays at most twice in the same period.
+variables: $n, teams, num\_games, games, weeks, periods, homeaway, schedule, game, allowed$ 
+The decision variables are: $schedule$ which is a 3D array where $schedule[w,p,h]$ represents the team playing at home or away in week $w$, period $p$, and $homeaway$ indicates whether the team is playing at home or away; $game$ which is a 2D array where $game[w,p]$ represents the game being played in week $w$, period $p$; $n$ is the number of teams; $teams$ is the set of teams; $num\_games$ is the total number of games; $games$ is the set of games; $weeks$ is the set of weeks; $periods$ is the set of periods; $homeaway$ is the set of home or away indicators; $allowed$ is a 2D array that represents the allowed configurations of games and schedules.
+constraints: $\forall w \in weeks, all\_different([schedule[w,p,h] | p \in periods, h \in homeaway])$ 
+$\forall p \in periods, count(t \in [schedule[w,p,h] | w \in weeks, h \in homeaway])(t=p) \leq 2$ 
+$all\_different([game[w,p] | w \in weeks, p \in periods])$ 
+$\forall w \in weeks, p \in periods, \exists a \in 1..num\_games, cp1d([schedule[w,p,1], schedule[w,p,2], game[w,p]], [allowed[a, i] | i \in 1..3])$ 
+These constraints ensure that: each team plays at most one game per week; every team plays at most twice in the same period; distinct games are played; and the schedule and game configurations are consistent with the allowed configurations.
+objective: satisfy

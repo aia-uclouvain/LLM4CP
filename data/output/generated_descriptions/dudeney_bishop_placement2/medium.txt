@@ -1,0 +1,5 @@
+Dudeney's Bishop Placement Problem II
+The problem is about placing the maximum number of bishops on a chessboard such that no two bishops attack each other.
+The main decision variables are `x[i,j]` and `a[i,j]`, where `x[i,j]` represents whether a bishop is placed on square `(i,j)` (1 if occupied, 0 otherwise) and `a[i,j]` represents whether square `(i,j)` is attacked by a bishop (1 if attacked, 0 otherwise).
+The key constraints are that each square on the board is either occupied by a bishop or attacked by a bishop, but not both, and that a square is considered attacked if there is a bishop on a diagonally adjacent square. 
+The objective of the problem is to maximize the total number of bishops placed on the board, which is represented by the variable `sumx`.

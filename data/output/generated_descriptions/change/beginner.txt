@@ -1,0 +1,5 @@
+The name of the problem is Change. 
+This problem is about tracking changes in two sequences of numbers, x and y. 
+The main variables are x and y, which are lists of numbers, and c_x and c_y, which count the number of changes in x and y, respectively. 
+The basic restrictions or rules of the problem are that the changes in x and y are determined by certain conditions, such as whether a number is greater than, less than, or equal to the previous number. 
+The goal of the problem is to find the number of changes in x and y that satisfy these conditions, and to output the sequences x and y, as well as the number of changes c_x and c_y.

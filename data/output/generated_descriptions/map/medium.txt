@@ -1,0 +1,13 @@
+**Map Coloring Problem**
+The Map Coloring Problem is a classic constraint programming problem that involves assigning colors to countries on a map such that no two adjacent countries have the same color.
+
+**Decision Variables**
+The main decision variables in this problem are represented by the `country` array, which is an array of variables that assign a color to each country. The colors are represented by integers from 1 to 4.
+
+**Key Constraints**
+The key constraints in this problem are:
+* No two adjacent countries can have the same color. This is represented by the `coloring` predicate, which ensures that for every pair of adjacent countries, the assigned colors are different.
+* The adjacency of countries is represented by the `connections` matrix, where a value of 1 indicates that two countries are adjacent, and a value of 0 indicates that they are not.
+
+**Objective**
+The objective of the problem is to find a valid coloring of the map, which means assigning colors to countries such that all constraints are satisfied. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all constraints. In this case, the `solve satisfy` statement is used to find a valid solution.

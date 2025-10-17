@@ -1,0 +1,5 @@
+The Smooth Problem
+The Smooth problem is about finding a sequence of values that satisfies certain constraints related to the number of significant changes between consecutive values in the sequence.
+The main decision variables are `nchange`, `tolerance`, and `x`, where `nchange` represents the number of times the absolute difference between consecutive values in `x` exceeds the `tolerance` threshold, `tolerance` is the maximum allowed difference between consecutive values, and `x` is an array of variables representing the sequence of values.
+The key constraints are that the number of significant changes (`nchange`) is equal to the sum of the number of times the absolute difference between consecutive values in `x` exceeds the `tolerance`, and that the sequence `x` must be equal to a given sequence.
+The objective of the Smooth problem is to satisfy the given constraints, specifically to find a sequence `x` that has exactly `nchange` significant changes, where each change is defined as an absolute difference greater than the `tolerance` threshold, while also matching a given sequence.

@@ -1,0 +1,5 @@
+The Caesar Cipher Problem
+The Caesar cipher is a type of substitution cipher where each letter in the plaintext is 'shifted' a certain number of places down the alphabet. 
+The main decision variables are the array `rotated` representing the encrypted string and the variable `rot` representing the shift number.
+The key constraints are that each character in the input string `text` is shifted by `rot` positions in the alphabet, wrapping around to the beginning of the alphabet if necessary, and the result is stored in the corresponding position in the `rotated` array.
+The problem's objective is to find a satisfying assignment of values to the decision variables, specifically to determine the encrypted string `rotated` and the shift number `rot`, given the input string `text`.

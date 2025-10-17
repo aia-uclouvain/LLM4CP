@@ -1,0 +1,5 @@
+Lehmer Code from Permutation problem. 
+This problem is about taking a list of numbers that are in a mixed-up order and finding a special code, called the Lehmer code, that corresponds to this list. The Lehmer code is created by looking at each number in the list and counting how many numbers after it are smaller. 
+The main variables are the original list of numbers (a), the Lehmer code (x), and the restored list of numbers (y). The original list (a) is the mixed-up list of numbers, the Lehmer code (x) is the special code that we want to find, and the restored list (y) is the original list of numbers in its correct order. 
+The basic restrictions are that each number in the Lehmer code must be equal to the number of subsequent values in the original list that it exceeds, and the restored list must have the same numbers as the original list but in the correct order, with no repeated numbers. 
+The goal of the problem is to find the Lehmer code (x) and the restored list (y) that satisfy these restrictions, given the original list of numbers (a).

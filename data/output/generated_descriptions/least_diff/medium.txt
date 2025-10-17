@@ -1,0 +1,8 @@
+The Least Difference Problem
+The Least Difference Problem is about finding two numbers, X and Y, that are formed by using the digits 0 through 9 exactly once, such that the difference between X and Y is minimized.
+
+The main decision variables in this problem are A, B, C, D, E, F, G, H, I, and J, which represent the digits used to form the two numbers X and Y. These variables are used to create the numbers X (ABCDE) and Y (FGHIJ), where each digit is used only once.
+
+The key constraints in this problem are that all digits must be used exactly once, and the difference between X and Y must be positive. This is achieved through the all_different constraint, which ensures that each digit is used only once, and the constraint that the difference between X and Y must be greater than 0.
+
+The objective of the Least Difference Problem is to minimize the difference between X and Y. This is achieved by finding the smallest possible difference between the two numbers that can be formed using the digits 0 through 9 exactly once. The problem is solved using a constraint programming approach, where the constraints are used to narrow down the possible solutions, and the objective is to find the solution that minimizes the difference between X and Y.

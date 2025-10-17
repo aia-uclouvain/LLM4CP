@@ -1,0 +1,7 @@
+name: Langford's Number Problem
+description: The problem is to arrange two sets of positive integers from 1 to k in a sequence such that after the first occurrence of an integer i, each subsequent occurrence of i appears i+1 indices later than the last. 
+variables: position, solution 
+position and solution are arrays of decision variables where position[i] represents the position of the i-th number in the sequence and solution[i] represents the i-th number in the sequence. 
+constraints: position[i+k] = position[i] + i+1, solution[position[i]] = i, solution[position[k+i]] = i, all_different(position), solution[1] < solution[2*k]
+These constraints ensure that the sequence is constructed according to the problem rules: the second occurrence of each number is i+1 positions after the first, each position in the sequence is assigned a unique number, and the first number in the sequence is less than the last number to break symmetry.
+objective: The problem is a satisfaction problem, meaning the objective is to find a sequence that satisfies all the constraints, rather than minimizing or maximizing a specific value.

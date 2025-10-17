@@ -1,0 +1,12 @@
+The name of the problem is the Generalized Seseman Convent Problem. 
+This problem is about finding a solution for a square grid of size n x n, where the goal is to assign values to each cell in the grid such that the sum of the values on each border of the grid is equal to a given constant, and all cells in the middle of the grid (the "holes") have a value of 0.
+
+The main decision variables are the values x[i,j] assigned to each cell in the grid, where i and j represent the row and column indices of the cell, respectively. These variables represent the values that will be assigned to each cell in the grid.
+
+The key constraints in this problem are: 
+- all cells in the middle of the grid must have a value of 0, 
+- the sum of the values on each border of the grid must be equal to the given constant border_sum, 
+- all cells on the borders must have a value greater than or equal to 1, 
+- the total sum of all values in the grid must be equal to the variable total_sum.
+
+The problem's objective is to find a solution that satisfies all the given constraints. The model can be used to find a feasible solution (using the "solve satisfy" statement), or to minimize or maximize the total sum of all values in the grid (using the "solve minimize" or "solve maximize" statements, respectively).

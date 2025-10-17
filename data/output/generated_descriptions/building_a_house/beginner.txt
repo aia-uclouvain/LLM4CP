@@ -1,0 +1,8 @@
+Building a House
+The problem is about scheduling tasks to build a house. Imagine you're constructing a house and there are many jobs that need to be done, like masonry, carpentry, plumbing, and painting. These tasks must be done in a certain order because some tasks can't start until others are finished.
+
+The main variables are the tasks (like masonry, carpentry, etc.), the start time for each task, the end time for each task, and the duration of each task (how long it takes to complete). 
+
+The basic restrictions or rules are that some tasks must be completed before others can start. For example, the carpentry task can't start until the masonry task is finished. There's also a limit to how many tasks can be done at the same time.
+
+The goal of the problem is to find the best schedule for these tasks so that the entire house is built as quickly as possible, while still following all the rules about which tasks must come before others. There's also an extra goal to minimize extra costs that might be incurred if certain tasks are delayed.

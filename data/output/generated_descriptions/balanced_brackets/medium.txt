@@ -1,0 +1,5 @@
+Balanced Bracket Problem
+The problem is about generating a sequence of balanced brackets of a given size, where the size is defined as m*2, and m is a positive integer. 
+The main decision variables are x and c, where x is an array of variables representing the type of bracket (0 for opening bracket and 1 for closing bracket) at each position, and c is an array of variables representing the cumulative count of opening brackets minus closing brackets at each position.
+The key constraints are that the sequence must start with an opening bracket, the cumulative count at each position is the cumulative count at the previous position plus 1 if the current bracket is an opening bracket and minus 1 if it is a closing bracket, the sequence must end with a closing bracket, and the cumulative count at the end must be 0.
+The problem's objective is to find a satisfying assignment of brackets, and the model uses a satisfiability solver to find such an assignment, rather than minimizing or maximizing a specific objective function.

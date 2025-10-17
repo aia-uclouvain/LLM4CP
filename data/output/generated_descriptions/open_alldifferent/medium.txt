@@ -1,0 +1,5 @@
+Open Alldifferent Problem
+The Open Alldifferent problem is about enforcing distinctness among a subset of variables in an array, where the subset is defined by a set of indices. 
+The main decision variables are x, an array of variables representing the values to be assigned, and s, a set of indices representing the positions in the array where distinctness should be enforced. 
+The key constraints are that the values in the array x must match a given array [9,1,9,3], and the open_alldifferent constraint ensures that the values at the positions specified by the set s are distinct. 
+The problem's objective is to find an assignment of values to the array x that satisfies these constraints, specifically to determine the set s of indices for which the values in x are distinct, while matching the given array.

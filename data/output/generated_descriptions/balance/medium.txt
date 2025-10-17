@@ -1,0 +1,11 @@
+The Balance Problem
+The Balance problem is about finding an assignment of values to a set of variables such that the difference between the maximum and minimum occurrences of any value is equal to a given target balance.
+
+The main decision variables are `x`, an array of variables representing the values assigned to each variable, and `bal`, a variable representing the target balance. The `x` variables are assigned values from a finite set of integers (1 to 7 in this case), and the `bal` variable is an integer representing the desired balance.
+
+The key constraints are:
+- The `balance` constraint, which ensures that the difference between the maximum and minimum occurrences of any value in `x` is equal to `bal`.
+- The `global_cardinality` constraint, which ensures that the number of occurrences of each value in `x` is counted correctly.
+- The constraint `bal = 3`, which sets the target balance to 3.
+
+The objective of the problem is to find an assignment of values to `x` such that the balance constraint is satisfied, and the target balance `bal` is achieved. In other words, the problem is trying to find a set of values for `x` where the difference between the most frequent and least frequent values is equal to the target balance `bal`. The problem does not have a specific minimization or maximization objective, but rather a satisfaction objective, where the goal is to find a feasible solution that satisfies all the constraints.

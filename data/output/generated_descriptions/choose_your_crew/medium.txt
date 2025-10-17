@@ -1,0 +1,8 @@
+The Crew Selection Problem
+The Crew Selection Problem is about selecting a crew for a sea voyage with the right mix of skills to sail the ship efficiently, navigate to the destination, and fish along the way. 
+
+The main decision variables in this problem are represented by the array `x`, where `x[i]` is a binary variable that equals 1 if crew member `i` is selected and 0 otherwise. The `x` variables determine which crew members to hire. 
+
+The key constraints in this problem are that the cumulative skill of the selected crew members in each of the three skill categories (fishing, sailing, and navigation) must be 15 or more. This ensures that the crew has sufficient skills to complete the voyage successfully. 
+
+The objective of the Crew Selection Problem is to minimize the total cost of the voyage, which is the sum of the salaries of the selected crew members. The problem seeks to find the cheapest combination of crew members that satisfies the skill requirements.

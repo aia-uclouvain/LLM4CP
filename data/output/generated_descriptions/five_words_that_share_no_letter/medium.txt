@@ -1,0 +1,14 @@
+**Five Letter Words with No Shared Letters Problem**
+The problem is about finding five different five-letter words that do not share any letters. 
+
+**Decision Variables**
+The main decision variables are `x` and `y`. `x` is an array of variables representing the index of the selected words, and `y` is a 2D array of variables representing the individual characters of the selected words.
+
+**Constraints**
+The key constraints are:
+- The selected words must be distinct and in increasing order.
+- All letters across the five words must be distinct.
+- The characters of each word must match the corresponding characters in the word list.
+
+**Objective**
+The objective of this problem is to find a set of five words that satisfy the given constraints, which is a satisfaction problem, not an optimization problem. The goal is to find one or more sets of words that meet the conditions, rather than minimizing or maximizing a specific objective function.

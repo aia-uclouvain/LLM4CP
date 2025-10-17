@@ -1,0 +1,10 @@
+Color Sequence Optimization Problem
+The problem is about arranging colors in a sequence to minimize changes between them. 
+The main variables are: 
+- colors: the original list of colors
+- perm: the order in which the colors should be arranged
+- optimal: the resulting list of colors after arrangement
+The basic restrictions are: 
+- each color in the optimal list must come from the original colors list
+- the order of colors is determined by the perm list
+The goal is to find the optimal arrangement that minimizes color changes, and to ensure that if two colors are the same, their order in the perm list is consistent.

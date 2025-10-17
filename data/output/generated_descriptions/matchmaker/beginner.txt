@@ -1,0 +1,5 @@
+Matchmaker problem
+The problem is about finding pairs of men and women who have at least one trait in common, such as hair color or eye color. 
+The main variables are the women and men, each with their respective hair colors and eye colors. 
+The basic restrictions are that each man can only be paired with one woman, and each woman can only be paired with one man. Also, a man and a woman can only be paired if they have at least one trait in common. 
+The goal of the problem is to find all possible pairings of men and women where everyone has a partner with at least one trait in common.

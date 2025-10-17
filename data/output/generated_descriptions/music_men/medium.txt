@@ -1,0 +1,5 @@
+The Music Men problem. 
+This problem is about identifying three friends, their ages, and their musical preferences based on given clues. 
+The main decision variables are the ages, names, surnames, and musical preferences of the three friends, represented by variables such as Age24, Age25, Age26, Leon, Mark, Rob, King, Prince, Queen, Classical, Jazz, and Pop, which are assigned values from the sets of ages, names, surnames, and music types. 
+The key constraints are: each friend has a unique age, name, surname, and musical preference; Rob is older than the person who likes classical music; the person who likes pop music is not 24 years old and is not Prince; Leon is 25 years old and not the King; and Mark does not like jazz. 
+The objective of this problem is to find an assignment of ages, names, surnames, and musical preferences to the three friends that satisfies all the given constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution.

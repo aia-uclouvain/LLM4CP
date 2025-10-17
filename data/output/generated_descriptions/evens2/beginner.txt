@@ -1,0 +1,5 @@
+Evens Puzzle
+The problem is about placing a certain number of chips on a 4x4 grid so that each row and each column has an even number of chips.
+The main variables are the positions on the grid, where each position can either have a chip (represented by 1) or not have a chip (represented by 0).
+The basic restrictions are that the total number of chips on the grid must be 10, and each row and each column must have an even number of chips.
+The goal of the problem is to find a way to place the chips on the grid that satisfies these restrictions, with no specific goal to minimize or maximize anything, just to find a valid solution.

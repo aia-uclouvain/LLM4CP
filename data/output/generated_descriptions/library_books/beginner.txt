@@ -1,0 +1,5 @@
+Library Books problem 
+The problem is about three students, Arthur, Belinda, and Clarissa, who have overdue books from the library. 
+The main variables are the students' names (Arthur, Belinda, Clarissa), the subjects they are majoring in (English, French, German), and the number of overdue books each student has. 
+The basic restrictions are that the total number of overdue books is 25, no student has more than 14 overdue books, the French major has 3 more overdue books than Arthur, and Clarissa has 2 more overdue books than the English major. 
+The goal is to figure out who is majoring in what subject and how many books each student needs to return to the library.

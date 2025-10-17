@@ -1,0 +1,13 @@
+Quasigroup Existence Problem
+The Quasigroup existence problem is about finding an $m \times m$ multiplication table where each element occurs exactly once in each row and column, and certain multiplication axioms hold.
+
+The main decision variable is `quasiGroup`, a 2D array representing the multiplication table, where `quasiGroup[row, col]` is the result of multiplying the elements in the `row` and `col` positions.
+
+The key constraints are: 
+- each row and column must contain each element exactly once, 
+- the multiplication axiom `((i*j)*j)*j = i` must hold for all elements `i` and `j`, 
+- the idempotency axiom `i*i = i` must hold for all elements `i`, 
+- and the implied axiom `(i*j = i) <-> (j*i = i)` must hold for all elements `i` and `j`. 
+Additionally, symmetry-breaking constraints are used to reduce the search space.
+
+The objective of this problem is to find a valid Quasigroup, which means satisfying all the constraints. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that meets all the conditions.

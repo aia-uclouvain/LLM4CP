@@ -1,0 +1,5 @@
+name: Digital Root Problem
+description: The digital root problem is a mathematical problem where the goal is to find the digital root of a given number, which is the value obtained by recursively summing the digits of the number until a single-digit number is reached.
+variables: $d_x, d\_roots[1..m]$ - These are the decision variables, where $d_x$ represents the digital root of a given number $x$, and $d\_roots[1..m]$ is an array of variables representing the digital roots of numbers from 1 to $m$.
+constraints: $d\_roots[i] = 1 + ((i-1) \mod (10-1)), \forall i \in 1..m$ and $d\_x = 1 + ((x-1) \mod (10-1))$ - These constraints define the digital root of each number using the formula $res = 1 + ((num-1) \mod (base-1))$, where $base$ is 10 for decimal numbers.
+objective: The problem does not have a specific objective function to minimize or maximize, as it is a satisfaction problem where the goal is to find the digital roots of given numbers.

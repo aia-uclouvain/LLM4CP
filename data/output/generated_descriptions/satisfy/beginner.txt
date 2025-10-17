@@ -1,0 +1,11 @@
+Problem: Satisfiability Problem
+
+This problem is about finding all possible combinations of true or false values for a set of statements that satisfy a given set of rules. In everyday terms, imagine you have a set of switches that can be either on or off, and you need to find all the combinations of switch positions that meet certain conditions.
+
+The main variables are the switches, represented by `x[1]`, `x[2]`, `x[3]`, and `x[4]`, which can be either 0 (off) or 1 (on). These variables represent the truth values of the statements.
+
+The basic restrictions or rules of the problem are:
+- At least one of the following conditions must be true: both the first and second switches are on, or both the third and fourth switches are on.
+- At least one of the following conditions must be true: the first switch is different from the third switch, or the second switch is different from the fourth switch.
+
+The goal of the problem is to find all possible combinations of switch positions (truth values) that satisfy these rules. In other words, the problem aims to generate all interpretations that make the given propositional formula true.

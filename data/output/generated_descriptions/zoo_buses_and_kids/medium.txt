@@ -1,0 +1,5 @@
+The Zoo, Buses, and Kids problem. 
+This problem is about finding the most cost-effective way to transport 300 kids to the London zoo by renting buses of two different sizes, with 30 and 40 seats, at prices of 400 and 500 pounds respectively. 
+The main decision variables are the number of buses of each size, represented by the `buses` array, where `buses[1]` is the number of 30-seat buses and `buses[2]` is the number of 40-seat buses. 
+The key constraint is that the total number of seats on all the buses must be at least 300, to accommodate all the kids. 
+The objective is to minimize the total cost, which is the sum of the costs of all the buses, represented by the variable `z`.

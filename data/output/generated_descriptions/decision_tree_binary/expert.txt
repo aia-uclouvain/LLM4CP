@@ -1,0 +1,11 @@
+name: Minimax Decision Tree Problem
+description: The problem involves finding the optimal decision tree for a two-player game, where one player (A) tries to maximize their gain and the other player (B) tries to minimize A's gain. The game is represented as a complete binary tree, where each node has two child nodes, and the leaf nodes have assigned values. The goal is to determine the optimal decisions for each node, such that A maximizes their gain and B minimizes A's gain.
+variables: $x_1, x_2, ..., x_n, node\_used_1, node\_used_2, ..., node\_used_n$ 
+These variables represent the decision tree, where $x_i$ is the value of the $i^{th}$ node, and $node\_used_i$ is the index of the child node used to determine the value of the $i^{th}$ node.
+constraints: $x_i = x_{node\_used_i}$ for $i = 1, 2, ..., levels$, 
+$node\_used_i = i$ for $i = levels + 1, ..., n$, 
+$argmax(x, 2i, 2i+1, node\_used, i)$ for $i = 1, 2, ..., levels$ and $tree\_levels_i$ is odd, 
+$argmin(x, 2i, 2i+1, node\_used, i)$ for $i = 1, 2, ..., levels$ and $tree\_levels_i$ is even, 
+$cp1d(x, [_, _, ..., _, x_{levels+1}, ..., x_n])$ 
+These constraints ensure that the decision tree is constructed correctly, with the values of the nodes determined by the child nodes, and the optimal decisions made based on the minimax strategy.
+objective: The objective of the problem is to satisfy all the constraints, which implicitly maximizes the gain of player A and minimizes the gain of player B.

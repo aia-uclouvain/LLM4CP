@@ -1,0 +1,5 @@
+The Chinese Remainder Theorem problem, also known as the Remainder Puzzle. 
+This problem is about finding a number that satisfies multiple remainder conditions when divided by different divisors. 
+The main decision variable is an array x of size 5, where x[1] represents the number to be found, and x[2..5] are auxiliary variables used to simplify the problem formulation. 
+The key constraints are that the number x[1] leaves specific remainders when divided by 3, 4, 5, and 6, which can be described as: when x[1] is divided by 3, the remainder is 1; when divided by 4, the remainder is 2; when divided by 5, the remainder is 3; and when divided by 6, the remainder is 4. 
+The problem's objective is to find a solution that satisfies all these conditions, which is a feasibility problem, meaning the goal is to determine if such a number exists, rather than minimizing or maximizing a specific value.

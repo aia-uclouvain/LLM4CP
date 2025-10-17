@@ -1,0 +1,5 @@
+Takuzu grid puzzle
+The problem is about filling a grid with 0s and 1s in a way that follows certain rules. 
+The main variables are the grid cells, which can be either 0 or 1. 
+The basic restrictions are that each row and column must have an equal number of 0s and 1s, no more than two of the same numbers can be next to each other, and no two rows or columns can be identical. 
+The goal is to find a solution that satisfies all these rules, with no specific objective to minimize or maximize, but rather to find a valid configuration.

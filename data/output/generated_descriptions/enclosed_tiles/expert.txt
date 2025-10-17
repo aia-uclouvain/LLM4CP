@@ -1,0 +1,5 @@
+name: Enclosed Tiles Problem
+description: The problem is to identify tiles in a 2D array that are completely enclosed by either 'b' or 'w' tiles and replace them with the corresponding enclosing tile, while leaving all other tiles as '-'.
+variables: $x_{i,j} \in \{M, B, W\}$, where $x_{i,j}$ represents the decision variable for each tile at position $(i, j)$ in the 2D array, with $M$ denoting a tile that is not enclosed, $B$ denoting a tile enclosed by 'b' tiles, and $W$ denoting a tile enclosed by 'w' tiles.
+constraints: $\forall i, j \in \{1, \ldots, rows\} \times \{1, \ldots, cols\}: (data_{i,j} = P \rightarrow (check(data, i, j, W) \leftrightarrow x_{i,j} = W) \wedge (check(data, i, j, B) \leftrightarrow x_{i,j} = B)) \wedge (data_{i,j} \neq P \rightarrow x_{i,j} = M)$, where $check(data, i, j, t)$ is a predicate that checks if all neighboring tiles of $(i, j)$ are of type $t$, and $data_{i,j}$ represents the initial state of the tile at position $(i, j)$.
+objective: The problem is a satisfaction problem, where the goal is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

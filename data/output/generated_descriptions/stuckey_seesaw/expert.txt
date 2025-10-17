@@ -1,0 +1,5 @@
+name: Seesaw Balancing Problem
+description: The Seesaw Balancing Problem is a classic problem in constraint programming where three people, Liz, Fi, and Sara, with different weights, need to balance on a seesaw. The goal is to find a position for each person on the seesaw such that it is balanced and certain constraints are satisfied.
+variables: $Liz, Fi, Sara$ - These variables represent the positions of Liz, Fi, and Sara on the seesaw, respectively, and can take integer values between -5 and 5, where a positive value indicates a position to the right of the center and a negative value indicates a position to the left.
+constraints: $9Liz + 8Fi + 4Sara = 0 \wedge apart(Liz, Fi, 3) \wedge apart(Liz, Sara, 3) \wedge apart(Sara, Fi, 3) \wedge Sara \geq 0$ - These constraints ensure that the seesaw is balanced ($9Liz + 8Fi + 4Sara = 0$), the people are at least 3 units apart ($apart(Liz, Fi, 3)$, $apart(Liz, Sara, 3)$, $apart(Sara, Fi, 3)$), and Sara is to the right of the center ($Sara \geq 0$).
+objective: satisfy - The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

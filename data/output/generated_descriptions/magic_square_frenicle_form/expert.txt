@@ -1,0 +1,21 @@
+name: Magic Square Problem
+description: The Magic Square Problem is a classic problem in constraint programming where the goal is to fill an n x n grid with numbers from 1 to n^2 such that the sum of each row, column, and diagonal is the same, and the grid satisfies certain symmetry conditions, specifically the Frénicle standard form.
+variables: $magic_{i,j}$ for $i, j \in 1..n$, where $magic_{i,j}$ represents the value in the $i^{th}$ row and $j^{th}$ column of the grid, and is a decision variable that takes a value from 1 to $n^2$.
+constraints: 
+$\bigwedge_{i,j \in 1..n} 1 \leq magic_{i,j} \leq n^2$ 
+$\wedge$ 
+$\bigwedge_{i \in 1..n} \sum_{j \in 1..n} magic_{i,j} = total$ 
+$\wedge$ 
+$\bigwedge_{j \in 1..n} \sum_{i \in 1..n} magic_{i,j} = total$ 
+$\wedge$ 
+$\sum_{i \in 1..n} magic_{i,i} = total$ 
+$\wedge$ 
+$\sum_{i \in 1..n} magic_{i,n-i+1} = total$ 
+$\wedge$ 
+$magic_{1,1} \leq \min(magic_{1,1}, magic_{1,n}, magic_{n,1}, magic_{n,n})$ 
+$\wedge$ 
+$magic_{1,2} < magic_{2,1}$ 
+$\wedge$ 
+$\bigwedge_{i,j \in 1..n} magic_{i,j} \neq magic_{k,l} \forall i \neq k \vee j \neq l$, 
+where $total = \frac{n(n^2 + 1)}{2}$, and the constraints ensure that the grid is a magic square in Frénicle standard form, with all numbers from 1 to $n^2$ used exactly once.
+objective: The objective of the problem is to find a satisfying assignment of values to the $magic_{i,j}$ variables, such that all constraints are satisfied, with no specific objective function to minimize or maximize.

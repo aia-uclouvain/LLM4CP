@@ -1,0 +1,5 @@
+State Name Puzzle
+The problem is about finding two US state names, mixing their letters together, and then rearranging these letters to form two different US state names. 
+The main variables are x1 and x2, which represent the two original state names, and gcc, which keeps track of the count of each letter in the mixed state names.
+The basic restrictions are that the two original state names and the two resulting state names must all be different, and the letters in the original state names must be able to be rearranged to spell the resulting state names.
+The goal of the problem is to find the two original state names that can be mixed and rearranged to form two different state names, with the constraint that all four state names are different.

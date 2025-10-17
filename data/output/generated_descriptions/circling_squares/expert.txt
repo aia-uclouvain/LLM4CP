@@ -1,0 +1,9 @@
+name: Cyclohexane problem (Circling the Squares puzzle)
+
+description: The problem is to place different numbers in ten squares such that the sum of the squares of any two adjacent numbers is equal to the sum of the squares of the two numbers diametrically opposite to them. The given numbers 16, 2, 8, and 14 must remain in their positions, and no number can be a fraction or have more than two digits.
+
+variables: $A, B, C, D, E, F, G, H, I, K$ - These are decision variables representing the numbers to be placed in the ten squares, where each variable is an integer between 1 and 99.
+
+constraints: $A = 16, B = 2, F = 8, G = 14, A^2 + B^2 = F^2 + G^2, B^2 + C^2 = G^2 + H^2, C^2 + D^2 = H^2 + I^2, D^2 + E^2 = I^2 + K^2, E^2 + F^2 = K^2 + A^2, \text{all\_different}(A, B, C, D, E, F, G, H, I, K)$ - These constraints ensure that the given numbers remain in their positions, the sum of the squares of adjacent numbers is equal to the sum of the squares of diametrically opposite numbers, and all numbers are distinct.
+
+objective: The objective of the problem is to find a satisfying assignment of numbers to the squares, which is achieved by solving the constraints. There is no explicit objective function to minimize or maximize.

@@ -1,0 +1,15 @@
+Spinning Disks Problem
+The problem is about two identical disks with 12 sectors, some of which are transparent and some are not. When the disks are placed on top of each other and the top disk is spun, the number of transparent sectors changes, forming a sequence of numbers.
+
+The main variables are:
+- disk1: represents the first disk, where 1 means a sector is transparent and 0 means it's not.
+- disk2: represents the second disk, which is the same as the first disk but can be rotated.
+- sums: the sequence of numbers representing the number of transparent sectors at each rotation.
+
+The basic restrictions or rules are:
+- The disks have 12 sectors.
+- Each sector is either transparent or not.
+- When the top disk is spun, the number of transparent sectors changes.
+- The sequence of numbers representing the number of transparent sectors is given for the first 6 rotations.
+
+The goal of the problem is to determine which sectors of the disks are transparent and which are not, given the sequence of numbers representing the number of transparent sectors at each rotation.

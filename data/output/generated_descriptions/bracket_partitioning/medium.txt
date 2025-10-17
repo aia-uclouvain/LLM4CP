@@ -1,0 +1,22 @@
+**Bracket Partitioning Problem**
+The Bracket Partitioning Problem is a classic constraint programming problem that involves partitioning a set of participants into brackets or groups based on certain constraints.
+
+**Description**
+The problem involves dividing a set of participants, each with a weight or score, into brackets of varying sizes. The goal is to create brackets where the difference between the lowest and highest weighted participants is within a certain threshold, in this case, 15%. The problem also favors creating brackets of size 8 and 4 over other sizes.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables that represents which bracket each participant belongs to.
+- `set_size`: an array of variables that represents the size of each bracket.
+- `mins`, `maxs`, and `diffs`: arrays of variables that represent the minimum, maximum, and difference between the minimum and maximum weights in each bracket, respectively.
+
+**Constraints**
+The key constraints in this problem are:
+- Each participant can only be in one bracket.
+- The size of each bracket must be one of the allowed sizes (2, 3, 4, 6, 7, or 8).
+- The difference between the lowest and highest weighted participants in a bracket must not exceed 15% of the highest weight.
+- The brackets should be numbered from 1, and the first participant should be in bracket 1.
+- The size of the brackets should be in decreasing order.
+
+**Objective**
+The objective of this problem is to maximize the number of brackets of size 8 and 4, while satisfying all the constraints. This is achieved by maximizing the variable `z`, which represents the sum of the number of brackets of size 8 and 4.

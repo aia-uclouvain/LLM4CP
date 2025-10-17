@@ -1,0 +1,17 @@
+**Change Pair Problem**
+The Change Pair problem is a classic constraint programming problem that involves finding the number of changes between consecutive pairs of variables in two arrays.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables representing the first set of values
+- `y`: an array of variables representing the second set of values
+- `nchange`: a variable representing the total number of changes between consecutive pairs of variables
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- The `change_pairs` constraint checks for changes between consecutive pairs of variables in the `x` and `y` arrays based on the given comparison operators (`ctr1` and `ctr2`).
+- The `cp1d` constraint is used to assign fixed values to the `x` and `y` arrays, but it is not always used.
+- The `cmp` predicate is a helper function that performs comparisons between two values based on a given comparison operator.
+
+**Objective**
+The objective of the Change Pair problem is to find the total number of changes (`nchange`) between consecutive pairs of variables in the `x` and `y` arrays, given the comparison operators (`ctr1` and `ctr2`). The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

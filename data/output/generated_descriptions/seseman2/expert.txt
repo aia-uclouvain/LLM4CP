@@ -1,0 +1,13 @@
+name: Seseman Convent Problem
+description: The Seseman Convent Problem is a classic problem in constraint programming that involves finding a solution to fill in the cells of an n x n square, where the cells on the border of the square must sum up to a certain value, and the cells in the middle of the square (the "holes") must be zero. The problem also involves finding the total sum of all cells in the square.
+variables: $x_{i,j}$ for $i = 1, \ldots, n$ and $j = 1, \ldots, n$, and $total\_sum$. These variables represent the values to be assigned to each cell in the square, where $x_{i,j}$ is the value in the cell at row $i$ and column $j$, and $total\_sum$ is the total sum of all cells in the square.
+constraints: 
+$\forall i \in \{2, \ldots, n-1\}, \forall j \in \{2, \ldots, n-1\}: x_{i,j} = 0$,
+$\sum_{i=1}^{n} x_{i,1} = border\_sum$,
+$\sum_{i=1}^{n} x_{i,n} = border\_sum$,
+$\sum_{j=1}^{n} x_{1,j} = border\_sum$,
+$\sum_{j=1}^{n} x_{n,j} = border\_sum$,
+$\forall i \in \{1, \ldots, n\}, \forall j \in \{1, \ldots, n\}: (i = 1 \lor j = 1 \lor i = n \lor j = n) \rightarrow x_{i,j} \geq 1$,
+$\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i,j} = total\_sum$. 
+These constraints ensure that the cells in the middle of the square are zero, the cells on the border sum up to the given value, all cells on the border have a value greater than or equal to 1, and the total sum of all cells is equal to the variable $total\_sum$.
+objective: satisfy

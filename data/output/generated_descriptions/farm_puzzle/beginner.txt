@@ -1,0 +1,5 @@
+Farm Puzzle
+The problem is about a farmer who has a certain number of pigs and hens on his farm, and we need to figure out how many of each animal he has.
+The main variables are the number of pigs and hens, represented by the array "x" which shows the type of each animal (either 2 legs for a hen or 4 legs for a pig).
+The basic restrictions are that there are 7 animals in total and they have a total of 22 legs, and each pig has 4 legs while each hen has 2 legs.
+The goal of the problem is to find the number of pigs and hens that adds up to 7 animals and 22 legs, and to do this in a way that gives a unique solution by following a specific order.

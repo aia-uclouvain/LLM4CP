@@ -1,0 +1,5 @@
+Spreadsheet problem. 
+This problem is about calculating values in a spreadsheet with certain rules. 
+The main variables are B1, B4, B5, C4, C5, D4, D5, E7, and E8, which represent cells in the spreadsheet where values will be calculated.
+The basic restrictions or rules of the problem are that some cells have fixed values, and other cells are calculated based on these fixed values using simple math operations like multiplication and addition.
+The goal of the problem is to calculate the values of all cells in the spreadsheet, specifically the values of E7 and E8, which depend on the values of other cells.

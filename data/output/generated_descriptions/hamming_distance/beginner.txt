@@ -1,0 +1,10 @@
+Hamming Distance Problem
+The problem is about comparing two lists of binary digits (0s and 1s) and finding the number of positions where they differ.
+The main variables are: 
+- a and b, which are lists of binary digits (0s and 1s)
+- diffs, which is the number of positions where a and b differ.
+The basic restrictions are: 
+- a and b must be lists of the same length
+- each position in a and b can only be 0 or 1
+- the number of differences between a and b must be exactly 2.
+The goal of the problem is to find all possible lists a and b that satisfy these conditions, given that a must be different from a fixed list [1,1,1,1,1,1] in exactly 2 positions, and then calculate the number of differences (diffs) between a and b, which should also be 2.

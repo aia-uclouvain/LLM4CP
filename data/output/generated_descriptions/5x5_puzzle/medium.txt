@@ -1,0 +1,5 @@
+The name of the problem is the Five Puzzle, also known as the 5x5 puzzle. 
+This problem is about finding the minimum number of moves to light all 25 squares in a 5x5 grid, where each move toggles the state of a square and its orthogonal neighbors. 
+The main decision variables are x[i,j], which represent the state of the square at position (i,j) in the grid, with 0 indicating an unlit square and 1 indicating a lit square, and d[i,j], which are auxiliary variables used to model the constraints of the problem. 
+The key constraints are that the number of lit neighbors of each square, including the square itself, must be odd, which is enforced by the equation 2*d[i,j]+1 = ... . This constraint ensures that each move toggles the state of a square and its orthogonal neighbors. 
+The objective of the problem is to minimize the total number of lit squares after each move, which is represented by the variable the_sum, with the goal of finding the minimum number of moves required to light all 25 squares.

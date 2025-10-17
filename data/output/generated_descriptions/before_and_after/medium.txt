@@ -1,0 +1,8 @@
+The name of the problem is the Before and After puzzle. 
+This problem is about four kids - Alice, Boris, Claire, and David - who have a different number of jellybeans, all between 2 and 9. They exchange jellybeans in a series of steps, with certain rules governing the exchanges, and the goal is to determine how many jellybeans each child has before and after the exchanges.
+
+The main decision variables are x, a 3x4 array where x[t,i] represents the number of jellybeans the ith child has after the tth step, and gifts, a 1x4 array where gifts[j] represents the number of jellybeans given in the jth gift. 
+
+The key constraints are: each child starts with a different number of jellybeans between 2 and 9, the number of jellybeans given in each gift is different and less than 7, each child ends up with a different number of jellybeans between 2 and 9, and no child has the same number of jellybeans after the exchanges as they did before. Additionally, Alice gets more jellybeans from David than from Boris, and at the end, Alice has one more jellybean than David, and Claire has one less jellybean than Boris.
+
+The problem's objective is to find a solution that satisfies all the constraints, which is achieved by using the satisfy keyword in the MiniZinc model. The model does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the conditions.

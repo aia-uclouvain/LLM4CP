@@ -1,0 +1,5 @@
+name: Same Constraint Problem
+description: The Same Constraint Problem is a constraint satisfaction problem where two collections of variables have the same number of occurrences of each value, according to a permutation. In other words, the problem ensures that the variables of the second collection correspond to the variables of the first collection, with the same values appearing the same number of times in both collections.
+variables: $variables1 = [x_1, x_2, ..., x_n], variables2 = [y_1, y_2, ..., y_n]$ where $x_i$ and $y_i$ are decision variables representing the values in the first and second collections, respectively. These variables are used to model the two collections of values.
+constraints: $same(variables1, variables2), cp1d(variables1, [1,9,1,5,2,1]), cp1d(variables2, [9,1,1,2,5,1])$ where $same(variables1, variables2)$ ensures that the two collections have the same number of occurrences of each value, and $cp1d$ constraints are used to assign specific values to the variables in the collections.
+objective: satisfy

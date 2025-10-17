@@ -1,0 +1,16 @@
+Sokoban
+Sokoban is a transport puzzle where a porter needs to move crates into designated target positions in a warehouse laid out on a rectangular grid, while avoiding walls and following certain movement rules.
+
+The main decision variables are: 
+- `sokPosn`: the position of the porter at each time step, 
+- `move`: the direction of movement made by the porter at each time step, 
+- `crateGoalPosns`: the position of each crate at each time step.
+
+The key constraints are: 
+- the porter cannot move into a wall, 
+- the porter can only push one crate at a time, 
+- each crate must be moved into a target position, 
+- the porter and crates cannot occupy the same position at the same time, 
+- the crates cannot be pulled, only pushed.
+
+The objective of the problem is to find a sequence of moves that allows the porter to move all the crates into their target positions in a minimal number of steps, while satisfying all the constraints. The problem does not explicitly specify an objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the constraints.

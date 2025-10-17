@@ -1,0 +1,5 @@
+The problem is called All Different Same Value. 
+It is about finding an assignment of values to two sets of variables, x and y, such that all values in x are distinct and the number of positions where x and y have the same value is equal to a given variable nsame. 
+The main decision variables are x and y, which are arrays of variables representing the values to be assigned, and nsame, which represents the number of positions where x and y have the same value. 
+The key constraints are that all values in x must be distinct, and the number of positions where x and y have the same value must be equal to nsame. This can be thought of as two separate conditions: the first ensures that x has no repeated values, and the second ensures that the number of matches between x and y is correctly counted. 
+The problem's objective is to find a satisfying assignment of values to x and y, rather than minimizing or maximizing a specific value, as indicated by the "solve satisfy" statement in the model.

@@ -1,0 +1,10 @@
+Set Covering Problem
+The Set Covering Problem is about selecting the minimum number of elements from a given set to cover all elements in a collection of subsets. 
+
+The main decision variables in this problem are the `Hire` array, where `Hire[w]` represents whether worker `w` is hired (1) or not (0), and the `HireS` set, which represents the set of hired workers.
+
+The key constraints in this problem are: 
+- each task must be covered by at least one hired worker, 
+- a worker is hired if and only if they are in the `HireS` set.
+
+The objective of the Set Covering Problem is to minimize the total cost of hiring workers, where each worker has a specific cost associated with them. In this case, the cost is represented by the `Cost` array, and the total cost is calculated as the sum of the costs of all hired workers. The problem aims to find the set of workers that covers all tasks at the minimum cost.

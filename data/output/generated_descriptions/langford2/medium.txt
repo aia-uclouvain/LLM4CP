@@ -1,0 +1,12 @@
+Langford's Number Problem
+The problem is about arranging two sets of positive integers from 1 to k into a sequence such that after the first occurrence of an integer i, each subsequent occurrence of i appears i+1 indices later than the last.
+
+The main decision variables are `position` and `solution`, where `position` is an array representing the positions of the integers in the sequence, and `solution` is an array representing the actual sequence of integers.
+
+The key constraints are: 
+- each integer i appears twice in the sequence, 
+- the second occurrence of i is i+1 positions after the first occurrence, 
+- all positions in the sequence are distinct, and 
+- a symmetry breaking constraint to ensure a unique solution.
+
+The objective of the problem is to find a valid sequence of integers that satisfies all the constraints, there is no explicit minimization or maximization objective. The problem is a feasibility problem, where the goal is to find a solution that meets all the requirements.

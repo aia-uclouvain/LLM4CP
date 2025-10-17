@@ -1,0 +1,5 @@
+name: All Differ From At Least K Positions Problem
+description: The problem is to find an assignment of values to a set of vectors such that all pairs of distinct vectors differ from at least K positions, where K is a given integer. In other words, for any two vectors, there must be at least K positions where the values are different.
+variables: $x_{i,j}, c$ - $x_{i,j}$ represents the value at position j in vector i, and c represents the minimum number of positions where any two vectors must differ.
+constraints: $cp2d(x, y), all\_differ\_from\_at\_least\_k\_pos(c, x), c = 2$ - $cp2d(x, y)$ is a constraint that copies the values from array y to array x, $all\_differ\_from\_at\_least\_k\_pos(c, x)$ is a constraint that enforces all pairs of distinct vectors to differ from at least c positions, and $c = 2$ is a constraint that fixes the value of c to 2.
+objective: The objective of the problem is to satisfy all the constraints, there is no explicit objective function to minimize or maximize. The problem is a satisfaction problem, where the goal is to find an assignment of values to the variables that satisfies all the constraints.

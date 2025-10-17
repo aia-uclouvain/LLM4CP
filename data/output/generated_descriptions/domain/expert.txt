@@ -1,0 +1,5 @@
+name: Domain Constraint Problem
+description: The problem is a demonstration of the domain constraint in constraint programming, where the goal is to enforce all variables in a collection to take a value within a specified interval.
+variables: $x = [x_1, x_2, x_3], low, up$ - These are the decision variables, where $x$ is an array of variables, and $low$ and $up$ are the lower and upper bounds of the interval, respectively. $x$ represents the values to be constrained, while $low$ and $up$ define the allowed range.
+constraints: $x = [2,8,2], low = 1, up = 9, \forall i \in \{1,2,3\} (x_i \geq low \wedge x_i \leq up)$ - These constraints ensure that the values of $x$ are equal to the given array $[2,8,2]$, and that all values in $x$ are within the interval $[low, up]$, which is $[1, 9]$ in this case.
+objective: satisfy - The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the given constraints, demonstrating the domain constraint in action.

@@ -1,0 +1,5 @@
+Social Golfer Problem
+The Social Golfer Problem is about creating a schedule for golfers to play in groups over several weeks. 
+The main variables are the number of golfers, the number of groups, the size of each group, and the number of weeks. 
+The basic restrictions are that each group must have the same number of players, and no two players can be in the same group more than once. 
+The goal is to find a schedule that lasts as many weeks as possible without violating these rules, essentially maximizing the number of weeks the golfers can play together under these conditions.

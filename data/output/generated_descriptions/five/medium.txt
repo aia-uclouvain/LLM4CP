@@ -1,0 +1,8 @@
+The problem is known as the "5 x 5 puzzle". 
+It is about finding a configuration of a 5x5 grid where each cell can either be empty or contain a "move", such that each cell with a move has exactly two neighboring cells (horizontally or vertically) that also contain a move.
+
+The main decision variables are `x[i,j]`, which represent whether a move is made in cell `(i,j)` (1 if a move is made, 0 otherwise), and `d[i,j]`, which represent the number of moves made in the neighboring cells of cell `(i,j)`.
+
+The key constraints are that for each cell, the total number of moves made in its neighboring cells (horizontally and vertically) must be equal to twice the number of moves made in the cell itself plus one. This ensures that each cell with a move has exactly two neighboring cells with moves.
+
+The objective of the problem is to minimize the total number of moves made, which is represented by the variable `moves`. This is achieved by finding a configuration that satisfies the constraints while keeping the number of moves as low as possible.

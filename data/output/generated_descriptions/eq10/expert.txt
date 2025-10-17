@@ -1,0 +1,16 @@
+name: System of Linear Equations
+description: The problem is a system of linear equations with 7 variables, where the goal is to find values for these variables that satisfy all the equations simultaneously. This is a classic problem in mathematics and computer science, and it has numerous applications in fields such as physics, engineering, and economics.
+variables: $X_1, X_2, X_3, X_4, X_5, X_6, X_7$ - These are the decision variables, which are the unknown quantities that we want to find. They are integers between 0 and 10, and they represent the values that satisfy the system of linear equations.
+constraints: 
+$0+98527X_1+34588X_2+5872X_3+59422X_5+65159X_7 = 1547604+30704X_4+29649X_6$
+$0+98957X_2+83634X_3+69966X_4+62038X_5+37164X_6+85413X_7 = 1823553+93989X_1$
+$900032+10949X_1+77761X_2+67052X_5 = 0+80197X_3+61944X_4+92964X_6+44550X_7$
+$0+73947X_1+84391X_3+81310X_5 = 1164380+96253X_2+44247X_4+70582X_6+33054X_7$
+$0+13057X_3+42253X_4+77527X_5+96552X_7 = 1185471+60152X_1+21103X_2+97932X_6$
+$1394152+66920X_1+55679X_4 = 0+64234X_2+65337X_3+45581X_5+67707X_6+98038X_7$
+$0+68550X_1+27886X_2+31716X_3+73597X_4+38835X_7 = 279091+88963X_5+76391X_6$
+$0+76132X_2+71860X_3+22770X_4+68211X_5+78587X_6 = 480923+48224X_1+82817X_7$
+$519878+94198X_2+87234X_3+37498X_4 = 0+71583X_1+25728X_5+25495X_6+70023X_7$
+$361921+78693X_1+38592X_5+38478X_6 = 0+94129X_2+43188X_3+82528X_4+69025X_7$ 
+- These are the constraints, which are the equations that the decision variables must satisfy. They are linear equations, where the left-hand side is a linear combination of the decision variables, and the right-hand side is a constant or a linear combination of other decision variables.
+objective: The objective of the problem is to satisfy all the constraints, i.e., to find values for the decision variables that make all the equations true. There is no explicit objective function to minimize or maximize. The goal is to find a feasible solution that satisfies all the constraints.

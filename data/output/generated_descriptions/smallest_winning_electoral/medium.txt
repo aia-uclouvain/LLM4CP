@@ -1,0 +1,5 @@
+The US Presidential Election Problem
+The US Presidential Election Problem is about finding the smallest area of land that can win a presidential election in the United States. 
+The main decision variables are x, which represents a binary array where x[i] is 1 if the i-th state is included in the winning coalition and 0 otherwise, and y, which represents the number of electoral votes from each state. 
+The key constraints are that the total number of electoral votes from the selected states must be at least 270, which is the minimum required to win the presidential election. 
+The objective of the problem is to minimize the total area of the selected states, which is represented by the variable z. In other words, the goal is to find the smallest area of land that can win the presidential election by selecting the states with the highest population density and the most electoral votes per unit area.

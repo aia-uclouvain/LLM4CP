@@ -1,0 +1,10 @@
+name: De Bruijn Torus Problem
+description: The De Bruijn Torus problem is a combinatorial problem that involves finding a matrix of size rows x cols, where each cell contains a value from 0 to base-1, such that all sub-matrices of size m1 x m2 are distinct when considered as numbers in base 'base'. The problem also includes additional constraints such as requiring all rows and columns to be distinct, and in some cases, requiring all sub-grids to be distinct.
+variables: x[i,j], y[i*cols+j], gcc[i] - x[i,j] represents the value in the cell at position (i,j) in the matrix, y[i*cols+j] represents the number corresponding to the sub-matrix starting at position (i,j), and gcc[i] represents the count of occurrences of number i in the y array. These variables are used to model the matrix and the sub-matrices, and to ensure that all sub-matrices are distinct.
+constraints: 
+- x[i+rows,j] = x[i,j] and x[i,j+cols] = x[i,j] (mirroring of first row and column to simplify calculations)
+- alldifferent constraint on y (or an equivalent constraint using bool2int and sum)
+- global_cardinality constraint on x (to ensure that all values from 0 to base-1 are used)
+- additional constraints such as requiring all rows and columns to be distinct, and in some cases, requiring all sub-grids to be distinct
+- These constraints ensure that the matrix satisfies the conditions of the De Bruijn Torus problem, including the distinctness of sub-matrices and the use of all values from 0 to base-1.
+objective: satisfy - The objective of the problem is to find a matrix that satisfies all the constraints, rather than minimizing or maximizing a specific value.

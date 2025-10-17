@@ -1,0 +1,5 @@
+Nonogram Problem
+The problem is about solving a puzzle called a Nonogram, which is like a picture made up of squares that are either filled in or empty. 
+The main variables are x, which represent the squares in the picture, and row_rules and col_rules, which are the rules for filling in the squares. 
+The basic restrictions are that the filled-in squares must match the given rules for each row and column. 
+The goal is to find a solution that satisfies all the rules and fills in the picture correctly, with 1 representing an empty square and 2 representing a filled-in square.

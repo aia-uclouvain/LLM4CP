@@ -1,0 +1,14 @@
+Rack Configuration Problem
+The Rack Configuration Problem is about finding the optimal way to plug electronic cards into racks with limited connectors and power supply, while minimizing the total cost of the rack models used.
+
+The main decision variables are:
+- The model used for each rack (represented by `m` in the PyCSP3 model and `model` in the Essence model)
+- The number of cards of each type plugged into each rack (represented by `nc` in the PyCSP3 model and `counts` in the Essence model)
+
+The key constraints are:
+- Each rack can only use a certain number of connectors, which cannot be exceeded by the number of cards plugged into it
+- The total power required by the cards plugged into a rack cannot exceed the power supply of the rack model used
+- All cards of each type must be plugged into some rack, with the total number of cards of each type meeting the demand
+- The rack models used must be chosen from a set of available models, each with its own power supply, number of connectors, and price
+
+The objective of the problem is to minimize the total cost of the rack models used, which is the sum of the prices of the models used by all the racks needed to plug all the cards.

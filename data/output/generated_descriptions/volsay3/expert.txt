@@ -1,0 +1,5 @@
+name: Volsay problem
+description: The Volsay problem is a classic problem in operations research and optimization, which involves finding the optimal production levels of different products given certain demands and limited resources. The problem is defined by a set of products, a set of components, and a set of demands for each component in each product. The goal is to maximize the total profit by determining the optimal production levels of each product while not exceeding the available stock of each component.
+variables: $Production_p, z$ where $p \in Products$, $Production_p$ represents the production level of product $p$ and $z$ is the total profit.
+constraints: $\sum_{p \in Products} Demand_{p,c} \cdot Production_p \leq Stock_c$ for all $c \in Components$, which ensures that the total demand for each component across all products does not exceed the available stock of that component.
+objective: Maximize $z = \sum_{p \in Products} Profit_p \cdot Production_p$, which represents the total profit obtained by producing the optimal amounts of each product.

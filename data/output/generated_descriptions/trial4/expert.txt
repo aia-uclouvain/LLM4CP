@@ -1,0 +1,12 @@
+name: The Fourth Trial (Smullyan) puzzle
+
+description: The problem is a classic puzzle where there are two doors, behind one of which is a lady and behind the other is a tiger. The doors have statements on them, and the goal is to figure out which door hides which prize. The statement on each door is either true or false, and the puzzle is to determine the correct assignment of prizes to doors based on the given statements.
+
+variables: $x_{i,j}, t_i$ 
+These are decision variables where $x_{i,j}$ represents whether door $i$ hides prize $j$ (1 if yes, 0 if no), and $t_i$ represents whether the statement on door $i$ is true (1 if yes, 0 if no).
+
+constraints: $\forall i \in D: \sum_{j \in P} x_{i,j} = 1, \forall i \in D: x_{i,i} = t_i, x_{1,1}+x_{2,1}-t_1 \leq 1, x_{1,1}+x_{2,1}-2t_1 \geq 0, t_1 = t_2$
+These constraints ensure that each door hides exactly one prize, the statement on each door is consistent with the prize it hides, the statement on door 1 is true if and only if it hides the lady, and the statements on both doors are the same.
+
+objective: satisfy 
+The objective of the problem is to find a satisfying assignment of prizes to doors that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

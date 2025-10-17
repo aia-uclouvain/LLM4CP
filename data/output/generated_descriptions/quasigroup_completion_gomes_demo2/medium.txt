@@ -1,0 +1,12 @@
+Quasigroup Completion Problem
+The Quasigroup Completion Problem is about filling in missing values in a partially filled table such that each row and column contains each symbol exactly once, and the table satisfies the quasigroup property: for every pair of symbols, there is exactly one position where the row symbol and column symbol combine to give a specific result.
+
+The main decision variables in this problem are the values in the table, represented by the 2D array `x`. Each element `x[i, j]` represents the value to be filled in at row `i` and column `j`.
+
+The key constraints are: 
+- Each row must contain each symbol exactly once.
+- Each column must contain each symbol exactly once.
+- The quasigroup property must be satisfied: for every pair of symbols, there is exactly one position where the row symbol and column symbol combine to give a specific result.
+- The given partial table must be respected, i.e., the already filled-in values must not be changed.
+
+The problem's objective is to find a completion of the partial table that satisfies all the constraints. Since this is a satisfaction problem, there is no explicit objective function being minimized or maximized; the goal is simply to find a feasible solution that fills in the missing values while respecting the given constraints.

@@ -1,0 +1,8 @@
+The Local Art Theft Problem
+The problem is about identifying the perpetrator of an art theft based on statements from six suspects, where exactly four of them told one lie each and all other statements are true.
+The main decision variables are `b`, an array of boolean variables representing whether each suspect is the thief, and `counts`, an array of integer variables representing the number of true statements made by each suspect.
+The key constraints are: 
+- each suspect's statement must be consistent with the truth, 
+- exactly four suspects told one lie each, 
+- the number of true statements made by each suspect is counted correctly.
+The problem's objective is to find a solution that satisfies all the constraints, thereby identifying the perpetrator of the crime.

@@ -1,0 +1,5 @@
+The name of the problem is the Queens problem. 
+This problem is about placing queens on a chessboard so that none of them can attack each other. 
+The main variables are the size of the chessboard (n) and the positions of the queens on the board (x), which means whether a queen is placed in a specific square or not. 
+The basic restrictions or rules of the problem are that each queen must be placed in a unique row, column, and diagonal, and no more than one queen can be in the same row, column, or diagonal. 
+The goal of the problem is to place as many queens as possible on the chessboard while following these rules, and to find the maximum number of queens that can be placed without any of them attacking each other.

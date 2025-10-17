@@ -1,0 +1,17 @@
+**Minimum Consecutive Ones Problem**
+The Minimum Consecutive Ones problem is a classic constraint programming problem that involves finding the minimum number of consecutive ones in a binary sequence that satisfies certain constraints.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `y`: an array of binary variables representing the sequence of ones and zeros.
+- `z`: an integer variable representing the minimum number of consecutive ones.
+- `w`: an array of binary variables representing the weights of the sequence, which are randomly generated.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- The sequence `y` must have a minimum number of consecutive ones, represented by `z`, that is greater than or equal to a given threshold `A`.
+- The sequence `y` must satisfy the constraint that the number of consecutive ones starting from any position `i` is less than or equal to the number of ones in the remaining sequence.
+- The weights `w` are randomly generated using a pseudorandom number generator.
+
+**Objective**
+The objective of this problem is to minimize the minimum number of consecutive ones `z` in the sequence `y` while satisfying the constraints. In other words, the goal is to find the shortest sequence of consecutive ones that meets the given threshold `A` and the consecutive ones constraint.

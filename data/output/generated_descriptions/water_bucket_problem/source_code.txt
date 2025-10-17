@@ -1,0 +1,571 @@
+1) IMPLEMENTATION IN .pl
+
+plan(Start,End,Plan):-
+  generate_plan(Start,End,Plan),
+  df_plan(Plan).
+
+generate_plan(Start,End,[Start,End]).
+generate_plan(Start,End,[Start|Plan]):-
+  generate_plan(_,End,Plan).
+
+df_plan([_]).
+df_plan([X,Y|Plan]):-
+  pour(X,Y),
+  df_plan([Y|Plan]).
+
+pour(A-B-C,A1-B1-C):-
+  A>0,B<5,
+  B1 is min(5,B+A),
+  A1 is A-(B1-B).
+
+pour(A-B-C,A1-B-C1):-
+  A>0,C<3,
+  C1 is min(3,C+A),
+  A1 is A-(C1-C).
+
+pour(A-B-C,A1-0-C):-
+  B>0,
+  A1 is A+B.
+
+pour(A-B-C,A-B1-C1):-
+  B>0,C<3,
+  C1 is min(3,C+B),
+  B1 is B-(C1-C).
+
+pour(A-B-C,A1-B-0):-
+  C>0,
+  A1 is A+C.
+
+pour(A-B-C,A-B1-C1):-
+  C>0,
+  B1 is min(5,B+C),
+  C1 is C-(B1-B).
+
+
+
+
+
+
+2) IMPLEMENTATION IN .mzn
+% 
+% Water buckets problem in Minizinc
+%
+% Inpiration from the OPL code at
+% http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=018
+
+% """
+% Problem description
+% This is a generalization of the CSPLib specification, which is as follows: Given an 8 pint bucket of water, and two empty buckets which can contain 5 and 3 pints respectively, the problem requires to divide the water into two by pouring water between buckets (that is, to end up with 4 pints in the 8 pint bucket, and 4 pints in the 5 pint bucket) in the smallest number of transfers.
+%
+% The generalization consists in making the specification parametric with respect to the start and goal configurations, which are now inputs to the problem.
+%
+% Problem input
+%
+% * Function start, assigning an initial amount of water to each bucket
+% * Function goal, assigning the goal amount of water to each bucket 
+%
+% Search space
+% The set of all possibile sequences of configurations (states), where a configuration is a triple encoding the amount of water in each bucket at a given time-step
+%
+% Constraints
+%
+% * C1: At beginning, buckets contain the amount of water specified by function start
+% * C2: At the end, buckets contain the amount of water specified by function goal
+% * C3: The configuration at each step differs from that of the next one in that the amount of water of exactly 2 buckets changes (that in the others remain the same)
+% * C4: The overall amount of water is the same at each time step
+% * C5: After each transition (involving buckets b1 and b2), either the source bucket becomes empty, or the target becomes full
+% """
+%
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc/
+%
+
+% Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+int: nb_buckets = 3;
+int: max_step = 10; % 8 for satisfy
+set of int: buckets = 1..nb_buckets;
+set of int: steps = 1..max_step;
+array[buckets] of int: capacity = [8,5,3];
+array[buckets] of int: start = [8,0,0];
+array[buckets] of int: goal = [4,4,0];
+
+% Search space: The set of all possibile sequences of configurations (states), 
+% where a configuration is a triple encoding the amount of water in each 
+% bucket at a given time-step
+array[steps, buckets] of var int: state;
+var 1..max_step: goal_step;
+
+% Objective function
+solve minimize goal_step;
+% solve :: int_search( [ state[i,j] | i in steps, j in buckets ] , "first_fail", "indomain", "complete")  minimize goal_step;
+
+constraint
+%   goal_step <= 8 % for solve satisfy
+%   /\
+   % assertions
+   forall(b in buckets) (
+      (start[b] <= capacity[b]) /\ (goal[b] <= capacity[b])
+   )
+   /\
+   sum(b in buckets)(start[b]) = sum(b in buckets)(goal[b])
+   /\
+   forall(s in steps, b in buckets) (
+      state[s,b] >= 0 /\
+      state[s,b] <= capacity[b]
+   )
+   /\
+   forall(b in buckets) (
+      % C1: At beginning, buckets contain the amount of water specified by function start
+      state[1,b]=start[b]
+      /\
+      % C2: At the end, buckets contain the amount of water specified by function goal
+      state[goal_step,b] = goal[b]
+   )
+   /\
+   forall(step in 1..max_step-1) (
+      % C3: The configuration at each step differs from that of the next one in that the amount of
+      % water of exactly 2 buckets changes (that in the others remain the same)
+      sum(b in buckets)( bool2int(state[step,b] != state[step+1, b])) = 2
+      /\
+      % C4: The overall amount of water is the same at each time step
+      sum(b in buckets)(state[step,b]) = sum(b in buckets)(state[step+1,b])
+      /\
+
+      % C5: After each transition (involving buckets b1 and b2), either the source
+      % bucket becomes empty, or the target becomes full
+      forall(b1, b2 in buckets where b1 != b2) (
+         ((state[step, b1] != state[step+1, b1]) /\ (state[step, b2] != state[step+1, b2])) ->
+            (state[step+1,b1] = 0 \/ state[step+1,b1] = capacity[b1] \/
+             state[step+1,b2] = 0 \/ state[step+1,b2] = capacity[b2])
+     )
+   )
+;
+
+
+output [
+  if s = 1 /\ b = 1 then 
+    "goal_step: " ++ show(goal_step)
+  else "" endif ++
+  if b = 1 then "\n" else " " endif ++
+  show(state[s, b])
+  | s in steps, b in buckets
+
+] 
+++ ["\n"];
+
+
+
+
+3) IMPLEMENTATION IN .py
+"""
+PyCSP3 Model (see pycsp.org)
+
+Examples:
+  python WaterBucket.py
+  python WaterBucket.py -data=[8,5,3,4,4,0,8]
+"""
+
+from pycsp3 import *
+
+# ci for capacities of the three buckets
+# gi for goal (which quantities must be present in the three buckets after all transfers)
+# h for horizon (maximal number of rounds/transfers)
+c1, c2, c3, g1, g2, g3, h = data or (8, 5, 3, 4, 4, 0, 8)
+
+assert c1 >= c2 >= c3 > 0, "Bucket capacities must be in decreasing order"
+assert g1 + g2 + g3 == c1, "water from bucket 1 must be split into the three buckets to reach the goal"
+
+
+def tables():
+    def nearby_states(a1, a2, a3, b1, b2, b3):
+        if (a1, a2, a3) == (g1, g2, g3):
+            return (b1, b2, b3) == (g1, g2, g3)  # when the goal is reached, buckets are kept as they are
+        if a1 != b1 and a2 != b2 and a3 != b3:  # not a possible transition if three buckets are impacted
+            return False
+        if a1 != b1 and a2 != b2:
+            return b1 in {0, c1} or b2 in {0, c2}
+        if a1 != b1 and a3 != b3:
+            return b1 in {0, c1} or b3 in {0, c3}
+        if a2 != b2 and a3 != b3:
+            return b2 in {0, c2} or b3 in {0, c3}
+        return False  # not related in other cases
+
+    states = {(i, j, k) for i in range(c1 + 1) for j in range(c2 + 1) for k in range(c3 + 1) if i + j + k == c1}
+    table_tr = {(*state1, *state2) for state1 in states for state2 in states if nearby_states(*state1, *state2)}
+    table_hr = {(t,) + (ANY,) * (t * 3) + (g1, g2, g3) * (h - t) for t in range(h)}
+    return table_tr, table_hr
+
+
+table_transitions, table_horizon = tables()
+
+# x[t][i] is the volume of water in bucket i at time (round) t
+x = VarArray(size=[h, 3], dom=lambda t, i: range(c1 + 1) if i == 0 else range(c2 + 1) if i == 1 else range(c3 + 1))
+
+# z is the number of transfers of water in order to reach the goal
+z = Var(dom=range(h))
+
+satisfy(
+    # Initially, at round 0, the bucket 1 is full of water while the other buckets are empty
+    x[0] == (c1, 0, 0),
+
+    # only some transfers are possible between two successive rounds
+    [(x[t] + x[t + 1]) in table_transitions for t in range(h - 1)],  # or (*x[t], *x[t + 1])
+
+    # computing the number of transfers
+    (z, *flatten(x)) in table_horizon
+)
+
+minimize(
+    # minimizing the number of transfers
+    z
+)
+
+
+
+4) IMPLEMENTATION IN .co
+/*
+
+  Water buckets problem in Comet.
+
+  From http://www.dis.uniroma1.it/~tmancini/index.php?currItem=research.publications.webappendices.csplib2x.problemDetails&problemid=018
+  """
+  Problem description
+  This is a generalization of the CSPLib specification, which is as follows: 
+  Given an 8 pint bucket of water, and two empty buckets which can contain 
+  5 and 3 pints respectively, the problem requires to divide the water into 
+  two by pouring water between buckets (that is, to end up with 4 pints in 
+  the 8 pint bucket, and 4 pints in the 5 pint bucket) in the smallest number 
+  of transfers.
+
+  The generalization consists in making the specification parametric with 
+  respect to the start and goal configurations, which are now inputs to the problem.
+
+  Problem input
+
+    * Function start, assigning an initial amount of water to each bucket
+    * Function goal, assigning the goal amount of water to each bucket 
+
+  Search space
+  The set of all possibile sequences of configurations (states), where a 
+  configuration is a triple encoding the amount of water in each bucket at 
+  a given time-step
+
+  Constraints
+
+    * C1: At beginning, buckets contain the amount of water specified by 
+          function start
+    * C2: At the end, buckets contain the amount of water specified by 
+          function goal
+    * C3: The configuration at each step differs from that of the next one 
+          in that the amount of water of exactly 2 buckets changes (that in 
+          the others remain the same)
+    * C4: The overall amount of water is the same at each time step
+    * C5: After each transition (involving buckets b1 and b2), either the 
+          source bucket becomes empty, or the target becomes full
+  """
+
+  Translation from the OPL code at
+  http://www.dis.uniroma1.it/~tmancini/index.php?problemid=018&solver=OPL&spec=BASE&currItem=research.publications.webappendices.csplib2x.problemDetails#listing
+
+
+  Compare with the MIP model http://www.hakank.org/3_jugs.co
+  and the MiniZinc version of this model 
+    http://www.hakank.org/minizinc/water_buckets1.mzn
+  
+
+  This Comet model was created by Hakan Kjellerstrand (hakank@gmail.com)
+  Also, see my Comet page: http://www.hakank.org/comet/
+
+ */
+
+// Licenced under CC-BY-4.0 : http://creativecommons.org/licenses/by/4.0/
+
+import cotfd;
+
+int t0 = System.getCPUTime();
+
+int nb_buckets = 3;
+int max_step = 10;
+range buckets = 1..nb_buckets;
+range steps = 1..max_step;  
+
+int capacity[buckets] = [8,5,3];
+int start[buckets]= [8,0,0]; 
+int goal[buckets]= [4,4,0];
+
+
+Solver<CP> m();
+
+// Assertions
+forall(b in buckets) {
+  assert(start[b] <= capacity[b] &&
+         goal[b] <= capacity[b]);
+}
+assert( (sum(b in buckets)(start[b]) == sum(b in buckets)(goal[b])));
+
+
+
+// Search space: The set of all possibile sequences of configurations 
+// (states), where a configuration is a triple encoding the amount of 
+// water in each bucket at a given time-step
+var<CP>{int} state[s in steps,b in buckets](m, 0..capacity[b]);
+var<CP>{int} goal_step(m, 1..max_step); // Objective function
+
+ // For the AUX constraint, see below.
+var<CP>{bool} change[1..max_step-1, buckets](m);
+
+Integer num_solutions(0);
+
+minimize<m> goal_step subject to {
+
+  forall(b in buckets) {
+    // C1: At beginning, buckets contain the amount of water specified by 
+    //     function start
+    m.post(state[1,b]==start[b]);
+
+
+    // C2: At the end, buckets contain the amount of water specified 
+    //     by function goal
+
+    m.post(state[goal_step,b] == goal[b]);
+
+    // hakank: This works as well
+    /*
+    forall(i in 1..max_step)
+      m.post(i == goal_step => state[i, b] == goal[b]);
+    */
+  }
+
+ 
+  forall(step in 1..max_step-1) {
+    // C3: The configuration at each step differs from that of the next 
+    //     one in that the amount of water of exactly 2 buckets changes 
+    //     (that in the others remain the same)
+    m.post(sum(b in buckets)(state[step,b] != state[step+1, b]) == 2);
+    
+    // C4: The overall amount of water is the same at each time step
+    m.post(sum(b in buckets)(state[step,b]) == sum(b in buckets)(state[step+1,b]));
+    
+    // C5: After each transition (involving buckets b1 and b2), 
+    //     either the source bucket becomes empty, or the target becomes full
+    forall(b1 in buckets, b2 in buckets : b1 != b2) {
+      m.post(
+             (
+              (state[step, b1] != state[step+1, b1]) && 
+              (state[step, b2] != state[step+1, b2])
+              ) 
+             =>
+             (
+              state[step+1,b1] == 0 || 
+              state[step+1,b1] == capacity[b1] ||
+              state[step+1,b2] == 0 || 
+              state[step+1,b2] == capacity[b2]
+              )
+             );
+    }
+
+  }
+
+  // From the second version
+  // http://www.dis.uniroma1.it/~tmancini/index.php?problemid=018&solver=OPL&spec=AUX&currItem=research.publications.webappendices.csplib2x.problemDetails#listing
+  // AUX: Addition of auxiliary predicates
+  // Auxiliary predicate stores, for each time step, which buckets change 
+  // their amount of water wrt the next one
+  forall(step in 1..max_step-1, b in buckets) {
+     m.post(change[step,b] == (state[step,b] != state[step+1,b]));
+   }
+
+  
+
+} using {
+      
+  label(m);
+
+  num_solutions := num_solutions + 1;
+
+  cout << "goal_step: " << goal_step << endl;
+  forall(s in steps) {
+    if (s <= goal_step) {
+      forall(b in buckets) {
+        cout << state[s,b] << " ";
+      }
+      cout << endl;
+    }
+  }
+  cout << endl;
+    
+
+}
+
+cout << "\nnum_solutions: " << num_solutions << endl;
+    
+int t1 = System.getCPUTime();
+cout << "time:      " << (t1-t0) << endl;
+cout << "#choices = " << m.getNChoice() << endl;
+cout << "#fail    = " << m.getNFail() << endl;
+cout << "#propag  = " << m.getNPropag() << endl;
+
+
+
+5) IMPLEMENTATION IN .essence
+language Essence 1.3
+
+$ You are given an 8 pint bucket of water, and
+$ two empty buckets which can contain 5 and 3 pints respectively.
+$ You are required to divide the water into two by pouring water between buckets
+$ (that is, to end up with 4 pints in the 8 pint bucket, and
+$                          4 pints in the 5 pint bucket).
+
+given buckets : int
+
+letting Buckets be domain int(1..buckets)
+
+given initialState : function int --> int
+given finalState : function int --> int
+given capacity : function int --> int
+
+letting maxCapacity be max([capacity(i) | i : Buckets])
+
+given HORIZON : int
+
+
+find actions : sequence (maxSize HORIZON) of (Buckets, Buckets, int(1..maxCapacity))
+find states  : sequence (maxSize HORIZON) of function (total) Buckets --> int(0..maxCapacity)
+
+$ action i transforms state i to state i+1
+such that |actions| = |states| - 1
+
+$ cannot pour from the a bucket to itself
+such that forAll (i, (bFrom, bTo, amount)) in actions . bFrom != bTo
+
+$ can only pour if there is enough water
+such that forAll (i, (bFrom, bTo, amount)) in actions . amount <= states(i)(bFrom)
+
+$ bucket capacity
+such that forAll (i, f) in states . forAll b : Buckets . f(b) <= capacity(b)
+
+$ preservation of water
+such that forAll (i, (bFrom, bTo, amount)) in actions . states(i)(bFrom) - amount = states(i+1)(bFrom)
+such that forAll (i, (bFrom, bTo, amount)) in actions . states(i)(bTo) + amount = states(i+1)(bTo)
+such that forAll (i, (bFrom, bTo, amount)) in actions .
+            forAll b : Buckets . !(b in {bFrom, bTo}) -> states(i)(b) = states(i+1)(b)
+
+$ after an action, either the source bucket is empty
+$                      or the target bucket is full
+such that forAll (i, (bFrom, bTo, amount)) in actions . states(i+1)(bFrom) = 0 \/
+                                                        states(i+1)(bTo) = capacity(bTo)
+
+$ initial and final state
+such that states(1) = initialState
+such that states(|states|) = finalState
+
+$ minimise the number of actions
+find nbActions : int(0..HORIZON)
+such that nbActions = |actions|
+minimising nbActions
+
+
+
+6) IMPLEMENTATION IN .mzn
+% 
+% MiniZinc model for the water buckets problem
+%
+% Model created by Hakan Kjellerstrand, hakank@gmail.com
+% See also my MiniZinc page: http://www.hakank.org/minizinc
+
+%
+% Solution should be
+%   x: [1, 9, 10, 11, 12, 13, 14, 15]
+%   8,0,0 -> 3,5,0
+%   3,5,0 -> 3,2,3
+%   3,2,3 -> 6,2,0
+%   6,2,0 -> 6,0,2
+%   6,0,2 -> 1,5,2
+%   1,5,2 -> 1,4,3
+%   1,4,3 -> 4,4,0
+% 
+include "globals.mzn";
+
+int: n_states = 15;
+int: input_max = 15;
+int: initial_state = 1;
+set of int: accepting_states = {15};
+
+
+% distance
+array[1..n_states, 1..n_states] of 0..input_max: transition_fn =
+array2d(1..n_states, 1..n_states,
+[%1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+  0, 2, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, % 1
+  0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % 2 
+  0, 0, 0, 4, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, % 3
+  0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, % 4
+  0, 0, 0, 0, 0, 6, 0, 0, 9, 0, 0, 0, 0, 0, 0, % 5
+  0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, % 6
+  0, 0, 0, 0, 0, 0, 0, 8, 9, 0, 0, 0, 0, 0, 0, % 7
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,15, % 8 
+  0, 0, 0, 0, 0, 0, 0, 0, 0,10, 0, 0, 0, 0, 0, % 9
+  0, 2, 0, 0, 0, 0, 0, 0, 0, 0,11, 0, 0, 0, 0, %10
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,12, 0, 0, 0, %11 
+  0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,13, 0, 0, %12
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,14, 0, %13 
+  0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,15, %14
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,15, %15
+]);
+
+
+array[1..n_states] of string:  nodes = [
+        "8,0,0", % 1 start
+        "5,0,3", % 2
+        "5,3,0", % 3 
+        "2,3,3", % 4 
+        "2,5,1", % 5
+        "7,0,1", % 6
+        "7,1,0", % 7
+        "4,1,3", % 8
+        "3,5,0", % 9
+        "3,2,3", % 10
+        "6,2,0", % 11
+        "6,0,2", % 12
+        "1,5,2", % 13
+        "1,4,3", % 14
+        "4,4,0"  % 15 goal
+        ];
+
+
+array[1..input_max] of var 0..input_max: x;
+var 0..input_max: cost;
+
+% solve satisfy;
+solve minimize cost;
+
+constraint
+regular(x, n_states, input_max, transition_fn,
+        initial_state, accepting_states)
+;
+
+constraint
+   cost = 2+sum([bool2int(x[i-1] != x[i] ) | i in 2..input_max])
+;
+
+output 
+["cost: " ++ show(cost) ++ "\n"] ++
+[show(initial_state) ++ " "] ++
+[
+  if fix(x[i]) < input_max then show(x[i]) ++ " " else " " endif
+  | i in 1..input_max where fix(x[i]) < input_max
+] ++ 
+[show(input_max) ++ "\n"] ++ 
+["\n\n"] ++
+
+[show(nodes[initial_state]) ++ "\n"] ++
+[
+  if fix(x[i]) < input_max then show(nodes[fix(x[i])]) ++ "\n" else " " endif
+  | i in 1..input_max where fix(x[i]) < input_max
+] ++ 
+[show(nodes[input_max]) ++ "\n"] ++ 
+["\n"];
+
+
+

@@ -1,0 +1,9 @@
+The Five Statements Problem 
+is a classic logic puzzle. 
+The problem presents five statements about their own truth values, and the task is to determine which statement is true. 
+
+The main decision variables in this problem are represented by the array `x`, where `x[i]` is a binary variable (0 or 1) that indicates whether the `i-th` statement is true (1) or false (0). 
+
+The key constraints in this problem can be described as follows: each statement `i` claims that exactly `i` statements are false, and this claim is represented by the constraint that the number of false statements (i.e., the sum of statements that are 0) is equal to `i` if and only if statement `i` is true. Additionally, there is a constraint that at least one statement must be true, which rules out the possibility that all statements are false.
+
+The objective of this problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, which will reveal the truth values of the five statements. In other words, the goal is to determine which statement is true and which ones are false, given the constraints provided by the statements themselves.

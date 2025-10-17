@@ -1,0 +1,16 @@
+Set Partition Problem
+The Set Partition Problem is a classic problem in computer science and operations research that involves dividing a set of numbers into two subsets with equal sums and equal sums of squares.
+
+Decision Variables
+The main decision variables in this problem are the sets A and B, which are subsets of the original set S = {1, 2, ..., n}. The decision variables can be represented as binary vectors, where each element in the vector corresponds to a number in the set S, and the value of the element indicates whether the number is in set A or set B.
+
+Constraints
+The constraints in this problem can be described in plain language as follows:
+- The union of sets A and B must be equal to the original set S.
+- Sets A and B must have the same cardinality (i.e., the same number of elements).
+- The sum of the elements in set A must be equal to the sum of the elements in set B.
+- The sum of the squares of the elements in set A must be equal to the sum of the squares of the elements in set B.
+- Each number in the original set S must be in exactly one of the subsets A or B.
+
+Objective
+The objective of the Set Partition Problem is to find two subsets A and B that satisfy all the constraints. There is no explicit objective function to minimize or maximize; instead, the goal is to find a feasible solution that meets all the constraints.

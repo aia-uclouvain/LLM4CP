@@ -1,0 +1,5 @@
+Zebra Ice Cream Problem
+The problem is about figuring out the favorite ice cream flavors of four boys who are standing side by side. 
+The main variables are the boys' first names, last names, shirt colors, favorite ice cream flavors, ages, and positions in line. 
+The basic restrictions are that each boy has a unique first name, last name, shirt color, favorite ice cream flavor, age, and position in line. 
+The goal is to find out who likes mint ice cream by satisfying all the given conditions, such as the oldest boy wearing a blue shirt, Nicholas standing next to the boy who likes strawberry ice cream, and other rules.

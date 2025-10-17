@@ -1,0 +1,15 @@
+Post Office Problem
+The Post Office Problem is about determining the minimum number of full-time employees required to meet the daily workforce demands of a post office, given certain constraints on employee work schedules.
+The main decision variables are: 
+- x, representing the number of workers that started on each day of the week
+- x_worked, representing the number of workers that worked on each day of the week
+- excess, representing the number of extra workers per day
+- days_to_work, representing the number of consecutive days each full-time employee must work
+- tot_days, representing the total number of work days
+- num_workers, representing the total number of workers
+- z, representing the objective function value to be minimized
+The key constraints are: 
+- Each full-time employee must work for a certain number of consecutive days (5 days in the problem statement) before receiving two days off
+- The total number of workers working on each day must meet or exceed the daily workforce demand
+- The number of extra workers per day is calculated as the difference between the total number of workers working and the daily workforce demand
+The objective of the problem is to minimize the total number of workers (num_workers) that must be hired to meet the daily workforce demands, which is equivalent to minimizing the total number of work days (z).

@@ -1,0 +1,5 @@
+Killer Sudoku
+Killer Sudoku is a puzzle game that combines elements of Sudoku and another puzzle called Kakuro. The goal is to fill a 9x9 grid with numbers from 1 to 9, following certain rules. 
+The main variables are the numbers in each cell of the grid, which can be any number from 1 to 9. 
+The basic restrictions are: each row, column, and 3x3 block can only have each number once, and each "cage" (a group of cells) must add up to a certain number. 
+The goal is to find a solution that satisfies all these rules, filling in the entire grid correctly.

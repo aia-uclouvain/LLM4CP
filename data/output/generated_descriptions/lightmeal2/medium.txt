@@ -1,0 +1,13 @@
+The Lightmeal Problem
+The Lightmeal problem is a classic constraint programming problem that involves selecting a combination of dishes to form a meal with a total calorific value not exceeding a certain limit.
+
+The main decision variables in this problem are the array of variables `x`, where each `x[i]` represents whether the `i-th` dish is selected (1) or not (0). The dishes are categorized into appetizers, main meals (either meat or fish), and desserts, each with its own calorific value.
+
+The key constraints in this problem can be described as follows: 
+- Exactly one appetizer must be chosen.
+- Either one main meal (meat or fish) must be chosen, but not both.
+- Exactly one dessert must be chosen.
+- The total number of dishes selected must be exactly three (one appetizer, one main meal, and one dessert).
+- The total calorific value of the selected dishes must not exceed the maximum allowed limit of 10 calories.
+
+The objective of the Lightmeal problem is to find all possible combinations of dishes that satisfy the given constraints, with the total calorific value of the meal being as low as possible, but not exceeding the maximum limit of 10 calories. The problem does not have a single optimal solution but rather multiple feasible solutions, each representing a different combination of dishes that meet the specified criteria.

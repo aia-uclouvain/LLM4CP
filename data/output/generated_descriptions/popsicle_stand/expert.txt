@@ -1,0 +1,15 @@
+name: Popsicle Stand Staffing Problem
+
+description: The problem is about finding the minimal weekly staffing cost for a Popsicle stand while meeting the required staffing levels. The stand requires a certain number of employees each day, and there are two types of employees: full-time and part-time. Full-time employees work five consecutive days and earn $100 per day, while part-time employees work two consecutive days and earn $150 per day.
+
+variables: $full\_time_i, part\_time_i, all\_f_i, all\_p_i, all_i, z$ 
+These variables represent the number of full-time employees starting on day $i$, the number of part-time employees starting on day $i$, the total number of full-time employees working on day $i$, the total number of part-time employees working on day $i$, the total number of employees working on day $i$, and the total weekly staffing cost, respectively.
+
+constraints: $\forall i \in \{0, \ldots, 6\}: all\_f_i = \sum_{j=i-4}^{i} full\_time_{(7+j) \mod 7}$, 
+$\forall i \in \{0, \ldots, 6\}: all\_p_i = \sum_{j=i-1}^{i} part\_time_{(7+j) \mod 7}$, 
+$\forall i \in \{0, \ldots, 6\}: all_i = all\_f_i + all\_p_i$, 
+$\forall i \in \{0, \ldots, 6\}: all_i \geq demand_i$ 
+These constraints ensure that the number of full-time and part-time employees working on each day is calculated correctly, that the total number of employees working on each day is the sum of full-time and part-time employees, and that the total number of employees working on each day meets the required demand.
+
+objective: minimize $z = \sum_{i=0}^{6} (5 \cdot full\_time_i \cdot 100 + 2 \cdot part\_time_i \cdot 150)$ 
+The objective is to minimize the total weekly staffing cost, which is the sum of the costs of all full-time and part-time employees.

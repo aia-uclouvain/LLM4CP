@@ -1,0 +1,7 @@
+Crossword Puzzle Problem
+The Crossword Puzzle Problem is a classic constraint programming problem where the goal is to fill in a crossword puzzle grid with a set of given words.
+The main decision variables in this problem are the array E, where E[i] represents the word that will be placed at position i in the crossword puzzle grid. The words are represented as arrays of integers, where each integer corresponds to a letter of the alphabet (a=1, b=2, ..., z=26).
+The key constraints in this problem are: 
+- The overlapping positions in the crossword puzzle grid must have the same letter. This is enforced by the constraint that checks all overlapping positions and ensures that the letters at these positions are the same.
+- Each word can only be used once in the crossword puzzle grid. This is enforced by the all_different constraint on the array E.
+The objective of the Crossword Puzzle Problem is to find a solution that satisfies all the constraints, i.e., to fill in the crossword puzzle grid with the given words such that all overlapping positions have the same letter and each word is used only once. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that satisfies all the constraints.

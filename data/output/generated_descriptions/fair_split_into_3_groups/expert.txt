@@ -1,0 +1,5 @@
+name: 3-Partition Problem
+description: The 3-Partition Problem is a classic problem in computer science and operations research that involves dividing a set of items with distinct values into three groups such that the sum of the values in each group is as balanced as possible, with the goal of minimizing the maximum sum of any group.
+variables: $x_{1..n} \in \{1, 2, 3\}, sums_{1..k} \in \mathbb{Z}, max\_sum \in \mathbb{Z}$, where $x_i$ represents the group assignment for item $i$, $sums_j$ represents the sum of the values of the items assigned to group $j$, and $max\_sum$ represents the maximum sum of any group.
+constraints: $\forall i \in \{1, 2, 3\}: sums_i = \sum_{j=1}^n (x_j = i) \cdot a_j, \sum_{i=1}^k sums_i = \sum_{j=1}^n a_j, sums_1 \leq sums_2 \leq sums_3$, where the first constraint ensures that the sum of the values of the items assigned to each group is calculated correctly, the second constraint ensures that the total sum of the values of all items is preserved, and the third constraint ensures that the sums of the groups are non-decreasing.
+objective: Minimize $max\_sum$

@@ -1,0 +1,5 @@
+The name of the problem is the Money Change Problem. 
+The problem is about finding the number of coins of different denominations that add up to a given amount, with the option to prioritize certain coins over others. 
+The main decision variables are the array `x`, where `x[i]` represents the number of coins of denomination `coins[i]` used to make the change. 
+The key constraints are that the number of coins used must be non-negative and the total value of the coins used must equal the amount to be changed. 
+The problem's objective can be either to find a feasible solution, minimize the total number of coins used, or maximize a priority function based on the coins used, where higher priority coins are preferred.

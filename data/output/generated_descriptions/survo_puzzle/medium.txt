@@ -1,0 +1,15 @@
+**Survo Puzzle**
+The Survo puzzle is a logic puzzle where the goal is to fill an m x n table with integers from 1 to m*n, such that each number appears only once, and the sum of numbers in each row and column matches given values.
+
+**Decision Variables**
+The main decision variables in the Survo puzzle are the values of the table cells, represented by the array `x`. Each `x[i, j]` represents the value to be placed in the cell at row `i` and column `j`.
+
+**Constraints**
+The key constraints in the Survo puzzle are:
+* Each number from 1 to m*n appears only once in the table (all_different constraint).
+* The sum of numbers in each row matches the given row sum (rowsums constraint).
+* The sum of numbers in each column matches the given column sum (colsums constraint).
+* Any given values in the table (represented by the matrix) must be respected.
+
+**Objective**
+The objective of the Survo puzzle is to find a solution that satisfies all the constraints, i.e., to fill the table with numbers from 1 to m*n such that each number appears only once, and the row and column sums match the given values. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that meets all the constraints.

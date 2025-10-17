@@ -1,0 +1,5 @@
+The name of the problem is the Decreasing Sequence problem. 
+This problem is about finding a sequence of numbers that are in decreasing order, meaning each number is less than or equal to the previous one. 
+The main decision variables are the elements of the array `x`, which represent the sequence of numbers to be found. 
+The key constraints are that the sequence must be decreasing, meaning each element must be less than or equal to the previous one, and the sequence must match a given example sequence. 
+The problem's objective is to find a sequence that satisfies these constraints, rather than minimizing or maximizing a specific value, as the goal is to demonstrate the use of the decreasing constraint in MiniZinc.

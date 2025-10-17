@@ -1,0 +1,18 @@
+**Superpermutation Problem**
+The Superpermutation problem is a classic constraint programming problem that involves finding the shortest string that contains each permutation of a given set of symbols as a substring.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables representing the symbols in the superpermutation string, where each element `x[i]` is a symbol from the set of `n` symbols.
+- `ps`: an array of variables representing the starting positions of each permutation in the superpermutation string, where each element `ps[perm]` is the starting position of the `perm`-th permutation.
+- `z`: a variable representing the maximum starting position of all permutations, which is used to minimize the length of the superpermutation string.
+
+**Constraints**
+The key constraints in this problem can be described in plain language as follows:
+- Each permutation must appear as a substring in the superpermutation string, starting at the position specified by `ps[perm]`.
+- All starting positions `ps` must be distinct to avoid duplicate permutations.
+- The first `n` symbols in the superpermutation string must be the `n` symbols themselves, which serves as a symmetry-breaking constraint to reduce the search space.
+- The superpermutation string must be a palindrome, meaning it reads the same backward as forward, although this constraint is experimental and not always enforced.
+
+**Objective**
+The objective of the Superpermutation problem is to minimize the length of the superpermutation string, which is achieved by minimizing the variable `z`. The length of the superpermutation string is calculated as `z + n - 1`, where `n` is the number of symbols. By minimizing `z`, we can find the shortest possible superpermutation string that contains all permutations of the given symbols.

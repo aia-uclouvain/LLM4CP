@@ -1,0 +1,13 @@
+Rogo problem
+The Rogo problem is a classic constraint programming problem that involves finding a loop through a grid of fixed length that contains as many reward points as possible. The grid consists of cells with different point values, and the goal is to maximize the total points collected by traversing the grid in a loop.
+
+The main decision variables in the Rogo problem are the coordinates of the cells in the path, represented by the arrays `x` and `y`, where `x[i]` and `y[i]` are the row and column indices of the `i-th` cell in the path. The `points` array represents the points collected at each cell in the path.
+
+The key constraints in the Rogo problem can be described in plain language as follows: 
+- The path must be a loop, meaning that the first and last cells in the path must be adjacent.
+- Each cell in the path must be unique, meaning that no cell can be visited more than once.
+- The path must only move horizontally or vertically, and not diagonally.
+- The path must not visit any black cells, which are cells with a point value of -1.
+- The total points collected in the path must not exceed the best known value.
+
+The objective of the Rogo problem is to maximize the total points collected in the path, represented by the variable `sum_points`. The problem is solved by finding the path that collects the most points while satisfying all the constraints.

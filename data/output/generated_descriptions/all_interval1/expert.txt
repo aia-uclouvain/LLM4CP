@@ -1,0 +1,5 @@
+name: All Interval Problem
+description: The All Interval Problem is a classic problem in constraint programming that involves finding a series of pitch classes where each class occurs exactly once and the musical intervals between neighboring notes cover the full set of intervals from the minor second to the major seventh. The problem is generalized to a set of numbers from 0 to n-1, where n is a given positive integer.
+variables: $s = (s_1, ..., s_n)$, where $s$ is a permutation of the set $\{0, 1, ..., n-1\}$ and each $s_i$ represents a pitch class in the series.
+constraints: $s_i \neq s_j \forall i \neq j$ and $|s_{i+1} - s_i| \neq |s_{j+1} - s_j| \forall i \neq j$, where the first constraint ensures that each pitch class occurs exactly once and the second constraint ensures that the differences between neighboring notes are all different.
+objective: The objective of the problem is to find a feasible solution, i.e., to satisfy all the constraints, as there is no explicit objective function to minimize or maximize.

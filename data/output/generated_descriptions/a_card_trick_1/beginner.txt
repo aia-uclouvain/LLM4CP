@@ -1,0 +1,13 @@
+Card Trick Problem
+The problem is about arranging a deck of 52 playing cards into a rectangle with four rows and 13 columns in such a way that certain conditions are met.
+
+The main variables are the suits and values of the cards. The suits are hearts, spades, clubs, and diamonds, and the values are Ace through King. 
+
+The basic restrictions or rules of the problem are: 
+- Each suit must appear once in each column.
+- Each value must appear once in each row.
+- No two cards with the same value can be in the same column.
+- Each row must have four cards of one suit and three cards of each of the other suits.
+- Any two columns must share exactly one value, and any two values must appear together in exactly one column.
+
+The goal of the problem is to find an arrangement of the cards that satisfies all these conditions.

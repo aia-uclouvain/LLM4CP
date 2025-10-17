@@ -1,0 +1,14 @@
+**Photo Problem**
+The Photo problem is a classic constraint programming problem where a group of people want to align in a row for a photo, and each person has preferences about who they want to stand next to.
+
+**Decision Variables**
+The main decision variables in this problem are the `positions` array, which represents the position of each person in the row, and the `z` variable, which represents the total number of satisfied preferences.
+
+**Constraints**
+The key constraints in this problem are:
+* Each person must be assigned a unique position in the row (`all_different(positions)`).
+* The `z` variable is calculated by summing up the number of satisfied preferences, where a preference is satisfied if the two people involved are standing next to each other (`nextTo(positions[i], positions[j])`).
+* The `nextTo` predicate checks if two people are standing next to each other by verifying if the absolute difference between their positions is 1.
+
+**Objective**
+The objective of the Photo problem is to maximize the number of satisfied preferences, which is represented by the `z` variable. In other words, the goal is to find an alignment of people that maximizes the number of people who are standing next to their preferred neighbors.

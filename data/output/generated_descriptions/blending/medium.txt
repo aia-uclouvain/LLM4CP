@@ -1,0 +1,16 @@
+Blending Problem
+The Blending Problem is a classic constraint programming problem that involves finding the optimal mix of raw materials, scrap metals, and ingots to produce a desired alloy while minimizing costs.
+
+The main decision variables in this problem are:
+- `p`: the amount of pure metal used
+- `r`: the amount of raw material used
+- `s`: the amount of scrap metal used
+- `i`: the amount of ingot used
+- `metal`: the amount of each metal in the final alloy
+
+The key constraints in this problem are:
+- The amount of each metal in the final alloy must be within a specified range (defined by `Low` and `Up`)
+- The total amount of alloy produced must equal a specified target (`Alloy`)
+- The amount of each metal in the final alloy is determined by the amounts of pure metal, raw material, scrap metal, and ingot used, as well as the percentages of each metal in these inputs (defined by `PercRaw`, `PercScrap`, and `PercIngo`)
+
+The objective of the Blending Problem is to minimize the total cost (`z`) of producing the desired alloy, which is calculated as the sum of the costs of the pure metals, raw materials, scrap metals, and ingots used. The costs are defined by `CostMetal`, `CostRaw`, `CostScrap`, and `CostIngo`.

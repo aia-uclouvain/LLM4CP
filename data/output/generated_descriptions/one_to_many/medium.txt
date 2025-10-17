@@ -1,0 +1,22 @@
+**One-To-Many Relationship Problem**
+
+The One-To-Many Relationship Problem is about identifying the relationships between mothers and their children based on project participation data. The problem involves a set of projects, each with a group of mothers and children participating. The goal is to determine which mother is associated with each child.
+
+**Decision Variables**
+
+The main decision variable is `x`, an array of variables where each element `x[c]` represents the mother of child `c`. The domain of `x` is the set of mothers.
+
+**Constraints**
+
+The constraints can be described in plain language as follows:
+
+* Each child is assigned to exactly one mother.
+* For each project, the mothers and children are paired such that each mother is assigned to one or more children, and each child is assigned to one mother.
+* All mothers have at least one child assigned to them.
+* The pairing of mothers and children in each project must be consistent with the overall assignment of mothers to children.
+
+**Objective**
+
+The objective of the problem is to find a satisfying assignment of mothers to children that meets all the constraints. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that satisfies all the constraints.
+
+In this problem, the constraints are used to infer the relationships between mothers and children based on the project participation data. The problem is solved using constraint programming, which allows for the efficient exploration of the solution space and the identification of a satisfying assignment of mothers to children.

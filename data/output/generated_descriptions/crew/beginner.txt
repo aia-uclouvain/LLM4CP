@@ -1,0 +1,5 @@
+Crew Allocation Problem
+The problem is about assigning flight attendants to flights. 
+The main variables are the crew members (20 people) and the flights (10 flights), and what they mean is which crew member is assigned to which flight.
+The basic restrictions or rules of the problem are that each flight needs a certain number of crew members with specific skills, such as speaking certain languages, and each crew member needs to have two flights off after working one flight.
+The goal of the problem is to minimize the number of crew members working, while still meeting all the requirements for each flight.

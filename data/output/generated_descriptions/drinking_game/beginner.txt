@@ -1,0 +1,5 @@
+Drinking Game Problem
+The problem is about a game where you have to drink at certain times based on simple rules. 
+The main variables are "drinking" which says whether you should drink at a particular time, "last_8min" which checks if you drank in the last 8 minutes, and "num_drinks" which counts the total number of drinks.
+The basic rules are that you must drink if the time is divisible by 5 or 7 and you haven't drunk in the last 8 minutes. 
+The goal of the problem is to find out when you should drink and how many drinks you will have in total, following these rules.

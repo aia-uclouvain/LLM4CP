@@ -1,0 +1,5 @@
+name: Ormat Game
+description: The Ormat Game is a puzzle where a player is given a square grid template with some colored and blank cells, and a set of transparent plastic overlays with patterns of black dots. The goal is to cover all the colored cells in the template using the fewest number of overlays, without covering any blank cells. The player can superimpose multiple overlays on any colored cell.
+variables: $x_o$ for $o$ in $1..f$, $num\_overlays$, where $x_o$ represents whether overlay $o$ is used (1) or not (0), and $num\_overlays$ is the total number of overlays used. 
+constraints: $\forall i, j \in 1..n: problem[i,j] = 1 \rightarrow \exists o \in 1..f: x_o \* overlays[o,i,j] = 1$, $\forall o \in 1..f: x_o = 1 \rightarrow \forall i, j \in 1..n: overlays[o,i,j] = 1 \rightarrow problem[i,j] = 1$, where the first constraint ensures that every colored cell in the template is covered by at least one overlay, and the second constraint ensures that every cell covered by an overlay is colored in the template.
+objective: minimize $num\_overlays$ = $\sum_{o=1}^{f} x_o$

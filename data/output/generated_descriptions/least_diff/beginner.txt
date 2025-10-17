@@ -1,0 +1,5 @@
+The problem is called the Least Diff problem. 
+It's about finding two numbers, one with digits ABCDE and the other with digits FGHIJ, using all the digits from 0 to 9 exactly once, in a way that the difference between these two numbers is as small as possible. 
+The main variables are the digits A, B, C, D, E, F, G, H, I, and J, which represent the individual digits of the two numbers, and X and Y, which represent the two numbers themselves. 
+The basic restrictions are that all the digits must be used exactly once, and the difference between the two numbers must be positive. 
+The goal is to minimize the difference between the two numbers, X - Y, which means finding the smallest possible difference between the two numbers that can be formed using all the digits from 0 to 9 exactly once.

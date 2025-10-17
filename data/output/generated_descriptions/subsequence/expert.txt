@@ -1,0 +1,5 @@
+name: Longest Subsequence Problem
+description: The Longest Subsequence Problem is a classic problem in computer science and mathematics, which involves finding a subsequence of a given sequence that matches another sequence. In this problem, we are given two sequences, x and x_s, where x_s is a subsequence of x. The goal is to find the values of x and x_s that satisfy the given constraints.
+variables: $x = (x_1, x_2, ..., x_n)$ and $x_s = (x_{s_1}, x_{s_2}, ..., x_{s_m})$, where $x$ is the original sequence and $x_s$ is the subsequence of $x$. The variables $x_i$ and $x_{s_i}$ represent the elements of the sequences $x$ and $x_s$ respectively.
+constraints: $cp1d(x, [5,4,1,5,2,1]) \wedge subsequence(x, x_s) \wedge cp1d(x_s, [5,4,2,1])$, where $cp1d(x, y)$ is a constraint that checks if two sequences $x$ and $y$ are equal, and $subsequence(x, x_s)$ is a constraint that checks if $x_s$ is a subsequence of $x$.
+objective: The objective of the problem is to satisfy the given constraints, which means finding the values of $x$ and $x_s$ that make $x_s$ a subsequence of $x$ and match the given sequences. There is no explicit objective function to minimize or maximize.

@@ -1,0 +1,10 @@
+Lam's Problem
+The problem is about finding a way to arrange 11 marks in a square grid of a certain size, so that each row and each column has exactly 11 marks, and for any two rows, there is exactly one column where both rows have a mark.
+The main variables are: 
+- Index, which represents the size of the square grid
+- m, which is a matrix (like a table) that shows where the marks are, with "true" meaning there is a mark and "false" meaning there isn't.
+The basic restrictions are: 
+- Each row must have exactly 11 marks
+- Each column must have exactly 11 marks
+- For any two rows, there must be exactly one column where both rows have a mark.
+The goal is to find a way to arrange the marks so that all these rules are followed.

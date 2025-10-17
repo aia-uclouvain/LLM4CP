@@ -1,0 +1,5 @@
+The name of the problem is Werewolfes II. 
+This problem is about identifying a werewolf and a knight or knave among three people, based on given statements. 
+The main decision variables are x and y, where x(i) represents whether person i is a knight (1) or a knave (0), and y(i) represents whether person i is a werewolf (1) or not (0). 
+The key constraints are: only one person can be a werewolf, and each person's statement must be consistent with their identity as a knight or knave. For example, if a person says statement 1 is true, then they must be a knight if they are the werewolf, and a knave otherwise. The total number of "true" statements, with the third statement weighted 9 times more than the others, must be between 2 and 28. 
+The problem's objective is to find a solution that satisfies all the constraints, as indicated by the "solve satisfy" statement, rather than minimizing or maximizing a specific variable.

@@ -1,0 +1,5 @@
+The problem is called "Not a square" or Enigma Number 1555. 
+It's about filling a grid with 12 cells with digits so that certain numbers formed by these digits are perfect squares. 
+The main variables are the digits A, B, C, D, E, F, G, H, I, J, K, and L, which represent the numbers in each cell of the grid. 
+The basic restrictions are that the numbers formed by reading down and across the grid must be perfect squares, and none of these numbers can be the same, except for the two-digit number at the top, which cannot be a perfect square. 
+The goal is to find the two-digit number at the top of the grid, which is represented by the variables A and B.

@@ -1,0 +1,5 @@
+The Bales of Hay problem. 
+This problem involves determining the individual weights of five bales of hay, given the weights of all possible combinations of two bales. 
+The main decision variables are the weights of the five bales, represented by the array `bales`, where each element `bales[i]` represents the weight of the `i-th` bale. 
+The key constraints are that each combination of two bales must have a total weight that matches one of the given weights, and that the weights of the bales must be in increasing order. In plain language, this means that for each of the given weights, there must be two bales whose combined weight equals that weight, and that the weights of the bales must be arranged in ascending order. 
+The problem's objective is to find a set of weights for the bales that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to determine the individual weights of the bales, if a solution exists, and to identify whether there are multiple possible solutions.

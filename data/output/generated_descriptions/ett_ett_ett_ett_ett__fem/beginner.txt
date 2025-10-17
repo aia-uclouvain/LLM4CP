@@ -1,0 +1,5 @@
+Swedish Puzzle 
+The problem is about finding a mathematical solution to an equation where the numbers are represented by letters, similar to a word puzzle. 
+The main variables are E, T, F, and M, which represent the digits in the numbers "ETT" and "FEM". In simple terms, E is the first digit of the number, T is the second and third digits, F is the first digit of the result, and M is the last digit of the result. 
+The basic restrictions are that each letter must be a different digit from 0 to 9, the first digit of each number (E and F) cannot be zero, and all the digits must be different from each other. 
+The goal is to find a solution that satisfies the equation ETT + ETT + ETT + ETT + ETT = FEM, where each letter is replaced by its corresponding digit.

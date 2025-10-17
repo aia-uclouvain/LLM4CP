@@ -1,0 +1,5 @@
+Tomography problem
+The problem is about reconstructing a hidden picture from the information of how many objects are in each row and column. 
+The main variables are the number of rows (r), the number of columns (c), the sum of objects in each row (row_sums), the sum of objects in each column (col_sums), and the presence or absence of an object in each cell of the picture (x).
+The basic restrictions are that the total number of objects in each row and column must match the given information, and each cell can either have an object (1) or not (0).
+The goal of the problem is to find a possible arrangement of objects in the picture that satisfies the given row and column sums.

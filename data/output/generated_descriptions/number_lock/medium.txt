@@ -1,0 +1,10 @@
+Number Lock Problem
+The Number Lock Problem is about cracking a 3-digit code for a number lock based on given hints. 
+The main decision variables are the elements of the array `x`, which represents the 3-digit code to be found, with each element being a digit from 0 to 9.
+The key constraints are defined by the `check` predicate, which compares the given hints with the code `x`. In plain language, these constraints mean: 
+- For the hint "682", one digit is correct and in the correct position in the code.
+- For the hint "645", one digit is correct but in the wrong position in the code.
+- For the hint "206", two digits are correct but in the wrong positions in the code.
+- For the hint "738", none of the digits are correct.
+- For the hint "780", one digit is correct but in the wrong position in the code.
+The objective of the problem is to find a 3-digit code that satisfies all the given constraints, which means finding the correct combination of digits that matches the hints provided. The problem does not involve minimizing or maximizing a specific value but rather finding a solution that satisfies all the constraints simultaneously.

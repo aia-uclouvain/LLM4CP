@@ -1,0 +1,7 @@
+Vellino's Problem
+This problem is about sorting different materials into bins of different colors, following certain rules. 
+The main variables are the color of each bin and the materials inside each bin. 
+The basic restrictions are that each bin can only hold a certain amount of material, and some materials cannot be put in bins of certain colors. 
+For example, red bins cannot contain plastic or steel, and green bins cannot contain steel or glass. 
+There are also rules about how many of a certain material can be in a bin, like red bins can only have one wooden component. 
+The goal is to use as few bins as possible to sort all the materials.

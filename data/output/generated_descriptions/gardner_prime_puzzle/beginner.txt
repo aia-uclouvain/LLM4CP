@@ -1,0 +1,5 @@
+Gardner's Prime Puzzle 
+The problem is about finding two numbers, where each digit is a prime number (2, 3, 5, or 7), such that when you multiply these two numbers, the result is the sum of the two numbers, but with the digits also being prime numbers. 
+The main variables are mP and nP, which are the two numbers to be multiplied, and mnP, which is the result of the multiplication. These numbers are made up of digits that are prime numbers. 
+The basic restrictions are that each digit of the numbers must be a prime number (2, 3, 5, or 7), and the multiplication of the two numbers must equal the sum of the two numbers, but with the digits also being prime numbers. 
+The goal of the problem is to find numbers that satisfy these conditions, specifically to find mP and nP such that mP * nP equals the sum of mP and nP, but with prime digits.

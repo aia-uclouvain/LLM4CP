@@ -1,0 +1,5 @@
+name: Reverse Multiples Problem
+description: The Reverse Multiples Problem is a mathematical puzzle where we need to find two numbers, num1 and num2, such that num2 multiplied by a certain integer m equals num1, and num2 is the reverse of num1 in a given base. 
+variables: num1, num2, m, a1, a2 - These are the decision variables where num1 and num2 are the two numbers, m is the multiplier, and a1 and a2 are arrays representing the digits of num1 and num2 in the given base, respectively.
+constraints: num2 * m = num1, num2 < num1, to_num(a1,num1, base), to_num(a2,num2, base), reverse(a1,a2) - These constraints ensure that num2 multiplied by m equals num1, num2 is less than num1, a1 and a2 represent the correct digits of num1 and num2 in the given base, and a1 is the reverse of a2.
+objective: The objective of this problem is to find a solution that satisfies all the given constraints, there is no specific value to minimize or maximize.

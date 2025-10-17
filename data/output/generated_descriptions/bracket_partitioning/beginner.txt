@@ -1,0 +1,5 @@
+Bracket Partitioning Problem
+The problem is about dividing a group of people into smaller groups, called brackets, for a tournament. 
+The main variables are the number of people (n), the weight of each person (w), which set each person belongs to (x), and the size of each set (set_size).
+The basic restrictions are that each bracket must have 2, 3, 4, 6, 7, or 8 people, each person can only be in one bracket, and the difference in weight between the lightest and heaviest person in a bracket cannot be more than 15%. 
+The goal is to create brackets that favor groups of 4 and 8 people, while following these rules, and to find the best possible division of people into brackets.

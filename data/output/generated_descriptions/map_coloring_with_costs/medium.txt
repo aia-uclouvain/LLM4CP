@@ -1,0 +1,11 @@
+Map Coloring Problem
+The Map Coloring Problem is a classic constraint programming problem that involves coloring a map of countries such that no two adjacent countries have the same color, while minimizing the total cost of coloring the map.
+
+The main decision variables in this problem are the colors assigned to each country, represented by the array `x`, where `x[i]` is the color assigned to country `i`. The colors are represented by integers from 1 to `num_colors`, where each integer corresponds to a specific color (e.g., 1 = Red, 2 = Blue, etc.).
+
+The key constraints in this problem are:
+* No two adjacent countries can have the same color, which is enforced by the constraint `x[i] != x[j]` for all countries `i` and their neighbors `j`.
+* Each country must be assigned a color, which is enforced by the constraint `x[i] <= max_colors`.
+* The total cost of coloring the map is calculated by summing the cost of each color assigned to each country, which is enforced by the constraint `total = sum(i in 1..num_countries) ( color_cost[x[i]] )`.
+
+The objective of the problem is to minimize the total cost of coloring the map, which is represented by the variable `total`. The cost of each color is given by the array `color_cost`, where `color_cost[i]` is the cost of assigning color `i` to a country. The problem aims to find the optimal assignment of colors to countries that minimizes the total cost while satisfying the constraints.

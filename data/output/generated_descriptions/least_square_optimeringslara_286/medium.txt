@@ -1,0 +1,11 @@
+**Problem Name:** Least Squares Curve Fitting
+
+**Description:** This problem is about finding the best fit curve to a set of given data points, where the curve is a polynomial of degree 4. The goal is to minimize the sum of the squared differences between the observed data points and the predicted values from the curve.
+
+**Decision Variables:** The main decision variables are the coefficients of the polynomial curve, represented by the array `a` of size 5, where `a[0]`, `a[1]`, `a[2]`, `a[3]`, and `a[4]` are the coefficients of the constant, linear, quadratic, cubic, and quartic terms, respectively.
+
+**Key Constraints:**
+- The curve must pass through two specific points, (20, 0) and (700, 100), which are represented by the constraints `a[0] + 20.0*a[1] + 20.0*20.0*a[2] + 20.0*20.0*20.0*a[3] + 20.0*20.0*20.0*20.0*a[4] = 0.0` and `a[0] + 700.0*a[1] + 700.0*700.0*a[2] + 700.0*700.0*700.0*a[3] + 700.0*700.0*700.0*700.0*a[4] = 100.0`.
+- The derivative of the curve must be non-negative at all data points, which is represented by the constraint `(a[1] + 2.0*a[2]*t[i] + 3.0*a[3]*pow(t[i],2.0) + 4.0*a[4]*pow(t[i],3.0)) >= 0.0` for all `i`.
+
+**Objective:** The objective is to minimize the sum of the squared differences between the observed data points and the predicted values from the curve, which is represented by the variable `z`. This is achieved by solving the optimization problem `solve minimize z`.

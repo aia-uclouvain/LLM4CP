@@ -1,0 +1,5 @@
+The name of the problem is Imply. 
+This problem is about understanding a simple logical rule called "imply" and making sure it works correctly. 
+The main variables are "v" and "vars", where "v" is a single true or false value, and "vars" is a list of two true or false values. 
+The basic restriction or rule of the problem is that "v" should be true if the first value in "vars" is false or the second value in "vars" is true. 
+The goal of the problem is to find values for "v" and "vars" that satisfy this rule, which means the problem is trying to make sure the "imply" rule is working as expected, rather than trying to minimize or maximize something.

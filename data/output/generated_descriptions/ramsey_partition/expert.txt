@@ -1,0 +1,10 @@
+name: Ramsey Partition Problem
+description: The Ramsey Partition Problem is a classic problem in combinatorics and constraint programming. The problem involves partitioning a set of integers into three subsets such that for no subset are there three different numbers with two adding to the third. In other words, the goal is to divide the integers from 1 to n into three groups in such a way that there are no three numbers in any group where one number is the sum of the other two.
+variables: $x_1, x_2, x_3$, where $x_i$ is a set of integers representing the i-th subset of the partition. These variables are decision variables that determine the partition of the integers from 1 to n into three subsets.
+constraints: 
+$x_1 \cup x_2 \cup x_3 = \{1, 2, ..., n\}$ (partition constraint)
+$x_i \cap x_j = \emptyset$ for $i \neq j$ (disjointness constraint)
+$|x_i| \geq 3$ for $i = 1, 2, 3$ (cardinality constraint)
+$a + b \neq c$ for all $a, b, c \in x_i$ with $a < b < c$ (Ramsey constraint)
+These constraints ensure that the integers are partitioned into three non-empty, disjoint subsets, and that there are no three numbers in any subset where one number is the sum of the other two.
+objective: satisfy, meaning that the goal is to find a partition that satisfies all the constraints, rather than minimizing or maximizing a specific value.

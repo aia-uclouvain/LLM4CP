@@ -1,0 +1,14 @@
+Blending problem
+The problem is about creating a mixture of metals by combining different raw materials and scraps, while also using some already processed ingots. 
+The main variables are: 
+p, the amount of pure metals used, 
+r, the amount of raw materials used, 
+s, the amount of scraps used, 
+i, the amount of ingots used, 
+metal, the amount of each metal in the final mixture, 
+and z, the total cost of creating the mixture.
+The basic restrictions are: 
+each metal must be within a certain percentage of the final mixture, 
+the total amount of the mixture must be 71 units, 
+and the amount of each raw material, scrap, and ingot used cannot be negative. 
+The goal is to minimize the total cost, z, of creating the mixture.

@@ -1,0 +1,10 @@
+Knight Domination Puzzle
+The Knight Domination Puzzle is a classic constraint programming problem where the goal is to place the minimum number of knights on a chessboard such that every square is threatened by at least one knight.
+
+The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents whether a knight is placed on the square at position `(i, j)` on the board. The value of `x[i, j]` is 1 if a knight is placed on the square and 0 otherwise.
+
+The key constraints in this problem are: 
+- Every real square on the board must be threatened by at least one knight. This means that for each square, at least one of the eight possible knight moves from that square must be occupied by a knight.
+- The dummy squares, which are the squares outside the actual board, must not be occupied by knights.
+
+The objective of the problem is to minimize the total number of knights placed on the board, which is represented by the variable `minnum`. This is achieved by finding the smallest possible value of `minnum` that satisfies all the constraints.

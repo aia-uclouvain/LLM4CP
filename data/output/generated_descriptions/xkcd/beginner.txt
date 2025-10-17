@@ -1,0 +1,5 @@
+xkcd Knapsack problem 
+This problem is about ordering food from a menu to reach a specific total cost of $15.05. 
+The main variables are the prices of each dish and how many of each dish to order. 
+The basic restrictions are that the total cost of the ordered dishes must be exactly $15.05, and you can't order a negative number of dishes. 
+The goal of the problem is to find a combination of dishes that adds up to the total cost of $15.05.

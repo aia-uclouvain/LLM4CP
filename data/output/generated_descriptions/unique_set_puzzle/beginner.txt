@@ -1,0 +1,5 @@
+The problem is called the "Unique Set Representing Number Puzzle" or "Bilateral Projects" problem. 
+It's about choosing the smallest group of people that can represent all the given teams, with each team having two members and each person being part of one or more teams. 
+The main variables are the teams, represented by pairs of numbers, and the people, also represented by numbers. 
+The basic restrictions are that only one person from each team must be chosen, and the same person can be part of multiple teams. 
+The goal is to minimize the number of people chosen, so that all teams are still represented.

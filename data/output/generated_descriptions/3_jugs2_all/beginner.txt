@@ -1,0 +1,5 @@
+3 Jugs Problem
+The problem is about finding the shortest way to get from one point to another in a network of connected points. 
+The main variables are the distance between points, the flow of "stuff" between points, and the total cost of getting from the start to the end.
+The basic restrictions are that you can only move between connected points, and you can't move more "stuff" than the connection can handle. 
+The goal is to minimize the total cost of getting from the start to the end, which in this case is limited to 7 units.

@@ -1,0 +1,5 @@
+The Fourth Trial puzzle. 
+This problem is about two doors, one with a lady and one with a tiger, and the goal is to figure out which door has which. 
+The main variables are x, which shows what is behind each door (the lady or the tiger), and t, which shows whether the statement on each door is true or false. 
+The basic restrictions are that each door can only have one thing behind it, and the statements on the doors must match what is actually behind them. 
+The goal of the problem is to find a solution that satisfies all the given conditions, meaning we want to find out which door has the lady and which has the tiger, based on the statements given.

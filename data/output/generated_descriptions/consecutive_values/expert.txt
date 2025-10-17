@@ -1,0 +1,5 @@
+name: Consecutive Values Problem
+description: The Consecutive Values Problem is a constraint satisfaction problem that involves finding an assignment of values to a set of variables such that the difference between the largest and smallest values is equal to the number of distinct values minus one, with no holes in the used values.
+variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the value assigned to the $i^{th}$ variable, and $n$ is the number of variables.
+constraints: $nvalue(nv, x) \wedge max(x) - min(x) = nv - 1$, where $nv$ is the number of distinct values in $x$, $max(x)$ is the maximum value in $x$, $min(x)$ is the minimum value in $x$, and $nvalue(nv, x)$ is a constraint that ensures $nv$ is the number of distinct values in $x$.
+objective: The objective of the problem is to find a satisfying assignment of values to the variables $x$, with no specific objective function to minimize or maximize.

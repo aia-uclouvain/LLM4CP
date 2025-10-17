@@ -1,0 +1,7 @@
+name: Max Flow Problem
+description: The Max Flow Problem is a classic problem in operations research and computer science that involves finding the maximum flow of a commodity through a network of nodes and arcs with limited capacity. The goal is to maximize the flow from a source node to a sink node while satisfying the capacity constraints of the arcs.
+variables: $x_{i,j}, outFlow_i, inFlow_i, total$ 
+These variables represent the flow on each arc $(i,j)$, the total outflow from node $i$, the total inflow to node $i$, and the total flow from the source node to all other nodes, respectively.
+constraints: $x_{i,j} \geq 0, x_{i,j} \leq c_{i,j}, inFlow_i = \sum_{j} x_{j,i}, outFlow_i = \sum_{j} x_{i,j}, outFlow_i - inFlow_i = 0 \; \forall i \neq start, end, \sum_{j} x_{j,start} = 0, \sum_{j} x_{end,j} = 0$ 
+These constraints ensure that the flow on each arc is non-negative and does not exceed the capacity of the arc, that the inflow and outflow of each node are balanced (except for the source and sink nodes), and that there is no flow into the source node or out of the sink node.
+objective: Maximize $total = \sum_{j} x_{start,j}$, which represents the maximum flow from the source node to all other nodes.

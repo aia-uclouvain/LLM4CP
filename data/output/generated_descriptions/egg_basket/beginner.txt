@@ -1,0 +1,5 @@
+Egg Basket Puzzle
+The problem is about finding the minimum number of eggs that can be put into baskets of different sizes, where each basket can hold a specific number of eggs. 
+The main variables are "n" which is the total number of eggs, and "x" which is an array representing the number of eggs in each basket of sizes 2 to 7.
+The basic restrictions are that the number of eggs in each basket must be a non-negative whole number, and the total number of eggs is determined by the number of eggs in each basket.
+The goal of the problem is to minimize the total number of eggs, "n".

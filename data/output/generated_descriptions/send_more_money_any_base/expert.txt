@@ -1,0 +1,5 @@
+name: Send More Money Problem
+description: The Send More Money problem is a classic problem in constraint programming where the goal is to find an assignment of digits to letters such that the equation SEND + MORE = MONEY is satisfied in a given base, with each letter representing a unique digit in that base.
+variables: $S, E, N, D, M, O, R, Y$ - These variables represent the digits assigned to each letter in the equation, where $S, E, N, D, M, O, R, Y$ are decision variables that can take values from 0 to base-1, with base being the base of the number system.
+constraints: $all\_different(fd) \wedge base^3S + base^2E + baseN + D + base^3M + base^2O + baseR + E = base^4M + base^3O + base^2N + baseE + Y \wedge S \geq 1 \wedge M \geq 1$ - These constraints ensure that each letter is assigned a unique digit, the equation SEND + MORE = MONEY is satisfied, and the letters S and M are not assigned the value 0, as they are the most significant digits in the numbers SEND and MONEY, respectively.
+objective: satisfy - The objective of the problem is to find a satisfying assignment of digits to letters, rather than minimizing or maximizing a specific value.

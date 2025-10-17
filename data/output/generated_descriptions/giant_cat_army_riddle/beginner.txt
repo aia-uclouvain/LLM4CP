@@ -1,0 +1,5 @@
+Giant Cat Army problem
+The problem is about building a list of numbers starting from 0 by applying certain rules to get to a specific sequence of numbers: 2, 10, and 14 in that order, with the list having distinct integers less than or equal to 60.
+The main variables are the list of numbers, where each number represents a step in the sequence, and the length of the list, which is the total number of steps taken to achieve the goal.
+The basic restrictions are that each new number in the list is either 5 more than the previous number, 7 more than the previous number, or the square root of the previous number, and all numbers in the list must be different and less than or equal to 60.
+The goal is to find the shortest list of numbers that includes 2, 10, and 14 in that order, following the given rules, with the smallest possible length being 24 steps.

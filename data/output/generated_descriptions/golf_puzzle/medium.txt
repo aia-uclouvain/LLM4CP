@@ -1,0 +1,8 @@
+Golf Puzzle
+The Golf Puzzle is a classic constraint programming problem that involves finding the optimal lengths of two golf strokes to achieve the lowest score on a nine-hole course. 
+
+The main decision variables are `club1` and `club2`, which represent the lengths of the two golf strokes, and `holes`, a 2D array that represents the number of times each stroke is used for each hole. 
+
+The key constraints are that the total distance covered by the strokes for each hole must equal the length of that hole, and that the total number of strokes used is minimized. Additionally, the model includes a symmetry-breaking constraint to ensure that `club1` is less than or equal to `club2`. 
+
+The objective of the problem is to minimize the total number of strokes, `z`, which is calculated as the sum of the absolute values of the number of times each stroke is used for each hole. In other words, the goal is to find the combination of stroke lengths that allows the golfer to complete the course in the fewest number of strokes.

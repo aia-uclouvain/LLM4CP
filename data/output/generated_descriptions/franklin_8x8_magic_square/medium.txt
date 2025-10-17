@@ -1,0 +1,20 @@
+**Benjamin Franklin's 8x8 Magic Square Problem**
+
+The problem is about finding a specific arrangement of numbers in an 8x8 grid, known as a magic square, that satisfies certain conditions. The goal is to place the numbers 1 through 64 in the grid such that the sum of the numbers in each row, column, and diagonal is the same.
+
+**Main Decision Variables**
+
+The main decision variables in this problem are the values assigned to each cell in the 8x8 grid, represented by the `a` array. Each cell can take on a value from 1 to 64, and the variables are defined as `var r: a1, a2, ..., a8, b1, b2, ..., h8`.
+
+**Key Constraints**
+
+The key constraints in this problem can be described in plain language as follows:
+
+* Each row and column must contain each number from 1 to 64 exactly once.
+* The sum of the numbers in each half-row and half-column must be equal to half of the total sum of all numbers (260).
+* The sum of the numbers in each 2x2 subsquare must be equal to half of the total sum of all numbers (130).
+* The sum of the numbers in each bent diagonal (a diagonal that wraps around the grid) must be equal to the total sum of all numbers (260).
+
+**Problem Objective**
+
+The objective of this problem is to find a solution that satisfies all the constraints, which means finding a valid arrangement of numbers in the 8x8 grid that meets all the conditions. There is no explicit objective function to minimize or maximize, but rather a satisfaction problem where the goal is to find a feasible solution.

@@ -1,0 +1,5 @@
+The problem is called "alldifferent_modulo". 
+It's about making sure that when you divide a group of numbers by another number, the remainders are all different. 
+The main variables are "x" which is a list of numbers, and "m" which is the number you divide by. 
+The basic restrictions are that all the numbers in "x" must be between 1 and 25, and "m" must be between 1 and 5. 
+The goal is to find a list of numbers "x" and a divisor "m" such that when you divide each number in "x" by "m", you get a different remainder for each number.

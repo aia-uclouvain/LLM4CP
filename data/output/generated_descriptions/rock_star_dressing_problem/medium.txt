@@ -1,0 +1,12 @@
+Rock Start Dressing Problem
+The Rock Start Dressing Problem is about finding a satisfactory outfit for a rock star, given certain fashion sense requirements. 
+The main decision variables are: 
+- shirt: representing the color of the shirt to be worn, which can be red, green, orange, or blue.
+- tie: representing the color of the tie to be worn, which can be pink or yellow.
+- pants: representing the color of the pants to be worn, which can be black, khaki, purple, or blue.
+The key constraints are: 
+- A yellow tie can only be worn with red, green, or blue shirts.
+- A pink tie can only be worn with blue shirts.
+- Certain pants can only be worn with specific shirts (e.g., khaki pants can only be worn with green shirts).
+- Certain ties can only be worn with specific pants (e.g., a yellow tie can only be worn with blue or black pants).
+The objective of the problem is to find a combination of shirt, tie, and pants that satisfies all the given fashion sense requirements, which is achieved by using the "solve satisfy" statement in the MiniZinc model.

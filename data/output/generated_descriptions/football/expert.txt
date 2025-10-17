@@ -1,0 +1,10 @@
+name: Football Team Optimization Problem
+description: The problem is about optimizing the selection of football players for a team with a limited budget. The goal is to spend as much of the budget as possible while meeting the requirements for the number of players in each position. There are four types of players: goalkeepers, defenders, midfielders, and strikers, each with different costs and requirements.
+variables: $x_{i,j}$, where $x_{i,j}$ is a binary decision variable indicating whether to buy the $j^{th}$ player of type $i$. These variables represent the decision to buy a specific player or not.
+constraints: 
+$\sum_{j=1}^{max\_num\_players} x_{i,j} \geq min\_max_{i,1}$, 
+$\sum_{j=1}^{max\_num\_players} x_{i,j} \leq min\_max_{i,2}$, 
+$x_{i,j} = 0$ if $cost_{i,j} = 0$, 
+$\sum_{i=1}^{num\_types} \sum_{j=1}^{max\_num\_players} x_{i,j} \* cost_{i,j} \leq budget$. 
+These constraints ensure that the minimum and maximum requirements for each type of player are met, that only available players are considered, and that the total cost does not exceed the budget.
+objective: Maximize $z = \sum_{i=1}^{num\_types} \sum_{j=1}^{max\_num\_players} x_{i,j} \* cost_{i,j}$, which represents the total cost of the selected players, subject to the given constraints.

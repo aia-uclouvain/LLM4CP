@@ -1,0 +1,5 @@
+Array Copy Problem
+The problem is about copying arrays, which are like lists of numbers, in a programming context. 
+The main variables are x and y, where x is a one-dimensional array (a list of numbers) and y is a two-dimensional array (a table of numbers). 
+The basic restrictions are that the arrays must be of the same size and the numbers in the arrays must be between 1 and n (where n is 4 in this case). 
+The goal of the problem is to find values for the arrays x and y such that they satisfy the given constraints, which are defined by the cp1d and cp2d predicates, and to output these values.

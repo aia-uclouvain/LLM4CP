@@ -1,0 +1,15 @@
+The Social Golfer Problem, also known as the Dinner Party Problem, is a classic constraint programming problem. 
+
+This problem is about arranging guests at a dinner party in a seating order that minimizes conflict between them. Each guest has specific preferences about who they want to sit next to, and the goal is to find a seating arrangement that satisfies these preferences as much as possible.
+
+The main decision variables in this problem are the seating positions of each guest, represented by the array `x` in the Minizinc model. Each element `x[i]` represents the guest seated at position `i`.
+
+The key constraints in this problem are: 
+- each guest can only be seated once, 
+- each position can only be occupied by one guest, 
+- and each guest must be seated next to their preferred friends. 
+These constraints are implemented in the Minizinc model using the `all_different` constraint and the `forall` loop that checks if each guest is seated next to their preferred friends.
+
+The objective of this problem is to find a seating arrangement that minimizes conflict between guests, which is achieved by satisfying the preferences of each guest as much as possible. In the Minizinc model, this is implemented using the `solve satisfy` statement, which finds a solution that satisfies all the constraints. 
+
+In this specific instance of the problem, there are 12 possible solutions with no conflict at all, and the model finds two of these solutions when Andrew is placed at position 1. The model then outputs the seating arrangement for each solution, showing the positions of each guest.

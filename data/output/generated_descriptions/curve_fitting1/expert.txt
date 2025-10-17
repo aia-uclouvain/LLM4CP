@@ -1,0 +1,8 @@
+name: Curve Fitting Problem
+description: The Curve Fitting Problem is a classic problem in mathematical programming and operations research that involves finding the best-fitting line to a set of given data points. The goal is to determine the parameters of a linear equation that minimizes the sum of the absolute differences between the observed and predicted values.
+variables: $a, b, u_i, v_i, z$ 
+These variables represent the parameters of the linear equation $y = ax + b$ and the absolute differences between the observed and predicted values. $a$ and $b$ are the slope and intercept of the line, $u_i$ and $v_i$ are the positive and negative deviations of the observed values from the predicted values, and $z$ is the sum of these deviations.
+constraints: $a \geq 0, b \geq 0, u_i \geq 0, v_i \geq 0, b * x_i + a + u_i - v_i = y_i$ 
+These constraints ensure that the parameters $a$ and $b$ are non-negative, the deviations $u_i$ and $v_i$ are non-negative, and the linear equation $y = ax + b$ is satisfied for each data point $(x_i, y_i)$, with $u_i$ and $v_i$ representing the absolute difference between the observed and predicted values.
+objective: minimize $z$ 
+The objective is to minimize the sum of the absolute differences $z$ between the observed and predicted values, which corresponds to finding the best-fitting line to the given data points.

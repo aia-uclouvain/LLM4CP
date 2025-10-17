@@ -1,0 +1,12 @@
+Partition Problem
+The problem is about dividing a set of numbers into two or more subsets, where the sum of the numbers in each subset is equal.
+The main variables are: 
+- `s`: the set of numbers to be divided
+- `x`: a decision variable that determines which subset each number belongs to
+- `num_subsets`: the number of subsets to divide the numbers into
+- `ssum`: the target sum for each subset, calculated by dividing the total sum of the numbers by the number of subsets
+The basic restrictions or rules of the problem are: 
+- The sum of the numbers in each subset must be equal
+- The numbers can only be divided into the specified number of subsets
+- The sum of the numbers must be divisible by the number of subsets
+The goal of the problem is to find a way to divide the numbers into subsets with equal sums, if possible.

@@ -1,0 +1,5 @@
+The problem is called max_nvalue. 
+It's about finding the maximum number of times a certain value appears in a list of numbers. 
+The main variables are "variables" which is a list of numbers, and "t_max" which is the maximum number of times a value can appear. 
+The basic restrictions are that each number in the list must be between 1 and 9, and the list must match a given example list. 
+The goal is to check if the maximum number of times a value appears in the list is indeed 3, as specified by "t_max".

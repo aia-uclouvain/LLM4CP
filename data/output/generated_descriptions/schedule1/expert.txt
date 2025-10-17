@@ -1,0 +1,5 @@
+name: Cumulative Scheduling Problem
+description: The Cumulative Scheduling Problem is a classic problem in constraint programming that involves scheduling a set of tasks with fixed durations and resource requirements, while minimizing the overall completion time and not exceeding a given resource capacity.
+variables: $Ss_1, Ss_2, ..., Ss_7, End, Capacity$ - These are the decision variables, where $Ss_i$ represents the start time of task $i$, $End$ represents the overall completion time, and $Capacity$ is the available resource capacity.
+constraints: $Capacity = 13, after(Ss, Ds, End), cumulative(Ss, Ds, Rs, Capacity)$ - These constraints ensure that the resource capacity is 13, that each task is completed after its start time plus duration ($after$ constraint), and that the cumulative resource usage of all tasks at any time does not exceed the available capacity ($cumulative$ constraint).
+objective: minimize $End$ - The objective is to minimize the overall completion time, which is the maximum completion time of all tasks.

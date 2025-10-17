@@ -1,0 +1,5 @@
+Rosenbrock Function
+The Rosenbrock function is a classic nonlinear optimization problem that involves finding the minimum value of a given mathematical function. 
+The main decision variables in this problem are x1 and x2, which represent the coordinates of a point in a two-dimensional space. 
+The key constraints in this problem are the bounds on the decision variables x1 and x2, which are restricted to the range -1.0 to 8.0. The objective function, z, is a nonlinear function of x1 and x2, and it is defined as z = 100.0*(x2-x1*x1)*(x2-x1*x1)+(1.0-x1)*(1.0-x1). 
+The objective of this problem is to minimize the value of z, which means finding the values of x1 and x2 that result in the smallest possible value of the function. In other words, the goal is to find the global minimum of the Rosenbrock function, which occurs at the point (x1, x2) = (1, 1) where the function value is zero.

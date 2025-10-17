@@ -1,0 +1,5 @@
+name: Age Problem
+description: The problem states that John is twice as old as Jim, the sum of their ages is equal to Jerry's age, and the total age of all three is 36. The goal is to find the ages of John, Jim, and Jerry.
+variables: $j, jh, je$ where $j$ represents Jim's age, $jh$ represents John's age, and $je$ represents Jerry's age. These variables represent the ages of the three individuals in the problem.
+constraints: $jh = 2j \land jh + j = je \land jh + j + je = 36$ where the first constraint ensures John is twice as old as Jim, the second constraint ensures the sum of John and Jim's ages equals Jerry's age, and the third constraint ensures the total age of all three is 36.
+objective: The objective of the problem is to satisfy all the given constraints, as indicated by the "solve satisfy" statement in the MiniZinc model, meaning the goal is to find values for Jim, John, and Jerry's ages that meet all the conditions, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,17 @@
+Food Manufacture Problem
+The problem is about a company that produces a product using different types of oil. The company wants to decide how much of each oil to buy and use each month to maximize its profit.
+
+The main variables are: 
+- buys: the amount of each oil bought each month
+- stock: the amount of each oil stored each month
+- production: the amount of product produced each month
+- useoil: the amount of each oil used to produce the product each month
+
+The basic restrictions or rules are: 
+- The company can only buy and store a certain amount of each oil
+- The company must have a minimum amount of each oil in stock at the beginning and end of the period
+- The company can only use the oil it has in stock or buys
+- The product must have a certain level of hardness, which depends on the types of oil used
+- There are limits on the amount of certain oils that can be used together
+
+The goal of the problem is to maximize the total profit, which is the revenue from selling the product minus the cost of buying and storing the oil.

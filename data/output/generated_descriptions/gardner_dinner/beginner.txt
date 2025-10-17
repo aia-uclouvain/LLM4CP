@@ -1,0 +1,5 @@
+Social Dinner Problem
+The problem is about a woman who wants to invite 15 friends to dinner over 35 days, with exactly three friends per day, in such a way that each pair of friends only comes together once.
+The main variables are the days of the week and the groups of friends invited each day, which are represented by the variable "days".
+The basic restrictions are that each day, exactly three friends are invited, each pair of friends can only come together once, and the same group of three friends cannot be invited on different days.
+The goal of the problem is to find an arrangement that satisfies these rules, essentially to determine if it's possible to invite the friends in such a way that each pair of friends only comes together once over the 35 days.

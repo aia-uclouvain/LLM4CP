@@ -1,0 +1,5 @@
+The Send More Money problem.
+This problem is about finding a solution to a cryptarithm, where letters represent digits, and the goal is to make a mathematical equation valid.
+The main decision variables are S, E, N, D, M, O, R, and Y, which represent the digits from 0 to 9 that each letter corresponds to.
+The key constraints are that each letter must represent a unique digit, and when the numbers represented by the letters are added together, they must satisfy the equation: SEND + MORE = MONEY. This means that when adding the corresponding digits, any carry-over from one column to the next must be taken into account. Additionally, the first letter of each number (S and M) must not be zero.
+The problem's objective is to find a solution that satisfies all the constraints, which means finding a valid assignment of digits to letters that makes the equation true. The solve statement "solve satisfy" indicates that the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

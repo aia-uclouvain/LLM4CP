@@ -1,0 +1,10 @@
+All Different Problem
+The problem is about finding a set of different numbers, like assigning different tasks to people. 
+The main variables are: 
+- x, which represents a list of numbers, like tasks assigned to people
+- s, which is a set of numbers that are duplicates, like tasks that are assigned to more than one person
+- num_conflicts, which counts how many duplicate tasks there are.
+The basic restrictions are: 
+- each task can only be assigned to one person, but we allow for a little flexibility, so we can have at most one task that is assigned to more than one person
+- we want to find a set of tasks that are as different as possible, with minimal duplicates.
+The goal is to find a set of tasks (x) where at most one task is duplicated, and to identify which tasks are duplicates (s), while keeping track of how many duplicates there are (num_conflicts).

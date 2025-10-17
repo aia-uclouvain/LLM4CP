@@ -1,0 +1,5 @@
+The problem is called the Product Problem. 
+It's about finding a set of numbers that when multiplied together give a certain result. 
+The main variables are x, which is a list of 40 numbers, and p, which is the result of multiplying all the numbers in x together. 
+The basic restrictions are that all the numbers in x must be between 1 and 1000, the result p must be greater than 0, and the numbers in x must be in increasing order. 
+The goal of the problem is to find a set of numbers that satisfy these conditions, with no specific goal to minimize or maximize anything, just to find a valid solution.

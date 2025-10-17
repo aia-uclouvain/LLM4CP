@@ -1,0 +1,11 @@
+name: Heterosquare problem
+
+description: The Heterosquare problem is a constraint satisfaction problem where the goal is to fill an n x n matrix with distinct integers from 1 to n^2, such that the sums of the rows, columns, and diagonals are all different.
+
+variables: $mat_{i,j}, row\_sums_i, col\_sums_j, diag1, diag2$ 
+These are the decision variables of the problem, where $mat_{i,j}$ represents the value in the i-th row and j-th column of the matrix, $row\_sums_i$ and $col\_sums_j$ represent the sum of the i-th row and j-th column respectively, and $diag1$ and $diag2$ represent the sum of the main diagonal and the anti-diagonal of the matrix respectively.
+
+constraints: $\forall i,j \in \{1,...,n\}: mat_{i,j} \in \{1,...,n^2\}$, $all\_different(mat_{i,j})$, $all\_different(row\_sums_i ++ col\_sums_j ++ \{diag1, diag2\})$, $\forall i \in \{1,...,n\}: \sum_{j=1}^{n} mat_{i,j} = row\_sums_i$, $\forall j \in \{1,...,n\}: \sum_{i=1}^{n} mat_{i,j} = col\_sums_j$, $\sum_{i=1}^{n} mat_{i,i} = diag1$, $\sum_{i=1}^{n} mat_{i,n-i+1} = diag2$, $mat_{1,1} \leq \{mat_{1,1}, mat_{1,n}, mat_{n,1}, mat_{n,n}\}$, $mat_{1,2} < mat_{2,1}$
+These constraints ensure that the matrix is filled with distinct integers, the sums of the rows, columns, and diagonals are all different, and the matrix satisfies the symmetry breaking conditions.
+
+objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, there is no explicit objective function to minimize or maximize. The problem is a constraint satisfaction problem, and the goal is to find a solution that satisfies all the constraints.

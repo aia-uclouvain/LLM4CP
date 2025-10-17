@@ -1,0 +1,5 @@
+name: Golden Search Problem
+description: The Golden Search problem is a classic optimization problem that aims to find the maximum value of a given function within a specified interval. The function in question is f(x) = x - exp(x), and the goal is to determine the value of x that maximizes this function.
+variables: x, z; x is the decision variable representing the point at which the function is evaluated, and z is the objective function value, which is a function of x.
+constraints: z = x - exp(x); this constraint defines the relationship between the decision variable x and the objective function value z, ensuring that z is equal to the value of the function f(x) = x - exp(x) at point x.
+objective: maximize z, which corresponds to finding the maximum value of the function f(x) = x - exp(x) within the given interval.

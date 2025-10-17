@@ -1,0 +1,8 @@
+Graph Coloring Problem
+The Graph Coloring Problem is about assigning colors to the nodes of a graph such that no two adjacent nodes have the same color, using the minimum number of colors possible.
+
+The main decision variables in this problem are the colors assigned to each node, represented by the array `v` of variables, where `v[i]` is the color assigned to node `i`. The variable `max_c` represents the maximum color used.
+
+The key constraints are that adjacent nodes in the graph must have different colors, and the model must find the minimum number of colors needed to satisfy this condition. In plain language, this means that for each pair of connected lectures, they cannot be scheduled at the same time.
+
+The objective of the problem is to minimize the maximum color used, `max_c`, which represents the minimum number of time slots required to schedule all the lectures without any clashes. In other words, the goal is to find the smallest number of hours needed to schedule the six one-hour lectures such that no two lectures that have a common attendee are scheduled at the same time.

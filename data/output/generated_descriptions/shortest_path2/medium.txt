@@ -1,0 +1,5 @@
+The Shortest Path Problem
+The problem is about finding the shortest path between two nodes in a weighted graph.
+The main decision variables are the `x[i,j]` variables, which represent the flow of units from node `i` to node `j`. In the context of the shortest path problem, these variables can be interpreted as indicating whether the edge from `i` to `j` is included in the shortest path.
+The key constraints are that the flow into each node must equal the flow out of the node, except for the start node, which has only outflow, and the end node, which has only inflow. Additionally, the total flow through each edge must not exceed its capacity, and the total cost of the flow must be minimized. In plain language, this means that we need to find a path from the start node to the end node that minimizes the total distance traveled, without using any edge more times than its capacity allows.
+The objective of the problem is to minimize the total cost, which is the sum of the distances of all the edges used in the shortest path. In other words, the goal is to find the path from the start node to the end node that has the minimum total distance.

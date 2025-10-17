@@ -1,0 +1,11 @@
+Volsay Problem
+The Volsay problem is a classic constraint programming problem that involves finding the optimal production levels of two products, gas and chloride, given certain constraints on their production.
+
+The main decision variables in this problem are the production levels of gas and chloride, represented by the array `production` with two elements, `production[gas]` and `production[chloride]`, which can take on any value between 0.0 and 100.0. These variables represent the amount of each product to be produced.
+
+The key constraints in this problem are:
+- The total production of both gas and chloride cannot exceed 50.0 units.
+- The total production of gas and chloride, weighted by their respective coefficients (3.0 for gas and 4.0 for chloride), cannot exceed 180.0 units.
+- The production of chloride alone cannot exceed 40.0 units.
+
+The objective of the Volsay problem is to maximize the total value of the production, represented by the variable `z`, which is calculated as 40.0 times the production of gas plus 50.0 times the production of chloride. In other words, the goal is to find the production levels of gas and chloride that result in the highest total value while satisfying the given constraints.

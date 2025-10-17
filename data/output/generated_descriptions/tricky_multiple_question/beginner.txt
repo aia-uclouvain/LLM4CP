@@ -1,0 +1,5 @@
+Tricky Multiple Choice Question
+The problem is about a tricky multiple choice question where the answers refer to each other. 
+The main variables are the answers to the question, which are represented as true or false. 
+The basic restrictions or rules of the problem are that each answer must be either true or false, and the truth of each answer depends on the truth of the other answers. 
+The goal of the problem is to find the correct answer to the question, which is the answer that is true according to the given rules.

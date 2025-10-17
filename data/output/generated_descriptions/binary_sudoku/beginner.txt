@@ -1,0 +1,5 @@
+Binary Sudoku
+The problem is about filling a square grid with 0s and 1s in a specific way. 
+The main variables are the grid cells, which can be either 0 or 1. 
+The basic restrictions are that each row and column must have an equal number of 0s and 1s, no two rows or columns can be the same, and there cannot be three or more of the same number in a row in any direction. 
+The goal is to find a way to fill the grid that satisfies all these rules.

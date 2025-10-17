@@ -1,0 +1,5 @@
+Element Greatereq Problem
+The problem is about comparing a single value to a list of values to see if it is greater than or equal to at least one of them in everyday terms, it's like checking if a score is better than or equal to one of the scores in a leaderboard.
+The main variables are the item, which is a single score or value, and the element table, which is a list of scores or values.
+The basic restrictions or rules are that the item must be compared to each value in the element table, and it must be greater than or equal to at least one of them.
+The goal of the problem is to check if the given item satisfies this condition, in other words, to verify if the item is indeed greater than or equal to one of the values in the element table, and to output the item and the element table.

@@ -1,0 +1,8 @@
+The problem is called the "Photo Problem". 
+It is about arranging a set of people in a line for a photo, taking into account their individual preferences for the people they want to stand next to. 
+
+The main decision variables are the positions of the people in the line, represented by the array "positions". Each position in the array corresponds to a person, and the value at that position is the index of the person standing at that position.
+
+The key constraints are that each person can only stand next to someone they have listed as a preference, and each person can only be stood next to by someone who has listed them as a preference. Additionally, each person can only occupy one position in the line, and each position can only be occupied by one person.
+
+The problem's objective is to find an arrangement of people that satisfies all the preferences, and if possible, to maximize the number of people who are standing next to someone they prefer, represented by the variable "z". However, in this specific model, the objective is to simply find a satisfying arrangement, as indicated by the "satisfy" keyword in the solve statement.

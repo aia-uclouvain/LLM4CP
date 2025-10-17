@@ -1,0 +1,5 @@
+The Move One Coin problem. 
+This problem involves rearranging a line of coins by moving exactly one coin to achieve a specific target configuration, where the number of collected coins from left to right is in decreasing order.
+The main decision variables are `from` and `to`, which represent the position of the coin to be moved and the target position where the coin will be moved, respectively.
+The key constraints are that the coin can only be moved from a position that is currently occupied by a coin, the target position must be empty, and the coin being moved cannot be moved to its current position. Additionally, all other positions must remain unchanged after the move.
+The objective of this problem is to find a valid move that satisfies the given constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a single move that transforms the initial configuration into the target configuration.

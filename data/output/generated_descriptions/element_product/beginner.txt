@@ -1,0 +1,9 @@
+The problem is called the Element Product problem. 
+It is about finding a specific result of a multiplication operation from a given list of numbers. 
+The main variables are: 
+- element_table, which is a list of numbers, 
+- x, which is a multiplier, 
+- y, which is the position of a number in the list, 
+- and z, which is the result of the multiplication. 
+The basic restrictions are that the list of numbers is fixed, the multiplier and the position are given, and the result must be the product of the number at the given position and the multiplier. 
+The goal of the problem is to confirm that the given result is indeed the product of the number at the specified position in the list and the multiplier, and to output the values of the list, the multiplier, the position, and the result.

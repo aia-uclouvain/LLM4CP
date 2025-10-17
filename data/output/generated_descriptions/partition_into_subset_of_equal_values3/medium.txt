@@ -1,0 +1,14 @@
+Partition Problem
+The Partition Problem is a classic problem in computer science and operations research that involves dividing a set of numbers into two or more subsets such that the sum of the numbers in each subset is equal or as close as possible to equal.
+
+Main Decision Variables
+The main decision variable in this problem is `x`, an array of variables where `x[i]` represents the subset to which the `i-th` number in the set `s` belongs. In other words, `x[i]` is a variable that takes on a value from 1 to `num_subsets`, indicating which subset the `i-th` number is assigned to.
+
+Key Constraints
+The key constraints in this problem are:
+- The sum of the numbers in each subset should be equal to the target sum `ssum`, which is the total sum of the numbers in the set `s` divided by the number of subsets `num_subsets`.
+- The numbers in the set `s` should be assigned to the subsets such that the sum of the numbers in each subset is equal to the target sum `ssum`.
+- The problem also includes a symmetry-breaking constraint, which assigns the first number in the set `s` to the first subset, to avoid equivalent solutions.
+
+Objective
+The objective of the Partition Problem is to find an assignment of the numbers in the set `s` to the subsets such that the sum of the numbers in each subset is equal to the target sum `ssum`. In other words, the goal is to divide the set of numbers into subsets with equal sums. If it is not possible to divide the set into subsets with exactly equal sums, the problem is to find an assignment that minimizes the difference between the sums of the subsets.

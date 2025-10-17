@@ -1,0 +1,5 @@
+The problem is called "Loading a Pair of Dice". 
+It's about trying to rig two dice so that when you roll them, the numbers 2 through 12 all have an equal chance of coming up. 
+The main variables are the numbers on each die, represented by "x" and "y", which can have values from 0 to the number of sides on the die. 
+The basic restrictions are that each number on a die can be any value from 0 to the number of sides, and that the total number of possible outcomes is greater than 0. 
+The goal is to find a way to rig the dice so that all the possible sums (2 through 12) have the same chance of occurring, which is represented by the variable "z" having the same value for all sums.

@@ -1,0 +1,5 @@
+The problem is called the Gray Code problem. 
+It's about finding a special order of numbers that have a certain property: each number is only one "step" away from the previous one. 
+The main variables are: x, which is a list of numbers, binary, which is a list of numbers in binary format (using only 0s and 1s), and num_bits, which is a list of how many 1s are in each binary number. 
+The basic restrictions are: all numbers in the list must be different, the first number must be 0, the last number must have exactly one 1 in its binary format, and each number can only differ from the previous one by one "step" (i.e., one digit can change). 
+The goal of the problem is to find a list of numbers that satisfy these restrictions, which is a Gray Code sequence.

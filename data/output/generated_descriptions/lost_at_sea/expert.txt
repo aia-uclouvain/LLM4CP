@@ -1,0 +1,19 @@
+name: Lost at Sea problem
+
+description: The problem is about finding a lost ship at sea by searching a grid of cells, where each cell has a probability of finding the ship. The search team can move to adjacent cells and cannot revisit any cells. The goal is to find the ship with the highest probability of being found within a limited number of searches (10 days).
+
+variables: x[1..max_steps], y[1..max_steps], path[1..max_steps], points[1..max_steps], sum_points 
+These variables represent the coordinates (x, y) of the cells to be searched, the path of cells to be taken, the points (probabilities) of finding the ship in each cell, and the total sum of points.
+
+constraints: 
+alldifferent(path), 
+path[i] = (x[i]-1)*cols + y[i], 
+abs(x[s] - x[s+1]) + abs(y[s] - y[s+1]) = 1, 
+table([path[s], path[s+1]], valid_connections), 
+x[1] < x[i], path[1] < path[i], 
+points[s] = problem[x[s], y[s]], 
+sum_points = sum(points)
+These constraints ensure that all cells in the path are unique, the path is connected (each cell is adjacent to the previous one), only valid connections between cells are allowed, the first cell has the lowest coordinates, and the points and sum of points are calculated correctly.
+
+objective: maximize sum_points 
+The objective is to maximize the total probability of finding the lost ship by selecting the best path of 10 cells to search.

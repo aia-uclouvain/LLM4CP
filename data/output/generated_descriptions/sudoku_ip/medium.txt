@@ -1,0 +1,13 @@
+Sudoku
+Sudoku is a logic-based placement puzzle where the goal is to fill a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 subgrid contains each number only once.
+
+The main decision variables in this problem are represented by the 3D array `x[i,j,k]`, where `x[i,j,k] = 1` means that cell `[i,j]` is assigned the number `k`. The `givens` array represents the pre-defined numbers in the grid, and the `sol` array represents the solution, where `sol[i,j]` is the number assigned to cell `[i,j]`.
+
+The key constraints in this problem are:
+- Each cell must be assigned exactly one number.
+- Cells in the same row must be assigned distinct numbers.
+- Cells in the same column must be assigned distinct numbers.
+- Cells in the same 3x3 subgrid must be assigned distinct numbers.
+- Pre-defined numbers in the grid must be respected.
+
+The objective of this problem is not to minimize or maximize a specific function, but rather to find a feasible solution that satisfies all the constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. In other words, the goal is to find an assignment of numbers to cells such that all the constraints are met, and the resulting grid is a valid Sudoku solution.

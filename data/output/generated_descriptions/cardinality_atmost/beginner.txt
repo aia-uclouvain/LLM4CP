@@ -1,0 +1,11 @@
+Cardinality Atmost Problem
+The problem is about limiting how many times certain numbers can appear in a list. 
+The main variables are: 
+- variables: a list of numbers that can be changed
+- values: a list of numbers that we are interested in
+- nvar: the maximum number of times each value can appear in the variables list
+The basic restrictions are: 
+- each number in the variables list must be between 1 and 9
+- the list of variables and the list of values are fixed
+- no value can appear more than nvar times in the variables list
+The goal of the problem is to find a solution where the variables list and the values list satisfy these restrictions, and to show what the variables list and the values list look like.

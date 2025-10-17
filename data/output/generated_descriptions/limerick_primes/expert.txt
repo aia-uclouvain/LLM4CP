@@ -1,0 +1,9 @@
+name: Limerick Primes
+description: The Limerick Primes problem is a constraint programming problem that involves finding prime numbers with a specific digit pattern, following the rhyme scheme of a limerick (AABBA), where A is an odd digit and B is any digit other than A.
+variables: p, x 
+p is an integer variable representing a 5-digit prime number, and x is an array of 5 integer variables representing the digits of the prime number, where x[1] to x[5] correspond to the digits A, A, B, B, and A, respectively.
+constraints: 
+is_prime(p), toNum10(x, p), x[1] mod 2 = 1, x[1] = x[2], x[1] = x[5], x[3] = x[4], x[1] != x[3]
+These constraints ensure that p is a prime number, that the digits in x form the prime number p, that the first digit (A) is odd, that the first, second, and fifth digits are the same (A), that the third and fourth digits are the same (B), and that A and B are different.
+objective: satisfy 
+The objective of the problem is to find a solution that satisfies all the constraints, i.e., to find a 5-digit prime number with the limerick pattern AABBA, where A is an odd digit and B is any digit other than A.

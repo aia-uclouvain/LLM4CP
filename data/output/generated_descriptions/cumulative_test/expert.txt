@@ -1,0 +1,12 @@
+name: Cumulative Scheduling Problem
+
+description: The Cumulative Scheduling Problem is a classic problem in constraint programming that involves scheduling a set of tasks with given durations and resource requirements, such that the cumulative resource consumption at any point in time does not exceed a given limit. The problem requires finding a schedule that satisfies these constraints while optimizing a certain objective, such as minimizing the maximum completion time or the limit on resource consumption.
+
+variables: $n, origin, duration, height, end, limitx$ 
+These variables represent the following: $n$ is the number of tasks, $origin$ is an array of variables representing the start time of each task, $duration$ is an array of variables representing the duration of each task, $height$ is an array of variables representing the resource consumption of each task, $end$ is an array of variables representing the completion time of each task, and $limitx$ is a variable representing the limit on resource consumption.
+
+constraints: $duration = [3,9,10,6,2], height = [1,2,1,1,3], cumulative(origin, duration, height, limitx), end[i] = origin[i] + duration[i]$ 
+These constraints represent the following: the duration and resource consumption of each task are fixed, the cumulative resource consumption at any point in time does not exceed the limit $limitx$, and the completion time of each task is equal to its start time plus its duration.
+
+objective: minimize $max(end)$ or minimize $limitx$ 
+The problem can be solved with two different objectives: minimizing the maximum completion time of all tasks or minimizing the limit on resource consumption.

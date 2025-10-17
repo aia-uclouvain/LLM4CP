@@ -1,0 +1,5 @@
+The Popsicle Stand Staffing problem. 
+This problem is about determining the minimum weekly staffing cost for a Popsicle stand while meeting the required staffing levels. 
+The main decision variables are `full_time` and `part_time`, which represent the number of full-time and part-time employees starting work on each day of the week. 
+The key constraints are that the total number of employees working on each day must meet the required demand, and that full-time employees work five consecutive days and part-time employees work two consecutive days. 
+The objective is to minimize the total weekly staffing cost, which is calculated based on the number of full-time and part-time employees and their respective daily wages.

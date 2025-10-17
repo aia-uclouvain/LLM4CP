@@ -1,0 +1,5 @@
+Samuraï puzzle 
+The problem is about finding a special arrangement of numbers in a square grid, similar to a Sudoku puzzle, but with some unique rules. 
+The main variables are x, which represents a row of numbers, and y, which is a 2D grid where each cell can be either 0 or 1. 
+The basic restrictions are that each row and column can only have one of each number, and each smaller square within the grid can only have one 1. 
+The goal of the problem is to find all possible arrangements of numbers that satisfy these rules.

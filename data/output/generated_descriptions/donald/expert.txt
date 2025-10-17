@@ -1,0 +1,5 @@
+name: Donald Puzzle
+description: The Donald puzzle is a classic alphametic puzzle where the goal is to find the numerical values of the letters in the equation DONALD + GERALD = ROBERT, such that the equation holds true when each letter is replaced by its corresponding numerical value.
+variables: D, O, N, A, L, G, E, R, B, T - These variables represent the numerical values of the letters in the equation, where each letter is assigned a unique digit from 0 to 9.
+constraints: 100000*D+10000*O+1000*N+100*A+10*L+D + 100000*G+10000*E+1000*R+100*A+10*L+D = 100000*R+10000*O+1000*B+100*E+10*R+T, D > 0, G > 0, R > 0, all_different(FD) - These constraints ensure that the equation holds true, the first letter of each name is non-zero, and all letters have unique numerical values.
+objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

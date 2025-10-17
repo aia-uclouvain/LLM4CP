@@ -1,0 +1,8 @@
+All Interval Series Problem
+The problem is about finding a sequence of musical notes, represented by pitch classes, such that each note appears exactly once and the differences between consecutive notes are all unique.
+The main decision variable is the array `series`, which represents a permutation of the pitch classes. Each element in the `series` array corresponds to a pitch class, and the index of the element represents the position of the note in the sequence.
+The key constraints are: 
+- each pitch class occurs exactly once in the sequence, 
+- the differences between consecutive notes are all unique. 
+In other words, if we take the absolute difference between each pair of consecutive notes, these differences must all be distinct.
+The objective of the problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find a sequence that satisfies the given constraints. The problem can be seen as a feasibility problem, where the aim is to find a valid sequence of notes that meet the specified conditions.

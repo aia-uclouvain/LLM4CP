@@ -1,0 +1,5 @@
+The problem is the Lexicographically Different Vectors problem. 
+This problem is about finding two vectors of integers that differ in at least one component, where the difference is determined by a lexicographical order. 
+The main decision variables are `vector1` and `vector2`, which represent two arrays of integers. 
+The key constraints are that `vector1` and `vector2` must be equal to two given vectors, and that `vector1` and `vector2` must differ in at least one component, as enforced by the `lex_different` constraint. 
+The problem's objective is to satisfy these constraints, meaning that the goal is to find values for `vector1` and `vector2` that meet the given conditions, rather than minimizing or maximizing a specific value.

@@ -1,0 +1,14 @@
+Library Books problem
+The problem is about determining the number of overdue library books for three students, Arthur, Belinda, and Clarissa, who are majoring in English, French, and German, given certain constraints on the number of books and the relationships between the students' majors and the number of books they have.
+
+The main decision variables are `major`, which represents the major of each student, `major_inv`, which is the inverse of `major`, and `returned`, which represents the number of overdue books for each student.
+
+The key constraints are: 
+- each student has a unique major, 
+- the total number of overdue books is exactly 25, 
+- the student majoring in French has three more overdue books than Arthur, 
+- Clarissa has two more overdue books than the student majoring in English, 
+- no student has more than 14 overdue books, and 
+- the student majoring in French and the student majoring in English are not Arthur and Clarissa, respectively.
+
+The problem's objective is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific objective function. The goal is to determine the major of each student and the number of overdue books they have, given the constraints provided.

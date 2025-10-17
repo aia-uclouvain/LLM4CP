@@ -1,0 +1,12 @@
+name: Set Partition Problem
+description: The Set Partition Problem is a classic problem in computer science and operations research that involves partitioning a given set of integers into two subsets such that the sum of the elements in each subset is equal, the sum of the squares of the elements in each subset is equal, and the cardinality of each subset is equal. The problem requires finding two disjoint subsets A and B of the given set S such that A ∪ B = S, |A| = |B|, ∑(A) = ∑(B), and ∑(A^2) = ∑(B^2).
+variables: a = (a[1], a[2]), sums = (sums[1], sums[2]), sum_squared = (sum_squared[1], sum_squared[2]), where a[i] is a set of integers representing the i-th subset, sums[i] is an integer representing the sum of the elements in the i-th subset, and sum_squared[i] is an integer representing the sum of the squares of the elements in the i-th subset. These decision variables represent the two subsets A and B, and the sums and sums of squares of their elements.
+constraints: 
+a[1] ∪ a[2] = S, 
+|a[1]| = |a[2]|, 
+∑(a[1]) = ∑(a[2]), 
+∑(a[1]^2) = ∑(a[2]^2), 
+1 ∈ a[1], 
+n ≡ 0 (mod 4), 
+where S is the given set of integers, and n is the cardinality of S. These constraints ensure that the two subsets are disjoint, have equal cardinality, equal sum, equal sum of squares, and that the first subset contains the element 1, and that the cardinality of S is a multiple of 4.
+objective: satisfy, which means that the problem is a feasibility problem, and the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

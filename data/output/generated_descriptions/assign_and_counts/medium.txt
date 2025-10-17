@@ -1,0 +1,19 @@
+**Assign and Counts Problem**
+The Assign and Counts problem is a classic constraint programming problem that involves assigning items to bins based on certain conditions. 
+The problem is about assigning each item to a bin, ensuring that the total number of items of a specific color in each bin satisfies a given condition.
+
+**Main Decision Variables**
+The main decision variables in this problem are:
+- `bins`: an array of variables representing the bin assigned to each item.
+- `colors`: an array of variables representing the color of each item.
+- `color`: a variable representing the specific color being considered.
+- `nval`: a variable representing the limit on the number of items of the specific color in each bin.
+
+**Key Constraints**
+The key constraints in this problem can be described as follows:
+- Each item must be assigned to a bin.
+- The total number of items of the specific color in each bin must satisfy the given condition (e.g., less than or equal to a certain limit).
+- The condition is specified by a comparison operator (e.g., less than, less than or equal to, equal to, greater than or equal to, greater than, not equal to).
+
+**Problem Objective**
+The objective of the Assign and Counts problem is to find an assignment of items to bins that satisfies the given conditions. The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. In other words, the problem aims to assign items to bins in such a way that the number of items of a specific color in each bin does not exceed a certain limit, as specified by the comparison operator.

@@ -1,0 +1,14 @@
+Tic Tac Toe
+Tic Tac Toe is a classic two-player game where players take turns marking a space on a 3x3 grid with either a circle (o) or a cross (x). The game starts with an empty grid, and the first player (usually "black" or "x") makes the first move. The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally, while preventing your opponent from doing the same.
+
+The main decision variables in this model are the `tickTackToe` array, which represents the state of the game board at each step. The array has three dimensions: the step number, the row, and the column. The value of `tickTackToe[i, j, k]` is either 0 (black), 1 (white), or 2 (empty), indicating the state of the cell at row `j` and column `k` at step `i`.
+
+The key constraints in this model can be described as follows: 
+- The game starts with an empty board.
+- At each step, either nothing changes or exactly one cell changes from empty to occupied by the current player.
+- If a cell is occupied by a player, it remains occupied by that player for the rest of the game.
+- The game ends when the winning player has three of their symbols in a row, either horizontally, vertically, or diagonally.
+- The losing player must not have three of their symbols in a row.
+- The number of steps taken by each player must be equal or differ by at most one.
+
+The objective of this problem is to find a sequence of moves that leads to a win for the specified winner (either black or white) in a specified number of steps, while ensuring that the opponent does not win. The model does not explicitly minimize or maximize a particular variable; instead, it searches for a satisfying assignment of values to the `tickTackToe` array that meets all the constraints.

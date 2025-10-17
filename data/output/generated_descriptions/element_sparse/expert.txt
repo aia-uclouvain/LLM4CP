@@ -1,0 +1,8 @@
+name: Element Sparse Problem
+description: The Element Sparse problem is a constraint programming problem that involves finding an item in a table and returning its corresponding value, or a default value if the item does not exist in the table. The problem is modeled using the element_sparse global constraint in MiniZinc.
+variables: $n, element\_table, item, item\_default, result$ 
+These variables represent the following: $n$ is the number of rows in the table, $element\_table$ is a 2D array representing the table, $item$ is a 1D array representing the item to be searched, $item\_default$ is the default value to be returned if the item does not exist, and $result$ is the value returned by the element_sparse constraint.
+constraints: $item = [2,5], element\_table = \begin{bmatrix} 1 & 2 \\ 2 & 5 \\ 4 & 2 \\ 8 & 9 \end{bmatrix}, item\_default = 5, element\_sparse(item, element\_table, item\_default, result)$ 
+These constraints represent the following: the item to be searched is fixed to $[2,5]$, the table is fixed to a given 2D array, the default value is fixed to $5$, and the element_sparse constraint is applied to find the result.
+objective: satisfy 
+The objective of the problem is to satisfy all the given constraints, which means finding a solution that makes the element_sparse constraint hold true.

@@ -1,0 +1,5 @@
+Seseman's Convent Problem
+The problem is about filling in numbers in a square grid, where the numbers on the edges of the grid must add up to the same total, and all the numbers inside the grid are zero. 
+The main variables are the size of the grid (n), the total sum of all numbers in the grid (total_sum), and the numbers in each cell of the grid (x). 
+The basic restrictions are that the numbers on each edge of the grid must add up to the same total (border_sum), all the numbers inside the grid must be zero, and each number on the edge must be at least 1. 
+The goal of the problem is to find a set of numbers that satisfy all these restrictions, and to determine the total sum of all numbers in the grid.

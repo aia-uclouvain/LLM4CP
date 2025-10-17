@@ -1,0 +1,10 @@
+The problem is called "min_n" or "minimum of rank n". 
+It's about finding the smallest distinct value in a list of numbers that appears at a certain position when the list is sorted. 
+The main variables are: 
+- "variables" which is a list of numbers, 
+- "t_min" which is the smallest distinct value we're looking for, 
+- "rank" which is the position of "t_min" in the sorted list.
+The basic restrictions are: 
+- "t_min" must be one of the numbers in the list, 
+- "rank" is the number of distinct values in the list that are smaller than "t_min".
+The goal is to find the values of "variables", "t_min", and "rank" that satisfy these restrictions.

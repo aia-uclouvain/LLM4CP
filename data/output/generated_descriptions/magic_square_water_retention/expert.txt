@@ -1,0 +1,12 @@
+name: Associative Magic Square Water Retention (AMSWR) problem
+
+description: The problem is a combination of two concepts: associative magic squares and water retention. An associative magic square is a square grid filled with distinct positive integers in the range 1 to n^2, such that each row, column, and diagonal sums up to the same constant, and each pair of numbers in the square has a unique sum when added to its mirror image. Water retention is a concept where each cell in the grid retains a certain amount of water, which is calculated based on the height of the cell and the water level around it. The goal is to find an associative magic square that maximizes the total amount of water retained.
+
+variables: $n, total, magic_{i,j}, water_{i,j}, assoc, z$ 
+These variables represent the following: $n$ is the size of the square grid, $total$ is the sum of each row, column, and diagonal, $magic_{i,j}$ is the value in the $i^{th}$ row and $j^{th}$ column of the magic square, $water_{i,j}$ is the amount of water retained in the $i^{th}$ row and $j^{th}$ column, $assoc$ is the sum of each pair of numbers and its mirror image, and $z$ is the total amount of water retained minus the sum of all numbers in the grid.
+
+constraints: $\forall i,j \in 1..n, magic_{i,j} \in 1..n^2 \land \forall k \in 1..n, \sum_{i=1}^{n} magic_{k,i} = total \land \sum_{i=1}^{n} magic_{i,k} = total \land \sum_{i=1}^{n} magic_{i,i} = total \land \sum_{i=1}^{n} magic_{i,n-i+1} = total \land \forall i,j \in 1..n, magic_{i,j} + magic_{n-i+1,n-j+1} = assoc \land water_{i,j} = max(magic_{i,j}, min(water_{i-1,j}, water_{i,j-1}, water_{i+1,j}, water_{i,j+1}))$
+These constraints ensure that the magic square is associative, each row, column, and diagonal sums up to the same constant, and each pair of numbers has a unique sum when added to its mirror image. The water retention constraints calculate the amount of water retained in each cell based on the height of the cell and the water level around it.
+
+objective: maximize $z = \sum_{i,j \in 1..n} water_{i,j} - (n*n*(n*n+1) div 2)$ 
+The objective is to maximize the total amount of water retained in the grid, which is calculated by summing up the water retained in each cell and subtracting the sum of all numbers in the grid.

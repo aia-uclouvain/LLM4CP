@@ -1,0 +1,5 @@
+The problem is called Alphametics. 
+It's about solving a mathematical puzzle where letters represent numbers, and when you replace the letters with the correct numbers, the equation is true. 
+The main variables are letters like A, N, C, E, L, R, T, I, G, and F, which represent digits from 0 to 9. 
+The basic restrictions are that each letter must be a different digit, and when you plug these digits into the equation, it must be correct. 
+The goal is to find the correct digits for each letter so that the equation is true, which means finding a solution that satisfies all the constraints.

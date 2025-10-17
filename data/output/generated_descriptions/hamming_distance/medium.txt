@@ -1,0 +1,8 @@
+The Hamming Distance Problem
+The Hamming distance problem is about finding the number of positions at which two binary arrays differ. 
+
+The main decision variables are `a` and `b`, which represent two binary arrays of length `n`. The variable `diffs` represents the number of differences between `a` and `b`.
+
+The key constraints are that `a` must be different from a given array `[1,1,1,1,1,1]` in exactly `diffs` positions, and that the Hamming distance between `a` and `b` must be equal to `diffs`. The Hamming distance constraint is enforced by the `hamming_distance` predicate, which counts the number of positions where `a` and `b` differ.
+
+The problem's objective is to find an assignment of values to `a` and `b` that satisfies the given constraints, specifically that the Hamming distance between `a` and `b` is equal to 2. The model does not minimize or maximize any objective function, but rather finds a solution that satisfies the constraints. The output of the model will be an example of two binary arrays `a` and `b` with a Hamming distance of 2, along with the value of `diffs`.

@@ -1,0 +1,5 @@
+Send More Money problem
+The problem is about finding a solution to a mathematical puzzle where you have to add two numbers, "SEND" and "MORE", and get a third number, "MONEY", as a result. 
+The main variables are the letters S, E, N, D, M, O, R, and Y, which represent the digits 0-9. 
+The basic restrictions are that each letter must be a different digit, and when you add the numbers, you must follow the normal rules of addition, carrying over any extra value to the next column. 
+The goal is to find a solution that satisfies all the rules, there is no specific value to minimize or maximize, the goal is to simply find a valid solution that works.

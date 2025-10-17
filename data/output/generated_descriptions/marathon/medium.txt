@@ -1,0 +1,5 @@
+The Marathon Puzzle Problem
+The Marathon Puzzle problem is about determining the arrival order of six runners, Dominique, Ignace, Naren, Olivier, Philippe, and Pascal, in a marathon based on given clues.
+The main decision variables are `arrive` and `place`. `arrive` is a 2D array where `arrive[r,p]` represents whether runner `r` arrives at position `p`. `place` is a 1D array where `place[r]` represents the actual position of runner `r`.
+The key constraints are: each position can only be occupied by one runner, each runner can only occupy one position, Olivier does not arrive last, Dominique, Pascal, and Ignace arrive before Naren and Olivier, Dominique improves his position from last year, Philippe is among the first four, Ignace does not arrive in second or third position, Pascal arrives three positions before Naren, and neither Ignace nor Dominique arrives in fourth position.
+The objective of the problem is to find a satisfying assignment of runners to positions that meets all the given constraints, which is achieved by using the `solve satisfy` statement in the Minizinc model.

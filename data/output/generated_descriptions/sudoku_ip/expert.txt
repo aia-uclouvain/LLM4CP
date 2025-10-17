@@ -1,0 +1,12 @@
+name: Sudoku
+description: Sudoku is a logic-based placement puzzle where the goal is to fill a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 subgrid contains each number only once. The puzzle starts with some numbers already filled in, and the task is to fill in the remaining empty cells.
+variables: $x_{i,j,k}, sol_{i,j}$, where $x_{i,j,k}$ is a binary variable that equals 1 if cell $(i,j)$ is assigned number $k$, and $sol_{i,j}$ is an integer variable that represents the solution value for cell $(i,j)$, i.e., the number assigned to that cell.
+constraints: 
+$\forall i,j,k: givens_{i,j} \neq 0 \rightarrow x_{i,j,k} = 1 \iff givens_{i,j} = k$
+$\forall i,j: \sum_{k=1}^{9} x_{i,j,k} = 1$
+$\forall i,k: \sum_{j=1}^{9} x_{i,j,k} = 1$
+$\forall j,k: \sum_{i=1}^{9} x_{i,j,k} = 1$
+$\forall I,J,k: \sum_{i=I}^{I+2} \sum_{j=J}^{J+2} x_{i,j,k} = 1$ for $I \in \{1,4,7\}$ and $J \in \{1,4,7\}$
+$\forall i,j: sol_{i,j} = \sum_{k=1}^{9} x_{i,j,k} \cdot k$
+, which represent the following constraints: each cell must be assigned a number that is already given, each cell must be assigned exactly one number, cells in the same row must be assigned distinct numbers, cells in the same column must be assigned distinct numbers, cells in the same 3x3 subgrid must be assigned distinct numbers, and the solution value for each cell is the number assigned to that cell.
+objective: The objective of the problem is to satisfy all the constraints, i.e., there is no objective function to minimize or maximize, the goal is to find a feasible solution that satisfies all the constraints.

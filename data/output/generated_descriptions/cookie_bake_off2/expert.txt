@@ -1,0 +1,12 @@
+name: Cookie Bake Off problem
+
+description: The problem is about finding the best recipe for a perfect cookie based on past attempts with varying amounts of sugar, flour, and butter, and their corresponding judge's scores. The goal is to determine which of the given recipes has the best chance of achieving a perfect score of 100.
+
+variables: $x_1, x_2, x_3, diffs_{1..n}, diffs\_minus_{1..n}, diffs\_plus_{1..n}$ 
+These variables represent the coefficients of sugar, flour, and butter in the recipe, and the differences between the actual and predicted scores for each past attempt.
+
+constraints: $\forall i \in 1..n: scores_{i, 4} = \sum_{j=1}^{3} (x_j \cdot scores_{i,j}) + diffs\_plus_i + diffs\_minus_i$
+These constraints ensure that the predicted score for each past attempt is equal to the sum of the products of the coefficients and the amounts of each ingredient, plus the difference between the actual and predicted scores.
+
+objective: minimize $diffs\_sum = \sum_{i=1}^{n} (diffs\_plus_i + diffs\_minus_i)$ 
+The objective is to minimize the sum of the absolute differences between the actual and predicted scores for all past attempts.

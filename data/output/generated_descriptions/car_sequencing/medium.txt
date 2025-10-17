@@ -1,0 +1,26 @@
+**Car Sequencing Problem**
+
+The Car Sequencing Problem is a classic constraint programming problem that involves scheduling the production of cars on an assembly line. The problem requires finding a sequence of cars to be produced, subject to certain constraints related to the options and classes of the cars.
+
+**Main Decision Variables**
+
+The main decision variables in the Car Sequencing Problem are:
+
+* `car`: a function that assigns a class to each car in the sequence
+* `slot`: an array of variables that represents the sequence of cars to be produced
+* `setup`: a 2D array of variables that indicates whether a particular option is included in a car
+
+These variables represent the sequence of cars to be produced, the class of each car, and the options included in each car.
+
+**Key Constraints**
+
+The key constraints in the Car Sequencing Problem can be described in plain language as follows:
+
+* Each class of car must be produced a certain number of times.
+* For each option, there is a maximum number of cars that can be produced with that option in a block of a certain size.
+* The sequence of cars must satisfy the constraints related to the options and classes of the cars.
+* The number of cars produced with each option must be equal to the total demand for that option.
+
+**Objective**
+
+The objective of the Car Sequencing Problem is to find a sequence of cars that satisfies all the constraints and minimizes a certain cost function, such as the total number of cars produced or the maximum number of options included in a car. However, in some implementations, the objective is simply to find a feasible solution that satisfies all the constraints.

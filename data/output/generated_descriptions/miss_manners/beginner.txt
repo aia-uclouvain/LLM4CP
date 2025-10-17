@@ -1,0 +1,5 @@
+Miss Manners seating problem
+The problem is about arranging seats for guests at a dinner party. 
+The main variables are the seating arrangement, the gender of each guest, and the hobbies of each guest. 
+The basic restrictions are that each guest must sit next to someone of the opposite sex and someone who shares at least one hobby. 
+The goal is to maximize the number of common hobbies between neighboring guests.

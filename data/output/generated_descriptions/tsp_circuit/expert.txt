@@ -1,0 +1,5 @@
+name: Traveling Salesman Problem (TSP)
+description: The Traveling Salesman Problem is a classic problem in combinatorial optimization and operations research that involves finding the shortest possible tour that visits a set of cities and returns to the original city. The problem has numerous applications in logistics, transportation, and telecommunications.
+variables: $x_1, x_2, ..., x_n, d_1, d_2, ..., d_n, distance$ - These are the decision variables where $x_i$ represents the next city to visit after city $i$, $d_i$ represents the distance from city $i$ to the next city, and $distance$ represents the total distance of the tour.
+constraints: $all\_different(x) \land circuit(x) \land distances[i, x_i] = d_i \forall i \in \{1, 2, ..., n\}$ - These constraints ensure that each city is visited exactly once, the tour forms a circuit, and the distance from each city to the next city is correctly calculated.
+objective: minimize $distance$ - The objective is to find the tour with the minimum total distance.

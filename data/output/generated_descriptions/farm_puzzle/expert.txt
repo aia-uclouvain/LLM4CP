@@ -1,0 +1,5 @@
+name: Farm Puzzle
+description: The farm puzzle is a classic problem in constraint programming where a farmer has a certain number of pigs and hens on his farm, and the total number of legs of all the animals is given. The task is to determine the number of pigs and hens.
+variables: $x_1, x_2, ..., x_7, c_0, c_1, c_2, c_3, c_4$ - These variables represent the type of each animal (either a pig with 4 legs or a hen with 2 legs) and the count of each type of animal.
+constraints: $\sum_{i=1}^{7} x_i = 22, x_1 \leq x_2 \leq ... \leq x_7, global\_cardinality(x, c)$ - These constraints ensure that the total number of legs is 22, the types of animals are in non-decreasing order (to break symmetry), and the count of each type of animal is correctly calculated.
+objective: satisfy - The objective of this problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

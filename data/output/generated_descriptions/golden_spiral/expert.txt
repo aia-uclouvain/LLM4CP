@@ -1,0 +1,7 @@
+name: Golden Spiral
+description: The Golden Spiral is a logarithmic spiral whose growth factor is the golden ratio, defined by the polar equation r = ae^(bθ), where a and b are constants, and x and y are the cartesian coordinates obtained from r and θ.
+variables: θ, r, x, y 
+These variables represent the polar angle θ, the radial distance r from the origin, and the cartesian coordinates x and y, which are related to the position on the curve.
+constraints: θ ≥ 0.0, r ≥ 0.0, rcos(θ) = x, rsin(θ) = y, exp(0.30649θ) = r 
+These constraints ensure that θ and r are non-negative, and that the cartesian coordinates x and y are correctly calculated from the polar coordinates, and that the radial distance r follows the golden spiral equation.
+objective: The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize, the goal is to find a point (x, y) that lies on the golden spiral curve.

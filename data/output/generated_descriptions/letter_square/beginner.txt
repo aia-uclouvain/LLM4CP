@@ -1,0 +1,5 @@
+Letter Square Problem
+The problem is about creating a square matrix where each row and column contains different numbers, except for blank spaces. 
+The main variables are the size of the square (n), the numbers to place in each row/column (m), and the matrix itself (x). 
+The basic restrictions are that each row and column must have different numbers, except for blank spaces, and that the first visible number in each row and column must match the given hints. 
+The goal is to find a solution that satisfies all the constraints, with no specific objective to minimize or maximize.

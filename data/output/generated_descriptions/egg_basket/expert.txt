@@ -1,0 +1,5 @@
+name: Egg Basket Puzzle
+description: The Egg Basket Puzzle is a classic problem where we need to find the minimum number of eggs that can be put into baskets of different sizes, such that each basket contains a specific number of eggs. The puzzle states that there are baskets of sizes 2, 3, 4, 5, 6, and 7, and we want to find the smallest number of eggs that can be distributed among these baskets.
+variables: $n, x_1, x_2, x_3, x_4, x_5, x_6$ - These are the decision variables where $n$ represents the total number of eggs and $x_i$ represents the number of times the $i^{th}$ basket is used.
+constraints: $x_i \geq 0, i = 1..6$, $n \geq 1$, $n = (i+1)x_i + 1, i = 1..5$, $n = (6+1)x_6$ - These constraints ensure that the number of times each basket is used is non-negative, the total number of eggs is at least 1, and the total number of eggs is equal to the sum of the number of eggs in each basket plus 1 for the first 5 baskets, and equal to the number of eggs in the last basket.
+objective: minimize $n$ - The objective of the problem is to minimize the total number of eggs, $n$.

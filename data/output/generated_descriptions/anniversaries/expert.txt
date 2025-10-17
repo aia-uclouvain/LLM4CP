@@ -1,0 +1,18 @@
+name: Anniversaries Problem
+description: The problem involves determining the husband and wife that make up each of five couples and the number of years they have been married, given certain clues about their relationships and marriage durations.
+variables: $R, D, C, P, E, J, M, El, Em, Mi, m = [m_1, m_2, m_3, m_4, m_5]$ where $R, D, C, P, E$ represent the surnames of the husbands, $J, M, El, Em, Mi$ represent the surnames of the wives, and $m_i$ represents the number of years couple $i$ has been married. These variables are used to assign husbands to wives and determine the marriage duration of each couple.
+constraints: 
+$\begin{aligned}
+&all\_different([R, D, C, P, E]) \\
+&all\_different([J, M, El, Em, Mi]) \\
+&all\_different([m_1, m_2, m_3, m_4, m_5]) \\
+&m_J < m_C \land m_J < m_P \land m_J > m_D \land m_J > m_Jo \\
+&m_E = 2m_W \land m_E \* 2 = m_R \\
+&m_S = 10 + m_P \land m_S + 10 = m_M \\
+&D = Mi \land m_D + 25 = m_G \land m_G = 30 \\
+&max([m_1, m_2, m_3, m_4, m_5]) = m_G \\
+&m_El > min([m_1, m_2, m_3, m_4, m_5]) \land m_Jo > min([m_1, m_2, m_3, m_4, m_5]) \\
+&m_Ev = 25
+\end{aligned}$ 
+where these constraints ensure that each husband is assigned to a unique wife, each wife is assigned to a unique husband, each couple has a unique marriage duration, and the given clues about the relationships and marriage durations are satisfied.
+objective: The objective of the problem is to find a satisfying assignment of husbands to wives and marriage durations, there is no explicit objective to minimize or maximize a value, the goal is to find a solution that satisfies all the given constraints.

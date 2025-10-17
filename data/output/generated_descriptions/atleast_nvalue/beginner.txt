@@ -1,0 +1,5 @@
+The problem is called "At Least N Value". 
+It's about having a list of numbers and wanting to know if there are at least a certain number of different numbers in that list. 
+The main variables are "x" which is the list of numbers, and "nval" which is the minimum number of different numbers we want to have in the list. 
+The basic rules are that all the numbers in the list must be between 1 and 7, and we want to have at least "nval" different numbers in the list. 
+The goal is to check if the list "x" has at least "nval" different numbers, and in this case, "nval" is 2, meaning we want to check if the list has at least 2 different numbers.

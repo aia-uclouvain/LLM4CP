@@ -1,0 +1,5 @@
+The problem is called a Nonlinear problem. 
+It's about finding the best dimensions for a rectangle with a fixed perimeter, which is the total length around the edge. 
+The main variables are L (the perimeter), w (the width), and h (the height), which represent the dimensions of the rectangle. 
+The basic restrictions are that the perimeter, width, and height must be non-negative (not negative), the area of the rectangle (width times height) must be at least 625, the perimeter is limited to 100, the height must be at least 2, and the perimeter is equal to twice the sum of the width and height. 
+The goal is to maximize the area of the rectangle (make it as large as possible).

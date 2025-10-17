@@ -1,0 +1,18 @@
+Dividing into Roughly Equal Sized Groups.
+The problem is about dividing a sorted list of items into a specified number of groups, where each group should have roughly the same number of items. The items are considered to be of the same type if they have the same value, and all items of the same type should be in the same group.
+
+The main variables are:
+- n: the total number of items in the list
+- a: the sorted list of items
+- k: the number of groups to divide the items into
+- x: the break points between the groups
+- s: the number of items in each group
+- z: the total error, which is the sum of the absolute differences between the size of each group and the ideal group size
+
+The basic restrictions or rules of the problem are:
+- The list of items must be sorted
+- All items of the same type should be in the same group
+- The number of groups is fixed and specified by the user
+- The break points between the groups should be chosen to minimize the total error
+
+The goal of the problem is to minimize the total error, which means finding the break points that result in groups that are as close to the ideal size as possible. The ideal group size is calculated by dividing the total number of items by the number of groups.

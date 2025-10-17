@@ -1,0 +1,5 @@
+name: Triangle Problem
+description: The Triangle Problem is a classic constraint programming problem where the goal is to fill in a triangular structure with digits from 0 to 9, such that each digit is used only once and certain sums of digits in specific positions are equal.
+variables: A, B, C, D, E, F, G, H, I, J - These are decision variables representing the digits to be placed in the triangular structure, where each variable corresponds to a specific position in the triangle.
+constraints: all_different(X), A + C + F + J = A + B + D + G, A + B + D + G = G + H + I + J, A + B + C = D + G + H, D + G + H = F + I + J - These constraints ensure that each digit is used only once (all_different), and that the sums of digits in specific positions are equal, as defined by the problem statement.
+objective: The objective of the problem is to find a satisfying assignment of digits to the variables, such that all constraints are met, which is achieved by using the "solve satisfy" statement in the MiniZinc model, indicating that the goal is to find a feasible solution that satisfies all constraints, rather than minimizing or maximizing a specific value.

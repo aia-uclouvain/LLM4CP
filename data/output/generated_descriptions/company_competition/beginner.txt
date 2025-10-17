@@ -1,0 +1,5 @@
+Company Competition Problem
+The problem is about dividing 18 people from different departments and sexes into 4 teams for a company competition. 
+The main variables are the teams, the number of people from each department in each team, the number of each sex in each team, and which team each person is assigned to.
+The basic restrictions are that each team should have an even distribution of sexes and departments, and managers should be in different teams if possible. 
+The goal is to minimize the number of violations of these rules, which means creating teams that are as balanced as possible in terms of sex and department distribution, while also separating managers into different teams.

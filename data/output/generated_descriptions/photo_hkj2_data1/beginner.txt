@@ -1,0 +1,11 @@
+Photo Problem
+The problem is about arranging people in a line for a photo, taking into account their preferences for who they want to stand next to.
+The main variables are: 
+- positions: the order in which people stand in the line
+- preferences: a list of pairs of people who want to stand next to each other
+- z: the number of satisfied preferences
+- n: the number of people in the photo
+The basic restrictions or rules of the problem are: 
+- each person can only stand in one position
+- each preference is either satisfied (the two people stand next to each other) or not
+The goal of the problem is to find an arrangement of people that satisfies as many preferences as possible, with a minimum of 10 satisfied preferences.

@@ -1,0 +1,5 @@
+Enigma 1615 problem. 
+This problem is about finding a six-digit number, where all the digits are different and not zero, with a special property. 
+The main variables are the six digits of the number: e, n, i, g, m, and a, which represent the individual digits of the number.
+The basic restrictions are that all the digits must be different and not zero, and when the first two digits are moved to the end of the number, the new number is 20% larger than the original number.
+The goal of the problem is to find the original six-digit number, ENIGMA, that satisfies these conditions.

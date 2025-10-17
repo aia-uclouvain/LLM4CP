@@ -1,0 +1,12 @@
+Movie Stars Problem
+The Movie Stars problem is about predicting the rating a customer, Evan, will give to a movie, "Prognosis Negative", based on the ratings of other customers for the same movie and other movies.
+
+The main decision variables are `x`, an array representing Evan's ratings for all movies, and `dists`, an array representing the distances between Evan's ratings and the ratings of other customers. The `x` array has a length of `num_r`, which is the number of movies, and each element is a variable that can take a value from 1 to 5, representing the possible ratings. The `dists` array has a length of `num_p`, which is the number of other customers, and each element is a variable that represents the distance between Evan's ratings and the ratings of the corresponding customer.
+
+The key constraints are: 
+- The known ratings of Evan are assigned to the corresponding elements of the `x` array.
+- The distances between Evan's ratings and the ratings of other customers are calculated using the `dist` predicate, which sums the squared differences between the corresponding ratings.
+- The index of the customer with the minimum distance is determined using the `min_index` predicate.
+- The rating of the customer with the minimum distance for the movie "Prognosis Negative" is assigned to the corresponding element of the `x` array.
+
+The objective of the problem is to minimize the minimum distance between Evan's ratings and the ratings of other customers, which is represented by the `min_dist` variable. By minimizing this distance, the model is essentially finding the customer that is most similar to Evan in terms of their ratings, and using that customer's rating for the movie "Prognosis Negative" as the predicted rating for Evan.

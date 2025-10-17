@@ -1,0 +1,5 @@
+name: Twelve Statements Problem
+description: The problem involves 12 cards with statements about the number of false statements to the left of each card. The goal is to find the largest number of statements that might be true when the cards are arranged in a row from left to right.
+variables: $x = (x_1, x_2, ..., x_{12}), y = (y_1, y_2, ..., y_{12}), z$ where $x_i$ represents the statement number on the $i^{th}$ card, $y_i$ is a binary variable indicating whether the $i^{th}$ statement is true or not, and $z$ is the total number of true statements.
+constraints: $x_i \in \{1, 2, ..., 12\}, y_i \in \{0, 1\}, z = \sum_{i=1}^{12} y_i, \text{all\_different}(x), x_i = \sum_{j=1}^{i-1} (1 - y_j) \leftrightarrow y_i = 1, \text{increasing\_except\_0}([x_i \cdot (1 - y_i) | i \in 1..12])$ where the constraints ensure that each card has a unique statement number, the number of false statements to the left of each card matches the statement on the card if the statement is true, and the false statements are ordered.
+objective: Maximize $z$, the total number of true statements.

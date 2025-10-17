@@ -1,0 +1,16 @@
+Name of the problem: Among Modulo
+
+The problem is about counting how many numbers in a list are even or odd, depending on certain rules. 
+
+The main variables are: 
+- x, which is a list of numbers
+- nvar, which counts how many numbers in the list follow a certain rule
+- remainder, which is a target value that the numbers in the list should leave when divided by another number
+- quotient, which is the number by which we divide the numbers in the list to check the rule
+
+The basic restrictions or rules are: 
+- The numbers in the list x must be between 1 and 8.
+- The numbers in the list must match a given list of numbers.
+- We divide each number in the list by the quotient and check if the remainder is equal to the target remainder.
+
+The goal of the problem is to find out how many numbers in the list leave a remainder of 0 when divided by 2, which means finding how many even numbers are in the list.

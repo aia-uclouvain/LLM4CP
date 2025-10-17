@@ -1,0 +1,5 @@
+name: Non-Linear Constraint Problem
+description: This problem is a non-linear constraint satisfaction problem, where the goal is to find values for three variables that satisfy a set of three non-linear equations.
+variables: $x, y, z$ - These variables represent the decision variables of the problem, which are real numbers within the range of -20.0 to 20.0.
+constraints: $13.0 + y^2(1.0+z^2) + z(z - 24.0y) = 0.0$, $13.0 + z^2(1.0+x^2) + x(x - 24.0z) = 0.0$, $13.0 + x^2(1.0+y^2) + y(y - 24.0x) = 0.0$ - These constraints are non-linear equations that the decision variables must satisfy.
+objective: satisfy - The objective of this problem is to find values for the decision variables that satisfy all the given constraints, rather than minimizing or maximizing a specific value.

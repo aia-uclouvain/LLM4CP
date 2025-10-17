@@ -1,0 +1,8 @@
+Sliding Sum Problem
+The problem is about finding a set of numbers that satisfy certain rules. 
+The main variables are: 
+- "variables" which is a list of numbers, 
+- "low" and "up" which are the minimum and maximum allowed sums, 
+- "seq" which is the length of a sequence of numbers to consider.
+The basic restrictions are that the sum of any sequence of "seq" consecutive numbers in the list must be between "low" and "up". 
+The goal is to find a list of numbers that satisfies these rules, without trying to minimize or maximize anything, just to find a solution that works.

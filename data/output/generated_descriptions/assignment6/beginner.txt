@@ -1,0 +1,11 @@
+Assignment Problem
+The assignment problem is about finding the best way to assign tasks to agents, or workers, in a way that minimizes the total cost. 
+The main variables are: 
+- Agents (or workers): These are the people who will be doing the tasks.
+- Tasks: These are the jobs that need to be done.
+- Cost: This is the amount of money or effort it takes for an agent to complete a task.
+The basic restrictions or rules are: 
+- Each agent can only do one task.
+- Each task must be done by exactly one agent.
+- The cost of assigning a task to an agent is known.
+The goal of the problem is to find a way to assign all the tasks to the agents in a way that minimizes the total cost.

@@ -1,0 +1,5 @@
+name: Leap Year Problem
+description: The Leap Year Problem is a classical problem in constraint programming that determines whether a given year is a leap year or not, according to the Gregorian calendar rules.
+variables: year ∈ [1, 2014], is_leap_year ∈ {0, 1} - These are the decision variables where year represents the year to be checked and is_leap_year is a binary variable indicating whether the year is a leap year (1) or not (0).
+constraints: is_leap_year = 1 <-> (year mod 4 == 0 /\ year mod 100 != 0) \/ year mod 400 == 0 - This constraint ensures that is_leap_year is true if and only if the year is a leap year, which occurs when the year is divisible by 4 but not by 100, or when it is divisible by 400.
+objective: The objective of this problem is to satisfy the given constraints, i.e., to determine whether a given year is a leap year or not, rather than minimizing or maximizing a specific value.

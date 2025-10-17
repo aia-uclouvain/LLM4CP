@@ -1,0 +1,5 @@
+Seating Problem of OR'ers
+The problem is about arranging a group of 19 people around a circular table in such a way that the people sitting next to each other are as compatible as possible. 
+The main variables are the seating arrangement (x and z arrays) and the compatibility scores (s array) between each pair of people. 
+The basic restrictions are that each person can only sit next to two other people, and the seating arrangement must form a circle. 
+The goal is to maximize the total compatibility score of the seating arrangement, which means finding the arrangement where the people sitting next to each other have the highest compatibility scores.

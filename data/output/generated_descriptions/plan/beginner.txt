@@ -1,0 +1,5 @@
+Production Planning Problem
+The problem is about planning the production of different materials in a factory. 
+The main variables are the amounts of different materials to be produced, such as bin1, bin2, bin3, bin4, bin5, alum, and silicon, which represent the quantities of various products.
+The basic restrictions or rules of the problem are that the total amount of materials produced should be 2000, and there are limits on the amounts of certain materials that can be produced due to constraints such as limited resources, production capacity, and quality requirements.
+The goal of the problem is to minimize the total value of the materials produced, which is calculated based on the quantities of each material.

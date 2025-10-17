@@ -1,0 +1,10 @@
+The Quasigroup Existence Problem
+The problem is about finding a quasigroup, which is a mathematical structure that satisfies certain properties.
+The main variables are:
+- `n`: the order of the quasigroup (the size of the multiplication table)
+- `quasiGroup`: an `n x n` matrix representing the quasigroup operation
+- `qgDiagonal`: an array of size `n` representing the diagonal elements of the quasigroup matrix
+The basic restrictions or rules of the problem are:
+- Each row and column of the quasigroup matrix must contain each element exactly once (Latin square property)
+- The quasigroup operation must satisfy certain axioms, such as idempotence, anti-Abelian, and others
+The goal of the problem is to find a quasigroup that satisfies these properties, or to determine that no such quasigroup exists.

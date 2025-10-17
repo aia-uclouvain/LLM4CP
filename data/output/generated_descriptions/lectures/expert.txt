@@ -1,0 +1,5 @@
+name: Graph Coloring Problem
+description: The problem is to schedule six one-hour lectures without clashes, given certain constraints on which lectures cannot be held at the same time. The goal is to find the minimum number of time slots required to schedule all the lectures.
+variables: $v = (v_1, v_2, ..., v_6)$, where $v_i$ represents the time slot assigned to lecture $i$. These variables are decision variables that determine the schedule of the lectures.
+constraints: $\forall i \in 1..7: v[g[i,1]] \neq v[g[i,2]]$, $maximum(max_c, v)$, $v[1] = 1$, $v[2] \leq 2$, where $g[i,1]$ and $g[i,2]$ represent the lectures that cannot be held at the same time, and $max_c$ is the maximum time slot used. These constraints ensure that lectures with conflicts are not scheduled at the same time, and that the time slots are assigned efficiently.
+objective: Minimize $max_c$, which represents the minimum number of time slots required to schedule all the lectures without clashes.

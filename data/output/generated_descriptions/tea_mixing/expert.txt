@@ -1,0 +1,5 @@
+name: Dudeney's Tea Mixing Problem
+description: The problem is about mixing different types of tea to make a 20-pound mixture with a total price of 570, where each type of tea has a different price per pound. The goal is to find the optimal mixture of teas that minimizes the total cost.
+variables: $x_1, x_2, x_3$, where $x_i$ represents the number of pounds of tea type $i$ to include in the mixture, and $x_i$ are decision variables that represent the amount of each tea type to use.
+constraints: $x_i \geq 0, \sum_{i=1}^{3} x_i = 20, \sum_{i=1}^{3} p_i x_i = 570$, where the first constraint ensures that the amount of each tea type is non-negative, the second constraint ensures that the total weight of the mixture is 20 pounds, and the third constraint ensures that the total price of the mixture is 570.
+objective: Minimize the total cost, $minexp = \sum_{i=1}^{3} p_i x_i$, where $p_i$ is the price per pound of tea type $i$.

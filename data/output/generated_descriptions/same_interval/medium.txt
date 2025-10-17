@@ -1,0 +1,8 @@
+The Same Interval Problem
+The Same Interval problem is about finding a common interval size that can be used to divide the ranges of two sets of variables into intervals, such that the number of variables in each set that fall within each interval is the same.
+
+The main decision variables are `variables1` and `variables2`, which are arrays of variables representing the two sets of values, and `size_interval`, which represents the size of the intervals.
+
+The key constraints are that the number of variables in `variables1` and `variables2` that fall within each interval of size `size_interval` must be the same. This is achieved through the `same_interval` predicate, which checks that the sum of variables in each set that fall within each interval is equal.
+
+The problem's objective is to satisfy the constraints, specifically the `same_interval` constraint, given the fixed values of `variables1` and `variables2`. The `size_interval` variable is also fixed to 3 in this instance, but in a more general formulation, it could be a variable that needs to be determined. The goal is to verify that the given `size_interval` satisfies the `same_interval` constraint for the given `variables1` and `variables2`.

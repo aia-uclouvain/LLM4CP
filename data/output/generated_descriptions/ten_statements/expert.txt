@@ -1,0 +1,5 @@
+name: Ten Statements Problem
+description: The problem presents a set of 10 statements, each claiming a specific number of the statements are true, and asks to determine how many of these statements are actually true.
+variables: $x_1, x_2, ..., x_{10}$, where $x_i$ is a binary decision variable representing whether the $i^{th}$ statement is true or not.
+constraints: $\forall i \in \{1, 2, ..., 10\}: x_i = 1 \leftrightarrow \sum_{j=1}^{10} x_j = i \wedge \sum_{j=1}^{10} x_j > 0$, which ensures that each statement's truth value aligns with the total number of true statements and that at least one statement must be true.
+objective: The problem does not have a traditional objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the given constraints, effectively determining the number of true statements.

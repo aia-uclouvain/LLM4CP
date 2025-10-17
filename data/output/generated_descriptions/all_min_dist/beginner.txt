@@ -1,0 +1,5 @@
+The problem is called all_min_dist. 
+It's about placing numbers in a list so that the difference between any two numbers is at least a certain minimum distance. 
+The main variables are x, which is a list of numbers, and c, which is the minimum distance between any two numbers in the list. 
+The basic restrictions are that all numbers in the list must be between 1 and 9, and the difference between any two numbers must be at least the minimum distance c. 
+The goal of the problem is to find a list of numbers that satisfies these restrictions, with the minimum distance c being 2.

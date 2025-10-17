@@ -1,0 +1,5 @@
+Coin Puzzle
+The Coin Puzzle is a classic problem that involves finding the minimum number of coins of different denominations needed to make a specific amount of money.
+The main decision variables in this problem are represented by the array `x`, where `x[i]` denotes the number of coins of denomination `v[i]` used to make the required amount.
+The key constraints in this problem are that the total value of the coins used must equal the required amount (`sum(i in 1..3) (v[i]*x[i]) = requ`), and that the number of coins of each denomination used must be non-negative (`x[i] >= 0`).
+The objective of the Coin Puzzle is to minimize the total number of coins used, which is achieved by minimizing the sum of the decision variables `x[i]`. In other words, the goal is to find the smallest number of coins that can be combined to make the required amount, using the available denominations.

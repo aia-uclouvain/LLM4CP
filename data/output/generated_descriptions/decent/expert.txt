@@ -1,0 +1,19 @@
+name: Decentralization Problem
+description: The Decentralization Problem is a classic problem in operations research and management science that involves deciding where to locate departments in different cities to maximize the total benefit while minimizing communication costs between departments. The problem considers the benefits of locating each department in a particular city and the communication costs between departments in different cities.
+
+variables: $d_{ij}, g_{ijkl}$ 
+These are decision variables where $d_{ij}$ represents whether department $i$ is located in city $j$ (1 if located, 0 otherwise), and $g_{ijkl}$ represents whether department $i$ is located in city $j$ and department $k$ is located in city $l$ (1 if both conditions are met, 0 otherwise).
+
+constraints: 
+$\sum_{j \in ncities} d_{ij} = 1 \forall i \in ndepts$,
+$\sum_{i \in ndepts} d_{ij} \leq 3 \forall j \in ncities$,
+$g_{ijkl} - d_{ij} \leq 0$,
+$g_{ijkl} - d_{kl} \leq 0$,
+$d_{ij} + d_{kl} - g_{ijkl} \leq 1$,
+$g_{ijkl} \leq 1$,
+$d_{ij} \leq 1$,
+$tcost \geq 0$
+These constraints ensure that each department is located in exactly one city, at most three departments are located in each city, and the logical relationships between the $d$ and $g$ variables are maintained. The last constraint ensures that the total cost is non-negative.
+
+objective: Maximize $tcost = \sum_{i \in ndepts, j \in ncitiesm1} benefit_{ij} \cdot d_{ij} - \sum_{i \in ndepts, j \in ncities, k \in ndepts, l \in ncities, k > i} comm_{ik} \cdot dist_{jl} \cdot g_{ijkl}$ 
+The objective is to maximize the total benefit of locating departments in different cities while minimizing the communication costs between departments in different cities.

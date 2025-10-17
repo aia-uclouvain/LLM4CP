@@ -1,0 +1,18 @@
+Nim Game Problem
+The Nim game is a mathematical game of strategy where two players take turns removing objects from distinct heaps or piles. The game's objective is to avoid being the player who removes the last object.
+
+The main decision variables in this problem are:
+- `n`: the number of objects in each heap before a move
+- `x`: a binary representation of the position after a move, where `x[i, j]` represents the `j-th` bit in the binary representation of the number of objects in the `i-th` heap after a move
+- `d`: a binary variable indicating whether a heap has been changed (1 if changed, 0 otherwise)
+- `s`: the number of objects taken from each heap
+- `m`: the number of objects in each heap after a move
+- `w`: dummy variables used to test for a winning position
+
+The key constraints in this problem are:
+- Each heap's number of objects after a move must be consistent with the binary representation
+- The position after a move must be a safe position, meaning that the bitwise XOR of the heap sizes is zero
+- The number of objects in each heap before and after a move must be consistent with the number of objects taken from the heap
+- A heap is considered changed if the number of objects taken from it is greater than zero
+
+The objective of this problem is to minimize the number of heaps changed, which is equivalent to finding a move that results in a safe position with the fewest number of changes to the heaps. If the solution is zero, it means that the current position is already safe.

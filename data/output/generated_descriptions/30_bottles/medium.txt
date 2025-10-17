@@ -1,0 +1,12 @@
+The 30 Bottles Problem
+The 30 Bottles Problem is a classic constraint programming problem where a man leaves 30 bottles to his 3 sons, with the condition that each son should receive the same number of bottles and the same amount of oil. The bottles are of different types, with some filled, some half-filled, and some empty.
+
+The main decision variables in this problem are the number of bottles of each type that should be distributed to each son, represented by the 2D array `x`. The `x` array has dimensions `num_sons` x `n`, where `n` is the number of bottle types. The value of `x[s, j]` represents the number of bottles of type `j` that should be given to son `s`.
+
+The key constraints in this problem are:
+- Each son should receive the same total number of bottles.
+- Each son should receive the same total amount of oil.
+- The total number of bottles of each type should be distributed exactly among the sons.
+- The distribution should be symmetric, meaning that the sons should receive the bottles in a consistent order.
+
+The problem's objective is to find all possible distributions of bottles that satisfy these constraints, without minimizing or maximizing any specific value. The goal is to identify all feasible solutions that meet the conditions set by the man.

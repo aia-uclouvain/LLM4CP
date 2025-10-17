@@ -1,0 +1,11 @@
+Crew Allocation Problem
+The Crew Allocation Problem is a classic constraint programming problem that involves assigning a set of crew members to a set of flights, subject to various constraints such as the number of crew members required for each flight, language requirements, and break times between flights.
+
+The main decision variables in this problem are the `crew` variables, which represent the assignment of crew members to flights. Specifically, `crew[f, p]` is a binary variable that is 1 if crew member `p` is assigned to flight `f`, and 0 otherwise.
+
+The key constraints in this problem can be described in plain language as follows: 
+- Each flight must have the required number of crew members.
+- Each flight must have the required number of crew members with specific attributes, such as speaking a particular language.
+- After a flight, a crew member must have a break of at least two flights before being assigned to another flight.
+
+The objective of the Crew Allocation Problem is to minimize the number of crew members working, which is represented by the variable `z`. This variable is calculated by summing up the number of crew members who are assigned to at least one flight. The problem is solved using a constraint programming approach, which involves finding a feasible assignment of crew members to flights that satisfies all the constraints while minimizing the objective function.

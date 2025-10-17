@@ -1,0 +1,11 @@
+Maximum Flow Problem
+The Maximum Flow Problem is about finding the maximum amount of flow that can be sent from a source node to a sink node in a network with limited capacity arcs.
+
+The main decision variables are x[i], which represent the elementary flow through each arc (i) in the network, and flow, which represents the total flow from the source node to the sink node.
+
+The key constraints are: 
+- the flow through each arc cannot exceed its capacity, 
+- the flow into each node must equal the flow out of the node (conservation of flow), 
+- the total flow from the source node to the sink node must be non-negative and not exceed a certain limit.
+
+The problem's objective is to maximize the total flow from the source node to the sink node, subject to the constraints. In other words, the goal is to find the maximum amount of flow that can be sent through the network without exceeding the capacity of any arc and while maintaining conservation of flow at each node.

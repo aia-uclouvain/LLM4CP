@@ -1,0 +1,5 @@
+Volsay problem
+The problem is about finding the best way to mix two chemicals, Gas and Chloride, to get the maximum value. 
+The main variables are Gas and Chloride, which represent the amounts of these two chemicals to be mixed, and z, which is the total value of the mixture.
+The basic restrictions are that the total amount of Gas and Chloride cannot exceed 50, and there's also a limit on how much of each chemical can be used based on their weights (3 units of Gas and 4 units of Chloride cannot total more than 180).
+The goal is to maximize the total value, z, which is calculated by multiplying the amount of Gas by 40 and the amount of Chloride by 50, and then adding these two values together.

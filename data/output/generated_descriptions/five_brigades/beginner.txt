@@ -1,0 +1,5 @@
+The Five Brigades puzzle 
+is about five men - Alfonso, Benito, Carlos, Diego, and Esteban - who have stolen 200 gold coins and are trying to figure out how many each of them has. 
+The main variables are A, B, C, D2, and E3, which represent the number of gold coins each man has. 
+The basic restrictions are that each man must have at least 8 coins and no more than 160 coins, and if they had a certain multiple of coins, they would still have 200 coins in total. 
+The goal is to find all possible combinations of coins that the men could have, with the condition that every man has a whole number of coins and no one has fractional coins.

@@ -1,0 +1,19 @@
+name: Abbott's Window puzzle
+
+description: The Abbott's Window puzzle is a classic problem in constraint programming. It involves finding the maximum number of 1s that can be placed in an 8x8 grid, such that each row, column, and certain diagonals contain an even number of 1s, and the four corners of the grid are always 1.
+
+variables: $x_{i,j}, a_i, b_j, c_i, d_j, e_j, f_i$ 
+These variables represent the decision variables in the problem. $x_{i,j}$ is a binary variable that represents whether the cell at row $i$ and column $j$ is 1 or 0. $a_i$, $b_j$, $c_i$, $d_j$, $e_j$, and $f_i$ are integer variables that represent the number of pairs of 1s in row $i$, column $j$, and certain diagonals, respectively.
+
+constraints: 
+$\forall i \in R: \sum_{j \in C} x_{i,j} = 2a_i$, 
+$\forall j \in C: \sum_{i \in R} x_{i,j} = 2b_j$, 
+$\forall i \in 2..row-1: \sum_{k \in 1..i} x_{k,i-k+1} = 2c_{i-1}$, 
+$\forall j \in 1..col-1: \sum_{k \in j..row} x_{k,col-k+j} = 2d_j$, 
+$\forall j \in 1..col-1: \sum_{k \in 1..row-j+1} x_{k,j+k-1} = 2e_j$, 
+$\forall i \in 2..row-1: \sum_{k \in i..row} x_{k,k-i+1} = 2f_{i-1}$, 
+$x_{1,1} = 1 \wedge x_{row,1} = 1 \wedge x_{1,col} = 1 \wedge x_{row,col} = 1$
+These constraints ensure that each row, column, and certain diagonals contain an even number of 1s, and the four corners of the grid are always 1.
+
+objective: maximize $\sum_{i \in R, j \in C} x_{i,j}$ 
+The objective of the problem is to maximize the total number of 1s in the grid.

@@ -1,0 +1,10 @@
+Word Golf problem. 
+The Word Golf problem is a classic constraint programming problem where the goal is to find a path between two given words by changing one letter at a time, with each resulting word being a valid word.
+
+The main decision variables in this problem are the words in the path, and what they represent is the sequence of words that will be used to transform the starting word into the ending word.
+
+The key constraints in this problem are that each word in the path must be a valid word, and that each word can be transformed into the next word by changing only one letter.
+
+The objective of the problem is to find the shortest path between the starting and ending words, i.e., to minimize the number of words in the path. 
+
+In this specific model, the data file contains a list of 4398 words, each represented by a unique integer. The model uses a 2D array to store the words, where each row represents a word and each column represents a letter in the word. The model then uses constraints to ensure that each word in the path is a valid word and that each word can be transformed into the next word by changing only one letter.

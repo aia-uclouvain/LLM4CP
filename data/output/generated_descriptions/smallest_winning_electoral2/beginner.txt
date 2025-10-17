@@ -1,0 +1,5 @@
+The name of the problem is "Becoming President with 22% of the Votes". 
+This problem is about finding the minimum percentage of votes needed to win a presidential election in the United States, considering the electoral college system. 
+The main variables are the states, the number of electoral votes each state has, the population of each state, and a decision variable that determines which states to win. 
+The basic restrictions or rules of the problem are that a candidate needs to win at least 270 electoral votes to win the election, and each state has a certain number of electoral votes and a certain population. 
+The goal of the problem is to minimize the total population of the states that need to be won in order to win the election, which translates to minimizing the percentage of votes needed to win.

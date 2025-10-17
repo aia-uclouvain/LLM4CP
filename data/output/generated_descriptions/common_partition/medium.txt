@@ -1,0 +1,18 @@
+**Common Partition Problem**
+The Common Partition problem is about finding the number of common partitions between two collections of variables, given a set of predefined partitions.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables representing the first collection of values.
+- `y`: an array of variables representing the second collection of values.
+- `partitions`: an array of sets of integers, where each set represents a partition.
+- `a` and `b`: integer variables representing the number of common partitions between `x` and `y`, and `y` and `x`, respectively.
+
+**Constraints**
+The key constraints in this problem can be described as follows:
+- The `common_partition` constraint ensures that `a` and `b` are correctly calculated based on the number of common partitions between `x` and `y`, and `y` and `x`, respectively.
+- The `cp1d` predicate is used to assign fixed values to `x`, `y`, and `partitions`.
+- The problem also involves constraints to count the occurrences of each array in the partitions and to calculate the number of common partitions.
+
+**Objective**
+The objective of the Common Partition problem is to satisfy the given constraints, specifically the `common_partition` constraint, which ensures that `a` and `b` represent the correct number of common partitions between the two collections of variables. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a solution that satisfies all the given constraints.

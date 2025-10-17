@@ -1,0 +1,18 @@
+**Seating Problem**
+The Seating Problem is a classic constraint programming problem. 
+It involves arranging a group of people around a circular table to maximize the total compatibility score between adjacent individuals.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array representing the circular seating arrangement, where each element `x[i]` denotes the person seated to the right of person `i`.
+- `z`: an array representing the actual seating arrangement, where each element `z[i]` denotes the person seated at position `i` around the table.
+- `s`: an array representing the compatibility scores between adjacent individuals, where each element `s[i]` denotes the score between person `i` and their right-hand neighbor.
+
+**Constraints**
+The key constraints in this problem are:
+- Each person can only be seated once, and each seat can only be occupied by one person (i.e., `x` and `z` are permutations of the people).
+- The seating arrangement must form a circular table, meaning that the last person in the arrangement is seated to the left of the first person.
+- The compatibility score between each pair of adjacent individuals is determined by a given score matrix.
+
+**Objective**
+The objective of the Seating Problem is to maximize the total compatibility score between adjacent individuals, which is represented by the `total` variable. This is achieved by finding the optimal seating arrangement that maximizes the sum of the compatibility scores between each pair of adjacent individuals.

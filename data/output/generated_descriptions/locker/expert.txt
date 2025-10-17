@@ -1,0 +1,11 @@
+name: Locker Puzzle
+
+description: The Locker Puzzle is a classic problem in constraint programming that involves finding a three-number combination for a locker. The combination consists of three numbers, each ranging from 1 to 40. The problem provides seven rules that the combination must satisfy, including relationships between the numbers, properties of their digits, and a condition on the sum of the unique digits used.
+
+variables: $d1, d2, d3, a_d1, a_d2, a_d3, a, all_sum, a_digits, used_digits_sum$ 
+These variables represent the three numbers in the combination ($d1, d2, d3$), the digits of these numbers ($a_d1, a_d2, a_d3$), a combined array of all digits ($a$), the sum of all digits ($all_sum$), an array to keep track of the digits used ($a_digits$), and the sum of the unique digits used ($used_digits_sum$).
+
+constraints: $toNum(a_d1, d1, 10), toNum(a_d2, d2, 10), toNum(a_d3, d3, 10), d2 = 2 * d1, d3 = 10 + d2, (odd(a_d1[1]) \wedge even(a_d1[2])) \vee (odd(a_d1[2]) \wedge even(a_d1[1])), (odd(a_d2[1]) \wedge odd(a_d2[2])) \vee (even(a_d2[1]) \wedge even(a_d2[2])), global_cardinality(a, array1d(0..9, set2array(index_set(a_digits))), a_digits), used_digits_sum = \sum_{i=0}^{9} i * bool2int(a_digits[i] > 0), used_digits_sum = 10$ 
+These constraints ensure that the numbers $d1, d2, d3$ can be formed from their respective digits, that $d2$ is twice $d1$ and $d3$ is ten more than $d2$, that $d1$ has one even and one odd digit, that $d2$ has either two odd or two even digits, that the sum of the unique digits used equals 10, and that the digits are properly accounted for.
+
+objective: The objective of this problem is to find a combination that satisfies all the given constraints, rather than to minimize or maximize a specific value. The problem is a satisfaction problem, where the goal is to find a solution that meets all the conditions, rather than optimizing a particular objective function.

@@ -1,0 +1,9 @@
+**Minimum Subset of Columns for Unique Rows Problem**
+
+This problem is about finding the smallest set of columns in a matrix that makes each row unique. In other words, the goal is to select the fewest columns necessary to ensure that no two rows are identical.
+
+The main decision variables are represented by the array `x`, where `x[j]` is a binary variable (0 or 1) that indicates whether column `j` is selected (1) or not (0). The variable `z` represents the total number of selected columns.
+
+The key constraints are as follows: for every pair of rows `r1` and `r2`, if `r1` is not equal to `r2`, then there must be at least one selected column `j` where the values in `r1` and `r2` are different. This is enforced by the constraint `sum([ x[j]*(m[r1,j] != m[r2,j]) | j in 1..cols]) >= 1`, which ensures that the selected columns are sufficient to distinguish between any two rows.
+
+The objective of the problem is to minimize the number of selected columns, represented by the variable `z`. In other words, the goal is to find the smallest subset of columns that makes each row unique. This is achieved by solving the minimization problem `solve minimize z`.

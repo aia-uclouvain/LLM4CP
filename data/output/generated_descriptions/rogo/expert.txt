@@ -1,0 +1,12 @@
+name: Rogo problem
+description: The Rogo problem is a classic problem in constraint programming where the goal is to find a loop through a grid of fixed length that contains as many reward points as possible. The grid is composed of cells with different values, and the loop must visit each cell only once, without visiting any black cells. The loop must also be closed, meaning that the last cell visited must be adjacent to the first cell visited.
+variables: $x[1..max\_steps], y[1..max\_steps], points[1..max\_steps], sum\_points$ 
+These variables represent the coordinates of the cells in the path ($x$ and $y$), the points collected at each step ($points$), and the total sum of points collected ($sum\_points$). The $x$ and $y$ variables are arrays of decision variables that represent the row and column indices of the cells in the path, respectively. The $points$ variable is an array of decision variables that represents the points collected at each step, and $sum\_points$ is a decision variable that represents the total sum of points collected.
+constraints: $\forall s, t \in 1..max\_steps, x[s] \neq x[t] \vee y[s] \neq y[t]$ 
+$\forall s \in 1..max\_steps, points[s] = problem[x[s], y[s]]$ 
+$\forall s \in 1..max\_steps, problem[x[s], y[s]] \neq B$ 
+$\forall s \in 1..max\_steps-1, |x[s] - x[s+1]| + |y[s] - y[s+1]| = 1$ 
+$|x[max\_steps] - x[1]| + |y[max\_steps] - y[1]| = 1$ 
+$sum\_points = \sum_{s=1}^{max\_steps} points[s]$ 
+These constraints ensure that all coordinates in the path are unique, that the points collected at each step are equal to the value of the cell at that step, that no black cells are visited, that each step is adjacent to the previous step, that the last step is adjacent to the first step (closing the loop), and that the total sum of points collected is equal to the sum of the points collected at each step.
+objective: maximize $sum\_points$

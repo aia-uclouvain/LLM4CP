@@ -1,0 +1,13 @@
+Triangle Problem
+The Triangle Problem is a classic constraint programming problem where the goal is to fill in a triangular arrangement of letters with digits from 0 to 9, such that certain sums of these digits are equal.
+
+The main decision variables in this problem are the letters A, B, C, D, E, F, G, H, I, and J, each representing a digit from 0 to 9. These variables are used to fill in the triangular arrangement.
+
+The key constraints in this problem are:
+- Each digit from 0 to 9 can only be used once.
+- The sum of the digits in the first column (A + C + F + J) must be equal to the sum of the digits in the second column (A + B + D + G).
+- The sum of the digits in the second column (A + B + D + G) must be equal to the sum of the digits in the third column (G + H + I + J).
+- The sum of the digits in the first row (A + B + C) must be equal to the sum of the digits in the second row (D + G + H).
+- The sum of the digits in the second row (D + G + H) must be equal to the sum of the digits in the third row (F + I + J).
+
+The objective of this problem is to find all possible assignments of digits to the letters A, B, C, D, E, F, G, H, I, and J that satisfy the given constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find all feasible solutions that meet the constraints.

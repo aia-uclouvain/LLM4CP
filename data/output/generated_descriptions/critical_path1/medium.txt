@@ -1,0 +1,8 @@
+Critical Path Problem
+The Critical Path Problem is about finding the minimum time required to complete a project with multiple tasks and dependencies between them. 
+
+The main decision variables are `timex`, which represents the start time of each task, and `sum_dur`, which is the sum of the durations of all tasks. 
+
+The key constraints are that each task must start after its predecessor tasks have finished, and that the start time of each task must be between 0 and the total duration of all tasks. Additionally, the start time of a task that depends on another task must be greater than or equal to the start time of the predecessor task plus the duration of the predecessor task.
+
+The objective of the problem is to minimize the difference between the start time of the last task and the start time of the first task, which represents the minimum time required to complete the entire project. In other words, the goal is to find the critical path, which is the sequence of tasks that determines the minimum duration required to complete the project.

@@ -1,0 +1,22 @@
+**The Cycle Problem**
+The Cycle problem is a classic constraint programming problem that involves finding a permutation of a set of elements such that the resulting sequence forms a cycle.
+
+**Description**
+Given a set of elements, the goal is to find a permutation of these elements such that each element is mapped to another element in the set, and the resulting sequence forms a cycle. A cycle is a sequence of elements where each element is followed by another element, and the last element is followed by the first element.
+
+**Decision Variables**
+The main decision variables in this problem are:
+- `x`: an array of variables representing the permutation of the elements.
+- `num_cycles`: a variable representing the number of cycles in the permutation.
+- `num_fixpoints`: a variable representing the number of fixed points in the permutation, i.e., the number of elements that are mapped to themselves.
+
+**Constraints**
+The key constraints in this problem are:
+- `all_different(x)`: ensures that each element in the permutation is unique.
+- `cycle_matrix(x, y)`: creates a cycle matrix from the permutation, where each row represents a rotation of the permutation.
+- `first_fixed(tmp, i, ff_pos[i])`: finds the first fixed position in each column of the cycle matrix.
+- `global_cardinality(ff_pos, gcc_card)`: counts the number of occurrences of each element in the first fixed positions.
+- `num_cycles = sum(i in lbx..ubx) (gcc_card[i] div i)`: calculates the number of cycles in the permutation.
+
+**Objective**
+The objective of this problem is to find a permutation that satisfies the constraints, rather than optimizing a specific objective function. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

@@ -1,0 +1,6 @@
+The problem is called "Same Interval". 
+It's about comparing two lists of numbers and checking if they can be divided into the same groups based on their values. 
+The main variables are "variables1" and "variables2", which are the two lists of numbers, and "size_interval", which determines the size of the groups. 
+The basic rules are that each number in the lists must fall into one of the groups, and the groups must be the same for both lists. 
+The goal is to find a way to divide the numbers into groups of the same size, so that both lists have the same number of elements in each group. 
+In this case, the problem is trying to confirm that the given lists can be divided into groups of size 3, and that both lists have the same number of elements in each group.

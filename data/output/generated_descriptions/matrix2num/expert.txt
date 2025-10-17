@@ -1,0 +1,5 @@
+name: Binary Matrix to Number Problem
+description: The problem involves finding a binary matrix that corresponds to a given list of numbers, where each number in the list represents the column index of the single 1 in the corresponding row of the matrix.
+variables: $x_{i,j}, num\_list_i$ - $x_{i,j}$ are binary decision variables representing the entry in the $i^{th}$ row and $j^{th}$ column of the matrix, and $num\_list_i$ are integer decision variables representing the column index of the single 1 in the $i^{th}$ row.
+constraints: $nums_i = j \leftrightarrow x_{i,j} = 1$, $nums_i = \sum_j (j \* x_{i,j})$, $\sum_j x_{i,j} = 1$, $\sum_i x_{i,j} = 1$, $num\_list = [4,5,2,3,1]$ - these constraints ensure that the binary matrix is correctly converted to the list of numbers, and that each row and column of the matrix contains exactly one 1.
+objective: satisfy - the objective of the problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

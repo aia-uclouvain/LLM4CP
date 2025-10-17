@@ -1,0 +1,5 @@
+Tommy's Birthday Coins problem.
+The problem is about finding the number of coins of different denominations that add up to a total value of 306, with the additional constraint that the total number of coins is 15.
+The main decision variables are the array `x`, where `x[i]` represents the number of coins of denomination `value[i]`.
+The key constraints are that each coin type must be used at least once, the total value of all coins must be exactly 306, and the total number of coins must be exactly 15.
+The problem's objective is to find a satisfying assignment of coins that meets all the constraints, as indicated by the `solve satisfy` statement, which means that the goal is to find a feasible solution that satisfies all the given conditions, rather than minimizing or maximizing a specific objective function.

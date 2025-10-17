@@ -1,0 +1,8 @@
+Crossword Puzzle Problem
+The Crossword Puzzle Problem is a classic constraint programming problem where the goal is to fill in a given crossword puzzle grid with words from a predefined dictionary.
+The main decision variables in this problem are the `L` array, which represents the letters to be assigned to each position in the crossword puzzle grid. Each `L[i]` variable corresponds to a specific position in the grid and can take on a value from 1 to 26, representing the 26 letters of the alphabet.
+The key constraints in this problem can be described as follows: 
+- Each row, column, or diagonal in the grid must contain a valid word from the predefined dictionary.
+- No two identical words can be used in the same position in the grid.
+- Each letter in the grid must be assigned a value from 1 to 26, representing the 26 letters of the alphabet.
+The objective of the Crossword Puzzle Problem is to find a satisfying assignment of letters to the grid, such that all constraints are met. In other words, the goal is to fill in the entire grid with valid words from the dictionary, without violating any of the constraints. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the given constraints.

@@ -1,0 +1,14 @@
+Four Islands puzzle
+The Four Islands puzzle is a classic constraint programming problem where we have four islands, each with a unique name, primary export, and tourist attraction. The islands are connected by bridges, and we need to determine the name, export, and attraction of each island based on given clues.
+
+The main decision variables in this problem are the island names (Pwana, Quero, Rayou, Skern), exports (alabaster, bananas, coconuts, durian fruit), and attractions (hotel, ice skating rink, jai alai stadium, koala preserve). These variables represent the assignment of each island to its corresponding name, export, and attraction.
+
+The key constraints in this problem can be described in plain language as follows: 
+- The island with the koala preserve is located south of Pwana.
+- The island with the alabaster quarry is located west of Quero.
+- The island with the resort hotel is located east of the island that exports durian fruit.
+- Skern and the island with the jai alai stadium are connected by a north-south bridge.
+- Rayou and the island that exports bananas are connected by an east-west bridge.
+- The islands with the ice skating rink and the jai alai stadium are not connected by a bridge.
+
+The objective of this problem is to find a satisfying assignment of islands to their names, exports, and attractions that satisfies all the given constraints. This is a constraint satisfaction problem, and the goal is to find a solution that meets all the conditions, rather than minimizing or maximizing a specific objective function.

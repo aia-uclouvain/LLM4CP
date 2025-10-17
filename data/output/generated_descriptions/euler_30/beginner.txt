@@ -1,0 +1,5 @@
+Euler problem 30 
+This problem is about finding special numbers that can be expressed as the sum of fifth powers of their digits. 
+The main variables are the digits of these special numbers and the numbers themselves. 
+The basic restrictions are that each digit must be between 0 and 9, and the number must be greater than 1 and can be expressed as the sum of fifth powers of its digits. 
+The goal is to find the sum of all these special numbers.

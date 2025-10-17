@@ -1,0 +1,12 @@
+Reverse Multiples Problem
+The Reverse Multiples problem is about finding two numbers, num1 and num2, in a given base, such that num2 multiplied by a certain multiplier m equals num1, and num2 is less than num1. Additionally, the digits of num1 are the reverse of the digits of num2.
+
+The main decision variables are num1 and num2, which represent the two numbers, and m, which is the multiplier. The arrays a1 and a2 represent the digits of num1 and num2, respectively.
+
+The key constraints are:
+- num2 multiplied by m equals num1
+- num2 is less than num1
+- the digits of num1 are the reverse of the digits of num2
+- num1 and num2 are within a certain range, defined by the base and the number of digits n
+
+The problem's objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. The model uses the satisfy keyword to indicate that the goal is to find a feasible solution.

@@ -1,0 +1,8 @@
+N-Queens Problem
+The N-Queens problem is about placing a certain number of queens on a chessboard of size NxN such that no queen attacks another.
+The main decision variables are the positions of the queens on the board, represented by the array `q`, where `q[i]` is the column in which the queen in row `i` is placed. If `q[i]` is 0, it means there is no queen in row `i`.
+The key constraints are: 
+- each pair of queens must be in different columns, 
+- each pair of queens must be on different diagonals (neither from top-left to bottom-right nor from top-right to bottom-left). 
+These constraints ensure that no queen attacks another.
+The objective of the problem is to find a configuration of queens on the board that satisfies all the constraints, which is a satisfaction problem, not an optimization problem. In other words, the goal is to find a valid placement of the queens, not to minimize or maximize a particular value. The model uses the `solve satisfy` statement to find such a configuration.

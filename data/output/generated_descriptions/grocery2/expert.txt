@@ -1,0 +1,5 @@
+name: Grocery Problem
+description: A kid buys four items from a grocery store and is charged $7.11. The cashier initially multiplies the prices of the items instead of adding them, but still arrives at $7.11. The problem is to find the prices of the four items.
+variables: A, B, C, D, T1, T2 - These are the decision variables representing the prices of the four items (A, B, C, D) in cents, and two temporary variables (T1, T2) used to store the products of the item prices.
+constraints: A ≤ B, B ≤ C, C ≤ D, A + B + C + D = 711, A * B = T1, C * D = T2, T1 * T2 = 711 * 100 * 100 * 100 - These constraints ensure that the item prices are non-decreasing (symmetry breaking), the sum of the item prices equals $7.11, the product of the item prices equals $7.11 when calculated incorrectly, and the temporary variables are used to store the intermediate products.
+objective: satisfy - The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to find the prices of the four items that satisfy all the given constraints.

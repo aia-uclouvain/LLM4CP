@@ -1,0 +1,17 @@
+The All Interval Series Problem
+The All Interval Series problem is a classic constraint programming problem that involves finding a series of notes where each note occurs exactly once, and the intervals between neighboring notes cover the full set of intervals from the minor second to the major seventh.
+
+Main Decision Variables
+The main decision variables in this problem are:
+- `x`: an array of variables representing the series of notes, where each note is a number from 0 to n-1.
+- `diffs`: an array of variables representing the intervals between neighboring notes, where each interval is a number from 1 to n-1.
+
+Key Constraints
+The key constraints in this problem are:
+- Each note occurs exactly once: `all_different(x)`.
+- The intervals between neighboring notes are all different: `all_different(diffs)`.
+- The interval between two neighboring notes is calculated as the absolute difference between the two notes: `diffs[k] = abs(x[k+1] - x[k])`.
+- Symmetry breaking constraints, such as `x[0] < x[n-1]` and `diffs[0] < diffs[1]`, are used to reduce the search space.
+
+Objective
+The objective of this problem is to find a series of notes that satisfies all the constraints, i.e., each note occurs exactly once, and the intervals between neighboring notes cover the full set of intervals from the minor second to the major seventh. There is no explicit objective function to minimize or maximize; the goal is to find a feasible solution that satisfies all the constraints.

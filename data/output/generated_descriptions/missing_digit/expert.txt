@@ -1,0 +1,5 @@
+name: Missing Digit Problem
+description: The problem is to find the missing digit in the 9-digit number 2^29, which has distinct digits. 
+variables: x = (x[1], x[2], ..., x[9]), missing: x is an array of decision variables representing the digits of the number 2^29, and missing is a decision variable representing the missing digit in the number.
+constraints: toNum10(x, n) ∧ ∀i ∈ {1, ..., 9} (missing ≠ x[i]): the constraints ensure that the digits x form the number 2^29 and that the missing digit is not present in the number.
+objective: satisfy: the objective of the problem is to find a solution that satisfies all the constraints, i.e., to find the missing digit in the number 2^29.

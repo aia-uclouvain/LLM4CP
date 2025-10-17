@@ -1,0 +1,15 @@
+Changepoint Detection Problem
+
+The Changepoint Detection Problem is about finding the point in time when a significant change occurs in a sequence of data. In everyday terms, imagine you are monitoring the number of text messages you send each day, and you want to know if there is a day when your texting habits suddenly change.
+
+The main variables are:
+- `cp`: the changepoint, which is the point in time when the change occurs
+- `mean1` and `mean2`: the average values of the data before and after the changepoint, respectively
+- `mean_diff1` and `mean_diff2`: the total differences between the actual data and the average values before and after the changepoint, respectively
+
+The basic restrictions or rules of the problem are:
+- The data is divided into two segments at the changepoint
+- The average values of the data before and after the changepoint are calculated
+- The total differences between the actual data and the average values are calculated
+
+The goal of the problem is to minimize the total difference between the actual data and the average values, which is represented by the variable `z`. By minimizing `z`, we can find the most likely point in time when a significant change occurs in the data.
