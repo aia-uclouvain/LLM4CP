@@ -16,5 +16,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git push https://pschaus:$HF_TOKEN@huggingface.co/spaces/pschaus/llm4cp main
+          git push --force https://pschaus:$HF_TOKEN@huggingface.co/spaces/pschaus/llm4cp main
 
