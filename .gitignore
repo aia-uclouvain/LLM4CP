@@ -1,5 +1,3 @@
-# Data folder - managed with Git LFS
-data/
 
 # Virtual Environments
 venv/
@@ -52,13 +50,6 @@ MANIFEST
 *.iws
 *.ipr
 
-# Large data files and caches
-data/input/complete_csplib/
-data/input/csplib/
-data/input/hakank/
-data/output/exectime/
-data/results/
-data/vector_dbs/
 
 # Generated files
 *.pkl
@@ -69,7 +60,6 @@ data/vector_dbs/
 htmlcov/
 
 # HuggingFace cache
-.cache/
 hf_cache/
 models/
 
