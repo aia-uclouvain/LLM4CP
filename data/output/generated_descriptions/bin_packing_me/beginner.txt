@@ -1,5 +1,0 @@
-Bin Packing problem
-The problem is about packing items of different sizes into boxes of a fixed size, using the fewest number of boxes possible. 
-The main variables are the number of items to pack, the size of each item, the size of the boxes, and which items are packed in which box. 
-The basic restrictions are that each item can only be packed once, and the total size of the items in a box cannot exceed the box's size. 
-The goal is to minimize the number of boxes used to pack all the items.

@@ -1,5 +1,0 @@
-Bit Vector Problem
-The Bit Vector problem is about finding a number that, when multiplied by two and then having its last few bits inverted, results in the original number.
-The main decision variables are `num_x`, `num2_x`, and `num3_x`, which represent the binary digits of the numbers `num`, `num2`, and `num3`, respectively. `num` is the original number picked by Alice, `num2` is the result of multiplying `num` by two, and `num3` is the result of inverting the last few bits of `num2`.
-The key constraints are that `num2` is twice `num`, the last few bits of `num2` are inverted to get `num3`, and `num` is equal to `num3`. In plain language, this means that when you multiply the original number by two and flip the last few bits, you should get back the original number.
-The objective of the problem is to find all possible values of `num` that satisfy these constraints, with no specific minimization or maximization goal. The problem is solved using a satisfaction-based approach, where the model is designed to find all solutions that meet the given constraints.

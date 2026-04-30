@@ -1,8 +1,0 @@
-Wijuko Grid Puzzle
-The Wijuko grid puzzle is a classic constraint programming problem that involves placing numbers from 1 to 9 in a grid, following certain rules and constraints. The goal is to find a valid configuration that satisfies all the given conditions.
-
-The main decision variables in this problem are the values assigned to each cell in the grid, represented by the `x` array. Each `x[i, j]` variable represents the number placed in the cell at row `i` and column `j`.
-
-The key constraints in this problem can be described in plain language as follows: each number from 1 to 9 can only be used once in the grid, and the sum of the numbers in adjacent cells (horizontally or vertically) must match the given values in the `d` array. For example, the sum of the numbers in the first two cells of the first row must be equal to the value specified in the first row of the `d` array.
-
-The objective of the Wijuko grid puzzle is to find a valid assignment of numbers to the grid cells that satisfies all the constraints, without any specific minimization or maximization goal. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the conditions, rather than optimizing a particular objective function.

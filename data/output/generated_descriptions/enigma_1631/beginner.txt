@@ -1,5 +1,0 @@
-Joe's Pyramid 
-The problem is about a pyramid with stones, each marked with a different number. The numbers on the stones follow a specific rule: a stone's number is the sum of the numbers on the two stones it rests on. 
-The main variables are the numbers on each stone, which are represented by the array x. Each number in the array corresponds to a stone in the pyramid, with x[1] being the top stone and x[21] being one of the bottom stones. 
-The basic restrictions are that each stone's number must be the sum of the two stones below it, and all numbers must be different. 
-The goal is to find the number on the top stone, X, which is represented by x[1].

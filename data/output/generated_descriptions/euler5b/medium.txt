@@ -1,8 +1,0 @@
-The problem is called the Smallest Multiple or Least Common Multiple (LCM) problem. 
-It is about finding the smallest number that can be evenly divided by all numbers within a given range, in this case, from 1 to 20, without leaving any remainder.
-
-The main decision variable in this problem is an array `x` of size `n`, where `n` is the upper limit of the range (20 in this case), and each element `x[i]` represents the least common multiple of all numbers from 1 to `i`.
-
-The key constraints are that each `x[i]` must be the least common multiple of `i` and `x[i-1]`, which means `x[i]` must be divisible by both `i` and `x[i-1]`. This is achieved by using the `lcm` function, which calculates the least common multiple of two numbers.
-
-The problem's objective is to find the smallest `x[n]`, which is the least common multiple of all numbers from 1 to `n`. In other words, the goal is to minimize `x[n]` while satisfying all the constraints. However, since the model uses the `solve satisfy` statement, it is not explicitly minimizing `x[n]`, but rather finding a solution that satisfies all the constraints, which in this case will be the smallest possible `x[n]`.

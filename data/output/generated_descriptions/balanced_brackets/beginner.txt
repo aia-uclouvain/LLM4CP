@@ -1,5 +1,0 @@
-Balanced Brackets Problem
-The problem is about generating sets of balanced brackets. In everyday terms, it's like making sure that every open bracket has a corresponding closed bracket. 
-The main variables are x and c. The variable x represents the type of bracket (open or closed) at each position, and the variable c keeps track of the balance between open and closed brackets.
-The basic restrictions are that the sequence must start with an open bracket, end with a closed bracket, and that the number of open brackets must always be greater than or equal to the number of closed brackets at any point. 
-The goal of the problem is to find a sequence of balanced brackets of a given size, which is determined by the variable m. The problem aims to generate all possible sequences of balanced brackets of size m*2.

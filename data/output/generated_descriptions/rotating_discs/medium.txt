@@ -1,8 +1,0 @@
-The Rotating Disc Problem
-The problem is about rotating four concentric discs, each divided into eight valued zones, to achieve a uniform total value of 12 in each octant.
-
-The main decision variables are the `rot` array, which represents the rotation of each disc, with values ranging from 0 to 7. Each `rot[i]` variable determines how many positions the `i-th` disc is rotated.
-
-The key constraints are that the sum of the values in each octant, after rotating the discs, must be equal to 12. This is achieved by ensuring that the sum of the values in each zone, when considering the rotation of each disc, equals 12. Additionally, a symmetry-breaking constraint is imposed by fixing the rotation of the first disc to 0, which helps to reduce the search space.
-
-The objective of the problem is to find a satisfying assignment of rotations for the discs, such that each octant has a total value of 12. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies the given constraints.

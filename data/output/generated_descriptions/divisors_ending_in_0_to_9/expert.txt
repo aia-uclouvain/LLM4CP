@@ -1,5 +1,0 @@
-name: Divisors ending in 0 to 9 puzzle
-description: The problem is to find the smallest integer that has divisors ending in all digits from 0 to 9. In other words, we need to find an integer that is divisible by numbers ending in 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
-variables: $n$, which is the smallest integer that satisfies the condition of having divisors ending in all digits from 0 to 9.
-constraints: $\forall i \in \{0, 1, \ldots, 9\}: \sum_{d=1}^{\lfloor \frac{n}{2} \rfloor}} \text{bool2int}(n \mod d = 0 \land d \mod 10 = i) > 0$, which ensures that for each digit $i$ from 0 to 9, there exists at least one divisor $d$ of $n$ that ends in $i$.
-objective: Minimize $n$

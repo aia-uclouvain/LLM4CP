@@ -1,5 +1,0 @@
-name: Pigeon Hole Problem
-description: The Pigeon Hole Problem is a classic problem in constraint programming that involves placing a certain number of pigeons into a certain number of pigeon holes, with the constraint that each pigeon hole can contain at most one pigeon. The problem is to determine if it is possible to place all the pigeons into the available pigeon holes.
-variables: $p_{i,j}$ where $i \in \{1, \ldots, N\}$ and $j \in \{1, \ldots, M\}$, which are binary decision variables indicating whether pigeon $i$ is placed in pigeon hole $j$.
-constraints: $\sum_{i=1}^{N} p_{i,j} \leq 1$ for all $j \in \{1, \ldots, M\}$ and $\sum_{j=1}^{M} p_{i,j} = 1$ for all $i \in \{1, \ldots, N\}$, which ensure that each pigeon hole contains at most one pigeon and each pigeon is placed in exactly one pigeon hole.
-objective: The objective of the problem is to find a feasible solution, i.e., to determine if it is possible to place all the pigeons into the available pigeon holes, which is equivalent to satisfying all the constraints. There is no explicit objective function to minimize or maximize.

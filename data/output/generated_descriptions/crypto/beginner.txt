@@ -1,5 +1,0 @@
-Crypto problem. 
-This problem is about decoding a secret message where each letter of the alphabet is assigned a number from 1 to 26. 
-The main variables are the letters A to Z, which represent the numbers assigned to each letter. 
-The basic restrictions are that each letter must be assigned a unique number, and the sum of the numbers for each word must match the given total. 
-The goal is to find the correct assignment of numbers to letters that satisfies all the given equations, such as BALLET equaling 45, and so on.

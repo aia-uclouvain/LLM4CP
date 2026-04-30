@@ -1,5 +1,0 @@
-Seating Plan Problem
-The problem is about arranging students in an examination room to prevent cheating. 
-The main variables are the seats in the examination room, represented by a grid where each cell can hold a student taking a specific subject (Norwegian, German, English, French, or Spanish).
-The basic restrictions are that students taking the same subject cannot be near each other, not even diagonally, and there must be exactly 4 students for each subject. 
-The goal is to find all possible arrangements that satisfy these conditions, which means finding all the different ways to seat the students while preventing cheating.

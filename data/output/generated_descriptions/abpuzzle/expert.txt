@@ -1,5 +1,0 @@
-name: Abbott's Puzzle
-description: The Abbott's Puzzle is a classic problem in constraint programming that involves finding the number of items of three different types, with specific constraints on their quantities and total value. The problem is to determine the number of items of each type that satisfy the given conditions.
-variables: $x_1, x_2, x_3$, where $x_1, x_2, x_3$ are the decision variables representing the number of items of each type, with $x_1$ being the number of items of the first type, $x_2$ being the number of items of the second type, and $x_3$ being the number of items of the third type.
-constraints: $\sum_{i=1}^{3} (amount_i \cdot x_i) = 200 \wedge \sum_{i=1}^{3} x_i = 100 \wedge x_2 = 5x_1$, where the first constraint represents the total value of the items, the second constraint represents the total quantity of the items, and the third constraint represents the relationship between the quantities of the first and second types of items.
-objective: satisfy, which means the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

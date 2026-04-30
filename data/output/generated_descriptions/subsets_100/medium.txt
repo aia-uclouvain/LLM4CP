@@ -1,5 +1,0 @@
-The Subsets 100 puzzle.
-This problem is about finding two disjoint non-empty subsets of a given set of ten different integers, such that the sum of elements in one subset equals the sum of elements in the other subset.
-The main decision variables are s and t, which represent the two disjoint subsets, and s_total and t_total, which represent the sum of elements in subsets s and t, respectively.
-The key constraints are that the union of subsets s and t should have at most ten elements, both subsets should be non-empty, and they should be disjoint, meaning they have no elements in common. Additionally, the sum of elements in s should equal the sum of elements in t.
-The objective of this problem is to find a solution that satisfies all the given constraints, proving that it is always possible to find two disjoint non-empty subsets with equal sums from a set of ten different integers.

@@ -1,5 +1,0 @@
-Powerset Problem
-The problem is about finding all possible subsets of a set of items. 
-The main variables are ps1 and ps2, which represent the subsets in different forms: ps1 uses 0s and 1s to show whether an item is in a subset, and ps2 uses numbers to show the position of items in a subset.
-The basic restrictions are that each subset must be unique and that the items in the subsets must come from the original set. 
-The goal of the problem is to find all possible subsets of the original set, with the given size of the set being 5 items.

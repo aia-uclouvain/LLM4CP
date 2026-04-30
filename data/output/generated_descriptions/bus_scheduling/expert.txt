@@ -1,8 +1,0 @@
-name: Bus Scheduling Problem
-description: The Bus Scheduling Problem is a classic problem in operations research and constraint programming. The problem involves scheduling buses to meet the demand for buses at different time slots, with the goal of minimizing the total number of buses needed. The demand for buses varies across time slots, and the problem requires ensuring that there are enough buses to meet this demand at each time slot, considering the fact that buses can be used to meet demand in consecutive time slots.
-variables: $x_1, x_2, ..., x_{time\_slots}, z$ 
-These variables represent the number of buses starting their schedule at each time slot ($x_i$) and the total number of buses needed ($z$).
-constraints: $x_i \geq 0, \forall i \in \{1, 2, ..., time\_slots\}$, $x_i + x_{i+1} \geq demands_i, \forall i \in \{1, 2, ..., time\_slots-1\}$, $x_{time\_slots} + x_1 \geq demands_{time\_slots}$ 
-These constraints ensure that the number of buses at each time slot is non-negative, that the demand for buses at each time slot and the next one is met, and that the demand at the last time slot is met considering the buses starting at the first time slot (to handle the "around the clock" requirement).
-objective: Minimize $z = \sum_{i=1}^{time\_slots} x_i$ 
-The objective is to minimize the total number of buses needed to meet the demand across all time slots.

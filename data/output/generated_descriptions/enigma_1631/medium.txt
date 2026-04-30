@@ -1,8 +1,0 @@
-Joe's Pyramid
-The problem is about finding the values of stones in a pyramid, where each stone is marked with a different one or two-digit positive number, and the number on a stone that rests on two others is the sum of the numbers on the two stones below it.
-
-The main decision variables are the values of the stones, represented by the array `x`, where `x[i]` is the value of the `i-th` stone in the pyramid.
-
-The key constraints are that each stone's value is unique, and the value of a stone that rests on two others is the sum of the values of the two stones below it. For example, the value of stone 1 is the sum of the values of stones 2 and 3, and the value of stone 2 is the sum of the values of stones 4 and 5.
-
-The problem's objective is to find the values of all the stones in the pyramid, with the ultimate goal of determining the value of the stone at the top of the pyramid, represented by `x[1]`. The problem does not have a traditional optimization objective, such as minimizing or maximizing a function, but rather seeks to find a feasible solution that satisfies all the constraints.

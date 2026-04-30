@@ -1,5 +1,0 @@
-The problem is called "Elements Alldifferent". 
-It's about matching items from one list to items in another list, making sure each item in the first list is matched to exactly one item in the second list, and no two items in the first list are matched to the same item in the second list.
-The main variables are "items" and "element_table", which are like two lists of pairs of numbers. 
-The basic rules are that each pair of numbers in the "items" list must match a pair of numbers in the "element_table" list, and no two pairs in the "items" list can match the same pair in the "element_table" list.
-The goal is to find a way to match all the pairs in the "items" list to pairs in the "element_table" list, following these rules.

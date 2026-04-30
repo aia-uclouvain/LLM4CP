@@ -1,5 +1,0 @@
-Enigma Puzzle 1001
-The problem is about finding a set of non-zero digits to place in a hexagon of circles such that the six three-figure numbers formed by reading the circles clockwise are all different multiples of a particular two-figure number.
-The main decision variables are X, an array of 12 variables representing the digits in the circles, and Divisor, a variable representing the two-figure number that the three-figure numbers should be multiples of. The X variables represent the digits in the circles, with X[1] to X[3] representing the top row, and so on.
-The key constraints are that no two adjacent digits can be the same, the six three-figure numbers must be different, and each three-figure number must be a multiple of the Divisor. Additionally, the number in the top row must be twice the Divisor. 
-The objective is to find a set of digits that satisfy these constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

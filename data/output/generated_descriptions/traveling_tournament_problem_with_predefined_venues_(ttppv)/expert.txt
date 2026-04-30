@@ -1,8 +1,0 @@
-name: Traveling Tournament Problem with Predefined Venues
-description: The Traveling Tournament Problem with Predefined Venues is a scheduling problem where a set of teams must play each other in a round-robin format, with the added constraint that the venue of each game has already been decided. The goal is to find a schedule that minimizes the total travel distance of all teams.
-variables: $o_{i,k}, h_{i,k}, t_{i,k}, opponent_{i,k}, venue_{i,k}$ 
-These variables represent the following: $o_{i,k}$ is the opponent of team $i$ in round $k$, $h_{i,k}$ is a binary variable indicating whether team $i$ plays at home in round $k$, $t_{i,k}$ is the distance traveled by team $i$ to play in round $k$, $opponent_{i,k}$ is the opponent of team $i$ in round $k$, and $venue_{i,k}$ is a binary variable indicating whether team $i$ plays at home in round $k$.
-constraints: $\forall i, k: o_{i,k} \neq i, \forall i, k: o_{o_{i,k},k} = i, \forall i: \text{allDifferent}(o_{i,:}), \forall k: \text{allDifferent}(o_{:,k}), \forall i: \text{regular}(h_{i,:}, \delta), \forall i, k: t_{i,k} = f(h_{i,k}, h_{i,k+1}, o_{i,k}, o_{i,k+1})$ 
-These constraints ensure the following: each team plays against a different team in each round, the opponent of team $i$ in round $k$ is the same as the team that plays against $i$ in round $k$, each team plays against all other teams exactly once, each round has a unique set of opponents, the sequence of home and away games for each team follows a regular pattern, and the travel distance for each team in each round is calculated based on the venues of the current and next rounds.
-objective: minimize $\sum_{i,k} t_{i,k}$ 
-The objective is to minimize the total travel distance of all teams over all rounds.

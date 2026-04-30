@@ -1,5 +1,0 @@
-name: Ormat Game Problem
-description: The Ormat game is a puzzle where a player is presented with a grid of cells, some of which are filled with a value, and the goal is to fill in the remaining empty cells such that each row and column contains a specific pattern of values, in this case, a specific arrangement of 1s and 0s, with the added constraint that the player can only change the values of certain cells.
-variables: $x_{i,j}$, where $x_{i,j}$ represents the value of the cell at row $i$ and column $j$, which can be either 0 or 1, and is a decision variable that the solver can assign a value to.
-constraints: $\sum_{j=1}^{n} x_{i,j} = k$, $\sum_{i=1}^{n} x_{i,j} = k$, $x_{i,j} \in \{0,1\}$, where $k$ is a specific value that each row and column must sum to, and the last constraint ensures that each cell can only be assigned a value of 0 or 1.
-objective: Maximize the number of rows and columns that sum to the target value $k$, or equivalently, find an assignment of values to the decision variables $x_{i,j}$ that satisfies all the constraints.

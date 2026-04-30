@@ -1,5 +1,0 @@
-Added Corner Puzzle 
-The problem is about filling in numbers in a special pattern of circles and squares so that the numbers in the squares are the sum of the numbers in the circles around them. 
-The main variables are A, B, C, D, E, F, G, and H, which represent the numbers to be placed in each circle and square.
-The basic restrictions are that each number from 1 to 8 can only be used once, and the numbers in the squares must be the sum of the numbers in the circles that touch them.
-The goal is to find a way to fill in the numbers so that all the rules are followed, and the puzzle is solved.

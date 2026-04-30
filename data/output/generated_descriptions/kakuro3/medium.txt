@@ -1,5 +1,0 @@
-Kakuro puzzle
-The problem is about filling in numbers from 1 to 9 into a grid such that the sum of numbers in each row or column matches a given clue, and no number is repeated in any row or column.
-The main decision variables are X1 to X20, which represent the numbers to be filled in the grid, and are defined as variables that can take any value from 1 to 9.
-The key constraints are that the sum of numbers in each row or column must match the given clue, and all numbers in each row or column must be distinct. For example, the sum of X1 and X2 must be 3, and X1 and X2 must be different. Similarly, the sum of X5, X6, X7, X8, and X9 must be 18, and all these numbers must be distinct.
-The objective of the problem is to find an assignment of numbers to the variables X1 to X20 that satisfies all the constraints, which means finding a valid solution to the Kakuro puzzle. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints.

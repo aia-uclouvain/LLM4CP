@@ -1,5 +1,0 @@
-The problem is called "Global Constraint Counts". 
-It is about checking how many times certain values appear in a list and making sure this count meets a specific condition. 
-The main variables are "values" (a list of numbers that we are looking for), "variables" (a list of numbers where we are looking), and "limitx" (the target count). 
-The basic restrictions are that we have a specific list of values and variables, and we want to check if the count of values in the variables list is equal to the limitx. 
-The goal of the problem is to check if the count of values in the variables list meets the condition specified by the limitx, which in this case is equality.

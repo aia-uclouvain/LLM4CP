@@ -1,5 +1,0 @@
-Tank Allocation 
-The problem is about filling tanks with different types of cargo in a way that follows certain rules. 
-The main variables are the tanks, the types of cargo, and how the cargo is allocated to the tanks. In simple terms, the variables represent the tanks, the cargo, and which cargo is put in which tank. 
-The basic restrictions are that each tank can only hold one type of cargo or be empty, some cargo types cannot be put in certain tanks, and some cargo types cannot be in neighboring tanks. 
-The goal is to maximize the number of empty tanks while making sure that all the required cargo is allocated and the rules are followed.

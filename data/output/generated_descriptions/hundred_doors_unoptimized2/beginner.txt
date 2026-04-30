@@ -1,5 +1,0 @@
-100 Doors Problem
-The problem is about a row of 100 doors that are initially closed. You make 100 passes by the doors, and each time, you toggle (open or close) some of the doors based on their position.
-The main variables are the doors (x) which can be either open (1) or closed (0), and the set of doors that are open after all passes (s).
-The basic restrictions are that the first door is initially open, and each subsequent pass toggles every nth door, where n is the pass number. For example, on the second pass, you toggle every 2nd door, on the third pass, you toggle every 3rd door, and so on.
-The goal of the problem is to determine which doors are open and which are closed after all 100 passes. In other words, the problem wants to find the final state of the doors. It turns out that only the doors whose numbers are perfect squares (1, 4, 9, 16, ...) will remain open after all passes.

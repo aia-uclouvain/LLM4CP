@@ -1,5 +1,0 @@
-The name of the problem is NCHANGE. 
-This problem is about finding a sequence of numbers where the numbers can change a certain number of times. 
-The main variables are x, which is a list of numbers, c_pos, which shows where the changes happen, and num_changes, which is the total number of changes. 
-The basic restrictions are that each number in the list must be between 1 and the total number of items in the list, and the total number of changes must be exactly 2. 
-The goal of the problem is to find a sequence of numbers that satisfies these restrictions, specifically to find a sequence where the numbers change exactly 2 times.

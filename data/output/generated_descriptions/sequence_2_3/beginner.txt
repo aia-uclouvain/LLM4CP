@@ -1,5 +1,0 @@
-Sequence Puzzle
-The problem is about arranging numbers in a special order. 
-The main variables are the numbers 1 to 10, which will be placed in a sequence.
-The basic restrictions are that the number 6 must be in the 7th position, and each number after the first one must be either 3 more or 2 less than the number before it.
-The goal of the problem is to find a sequence that satisfies these rules, using each number only once.

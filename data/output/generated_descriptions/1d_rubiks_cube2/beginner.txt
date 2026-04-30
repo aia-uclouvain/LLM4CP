@@ -1,8 +1,0 @@
-1D Rubik's Cube
-The 1D Rubik's Cube problem is about rearranging a line of numbers to their original order by performing a series of rotations. Imagine having a line of 6 numbers that are mixed up, and you need to rotate parts of the line to get the numbers back in order from 1 to 6.
-
-The main variables are the numbers in the line and the rotations that can be applied to them. The numbers represent the current state of the line, and the rotations are the actions taken to change the order of the numbers.
-
-The basic restrictions or rules of the problem are that only certain rotations can be performed, and each rotation affects a specific part of the line. There are three types of rotations: rotating the first four numbers, rotating the middle four numbers, and rotating the last four numbers.
-
-The goal of the problem is to find the shortest sequence of rotations that will restore the original order of the numbers. In other words, the objective is to minimize the number of rotations needed to solve the puzzle.

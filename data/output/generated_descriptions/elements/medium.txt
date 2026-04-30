@@ -1,5 +1,0 @@
-The problem is called the Elements Constraint Problem. 
-It is about ensuring that all items in a given list (called "items") have values that match some entry in a table (called "element_table"). 
-The main decision variables are "items" and "element_table", which represent arrays of integers where each integer corresponds to an item or table entry value. 
-The key constraints are that each item must have a value equal to one of the entries in the table, and the table entries must be distinct. 
-The objective of this problem is to find an assignment of values to the items such that all items have a value that exists in the table, thus satisfying the given constraints.

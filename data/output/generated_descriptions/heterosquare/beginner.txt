@@ -1,5 +1,0 @@
-Heterosquare problem
-The problem is about creating a special kind of square with numbers, where each row, column, and diagonal adds up to a different total, and all the numbers in the square are unique.
-The main variables are the numbers in the square, represented by "mat", and the sums of the rows, columns, and diagonals, represented by "row_sums", "col_sums", "diag1", and "diag2". In simple terms, "mat" is the square itself, and the other variables are the totals of each row, column, and diagonal.
-The basic rules are that all the numbers in the square must be different, and the sums of the rows, columns, and diagonals must all be different. Additionally, the numbers in the square must be between 1 and the total number of cells in the square.
-The goal of the problem is to find a square that satisfies all these rules, which is known as a "heterosquare". The problem does not aim to minimize or maximize anything, but rather to find a valid solution that meets all the conditions.

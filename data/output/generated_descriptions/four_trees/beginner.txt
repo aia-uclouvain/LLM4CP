@@ -1,5 +1,0 @@
-The problem is called Four Trees. 
-It's about walking around a square where four different trees - an oak, an elm, an ash, and a fir - are planted at the corners. 
-The main variables are the positions of each tree, which are the oak, elm, ash, and fir, and they represent the order in which you pass the trees as you walk around the square. 
-The basic restrictions are that the oak and ash trees are not next to each other, you pass the fir tree before the elm and oak trees, and you don't start or end your walk at the ash tree. 
-The goal is to figure out the order in which you pass the trees.

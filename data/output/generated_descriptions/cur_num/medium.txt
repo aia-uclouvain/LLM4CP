@@ -1,5 +1,0 @@
-Curious Numbers Problem
-The problem is about finding the smallest possible numbers that have a specific peculiarity: when 1 is added to the number, the result is a square number, and when 1 is added to half of the number, the result is also a square number.
-The main decision variables are X, A, B, C, D, and E, which represent the following: X is the number with the peculiarity, A is the result of adding 1 to X, B is the square root of A, C is half of X, D is the result of adding 1 to C, and E is the square root of D.
-The key constraints are: adding 1 to X results in a square number (A), half of X plus 1 is also a square number (D), X plus 1 equals A, A is a square of B, X is twice C, C plus 1 equals D, and D is a square of E.
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints, effectively finding the smallest possible numbers with the described peculiarity.

@@ -1,5 +1,0 @@
-name: Hundred Fowls Puzzle
-description: The Hundred Fowls Puzzle is a classic mathematical puzzle that involves finding the number of cocks, hens, and chicks that can be bought with 100 coins, given their respective prices. The puzzle was first posed by the Chinese mathematician Qiujian Zhang in the 6th century.
-variables: $c, h, k \in \{0, 1, \ldots, 100\}$, where $c$ represents the number of cocks, $h$ represents the number of hens, and $k$ represents the number of chicks. These variables are decision variables that represent the quantities of each type of fowl to be bought.
-constraints: $15c + 9h + k = 300 \land 3c + 3h + 3k = 300 \land k \mod 3 = 0$, which can be simplified to $5c + 3h + \frac{k}{3} = 100 \land c + h + k = 100 \land k \mod 3 = 0$. These constraints represent the total cost of the fowls, the total number of fowls, and the fact that chicks are bought in groups of three, respectively.
-objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, as the problem is a satisfaction problem (i.e., solve satisfy).

@@ -1,8 +1,0 @@
-Period Constraint Problem
-The problem is about finding a sequence of numbers that repeats itself after a certain period. 
-The main variables are: 
-- x, which is a list of numbers 
-- per_len, which is the length of the period 
-- the_period, which is the sequence of numbers that repeats itself.
-The basic restrictions are that the sequence must repeat itself after the period, and the period must be less than or equal to half the length of the sequence. 
-The goal is to find a sequence that satisfies these restrictions, and to identify the repeating period within the sequence.

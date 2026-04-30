@@ -1,5 +1,0 @@
-Muddle Management
-The problem is about scheduling meetings for six managers at Muddle and Company. 
-The main variables are the time slots for each meeting, which are represented by the variable x. 
-The basic restrictions or rules of the problem are that each manager must attend three or four meetings, and some meetings must happen before others, such as the sales meeting before the marketing meeting. 
-The goal of the problem is to schedule the meetings to fit into the smallest possible number of timeslots, so the managers can finish their meetings and go to their golf game.

@@ -1,5 +1,0 @@
-Scheduling Problem
-The problem is about scheduling tasks in a way that they are completed as soon as possible. 
-The main variables are Ta, Tb, Tc, Td, and Tf, which represent the times when tasks A, B, C, D, and F are finished.
-The basic restrictions are that each task must be completed after a certain amount of time has passed since the previous task was started, for example, task B must be started at least 2 time units after task A is started.
-The goal of the problem is to minimize the time when the last task, F, is finished, which means finding the earliest possible time to complete all tasks.

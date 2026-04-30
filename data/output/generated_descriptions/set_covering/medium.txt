@@ -1,8 +1,0 @@
-Set Covering Problem
-The problem is about placing the minimum number of fire stations in a set of cities such that every city is within a certain distance from at least one fire station.
-
-The main decision variables are `x[i]`, which represent whether a fire station is placed in city `i` (1) or not (0).
-
-The key constraints are that every city must be within the minimum distance from at least one city with a fire station. In other words, for each city, there must be at least one city with a fire station that is close enough.
-
-The objective of the problem is to minimize the total number of fire stations placed, which is represented by the variable `z`. This means that the goal is to cover all cities with the fewest number of fire stations possible, while ensuring that every city is within the minimum distance from at least one fire station.

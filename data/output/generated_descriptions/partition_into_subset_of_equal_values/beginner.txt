@@ -1,5 +1,0 @@
-Partition Problem
-The problem is about dividing a set of numbers into two or more groups, where the total sum of numbers in each group is the same.
-The main variables are the numbers in the set (s) and the group each number belongs to (x). In simple terms, "s" is a list of numbers, and "x" is a list that says which group each number in "s" should be in.
-The basic restrictions are that each number can only be in one group, and the total sum of numbers in each group must be equal. Think of it like dividing a bunch of coins into two piles, where the total value of coins in each pile is the same.
-The goal is to find a way to divide the numbers into groups such that the sum of numbers in each group is equal, if possible.

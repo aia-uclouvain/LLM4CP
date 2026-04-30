@@ -1,6 +1,0 @@
-The ABC End View puzzle 
-is a classic constraint programming problem. 
-The problem is about filling a grid with letters such that each letter appears exactly once in each row and column, with some cells remaining empty. 
-The main decision variables are the values of the grid cells, represented by the array x, where x[i, j] is the value of the cell at row i and column j. 
-The key constraints are that each row and column must contain each letter exactly once, with some cells allowed to be empty, and that the first and last occurrences of each letter in each row and column must match the given hints. 
-The problem's objective is to find a solution that satisfies all the constraints, with no specific objective function to minimize or maximize.

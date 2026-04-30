@@ -1,5 +1,0 @@
-The problem is called the Maximal Non-Segment Sum problem. 
-It is about finding the maximum sum of a subsequence of numbers from a given sequence, with the constraint that the numbers in the subsequence cannot form a contiguous block. 
-The main decision variables are an array `x` of binary variables, where `x[i]` represents whether the `i-th` number in the sequence is included in the subsequence or not, and a variable `total` which represents the sum of the numbers in the subsequence. 
-The key constraints are that the numbers in the subsequence cannot be consecutive, which is enforced by a regular constraint that ensures the sequence of included numbers does not contain any contiguous blocks. 
-The objective of the problem is to maximize the `total` sum, which means finding the subsequence with the largest sum that does not contain any contiguous blocks.

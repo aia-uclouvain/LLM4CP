@@ -1,5 +1,0 @@
-The problem is called "Scheduling Speakers". 
-It is about scheduling speakers for a conference in a way that minimizes the total time spent by all speakers. 
-The main variables are the starting time and ending time for each speaker, and the availability of each speaker at different time slots. 
-The restrictions are that each speaker can only speak at certain time slots, and that no two speakers can speak at the same time. 
-The goal is to find a schedule that allows all speakers to speak without overlapping and minimizes the total time spent by all speakers.

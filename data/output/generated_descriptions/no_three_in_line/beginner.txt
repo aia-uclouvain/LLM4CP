@@ -1,5 +1,0 @@
-No Three in Line Problem
-The problem is about placing points on a grid so that no three points are in a straight line. 
-The main variables are the points on the grid, which are represented by a binary matrix where 1 means a point is placed and 0 means it's not.
-The basic restrictions are that no three points can be in a straight line, and each row and column can have at most two points. 
-The goal is to maximize the total number of points placed on the grid, which is 2 times the number of rows (or columns) in the grid.

@@ -1,5 +1,0 @@
-KenKen Problem
-The KenKen problem is a style of arithmetic and logical puzzle that involves filling a grid with digits to satisfy certain conditions. 
-The main decision variables in the KenKen problem are the values of the cells in the grid, represented by the array x, where x[i, j] is the value of the cell in the ith row and jth column. 
-The key constraints in the KenKen problem are: each row contains exactly one of each digit, each column contains exactly one of each digit, and each bold-outlined group of cells is a cage containing digits that achieve the specified result using the specified mathematical operation. 
-The objective of the KenKen problem is to find a solution that satisfies all the constraints, with no specific objective function to minimize or maximize, the goal is to find a feasible solution.

@@ -1,5 +1,0 @@
-Tomography Problem
-The Tomography problem is about reconstructing a binary matrix from the sums of its rows and columns. 
-The main decision variables are the elements of the matrix `x`, where `x[i, j]` represents the value of the cell at row `i` and column `j`, which can be either 0 or 1.
-The key constraints are that the sum of the elements in each row must equal the given row sum, and the sum of the elements in each column must equal the given column sum. In plain language, this means that the number of 1s in each row and column of the reconstructed matrix must match the provided row and column sums.
-The problem's objective is to find a matrix that satisfies these constraints, which is a satisfaction problem, not an optimization problem, so there is no objective function being minimized or maximized. The goal is to reconstruct the original matrix, if it exists, given the row and column sums.

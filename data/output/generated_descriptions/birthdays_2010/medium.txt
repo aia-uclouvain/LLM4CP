@@ -1,5 +1,0 @@
-The name of the problem is the Birthdays puzzle. 
-The problem is about determining the current ages of two brothers, given certain conditions about their ages and birth years. 
-The main decision variables are hakank_born, anders_born, hakank_age, anders_age, and this_year, which represent the birth year of the narrator (Hakank), the birth year of the narrator's brother (Anders), the current age of the narrator, the current age of the narrator's brother, and the current year, respectively. 
-The key constraints are that the narrator's age is equal to the year his brother was born, the brother's age is equal to the year the narrator was born, the narrator's brother is four years older than the narrator, and the current year is 2010. 
-The problem's objective is to find a solution that satisfies all the given constraints, as indicated by the "solve satisfy" statement, which means that the goal is to find values for the decision variables that meet all the conditions, rather than minimizing or maximizing a specific objective function.

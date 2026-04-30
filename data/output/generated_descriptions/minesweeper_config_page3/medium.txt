@@ -1,5 +1,0 @@
-Minesweeper Problem
-The Minesweeper problem is about finding the locations of mines in a grid-based game board, given some clues about the number of mines adjacent to each cell.
-The main decision variables in this problem represent the state of each cell in the grid, typically a binary value indicating whether a cell contains a mine or not, and sometimes an additional variable to represent the number of mines adjacent to each cell.
-The key constraints in the Minesweeper problem are: each cell can either contain a mine or not, the number of mines adjacent to each cell must match the given clue, and the total number of mines in the grid is fixed. In plain language, these constraints ensure that the solution respects the rules of the game, where the clues provided for each cell are consistent with the actual placement of mines.
-The objective of the Minesweeper problem is not explicitly to minimize or maximize a particular value, but rather to find a feasible solution that satisfies all the constraints, effectively solving the puzzle by identifying the locations of all mines on the board.

@@ -1,8 +1,0 @@
-The Bomb Puzzle
-The Bomb puzzle is a classic constraint programming problem where the goal is to find the correct positions of 7 flip switches to disarm a bomb. The bomb will detonate if any of 16 specific conditions are met, each involving a combination of switch positions.
-
-The main decision variables in this problem are the positions of the 7 switches, represented by the array `x` of boolean variables, where `x[i]` is `true` if switch `i` is on and `false` if it is off.
-
-The key constraints in this problem are the 16 conditions that must be avoided to prevent the bomb from detonating. These conditions involve various combinations of switch positions, such as "if switch 3 is on and switches 2 and 4 are off, the bomb will detonate" or "if switches 6 and 7 are in different positions, the bomb will detonate". These constraints can be summarized as follows: the bomb will detonate if any of the following conditions are met: specific switches are on or off, certain combinations of switches are on or off, or certain switches are in the same or different positions.
-
-The objective of this problem is to find a solution that satisfies all the constraints, i.e., a configuration of switch positions that does not trigger any of the 16 conditions that would cause the bomb to detonate. In other words, the goal is to find a solution that makes the `not` constraint in the model `true`, which means that none of the conditions that would cause the bomb to detonate are met. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies all the constraints.

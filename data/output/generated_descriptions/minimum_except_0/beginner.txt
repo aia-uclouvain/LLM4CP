@@ -1,5 +1,0 @@
-The problem is called "Minimum Except 0". 
-It's about finding the smallest number in a list of numbers, but ignoring any zeros in the list. 
-The main variables are "variables" which is a list of numbers, and "t_min" which is the smallest number in the list (ignoring zeros). 
-The basic rules are that the smallest number is the one that is less than or equal to all other numbers in the list (except zeros), and that this smallest number must actually be in the list. If all numbers in the list are zeros, then the smallest number is a default value. 
-The goal of the problem is to find the smallest number in the list (ignoring zeros) and to determine the values of the numbers in the list.

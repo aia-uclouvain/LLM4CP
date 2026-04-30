@@ -1,5 +1,0 @@
-Gardner's TWO+TWO=FOUR problem
-The problem is about finding the possible values for the letters in an addition problem where each letter represents a different digit.
-The main decision variables are T, W, O, F, U, and R, which represent the digits for the letters in the addition problem, with T being fixed at 7.
-The key constraints are that each letter must represent a unique digit, the result of the addition must be correct, and the letter O must represent an even number.
-The problem's objective is to find the possible value for W, given the constraints, rather than minimizing or maximizing a specific quantity, as the goal is to satisfy the constraints and find a valid solution for W.

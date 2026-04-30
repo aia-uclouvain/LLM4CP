@@ -1,5 +1,0 @@
-The name of the problem is the Weight Distribution Problem. 
-This problem is about distributing a set of masses of different values into a fixed number of buckets, such that the difference in mass between the filled buckets is minimized. 
-The main decision variables are x, which represents the bucket to which each mass is assigned, and bins, which represents the total mass in each bucket. 
-The key constraints are that each mass can only be assigned to one bucket, the total mass in each bucket must be calculated correctly, the difference in mass between each pair of buckets must be calculated, and the total mass of all buckets must equal the total mass of all masses. 
-The problem's objective is to minimize the total difference in mass between all pairs of buckets, which is represented by the variable total_diffs.

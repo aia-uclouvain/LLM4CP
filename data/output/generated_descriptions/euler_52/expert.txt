@@ -1,5 +1,0 @@
-name: Euler Problem 52
-description: The problem asks to find the smallest positive integer x such that 2x, 3x, 4x, 5x, and 6x contain the same digits, but in a different order.
-variables: $x_1, x_2, ..., x_6, digits_{i,j}$ where $i \in [1,6]$ and $j \in [1,9]$. These variables represent the values of x and its multiples, and the digits of these values in base 10, respectively. The $x_i$ variables represent the multiples of x, and the $digits_{i,j}$ variables represent the jth digit of the ith multiple of x.
-constraints: $x_1 > 0, x_i = i \cdot x_1, x_i = \sum_{j=1}^{9} digits_{i,j} \cdot 10^{9-j}, digits_{i,j} \in [0,9], \forall j \in [1,9], \forall i \in [1,6], \exists k \in [1,9] (digits_{i,j} = digits_{i-1,k})$. These constraints ensure that x is a positive integer, the multiples of x are calculated correctly, the digits of the multiples are calculated correctly, and the digits of each multiple are the same as the digits of the previous multiple, but in a different order.
-objective: minimize $x_1$

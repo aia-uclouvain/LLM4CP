@@ -1,5 +1,0 @@
-name: Open Global Cardinality Problem
-description: The Open Global Cardinality Problem is a constraint satisfaction problem where we have a set of variables, a set of values, and a set of positions. The goal is to assign values to the variables such that each value is taken by a specified number of variables at the specified positions.
-variables: $s, variables, values$ - $s$ is a set of positions, $variables$ is an array of variables where each variable can take a value from a given range, and $values$ is a 2D array where each row represents a value and its corresponding occurrence.
-constraints: $s = \{2,3,4\}, variables = [3,3,8,6], values = \begin{bmatrix} 3 & 1 \\ 5 & 0 \\ 6 & 1 \end{bmatrix}, open\_global\_cardinality(s, variables, values)$ - these constraints define the set of positions, the values of the variables, the values and their occurrences, and the open global cardinality constraint which ensures that each value is taken by the specified number of variables at the specified positions.
-objective: satisfy - the objective of the problem is to find an assignment of values to the variables that satisfies all the given constraints.

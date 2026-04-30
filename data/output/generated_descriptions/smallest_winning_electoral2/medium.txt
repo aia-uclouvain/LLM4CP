@@ -1,9 +1,0 @@
-The name of the problem is the "US Presidential Election Problem" or "Becoming President with 22% of the Votes". 
-
-This problem is about determining the minimum percentage of votes required to win a US presidential election, considering the electoral college system. The problem assumes that there are only two candidates and that the population of each state is known. The goal is to find the smallest number of voters needed to win at least 270 electoral college seats, which is the minimum required to win the presidency.
-
-The main decision variables in this problem are `x` and `y`, where `x[i]` represents whether state `i` is won (1) or lost (0), and `y[i]` represents the number of votes obtained in state `i`. The variable `z` represents the total number of voters in the winning states, and `s` represents the number of states won.
-
-The key constraints in this problem are that the total number of electoral college seats won must be at least 270, and that the number of votes obtained in each state is either 0 (if the state is lost) or equal to the total number of votes in that state (if the state is won). 
-
-The objective of this problem is to minimize the total number of voters in the winning states (`z`), which represents the minimum percentage of votes required to win the presidency. The problem is solved using a constraint programming approach, where the decision variables are constrained to satisfy the given conditions, and the objective function is minimized to find the optimal solution.

@@ -1,5 +1,0 @@
-The name of the problem is the Grocery problem. 
-The problem is about finding the prices of four items that a kid buys at a grocery store, given that the total price is $7.11, whether the prices are added or multiplied together. 
-The main decision variables are the prices of the four items, represented by the array "item" of var floats, where each float is a price in dollars. 
-The key constraints are that the sum of the prices of the four items must be $7.11 and the product of the prices of the four items must also be $7.11. Additionally, the prices must be in increasing order to break symmetry in the solution. 
-The problem's objective is to find a set of prices that satisfy these constraints, rather than to minimize or maximize a specific value. The goal is to determine the prices of the four items that meet the given conditions.

@@ -1,8 +1,0 @@
-Orthogonal Linking with Origin, Size, and End 
-The problem is about enforcing a specific relationship between the origin, size, and end of a set of orthotopes, which are geometric shapes. 
-
-The main decision variables are the elements of the `orthotope` array, where each row represents an orthotope and each column represents either the origin (`ori`), size (`siz`), or end (`end`) of the orthotope. 
-
-The key constraints are that for each orthotope, the sum of its origin and size must equal its end, and that the orthotopes must match a given set of predefined values. 
-
-The problem's objective is to find an assignment of values to the `orthotope` array that satisfies these constraints, which is a satisfaction problem rather than an optimization problem, meaning it aims to find a feasible solution that meets all the constraints rather than minimizing or maximizing a specific objective function.

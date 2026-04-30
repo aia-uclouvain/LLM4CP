@@ -1,5 +1,0 @@
-name: Taxicab Problem
-description: The Taxicab problem is a well-known problem in number theory, which involves finding two different sets of integers, each set consisting of a certain number of integers, such that the sum of the cubes of the integers in one set equals the sum of the cubes of the integers in the other set.
-variables: A, B, C, D, E, F, G - These are decision variables representing the integers in the two sets, where A, B, C, and D are the integers in the first set, and E, F, and G are the integers in the second set.
-constraints: A*A*A + B*B*B + C*C*C + D*D*D = E*E*E + F*F*F + G*G*G, A <= B, B <= C, C <= D, E <= F, F <= G, A <= E - These constraints ensure that the sum of the cubes of the integers in the first set equals the sum of the cubes of the integers in the second set, and impose symmetry-breaking constraints to reduce the search space.
-objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

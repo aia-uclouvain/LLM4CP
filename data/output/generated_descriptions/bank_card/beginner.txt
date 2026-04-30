@@ -1,5 +1,0 @@
-Bank Card Code problem. 
-This problem is about figuring out a 4-digit secret code for a bank card, where the code is made up of four different digits. 
-The main variables are a, b, c, and d, which represent the four digits of the secret code.
-The basic restrictions are that all four digits must be different, and there are two special math rules: the last two digits (cd) must be three times the first two digits (ab), and the last digit followed by the first digit (da) must be twice the middle two digits (bc).
-The goal of the problem is to find a set of four digits that satisfy these rules, so the bank card code can be determined.

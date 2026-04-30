@@ -1,5 +1,0 @@
-The name of the problem is All Different with a Constant. 
-This problem is about making sure that when you add or multiply a set of numbers by another set of numbers, the results are all unique. 
-The main variables are x, which is a set of numbers that can be between 1 and 9, and cst, which is another set of numbers. 
-The basic restrictions or rules of the problem are that each number in x must be between 1 and 9, and when you add or multiply the numbers in x by the corresponding numbers in cst, the results must all be different. 
-The goal of the problem is to find a set of numbers for x that satisfies these rules, given a specific set of numbers for cst.

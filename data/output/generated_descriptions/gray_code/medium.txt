@@ -1,5 +1,0 @@
-The problem is known as the Gray Code problem. 
-It is about generating a sequence of binary numbers where each number differs from the previous one by only one bit. 
-The main decision variables are x, binary, and num_bits. The variable x represents the sequence of numbers in the Gray code, binary represents the binary representation of each number in the sequence, and num_bits represents the number of bits set to 1 in each binary number. 
-The key constraints are that the first number in the sequence must be 0, the last number must be the maximum possible value, all numbers in the sequence must be different, and each number must differ from the previous one by exactly one bit. 
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a valid sequence of numbers that satisfy the Gray code constraints. The model uses a satisfaction-based approach, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

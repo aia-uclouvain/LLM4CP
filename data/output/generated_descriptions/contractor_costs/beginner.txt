@@ -1,5 +1,0 @@
-Contracting Costs puzzle 
-The problem is about finding out how much each worker (paper hanger, painter, plumber, electrician, carpenter, and mason) charges for their services in building a house. 
-The main variables are Ph (paper hanger's charge), Pa (painter's charge), Pl (plumber's charge), El (electrician's charge), Ca (carpenter's charge), and Ma (mason's charge), which represent the amount each worker charges. 
-The basic restrictions are that the total charge for certain pairs of workers must be a specific amount, such as the paper hanger and painter together charge $1,100, and the carpenter and mason together charge $5,300. 
-The goal of the problem is to find the charge for each worker that satisfies all the given restrictions, and the model provided actually tries to minimize the total charge of all workers, although the problem statement itself does not explicitly ask for minimization.

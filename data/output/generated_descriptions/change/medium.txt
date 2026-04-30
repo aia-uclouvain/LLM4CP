@@ -1,5 +1,0 @@
-The name of the problem is Change Constraint Problem. 
-This problem is about finding the number of times a constraint holds on consecutive variables of a collection. 
-The main decision variables are x and y, which represent arrays of variables, and c_x and c_y, which represent the number of changes in the arrays x and y, respectively. 
-The key constraints are that the arrays x and y must be equal to the given arrays [4, 4, 3, 4, 1] and [1, 2, 4, 3, 7], respectively, and that the number of changes in x and y must be calculated based on the given comparison operators. 
-The problem's objective is to satisfy these constraints, and the output will show the values of x, y, c_x, and c_y that satisfy the constraints.

@@ -1,5 +1,0 @@
-name: Evens Puzzle
-description: The Evens Puzzle is a classic problem in constraint programming where the goal is to place a given number of chips on a 4x4 grid such that every row and every column contains an even number of chips.
-variables: $place_{i,j}$, where $i,j \in \{1,2,3,4\}$, $place_{i,j} \in \{0,1\}$. These are decision variables that represent whether a chip is placed at position $(i,j)$ on the grid, with $place_{i,j} = 1$ indicating a chip is present and $place_{i,j} = 0$ indicating no chip is present.
-constraints: $\sum_{i,j \in POS} place_{i,j} = NCHIP$, $\forall i \in POS: \sum_{j \in POS} place_{i,j} \mod 2 = 0$, $\forall i \in POS: \sum_{j \in POS} place_{j,i} \mod 2 = 0$. These constraints ensure that the total number of chips placed on the grid is equal to $NCHIP$, and that the number of chips in each row and column is even.
-objective: satisfy. The objective of the problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

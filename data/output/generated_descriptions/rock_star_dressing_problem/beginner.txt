@@ -1,5 +1,0 @@
-Rock Start Dressing Problem
-The problem is about a rock star who wants to choose an outfit that follows certain fashion rules. 
-The main variables are the rock star's shirt, tie, and pants, which can be different colors. 
-The basic restrictions are that certain colors of shirts, ties, and pants can or cannot be worn together. 
-The goal of the problem is to find a combination of shirt, tie, and pants that satisfies all the fashion rules.

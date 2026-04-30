@@ -1,5 +1,0 @@
-Futoshiki problem
-The Futoshiki problem is a classic constraint programming problem that involves solving a puzzle where numbers need to be filled in a grid, subject to certain constraints. 
-The main decision variables in the Futoshiki problem are the values assigned to each cell in the grid, represented by the `field` array. Each cell can take a value from 1 to the size of the grid.
-The key constraints in the Futoshiki problem are: each row and column must contain unique numbers, and the less-than constraints specified by the `lt` array must be satisfied. The less-than constraints require that the value in one cell is less than the value in another cell. Additionally, any initial values specified in the `values` array must be respected.
-The objective of the Futoshiki problem is to find a solution that satisfies all the constraints, with no specific objective function to minimize or maximize. The goal is to find a valid assignment of numbers to the grid that meets all the constraints.

@@ -1,5 +1,0 @@
-The On the Road puzzle
-The On the Road puzzle is about finding a sequence of digits that satisfies certain conditions when read from left to right and from right to left, with a specific difference between the two readings.
-The main decision variables are x, a 2D array where x[i,j] represents whether digit (i-1) is in position j, and y, an array representing the digits in the sequence.
-The key constraints are: each digit appears exactly once in the sequence, each position in the sequence is filled by exactly one digit, the first, third, fifth, seventh, and ninth positions cannot be filled by the digit 0, and the difference between the numbers formed by the first two and last two positions is a certain value d, which is consistent across the sequence.
-The objective is to minimize the value of the number formed by the first two positions, which represents the closest possible match between the sequence read from left to right and from right to left.

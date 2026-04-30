@@ -1,5 +1,0 @@
-Not All Equal Problem
-The Not All Equal problem is about ensuring that a collection of variables takes on more than one unique value.
-The main decision variables in this problem are the elements of the `variables` array, which represents a collection of values that need to be assigned.
-The key constraints are that the variables should take on more than one single value, and in the given example, the variables should match the values [3,1,3,3,3] exactly, but still satisfy the not_all_equal constraint.
-The objective of this problem is to find an assignment of values to the variables that satisfies the given constraints, specifically the not_all_equal constraint, which is a satisfaction problem rather than an optimization problem, meaning it aims to find a feasible solution that meets all the constraints rather than minimizing or maximizing a specific objective function.

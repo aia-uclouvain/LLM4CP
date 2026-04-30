@@ -1,8 +1,0 @@
-name: Map Coloring with Costs
-description: The problem is to color a map of South America with the minimum cost, where each country must be assigned a color such that no two adjacent countries have the same color, and each color has a specific cost associated with it.
-variables: $x_i$ for $i = 1, \ldots, 16$, total 
-These are decision variables where $x_i$ represents the color assigned to country $i$, and total represents the total cost of the coloring.
-constraints: $\forall i \in \{1, \ldots, 16\}, \forall j \in \text{neighbours}[i]: x_i \neq x_j$, $\text{total} = \sum_{i=1}^{16} \text{color\_cost}[x_i]$, $\forall i \in \{1, \ldots, 16\}: x_i \leq 4$
-These constraints ensure that no two adjacent countries have the same color, the total cost is calculated correctly, and each country is assigned a color from the set of available colors.
-objective: minimize total 
-The objective is to minimize the total cost of the coloring.

@@ -1,5 +1,0 @@
-The First Trial puzzle. 
-This problem is about two doors, one with a lady and one with a tiger, and statements on each door that may or may not be true. 
-The main variables are which door has the lady and which has the tiger, and whether the statements on each door are true or false. 
-The basic restrictions are that each door can only have one thing behind it, the lady or the tiger, and the statements on the doors must follow certain rules. 
-The goal of the problem is to figure out which door has the lady and which has the tiger, and whether the statements on the doors are true or false, in a way that satisfies all the rules.

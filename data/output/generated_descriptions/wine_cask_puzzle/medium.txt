@@ -1,5 +1,0 @@
-Wine Cask Puzzle
-The Wine Cask Puzzle is a classic constraint programming problem that involves distributing wine among casks of different capacities. 
-The main decision variables are x[i,j], which represent the amount of wine in casks of type j assigned to nephew i, and dtot[i], which represents the total volume of wine assigned to nephew i.
-The key constraints are: each nephew must have a total of 9 casks, the total volume of wine for each nephew must be 4.5, each cask type must be assigned to exactly 9 nephews, the total volume of wine for each nephew must be calculated based on the cask capacities and assignments, and the total volume of wine for each nephew must be at least 1 unit less than the previous nephew.
-The objective of the problem is to find a satisfying assignment of wine to casks for each nephew, such that all constraints are met, which is achieved by using the "solve satisfy" statement in the model.

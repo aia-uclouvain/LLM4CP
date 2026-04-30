@@ -1,8 +1,0 @@
-The Lights On Puzzle
-The problem is about finding the minimum number of moves to turn on all the lights in a grid, where each move can turn on a light in a specific room, and each room has a specific number of lights that need to be turned on.
-
-The main decision variables are `x[i,j]`, which represent whether a move is made to turn on the light in room `(i,j)`, and `d[i,j]`, which represent the number of times the light in room `(i,j)` is turned on. The variable `moves` represents the total number of moves made.
-
-The key constraints are that each room has a specific number of lights that need to be turned on, represented by the `r[i,j]` matrix, and that the total number of times a light is turned on in a room is equal to the number of lights that need to be turned on in that room, plus twice the number of times the light is turned on in that room by other moves. Additionally, the number of times a light is turned on in a room cannot be negative.
-
-The objective of the problem is to minimize the total number of moves, `moves`, which is the sum of all `x[i,j]` variables. In other words, the goal is to find the minimum number of moves required to turn on all the lights in the grid, while satisfying the constraints.

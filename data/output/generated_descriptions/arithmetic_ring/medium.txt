@@ -1,5 +1,0 @@
-Arithmetic Ring problem
-The Arithmetic Ring problem is about arranging the digits 1 to 8 in a ring such that no two adjacent numbers are consecutive, with the exception of 6 and 7 which must be adjacent.
-The main decision variables are the array x, where x[i] represents the digit placed at position i in the ring.
-The key constraints are that no two adjacent numbers can be consecutive, unless they are 6 and 7, and that 6 and 7 must be adjacent. Additionally, all digits must be used exactly once, and the solution must satisfy these conditions when wrapping around the ring from the last position to the first.
-The problem's objective is to find a satisfying arrangement of the digits, rather than minimizing or maximizing a specific value. In other words, the goal is to find a solution that meets all the given constraints.

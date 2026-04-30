@@ -1,5 +1,0 @@
-The problem is called the Guards and Apple problem. 
-It's about a boy who wants to give one apple to a girl, but to reach her, he has to pass through five gates, each with a guard. 
-The main variables are the number of apples the boy has at each gate, represented by x. 
-The basic restrictions are that at each gate, the boy gives the guard half of his apples plus one, and after giving the apple to the girl, he has no apples left. 
-The goal is to find out how many apples the boy had at the beginning, which is represented by x[1].

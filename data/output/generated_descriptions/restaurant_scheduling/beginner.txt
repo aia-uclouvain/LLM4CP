@@ -1,5 +1,0 @@
-Restaurant Scheduling problem
-The problem is about scheduling employees in a restaurant to meet the daily demand while minimizing costs. 
-The main variables are the number of employees needed each day and the number of employees working each day. 
-The basic restrictions are that each employee works four consecutive days and then has three days off, and the total number of employees working each day must meet the daily demand. 
-The goal is to minimize the total cost of hiring and paying employees, with each employee being paid $100 per day.

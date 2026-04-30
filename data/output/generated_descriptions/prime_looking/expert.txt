@@ -1,5 +1,0 @@
-name: Prime Looking Numbers Problem
-description: The problem is to find the number of prime-looking numbers less than 1000. A prime-looking number is a composite number that is not divisible by 2, 3, or 5. 
-variables: $x, d1, d2$ - These variables represent the prime-looking number $x$ and its divisors $d1$ and $d2$, where $d1$ and $d2$ are the factors of $x$ and $d1 \leq d2$.
-constraints: $x = d1 \cdot d2 \land d1 \leq d2 \land \forall i \in \{2, 3, 5\} (x \mod i > 0)$ - These constraints ensure that $x$ is a composite number ($x = d1 \cdot d2$) with $d1 \leq d2$, and that $x$ is not divisible by 2, 3, or 5.
-objective: The objective of the problem is not explicitly to minimize or maximize a value, but rather to find a solution that satisfies the given constraints, effectively counting the number of prime-looking numbers less than 1000.

@@ -1,5 +1,0 @@
-name: Cumulative Scheduling Problem
-description: The Cumulative Scheduling Problem is a classic problem in constraint programming that involves scheduling tasks with given durations and resource requirements, such that the total resource usage at any time does not exceed a given limit.
-variables: $O_1, O_2, D_1, D_2, H_1, H_2$ - These are the decision variables representing the start time, duration, and resource requirement (or height) of each task, respectively.
-constraints: $\text{cumulative}([O_1,O_2],[D_1,D_2],[H_1,H_2],4)$ - This is a global constraint that ensures the cumulative resource usage of all tasks at any time does not exceed the limit of 4.
-objective: satisfy - The objective of this problem is to find a feasible schedule that satisfies the cumulative constraint, rather than minimizing or maximizing a specific value.

@@ -1,5 +1,0 @@
-The name of the problem is the Chebyshev Center of a Polygon problem. 
-This problem is about finding the largest circle that can be inscribed within a given polygon, where the circle's center and radius are the decision variables to be determined. 
-The main decision variables are `x`, `y`, and `r`, which represent the x-coordinate, y-coordinate, and radius of the circle, respectively. 
-The key constraints are that the circle must be entirely within the polygon and that the distance from the circle's center to each edge of the polygon is less than or equal to the radius times the length of the edge. 
-The problem's objective is to maximize the radius `r` of the circle, which means finding the largest possible circle that can fit inside the given polygon.

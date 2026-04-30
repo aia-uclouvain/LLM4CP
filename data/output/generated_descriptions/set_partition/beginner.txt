@@ -1,5 +1,0 @@
-The problem is called the Set Partition Problem. 
-It's about dividing a group of numbers into two equal parts where the sum of the numbers and the sum of the squares of the numbers in each part are the same. 
-The main variables are the two sets of numbers, A and B, and the sums of the numbers and the sums of the squares of the numbers in each set. 
-In simple terms, the rules are that every number must be in one of the two sets, the two sets must have the same number of elements, and the sums of the numbers and the sums of the squares of the numbers in each set must be equal. 
-The goal is to find two sets that satisfy these conditions.

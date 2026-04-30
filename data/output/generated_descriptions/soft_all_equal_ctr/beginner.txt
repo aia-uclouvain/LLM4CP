@@ -1,5 +1,0 @@
-The problem is called soft_all_equal_ctr. 
-It's about comparing the values of a set of items to see how many pairs have the same value. 
-The main variables are x, which is a list of items that can have values from 1 to 5, and N, which is the minimum number of pairs of items that should have the same value. 
-The basic restrictions are that N should be a non-negative number and not more than the total number of possible pairs of items. 
-The goal is to find values for the items in the list x such that at least N pairs of items have the same value, and in this case, N is set to 6.

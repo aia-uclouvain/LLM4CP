@@ -1,5 +1,0 @@
-Rooks Path Problem 
-The problem is about finding a path for a rook to move on a chessboard with n rows and n columns, visiting each square exactly once and returning to the starting point. 
-The main variables are the positions of the rook on the board, represented by x, which is an n x n matrix where each cell contains a number from 1 to n*n, indicating the order in which the rook visits that cell. 
-The basic restrictions are that the rook can only move horizontally or vertically to an adjacent cell, and it must visit each cell exactly once. 
-The goal of the problem is to find a path that satisfies these restrictions and allows the rook to return to its starting point, effectively creating a tour of the entire board.

@@ -1,5 +1,0 @@
-name: Set Cover Problem
-description: The problem is to choose the minimum number of unique identifiers (ids) from a given set of pairs, such that each pair has at least one of its ids selected, and no pair has both its ids selected. The goal is to find the smallest set of ids that covers all pairs.
-variables: $s$ - a set of ids, which represents the selected ids that cover all pairs. This variable is a set of integers, where each integer corresponds to an id in the input set.
-constraints: $\forall i \in \{1, \ldots, n\}: input[i,1] \in s \oplus input[i,2] \in s$ - this constraint ensures that for each pair, exactly one of its ids is selected. The $\oplus$ symbol denotes the exclusive or (xor) operator.
-objective: minimize $|s|$ - the objective is to minimize the cardinality of the set $s$, which represents the minimum number of ids required to cover all pairs.

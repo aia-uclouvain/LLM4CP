@@ -1,5 +1,0 @@
-Enigma puzzle 1000 
-This problem is about decoding a secret message where each letter represents a different digit. 
-The main variables are letters like E, N, I, G, M, A, T, and S, which stand for different numbers from 0 to 9. 
-The basic rules are that no number can start with zero, and each letter must represent a unique digit. 
-The goal is to find the correct combination of digits that makes the equation "ENIGMA = M * TIMES" true, where each letter is replaced by its corresponding digit.

@@ -1,5 +1,0 @@
-Quasigroup Existence Problem
-The Quasigroup existence problem is about finding an $m \times m$ multiplication table of integers $1..m$ where each element occurs exactly once in each row and column, and certain multiplication axioms hold.
-The main decision variables are `quasiGroup` and `qgDiagonal`, where `quasiGroup` represents the $m \times m$ multiplication table and `qgDiagonal` represents the diagonal elements of the table.
-The key constraints are: each row and column must have different elements, the diagonal elements must be different, and certain multiplication axioms must hold, such as $(j*i)*(i*j) = i$ and if $(i*i)=j$ then $(j*j) = i$. Additionally, the table must be anti-Abelian, meaning that $i*j$ is not equal to $j*i$ when $i$ is not equal to $j$.
-The objective of the problem is to find a solution that satisfies all the constraints, which means finding a valid Quasigroup table. The problem does not have a specific objective function to minimize or maximize, but rather to find a feasible solution that meets all the requirements.

@@ -1,5 +1,0 @@
-name: Archery Puzzle
-description: The Archery Puzzle is a classic problem where a young archer aims to score a total of 100 points using as many arrows as possible, with six targets having different point values (16, 17, 23, 24, 39, 40). The goal is to find the combination of targets that sums up to 100 points, or as close to 100 as possible.
-variables: $x_1, x_2, ..., x_6$ - These are decision variables representing the number of arrows (from 0 to 10) shot at each of the six targets.
-constraints: $z = \sum_{i=1}^{6} x_i \cdot targets_i$, $diffz = |target - z|$ - These constraints calculate the total score achieved by shooting $x_i$ arrows at each target, and the absolute difference between this total score and the target score of 100.
-objective: Minimize $diffz$ - The objective is to minimize the absolute difference between the total score achieved and the target score of 100, effectively finding the combination of targets that scores closest to 100 points.

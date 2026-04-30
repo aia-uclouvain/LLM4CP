@@ -1,5 +1,0 @@
-name: Rosenbrock Function
-description: The Rosenbrock function is a classic nonlinear optimization problem that is often used to test the performance of optimization algorithms. It is a two-dimensional function that has a global minimum at (x, y) = (1, 1), where the function value is zero. The function is also known as Rosenbrock's valley or Rosenbrock's banana function due to its shape.
-variables: $x1, x2$ - These are the decision variables of the problem, representing the x and y coordinates in the two-dimensional space. They are continuous variables with a domain of -1.0 to 8.0.
-constraints: $-1.0 \leq x1 \leq 8.0, -1.0 \leq x2 \leq 8.0$ - These are the bounds on the decision variables, restricting their values to the specified range. There are no other constraints in this problem.
-objective: Minimize $z = 100.0*(x2-x1*x1)*(x2-x1*x1)+(1.0-x1)*(1.0-x1)$ - The objective is to find the values of $x1$ and $x2$ that minimize the value of the Rosenbrock function $z$.

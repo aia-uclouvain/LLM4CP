@@ -1,8 +1,0 @@
-The Monks and Doors problem.
-The problem involves determining which door is an exit in a room with four doors, given statements from eight monks, where each monk is either telling the truth or lying.
-The main decision variables are A, B, C, and D, representing whether doors A, B, C, and D are exits, and M1 to M8, representing whether monks 1 to 8 are telling the truth.
-The key constraints are: 
-- Monk 1's statement that door A is the exit must be true if and only if door A is indeed the exit.
-- Monk 2's statement that at least one of doors B and C is the exit must be true if and only if at least one of them is indeed the exit.
-- The statements of the other monks are linked by logical constraints, such as implications and equivalences, to the truth values of the doors and other monks' statements.
-The objective of the problem is to find a solution that satisfies all the constraints, which will identify the door that is an exit, regardless of which monks are lying or telling the truth.

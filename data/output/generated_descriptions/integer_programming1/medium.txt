@@ -1,8 +1,0 @@
-The problem is known as the Topcoder Problem or the Integer Programming Problem. 
-It is about finding the optimal values of three unique integers, a, b, and c, within the range of 1 to 10, such that the expression ab + bc is maximized.
-
-The main decision variables are a, b, and c, which represent the three unique integers. 
-
-The key constraints are that a, b, and c must be within the range of 1 to 10 and must be unique, meaning they cannot be equal to each other.
-
-The objective of the problem is to maximize the expression ab + bc, which is achieved by finding the optimal combination of a, b, and c that satisfies the given constraints. In other words, the goal is to find the values of a, b, and c that result in the largest possible value of the expression ab + bc.

@@ -1,5 +1,0 @@
-Book Buy Puzzle
-The problem is about two fathers, Peter and Paul, and their two sons, Tom and Dick, buying books. 
-The main variables are: w (whether Peter is Tom's father or not), x (the number of books each father buys), and y (the number of books each son buys).
-The basic restrictions are: Dick buys one book, Peter buys one more book than Tom, and each family spends $65 on books, with the price of each book being the same as the number of books bought.
-The goal is to find a solution that satisfies all these conditions, without trying to minimize or maximize anything, just to find a valid solution.

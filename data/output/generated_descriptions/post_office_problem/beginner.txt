@@ -1,5 +1,0 @@
-Post Office Problem
-The problem is about a post office that needs to hire full-time employees to work on different days of the week. 
-The main variables are the number of workers needed each day and the number of workers starting on each day. 
-The basic restrictions are that each full-time employee must work for 5 consecutive days and then have 2 days off, and the post office must meet its daily worker requirements. 
-The goal is to minimize the total number of employees that must be hired.

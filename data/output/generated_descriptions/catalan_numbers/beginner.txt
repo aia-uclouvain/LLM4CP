@@ -1,5 +1,0 @@
-Catalan Numbers problem.
-The problem is about calculating a series of numbers that follow a specific pattern, which is used to solve problems in mathematics and computer science. 
-The main variable is C, which represents a list of numbers where each number is calculated based on previous numbers in the list. 
-The basic restrictions are that each number in the list must be greater than or equal to 0, the first number is 1, and each subsequent number is the sum of products of previous numbers. 
-The goal of the problem is to calculate the correct values for the list of numbers, specifically the first m numbers in the sequence, where m is a given number (in this case, 7).

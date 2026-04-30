@@ -1,5 +1,0 @@
-The Survivor problem
-The Survivor problem is about making decisions on which items to take on a wilderness hike to maximize the chance of survival, given a limited backpack capacity.
-The main decision variables are the items to choose from each of the four categories: food, water, shelter, and defense, represented by the array `x`. Each element in `x` corresponds to a specific item in its respective category.
-The key constraints are that exactly one item must be chosen from each category, and the total weight of the chosen items must not exceed the maximum backpack capacity of 25 kg. In plain language, this means that the hiker must select one food item, one water item, one shelter item, and one defense item, and the total weight of these items cannot be more than 25 kg.
-The objective of the problem is to maximize the total survival points of the chosen items, which represents the chance of survival. The survival points are calculated by adding up the points of each chosen item. The goal is to find the combination of items that yields the highest total survival points while not exceeding the backpack capacity.

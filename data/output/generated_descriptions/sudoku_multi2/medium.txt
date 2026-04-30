@@ -1,8 +1,0 @@
-Multi Sudoku
-The Multi Sudoku problem is a variant of the classic Sudoku puzzle where multiple Sudoku boards overlap, and the goal is to find a solution that satisfies the rules of Sudoku for each board, considering the overlapping regions.
-
-The main decision variables in this problem are two 2D arrays, `s1` and `s2`, each representing a Sudoku board. The elements of these arrays are variables that can take values from 1 to 9, representing the numbers that can be placed in each cell of the Sudoku board.
-
-The key constraints in this problem can be described as follows: each row, column, and 3x3 sub-grid in each Sudoku board must contain the numbers 1-9 without repetition. Additionally, the overlapping regions between the two boards must be consistent, meaning that the same numbers must be placed in the same positions in both boards.
-
-The objective of the Multi Sudoku problem is to find a solution that satisfies all the constraints, which means finding a valid Sudoku solution for each board, considering the overlapping regions. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints. In this case, the model uses the `solve satisfy` statement, which means that the goal is to find a solution that satisfies all the constraints, without any specific optimization objective.

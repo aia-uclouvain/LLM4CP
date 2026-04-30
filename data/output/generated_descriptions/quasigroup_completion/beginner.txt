@@ -1,5 +1,0 @@
-Quasigroup Completion Problem
-The problem is about filling in a table with numbers so that each row and column has each number only once. 
-The main variables are the numbers in the table, which can be 1, 2, 3, or 4, and they represent the values to be filled in the table.
-The basic restrictions are that no row or column can have the same number twice, and the table must be filled with the numbers 1, 2, 3, and 4. 
-The goal is to find a way to fill in the table so that it meets these rules, which is known as a Latin square.

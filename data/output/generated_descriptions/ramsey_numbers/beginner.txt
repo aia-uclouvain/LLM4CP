@@ -1,5 +1,0 @@
-Ramsey Problem
-The problem is about coloring the connections between people at a party so that you don't have a certain number of people who all know each other or a certain number of people who all don't know each other.
-The main variables are the colors of the connections between people, which are represented by numbers.
-The basic restrictions are that each connection between two people can only have one color, and you can't have a group of people where everyone knows each other or a group of people where no one knows anyone else, all with the same color.
-The goal is to find the smallest party where this is impossible, or in the given models, to minimize the maximum color used, which means finding a way to color the connections with the smallest number of colors possible without having a monochromatic group of people who all know or don't know each other.

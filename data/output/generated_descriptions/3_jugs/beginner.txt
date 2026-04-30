@@ -1,5 +1,0 @@
-Three Jugs Problem
-The problem is about finding the shortest way to get from one point to another in a network of connected nodes. 
-The main variables are the nodes (or jugs), the connections between them (x), and the amount of "flow" going in and out of each node (inFlow and outFlow). 
-The basic restrictions are that each node can only have a certain amount of flow going in and out, and that the total flow going into a node must be equal to the total flow going out. 
-The goal is to minimize the total "distance" (or cost) of the flow through the network, which is represented by the variable z.

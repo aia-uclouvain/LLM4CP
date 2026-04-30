@@ -1,5 +1,0 @@
-name: Word Search Problem
-description: The problem is to find a set of words in a given grid of letters, where each word can be horizontal, vertical, or diagonal, and each letter can be used only once in each word.
-variables: $x_{i,j,k}$, where $x_{i,j,k} = 1$ if the $k^{th}$ letter of the $i^{th}$ word is in the $j^{th}$ position of the grid, and $0$ otherwise. These variables represent the placement of each letter of each word in the grid.
-constraints: $\sum_{i=1}^{num\_words} x_{i,j,k} \leq 1$ for each $j$ and $k$, to ensure that each letter can be used only once in each word. $\sum_{j=1}^{word\_len} x_{i,j,k} = 1$ for each $i$ and $k$, to ensure that each letter of each word is placed in exactly one position. $x_{i,j,k} \in \{0,1\}$ for each $i$, $j$, and $k$, to ensure that the variables are binary.
-objective: Maximize the number of words found in the grid, which can be represented as $\max \sum_{i=1}^{num\_words} \sum_{j=1}^{word\_len} \sum_{k=1}^{26} x_{i,j,k}$.

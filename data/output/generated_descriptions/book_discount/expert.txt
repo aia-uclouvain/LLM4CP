@@ -1,5 +1,0 @@
-name: Nice Discount Puzzle
-description: The problem involves buying books over a period of days, with the goal of minimizing the total cost. The cost of buying books on a particular day is affected by the total cost of books bought on the previous day, with a discount applied to the current day's cost based on the previous day's cost.
-variables: $x_{i,j}, t_j, totcost$ where $x_{i,j}$ represents whether book $i$ is bought on day $j$, $t_j$ represents the total cost of books bought on day $j$, and $totcost$ represents the total cost of all books bought over the period.
-constraints: $\forall j \in M: t_j = \sum_{i \in M} (cost_i \cdot x_{i,j})$ which ensures that the total cost of books on each day is calculated correctly, and $\forall i \in M: \sum_{j \in M} x_{i,j} = 1$ which ensures that each book is bought exactly once.
-objective: minimize $totcost = \sum_{i \in M} cost_i - \sum_{k \in Q} (0.001 \cdot t_{k-1} \cdot t_k)$, which represents the total cost of all books minus the discount applied to each day's cost based on the previous day's cost.

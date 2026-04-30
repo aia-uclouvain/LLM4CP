@@ -1,8 +1,0 @@
-Contiguity Problem
-The contiguity problem is about assigning values to a sequence of variables such that all variables assigned to value 1 appear contiguously, i.e., they form a single group. 
-
-The main decision variables in this problem are the elements of the array `arr`, which represent a sequence of binary values (0 or 1). 
-
-The key constraints in this problem are that all variables must be assigned to either 0 or 1, and all variables assigned to 1 must appear contiguously. This is achieved using a regular constraint, which enforces a specific pattern on the sequence of variables. In plain language, this means that the sequence of 1s must be uninterrupted by any 0s, but there can be 0s before and after the group of 1s.
-
-The objective of the contiguity problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of values to the variables that meets the contiguity constraint. In other words, the goal is to find a sequence of 0s and 1s where all 1s appear together in a single group, and this is achieved by using the `solve satisfy` statement in the MiniZinc model.

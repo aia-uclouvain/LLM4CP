@@ -1,5 +1,0 @@
-Crystal Maze problem
-The problem is about placing letters A to H in a set of connected circles, following a specific rule: no two consecutive letters can be in adjacent circles.
-The main variables are the letters A to H, which will be placed in the circles, and the connections between the circles, which define which circles are adjacent to each other.
-The basic restrictions are that each letter can only be used once, and no two consecutive letters can be in adjacent circles. 
-The goal of the problem is to find a valid arrangement of the letters A to H in the circles, satisfying the given restrictions.

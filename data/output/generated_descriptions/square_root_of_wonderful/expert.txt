@@ -1,8 +1,0 @@
-name: Square Root of Wonderful
-description: The problem is to find a mapping of letters to digits (excluding zero) for the word "WONDERFUL" such that when these digits are combined to form a number, the square root of this number can be represented by the letters "OODDF" using the same mapping, and the result is a valid mathematical equation.
-variables: W, O, N, D, E, R, F, U, L, WONDERFUL, OODDF, fd 
-These variables represent the digits that each letter in "WONDERFUL" and "OODDF" should be mapped to, with W, O, N, D, E, R, F, U, L being the individual digits for each letter, WONDERFUL and OODDF being the resulting numbers when these digits are combined, and fd being an array of the individual digits.
-constraints: all_different(fd) ∧ WONDERFUL > 0 ∧ WONDERFUL = 100000000*W + 10000000*O + 1000000*N + 100000*D + 10000*E + 1000*R +  100*F + 10*U + L ∧ OODDF = 10000*O + 1000*O + 100*D + 10*D + F ∧ OODDF*OODDF = WONDERFUL ∧ W ≥ 1 ∧ O ≥ 1 
-These constraints ensure that each letter is mapped to a unique digit, the resulting numbers are positive, the digits are combined correctly to form the numbers, the square root equation holds, and the first digit of each number is not zero.
-objective: satisfy 
-The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

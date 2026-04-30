@@ -1,9 +1,0 @@
-name: Global Cardinality with Costs Problem
-
-description: The Global Cardinality with Costs Problem is a constraint satisfaction problem where we have a set of variables that must take values from a given set, with each value having a specified occurrence count. Additionally, each assignment of a variable to a value has an associated cost, and the total cost of all assignments must be calculated.
-
-variables: $variables = [x_1, x_2, ..., x_n]$, $values = [v_{i,j}]_{m \times 2}$, $cost\_matrix = [c_{i,j}]_{n \times m}$, $cost$, where $x_i$ represents the value assigned to the $i^{th}$ variable, $v_{i,j}$ represents the $i^{th}$ value and its occurrence count, $c_{i,j}$ represents the cost of assigning the $i^{th}$ variable to the $j^{th}$ value, and $cost$ represents the total cost of all assignments.
-
-constraints: $\forall j \in \{1, 2, ..., m\}, \sum_{i=1}^{n} (x_i = v_{j,1}) = v_{j,2}$, $cost = \sum_{i=1}^{n} \sum_{j=1}^{m} c_{i,j} \cdot (x_i = v_{j,1})$, where the first constraint ensures that each value is assigned to the specified number of variables, and the second constraint calculates the total cost of all assignments.
-
-objective: The objective of the problem is to satisfy the given constraints, with no explicit optimization objective (i.e., minimize or maximize a specific value), but rather to find a feasible solution that meets all the constraints.

@@ -1,8 +1,0 @@
-name: Transportation Problem
-description: The Transportation Problem is a classic problem in operations research and management science that involves finding the most efficient way to transport goods from a set of sources to a set of destinations. The problem is defined by a set of sources with given capacities and a set of destinations with given demands. The goal is to determine the optimal transportation plan that minimizes the total transportation cost while satisfying the capacity constraints of the sources and the demand constraints of the destinations.
-
-variables: $x_{i,j}$, where $i$ represents the sources and $j$ represents the destinations. These variables represent the amount of goods to be transported from source $i$ to destination $j$.
-
-constraints: $\sum_{j=1}^{n} x_{i,j} = r_i$, $\sum_{i=1}^{m} x_{i,j} = c_j$, $x_{i,j} \geq min\_val$, where $r_i$ is the capacity of source $i$, $c_j$ is the demand of destination $j$, and $min\_val$ is the minimum allowed value for $x_{i,j}$. These constraints ensure that the total amount of goods transported from each source does not exceed its capacity, the total amount of goods transported to each destination meets its demand, and the transportation amounts are non-negative.
-
-objective: minimize $\sum_{i=1}^{m} \sum_{j=1}^{n} x_{i,j}$, which represents the total amount of goods transported.

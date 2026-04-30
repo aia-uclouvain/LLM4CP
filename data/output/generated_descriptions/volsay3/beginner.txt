@@ -1,5 +1,0 @@
-Volsay problem
-The problem is about a company that produces two products, gas and chloride, using three components: nitrogen, hydrogen, and chlorine. 
-The main variables are the amount of each product to produce, called Production, and the total profit, called z. 
-The basic restrictions are that the company cannot use more of each component than it has in stock. 
-The goal is to maximize the total profit, z, by deciding how much of each product to produce, while not using more components than available.

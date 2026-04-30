@@ -1,8 +1,0 @@
-Latin Squares Problem
-The problem is about creating an n × n table filled with n different symbols, where each symbol occurs exactly once in each row and exactly once in each column.
-
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the symbol in the `i-th` row and `j-th` column of the table. The value of `x[i, j]` is an integer between 1 and `n`, indicating which symbol is placed in that position.
-
-The key constraints are that each row and each column must contain each symbol exactly once. This means that for any given row or column, all the symbols must be different. Additionally, the model includes symmetry breaking constraints, which fix the first row and first column to contain the symbols in the order 1 to `n`. This reduces the number of possible solutions by eliminating equivalent rotations and reflections of the same solution.
-
-The problem's objective is to find a satisfying assignment of symbols to the table, such that all the constraints are met. Since the model uses the `solve satisfy` statement, the goal is to find any valid solution that satisfies all the constraints, rather than optimizing a specific objective function. In other words, the problem is a feasibility problem, where the aim is to determine whether a valid Latin square exists for a given size `n`, and to construct such a square if it does.

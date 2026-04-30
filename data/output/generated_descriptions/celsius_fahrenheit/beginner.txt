@@ -1,5 +1,0 @@
-Temperature Conversion Problem
-The problem is about converting temperatures between Celsius and Fahrenheit. 
-The main variables are C (Celsius temperature) and F (Fahrenheit temperature), which represent the temperatures in the two different scales. 
-The basic restrictions are that the temperatures should be within a certain range and that the conversion between Celsius and Fahrenheit should follow a specific formula. 
-The goal of the problem is to find a pair of temperatures, one in Celsius and one in Fahrenheit, that satisfy the conversion formula and are integers, meaning they have no decimal points.

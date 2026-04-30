@@ -1,5 +1,0 @@
-The problem is called the Element Sparse problem. 
-It is about finding a value from a table based on a given index, or using a default value if the index does not exist in the table. 
-The main decision variables are the element_table, which represents a 2D table of values, item, which represents an array containing an index and a value, item_default, which represents the default value to use if the index is not found, and result, which represents the value found in the table or the default value. 
-The key constraints are that the item's index must match an index in the element_table, and if it does, the result is the corresponding value from the table; otherwise, the result is the item_default value. 
-The problem's objective is to satisfy these constraints, meaning that the model is looking for a solution where the item's index is either found in the element_table, returning the corresponding value, or not found, returning the item_default value.

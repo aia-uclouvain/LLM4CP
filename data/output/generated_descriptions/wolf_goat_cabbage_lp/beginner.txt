@@ -1,5 +1,0 @@
-The Wolf, Goat, and Cabbage Problem. 
-This problem is about a farmer who needs to cross a bridge with a wolf, a goat, and a cabbage. 
-The main variables are the wolf, goat, cabbage, and the farmer, which represent the things that need to be moved across the bridge. 
-The basic restrictions are that the wolf and goat cannot be left together without the farmer, and the goat and cabbage also cannot be left together without the farmer. The farmer can only take one thing at a time across the bridge. 
-The goal of the problem is to find the shortest sequence of steps for the farmer to move everything across the bridge while following the rules, which in this case is to minimize the total cost, or the number of steps, to 7 or less.

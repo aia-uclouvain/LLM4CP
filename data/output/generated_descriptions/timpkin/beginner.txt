@@ -1,5 +1,0 @@
-Mrs Timpkin's Age problem 
-is about figuring out how old Mrs. Timpkin is, given some information about her age and her husband's age. 
-The main variables are T, which is Mr. Timpkin's current age, and W, which is Mrs. Timpkin's current age. 
-The basic restrictions are that eighteen years ago, Mr. Timpkin was three times as old as his wife, and now he is twice as old as she. 
-The goal is to find Mrs. Timpkin's current age, which means finding the value of W that satisfies these conditions.

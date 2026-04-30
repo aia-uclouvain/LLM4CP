@@ -1,5 +1,0 @@
-name: Symmetric Graph Problem
-description: The problem is to select a subset of arcs in a given digraph such that the resulting graph is symmetric, meaning that if there is an arc from node i to node j, then there must also be an arc from node j to node i.
-variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a set of nodes that have an arc to node i, representing the successors of each node in the graph.
-constraints: $\forall i, j \in \{1, 2, ..., n\} \text{ where } i \neq j: j \in x_i \leftrightarrow i \in x_j$, which ensures that the graph is symmetric, and $x = [{1,2,3}, {1,3}, {1,2}, {5,6}, {4}, {4}]$, which specifies the initial successors for each node.
-objective: The objective is to satisfy the constraints, i.e., to find a symmetric subgraph, there is no explicit objective function to minimize or maximize.

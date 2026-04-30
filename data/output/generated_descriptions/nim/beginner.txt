@@ -1,5 +1,0 @@
-Nimatron problem
-The problem is about a game where you have several piles of objects, and you want to make a move that will leave your opponent with a losing position. 
-The main variables are the number of objects in each pile before and after the move, whether a pile was changed, and the number of objects taken from each pile. 
-The basic restrictions are that you can only take objects from a pile, you can't add objects to a pile, and the number of objects in a pile after the move must be a valid number. 
-The goal is to minimize the number of piles that need to be changed to reach a safe position, which is a position where your opponent will lose.

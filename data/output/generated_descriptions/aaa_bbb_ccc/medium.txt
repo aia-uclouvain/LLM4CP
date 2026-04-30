@@ -1,5 +1,0 @@
-The problem is known as the "AAA + BBB + CCC = BAAC" puzzle. 
-This problem is about finding the values of three single-digit numbers, A, B, and C, that satisfy a specific arithmetic equation where each letter represents a digit in a three-digit number. 
-The main decision variables are A, B, and C, which represent the digits in the equation. 
-The key constraints are that the sum of the three-digit numbers AAA, BBB, and CCC must be equal to the four-digit number BAAC, and that A, B, and C must all be different from each other. 
-The problem's objective is to find a solution that satisfies these constraints, with no specific minimization or maximization goal, as indicated by the "solve satisfy" statement in the model.

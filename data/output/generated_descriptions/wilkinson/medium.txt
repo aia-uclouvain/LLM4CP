@@ -1,5 +1,0 @@
-Wilkinson's Problem
-Wilkinson's problem is a classic constraint programming problem that involves finding the root of a non-linear equation. 
-The main decision variable in this problem is x, which represents the value that satisfies the given non-linear equation.
-The key constraint in this problem is the non-linear equation that x must satisfy, which is a product of linear terms and a small perturbation term. In plain language, this constraint means that x must be a value such that when plugged into the equation, the result is equal to zero. The equation has a large number of linear factors, and a small non-linear term that slightly perturbs the result.
-The objective of this problem is to minimize the value of x, which means finding the smallest possible value of x that satisfies the given non-linear equation.

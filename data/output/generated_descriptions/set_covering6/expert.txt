@@ -1,5 +1,0 @@
-name: Set Covering Problem
-description: The Set Covering Problem is a classical problem in computer science and operations research that involves finding the smallest subset of tests that cover all the changed parts of a binary, given the coverage information of each test and the cost of running each test.
-variables: $x_i$ for $i = 1, \ldots, num_t$, where $x_i$ is a binary decision variable that represents whether test $i$ is selected (1) or not (0).
-constraints: $\sum_{i=1}^{num_t} x_i \cdot mat_{i,j} \geq 1$ for $j = 1, \ldots, num_b$, and $total\_cost = \sum_{i=1}^{num_t} x_i \cdot t\_costs_i$, where the first set of constraints ensures that each changed part of the binary is covered by at least one selected test, and the second constraint calculates the total cost of the selected tests.
-objective: Minimize $total\_cost$, which represents the total cost of running the selected tests.

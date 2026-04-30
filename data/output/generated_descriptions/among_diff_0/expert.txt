@@ -1,5 +1,0 @@
-name: Among Different Values Constraint Problem
-description: The problem is a constraint satisfaction problem where we have a set of variables with a specific range of values and a constraint that specifies the number of variables that should take a value different from a given constant, in this case, 0.
-variables: $nvar, x_1, x_2, ..., x_n$ - $nvar$ is an integer variable representing the number of variables in the array $x$ that take a value different from 0, and $x_1, x_2, ..., x_n$ are an array of integer variables with a range of 0 to 5, representing the values that the variables can take.
-constraints: $nvar = \sum_{i=1}^{n} (x_i \neq 0), x_i \in \{0, 1, 2, 3, 4, 5\}$ - The constraints specify that $nvar$ is equal to the number of variables in the array $x$ that take a value different from 0, and each variable $x_i$ can take a value from 0 to 5.
-objective: The objective of the problem is to find a solution that satisfies the given constraint, i.e., to find values for $nvar$ and $x_1, x_2, ..., x_n$ such that the number of variables in the array $x$ that take a value different from 0 is equal to $nvar$.

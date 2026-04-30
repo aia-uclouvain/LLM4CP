@@ -1,5 +1,0 @@
-Sicherman Dice problem
-The problem is about finding two special six-sided dice that have the same probability of rolling certain sums as regular dice, but with different numbers on their faces.
-The main variables are x1 and x2, which represent the numbers on the faces of the two dice.
-The basic restrictions are that each die has six faces, the numbers on the faces must be between 1 and 10, and the dice must have the same probability distribution for the sum of the numbers rolled as regular dice. 
-The goal is to find the numbers on the faces of the two dice that satisfy these conditions, with the additional constraint that the numbers on each die are in increasing order and the numbers on the first die are less than or equal to the numbers on the second die.

@@ -1,5 +1,0 @@
-Tobacco Puzzle 
-The problem is about a tobacconist who needs to mix two types of tobacco to get a total of 2000 units, where one type comes in packs of 25 units and the other in packs of 49 units. 
-The main variables are x[1] and x[2], which represent the number of packs of each type of tobacco. 
-The basic restrictions are that the tobacconist can't have a negative number of packs, and the total amount of tobacco must be exactly 2000 units. 
-The goal of the problem is to find a combination of packs of the two types of tobacco that adds up to 2000 units.

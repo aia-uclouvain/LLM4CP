@@ -1,8 +1,0 @@
-The Cashier Change Problem
-The problem is about determining the combination of coins in a cash register that totals $1.15, given that the cashier cannot make change for $1, $0.50, $0.25, $0.10, or $0.05 using the available coins.
-The main decision variables are the array `x`, where `x[i]` represents the number of coins of denomination `b[i]` (1, 5, 10, 25, or 50 cents) in the cash register.
-The key constraints are: 
-- the total value of the coins in the register must be $1.15, 
-- for each coin denomination, it must not be possible to make change for any larger denomination using the available coins of the current denomination. 
-This is achieved by ensuring that no amount of the current coin denomination can sum up to any larger denomination.
-The objective of the problem is to find a satisfying assignment of coins to the cash register, rather than minimizing or maximizing a specific value. The model uses a satisfaction-based approach, where the goal is to find a solution that meets all the given constraints.

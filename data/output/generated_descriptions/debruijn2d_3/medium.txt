@@ -1,8 +1,0 @@
-De Bruijn Torus Problem
-The De Bruijn Torus problem is a classic constraint programming problem that involves finding a matrix of size $n \times m$ filled with numbers from a base $b$ such that every sub-matrix of size $p \times q$ is distinct when interpreted as a number in base $b$.
-The main decision variables in this problem are the elements of the matrix $x$, where $x[i, j]$ represents the value at row $i$ and column $j$. The matrix is filled with numbers from $0$ to $b-1$, where $b$ is the base.
-The key constraints in this problem are:
-- The matrix is filled with numbers from $0$ to $b-1$.
-- Every sub-matrix of size $p \times q$ is distinct when interpreted as a number in base $b$.
-- The first row and column of the matrix are repeated at the end to simplify the calculations and allow for wrap-around.
-The objective of this problem is to find a matrix that satisfies all the constraints, with no specific objective function to minimize or maximize. The goal is to find a valid solution that meets all the conditions.

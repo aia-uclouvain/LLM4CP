@@ -1,8 +1,0 @@
-Pythagorean Triple Problem
-The problem is about finding a set of three positive integers that satisfy the Pythagorean theorem, which states that the square of the length of the hypotenuse of a right triangle is equal to the sum of the squares of the lengths of the other two sides.
-
-The main decision variables are A, B, and C, which represent the lengths of the two shorter sides and the hypotenuse of a right triangle, respectively. These variables are integers, and their values are constrained to be greater than or equal to 1.
-
-The key constraints are that the sum of the squares of A and B must be equal to the square of C, and that A, B, and C must be distinct and in increasing order. In plain language, this means that the triangle must be a valid right triangle with integer side lengths, and that the sides must be in the correct order.
-
-The problem's objective is to find a solution that satisfies all the constraints, rather than to minimize or maximize a specific value. The model uses the "solve satisfy" statement, which means that it will stop as soon as it finds a valid solution, rather than trying to find the optimal solution according to some criteria. The output will be a set of values for A, B, and C that satisfy the Pythagorean theorem, in the format "A^2 + B^2 = C^2".

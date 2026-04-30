@@ -1,5 +1,0 @@
-name: Sliding Sum Problem
-description: The Sliding Sum Problem is a constraint satisfaction problem that involves finding a sequence of variables such that the sum of all sequences of a certain length falls within a specified range. The problem is defined by a set of variables, a sequence length, and lower and upper bounds for the sum.
-variables: $n, variables, low, up, seq$ - These are the decision variables where $n$ is the number of variables, $variables$ is an array of variables, $low$ and $up$ are the lower and upper bounds for the sum, and $seq$ is the sequence length. $n$ and $seq$ are parameters, while $variables$, $low$, and $up$ are decision variables.
-constraints: $s = \sum_{j=i}^{i+seq-1} variables[j]$ and $low \leq s \leq up$ for all $i$ where $1 \leq i \leq n-seq+1$ - These constraints ensure that the sum of all sequences of length $seq$ falls within the range $[low, up]$.
-objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

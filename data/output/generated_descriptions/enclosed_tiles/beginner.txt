@@ -1,5 +1,0 @@
-Enclosed Tiles Problem
-The problem is about identifying tiles that are completely surrounded by other tiles of the same type in a 2D grid. 
-The main variables are the tiles in the grid, which can be one of four types: "-", "+", "b", or "w". 
-The basic restrictions are that a tile can only be considered enclosed if all its neighboring tiles are of the same type. 
-The goal of the problem is to replace the "+" tiles with the type of tile that surrounds them, if they are completely enclosed, and mark them as "-" otherwise.

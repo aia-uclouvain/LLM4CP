@@ -1,8 +1,0 @@
-Cylinder Problem
-The problem is about creating a cylinder with a specific volume, where the goal is to minimize this volume by adjusting the cylinder's dimensions.
-
-The main decision variables are W and L, which represent the width (or diameter) and length of the cylinder, respectively. W can take on discrete values of 50, 100, or 200, while L is a continuous variable between 2 and 5. The variable V represents the volume of the cylinder.
-
-The key constraints are that the volume V must be greater than or equal to 2.0 and that it is calculated based on the formula for the volume of a cylinder, which involves the width W, length L, and the constant pi. In plain language, the constraint ensures that the calculated volume is consistent with the given dimensions and that it meets a minimum threshold.
-
-The objective of the problem is to minimize the volume V of the cylinder by finding the optimal combination of width W and length L, subject to the given constraints. The solver searches for the smallest possible volume that satisfies the constraints, using a floating-point search with a specified precision.

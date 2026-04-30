@@ -1,5 +1,0 @@
-name: Golomb Ruler Problem
-description: The Golomb Ruler Problem is a classic problem in computer science and mathematics that involves finding the shortest possible ruler with a given number of marks, such that all distances between marks are unique. The problem has many practical applications, including sensor placements for x-ray crystallography and radio astronomy.
-variables: $x_1, x_2, ..., x_n$, where $x_i$ represents the position of the $i^{th}$ mark on the ruler. These variables are integers that represent the positions of the marks on the ruler.
-constraints: $x_1 = 0$, $x_i < x_{i+1}$ for $i = 1, 2, ..., n-1$, and $x_j - x_i \neq x_k - x_l$ for all $i, j, k, l$ such that $i < j$ and $k < l$ and $(i, j) \neq (k, l)$. These constraints ensure that the first mark is at position 0, the marks are in increasing order, and all distances between marks are unique.
-objective: Minimize $x_n$, which represents the length of the ruler. The goal is to find the shortest possible ruler that satisfies all the constraints.

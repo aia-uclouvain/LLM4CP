@@ -1,5 +1,0 @@
-name: 0/1 Multidimensional Knapsack Problem (Bounded)
-description: The problem is about a tourist who wants to pack a set of items of different weights and values into a knapsack with a limited capacity of 400 dag (or 4 kg), where each item can be taken a certain number of times, and the goal is to maximize the total value of the items packed without exceeding the knapsack capacity.
-variables: $x_1, x_2, ..., x_{22}$, where $x_i$ represents the number of units of item $i$ to be packed into the knapsack, with $i$ ranging from 1 to 22, corresponding to the 22 different items available.
-constraints: $total\_weight = \sum_{i=1}^{22} x_i \* items_{i,1} \leq 400$ and $x_i \leq items_{i,3}$ for $i = 1, 2, ..., 22$, where the first constraint ensures that the total weight of the packed items does not exceed the knapsack capacity, and the second constraint ensures that the number of units of each item packed does not exceed the available number of units.
-objective: Maximize $total\_value = \sum_{i=1}^{22} x_i \* items_{i,2}$, which represents the total value of the items packed into the knapsack.

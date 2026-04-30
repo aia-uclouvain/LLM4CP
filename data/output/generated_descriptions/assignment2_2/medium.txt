@@ -1,8 +1,0 @@
-Assignment Problem
-The Assignment Problem is a classic problem in computer science and operations research that involves finding the optimal way to assign a set of agents to a set of tasks. 
-
-The main decision variables in this problem are represented by a 2D matrix `x`, where `x[i, j]` is a binary variable that indicates whether agent `i` is assigned to task `j`. 
-
-The key constraints in this problem are that each agent can only be assigned to one task, and each task can only be assigned to one agent. Additionally, the problem requires that all agents and tasks are assigned. These constraints can be thought of as "each row and column in the assignment matrix can only have one true value".
-
-The objective of the Assignment Problem is to minimize the total cost of the assignments. In this specific model, the cost of assigning agent `i` to task `j` is given by the `cost` matrix, and the goal is to find the assignment that results in the minimum total cost. The `summax` variable in the output section suggests that the model is also tracking the maximum cost of any single assignment, but the primary objective is to minimize the total cost.

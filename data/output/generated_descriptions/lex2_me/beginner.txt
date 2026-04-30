@@ -1,5 +1,0 @@
-The problem is called Lex2 or Lexicographically Ordered Matrix.
-This problem is about arranging numbers in a table so that the rows and columns are in a specific order. 
-The main variables are the numbers in the table, which can be any integer from 1 to 4. 
-The basic restrictions are that each row and each column must be in lexicographical order, meaning that the numbers must be in order from smallest to largest, and if two rows or columns are equal, that's okay. 
-The goal of the problem is to find a solution that satisfies these restrictions, given a specific example table with some numbers already filled in.

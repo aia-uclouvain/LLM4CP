@@ -1,5 +1,0 @@
-The Abbott's Window puzzle 
-is about filling a grid with certain rules so that the total number of filled squares is as high as possible. 
-The main variables are the squares in the grid (x), and the number of filled squares in each row (a), column (b), and some special diagonals (c, d, e, f). 
-The basic restrictions are that each row, column, and some diagonals must have an even number of filled squares, and some specific squares must always be filled. 
-The goal is to maximize the total number of filled squares in the grid.

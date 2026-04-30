@@ -1,5 +1,0 @@
-The problem is called a Random Generator. 
-It's about creating a set of random numbers and using them to solve a simple math problem. 
-The main variables are "n" which is the number of random numbers to generate, "max_value" which is the largest possible random number, "seed" which helps create different sets of random numbers, "rand" which is the list of random numbers, and "x" which is the list of numbers we're trying to find. 
-The basic restrictions are that each number in "x" must be greater than or equal to 0, and the sum of each pair of numbers in "x" must be equal to the sum of the corresponding pair of random numbers in "rand". 
-The goal of the problem is to find a set of numbers "x" that satisfy these restrictions, and the problem doesn't aim to minimize or maximize anything, it just wants to find a solution that works.

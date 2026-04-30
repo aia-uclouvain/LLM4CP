@@ -1,5 +1,0 @@
-Cylinder problem
-The problem is about creating a cylinder with a specific volume. 
-The main variables are W, which is the width of the material used to create the cylinder, L, which is the length of the cylinder, and V, which is the volume of the cylinder. 
-The basic restrictions are that the width of the material can only be 50, 100, or 200, the length of the cylinder must be between 2 and 5, and the volume must be at least 2.0. 
-The goal of the problem is to minimize the volume of the cylinder, which means finding the smallest possible volume that still meets all the restrictions.

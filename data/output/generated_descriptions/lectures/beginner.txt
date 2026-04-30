@@ -1,5 +1,0 @@
-Lectures Problem
-The problem is about scheduling six one-hour lectures without any clashes, meaning that people who want to attend two specific lectures can do so without having to choose between them because they are at the same time.
-The main variables are the lectures (v1 to v6) and the time slots or colors (represented by the variable v) that each lecture will be assigned to. 
-The basic restrictions are that certain lectures cannot be held at the same time, such as lectures 1 and 2, or lectures 3 and 5. 
-The goal of the problem is to find the minimum number of time slots or hours needed to schedule all the lectures without any clashes, which is represented by the variable max_c.

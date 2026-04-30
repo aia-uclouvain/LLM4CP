@@ -1,5 +1,0 @@
-Rosenbrock function problem. 
-This problem is about finding the best values for two things, x1 and x2, that make a special calculation as small as possible. 
-The main variables are x1 and x2, which are just two numbers that we're trying to find, and z, which is the result of the calculation that we're trying to make small. 
-The basic restrictions are that x1 and x2 can only be between -1 and 8, and we're looking for the smallest possible value of z. 
-The goal is to minimize z, which means finding the values of x1 and x2 that make the calculation as small as possible, ideally zero.

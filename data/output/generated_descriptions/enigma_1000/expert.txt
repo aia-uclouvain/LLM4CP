@@ -1,5 +1,0 @@
-name: Enigma 1000
-description: The Enigma 1000 problem is a classic puzzle where the goal is to find a solution to an equation represented by letters, each standing for a different digit, such that the equation is satisfied. The equation is ENIGMA = M * TIMES, where each letter corresponds to a unique digit, and no number starts with zero.
-variables: $E, N, I, G, M, A, T, S$ - These variables represent the digits corresponding to each letter in the equation, ranging from 0 to 9.
-constraints: $E > 0 \wedge M > 0 \wedge T > 0 \wedge \text{all\_different}(E, N, I, G, M, A, T, S) \wedge 100000E + 10000N + 1000I + 100G + 10M + A = M(10000T + 1000I + 100M + 10E + S)$ - These constraints ensure that the first digit of each number is not zero, all digits are unique, and the equation ENIGMA = M * TIMES is satisfied.
-objective: satisfy - The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

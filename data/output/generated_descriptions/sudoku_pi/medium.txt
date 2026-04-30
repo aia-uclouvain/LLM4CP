@@ -1,9 +1,0 @@
-Pi Day Sudoku
-The problem is a variation of the classic Sudoku puzzle, where each row, column, and region must contain the digits 1-9 exactly once, along with three π symbols.
-The main decision variables are the values of the Sudoku grid, represented by the 2D array `x`, where `x[i, j]` represents the value in the `i`-th row and `j`-th column.
-The key constraints are: 
-- each row must contain each digit (1-9) and the π symbol exactly once, 
-- each column must contain each digit (1-9) and the π symbol exactly once, 
-- each region (defined by the `regions` array) must contain each digit (1-9) and the π symbol exactly once, 
-- the given values in the `dat` array must be respected.
-The objective of the problem is to find a satisfying assignment of values to the Sudoku grid, such that all constraints are met, with no specific minimization or maximization objective, as the goal is to simply find a valid solution.

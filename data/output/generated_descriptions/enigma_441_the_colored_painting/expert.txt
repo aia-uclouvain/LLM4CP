@@ -1,9 +1,0 @@
-name: Sliding Puzzle Problem (also known as "The Coloured Painting")
-description: The problem is to reproduce a 6x6 painting where each cell is colored red, blue, or green. The painting is given as a set of rows and columns, but not in the correct order. The task is to find the correct order of the rows and columns to reproduce the original painting.
-variables: $rows\_order = (r_1, r_2, ..., r_6), cols\_order = (c_1, c_2, ..., c_6)$, where $r_i$ and $c_i$ are decision variables representing the order of the rows and columns, respectively. These variables are used to permute the given rows and columns to form the original painting.
-constraints: $\begin{aligned} 
-& all\_different(rows\_order) \\
-& all\_different(cols\_order) \\
-& \forall i, j \in \{1, 2, ..., 6\}: rows[rows\_order[i], j] = cols[cols\_order[j], i]
-\end{aligned}$, which ensure that each row and column is used exactly once and that the permuted rows and columns form a consistent painting.
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a feasible solution that reproduces the original painting. There is no explicit objective function to minimize or maximize.

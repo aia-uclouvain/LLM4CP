@@ -1,5 +1,0 @@
-name: Hamming Distance Problem
-description: The Hamming distance problem is a classical problem in computer science and information theory that involves finding the number of positions at which two binary arrays differ. In other words, it measures the number of bits that need to be changed to transform one binary array into another.
-variables: $a = (a_1, a_2, ..., a_n), b = (b_1, b_2, ..., b_n), diffs$, where $a$ and $b$ are binary arrays of length $n$, and $diffs$ is an integer variable representing the Hamming distance between $a$ and $b$.
-constraints: $cp1d(a, [1,1,1,1,1,1]), hamming\_distance(a, b, diffs), diffs = 2$, where $cp1d(a, [1,1,1,1,1,1])$ ensures that array $a$ has the same size as the given array, $hamming\_distance(a, b, diffs)$ calculates the Hamming distance between $a$ and $b$, and $diffs = 2$ specifies that the Hamming distance should be equal to 2.
-objective: The objective of this problem is to find all possible binary arrays $a$ and $b$ that satisfy the given constraints, specifically the Hamming distance constraint, rather than minimizing or maximizing a specific value.

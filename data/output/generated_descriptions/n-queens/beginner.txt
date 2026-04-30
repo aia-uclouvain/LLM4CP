@@ -1,5 +1,0 @@
-N-Queens problem
-The N-Queens problem is about placing N queens on an N x N chessboard such that no two queens attack each other. A queen can attack another queen if they are on the same row, column, or diagonal.
-The main variables are the positions of the queens on the board, which can be represented as a list of integers, where each integer corresponds to the column where a queen is placed in a particular row.
-The basic restrictions or rules of the problem are that each queen must be placed in a unique row and column, and no two queens can be on the same diagonal.
-The goal of the problem is to find all possible configurations of the board where the queens do not attack each other, or to determine the number of such configurations.

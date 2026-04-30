@@ -1,5 +1,0 @@
-Five Letter Words with No Shared Letters
-The problem is about finding five different five-letter words that do not have any letters in common. 
-The main variables are the five words and their individual letters. 
-The basic restrictions are that each word must be unique, the words must be in order, and no letter can be repeated across all five words. 
-The goal is to find combinations of five words that meet these conditions.

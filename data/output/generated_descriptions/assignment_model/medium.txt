@@ -1,5 +1,0 @@
-Assignment Problem
-The assignment problem is about finding the optimal way to assign a set of agents to a set of tasks, where each agent can only be assigned to one task and each task can only be assigned to one agent.
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents whether agent `i` is assigned to task `j` (1 if assigned, 0 if not).
-The key constraints are that each agent is assigned to exactly one task, and if there are as many agents as tasks, then each task is assigned to exactly one agent. If there are more tasks than agents, then some tasks may not be assigned to any agent. Additionally, the cost of each possible assignment is given, and the total cost of all assignments is calculated.
-The objective of the problem is to minimize the total cost of all assignments, which is represented by the variable `summax`. The model uses a constraint programming approach to find the optimal assignment that results in the minimum total cost.

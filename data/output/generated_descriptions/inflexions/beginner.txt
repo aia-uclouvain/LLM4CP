@@ -1,5 +1,0 @@
-Inflexions problem
-The problem is about finding the number of times a sequence of numbers changes direction, like when it goes up and then down, or down and then up, in a specific way.
-The main variables are x, which is a list of numbers, and a, which is the number of times the sequence changes direction.
-The basic restrictions are that the sequence must follow certain rules, like when it goes up or down, and when it stays the same.
-The goal is to find the number of times the sequence changes direction, which is stored in variable a, given a specific sequence of numbers.

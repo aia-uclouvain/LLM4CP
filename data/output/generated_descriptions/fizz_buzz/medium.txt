@@ -1,9 +1,0 @@
-The Fizz Buzz problem. 
-The Fizz Buzz problem is a classic constraint programming problem that involves printing numbers from 1 to 100, but with certain conditions: for multiples of three, print "Fizz" instead of the number, and for multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz". 
-The main decision variables in this problem are the array `x`, where `x[i]` represents the output for the number `i`. The possible values for `x[i]` are 0 (nothing), 1 (Fizz), 2 (Buzz), and 3 (FizzBuzz). 
-The key constraints in this problem are: 
-- A number is "FizzBuzz" if it is divisible by both 3 and 5, or if it contains both 3 and 5. 
-- A number is "Fizz" if it is divisible by 3 or contains 3, but not divisible by 5 and does not contain 5. 
-- A number is "Buzz" if it is divisible by 5 or contains 5, but not divisible by 3 and does not contain 3. 
-- A number is neither "Fizz" nor "Buzz" if it is not divisible by 3 or 5 and does not contain 3 or 5. 
-The objective of this problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints, which is achieved by using the `satisfy` keyword in the MiniZinc model. The goal is to generate the correct output for each number from 1 to 100 based on the Fizz Buzz rules.

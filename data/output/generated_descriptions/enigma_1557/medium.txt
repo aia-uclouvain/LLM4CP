@@ -1,9 +1,0 @@
-The Reverse Division problem
-The Reverse Division problem is about finding a specific integer that meets certain divisibility conditions and, when its digits are reversed, the resulting integer is larger and also meets the same divisibility conditions.
-The main decision variables in this problem are `n1` and `n2`, which represent the two integers to be found. These variables are defined as integers within a specific range, from `10*n` to `max_num`, where `n` is the number of digits (4 in this case) and `max_num` is the maximum possible value for an `n`-digit number.
-The key constraints in this problem can be described as follows: 
-- The integers `n1` and `n2` must be divisible by specific pairs of numbers: `n1` by 11 and 13, and `n2` by 17 and 19.
-- The reverse of each integer must also be divisible by the same pair of numbers.
-- The reverse of each integer must be larger than the original integer.
-- The first digit of each integer and its reverse must not be zero.
-The objective of the problem is to find the values of `n1` and `n2` that satisfy all the given constraints. The problem does not involve minimizing or maximizing a specific objective function; instead, it aims to find specific integers that meet the specified conditions.

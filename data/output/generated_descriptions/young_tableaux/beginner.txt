@@ -1,5 +1,0 @@
-The problem is called Young Tableaux. 
-It's about arranging numbers in a special table so that each row and column is sorted, and the table has a specific shape. 
-The main variables are x, which represents the numbers in the table, and p, which represents the shape of the table. 
-The basic restrictions are that each number from 1 to n must be used exactly once, each row and column must be sorted, and the shape of the table must be valid. 
-The goal of the problem is to find a valid arrangement of numbers in the table that satisfies all the restrictions.

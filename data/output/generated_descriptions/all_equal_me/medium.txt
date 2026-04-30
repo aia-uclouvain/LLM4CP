@@ -1,5 +1,0 @@
-The problem is called the "All Equal" problem. 
-It is about ensuring that all elements in a given array have the same value. 
-The main decision variable is an array `x` of size `n`, where each element `x[i]` represents the value that should be assigned to the `i-th` position in the array. 
-The key constraint is that all elements in the array must have the same value, which is enforced by the `all_equal_me` predicate. This predicate checks that each element in the array is equal to the previous one, effectively ensuring that all elements are equal. 
-The problem's objective is to find an assignment of values to the array such that all elements are equal, which is achieved by satisfying the `all_equal_me` constraint.

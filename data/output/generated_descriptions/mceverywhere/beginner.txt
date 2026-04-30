@@ -1,5 +1,0 @@
-McEverywhere problem
-The problem is about deciding where to build fast food restaurants in a town so that every resident can reach one within a certain distance, in this case, 4km. 
-The main variables are the locations of homes and restaurants in the town, represented by a grid where each cell can have a home, a restaurant, or both. 
-The basic restrictions are that each resident must be able to reach a restaurant within 4km, and restaurants can be built on any cell, including ones with homes. The distance between cells is calculated using a direct line, with adjacent cells being 1km apart and diagonal cells being 1.41km apart.
-The goal is to minimize the number of restaurants needed to ensure every resident is within 4km of one.

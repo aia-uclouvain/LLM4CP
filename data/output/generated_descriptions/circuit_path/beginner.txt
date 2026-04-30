@@ -1,5 +1,0 @@
-Circuit Problem
-The problem is about finding a path in a circular sequence of numbers. 
-The main variables are x and p, where x represents the sequence of numbers and p represents the path to be extracted from the sequence. 
-The basic restrictions are that each number in the sequence must be unique, and the path must start and end at the same point, with each step in the path being a number in the sequence. 
-The goal of the problem is to find a valid sequence and its corresponding path that satisfy these restrictions.

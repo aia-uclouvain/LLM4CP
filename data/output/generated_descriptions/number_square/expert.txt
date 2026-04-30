@@ -1,5 +1,0 @@
-name: Square Number Problem
-description: The problem is to find an eight-digit number that is a perfect square and remains a perfect square when the digit 1 is concatenated in front of its decimal notation.
-variables: $n, x, y$ where $n$ is the eight-digit number, and $x$ and $y$ are the square roots of $n$ and the concatenated number $10^8 + n$ respectively.
-constraints: $n = x^2 \wedge 10^8 + n = y^2$ which ensure that $n$ is a perfect square and the concatenated number is also a perfect square.
-objective: The problem is a satisfaction problem, meaning the objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

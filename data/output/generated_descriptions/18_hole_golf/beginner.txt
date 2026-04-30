@@ -1,5 +1,0 @@
-Golf Course Generation
-The problem is about creating a random 18-hole golf course with specific rules. 
-The main variables are the hole lengths, which can be 3, 4, or 5. 
-The basic restrictions are that there must be 18 holes, each hole must be 3, 4, or 5 units long, and the total length of all holes must add up to 72 units. 
-The goal is to generate all possible combinations of hole lengths that meet these rules, with each combination having some chance of being selected.

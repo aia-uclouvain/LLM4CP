@@ -1,5 +1,0 @@
-Stock Control Problem
-The Stock Control Problem is about managing inventory levels over time to meet demand while minimizing costs. 
-The main decision variables are x, representing the number of units manufactured in each time period, and y, representing the number of units in stock at the end of each time period. 
-The key constraints are: the number of manufactured units and the number of units in stock must be non-negative; the inventory level at the end of each period is determined by the initial inventory, the units manufactured, and the demand; the initial inventory is given; and the production capacity in each period cannot be exceeded. 
-The objective of the problem is to minimize the total cost, which includes the production cost and the stockholding cost, over all time periods.

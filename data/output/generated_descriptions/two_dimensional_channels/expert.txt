@@ -1,5 +1,0 @@
-name: Two-Dimensional Constrained Channel Problem
-description: The problem involves finding all possible configurations of a two-dimensional grid of black and white pixels, where each interior pixel has exactly m black neighbors and (8-m) white neighbors, with no constraints on the boundary pixels.
-variables: $x_{i,j}$, where $i$ and $j$ are indices of the grid, $x_{i,j} \in \{0,1\}$, representing whether the pixel at position $(i,j)$ is black (1) or white (0).
-constraints: $\forall i, j \in \{2, \ldots, n-1\}: m = \sum_{a,b \in \{-1,0,1\}} x_{i+a,j+b}$, where $i+a \geq 1$, $j+b \geq 1$, $i+a \leq n$, $j+b \leq n$, and $(a,b) \neq (0,0)$, ensuring that each interior pixel has exactly $m$ black neighbors.
-objective: The objective is to find all satisfying assignments, i.e., there is no explicit objective function to minimize or maximize, the goal is to enumerate all possible configurations that satisfy the constraints.

@@ -1,5 +1,0 @@
-name: Magic Sequence Problem
-description: The Magic Sequence Problem is a constraint satisfaction problem where we need to find a sequence of integers of length n, such that for all i in the range 0 to n-1, the number i occurs exactly xi times in the sequence.
-variables: $s = [s_0, s_1, ..., s_{n-1}]$, where $s_i$ represents the number of times the number i should occur in the sequence, and is a decision variable that can take any integer value between 0 and n-1.
-constraints: $\forall i \in \{0, 1, ..., n-1\}, \text{global\_cardinality}(s, \text{array1d}(0..n-1, \text{set2array}(\text{index\_set}(s))), s)$, which ensures that the number of occurrences of each number i in the sequence is exactly $s_i$.
-objective: The objective of the problem is to find a satisfying assignment, i.e., to solve the problem as a satisfaction problem, there is no explicit objective function to minimize or maximize.

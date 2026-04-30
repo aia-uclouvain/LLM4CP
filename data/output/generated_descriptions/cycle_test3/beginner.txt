@@ -1,9 +1,0 @@
-Cycle Problem
-The problem is about finding a way to arrange a set of items in a circle, where each item is connected to another item, and we want to count how many cycles or loops are formed in this arrangement.
-The main variables are: 
-- x, which represents the arrangement of items in the circle, where each item is assigned a position.
-- num_cycles, which represents the total number of cycles or loops formed in the arrangement.
-The basic restrictions or rules of the problem are: 
-- Each item must be assigned a unique position in the circle.
-- The arrangement must form cycles or loops, where each item is connected to another item.
-The goal of the problem is to find an arrangement that satisfies these rules and to count the total number of cycles or loops formed in this arrangement.

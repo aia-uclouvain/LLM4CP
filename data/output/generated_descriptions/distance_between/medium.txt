@@ -1,5 +1,0 @@
-The name of the problem is Distance Between.
-This problem is about measuring the distance between two sets of variables, x and y, based on their relative orderings.
-The main decision variables are x and y, which are arrays of variables representing the two sets, and d, which represents the distance between these sets. 
-The key constraints are that the distance d is calculated by comparing the relative orderings of corresponding elements in x and y. Specifically, for each pair of elements in x and y, if the ordering of the elements in x is less than the ordering of the elements in y, but the reverse is not true, or vice versa, it contributes to the distance d.
-The problem's objective is to maximize the distance d, which means finding the maximum number of times the relative orderings of corresponding elements in x and y are inconsistent.

@@ -1,5 +1,0 @@
-name: Five Fives Enigma Puzzle
-description: The problem is to find five different bases, each representing a number in a different base, such that when added together, the sum is less than 100,000 and all five numbers are even. The numbers are represented as 1 1 1 0 1 in their respective bases.
-variables: $x_1, x_2, x_3, x_4, x_5, b_1, b_2, b_3, b_4, b_5$ - These are the decision variables where $x_i$ represents the decimal value of the number 1 1 1 0 1 in base $b_i$, and $b_i$ is the base of the $i^{th}$ number.
-constraints: $\forall i \in \{1,2,3,4,5\} \exists b \in \{2,3,...,20\} (b_i = b \land x_i = 1 \cdot b^4 + 1 \cdot b^3 + 1 \cdot b^2 + 0 \cdot b^1 + 1 \cdot b^0) \land x_i \mod 2 = 0 \land \forall i \neq j (b_i \neq b_j) \land x_5 = \sum_{i=1}^{4} x_i \land b_1 \leq b_2 \leq b_3 \leq b_4 \leq b_5$ - These constraints ensure that each number is in a different base, all numbers are even, the sum of the first four numbers is equal to the fifth number, and the bases are in increasing order.
-objective: The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

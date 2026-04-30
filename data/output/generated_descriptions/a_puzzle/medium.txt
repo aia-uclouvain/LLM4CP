@@ -1,8 +1,0 @@
-The problem is called "A Puzzle". 
-It is about finding a mapping between digits such that a set of given equations hold true, and then using this mapping to solve a new equation. 
-The main decision variables are x0 to x9, which represent the values that the digits 0 to 9 should be mapped to. 
-The key constraints are a set of equations where each equation states that the sum of the mapped values of the digits in a number equals a given result. 
-For example, the equation "8809 = 6" means that the sum of the mapped values of the digits 8, 8, 0, and 9 should equal 6. 
-The problem's objective is to find the value of the variable x, which represents the result of the equation "2581 = ?" after applying the mapping. 
-In other words, the goal is to find the sum of the mapped values of the digits 2, 5, 8, and 1. 
-The model uses a set of constraints to ensure that the mapping is consistent across all equations, and then uses this mapping to solve the new equation.

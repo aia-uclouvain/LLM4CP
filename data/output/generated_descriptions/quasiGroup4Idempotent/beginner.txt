@@ -1,5 +1,0 @@
-Quasigroup problem 
-This problem is about finding a special kind of multiplication table that follows certain rules. 
-The main variables are the elements in the multiplication table, which are like a grid of numbers. Each number in the grid represents the result of "multiplying" two things together, but it's not regular multiplication. 
-The basic rules are that each number can only be used once in each row and column, and some specific multiplication rules have to be followed, like when you "multiply" something by itself, you get that same thing back. 
-The goal is to find a multiplication table that satisfies all these rules, which is called a quasigroup.

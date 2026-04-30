@@ -1,5 +1,0 @@
-The problem is called the NClass problem. 
-It is about partitioning a set of variables into a specified number of non-empty classes, where each class is a set of values, such that each value is assigned to at least one variable in the class. 
-The main decision variables are x, which represents an array of variables that can take on values from 1 to 7, and s, which represents an array of sets of values from 1 to 7. 
-The key constraints are that the sets in s must be disjoint, meaning they cannot have any values in common, and that the number of non-empty sets in s that contain at least one value assigned to a variable in x must be equal to a specified number, in this case 2. 
-The objective of the problem is to find an assignment of values to the variables in x and an assignment of values to the sets in s that satisfies the constraints, specifically the nclass constraint, which ensures that the number of non-empty sets in s that contain at least one value assigned to a variable in x is equal to the specified number.

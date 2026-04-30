@@ -1,8 +1,0 @@
-name: Sliding Time Window Problem
-description: The Sliding Time Window Problem is a constraint satisfaction problem where a set of tasks with given origins and durations need to be scheduled within a time window of fixed size, such that the total duration of tasks overlapping with the time window does not exceed a given limit.
-variables: $n, max\_time, tasks_{i,j}, window\_size, limitx, start, occupied_i$ 
-These variables represent the following: $n$ is the number of tasks, $max\_time$ is the maximum possible time, $tasks_{i,j}$ is a 2D array where $tasks_{i,1}$ represents the origin of task $i$ and $tasks_{i,2}$ represents the duration of task $i$, $window\_size$ is the size of the sliding time window, $limitx$ is the maximum allowed total duration of tasks overlapping with the time window, $start$ is the start time of the sliding time window, and $occupied_i$ represents the number of tasks occupying time $i$.
-constraints: $limitx \geq \sum_{i=start}^{start+window\_size-1} occupied_i$, $occupied_i = \sum_{j=1}^{n} bool2int(i \geq tasks_{j,1} \wedge i < tasks_{j,1} + tasks_{j,2})$, $limitx = 6$, $tasks = \begin{bmatrix} 10 & 3 \\ 5 & 1 \\ 6 & 2 \end{bmatrix}$, $cp2d(tasks, \begin{bmatrix} 10 & 3 \\ 5 & 1 \\ 6 & 2 \end{bmatrix})$ 
-These constraints ensure that the total duration of tasks overlapping with the time window does not exceed the given limit, calculate the number of tasks occupying each time point, fix the value of $limitx$, assign the given values to the tasks, and ensure that the tasks array has the correct size and values.
-objective: satisfy 
-The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

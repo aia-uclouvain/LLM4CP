@@ -1,8 +1,0 @@
-Low Autocorrelation Binary Sequences
-The problem involves finding a binary sequence of a given length with the lowest possible autocorrelation. Autocorrelation measures how similar a sequence is to itself when shifted by a certain number of positions.
-
-The main decision variables in this problem are the individual elements of the binary sequence, which can take on values of -1 or 1. These variables represent the bits in the sequence.
-
-The key constraints in this problem are related to the calculation of the autocorrelation of the sequence. The autocorrelation at a given shift is calculated by multiplying corresponding elements of the sequence and its shifted version, and summing the results. The problem requires that the sum of the squares of these autocorrelations be minimized.
-
-The objective of the problem is to minimize the sum of the squares of the autocorrelations of the sequence. This means that the sequence should be as dissimilar as possible to itself when shifted by any number of positions, which is achieved by minimizing the autocorrelation at all shifts. The problem can be solved using constraint programming techniques, which involve defining the constraints and objective function, and then using a solver to find the optimal solution.

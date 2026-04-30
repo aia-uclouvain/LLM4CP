@@ -1,5 +1,0 @@
-Contracting Costs puzzle
-The problem is about determining the individual costs of six contractors (paper hanger, painter, plumber, electrician, carpenter, and mason) given their combined costs for specific pairs of services.
-The main decision variables are Ph, Pa, Pl, El, Ca, and Ma, which represent the costs of the paper hanger, painter, plumber, electrician, carpenter, and mason, respectively.
-The key constraints are that the combined costs for each pair of services must match the given amounts: the paper hanger and painter together cost $1,100, the painter and plumber cost $1,700, and so on. These constraints ensure that the individual costs add up to the specified combined costs.
-The objective of the problem is to minimize the total cost, which is the sum of the individual costs of all six contractors, although the given model has an error in the objective function, as it includes an extra Pa term. The correct objective should be to simply find a set of costs that satisfy the given constraints, as the problem is a satisfaction problem rather than an optimization problem.

@@ -1,5 +1,0 @@
-Graph Degree Sequence problem
-The problem is about finding the degree sequence of a directed graph, which means determining how many connections each point in the graph has. 
-The main variables are the degree sequence "d" which represents how many connections each point has, and the graph itself, represented as a matrix or a list of edges. 
-The basic restrictions are that the degree sequence must match the actual connections in the graph, and the graph must be a valid directed graph. 
-The goal of the problem is to find a graph that satisfies the given degree sequence, or to determine if such a graph exists, by using constraints to ensure that the degree sequence matches the graph.

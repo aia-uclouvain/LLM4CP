@@ -1,8 +1,0 @@
-The problem is called the Sum Constraint Problem. 
-It is about finding a set of integer values that satisfy a specific sum constraint, where the sum of these values is related to a target value through a given comparison operator. 
-
-The main decision variables are `x`, an array of integer variables, and `s`, a single integer variable representing the sum of the values in `x`. 
-
-The key constraints are that the sum of the values in `x` must be related to the target value `s` through a specific comparison operator, such as less than, equal to, or greater than. 
-
-The problem's objective is to find a set of values for `x` that satisfy the given sum constraint, which in this case is to find values for `x` such that their sum is equal to the target value `s`, which is set to 6. The model is solved to satisfy all the given constraints, and the solution is the set of values for `x` that meet these conditions.

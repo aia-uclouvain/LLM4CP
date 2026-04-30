@@ -1,5 +1,0 @@
-Sudoku
-The Sudoku problem is about filling a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 sub-grid contains each number exactly once.
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the number to be placed in the cell at row `i` and column `j`.
-The key constraints are that each number can only be used once in each row, column, and 3x3 sub-grid. This is achieved through the use of the `global_cardinality_old` constraint, which ensures that each number appears exactly once in each of these regions.
-The objective of the problem is to find a valid assignment of numbers to the grid, satisfying all the constraints. In other words, the goal is to find a solution that fills the entire grid, without violating any of the rules. There is no explicit objective function to minimize or maximize, as the problem is a feasibility problem, where the goal is to find a solution that satisfies all the constraints.

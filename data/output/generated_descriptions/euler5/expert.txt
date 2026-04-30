@@ -1,5 +1,0 @@
-name: Euler Problem 5 (Smallest Multiple)
-description: The problem asks to find the smallest number that is evenly divisible by all numbers from 1 to 20 without any remainder.
-variables: $x[1..n]$ - This is an array of decision variables where $x[i]$ represents the smallest number that is evenly divisible by all numbers from 1 to $i$. 
-constraints: $x[1] = 1, \forall i \in 2..n: lcm(i, x[i-1], x[i])$ - The first constraint initializes $x[1]$ to 1. The second constraint ensures that for each $i$ from 2 to $n$, $x[i]$ is the least common multiple (lcm) of $i$ and $x[i-1]$. 
-objective: The objective of the problem is to find the value of $x[n]$, which is the smallest number that is evenly divisible by all numbers from 1 to $n$, where $n$ is given as 20 in this case. The problem can be considered as a minimization problem, where we want to minimize $x[n]$.

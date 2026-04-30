@@ -1,5 +1,0 @@
-Hidato Puzzle
-The Hidato puzzle is a logic-based puzzle where you have to connect numbered tiles in a grid. 
-The main variables are the grid size (number of rows and columns) and the values of the tiles in the grid. 
-The basic restrictions are that each number can only be used once, and consecutive numbers must be placed in adjacent tiles (horizontally, vertically, or diagonally). 
-The goal is to fill in the entire grid with consecutive numbers, starting from 1 and ending at the total number of tiles, in a way that satisfies the given restrictions.

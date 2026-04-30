@@ -1,5 +1,0 @@
-Curious Set of Integers Problem
-The problem is about finding a set of numbers where the product of any two numbers is one less than a perfect square. 
-The main variables are the numbers in the set, which are represented by x[1], x[2], x[3], x[4], and x[5]. These variables mean the individual numbers that make up the set.
-The basic restrictions or rules of the problem are that all numbers in the set must be different, the numbers must be in increasing order, and the product of any two numbers must be one less than a perfect square.
-The goal of the problem is to find a set of five numbers that satisfy these rules, given that one possible set is {1, 3, 8, 120} and a fifth number needs to be added to this set without destroying the property.

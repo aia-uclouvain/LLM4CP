@@ -1,5 +1,0 @@
-Dimes Puzzle
-The Dimes Puzzle is a classic constraint programming problem that involves finding the number of stamps of each type that a person wants to buy, given certain conditions. 
-The main decision variables in this problem are `values`, `amount`, and `amount_gcc`. The `values` variable represents the values of the stamps, `amount` represents the number of stamps of each type, and `amount_gcc` represents the global cardinality of the `amount` variable, which means the number of times each value appears in `amount`.
-The key constraints in this problem are: all stamp values must be different and in increasing order, the stamp values must be 1, 2, 3, 5, and 10 cents, the total cost of the stamps must be a multiple of 10 cents (i.e., the total cost can be paid with dimes), and there must be four stamps of two types and three stamps of the other types. 
-The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific variable. However, the problem can be modified to maximize the total cost of the stamps or to find the maximum number of possible solutions.

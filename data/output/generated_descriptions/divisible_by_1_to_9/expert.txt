@@ -1,8 +1,0 @@
-name: Divisible by 1 through 9 problem
-description: The problem requires finding a 10-digit number that uses each of the digits 0 to 9 exactly once, where the number formed by the first n digits of the number is divisible by n.
-variables: $x = [x_1, x_2, ..., x_{10}]$, $t = [t_1, t_2, ..., t_{10}]$ 
-These are the decision variables where $x_i$ represents the i-th digit of the number and $t_i$ represents the number formed by the first i digits.
-constraints: $all\_different(x)$, $t_i = \sum_{j=1}^{i} (base^{i-j} * x_j)$, $t_i \mod i = 0$ for $i = 1..10$ 
-These constraints ensure that all digits are different, the number formed by the first i digits is calculated correctly, and this number is divisible by i.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, there is no specific value to minimize or maximize.

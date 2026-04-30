@@ -1,8 +1,0 @@
-The problem is called the "Pandigital Number Square" problem. 
-It is about finding a 3-digit number such that when squared, the resulting 6-digit number (when padded with leading zeros if necessary) contains all the digits from 0 to 9 exactly once. 
-
-The main decision variables are A, B, C, D, E, F, G, H, I, and J, which represent the digits of the 3-digit number and its square. Specifically, A, B, and C are the hundreds, tens, and units digits of the 3-digit number, while D, E, F, G, H, I, and J are the digits of the squared number, with D being the most significant digit and J being the least significant.
-
-The key constraints are that all the digits must be different, the 3-digit number must be correctly calculated from its digits, and the square of the 3-digit number must be correctly calculated from its digits. Additionally, the digits of the squared number must contain all the digits from 0 to 9 exactly once.
-
-The problem's objective is to find a solution that satisfies all the constraints, which is achieved by using the "satisfy" keyword in the Minizinc model. In other words, the goal is to find a 3-digit number that, when squared, contains all the digits from 0 to 9 exactly once, without necessarily minimizing or maximizing any particular value.

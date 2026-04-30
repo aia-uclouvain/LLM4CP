@@ -1,9 +1,0 @@
-The problem is called "allperm" which is short for "all permutations". 
-It's about arranging numbers in rows in a special way. 
-The main variables are the numbers in each row, which can be any number from 1 to 10. 
-The basic rule is that the first row must be in a special order, and all other rows must be a mixed-up version of the first row, but still following the same order. 
-The goal is to find a way to arrange the numbers so that all the rules are followed. 
-
-In simpler terms, imagine you have a set of rows with numbers in them. The first row needs to be in order from smallest to largest. The other rows can have the same numbers, but in a different order. The problem is trying to find a way to arrange the numbers in all the rows so that the first row is in order, and the other rows are just a mixed-up version of the first row, but still following the same order. 
-
-The problem doesn't try to minimize or maximize anything, it just tries to find a solution that satisfies all the rules.

@@ -1,5 +1,0 @@
-Five Translator Problem
-The problem is about five translators from different countries who speak their native language and two additional languages. 
-The main variables are the languages spoken by each translator, which are represented by a matrix where each row corresponds to a translator and each column corresponds to a language.
-The basic restrictions are that each translator speaks their native language, speaks exactly three languages, and follows specific rules about which languages they can or cannot speak. For example, the Englishman speaks German, the Spaniard speaks French, and the German does not speak Spanish.
-The goal of the problem is to find the languages spoken by each translator, given the restrictions and rules provided.

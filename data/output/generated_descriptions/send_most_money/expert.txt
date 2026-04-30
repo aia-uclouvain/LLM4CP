@@ -1,7 +1,0 @@
-name: Send More Money Problem
-description: The Send More Money problem is a classic problem in constraint programming where we need to assign digits to letters in the equation SEND + MORE = MONEY such that the equation holds true and the value of MONEY is maximized.
-variables: S, E, N, D, M, O, T, Y, z, fd 
-These variables represent the digits to be assigned to each letter in the equation, where S, E, N, D, M, O, T, Y are the digits for the letters S, E, N, D, M, O, T, Y respectively, z is the total value of MONEY, and fd is an array of the digits.
-constraints: all_different(fd), 1000*S + 100*E + 10*N + D + 1000*M + 100*O + 10*S + T = 10000*M + 1000*O + 100*N + 10*E + Y, S > 0, M > 0 
-These constraints ensure that each digit is unique (all_different), the equation SEND + MORE = MONEY holds true, and the first letters of the words SEND and MONEY are not zero.
-objective: maximize z, which is the total value of MONEY (10000*M + 1000*O + 100*N + 10*E + Y)

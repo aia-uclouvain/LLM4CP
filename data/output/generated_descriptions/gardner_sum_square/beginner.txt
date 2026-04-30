@@ -1,5 +1,0 @@
-Gardner's Sum Square problem. 
-This problem is about finding the best way to divide a set of numbers into two groups so that the sum of the squares of the numbers in each group is as small as possible. 
-The main variables are a, b, c, d, e, f, g, and h, which represent the numbers in the two groups. 
-The basic restrictions are that each number can only be used once, and the numbers in each group must be in order from smallest to largest. 
-The goal is to minimize the sum of the squares of the sums of the numbers in each group, which means finding the arrangement of numbers that results in the smallest possible value of this sum.

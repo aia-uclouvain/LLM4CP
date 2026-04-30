@@ -1,7 +1,0 @@
-Symmetric Graph Problem
-The problem is about selecting a subset of arcs in a directed graph so that the resulting graph is symmetric, meaning that if there is an arc from node i to node j, then there must also be an arc from node j to node i.
-The main decision variable is x, which is an array of sets where each set represents the successors of a node in the graph. For example, x[1] = {2, 3} means that node 1 has arcs to nodes 2 and 3.
-The key constraints are: 
-- The graph must be symmetric, meaning that if node i has an arc to node j, then node j must also have an arc to node i. 
-- The successors of each node must match a predefined set of successors.
-The problem's objective is to satisfy these constraints, meaning that the model is looking for a symmetric graph that matches the given successors for each node, rather than minimizing or maximizing a specific value.

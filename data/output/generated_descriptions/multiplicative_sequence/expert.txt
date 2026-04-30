@@ -1,5 +1,0 @@
-name: Multiplicative Sequence Problem
-description: The problem is about finding a sequence of positive whole numbers that satisfies certain properties. The sequence is strictly increasing, the second number is 2, and it has a multiplicative property where the value at the product of two relatively prime numbers is the product of the values at those numbers.
-variables: $x = [x_1, x_2, ..., x_{1000}]$, where $x_i$ represents the $i^{th}$ number in the sequence and is a positive integer.
-constraints: $x_{i*j} = x_i * x_j \forall i, j \in 1..1000$ where $i < j$ and $i*j \leq 1000$ and $i$ and $j$ are relatively prime, $x_{i-1} < x_i \forall i \in 2..1000$, $x_2 = 2$, which ensure the multiplicative property, the increasing order, and the initial condition of the sequence.
-objective: The objective is to find a sequence that satisfies all the constraints, there is no explicit objective function to minimize or maximize, the goal is to find a feasible solution.

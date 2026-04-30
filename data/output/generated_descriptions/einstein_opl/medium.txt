@@ -1,5 +1,0 @@
-Einstein's Puzzle
-The problem is about determining the characteristics of five houses, each with a different owner, pet, drink, cigarette brand, and color, based on a set of given clues.
-The main decision variables are arrays representing the owners (s), pets (a), drinks (d), cigarette brands (k), and colors (c) of the houses, where each index in the array corresponds to a specific house.
-The key constraints are: each house has a unique owner, pet, drink, cigarette brand, and color; specific relationships between the characteristics, such as the Brit living in a red house, the Swede keeping dogs, and the owner of the green house drinking coffee; and spatial relationships, such as the green house being to the left of the white house, and certain houses being next to each other.
-The objective of the problem is to find a solution that satisfies all the given constraints, with no specific minimization or maximization goal, as indicated by the "solve satisfy" statement in the model.

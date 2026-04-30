@@ -1,5 +1,0 @@
-name: Set Covering Problem (Fire Station Placement)
-description: The problem involves placing fire stations in a set of cities such that each city is within a certain distance from at least one fire station, while minimizing the total number of fire stations. The distance between each pair of cities is given, and a fire station can be placed in any city.
-variables: $x_1, x_2, ..., x_{numCities}$, where $x_i$ is a binary decision variable representing whether a fire station is placed in city $i$ (1 if a fire station is placed, 0 otherwise).
-constraints: $\sum_{i=1}^{numCities} x_i \cdot \mathbb{I}(distance_{i,j} \leq min\_distance) \geq 1, \forall j \in \{1, 2, ..., numCities\}$, where $\mathbb{I}$ is an indicator function that is 1 if the condition is true and 0 otherwise. These constraints ensure that each city $j$ is within the minimum distance from at least one city $i$ that has a fire station.
-objective: Minimize $z = \sum_{i=1}^{numCities} x_i$, which represents the total number of fire stations placed.

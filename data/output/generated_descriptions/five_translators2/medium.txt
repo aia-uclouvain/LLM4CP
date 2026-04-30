@@ -1,5 +1,0 @@
-The Five Translators Problem
-The Five Translators Problem is about determining the languages spoken by five translators, each with their native language and two additional languages. 
-The main decision variables are represented by a 2D array `x` where `x[i, j]` is 1 if translator `i` speaks language `j`, and 0 otherwise. 
-The key constraints include: each translator speaks their native language, all translators speak exactly three languages, and specific language-speaking requirements for each translator, such as the Englishman speaking German and the Spaniard speaking French. Other constraints include the number of translators speaking certain languages, such as four speaking Russian and exactly two speaking French, as well as restrictions on common languages between translators. 
-The objective of the problem is to find a satisfying assignment of languages to translators that meets all the given constraints, with no specific minimization or maximization goal.

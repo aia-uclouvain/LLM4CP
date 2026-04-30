@@ -1,5 +1,0 @@
-name: Team Formation Problem
-description: The problem involves dividing a set of people into teams of equal size, where the order of elements within each team and the order of the teams themselves do not matter. The goal is to enumerate all possible ways of forming these teams.
-variables: $x_{i,j}$ where $i \in \{1, \ldots, m\}$ and $j \in \{1, \ldots, n\}$, which represent the person assigned to the $j^{th}$ position in the $i^{th}$ team.
-constraints: $\bigwedge_{i=1}^{m} \bigwedge_{j=1}^{n} x_{i,j} \in \{1, \ldots, p\}$, $\text{all\_different}([x_{i,j} | i \in \{1, \ldots, m\}, j \in \{1, \ldots, n\}])$, $\text{lex2}(x)$, $\bigwedge_{i=1}^{m} \text{increasing}([x_{i,j} | j \in \{1, \ldots, n\}])$, which ensure that each person is assigned to exactly one team, the teams are formed in lexicographic order, and the people within each team are assigned in increasing order.
-objective: The problem is a satisfaction problem, where the objective is to find all possible assignments of people to teams that satisfy the given constraints, rather than minimizing or maximizing a specific value.

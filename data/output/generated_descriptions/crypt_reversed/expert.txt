@@ -1,7 +1,0 @@
-name: Reversed Cryptograms Problem
-description: The Reversed Cryptograms Problem is a constraint programming problem where we need to find the minimum construction of a number x of length n, such that x + its reverse is equal to another number z, with certain constraints on the digits of x and z, and the first and last digits of x and z being non-zero.
-variables: x, z, vx, vz 
-x and z are arrays of decision variables representing the digits of the numbers x and z respectively, vx and vz are integer decision variables representing the numerical values of x and z respectively, where x is a number of length n with digits 0-9, and z is the sum of x and its reverse.
-constraints: all_different(x) ∧ all_different(z) ∧ vz = vx + to_num(reverse(x)) ∧ x[1] > 0 ∧ x[n] > 0 ∧ z[1] > 0 ∧ x[1] < x[n]
-These constraints ensure that all digits in x and z are distinct, the sum of x and its reverse equals z, the first and last digits of x are non-zero, the first digit of z is non-zero, and the first digit of x is less than the last digit of x, which is a symmetry breaking constraint.
-objective: The objective of the problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find all possible solutions that satisfy the given constraints.

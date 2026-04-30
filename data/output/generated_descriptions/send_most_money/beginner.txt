@@ -1,5 +1,0 @@
-Send More Money problem. 
-This problem is about finding the largest possible amount of money that can be sent using a mathematical equation where each letter represents a digit from 0 to 9. 
-The main variables are S, E, N, D, M, O, T, and Y, which represent the digits in the words "SEND" and "MONEY". 
-The basic restrictions are that each letter must be a different digit, and the equation "SEND + MOST = MONEY" must be true, with S and M being non-zero. 
-The goal is to maximize the value of "MONEY", which means finding the largest possible amount that can be sent.

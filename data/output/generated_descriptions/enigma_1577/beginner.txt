@@ -1,5 +1,0 @@
-The problem is called "Happy New Year". 
-It's about finding three 3-digit numbers that use nine different digits, where one number is a perfect square, another is a triangular number, and the sum of the three numbers is 2010. 
-The main variables are num1, num2, and num3, which represent the three 3-digit numbers, and x, which is an array of digits that make up these numbers. 
-The basic restrictions are that the numbers must be in ascending order, the sum of the numbers is 2010, one number must be a perfect square, and another must be a triangular number. 
-The goal is to find the three numbers that satisfy these conditions, in ascending order.

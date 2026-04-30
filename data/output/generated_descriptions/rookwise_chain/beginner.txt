@@ -1,5 +1,0 @@
-Rookwise Chain Puzzle
-The problem is about placing numbers 1 to 9 in a 3x3 grid so that they are connected in a special way and the sum of the first two rows equals the third row.
-The main variables are the numbers 1 to 9 placed in the grid, represented by x, and the sum of each row, represented by row_sums. 
-The basic restrictions are that each number can only be used once, the numbers must be connected in a way that resembles a rook's move in chess (horizontally or vertically), and the sum of the first two rows must equal the third row.
-The goal is to find a unique solution that satisfies all these conditions, with no specific objective to minimize or maximize.

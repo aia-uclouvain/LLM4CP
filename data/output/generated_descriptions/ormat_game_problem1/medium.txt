@@ -1,5 +1,0 @@
-The Ormat Game problem.
-The Ormat Game is a classic constraint programming problem that involves finding a solution to a puzzle where a set of rules must be satisfied. 
-The main decision variables in the Ormat Game problem are the elements of a 2D array, where each element represents a cell in the puzzle, and can take on a value of either 0 or 1.
-The key constraints in the Ormat Game problem are that each row and each column must contain at least one 1, and that certain pairs of cells must have the same value. These constraints are used to ensure that the solution satisfies the rules of the puzzle.
-The objective of the Ormat Game problem is not explicitly stated, but it can be inferred that the goal is to find a solution that satisfies all the constraints, which can be viewed as a satisfiability problem, or to find the maximum or minimum number of 1s in the solution, depending on the specific formulation of the problem.

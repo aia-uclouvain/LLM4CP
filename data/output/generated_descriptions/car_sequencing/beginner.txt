@@ -1,6 +1,0 @@
-Car Sequencing Problem
-The problem is about sequencing cars on a production line, where each car has certain options that need to be installed. 
-The main variables are the sequence of cars, the options installed in each car, and the number of cars of each class. 
-The basic restrictions or rules of the problem are that each car must have the correct options installed, and the number of cars of each class must meet the demand. 
-Additionally, there are constraints on the frequency of certain options, which cannot be installed too frequently in a row. 
-The goal of the problem is to find a sequence of cars that meets all the constraints and demands.

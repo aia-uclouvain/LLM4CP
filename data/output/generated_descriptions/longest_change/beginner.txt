@@ -1,5 +1,0 @@
-The problem is called Longest Change. 
-It's about finding the longest sequence of numbers where each number is different from the one before it. 
-The main variables are x, which is a list of numbers, and c, which is the length of the longest sequence of different numbers. 
-The basic restrictions are that the numbers in x must be between 1 and 8, and that the sequence must be as long as possible. 
-The goal is to find the longest sequence of different numbers, which is stored in c.

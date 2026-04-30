@@ -1,5 +1,0 @@
-**Lexicographic Chain Less Problem**
-The problem is about finding a sequence of vectors where each vector is lexicographically strictly less than the next one.
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the value at row `i` and column `j`.
-The key constraints are that for each pair of consecutive vectors in the sequence, the first vector must be lexicographically strictly less than the second vector. This means that the first vector is considered less than the second vector if the first element of the first vector is less than the first element of the second vector, or if the first elements are equal and the rest of the first vector is lexicographically strictly less than the rest of the second vector.
-The objective of the problem is to find a sequence of vectors that satisfies the lexicographic chain less constraint, without any specific minimization or maximization goal, as the problem is a satisfaction problem. The goal is to find a solution that meets the given constraints, rather than optimizing a specific objective function.

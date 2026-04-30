@@ -1,9 +1,0 @@
-name: Labeled Dice Problem
-description: The problem involves assigning 24 different letters to 4 different cubes (or dice) such that each word from a given list of 13 words has its 4 letters on different cubes. The goal is to find an assignment that satisfies this condition.
-variables: $dice = [dice_1, dice_2, ..., dice_{24}]$, where $dice_i$ is a decision variable representing the cube (or die) to which the $i^{th}$ letter is assigned. These variables determine the assignment of letters to cubes.
-constraints: 
-$\forall i \in \{1, 2, ..., 13\}: alldifferent([dice_{words[i,1]}], [dice_{words[i,2]}], [dice_{words[i,3]}], [dice_{words[i,4]}])$ 
-$\forall i \in \{1, 2, 3, 4\}: \sum_{j=1}^{24} (dice_j = i) = 6$ 
-$dice_1 \leq dice_7 \leq dice_{13} \leq dice_{19}$, 
-which ensure that each word has its letters on different cubes, each cube has exactly 6 letters, and symmetry is broken to reduce the search space.
-objective: The problem is a satisfaction problem, where the goal is to find a feasible assignment of letters to cubes that satisfies all the constraints, rather than minimizing or maximizing a specific value.

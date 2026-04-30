@@ -1,5 +1,0 @@
-Farm Puzzle
-The problem is about determining the number of pigs and hens on a farm, given that there are 7 animals in total and they have 22 legs altogether.
-The main decision variables are `x`, an array representing the type of each animal (2 legs for hens or 4 legs for pigs), and `c`, an array counting the number of each type of animal.
-The key constraints are that the total number of legs of all animals must be 22, and the number of each type of animal must be counted correctly. Additionally, the model includes a symmetry-breaking constraint to ensure a unique solution.
-The problem's objective is to find a satisfying assignment of animals to the given conditions, rather than minimizing or maximizing a specific value, as indicated by the `solve satisfy` statement.

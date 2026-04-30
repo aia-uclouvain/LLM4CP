@@ -1,5 +1,0 @@
-The Sliding Puzzle Problem, also known as the Coloured Painting Problem. 
-This problem is about reconstructing a 6x6 painting with coloured squares, given some information about its rows and columns. 
-The main decision variables are `rows_order` and `cols_order`, which represent the order of the rows and columns in the painting. 
-The key constraints are that each row and column can only be used once, and that the colours in each row and column must match when the rows and columns are aligned correctly. 
-The objective is to find a valid arrangement of the rows and columns that satisfies these constraints, effectively reconstructing the original painting.

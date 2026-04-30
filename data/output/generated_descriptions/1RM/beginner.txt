@@ -1,5 +1,0 @@
-The name of the problem is One Repetition Maximum (1RM) calculations. 
-This problem is about comparing the weight someone can lift in a gym for different numbers of repetitions. 
-The main variables are weight1 and weight2, which are the weights lifted for reps1 and reps2 repetitions, and oneRM, which is the maximum weight that can be lifted for one repetition. 
-The basic restrictions or rules of the problem are that the weight lifted for a certain number of repetitions is related to the maximum weight that can be lifted for one repetition, using a specific formula. 
-The goal of the problem is to find the maximum weight that can be lifted for one repetition, given the weight lifted for a certain number of repetitions, and to adjust this weight based on the person's age.

@@ -1,5 +1,0 @@
-name: Sum Constraint Problem
-description: The problem is a constraint satisfaction problem where the goal is to find values for a set of decision variables such that their sum satisfies a certain condition.
-variables: $x = [x_1, x_2, ..., x_n], s$ where $x_i$ are decision variables representing integers between 1 and 5, and $s$ is a decision variable representing the sum of the $x_i$ values.
-constraints: $x_i \in [1, 5], s = \sum_{i=1}^{n} x_i, s = 6$ where the first constraint limits the domain of each $x_i$, the second constraint defines $s$ as the sum of the $x_i$ values, and the third constraint specifies the target sum.
-objective: The objective of the problem is to satisfy the given constraints, there is no explicit objective function to minimize or maximize.

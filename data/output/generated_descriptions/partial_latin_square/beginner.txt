@@ -1,5 +1,0 @@
-Partial Latin Square problem
-The problem is about filling a square grid with numbers in a special way. 
-The main variables are the numbers that go into each cell of the grid, and the sets of numbers that each cell can choose from.
-The basic rules are that each row and each column of the grid must have different numbers, and each cell can only choose a number from its own set of possible numbers.
-The goal is to find all possible ways to fill the grid according to these rules, given the sets of numbers for each cell.

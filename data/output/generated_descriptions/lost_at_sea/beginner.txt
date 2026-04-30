@@ -1,5 +1,0 @@
-Lost at Sea problem
-The problem is about finding a lost ship in the ocean by searching a grid of cells, where each cell has a probability of finding the ship. 
-The main variables are the cells in the grid, the probability of finding the ship in each cell, and the path to be taken to search the cells. 
-The basic restrictions are that only 10 cells can be searched, the search can only move to adjacent cells, and no cell can be revisited. 
-The goal is to find the path that gives the highest probability of finding the lost ship by maximizing the sum of the probabilities of the cells in the path.

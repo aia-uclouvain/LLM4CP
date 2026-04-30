@@ -1,5 +1,0 @@
-Option Trading Problem
-The problem is about determining the optimal payoff from buying a call option in a financial market.
-The main decision variables are S (the price of the underlying stock), C (the cost of the call option), E (the strike price of the call option), and P (the payoff from the option). These variables represent the key factors that affect the outcome of the option trading decision.
-The key constraints are that the payoff from the option is determined by the relationship between the stock price and the strike price. If the stock price is below the strike price, the payoff is the negative of the cost of the option (i.e., the option is not exercised and the buyer loses the premium). If the stock price is above the strike price, the payoff is the difference between the stock price and the strike price, minus the cost of the option.
-The objective of the problem is to maximize the payoff (P) from the option, given the cost of the call option (C) and the strike price (E). The model uses a float search strategy to find the optimal values of S, C, E, and P that result in the maximum payoff.

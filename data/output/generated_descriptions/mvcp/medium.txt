@@ -1,8 +1,0 @@
-Minimum Vertex Cover Problem
-The Minimum Vertex Cover Problem is about finding a subset of nodes in a network that covers all edges, meaning each edge has at least one of its endpoints in the subset, while minimizing the total weight of the nodes in the subset.
-
-The main decision variables are `x[i]`, which represent whether node `i` is included in the subset (`x[i] = 1`) or not (`x[i] = 0`).
-
-The key constraints are that each edge must have at least one of its endpoints in the subset. This is achieved by ensuring that for each edge, the sum of the `x` values of its two endpoints is greater than or equal to 1.
-
-The objective of the problem is to minimize the total weight of the nodes in the subset, which is calculated as the sum of the weights of the nodes multiplied by their corresponding `x` values. In this case, all nodes have a weight of 1, so the objective is to minimize the total number of nodes in the subset.

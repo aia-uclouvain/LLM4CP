@@ -1,9 +1,0 @@
-name: One-To-Many Relationship Extraction Problem
-description: The problem involves extracting one-to-many relationships between mothers and children from a set of projects, where each project has a list of mothers and children, but the relationships between them are not explicitly stated. The goal is to assign each child to its corresponding mother based on the given projects.
-variables: $x[c]$ for $c \in \text{children}$, where $x[c]$ represents the mother of child $c$. These variables are used to determine the one-to-many relationships between mothers and children.
-constraints: 
-$\forall m \in \text{mothers} \exists c \in \text{children} (x[c] = m)$ 
-$\text{check}(\text{mothers}_p, \text{children}_p)$ for each project $p$, 
-where $\text{check}(\text{mothers}_p, \text{children}_p)$ ensures that each child in the project is assigned to a mother in the project, and all mothers in the project are assigned to a child. 
-These constraints ensure that each mother has at least one child, and the relationships between mothers and children are consistent across all projects.
-objective: The objective of the problem is to find a satisfying assignment of mothers to children, such that all constraints are met. Since this is a satisfaction problem, there is no explicit objective function to minimize or maximize.

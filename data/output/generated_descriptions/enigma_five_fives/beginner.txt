@@ -1,5 +1,0 @@
-The problem is called "Five Fives". 
-It's about an addition problem where five numbers are added together, but each number is in a different base, like binary (base 2) or decimal (base 10). 
-The main variables are the "bases" which are the different number systems used for each of the five numbers, and the "x" values which are the actual numbers in each base. 
-The basic restrictions are that all five numbers must be even, the bases must be different from each other, and the sum of the five numbers must be less than 100,000. 
-The goal is to find the total sum of the five numbers, which is the value of the fifth number in the addition problem.

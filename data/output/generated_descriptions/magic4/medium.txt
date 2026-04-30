@@ -1,9 +1,0 @@
-Magic Square Problem
-The Magic Square problem is about filling a square grid with distinct numbers, such that the sum of numbers in each row, column, and diagonal is the same.
-The main decision variables in this problem are the values of the grid cells, represented by variables X1 to X16, which can take any integer value from 1 to 16.
-The key constraints are: 
-- each number can only be used once (all numbers are distinct), 
-- the sum of numbers in each row is 34, 
-- the sum of numbers in each column is 34, and 
-- the sum of numbers in the two diagonals is 34.
-The objective of the Magic Square problem is to find an assignment of numbers to the grid cells that satisfies all the constraints, which means finding a valid magic square configuration, rather than minimizing or maximizing a specific value.

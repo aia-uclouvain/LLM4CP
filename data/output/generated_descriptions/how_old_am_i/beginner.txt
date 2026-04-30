@@ -1,5 +1,0 @@
-The problem is called "How old am I". 
-It's about figuring out someone's current age based on clues about their age and their brother's age at different times. 
-The main variables are "me" (the person's current age) and "him" (the brother's current age), which represent how old each person is now. 
-The basic rules are that six years ago, the brother was twice as old as the person, and in five years, their combined ages will be 40. 
-The goal is to find the current age of the person, which is represented by the variable "me".

@@ -1,5 +1,0 @@
-Magic Square Problem
-The problem is about creating a special kind of square grid where numbers are arranged in a specific way. 
-The main variables are the size of the grid (n) and the numbers in each cell of the grid (magic). 
-The basic restrictions are that each number in the grid must be unique, and the sum of numbers in each row, column, and diagonal must be the same. 
-The goal is to find a way to arrange the numbers in the grid so that it meets these conditions and follows the Frénicle standard form rules, which state that the top left corner must have the smallest number of the four corners, and the second number from the left in the top row must be smaller than the number below it.

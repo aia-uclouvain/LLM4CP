@@ -1,9 +1,0 @@
-The problem is called "Generating prime numbers as parameters in MiniZinc" but it's more about finding a set of prime numbers that add up to another prime number. 
-
-In everyday terms, this problem is about finding a combination of special numbers, called prime numbers, that when added together, result in another prime number. Prime numbers are numbers that can only be divided by 1 and themselves, like 2, 3, 5, and so on.
-
-The main variables are x and z. The variable x is an array of prime numbers that we are trying to find, and the variable z is the sum of these prime numbers, which should also be a prime number.
-
-The basic restrictions or rules of the problem are that all the prime numbers in x must be different from each other, and they must be in increasing order. Also, the sum of these prime numbers, z, must be a prime number itself.
-
-The goal of the problem is to find a set of prime numbers that satisfy these rules, and the problem aims to find one such set. It's not trying to minimize or maximize anything, but rather to find a valid combination of prime numbers that meet the given conditions.

@@ -1,5 +1,0 @@
-Temperature in a grid problem. 
-This problem is about finding the temperature at different points in a grid, where the temperature at each point is the average of the temperatures at the points around it. 
-The main variable is the grid, which is a 6x7 table where each cell represents a point in the grid and the value in the cell is the temperature at that point. 
-The basic restrictions are that the temperature at each point (except the edges) is the average of the temperatures at the points to the left, right, top, and bottom, and that the temperature cannot be negative. The edges of the grid have fixed temperatures, with the top and bottom edges being 0 or 100 degrees, and the left and right edges being 0 degrees. 
-The goal of the problem is to find a temperature distribution that satisfies these rules, and the solution will be a table showing the temperature at each point in the grid.

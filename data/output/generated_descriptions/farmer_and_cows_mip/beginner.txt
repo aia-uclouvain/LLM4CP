@@ -1,5 +1,0 @@
-Farmer and Cow Problem
-The problem is about a farmer who has 81 cows that produce different amounts of milk, and he wants to distribute these cows among his 9 sons. 
-The main variables are the amount of milk each son should get and which cows each son should receive. 
-The basic restrictions are that each son must get 9 cows, each cow can only be given to one son, and the total amount of milk from the cows given to each son must be the same. 
-The goal is to find a way to distribute the cows so that each son gets the same amount of milk, which is one-ninth of the total milk produced by all the cows.

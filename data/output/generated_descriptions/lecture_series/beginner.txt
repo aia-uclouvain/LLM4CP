@@ -1,5 +1,0 @@
-Lecture Series Puzzle
-The problem is about figuring out who gave a lecture on which day of the week, and what topic they spoke about, at a school. 
-The main variables are the days of the week (Monday to Friday), the first names of the lecturers (Alice, Bernadette, Charles, Duane, Eddie), the last names of the lecturers (Felicidad, Garber, Haller, Itakura, Jeffreys), and the topics of the lectures (choosing a college, physical hygiene, modern art, nutrition, study habits).
-The basic restrictions are that each lecturer spoke on a different day, each topic was spoken about only once, and certain conditions about who spoke when and on what topic, such as Alice speaking on Monday, Charles not speaking on Friday about physical hygiene, and a man speaking about modern art.
-The goal of the problem is to find out who spoke on which day and about what topic, given the restrictions.

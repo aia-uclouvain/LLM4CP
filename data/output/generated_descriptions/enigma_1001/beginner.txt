@@ -1,5 +1,0 @@
-Enigma 1001: What the hex. 
-This problem is about filling in a hexagon with numbers so that when you read the numbers on the sides, you get multiples of a certain two-digit number. 
-The main variables are the numbers in the hexagon (X) and the multipliers (Multipliers) that make each side a multiple of a certain number (Divisor). 
-The basic restrictions are that no two adjacent numbers in the hexagon can be the same, all the multipliers must be different, and the numbers on the sides must be multiples of the Divisor. 
-The goal is to find a set of numbers that satisfy these conditions, with the top row being twice the Divisor.

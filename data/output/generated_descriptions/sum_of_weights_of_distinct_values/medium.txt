@@ -1,5 +1,0 @@
-The problem is called the Sum of Weights of Distinct Values problem. 
-This problem is about assigning values to a set of variables such that the sum of the weights of the distinct values taken by the variables is equal to a given cost. 
-The main decision variables are the "variables" array, which represents the values assigned to each variable, and the "values" array, which represents the possible values and their corresponding weights. 
-The key constraints are that each variable must take a value from the given set of values, and the cost must be equal to the sum of the weights of the distinct values taken by the variables. 
-The problem's objective is to satisfy these constraints, specifically to find an assignment of values to the variables such that the sum of the weights of the distinct values is equal to the given cost, in this case 12.

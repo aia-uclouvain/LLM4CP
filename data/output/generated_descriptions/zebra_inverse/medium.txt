@@ -1,5 +1,0 @@
-Zebra Puzzle
-The Zebra Puzzle is a classic constraint satisfaction problem that involves determining the characteristics of five houses, each with a different color, nationality, animal, drink, and brand of cigarette.
-The main decision variables in this problem are the colors (red, green, ivory, yellow, blue), nationalities (englishman, spaniard, ukrainian, norwegian, japanese), animals (dog, snail, fox, horse, zebra), drinks (coffee, tea, milk, orange_juice, water), and brands (old_gold, kool, chesterfield, lucky_strike, parliament), which represent the characteristics of each house.
-The key constraints in this problem can be described as follows: each house has a unique color, nationality, animal, drink, and brand, and there are specific relationships between these characteristics, such as the Englishman living in the red house, the Spaniard owning the dog, and the green house being immediately to the right of the ivory house.
-The objective of the Zebra Puzzle is to find a solution that satisfies all the given constraints, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution that meets all the conditions.

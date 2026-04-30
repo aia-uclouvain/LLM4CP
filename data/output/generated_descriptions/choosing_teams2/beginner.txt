@@ -1,5 +1,0 @@
-Team Formation Problem
-The problem is about dividing a group of people into teams of the same size. 
-The main variables are the number of teams (m), the size of each team (n), and the assignment of each person to a team (x). 
-The basic restrictions are that each team must have exactly n members, and the order of the teams and the order of the members within each team do not matter. 
-The goal of the problem is to find all possible ways to divide the people into teams, with the number of ways being calculated as (nm)!/n!mm!.

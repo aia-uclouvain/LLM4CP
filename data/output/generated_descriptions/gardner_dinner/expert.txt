@@ -1,9 +1,0 @@
-name: Steiner Triple System or Social Golfer Problem
-description: The problem involves a woman who wants to invite 15 friends to dinner over 35 days, with exactly three friends per day, in such a way that each pair of friends meets only once. This is a classic example of a Steiner Triple System, which is a family of 3-element subsets (triples) of a set of elements, such that each pair of elements is in exactly one triple.
-variables: $days = \{days_1, days_2, ..., days_{35}\}$, where each $days_i$ is a set of 3 persons. These variables represent the groups of friends that will meet for dinner on each day.
-constraints: 
-- $\forall i \in \{1, 2, ..., 35\}: |days_i| = 3$ (each day, exactly 3 friends meet)
-- $\forall i, j \in \{1, 2, ..., 35\} \text{ where } i \neq j: |days_i \cap days_j| \leq 1$ (each pair of friends meets at most once)
-- $all\_different(days)$ (all groups of friends are different)
-These constraints ensure that each day, exactly 3 friends meet, each pair of friends meets at most once, and all groups of friends are different.
-objective: satisfy (the objective is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize)

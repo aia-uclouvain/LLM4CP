@@ -1,5 +1,0 @@
-Enigma 248. 
-This problem is about a person who gives a different amount of money to five boys, and each boy must buy goodies from a corner shop. The prices of the goodies must be different, and when the prices are multiplied together, the result must be the same as when the prices are added together. 
-The main variables are the amount of money each boy has, the number of half-pennies for each goodie, and the prices of the goodies in pence. 
-The basic restrictions are that each goodie must have a different price, the prices must be whole numbers of half-pennies, and for one set of goodies, all prices must be whole numbers of pence. 
-The goal of the problem is to find the total amount of money the person gave to the boys, which is the sum of the amounts each boy had, with the given restrictions.

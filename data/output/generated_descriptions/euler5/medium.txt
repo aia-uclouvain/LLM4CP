@@ -1,5 +1,0 @@
-The problem is called the Smallest Multiple or Least Common Multiple (LCM) problem. 
-It is about finding the smallest number that can be evenly divided by all numbers within a given range, in this case, from 1 to 20, without leaving any remainder. 
-The main decision variable is an array x, where each element x[i] represents the smallest number that can be evenly divided by all numbers from 1 to i. 
-The key constraints are that x[1] is 1, and for each subsequent number i from 2 to n, x[i] is the least common multiple of i and x[i-1], meaning that x[i] can be evenly divided by both i and x[i-1]. 
-The problem's objective is to find the smallest x[n], which is the smallest number that can be evenly divided by all numbers from 1 to n, where n is 20 in this case.

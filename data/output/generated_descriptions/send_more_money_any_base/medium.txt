@@ -1,8 +1,0 @@
-The Send More Money problem. 
-This problem is about finding a solution to an arithmetic puzzle where the words "SEND", "MORE", and "MONEY" are represented by digits in a specific base, such that when "SEND" and "MORE" are added, the result equals "MONEY". 
-
-The main decision variables are S, E, N, D, M, O, R, and Y, which represent the digits for each letter in the words "SEND", "MORE", and "MONEY". 
-
-The key constraints are that each letter must be represented by a unique digit, the first letter of each word ("S" and "M") must be non-zero, and the arithmetic equation "SEND + MORE = MONEY" must hold true in the given base. 
-
-The problem's objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. The solution is a set of digit assignments for each letter that makes the equation valid.

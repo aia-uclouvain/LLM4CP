@@ -1,5 +1,0 @@
-The problem is called "range_ctr". 
-It's about finding a set of numbers where the difference between the largest and smallest numbers is related to a certain value in a specific way. 
-The main variables are "variables" (a list of numbers), "t_var" (the difference between the largest and smallest numbers), and "ctr" (a code that determines how the difference should be related to "t_var"). 
-The basic restrictions are that the numbers in "variables" must be between 1 and 9, and the difference between the largest and smallest numbers must be related to "t_var" in the way specified by "ctr". 
-The goal is to find a set of numbers that satisfies these restrictions, specifically where the difference between the largest and smallest numbers is less than or equal to "t_var".

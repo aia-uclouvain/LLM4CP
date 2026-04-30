@@ -1,5 +1,0 @@
-The problem is called "Funny Dice" and is a classic constraint programming problem. 
-It is about finding the numbers on two non-standard cubic dice, one red and one blue, given certain conditions on the sums of their faces when thrown. 
-The main decision variables are the numbers on each face of the red and blue dice, represented by the arrays `red` and `blue`, where `red[i]` and `blue[i]` are the numbers on the `i-th` face of the red and blue dice, respectively. 
-The key constraints are that the total of the numbers on the red die is higher than the total on the blue die, the sums of the numbers on the dice when thrown follow a specific probability distribution, and the numbers on each die are distinct and in increasing order. 
-The objective of the problem is to find the numbers on the red die that satisfy these conditions, with the goal of determining the specific values on each face of the red die.

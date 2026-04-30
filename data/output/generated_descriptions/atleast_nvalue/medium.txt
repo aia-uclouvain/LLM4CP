@@ -1,5 +1,0 @@
-The problem is called the "At Least N Value" problem. 
-It is about finding an assignment of values to a set of variables such that the number of distinct values taken by these variables is greater than or equal to a given threshold, NVAL. 
-The main decision variables are an array of variables x, where each variable represents a value, and an integer variable nval, which represents the minimum number of distinct values required. 
-The key constraints are that the values assigned to the variables x must be within a given range, and the number of distinct values taken by the variables x must be greater than or equal to nval. 
-The problem's objective is to satisfy these constraints, specifically to find an assignment of values to x such that the number of distinct values is at least nval, which in this case is set to 2.

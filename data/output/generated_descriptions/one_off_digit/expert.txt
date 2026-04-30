@@ -1,5 +1,0 @@
-name: One Off Digit Problem
-description: The problem is to find the correct sum of two numbers where every digit in the given equation is precisely one off from its true value. The given equation is 43 + 57 = 207, but each digit is incorrect by one.
-variables: $x = [x_1, x_2, x_3, x_4, x_5, x_6, x_7]$, where $x_i$ represents the correct digit that is one off from the given digit $g_i$ in the equation.
-constraints: $x_1*10+x_2 + x_3*10+x_4 = x_5*100+x_6*10+x_7 \wedge \forall i \in 1..7 (|g_i-x_i| = 1)$, which means the sum of the two numbers with corrected digits must be equal, and each corrected digit $x_i$ must be one off from the given digit $g_i$.
-objective: The objective is to satisfy the given constraints, there is no explicit objective function to minimize or maximize, the goal is to find a solution that satisfies all the constraints.

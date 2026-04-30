@@ -1,5 +1,0 @@
-The problem is called the Maximum Index problem. 
-It is about finding the index of the maximum value in a collection of variables. 
-The main decision variables are `variables`, an array of variables representing the collection of values, `max_ind`, a variable representing the index of the maximum value, and `max_val`, a variable representing the maximum value itself. 
-The key constraints are that the `variables` array must match a given array of values, and the `max_index_val` constraint ensures that `max_ind` is the index of the maximum value in `variables` and `max_val` is the maximum value. 
-The problem's objective is to satisfy these constraints, meaning that it is a satisfaction problem rather than an optimization problem, so there is no specific value being minimized or maximized, but rather a set of feasible solutions that meet the given conditions.

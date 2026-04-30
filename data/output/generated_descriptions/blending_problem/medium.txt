@@ -1,5 +1,0 @@
-The name of the problem is the Blending Problem. 
-This problem is about determining the optimal mix of different feed types, such as corn, tankage, and alfalfa, to meet certain nutritional requirements for pigs at a minimum cost. 
-The main decision variables are the mix of feeds, represented by the array `mix`, which specifies the quantity of each feed type to include in the mix, and `daily_req_met`, which indicates which daily nutritional requirements are met. 
-The key constraints are that the mix of feeds must meet the daily nutritional requirements for carbohydrates, protein, and vitamins, and that the total cost of the mix is minimized. Additionally, there are constraints that limit the number of feed types in the mix to at most two and require that only two of the three nutritional requirements are met. 
-The objective of the problem is to minimize the total cost of the feed mix, represented by the variable `tot_cost`, while satisfying the nutritional requirements and other constraints.

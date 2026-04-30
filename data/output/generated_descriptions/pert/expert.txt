@@ -1,5 +1,0 @@
-name: Project Scheduling Problem (PSP) or Program Evaluation and Review Technique (PERT)
-description: The problem is a classic example of a project scheduling problem where a set of activities need to be scheduled with respect to their dependencies and durations, with the goal of minimizing the total project duration or the finish time of the last activity.
-variables: $Start_1, Start_2, ..., Start_n$, where $Start_i$ represents the start time of activity $i$, and is a decision variable that determines when each activity starts.
-constraints: $\forall i \in 1..numDependencies: Start_{Dependencies[i,1]} \geq Start_{Dependencies[i,2]} + Times_{Dependencies[i,2]}$, which ensures that each activity starts after all its predecessor activities have finished, taking into account their durations.
-objective: minimize $Start_n$, which represents the finish time of the last activity, or the total project duration.

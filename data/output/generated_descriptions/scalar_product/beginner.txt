@@ -1,5 +1,0 @@
-The problem is called Scalar Product. 
-It's about finding a way to multiply a list of numbers (called weights) by either 0 or 1, and then adding up these multiplied numbers to get a total (called z). 
-The main variables are weights (a list of numbers), x (a list of 0s and 1s that will be multiplied by the weights), and z (the total of these multiplied numbers). 
-The basic restrictions are that each number in x can only be 0 or 1, and the total z must be the sum of the multiplied numbers. 
-The goal of the problem is to find a possible combination of 0s and 1s for x that satisfies the restriction, rather than minimizing or maximizing anything.

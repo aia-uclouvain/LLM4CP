@@ -1,5 +1,0 @@
-99 Bottles of Beer problem
-The problem is about generating the lyrics of the classic song "99 Bottles of Beer on the Wall" in a concise and creative way.
-The main decision variable is `i`, which represents the current iteration or verse in the song, and `n`, which is the total number of bottles of beer.
-The key constraints are that the song starts with `n` bottles of beer, and each verse decreases the number of bottles by one, with the correct grammatical phrase ("Take one down, pass it around") in between.
-The problem's objective is not to minimize or maximize a specific value, but rather to generate the entire song lyrics by iterating through the verses and printing out the correct phrases, with the correct number of bottles of beer on the wall.

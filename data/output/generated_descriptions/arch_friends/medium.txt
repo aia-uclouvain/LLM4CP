@@ -1,5 +1,0 @@
-The Arch Friends puzzle 
-is a classic constraint programming problem about determining the order in which Harriet bought four different pairs of shoes and the stores where she bought them. 
-The main decision variables are the order of the shoes (ecru espadrilles, fuchsia flats, purple pumps, and suede sandals) and the order of the stores (Foot Farm, Heels in a Handcart, The Shoe Palace, and Tootsies). 
-The key constraints are: Harriet bought fuchsia flats at Heels in a Handcart, the store she visited after buying purple pumps was not Tootsies, Foot Farm was her second stop, and she bought suede sandals two stops after The Shoe Palace. 
-The objective is to find a satisfying assignment of shoes to stores, which means finding an order that satisfies all the given constraints, with no specific minimization or maximization goal.

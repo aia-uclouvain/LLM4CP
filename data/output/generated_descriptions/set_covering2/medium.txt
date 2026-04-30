@@ -1,5 +1,0 @@
-Set Covering Problem
-The Set Covering Problem is about finding the minimum number of elements that cover all sets in a given collection. 
-The main decision variables are x, which represent whether a security telephone is placed at a particular corner (x[j] = 1) or not (x[j] = 0). 
-The key constraints are that each street must be covered by at least one security telephone, meaning that for each street, there must be at least one corner with a security telephone that is connected to that street. 
-The objective of the problem is to minimize the total number of security telephones used, which is represented by the variable z, the sum of all x[j].

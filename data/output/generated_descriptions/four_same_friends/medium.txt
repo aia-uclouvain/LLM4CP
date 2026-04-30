@@ -1,7 +1,0 @@
-Four alike pals problem
-The Four alike pals problem is about determining whether it's possible for four friends to have certain similarities in their characteristics, specifically their first names, last names, and birth dates, while also satisfying certain constraints.
-The main decision variables in this problem are `first_name`, `last_name`, and `birthday`, which are arrays representing the first names, last names, and birth dates of the four friends, respectively. Each element in these arrays is a variable that can take on a value from 1 to `n`, where `n` is the number of possible values for each characteristic.
-The key constraints in this problem are: 
-- For every pair of friends, they must have the same first name, last name, or birth date.
-- No three friends can have the same first name, last name, or birth date.
-The objective of this problem is to minimize the number of different first names, last names, and birth dates (`z`) while satisfying the given constraints. In other words, the goal is to find the smallest number of unique values for each characteristic that still allows the four friends to have the required similarities.

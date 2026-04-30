@@ -1,5 +1,0 @@
-The name of the problem is the Graph Coloring Problem. 
-The Graph Coloring Problem is about assigning colors to the vertices of a graph such that no two adjacent vertices have the same color, using the minimum number of colors possible. 
-The main decision variables are `x`, which represents the color assigned to each country (or vertex), and `numColors`, which represents the total number of colors used. 
-The key constraints are that no two adjacent countries can have the same color, and each country's color must be less than or equal to the total number of colors used. 
-The objective of the problem is to minimize the number of colors used, i.e., to find the smallest possible value of `numColors` that still satisfies all the constraints.

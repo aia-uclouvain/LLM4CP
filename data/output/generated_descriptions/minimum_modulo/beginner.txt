@@ -1,5 +1,0 @@
-The problem is called Minimum Modulo. 
-It's about finding the smallest number in a list that has a certain relationship with another number, called the modulus. 
-The main variables are: variables (a list of numbers), t_min (the smallest number in the list based on the modulus relationship), and m (the modulus). 
-In simple terms, the restrictions are that t_min should be one of the numbers in the list, and when each number in the list is divided by m, the remainder of t_min should be less than or equal to the remainder of all other numbers. 
-The goal is to find the smallest number (t_min) that satisfies this condition, given a specific list of numbers and a modulus (m).

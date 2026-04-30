@@ -1,8 +1,0 @@
-The Inflexions Problem
-The Inflexions problem is about finding the number of inflexion points in a given sequence of numbers. An inflexion point occurs when a sequence changes from increasing to decreasing or vice versa, with the additional condition that the values before and after the inflexion point are different.
-
-The main decision variables in this problem are the array `x` of variables representing the sequence of numbers and the variable `a` representing the number of inflexion points. The array `x` is the core of the problem, as it represents the sequence of numbers that may contain inflexion points.
-
-The key constraints in this problem can be described as follows: the sequence must follow a specific pattern where an increasing or decreasing trend is followed by a change in the trend, and the values before and after the trend change must be different. This is achieved by checking all possible subsequences of the array `x` to identify the inflexion points.
-
-The objective of the Inflexions problem is to find the number of inflexion points in the given sequence, which is represented by the variable `a`. The problem does not involve minimizing or maximizing a specific value, but rather finding the correct count of inflexion points in the sequence. In the provided model, the constraint `inflexions(a, x)` ensures that the variable `a` accurately represents the number of inflexion points in the sequence `x`.

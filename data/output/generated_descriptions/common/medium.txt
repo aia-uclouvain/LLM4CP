@@ -1,8 +1,0 @@
-The problem is called the Common and Used By problem. 
-It is about finding two arrays of variables, x and y, where the values of x and y are between 1 and 9, and satisfying certain constraints related to the common and used_by predicates.
-
-The main decision variables are x and y, which are arrays of variables representing the values to be found. The variables a and b represent the number of values of x that are in y and the number of values of y that are in x, respectively.
-
-The key constraints are defined by the common and used_by predicates. The common predicate holds when the number of values of x that are in y is equal to a, and the number of values of y that are in x is equal to b. The used_by predicate holds when all the values of x are used by the variables of y, meaning all values of x are present in y.
-
-The problem's objective is to satisfy the given constraints, specifically the common constraint, without any explicit minimization or maximization objective. The model is designed to find a solution that meets the constraints, and the output will show the values of x, y, a, and b that satisfy these constraints.

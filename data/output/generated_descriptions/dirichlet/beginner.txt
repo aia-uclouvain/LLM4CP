@@ -1,5 +1,0 @@
-Triangle problem
-The problem is about finding the temperature at different points in a square metal plate. 
-The main variables are the temperature at each point in the plate, which is represented by a 2D array called "temp". 
-The basic restrictions or rules of the problem are that the temperature at each point inside the plate is the average of the temperatures at the four points around it (up, down, left, and right). The temperature at the edges of the plate is fixed. 
-The goal of the problem is to find a solution that satisfies these rules, which means finding the temperature at each point in the plate such that the average temperature rule is applied correctly.

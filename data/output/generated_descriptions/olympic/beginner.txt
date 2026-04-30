@@ -1,5 +1,0 @@
-Olympic Puzzle
-The problem is about arranging numbers in a special pattern. 
-The main variables are X1 to X10, which are boxes that need to be filled with different numbers from 1 to 10.
-The basic rules are that each box must have a unique number, and for any three boxes arranged in a triangle, the difference between the top two numbers must be equal to the bottom number.
-The goal is to find a way to fill all the boxes with numbers from 1 to 10 such that all the rules are satisfied, and one of the boxes, X1, must be filled with the number 3.

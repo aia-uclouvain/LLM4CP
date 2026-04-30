@@ -1,5 +1,0 @@
-The problem is called the "sum_ctr" problem. 
-It's about adding up a set of numbers and checking if the total is equal to, less than, greater than, or not equal to a certain target number. 
-The main variables are "x" which is a list of numbers, and "s" which is the target sum. 
-The basic restrictions are that each number in the list "x" must be between 1 and 5, and the total sum of these numbers must be compared to the target sum "s" in a certain way, such as being equal or less than. 
-The goal of the problem is to find a set of numbers that satisfy the given condition, in this case, the sum of the numbers in "x" must be equal to 6.

@@ -1,5 +1,0 @@
-The Family Relationship Problem
-The problem is about determining relationships between family members based on given information about parents, ages, and other relationships.
-The main decision variables are X and Y, which represent two individuals in the family, with X being the person whose relationship to Y is being queried.
-The key constraints are defined by the predicates: father, mother, parent, sibling, cousin, and older, which establish the relationships between family members. For example, the cousin predicate checks if two people have parents who are siblings, and the older predicate checks if one person is older than another.
-The problem's objective is to find the values of X and Y that satisfy the given constraints, specifically to find the cousin of Peter who is younger than their counterpart, but since the problem is defined as a satisfaction problem, the goal is to find any solution that satisfies all the constraints.

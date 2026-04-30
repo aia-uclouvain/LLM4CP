@@ -1,5 +1,0 @@
-Number Partitioning Problem
-The problem is about finding all combinations of five numbers that add up to 100, with the condition that each number must be divisible by either 2 or 5.
-The main decision variables are the array `x` of five variables, each representing one of the five numbers in the combination, and taking values between 1 and 100.
-The key constraints are: the sum of the five numbers must equal 100, each number must be divisible by either 2 or 5, and the numbers must be in increasing order to avoid duplicate combinations.
-The problem's objective is to find all valid combinations of five numbers that satisfy the given constraints, rather than minimizing or maximizing a specific value.

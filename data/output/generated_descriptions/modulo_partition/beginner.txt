@@ -1,5 +1,0 @@
-The problem is called Function Partitions. 
-It's about dividing a set of numbers (from 1 to a certain number, n) into groups based on a specific rule, like remainder when divided by another number. 
-The main variables are: x (the groups of numbers), sums (the sum of numbers in each group), and x_bool (a way to show which numbers are in which groups). 
-The basic restrictions are that each number can only be in one group, and the groups are determined by the rule (like remainder when divided by another number). 
-The goal is to find the groups and their sums, and show which numbers are in which groups.

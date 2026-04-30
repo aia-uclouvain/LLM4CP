@@ -1,5 +1,0 @@
-The Cryptarithmetic Problem
-The Cryptarithmetic problem is about finding the numerical values of letters in a mathematical equation where each letter represents a unique digit from 0 to 9.
-The main decision variables in this problem are the letters A, B, C, D, E, F, G, H, I, and J, which represent the digits to be assigned to each letter. 
-The key constraints in this problem are that each letter must be assigned a unique digit, the first letter of each number must be non-zero, and the mathematical equation represented by the letters must be valid. Specifically, when the numbers represented by the letters on the left side of the equation are added together, they must equal the number represented by the letters on the right side of the equation. 
-The objective of the Cryptarithmetic problem is to find an assignment of digits to the letters that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to solve the equation by assigning the correct numerical values to the letters.

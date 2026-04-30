@@ -1,8 +1,0 @@
-Magic Square Problem
-The problem is about finding a 3x3 grid where each cell contains a unique number from 1 to 9, and the sum of numbers in each row, column, and diagonal is the same.
-
-The main decision variables are X1 to X9, which represent the numbers in each cell of the 3x3 grid. These variables are defined as integers ranging from 1 to 9.
-
-The key constraints are that each number from 1 to 9 can only be used once, and the sum of numbers in each row, column, and diagonal must be equal to 15. This means that the numbers in each row, column, and diagonal must add up to the same total.
-
-The problem's objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to find a valid configuration of numbers that meets all the conditions, rather than optimizing a particular outcome. The model uses a satisfaction-based approach, where the solver searches for a solution that satisfies all the constraints, without prioritizing any specific objective function.

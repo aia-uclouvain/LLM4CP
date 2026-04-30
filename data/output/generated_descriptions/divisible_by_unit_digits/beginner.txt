@@ -1,5 +1,0 @@
-Divisible by Unit Digits problem. 
-This problem is about finding numbers between 10 and 50 that can be divided evenly by their last digit. 
-The main variables are the numbers between 10 and 50, and a special variable that tracks whether each number has the property of being divisible by its last digit. 
-The basic restriction is that a number can only be considered if it can be divided evenly by its last digit, for example, 12 can be divided by 2, but 13 cannot be divided by 3. 
-The goal of the problem is to count how many numbers between 10 and 50 have this property.

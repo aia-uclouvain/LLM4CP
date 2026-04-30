@@ -1,8 +1,0 @@
-name: Sum of Weights of Distinct Values
-description: The Sum of Weights of Distinct Values problem is a constraint satisfaction problem where we have a set of variables that take values from a given set, each with an associated weight. The goal is to find an assignment of values to the variables such that the sum of the weights of the distinct values taken by the variables equals a given cost.
-variables: $variables = [x_1, x_2, ..., x_n], values = [v_{i,j}]_{i=1, j=1}^{m, 2}, cost$ 
-These are the decision variables of the problem, where $x_i$ represents the value taken by the $i^{th}$ variable, $v_{i,j}$ represents the $i^{th}$ value and its associated weight, and $cost$ is the total sum of the weights of the distinct values taken by the variables.
-constraints: $x_i \in [1,6], v_{i,1} \in [1,6], v_{i,2} \in [1,7], cost = \sum_{i=1}^{m} v_{i,2} * bool2int(\exists j \in [1,n] (x_j = v_{i,1})), x = [1,6,1], values = [[1,5],[2,3],[6,7]], cost = 12$ 
-These constraints ensure that each variable takes a value from the set $[1,6]$, each value has an associated weight from the set $[1,7]$, the sum of the weights of the distinct values equals the given cost, and the variables and values are assigned specific values.
-objective: satisfy 
-The objective of this problem is to find a feasible assignment of values to the variables that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

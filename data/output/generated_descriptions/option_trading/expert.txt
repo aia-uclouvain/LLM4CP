@@ -1,5 +1,0 @@
-name: Option Trading Problem
-description: The problem models a simple option trading scenario where an investor buys a call option, which gives them the right to buy an underlying asset at a predetermined price (strike price) before a certain date (expiration date). The investor pays a premium for this option. The problem aims to find the maximum payoff (profit) that the investor can achieve.
-variables: S, C, E, P. These variables represent the following: S is the price of the underlying asset at expiration, C is the cost (premium) of the call option, E is the strike price, and P is the payoff (profit) from buying the call option.
-constraints: buy_call_payoff(S, C, E, P), C = 200.0. These constraints model the payoff function of the call option, which depends on the price of the underlying asset at expiration and the strike price. The first constraint defines the payoff function, and the second constraint sets the cost of the call option to a fixed value of 200.0.
-objective: maximize P, which means the problem aims to find the maximum possible payoff (profit) that the investor can achieve by buying the call option.

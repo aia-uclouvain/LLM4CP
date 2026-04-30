@@ -1,7 +1,0 @@
-name: Balance Partition Problem
-description: The Balance Partition Problem is a constraint satisfaction problem where the goal is to assign values to a set of variables such that the difference between the maximum and minimum number of occurrences of each value in a set of partitions is minimized.
-variables: $x = (x_1, x_2, ..., x_n)$, $partitions = (P_1, P_2, ..., P_m)$, $bal$ 
-where $x_i$ represents the value assigned to the $i^{th}$ variable, $P_j$ represents the $j^{th}$ partition, and $bal$ represents the balance between the maximum and minimum number of occurrences of each value in the partitions. The variables $x_i$ are assigned values from a set of integers, and the variables $P_j$ are sets of integers.
-constraints: $x \in \{1, 2, ..., 7\}^n$, $P_j \subseteq \{1, 2, ..., 7\}$, $bal = c_{max} - c_{min}$, $c_{max} = \max\{counts_i\}$, $c_{min} = \min\{counts_i | counts_i > 0\}$, $counts_i = \sum_{j=1}^{n} (x_j \in P_i)$
-where the constraints ensure that the values assigned to the variables $x_i$ are within the allowed range, the partitions $P_j$ are subsets of the allowed range, and the balance $bal$ is calculated as the difference between the maximum and minimum number of occurrences of each value in the partitions.
-objective: The objective of the problem is to satisfy the given constraints, with a focus on minimizing the balance $bal$ by assigning values to the variables $x_i$ such that the difference between the maximum and minimum number of occurrences of each value in the partitions is minimized.

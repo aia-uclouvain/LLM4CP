@@ -1,8 +1,0 @@
-name: Digital Atom Smasher
-description: The Digital Atom Smasher is a classic alphametic problem where the goal is to find a solution to the equation sqrt(ATOM) = A + TO + M, where each letter represents a digit from 0 to 9, and all digits must be distinct. The problem has two solutions.
-variables: A, T, O, M, z, ATOM = 1000*A+100*T+10*O+M 
-The variables A, T, O, and M represent the digits in the number ATOM, and z is an auxiliary variable used to calculate the square root of ATOM. ATOM is a derived variable representing the numerical value of the digits A, T, O, and M.
-constraints: z * z = ATOM, z = A + (10*T+O) + M, all_different([A,T,O,M]) 
-The constraints are: the square of z equals ATOM, z equals the sum of A, TO, and M, and all the digits A, T, O, and M must be distinct.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

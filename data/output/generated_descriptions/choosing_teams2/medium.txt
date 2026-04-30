@@ -1,5 +1,0 @@
-Team Formation Problem
-The Team Formation Problem is about dividing a group of people into teams of equal size. 
-The main decision variables are the assignments of each person to a team, represented by the array x, where x[i] denotes the team number assigned to person i. 
-The key constraints are that each team must have exactly n members, and the order of elements within each team and the order of the teams themselves do not matter. 
-The problem's objective is to find all possible ways to form the teams, and the model uses a satisfaction approach, where it aims to find all feasible solutions that satisfy the given constraints, rather than optimizing a specific objective function.

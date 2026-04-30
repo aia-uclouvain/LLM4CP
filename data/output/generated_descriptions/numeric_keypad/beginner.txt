@@ -1,5 +1,0 @@
-Numeric Keypad problem 
-The problem is about rearranging the number keys on a keypad so that none of the keys are in their original position, and each row of keys forms a perfect square number when read from left to right. 
-The main variables are the positions of the number keys on the keypad, which are represented by the letters x. These variables determine which number key is in each position on the keypad. 
-The basic restrictions are that no key can be in its original position, all the number keys must be used exactly once, and each row of keys must form a perfect square number. 
-The goal of the problem is to find a arrangement of the number keys that satisfies all these restrictions, which means finding a way to rearrange the keys so that each row forms a perfect square number and no key is in its original position.

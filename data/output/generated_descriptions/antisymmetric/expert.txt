@@ -1,5 +1,0 @@
-name: Antisymmetric Relation Problem
-description: The Antisymmetric Relation Problem is a constraint satisfaction problem that models the concept of an antisymmetric relation, which is a binary relation that is not symmetric. In other words, if a is related to b, then b is not related to a, unless a and b are the same.
-variables: $x_{i,j}$ where $i, j \in \{1, 2, ..., n\}$, which represent a binary relation between elements $i$ and $j$, where $x_{i,j} = 1$ if $i$ is related to $j$, and $x_{i,j} = 0$ otherwise.
-constraints: $\forall i \in \{1, 2, ..., n\}: x_{i,i} = 0$ and $\forall i, j \in \{1, 2, ..., n\} where i \neq j: x_{i,j} = 1 \leftrightarrow x_{j,i} = 0$, which ensure that the relation is antisymmetric.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables $x_{i,j}$ such that all constraints are satisfied, which is achieved by solving the problem with the "satisfy" objective.

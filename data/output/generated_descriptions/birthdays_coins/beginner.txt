@@ -1,5 +1,0 @@
-Tommy's Birthday Coins problem. 
-This problem is about finding the number of coins of different values that add up to a certain total amount of money, with some rules to follow. 
-The main variables are the number of coins of each type, which are represented by x[1], x[2], and x[3], and they mean how many coins of each value (30, 12, and 6) we need to use. 
-The basic restrictions are that we must use at least one coin of each type, the total value of all coins must be 306, and we can only use a total of 15 coins. 
-The goal of the problem is to find a combination of coins that satisfies these rules, and the solution will show how many coins of each type are needed.

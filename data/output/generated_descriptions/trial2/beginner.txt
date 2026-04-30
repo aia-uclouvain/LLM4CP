@@ -1,5 +1,0 @@
-The Second Trial puzzle. 
-This problem is about two doors, one with a lady and one with a tiger, and two statements that may or may not be true, one on each door. 
-The main variables are x, which shows what is behind each door (the lady or the tiger), and t, which shows whether each statement is true or false. 
-The basic rules are that each door has either the lady or the tiger, the statements on the doors must follow certain logic rules, and both statements must either be true or false together. 
-The goal of the problem is to find a solution that satisfies all these rules, meaning we want to figure out what is behind each door and whether each statement is true or false in a way that makes sense according to the given logic.

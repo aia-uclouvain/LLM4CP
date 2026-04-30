@@ -1,5 +1,0 @@
-The problem is called "to_num as a function in MiniZinc 2.0" but it's more about finding a special number. 
-In everyday terms, this problem is about finding a 10-digit number where each digit is unique, the third digit is 4, the number is greater than or equal to 50,000, and the number is even. 
-The main variables are "n" which is the 10-digit number we're trying to find, and "x" which is an array of the individual digits of "n". 
-The basic restrictions or rules of the problem are that all the digits in "x" must be different, the third digit must be 4, the number "n" must be at least 50,000, and "n" must be an even number. 
-The goal of the problem is to find a number "n" that satisfies all these rules.

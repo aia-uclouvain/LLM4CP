@@ -1,5 +1,0 @@
-The problem is called the Circular Chain problem, also known as Enigma puzzle 985. 
-It is about finding the weights of eight linked gold rings in a circular chain, where each ring is a whole number of ounces in weight, and the total weight is 57 ounces. 
-The main decision variables are the weights of the eight rings, represented by the array `chain`, where `chain[i]` is the weight of the `i-th` ring. 
-The key constraints are that the total weight of the rings is 57 ounces, no ring can weigh 3 or 6 ounces, all rings must have different weights, the first ring must be the smallest, and the second ring must be smaller than the last ring. Additionally, the chain must be designed so that any whole number of ounces from 1 to 57 can be removed, either as a single link or as a chain of linked rings. 
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a valid solution that satisfies all the constraints, specifically to find the weights of the eight rings in order, starting with the two smallest.

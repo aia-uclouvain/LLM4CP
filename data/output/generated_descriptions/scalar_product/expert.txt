@@ -1,5 +1,0 @@
-name: Scalar Product Problem
-description: The Scalar Product Problem is a constraint satisfaction problem where the goal is to find an assignment of binary values to a set of variables such that the scalar product of these variables with a given set of weights equals a target value.
-variables: $x_1, x_2, ..., x_n, z$, where $x_i$ are binary decision variables representing the coefficients of the scalar product and $z$ is an integer decision variable representing the result of the scalar product, which are the weights assigned to each variable and the target sum.
-constraints: $z = \sum_{i=1}^{n} x_i \cdot weights_i$, which is a constraint that ensures the scalar product of the variables $x_i$ with the given weights equals the target value $z$.
-objective: satisfy, the objective of the problem is to find a feasible solution that satisfies the given constraint, there is no explicit objective function to minimize or maximize.

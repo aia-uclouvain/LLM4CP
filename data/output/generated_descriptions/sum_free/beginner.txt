@@ -1,5 +1,0 @@
-The problem is called the "sum_free" problem. 
-It's about finding a set of numbers where no two numbers in the set can add up to another number in the set. 
-The main variables are the numbers in the set, which are represented by the array "x". Each number in "x" can have a value between 1 and 20. 
-The basic restrictions are that no two numbers in the set can add up to another number in the set, and no two numbers in the set can multiply to another number in the set. Also, each number can appear at most 3 times in the set, and the sum of all numbers in the set must be 100. 
-The goal of the problem is to find a set of numbers that satisfy all these restrictions.

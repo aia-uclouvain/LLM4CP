@@ -1,9 +1,0 @@
-name: 3-in-a-row puzzle
-
-description: The 3-in-a-row puzzle is a constraint satisfaction problem where the goal is to fill a grid with two colors, blue and white, such that no three consecutive cells in a row or column have the same color, and each row and column has an equal number of blue and white cells.
-
-variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the color of each cell in the grid, with $x_{i,j} = 0$ indicating a white cell and $x_{i,j} = 1$ indicating a blue cell.
-
-constraints: $\sum_{j=1}^{n} x_{i,j} = \frac{n}{2}$, $\sum_{j=1}^{n} x_{j,i} = \frac{n}{2}$, $\nexists k, \sum_{j=k}^{k+2} x_{i,j} = 3$, $\nexists k, \sum_{j=k}^{k+2} x_{i,j} = 0$, $\nexists k, \sum_{j=k}^{k+2} x_{j,i} = 3$, $\nexists k, \sum_{j=k}^{k+2} x_{j,i} = 0$. These constraints ensure that each row and column has an equal number of blue and white cells, and that no three consecutive cells in a row or column have the same color.
-
-objective: The objective of the problem is to find a satisfying assignment of colors to the cells in the grid, i.e., to solve the constraint satisfaction problem. There is no explicit objective function to minimize or maximize.

@@ -1,8 +1,0 @@
-Path From To problem
-The problem is about finding a path between two points in a network. 
-The main variables are the network, the starting point, the ending point, and the path. 
-The network is like a map with nodes and connections between them. 
-The starting point is where you begin your journey, and the ending point is where you want to go. 
-The path is the route you take to get from the starting point to the ending point. 
-The basic restrictions are that you can only move along the connections in the network, and you must start at the starting point and end at the ending point. 
-The goal of the problem is to find a path that connects the starting point to the ending point.

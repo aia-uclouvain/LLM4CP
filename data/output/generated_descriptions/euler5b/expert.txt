@@ -1,5 +1,0 @@
-name: Euler Problem 5 (Smallest Multiple)
-description: The problem asks to find the smallest number that is evenly divisible by all numbers from 1 to 20, which is a classic problem in number theory and constraint programming.
-variables: $x[1..n]$ - This is an array of decision variables where $x[i]$ represents the least common multiple (LCM) of all numbers from 1 to $i$, and $n$ is the input number (in this case, 20). 
-constraints: $x[1] = 1$, $x[i] = lcm(i, x[i-1])$ for $i = 2..n$ - These constraints initialize the first variable $x[1]$ to 1 and then iteratively calculate the LCM of the current number $i$ and the previously calculated LCM $x[i-1]$.
-objective: The objective of the problem is to find the value of $x[n]$, which is the smallest number that is evenly divisible by all numbers from 1 to $n$. Since the model uses the `solve satisfy` statement, the objective is essentially to find a feasible solution that satisfies all the constraints, and the value of $x[n]$ is the answer to the problem.

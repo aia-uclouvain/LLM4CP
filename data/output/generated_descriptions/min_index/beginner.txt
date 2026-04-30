@@ -1,8 +1,0 @@
-The problem is called Min Index. 
-It's about finding the position of the smallest value in a list of numbers. 
-The main variables are: 
-- "variables" which is a list of numbers, 
-- "min_ind" which is the position of the smallest number in the list, 
-- "min_val" which is the smallest number itself. 
-The basic restrictions are that the list of numbers must match a given list, and the position and value of the smallest number must be correctly identified. 
-The goal is to find the position and value of the smallest number in the list.

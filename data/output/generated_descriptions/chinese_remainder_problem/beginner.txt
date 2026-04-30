@@ -1,9 +1,0 @@
-Chinese Remainder Problem
-The problem is about finding the smallest number that satisfies multiple conditions related to remainders when divided by certain numbers. 
-The main variables are: 
-- n, which is the number of conditions 
-- divs, which is a list of numbers that we will divide by 
-- rems, which is a list of remainders that we want to get when dividing by the corresponding numbers in divs 
-- x, which is the number we are trying to find.
-The basic restrictions are that when x is divided by each number in divs, the remainder must be the corresponding number in rems. 
-The goal is to find the smallest x that satisfies all these conditions.

@@ -1,5 +1,0 @@
-name: Puzzle Problem
-description: The problem is to find a 3-digit number such that when squared, the resulting 7-digit number contains all the digits from 0 to 9. 
-variables: A, B, C, D, E, F, G, H, I, J, N - These are decision variables where A, B, and C represent the digits of the 3-digit number, D to J represent the digits of the squared number, and N is the 3-digit number itself.
-constraints: all_different([A,B,C,D,E,F,G,H,I,J]) ∧ N = 100*A + 10*B + C ∧ N*N = 1000000*D + 100000*E + 10000*F + 1000*G + 100*H + 10*I + J - These constraints ensure that all the digits are distinct, the 3-digit number N is correctly formed from its digits, and the square of N is correctly formed from its digits.
-objective: satisfy - The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

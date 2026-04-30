@@ -1,5 +1,0 @@
-name: Atmost1 Problem
-description: The Atmost1 problem is a constraint satisfaction problem that involves a collection of set variables and their respective cardinalities. The goal is to find an assignment of values to these set variables such that two conditions are satisfied: each set variable has the specified cardinality, and the intersection of any two set variables has at most one element.
-variables: $x = [x_1, x_2, ..., x_n], s = [s_1, s_2, ..., s_n]$ where $x_i$ represents the cardinality of set $s_i$, and $s_i$ is a set of integers.
-constraints: $\forall i \in \{1, 2, ..., n\}, |s_i| = x_i \wedge \forall i, j \in \{1, 2, ..., n\} \text{ where } i < j, |s_i \cap s_j| \leq 1$ which ensures that each set has the specified cardinality and the intersection of any two sets has at most one element.
-objective: The objective of the problem is to satisfy all the constraints, there is no explicit objective function to minimize or maximize.

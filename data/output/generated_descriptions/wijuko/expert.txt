@@ -1,5 +1,0 @@
-name: Wijuko Grid Puzzle
-description: The Wijuko Grid Puzzle is a constraint satisfaction problem where the goal is to fill a 3x3 grid with numbers from 1 to 9, such that the sum of adjacent cells (horizontally or vertically) equals a given value.
-variables: $x_{i,j}, d_{i,j}$, where $x_{i,j}$ represents the value in the $i^{th}$ row and $j^{th}$ column of the grid, and $d_{i,j}$ represents the sum of the values in the $i^{th}$ row and $j^{th}$ column or the sum of the values in the $i^{th}$ column and $j^{th}$ row.
-constraints: $\forall i \in 1..3, j \in 1..2: x_{i,j} + x_{i,j+1} = d_{(i-1)*2+1,j}$ and $\forall i \in 1..2, j \in 1..3: x_{i,j} + x_{i+1,j} = d_{(i-1)*2+2,j}$ and $\forall i,j \in 1..3: x_{i,j} \in [1,9]$ and $all\_different(x)$, which ensure that the sum of adjacent cells equals the given values, all numbers in the grid are between 1 and 9, and all numbers in the grid are distinct.
-objective: The objective of the problem is to find a satisfying assignment of values to the grid, i.e., to solve the problem, there is no explicit objective function to minimize or maximize, the goal is to find a feasible solution that satisfies all the constraints.

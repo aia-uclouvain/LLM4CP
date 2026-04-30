@@ -1,5 +1,0 @@
-Krypto Puzzle
-The Krypto puzzle is a game where players are given a set of numbers and must use basic math operations to combine them to get a target number. 
-The main variables are the numbers on the cards, the order in which they are used, and the math operations used to combine them. 
-The basic restrictions are that each number can only be used once, and only the four basic math operations (addition, subtraction, multiplication, and division) can be used. 
-The goal is to find a way to combine the numbers using these operations to get the target number, which is the objective of the puzzle.

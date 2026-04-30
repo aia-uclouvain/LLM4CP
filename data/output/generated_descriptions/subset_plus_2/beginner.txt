@@ -1,5 +1,0 @@
-The problem is called the Subset problem. 
-It's about finding groups of numbers from 1 to 10 that, when you add 2 to each number in the group, cover all numbers from 1 to 12. 
-The main variables are s1 and s2, which are groups of numbers. 
-The basic restrictions are that for every number in the first group, adding 2 to it should be in the second group, and together the two groups should include all numbers from 1 to 12. 
-The goal is to find how many such groups exist, which is the number of solutions to the problem.

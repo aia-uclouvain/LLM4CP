@@ -1,5 +1,0 @@
-The Minimum Sum Subarray problem.
-The Minimum Sum Subarray problem is about finding the subarray within a given array of integers that has the minimum sum, and computing this minimum sum.
-The main decision variables are `start`, `end`, and `minsum`, which represent the starting index, ending index, and minimum sum of the subarray, respectively.
-The key constraints are that the ending index must be greater than or equal to the starting index, and the minimum sum must be equal to the sum of the elements in the subarray from the starting index to the ending index.
-The objective of the problem is to minimize the `minsum` variable, which represents the minimum sum of the subarray. In other words, the goal is to find the subarray with the smallest possible sum.

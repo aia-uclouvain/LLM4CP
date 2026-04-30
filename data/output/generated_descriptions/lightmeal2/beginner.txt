@@ -1,8 +1,0 @@
-The Lightmeal problem. 
-This problem is about creating meals with a limited number of calories. Imagine you're planning a meal that consists of three parts: an appetizer, a main course, and a dessert. You have a list of different foods, each with its own calorie count. You want to choose one appetizer, one main course (which can be either meat or fish), and one dessert, in such a way that the total calorie count of your meal does not exceed 10 calories.
-
-The main variables are the foods you can choose from, and whether or not you include each food in your meal. The variables are: x (which foods to include), sum_calories (the total calorie count of your meal), appetisers, meat, fish, and dessert (the different types of foods and their calorie counts).
-
-The basic restrictions are that you must choose exactly one appetizer, one main course (either meat or fish), and one dessert. You can only choose from the available foods, and the total calorie count of your meal cannot exceed 10 calories.
-
-The goal of the problem is to find all possible meals that meet these restrictions, and to calculate the total calorie count of each meal.

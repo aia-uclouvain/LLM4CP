@@ -1,5 +1,0 @@
-Number Lock Problem
-The problem is about cracking a 3-digit code for a number lock. 
-The main variables are the 3 digits of the code, which are unknown numbers that we need to figure out.
-The basic restrictions or rules of the problem are based on hints given for 5 different 3-digit numbers. For each hint, we know how many digits are correct and whether they are in the correct position or not. 
-The goal of the problem is to find the correct 3-digit code that satisfies all the hints.

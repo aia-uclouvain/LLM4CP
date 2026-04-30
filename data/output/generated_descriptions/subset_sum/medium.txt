@@ -1,5 +1,0 @@
-The 0/1 Subset Sum Problem
-The 0/1 subset sum problem is about finding a subset of items from a given set, where each item has a specific value, such that the total value of the subset equals a target value.
-The main decision variables in this problem are the array `x`, where `x[i]` represents the number of bags with `coins[i]` coins that are stolen. 
-The key constraints are that the total number of coins stolen must equal the target value of 100, and the number of bags stolen for each coin value must be non-negative. 
-The objective of the problem is to find a feasible solution that satisfies the constraints, as indicated by the `solve satisfy` statement, which means the goal is to find a subset of bags that sums up to the total of 100 coins, without minimizing or maximizing any specific value.

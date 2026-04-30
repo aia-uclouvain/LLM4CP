@@ -1,5 +1,0 @@
-name: Consecutive Ones Problem with Contiguity Constraint
-description: The problem involves finding a subset of a given sequence of random 0/1 values such that the sum of the product of the subset and the corresponding weights is greater than or equal to a given threshold, and the ones in the subset are consecutive.
-variables: $y = (y_1, y_2, ..., y_n), z, w = (w_1, w_2, ..., w_n)$, where $y$ is a binary array representing the subset, $z$ is the sum of the product of the subset and the corresponding weights, and $w$ is an array of random 0/1 weights.
-constraints: $z = \sum_{i=1}^{n} y_i \cdot w_i, z \geq A, \forall i \in \{1, 2, ..., n-1\}: n \cdot (1 - y_i + y_{i+1}) \geq \sum_{t=i+1}^{n} y_t, w = \text{random 0/1 array}$, where the first constraint is the scalar product of $y$ and $w$, the second constraint is the threshold constraint, the third constraint is the contiguity constraint, and the fourth constraint is the random 0/1 array generation.
-objective: Minimize $z$

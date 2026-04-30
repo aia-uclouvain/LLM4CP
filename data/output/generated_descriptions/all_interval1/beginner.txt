@@ -1,5 +1,0 @@
-All Interval Problem
-The problem is about creating a musical series where each note is played exactly once, and the intervals between consecutive notes cover all possible intervals from a minor second to a major seventh.
-The main variables are the series of notes, represented by numbers 0 to 11, where each number corresponds to a specific musical note.
-The basic restrictions are that each note can only be played once, and the intervals between consecutive notes must all be different.
-The goal is to find a series of notes that satisfies these conditions, effectively covering all possible intervals.

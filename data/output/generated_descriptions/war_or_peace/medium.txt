@@ -1,5 +1,0 @@
-War or Peace problem
-The War or Peace problem is about determining the minimum number of peace treaties required between countries under certain conditions. 
-The main decision variables in this problem are represented by a 2D array `x`, where `x[i,j]` denotes the relationship between country `i` and country `j`, which can be either at war (`war = 0`) or have a peace treaty (`peace = 1`). 
-The key constraints are that each pair of countries is either at war or has a peace treaty, and if two countries have a common enemy, they must have a peace treaty. This means that for any two countries `i` and `j` that are at war, all other countries `k` must either have a peace treaty with `i` or `j`. 
-The objective of the problem is to minimize the total number of peace treaties, represented by the variable `countpeaces`, which is the sum of all `x[i,j]` values that equal `peace`.

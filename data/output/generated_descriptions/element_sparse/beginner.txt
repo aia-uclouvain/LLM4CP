@@ -1,5 +1,0 @@
-The name of the problem is Element Sparse. 
-This problem is about looking up a value in a table. Imagine you have a list of items with two pieces of information: an index and a value. You also have a table with the same kind of information. The problem is trying to find if the index of an item matches any index in the table, and if it does, it should return the corresponding value from the table. If it doesn't find a match, it should return a default value.
-The main variables are: element_table (the table to look up values in), item (the item to look up), item_default (the default value to return if the item is not found), and result (the value found in the table or the default value).
-The basic restrictions or rules of the problem are: the item's index must match one of the indexes in the table, and if it does, the result is the corresponding value from the table; if it doesn't, the result is the default value.
-The goal of the problem is to find the result, which is either the value from the table or the default value, given the item and the table.

@@ -1,5 +1,0 @@
-name: Assignment Problem
-description: The Assignment Problem is a classic problem in combinatorial optimization and operations research that involves finding the optimal assignment of a set of agents to a set of tasks, where each agent can only be assigned to one task and each task can only be assigned to one agent, with the goal of minimizing the total cost of the assignments.
-variables: $x_{i,j}$, where $x_{i,j}$ is a binary decision variable that represents whether agent $i$ is assigned to task $j$, with $x_{i,j} = 1$ indicating that agent $i$ is assigned to task $j$ and $x_{i,j} = 0$ indicating that agent $i$ is not assigned to task $j$.
-constraints: $\sum_{j=1}^{cols} x_{i,j} = 1 \forall i$, $\sum_{i=1}^{rows} x_{i,j} \leq 1 \forall j$, where the first constraint ensures that each agent is assigned to exactly one task, and the second constraint ensures that each task is assigned to at most one agent.
-objective: minimize $\sum_{i=1}^{rows} \sum_{j=1}^{cols} cost_{i,j} \cdot x_{i,j}$, which represents the total cost of the assignments, where $cost_{i,j}$ is the cost of assigning agent $i$ to task $j$.

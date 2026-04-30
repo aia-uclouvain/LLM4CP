@@ -1,5 +1,0 @@
-The Enigma problem.
-This problem is about finding the numerical values of letters in a set of words such that certain conditions are met, specifically related to perfect squares.
-The main decision variables are the letters O, N, E, T, W, H, R, F, and U, which represent digits from 0 to 9. The variables ONE, TWO, THREE, FOUR, and FORTUNE represent the numerical values of the corresponding words.
-The key constraints are: each letter must represent a unique digit, the numerical values of the words must be within certain ranges, and the conditions related to perfect squares must be met. Specifically, in the list of original words, exactly two are perfect squares, and in the lists with +1 and +2 added to each word, exactly one is a perfect square.
-The objective of the problem is to find the numerical values of the letters and the words that satisfy all the constraints, with the ultimate goal of determining the value of FORTUNE.

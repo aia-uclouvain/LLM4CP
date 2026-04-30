@@ -1,5 +1,0 @@
-The problem is known as the Soft All Equal Constraint problem. 
-It is about finding an assignment of values to a set of variables such that a certain number of pairs of variables have the same value. 
-The main decision variables are an array of variables `x` representing the values to be assigned to each variable, and a variable `N` representing the minimum number of pairs of variables that should have the same value. 
-The key constraints are that each variable in `x` should be within a certain range, the value of `N` should be non-negative and not exceed the total number of possible pairs of variables, and the number of pairs of variables with the same value should be at least `N`. 
-The problem's objective is to satisfy these constraints, specifically to find an assignment of values to `x` such that the number of pairs of variables with the same value is at least `N`, which is set to 6 in this case.

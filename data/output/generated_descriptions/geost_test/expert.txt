@@ -1,8 +1,0 @@
-name: 2D Bin Packing Problem with Non-Overlapping Rectangles
-description: The problem involves packing a set of rectangles of different shapes and sizes into a 2D bin without overlapping, where each shape can be represented by a set of rectangles. The goal is to find a packing that minimizes the sum of the upper limits of the bin in both dimensions.
-variables: $x_{i,j}, kind_i, lower_j, upper_j$ 
-These variables represent the position $x_{i,j}$ of object $i$ in dimension $j$, the shape $kind_i$ used by each object, and the lower $lower_j$ and upper $upper_j$ limits of the bin in each dimension.
-constraints: $geost\_bb(k, rect\_size, rect\_offset, shape, x, kind, lower, upper)$, $kind_i \in shape\_groups_i$ 
-These constraints ensure that no two objects overlap and that each object is placed within the bin, and that one shape variant from each shape group is used.
-objective: minimize $sum\_upper = \sum_{j=1}^{k} upper_j$ 
-The objective is to minimize the sum of the upper limits of the bin in both dimensions.

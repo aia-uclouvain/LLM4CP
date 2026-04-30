@@ -1,8 +1,0 @@
-The name of the problem is the "Just Forgotten Puzzle" or "Enigma 1517". 
-This problem is about finding a 10-digit bank account number where each digit from 0 to 9 appears exactly once, given four incorrect attempts with exactly four correct digits in each attempt.
-
-The main decision variables are `a` and `x`. `a` is a 2D array representing the four incorrect attempts, where each row corresponds to an attempt and each column corresponds to a digit position. `x` is a 1D array representing the correct bank account number, where each element corresponds to a digit in the correct order.
-
-The key constraints are that each digit from 0 to 9 appears exactly once in the correct account number (`all_different(x)`), and for each incorrect attempt, exactly four digits are in their correct positions (`sum(c in 1..cols) (bool2int(x[c] = a[r,c])) = 4`).
-
-The problem's objective is to find a solution that satisfies all the constraints, which means finding the correct bank account number. The model uses the `solve satisfy` statement, indicating that the goal is to find a feasible solution that meets all the constraints, rather than optimizing a specific objective function.

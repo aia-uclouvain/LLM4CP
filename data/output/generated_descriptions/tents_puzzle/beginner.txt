@@ -1,5 +1,0 @@
-Tents Puzzle
-The problem is about placing tents next to trees in a grid, following certain rules. 
-The main variables are the grid cells, which can be either trees, tents, or empty spaces. 
-The basic restrictions are that each tree must have a tent next to it, each tent must be next to a tree, and no two tents can touch each other. 
-The goal is to find a way to place the tents according to the given rules and the number of tents in each row and column.

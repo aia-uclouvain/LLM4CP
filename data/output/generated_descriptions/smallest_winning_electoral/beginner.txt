@@ -1,5 +1,0 @@
-The name of the problem is the "Least amount of land that will make you President". 
-This problem is about finding the smallest area of land in the United States that, if won by a presidential candidate, would give them enough electoral votes to win the election. 
-The main variables are the states, the number of electoral votes each state has, the area of each state, and a decision variable that determines whether a state is won by the candidate or not. 
-The basic restrictions or rules of the problem are that the candidate needs to win at least 270 electoral votes and that each state can either be won or not won by the candidate. 
-The goal of the problem is to minimize the total area of land won by the candidate while still winning at least 270 electoral votes.

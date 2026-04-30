@@ -1,5 +1,0 @@
-Taxicab Problem
-The Taxicab problem is about finding the smallest number that can be expressed as the sum of two cubes in two different ways.
-The main decision variables are X1, X2, Y1, Y2, and Z, which represent the two pairs of numbers whose cubes sum up to the same number Z. Specifically, X1 and X2 are the numbers whose cubes sum up to Z in one way, and Y1 and Y2 are the numbers whose cubes sum up to Z in another way.
-The key constraints are that X1, X2, Y1, and Y2 must be positive integers, and that the sum of the cubes of X1 and X2 must be equal to the sum of the cubes of Y1 and Y2, which is Z. Additionally, the model includes symmetry-breaking constraints to ensure that X1 is less than or equal to X2, Y1 is less than or equal to Y2, and X1 is less than or equal to Y1, which helps to reduce the search space.
-The objective of the problem is to find the smallest possible value of Z that satisfies the constraints, which is the smallest number that can be expressed as the sum of two cubes in two different ways. In other words, the problem is trying to minimize Z.

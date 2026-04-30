@@ -1,8 +1,0 @@
-Maximum Clique Problem
-The Maximum Clique Problem is about finding the largest subset of nodes in a graph where every node in the subset is connected to every other node. 
-
-The main decision variables in this problem are the nodes in the graph, represented by binary variables (0 or 1) that indicate whether a node belongs to the clique or not. 
-
-The key constraints are that for any two nodes that are not connected by an edge in the graph, at most one of them can be included in the clique. This ensures that all nodes in the clique are connected to each other. 
-
-The objective of the problem is to maximize the size of the clique, which is equivalent to maximizing the number of nodes included in the clique. In other words, the goal is to find the largest possible subset of nodes where every node is connected to every other node.

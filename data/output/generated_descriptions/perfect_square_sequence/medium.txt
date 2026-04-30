@@ -1,5 +1,0 @@
-The Perfect Square Sequence problem. 
-This problem is about rearranging a sequence of numbers from 1 to n such that the sum of any two consecutive numbers in the sequence is a perfect square. 
-The main decision variable is an array x of length n, where x[i] represents the i-th number in the sequence, and its value is a number between 1 and n. 
-The key constraints are that all numbers in the sequence must be different, the sum of any two consecutive numbers must be a perfect square, and a symmetry breaking constraint to ensure that the first number is less than the last number. 
-The objective of this problem is to find a satisfying assignment of numbers to the sequence, which means finding a valid arrangement that meets all the constraints, rather than minimizing or maximizing a specific value.

@@ -1,5 +1,0 @@
-Inter-distance problem. 
-This problem is about placing a certain number of items, so that each item is at a certain distance from every other item. 
-The main variables are x, which represents the positions of the items, and p, which is the minimum distance between any two items. 
-The basic restrictions are that all items must be placed in order, and the distance between any two items must be at least p. 
-The goal of the problem is to find the largest possible distance, p, that still allows all items to be placed according to these rules.

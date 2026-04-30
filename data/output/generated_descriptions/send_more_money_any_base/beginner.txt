@@ -1,5 +1,0 @@
-The problem is called "Send More Money". 
-It's about finding a way to add two words, "SEND" and "MORE", to get a third word, "MONEY", but with a twist: each letter in the words represents a number, and the addition must work like regular math. 
-The main variables are the letters S, E, N, D, M, O, R, and Y, which represent the numbers that each letter stands for. 
-The basic restrictions are that each letter must represent a different number, and the numbers must be between 0 and the base (which is like the number of different digits we can use, like 10 for our usual decimal system). Also, the first letter of each word (S and M) cannot be 0. 
-The goal is to find a solution where the addition works out correctly, so that "SEND" plus "MORE" equals "MONEY" when each letter is replaced by its corresponding number.

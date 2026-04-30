@@ -1,5 +1,0 @@
-name: Among Interval Problem
-description: The Among Interval Problem is a constraint satisfaction problem where we are given a set of variables and an interval, and we need to find the number of variables that take a value within the given interval.
-variables: $x_1, x_2, ..., x_n, nvar, low, up$ - These are the decision variables where $x_1, x_2, ..., x_n$ are an array of variables that can take integer values, $nvar$ is the number of variables that take a value within the interval, and $low$ and $up$ are the lower and upper bounds of the interval, respectively.
-constraints: $nvar = \sum_{i=1}^{n} (x_i \geq low \wedge x_i \leq up), x = [4,5,8,4,1], low = 3, up = 5$ - These constraints ensure that $nvar$ is equal to the number of variables $x_i$ that take a value within the interval $[low, up]$, and that the values of $x$ are fixed to $[4,5,8,4,1]$, and the interval is $[3, 5]$.
-objective: satisfy - The objective of the problem is to satisfy all the constraints, i.e., to find an assignment of values to the variables that satisfies all the constraints, there is no objective function to minimize or maximize.

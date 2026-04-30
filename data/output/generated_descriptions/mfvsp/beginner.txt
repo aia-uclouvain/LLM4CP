@@ -1,9 +1,0 @@
-Minimum Feedback Vertex Set Problem
-The problem is about finding the smallest group of points in a network that, when removed, makes the network have a clear direction of flow without any cycles.
-The main variables are: 
-- n, the total number of points in the network
-- E, the connections between points in the network
-- x, a flag to mark if a connection is part of the feedback
-- k, a ranking of the points to ensure the flow is in one direction
-The basic restrictions are that the network should not have any cycles after removing the marked points, and the flow should be in one direction.
-The goal is to minimize the number of points that need to be removed to achieve this.

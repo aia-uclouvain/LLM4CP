@@ -1,8 +1,0 @@
-name: Costas Array Problem
-description: The Costas Array Problem is a well-known problem in combinatorial mathematics and constraint programming. It involves arranging marks or dots in a two-dimensional array such that all marks are on different rows and columns, and all displacement vectors between the marks are unique. This problem has applications in various fields, including radar and sonar technology, where it is used to design optimal pulse sequences.
-variables: $x = (x_1, x_2, ..., x_n)$, where $x_i$ represents the row where the $i^{th}$ mark is placed, and each $x_i$ is a decision variable that takes a value from the set of rows $\{1, 2, ..., n\}$.
-constraints: $\begin{aligned} 
-&\text{AllDifferent}(x) \\
-&\text{AllDifferent}(x_i - x_{i+d} \text{ for } i \in \{1, 2, ..., n-d\}) \text{ for } d \in \{1, 2, ..., n-1\} 
-\end{aligned}$, which ensure that all marks are on different rows and columns, and all displacement vectors between the marks are unique.
-objective: The Costas Array Problem is a feasibility problem, meaning that the objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to determine whether a Costas array of a given size exists, and if so, to construct one.

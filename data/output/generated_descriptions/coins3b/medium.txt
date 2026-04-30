@@ -1,5 +1,0 @@
-The name of the problem is the Coin Changing Problem or the Change Making Problem. 
-This problem is about finding the minimum number of coins of different denominations that can be used to make any amount of money up to a certain limit, in this case, one Euro (100 cents). 
-The main decision variables are `x` and `variables`. The `x` array represents the number of coins of each denomination that should be used, and the `variables` array represents the denominations of the coins themselves. 
-The key constraints are that all amounts from 1 to 99 cents can be made using the selected coins, the total number of coins used is minimized, and the denominations of the coins are distinct and in increasing order. 
-The problem's objective is to minimize the total number of coins used, which is represented by the `num_coins` variable. In other words, the goal is to find the smallest set of coins that can be used to make any amount up to 99 cents.

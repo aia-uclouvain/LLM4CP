@@ -1,9 +1,0 @@
-Conway's Game of Life
-The problem is about simulating the behavior of living cells in a grid, where each cell can be either alive or dead. 
-The main variables are the grid size (n), the number of generations (m), and the state of each cell (x) at each generation. 
-The basic restrictions or rules of the problem are: 
-- a live cell with fewer than two live neighbors dies, 
-- a live cell with more than three live neighbors dies, 
-- a live cell with two or three live neighbors stays alive, 
-- a dead cell with exactly three live neighbors becomes alive. 
-The goal of the problem is to simulate the evolution of the grid over multiple generations, following these rules.

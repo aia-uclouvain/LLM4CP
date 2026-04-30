@@ -1,8 +1,0 @@
-Queens and Knights problem
-The Queens and Knights problem is a classic constraint programming problem that involves placing queens and knights on a chessboard such that no piece attacks any other piece. 
-The main decision variables in this problem are the positions of the queens and knights on the chessboard, represented by the 2D array `x`. Each element `x[i, j]` can take on one of three values: 0 (indicating an empty space), 1 (indicating a queen), or 2 (indicating a knight). 
-The key constraints in this problem are: 
-- Each queen must be placed such that it does not attack any other queen or knight. This means that no two queens can be in the same row, column, or diagonal, and no queen can be in a position where it could capture a knight. 
-- Each knight must be placed such that it does not attack any other knight or queen. This means that no two knights can be in positions where they could capture each other, and no knight can be in a position where it could capture a queen. 
-- The number of queens must be equal to the number of knights. 
-The objective of this problem is to maximize the total number of pieces (queens and knights) that can be placed on the board while satisfying the constraints. In other words, the goal is to find the largest number of pieces that can be placed on the board without any piece attacking any other piece.

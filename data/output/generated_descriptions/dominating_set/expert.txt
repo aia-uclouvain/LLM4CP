@@ -1,8 +1,0 @@
-name: Dominating Set Problem
-description: The Dominating Set Problem is a classic problem in graph theory and computer science, which involves finding a subset of vertices in a graph such that every vertex not in the subset is connected to at least one vertex in the subset. The goal is to determine whether a dominating set of a given size or less exists for a given graph.
-variables: D, K 
-D is a set of vertices representing the dominating set, and K is an integer representing the limit on the cardinality of D. These variables are used to determine the smallest dominating set that satisfies the given conditions.
-constraints: dominating_set(graph, D, K, 1..num_nodes), card(D) <= K 
-The constraints ensure that every vertex not in D is connected to at least one vertex in D, and the cardinality of D is less than or equal to K.
-objective: minimize card(D) 
-The objective of the problem is to minimize the cardinality of the dominating set D, which represents the smallest possible dominating set that satisfies the given conditions.

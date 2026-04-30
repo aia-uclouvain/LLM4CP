@@ -1,9 +1,0 @@
-name: Same and Global Cardinality Problem
-
-description: The Same and Global Cardinality Problem is a constraint satisfaction problem that involves finding two arrays of variables, variables1 and variables2, such that the variables in variables2 are a permutation of the variables in variables1, and each value in the variables1 array occurs a specified number of times.
-
-variables: $variables1 = [x_1, x_2, ..., x_n], variables2 = [y_1, y_2, ..., y_n], values = [v_{i,j}]_{m \times 2}$, where $x_i, y_i \in \{1, 2, ..., 9\}$ are the decision variables representing the values in the variables1 and variables2 arrays, and $v_{i,j}$ are the decision variables representing the values and their occurrences.
-
-constraints: $same(variables1, variables2) \wedge global\_cardinality\_table(variables1, values) \wedge global\_cardinality\_table(variables2, values)$, where $same(variables1, variables2)$ ensures that variables2 is a permutation of variables1, $global\_cardinality\_table(variables1, values)$ ensures that each value in variables1 occurs the specified number of times, and $global\_cardinality\_table(variables2, values)$ ensures that each value in variables2 occurs the specified number of times.
-
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a solution that meets all the conditions specified by the constraints. There is no explicit objective function to minimize or maximize.

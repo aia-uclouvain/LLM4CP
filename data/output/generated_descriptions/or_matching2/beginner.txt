@@ -1,5 +1,0 @@
-Matching problem of OR'ers
-The problem is about matching people with each other based on how compatible they are. 
-The main variables are the people (represented by numbers) and the scores that show how compatible each pair of people is. 
-The basic restrictions are that each person can only be matched with one other person, and a person cannot be matched with themselves. The matching should also be symmetric, meaning that if person A is matched with person B, then person B is also matched with person A. 
-The goal of the problem is to find the matching that gives the highest total compatibility score, which means finding the pairs of people that are most compatible with each other.

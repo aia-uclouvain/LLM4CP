@@ -1,8 +1,0 @@
-name: Graph Degree Sequence Problem
-description: The Graph Degree Sequence Problem is a classic problem in graph theory and constraint programming. It involves finding a graph that satisfies a given degree sequence, where the degree of a node is the number of edges incident to it. The problem can be represented in two ways: as a matrix representing the adjacency of nodes, or as a list of edges. The goal is to find a graph that matches the given degree sequence.
-
-variables: $d = (d_1, d_2, ..., d_n)$, $graph = (g_{i,j})_{n \times n}$, where $d_i$ represents the degree of node $i$ and $g_{i,j}$ represents the presence (1) or absence (0) of an edge between nodes $i$ and $j$. These variables represent the degree sequence and the graph structure, respectively.
-
-constraints: $\forall i \in \{1, 2, ..., n\}, d_i = \sum_{j=1}^{n} g_{i,j}$, $g_{i,j} \in \{0, 1\}$, where the first constraint ensures that the degree of each node matches the given degree sequence, and the second constraint ensures that the graph is represented as a binary matrix. Additionally, the model includes constraints to ensure that the graph and degree sequence variables have the same size and structure.
-
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a graph that matches the given degree sequence. There is no explicit objective function to minimize or maximize, as the goal is to find a feasible solution that satisfies all the constraints.

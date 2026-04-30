@@ -1,5 +1,0 @@
-Uniform Dice Problem
-The Uniform Dice Problem is about designing two dice such that the sums of the numbers on the faces of the two dice have a uniform distribution.
-The main decision variables are x1 and x2, which represent the numbers on the faces of the two dice, and dist, which represents the distribution of the sums.
-The key constraints are that the sum of the numbers on each face of the two dice must be between 2 and 2m, the total number of possible outcomes (n*n) must be distributed evenly among the possible sums, and the distribution of the sums must be uniform, meaning that either a sum has zero probability or the same probability as the previous sum.
-The objective of the problem is to find a solution that satisfies all the constraints, with the goal of minimizing the number of different sums that have a non-zero probability, represented by the variable z.

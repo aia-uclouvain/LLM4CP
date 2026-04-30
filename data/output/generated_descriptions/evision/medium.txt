@@ -1,5 +1,0 @@
-Equal Vision puzzle
-The Equal Vision puzzle is about placing watchmen in a grid such that each cell has the same number of visible vacant cells, while minimizing the total number of vacant cells.
-The main decision variables are x(i,j) and n(i,j), where x(i,j) represents whether a cell at position (i,j) is occupied (0) or vacant (1), and n(i,j) represents the number of vacant cells visible from cell (i,j).
-The key constraints are that the number of visible vacant cells from each cell must be equal to a certain value (cvis), and that this visibility is calculated by looking in all four directions (up, down, left, right, and two diagonals) from each cell, counting the number of vacant cells until an occupied cell is reached. Additionally, the number of visible vacant cells from a cell is constrained to be within a certain range when the cell is occupied or vacant.
-The objective of the problem is to minimize the total number of vacant cells (sumx) in the grid, which is equivalent to maximizing the number of occupied cells.

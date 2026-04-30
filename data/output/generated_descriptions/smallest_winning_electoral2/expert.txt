@@ -1,5 +1,0 @@
-name: Becoming President with 22% of the Votes
-description: This problem is about finding the minimum percentage of votes required to win a presidential election in the United States, considering the electoral college system and the population of each state. The goal is to determine the smallest number of voters needed to win at least 270 electoral college seats, which is the minimum required to win the presidency.
-variables: x = [x1, x2, ..., x51], y = [y1, y2, ..., y51], z, s. These variables represent the following: x is a binary array where xi = 1 if the ith state is won, and 0 otherwise; y is an array where yi is the number of electoral college votes won in the ith state; z is the total population of the won states; and s is the number of won states. 
-constraints: ∑(i in STATES) (yi) ≥ Need, where Need = 270. This constraint ensures that the total number of electoral college votes won is at least 270. 
-objective: minimize z, which represents the total population of the won states. The objective is to find the smallest number of voters needed to win at least 270 electoral college seats.

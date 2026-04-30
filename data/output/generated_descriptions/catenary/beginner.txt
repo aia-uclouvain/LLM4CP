@@ -1,5 +1,0 @@
-Catenary Problem
-The problem is about finding the shape of a hanging chain. 
-The main variables are the x and y coordinates of the chain links, which represent the position of each link in space.
-The basic restrictions are that the chain has a fixed length, the distance between each link is limited, and the chain is attached to two points. 
-The goal is to minimize the potential energy of the chain, which is a measure of how much energy the chain has due to its position.

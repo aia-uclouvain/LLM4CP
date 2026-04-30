@@ -1,5 +1,0 @@
-The Farmer and Cow Problem
-The problem is about a farmer who has 81 cows, each producing a different amount of milk, and 9 sons. 
-The main decision variables are the quantity of milk for each son and which cow is assigned to which son. 
-The key constraints are that each son must receive 9 cows, each cow can only be assigned to one son, the total amount of milk produced by the cows assigned to each son must be the same, and the total amount of milk produced by all cows must be distributed evenly among the sons. 
-The objective of the problem is to find a distribution of cows to sons such that the total quantity of milk produced by the cows assigned to each son is the same, effectively maximizing the fairness of the distribution.

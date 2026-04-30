@@ -1,5 +1,0 @@
-Appointment Scheduling Problem
-The problem is about scheduling interviews between an employer and several people. 
-The main variables are the people and the time slots available for the interviews, where each person has a schedule showing which time slots they are free. 
-The basic restrictions are that each person can only be assigned to a time slot when they are free, and each time slot can only be assigned to one person. 
-The goal of the problem is to find a schedule that assigns each person to a time slot, if possible, and to indicate if it's impossible to find such a schedule.

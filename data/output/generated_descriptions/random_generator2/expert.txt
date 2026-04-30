@@ -1,5 +1,0 @@
-name: Randomly Generated Integer Equations Problem
-description: This problem involves solving a system of linear equations where the coefficients are randomly generated. The goal is to find integer values for the variables that satisfy these equations.
-variables: $x = [x_1, x_2, ..., x_n]$, where $x$ is an array of decision variables representing the integer values to be found, and $n$ is the number of variables.
-constraints: $\forall i \in \{1, 2, ..., n-1\}: x_i \geq 0 \wedge x_{i+1} + x_i = rand_i + rand_{i+1}$, where $rand_i$ are randomly generated coefficients. These constraints ensure that each pair of consecutive variables sums up to the corresponding randomly generated values.
-objective: The objective of this problem is to find a satisfying assignment, as indicated by the `solve satisfy` statement, meaning that the goal is to find values for the variables that satisfy all the given constraints, rather than minimizing or maximizing a specific value.

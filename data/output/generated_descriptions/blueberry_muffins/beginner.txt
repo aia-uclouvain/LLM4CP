@@ -1,5 +1,0 @@
-Blueberry Muffins problem
-The problem is about figuring out who ate how many blueberry muffins in a house with four people. 
-The main variables are the first names, last names, jobs, and number of muffins each person ate. 
-The basic restrictions are that each person ate a different number of muffins, and there are specific clues about who ate how many, such as Bill and Ellis together ate six muffins. 
-The goal is to determine each person's full name, job, and number of muffins they ate.

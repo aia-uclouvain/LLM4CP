@@ -1,5 +1,0 @@
-The problem is called "Another Kind of Magic Square". 
-This problem is about arranging numbers from 1 to n*n in an n x n grid such that the sum of the numbers surrounding each number is a multiple of that number. 
-The main decision variable is a 2D array `magic` where `magic[i,j]` represents the number placed at the i-th row and j-th column in the grid. 
-The key constraints are that all numbers from 1 to n*n must be used exactly once, and for each number in the grid, the sum of its neighboring numbers must be a multiple of that number. 
-The objective of this problem is to find a satisfying assignment of numbers to the grid, rather than minimizing or maximizing a specific value, as indicated by the `solve satisfy` statement.

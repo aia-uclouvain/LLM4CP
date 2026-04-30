@@ -1,5 +1,0 @@
-The Four Number Problem
-The Four Number Problem is about finding three numbers that can be added together in different combinations to generate four given numbers.
-The main decision variables are `x`, an array of three variables representing the three numbers to be found, and `r`, an array of four given numbers.
-The key constraints are that each of the four given numbers can be expressed as a sum of a combination of the three numbers `x`, and that the three numbers `x` are distinct and in increasing order.
-The objective of the problem is to find a set of three numbers `x` that satisfy the constraints, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

@@ -1,5 +1,0 @@
-Number Place Puzzle
-The problem is about placing numbers 1 through 8 on a set of connected nodes in such a way that no two connected nodes have consecutive numbers.
-The main variables are the numbers 1 through 8, which will be placed on the nodes, and the connections between the nodes, which are defined in the graph.
-The basic restrictions are that each number can only be used once, and no two connected nodes can have consecutive numbers, meaning that if two nodes are connected, the numbers on them cannot be one after the other.
-The goal of the problem is to find a way to place the numbers 1 through 8 on the nodes that satisfies these restrictions, and the model will output one possible solution.

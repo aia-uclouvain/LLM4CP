@@ -1,5 +1,0 @@
-Language Puzzle
-The problem is about figuring out which languages each person in a group knows, given some information about how many people know each language. 
-The main variables are the people in the group and the languages they know, with each person having a set of languages they are familiar with. 
-The basic restrictions are that a certain number of people know each language, and each person knows a certain number of languages. 
-The goal is to find a possible combination of languages for each person that satisfies the given information, with the option to maximize the number of languages the first person knows.

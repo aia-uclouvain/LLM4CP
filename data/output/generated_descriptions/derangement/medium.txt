@@ -1,5 +1,0 @@
-Derangement Problem
-The Derangement Problem is about finding a permutation of objects where no object is in its original position. 
-The main decision variable is an array `x` of size `n`, where `x[i]` represents the new position of the object originally at position `i`.
-The key constraints are that each object must be moved to a different position, and the permutation must satisfy the given example, which is enforced by the `cp1d` constraint. In plain language, this means that the new position of each object must be different from its original position, and the resulting permutation must match the given example. 
-The objective of the problem is to find a satisfying assignment, which means finding a permutation that satisfies the derangement constraint and the given example, rather than minimizing or maximizing a specific value.

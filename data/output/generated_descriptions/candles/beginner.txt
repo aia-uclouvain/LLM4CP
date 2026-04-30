@@ -1,5 +1,0 @@
-Candles problem
-The problem is about figuring out how old Marshall and Lily's 7 children are and how many candles their uncle Barney bought for their birthday cake this year and last year. 
-The main variables are the ages of the children this year and last year, and the number of candles Barney bought this year and last year. 
-The basic restrictions are that the children were born in 6 consecutive years, each child is one year older than they were last year, and Barney bought 2 more candles this year than last year. The total number of candles is equal to the sum of the children's ages. 
-The goal is to find a solution that satisfies all these conditions, which will give the ages of the children and the number of candles Barney bought.

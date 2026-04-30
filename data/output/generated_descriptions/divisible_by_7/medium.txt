@@ -1,5 +1,0 @@
-The problem is called the "Divisible by 7" problem. 
-It is about arranging three cubes with numbers 6, 3, and 1 on their sides in a line to form a 3-digit number that is divisible by 7, with the additional twist that the 6 cube could also be a 9. 
-The main decision variables are the array x, which represents the numbers on the three cubes, and the variable z, which represents the 3-digit number formed by arranging the cubes. 
-The key constraints are that each cube must be used exactly once, the 3-digit number must be divisible by 7, and only one of the numbers 6 or 9 can be used. 
-The problem's objective is to find a satisfying arrangement of the cubes, meaning one that meets all the constraints, rather than minimizing or maximizing a specific value.

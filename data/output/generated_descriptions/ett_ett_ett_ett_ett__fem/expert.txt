@@ -1,5 +1,0 @@
-name: Swedish Puzzle
-description: The Swedish Puzzle is a classic problem in constraint programming where the goal is to find a solution to the equation ETT+ETT+ETT+ETT+ETT=FEM, where each letter represents a unique digit from 0 to 9, and the equation is a valid arithmetic expression.
-variables: $E, T, F, M$ - These variables represent the digits for each letter in the equation, where $E$ represents the digit for the letter "E", $T$ represents the digit for the letter "T", $F$ represents the digit for the letter "F", and $M$ represents the digit for the letter "M".
-constraints: $100E + 10T + T + 100E + 10T + T + 100E + 10T + T + 100E + 10T + T + 100E + 10T + T = 100F + 10E + M \wedge E > 0 \wedge F > 0 \wedge \text{all\_different}([E,T,F,M])$ - These constraints ensure that the equation is satisfied, the first digit of each number is non-zero, and all digits are unique.
-objective: satisfy - The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

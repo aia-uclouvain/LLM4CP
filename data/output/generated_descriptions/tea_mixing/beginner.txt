@@ -1,5 +1,0 @@
-Dudeney's Tea Mixing Problem
-The problem is about mixing different types of tea to get a certain total amount and total cost. 
-The main variables are the amount of each type of tea to mix, and the total cost of the mix. 
-The basic restrictions are that you can't mix a negative amount of tea, the total cost of the mix must be exactly 570, and the total amount of tea must be exactly 20 pounds. 
-The goal is to find the cheapest way to mix the teas, by minimizing the total cost.

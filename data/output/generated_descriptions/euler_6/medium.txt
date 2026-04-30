@@ -1,5 +1,0 @@
-The problem is called the Sum of Squares and Square of Sum problem. 
-It is about finding the difference between the sum of the squares of the first n natural numbers and the square of the sum of the first n natural numbers. 
-The main decision variables are ss, which represents the sum of the squares of the first n natural numbers, and s, which represents the sum of the first n natural numbers. 
-The key constraints are that ss must be equal to the sum of the squares of the numbers from 1 to n, and s must be equal to the sum of the numbers from 1 to n. 
-The problem's objective is to find the difference between the square of the sum and the sum of the squares, which is calculated as s2 - ss, where s2 is the square of the sum.

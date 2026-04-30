@@ -1,5 +1,0 @@
-name: Combinatorial Auction Problem
-description: The Combinatorial Auction Problem is a classic problem in operations research and computer science, where a set of bidders submit bids on combinations of items, and the goal is to select a subset of the bids to accept in order to maximize the total value of the accepted bids, while ensuring that each item is not sold more than once.
-variables: $x = (x_1, x_2, ..., x_{nBids})$, where $x_i$ is a binary decision variable that represents whether the $i^{th}$ bid is accepted (1) or not (0).
-constraints: $\sum_{i: item \in bid_i} x_i \leq 1 \forall item$, which ensures that for each item, at most one bid that contains the item is accepted, preventing the intersection of bids.
-objective: Maximize $\sum_{i=1}^{nBids} x_i \cdot value_i$, which represents the total value of the accepted bids.

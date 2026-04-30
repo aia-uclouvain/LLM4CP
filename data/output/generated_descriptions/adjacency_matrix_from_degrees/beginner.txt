@@ -1,5 +1,0 @@
-The name of the problem is the Graph Reconstruction Problem. 
-This problem is about trying to figure out how a group of things are connected to each other, given how many connections each thing has. 
-The main variables are the degrees of each vertex, which represent how many connections each thing has, and the adjacency matrix x, which represents how the things are connected to each other. 
-The basic restrictions or rules of the problem are that each thing can only have as many connections as its degree, and that the connections between things must be two-way, meaning if thing A is connected to thing B, then thing B must also be connected to thing A. 
-The goal of the problem is to determine whether there is only one possible way to connect the things, or if there are many possible ways, given the degrees of each thing.

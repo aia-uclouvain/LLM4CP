@@ -1,8 +1,0 @@
-Lightmeal problem
-The problem is about creating meals that are not too high in calories. Imagine you're planning a meal that has three parts: an appetizer, a main course, and a dessert. You have a list of foods and their calorie counts, and you want to choose one food from each category so that the total calories of the meal are 10 or less.
-
-The main variables are the appetizer, main course, and dessert, which are the three parts of the meal. These variables represent the foods you will choose for each part of the meal.
-
-The basic restrictions or rules of the problem are that you must choose one appetizer, one main course, and one dessert, and the total calories of these foods cannot exceed 10. Also, for the main course, you can either choose a meat or a fish, but not both.
-
-The goal of the problem is to find all possible meals that meet these rules, and to show the total calories of each meal, as well as the specific foods chosen for each part of the meal.

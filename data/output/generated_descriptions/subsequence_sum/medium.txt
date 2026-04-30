@@ -1,5 +1,0 @@
-The Minimum Subsequence Sum Problem
-The problem is about finding a subsequence of a given sequence with a specific length that has the minimum sum.
-The main decision variables are `x_s`, which represents the subsequence, and `ss_sum`, which represents the sum of the subsequence. The variable `x` represents the original sequence.
-The key constraints are that `x_s` must be a subsequence of `x`, meaning all elements in `x_s` must appear in the same order in `x`, and the positions of the elements in `x_s` must be in increasing order in `x`. Additionally, the length of `x_s` is fixed to `m`.
-The objective of the problem is to minimize `ss_sum`, which is the sum of the elements in the subsequence `x_s`. In other words, the goal is to find the subsequence of length `m` with the smallest possible sum.

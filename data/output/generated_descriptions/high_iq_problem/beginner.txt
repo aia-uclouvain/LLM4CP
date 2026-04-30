@@ -1,5 +1,0 @@
-High IQ Problem
-The problem is about finding the length of a shaded square in a larger square that contains 24 smaller squares, each with a different size. 
-The main variables are L1 to L25, which represent the lengths of the sides of the 24 smaller squares and the shaded square. 
-The basic restrictions are that each smaller square has a unique size, the sizes are ordered from smallest to largest, and the sum of the squares of the sizes of the first 24 squares is equal to the square of the size of the shaded square. There are also other restrictions that relate the sizes of the squares to each other. 
-The goal of the problem is to find the length of the shaded square, which is represented by L25.

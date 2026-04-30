@@ -1,5 +1,0 @@
-Number Theoretic Puzzle
-The problem is about finding three-digit numbers that, when multiplied by the next number, result in a number that is the same when its digits are repeated. 
-The main variables are x, y, and z, which represent the three-digit number, its successor, and the product of x and y, respectively. 
-The basic restrictions are that x and y are three-digit numbers, y is the next number after x, the product of x and y equals z, and the first three digits of z are the same as the last three digits. 
-The goal is to find all such three-digit numbers x that satisfy these conditions.

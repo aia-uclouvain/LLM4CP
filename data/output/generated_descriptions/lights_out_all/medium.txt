@@ -1,5 +1,0 @@
-The name of the problem is the Lights Out Variant puzzle. 
-This problem is about finding a sequence of light switch flips to turn all lights off, with the constraint that flipping a light switch also flips all lamps in the same row and column. 
-The main decision variables are `s`, a 2D array representing the solution, where `s[i,j]` is 1 if the light switch at position `(i,j)` is flipped and 0 otherwise, and `y`, an auxiliary 2D array used to calculate the final state of the lights. 
-The key constraints are that the final state of each light is determined by the initial state, the number of times the light switch in the same row and column is flipped, and the number of times the light switch itself is flipped. 
-The objective of the problem is to minimize the total number of light switch flips, represented by the variable `m`, which is the sum of all elements in the `s` array.

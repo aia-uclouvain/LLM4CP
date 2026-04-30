@@ -1,5 +1,0 @@
-Distance Change Problem
-The Distance Change problem is about measuring the number of times the relationship between two sequences of variables changes. 
-The main decision variables are `dist`, `v1`, and `v2`, where `dist` represents the total number of distance changes, and `v1` and `v2` are arrays of variables representing the two sequences. 
-The key constraints are that `v1` and `v2` must match given sequences, and the `distance_change` constraint, which counts the number of times the relationship between `v1` and `v2` changes. This relationship is defined by a comparison operator `ctr`, which in this case is "not equal to" (`!=`). 
-The problem's objective is to satisfy all constraints, specifically to find the value of `dist` that represents the number of distance changes between `v1` and `v2`.

@@ -1,5 +1,0 @@
-Latin Square Card Puzzle
-The problem is about arranging a set of special cards in a square pattern. 
-The main variables are the cards, which have two properties: a value (like a king or a queen) and a suit (like hearts or diamonds). 
-The basic restrictions are that no value or suit can be repeated in any row, column, or diagonal of the square. 
-The goal is to find a way to arrange all the cards in the square so that these rules are followed, which is a kind of puzzle.

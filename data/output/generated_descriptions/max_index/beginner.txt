@@ -1,5 +1,0 @@
-The problem is called Max Index. 
-It's about finding the position of the largest value in a list of numbers. 
-The main variables are: variables (a list of numbers), max_ind (the position of the largest number), and max_val (the largest number itself). 
-The basic restrictions are that the list of numbers must match a given list, and max_ind and max_val must be related to the largest number in the list. 
-The goal is to find the position and value of the largest number in the list, given that the list must match a specific set of numbers.

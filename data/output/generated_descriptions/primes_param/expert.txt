@@ -1,5 +1,0 @@
-name: Prime Sum Problem
-description: The problem is to find a set of n different prime numbers whose sum is also a prime number, where n is a given integer and the prime numbers are within a specified range.
-variables: x = (x_1, x_2, ..., x_n), z: The decision variables x_i represent the n different prime numbers to be selected, and z represents the sum of these prime numbers, which must also be a prime number.
-constraints: alldifferent(x) ∧ increasing(x) ∧ x_i ∈ primes ∧ z = ∑x_i ∧ z ∈ primes: The constraints ensure that all selected prime numbers are distinct (alldifferent), in increasing order (increasing), within the set of prime numbers (x_i ∈ primes), and their sum (z) is also a prime number (z ∈ primes).
-objective: satisfy: The objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

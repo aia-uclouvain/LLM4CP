@@ -1,5 +1,0 @@
-name: Not All Equal Problem
-description: The Not All Equal Problem is a constraint satisfaction problem where the goal is to find an assignment of values to a set of variables such that not all variables take the same value.
-variables: $variables = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the value assigned to the $i^{th}$ variable, and each $x_i$ can take a value from the set $\{1, 2, 3\}$.
-constraints: $cp1d(variables, [3,1,3,3,3]) \wedge not\_all\_equal(variables)$, where $cp1d(variables, [3,1,3,3,3])$ ensures that the values assigned to the variables are equal to the values in the array $[3,1,3,3,3]$, and $not\_all\_equal(variables)$ ensures that not all variables take the same value.
-objective: The objective of the problem is to find a satisfying assignment, i.e., to satisfy the given constraints, as indicated by the $solve satisfy$ statement in the MiniZinc model.

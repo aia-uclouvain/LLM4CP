@@ -1,6 +1,0 @@
-The problem is called the "Final Student Problem". 
-It's about a teacher, Mrs. Krabappel, who has almost finished grading her students' tests, with just one test left to grade. 
-The main variables are the number of students in the class (n) and the scores of the students who have already taken the test (x). 
-The scores are like grades, and they can be any number from 0 to 100. 
-The basic restrictions are that if the last student scores 7%, the class average will be 90%, and if they score 92%, the class average will be 95%. 
-The goal is to figure out how many students are in the class.

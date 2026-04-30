@@ -1,5 +1,0 @@
-name: The Super Number Problem
-description: The problem is to find a 10-digit number where all digits from 0 to 9 occur exactly once, and the first i digits are divisible by i, for i ranging from 1 to 10.
-variables: $x_1, x_2, ..., x_{10}$, where $x_i$ represents the i-th digit of the number, and is a decision variable that can take any integer value from 0 to 9.
-constraints: $\bigwedge_{i=1}^{10} x_i \neq x_j \forall i \neq j, \bigwedge_{i=2}^{10} (\sum_{j=1}^{i} x_j \cdot 10^{i-j}) \mod i = 0$, which are the all different constraint and the divisibility constraints for each prefix of the number.
-objective: The problem is a satisfaction problem, meaning that the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

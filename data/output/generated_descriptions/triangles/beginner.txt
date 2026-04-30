@@ -1,8 +1,0 @@
-Triangle Problem
-The problem is about filling in numbers from 0 to 9 in a triangle shape, with each number used only once, in such a way that certain sums of numbers are equal.
-The main variables are A, B, C, D, E, F, G, H, I, and J, which represent the numbers to be filled in the triangle.
-The basic restrictions are that each number from 0 to 9 can only be used once, and the sums of certain groups of numbers must be equal, specifically: 
-- the sum of the top, middle right, bottom right, and bottom far right numbers (A + C + F + J) must be equal to the sum of the top, top left, middle left, and bottom left numbers (A + B + D + G), 
-- the sum of the top, top left, and top right numbers (A + B + C) must be equal to the sum of the middle left, bottom left, and bottom middle numbers (D + G + H), 
-- and the sum of the middle left, bottom left, and bottom middle numbers (D + G + H) must be equal to the sum of the bottom right, bottom middle, and bottom far right numbers (F + I + J).
-The goal of the problem is to find all possible combinations of numbers that satisfy these conditions.

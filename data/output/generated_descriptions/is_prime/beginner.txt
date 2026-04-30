@@ -1,5 +1,0 @@
-Primes problem. 
-This problem is about finding all prime numbers up to a certain limit, which is 100 in this case. 
-The main variables are primes, which is a set of numbers that are prime, and num_primes, which is the total count of prime numbers. 
-The basic restrictions or rules of the problem are that a prime number must be greater than 1 and can only be divided by 1 and itself. 
-The goal of the problem is to identify all prime numbers up to the given limit and count how many there are.

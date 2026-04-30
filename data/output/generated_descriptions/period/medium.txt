@@ -1,5 +1,0 @@
-Period Constraint Problem
-The Period Constraint Problem is about finding a sequence of values that repeats itself after a certain period. 
-The main decision variables are `x`, an array of variables representing the sequence, and `the_period`, an array of variables representing the period of the sequence. 
-The key constraints are that the sequence `x` must have a period of length `per_len`, meaning that the sequence repeats itself every `per_len` elements, and that the first `per_len` elements of `x` must be equal to the corresponding elements in `the_period`. 
-The objective of the problem is to find a sequence `x` that satisfies the period constraint, and to identify the period of the sequence, which is stored in `the_period`.

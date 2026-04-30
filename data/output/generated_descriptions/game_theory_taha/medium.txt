@@ -1,5 +1,0 @@
-Two-player zero-sum game
-The problem is about finding the optimal strategy for a two-player game where one player's gain is equal to the other player's loss.
-The main decision variables are `x`, which represents the probability distribution over the columns (or actions) for the row player, and `v`, which represents the expected value (or payoff) of the game.
-The key constraints are that the row player's strategy (`x`) must be a valid probability distribution, meaning that all probabilities are non-negative and sum up to 1. Additionally, the expected value (`v`) must be less than or equal to the payoff for each possible action of the column player.
-The objective of the problem is to maximize the expected value (`v`) of the game for the row player, which means finding the optimal strategy that minimizes the maximum possible loss.

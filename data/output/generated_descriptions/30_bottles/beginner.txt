@@ -1,5 +1,0 @@
-30 Bottles Problem
-The problem is about dividing a set of bottles among three sons in a way that each son gets the same number of bottles and the same amount of oil. 
-The main variables are the number of bottles of each type, the amount of oil in each type of bottle, and the number of sons. 
-The basic restrictions are that each son must get the same number of bottles and the same amount of oil, and that the total number of bottles and oil must be divided evenly among the sons. 
-The goal is to find all possible ways to divide the bottles among the sons while meeting these conditions.

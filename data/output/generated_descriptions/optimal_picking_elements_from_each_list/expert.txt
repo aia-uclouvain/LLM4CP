@@ -1,9 +1,0 @@
-name: Optimal Picking One Element from Each List Problem
-
-description: The problem involves picking one element from each list in a given collection of lists such that the number of elements that are identical to their next neighbor is maximized, or equivalently, the number of interruptions of identical contiguous elements is minimized.
-
-variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the element picked from the $i^{th}$ list, and $sum\_diffs$ is a variable representing the total number of differences between consecutive picked elements. These variables determine the selected elements from each list and the total number of interruptions.
-
-constraints: $x_i \in s_i$ for $i = 1, 2, ..., n$, and $sum\_diffs = \sum_{i=2}^{n} (x_i \neq x_{i-1})$. The first set of constraints ensures that each picked element belongs to its respective list, and the second constraint calculates the total number of interruptions by counting the number of times the picked elements change.
-
-objective: Minimize $sum\_diffs$, which represents the total number of interruptions of identical contiguous elements.

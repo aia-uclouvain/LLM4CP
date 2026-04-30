@@ -1,5 +1,0 @@
-Appointment Scheduling Problem
-The problem is about scheduling interviews between an employer and N people, where each person has a free-busy schedule for N interview slots.
-The main decision variables are the array `x` of size N, where `x[i]` represents the interview slot assigned to person `i`.
-The key constraints are that each person can only be assigned to a slot that they are free (i.e., `x[i] in s[i]`), and that each slot can only be assigned to one person (i.e., `alldifferent(x)`).
-The objective of the problem is to find a feasible assignment of people to slots, if one exists, and return the assignment. If no feasible assignment exists, the problem is unsolvable.

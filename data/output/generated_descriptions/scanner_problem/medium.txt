@@ -1,8 +1,0 @@
-Scanner Problem
-The Scanner problem is a classic constraint programming problem where the goal is to reveal the contents of a grid based on given constraints. 
-The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents whether the cell at row `i` and column `j` is filled (1) or not filled (0).
-The key constraints in this problem are:
-- Each row must have a specified number of filled cells.
-- Each column must have a specified number of filled cells.
-- Each diagonal (from upper-left to lower-right and from upper-right to lower-left) must have a specified number of filled cells.
-The objective of the Scanner problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of filled and non-filled cells that meets all the given constraints, effectively "revealing" the hidden pattern in the grid.

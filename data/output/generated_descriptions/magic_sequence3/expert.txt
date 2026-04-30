@@ -1,5 +1,0 @@
-name: Magic Sequence Problem
-description: The Magic Sequence Problem is a constraint satisfaction problem where we need to find a sequence of integers of length n, such that for all i in 0 to n-1, the number i occurs exactly xi times in the sequence, where xi is the value at index i in the sequence.
-variables: $s = [s_0, s_1, ..., s_{n-1}]$, where $s_i$ represents the number of times the number i appears in the sequence, and is a decision variable that can take any integer value between 0 and n-1.
-constraints: $\bigwedge_{i=0}^{n-1} distribute(s, value, s) \wedge \sum_{i=0}^{n-1} s_i = n \wedge \sum_{i=0}^{n-1} s_i \cdot i = n$, which represent the following constraints: the distribution of the numbers in the sequence must match the sequence itself, the total count of numbers in the sequence must be equal to n, and the weighted sum of the numbers in the sequence must be equal to n.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to solve the problem as a satisfaction problem, there is no explicit objective function to minimize or maximize.

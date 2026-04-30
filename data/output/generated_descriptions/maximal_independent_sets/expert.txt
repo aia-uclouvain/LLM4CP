@@ -1,5 +1,0 @@
-name: Maximal Independent Set
-description: The Maximal Independent Set problem is a classic problem in graph theory and computer science. Given a graph, the goal is to find a set of vertices such that no two vertices in the set are adjacent, and every vertex not in the set is adjacent to at least one vertex in the set. This set is called a maximal independent set. The problem has numerous applications in fields like computer networks, scheduling, and resource allocation.
-variables: $x = (x_1, x_2, ..., x_n)$, where $x_i$ is a binary decision variable indicating whether vertex $i$ is included in the maximal independent set. 
-constraints: $x_i = 1 \leftrightarrow \forall j \in v_i (x_j = 0)$ for all $i$, where $v_i$ is the set of neighbors of vertex $i$. This constraint ensures that if a vertex is included in the set, none of its neighbors can be included.
-objective: maximize $k = \sum_{i=1}^{n} x_i$, which represents the cardinality of the maximal independent set.

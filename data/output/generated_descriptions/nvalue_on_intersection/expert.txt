@@ -1,5 +1,0 @@
-name: Nvalue Common Problem
-description: The Nvalue Common Problem is a constraint satisfaction problem that involves finding the number of distinct values that are common to two collections of variables. The problem is defined by two arrays of variables, variables1 and variables2, and the goal is to determine the number of unique values that appear in both arrays.
-variables: $nval, variables1, variables2$ - $nval$ is an integer variable representing the number of distinct common values, $variables1$ and $variables2$ are arrays of integer variables representing the two collections of values.
-constraints: $nval = card(set1 \cap set2), cp1d(variables1, [1,9,1,5]), cp1d(variables2, [2,1,9,9,6,9]), nval = 2$ - these constraints ensure that $nval$ is equal to the number of distinct common values between $variables1$ and $variables2$, that $variables1$ and $variables2$ are assigned the given values, and that $nval$ is equal to 2.
-objective: satisfy - the objective of the problem is to find an assignment of values to the variables that satisfies all the constraints, rather than minimizing or maximizing a specific value.

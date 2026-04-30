@@ -1,5 +1,0 @@
-The problem is called the "Coin Problem" or "Change-Making Problem". 
-It is about finding the minimum number of coins of different denominations that add up to a given amount of money, with the constraint that there is exactly the same number of each coin. 
-The main decision variables are the array `x`, where `x[i]` represents the number of coins of denomination `denom[i]`. 
-The key constraints are that the total value of the coins must equal the given amount (£41.58), each coin count must be non-negative, and for any two coin denominations, either they have the same count or at least one of them has a count of 0. 
-The objective of the problem is to minimize the total number of coins, `num_coins`, which is the sum of the counts of all coin denominations.

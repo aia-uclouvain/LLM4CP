@@ -1,5 +1,0 @@
-The problem is called the Grocery problem. 
-It's about a kid who buys four items at a store and the total cost is $7.11. The cashier made a mistake by multiplying the prices instead of adding them, but surprisingly, the total is still $7.11 when the prices are added. 
-The main variables are A, B, C, and D, which represent the prices of the four items in cents. 
-The basic restrictions are that each item must cost between 1 cent and 711 cents, the prices must be added to get 711 cents, and when the prices are multiplied in a certain way, the result must be a very large number that equals 711 times 100 cubed. The prices also have to follow a certain order, where A is less than or equal to B, B is less than or equal to C, and C is less than or equal to D. 
-The goal is to find the prices of the four items, which are the values of A, B, C, and D.

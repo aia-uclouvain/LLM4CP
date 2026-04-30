@@ -1,5 +1,0 @@
-Seven11 puzzle
-The problem is about finding four numbers that add up to 711 and when multiplied together result in 711 multiplied by 100^3. 
-The main variables are four numbers, x, which represent the four unknown values that need to be found.
-The basic restrictions are that the four numbers must add up to 711, their product must be 711 * 100^3, and they must be in increasing order.
-The goal of the problem is to find a set of four numbers that satisfy these conditions, with no specific objective to minimize or maximize, but rather to find a solution that meets all the given constraints.

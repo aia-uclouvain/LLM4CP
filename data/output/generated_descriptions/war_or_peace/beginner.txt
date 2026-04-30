@@ -1,5 +1,0 @@
-War or Peace problem 
-This problem is about countries and their relationships with each other. Imagine you have a group of countries, and each country is either at war or has a peace treaty with every other country. 
-The main variables are the countries and their relationships, which are represented by a grid where each box shows whether two countries are at war or have a peace treaty. 
-The basic rules are that if two countries have a common enemy, they must have a peace treaty, and each pair of countries is either at war or has a peace treaty. 
-The goal is to find the minimum number of peace treaties that can exist between the countries while still following these rules.

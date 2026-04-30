@@ -1,8 +1,0 @@
-The Caesar Cipher Problem
-The problem is about encrypting a given text using a Caesar cipher, specifically the Rot13 encryption method, where each letter in the text is shifted by a fixed number of positions in the alphabet.
-
-The main decision variables are `rotated`, an array of variables representing the encrypted text, where each element `rotated[i]` corresponds to the encrypted character at position `i` in the original text. The `text` array represents the original text to be encrypted, where each element `text[i]` is a number between 1 and 26, corresponding to a letter in the alphabet (A=1, B=2, ..., Z=26).
-
-The key constraints are that each character in the original text is shifted by a fixed number of positions (`rot = 13`) in the alphabet to obtain the encrypted character. If the shifted position is greater than the length of the alphabet, the constraint wraps around to the beginning of the alphabet. For example, if the original character is 'z' (26) and the shift is 13, the encrypted character would be 'm' (13), since 26 + 13 = 39, and 39 mod 26 = 13.
-
-The problem's objective is not to minimize or maximize a specific value, but rather to satisfy the constraints, which means finding the encrypted text that results from applying the Caesar cipher to the original text. The `solve satisfy` statement in the model indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. The output of the model is the encrypted text, represented by the `rotated` array.

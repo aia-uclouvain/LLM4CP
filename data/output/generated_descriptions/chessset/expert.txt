@@ -1,5 +1,0 @@
-name: Integer Programming Problem
-description: This problem is a classic example of an integer programming problem, where the goal is to maximize a linear objective function subject to a set of linear constraints. The problem involves two types of sets, small and large, with different coefficients and constraints.
-variables: smallset, largeset - These are the decision variables, where smallset and largeset represent the number of small and large sets, respectively, and are integers.
-constraints: smallset >= 0, largeset >= 0, 1*smallset + 3*largeset <= 200, 3*smallset + 2*largeset <= 160 - These constraints ensure that the number of small and large sets is non-negative and that the total resources used do not exceed the available limits, with the first constraint limiting the total resource usage to 200 units and the second constraint limiting it to 160 units, with different usage rates for small and large sets.
-objective: maximize 5*smallset + 20*largeset - The objective is to maximize the total value, which is calculated as 5 times the number of small sets plus 20 times the number of large sets.

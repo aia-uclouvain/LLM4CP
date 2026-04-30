@@ -1,5 +1,0 @@
-The problem is called "Another Kind of Magic Square". 
-It's about arranging numbers in a special square so that the numbers around each number add up to a multiple of that number. 
-The main variables are the numbers in the square, which are represented by "magic". 
-The basic restrictions are that each number in the square must be different, and the numbers surrounding each number must add up to a multiple of that number. 
-The goal is to find a way to arrange the numbers in the square that satisfies these rules, and the model uses a method to search for the solution that tries to assign the smallest possible numbers to the variables first.

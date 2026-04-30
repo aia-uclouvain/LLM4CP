@@ -1,5 +1,0 @@
-Magic Modulo Number problem. 
-This problem is about finding a specific number that has a unique property when divided by other numbers. 
-The main variable is "x", which is the number we're trying to find. 
-The basic restrictions or rules of the problem are that when "x" is divided by numbers from 2 to 10, the remainder is always one less than the number it's being divided by. 
-The goal of the problem is to find the smallest possible "x" that satisfies all these rules.

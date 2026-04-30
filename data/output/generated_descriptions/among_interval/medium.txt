@@ -1,5 +1,0 @@
-Among Interval Problem
-The Among Interval problem is about finding the number of variables in a collection that take a value within a specified interval.
-The main decision variables are x, an array of variables representing the collection of values, and nvar, low, and up, which represent the number of variables within the interval, the lower bound of the interval, and the upper bound of the interval, respectively.
-The key constraints are that the values of x must match a given array of integers, and the number of variables in x that fall within the interval [low, up] must be equal to nvar. In plain language, this means that the model must find how many values in the array x are between the lower and upper bounds.
-The objective of the problem is not to minimize or maximize a specific value, but rather to satisfy the given constraints, specifically the among_interval constraint, which holds when the number of values within the interval matches the given value nvar. In this case, the model is looking to find a solution where 3 values in the array x are within the interval [3, 5].

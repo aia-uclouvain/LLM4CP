@@ -1,5 +1,0 @@
-Divisible by Unit Digits Problem
-The problem is about finding whole numbers between 10 and 50 that are divisible by their unit digits.
-The main decision variable is an array `x` of size 41, where `x[i]` represents whether the number `i` is divisible by its unit digit (1 if it is, 0 if it's not).
-The key constraint is that for each number `i` between 10 and 50, `i` is divisible by its unit digit if and only if `x[i]` is 1. In plain language, this means that if a number's unit digit divides the number evenly, then the corresponding decision variable is set to 1, and otherwise, it's set to 0.
-The problem's objective is to count how many numbers between 10 and 50 have this property, which is achieved by summing up the values of the decision variables `x[i]`. The model uses the `solve satisfy` statement, which means it aims to find a solution that satisfies all the constraints, and the output will show the total count of such numbers, as well as the numbers themselves.

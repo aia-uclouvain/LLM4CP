@@ -1,8 +1,0 @@
-name: Assign and Counts Problem
-description: The Assign and Counts problem is a constraint satisfaction problem where we have a set of items, each with a specific color, and a set of bins. The goal is to assign each item to a bin such that the total number of items of a specific color in each bin satisfies a certain condition, defined by a relational operator and a limit.
-variables: $bins = [b_1, b_2, ..., b_n], colors = [c_1, c_2, ..., c_n], color, nval$ 
-These are the decision variables where $bins$ represents the assignment of each item to a bin, $colors$ represents the color of each item, $color$ is the specific color we are focusing on, and $nval$ is the limit on the number of items of the specific color in each bin.
-constraints: $cp1d([1,3,1,1], bins)$, $cp1d([4,4,4,5], colors)$, $color = 4$, $nval = 2$, $assign\_and\_counts(color, bins, colors, -1, nval)$ 
-These constraints ensure that the assignment of items to bins and the colors of the items are as specified, that we are focusing on color 4, that the limit is 2, and that the assign and counts condition is satisfied, which means that for each bin, the number of items of color 4 is less than or equal to 2.
-objective: satisfy 
-The objective of the problem is to find an assignment of items to bins that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

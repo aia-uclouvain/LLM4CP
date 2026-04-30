@@ -1,5 +1,0 @@
-Missing Number Problem
-The problem is about finding a missing number from a concatenated string of numbers from 1 to 250 in random order. 
-The main variables are the missing number, the digits of the missing number, and the positions of the numbers in the concatenated string. 
-The basic restrictions are that the missing number is between 1 and 250, and its digits must match the difference between the sum of all digits of numbers 1-250 and the sum of digits in the given string. 
-The goal is to find the missing number by satisfying these constraints.

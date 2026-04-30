@@ -1,8 +1,0 @@
-Letter Square Problem
-The Letter Square problem is a classic constraint programming problem where the goal is to create a square matrix with a specified size, filled with different letters, such that each row and column contains each letter exactly once, except for blank spaces.
-The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents the letter in the `i-th` row and `j-th` column of the matrix. The values of `x` are integers, where `0` represents a blank space, and positive integers represent different letters.
-The key constraints in this problem are: 
-- Each row and column must contain each letter exactly once, except for blank spaces. 
-- The first non-blank letter seen from the top, bottom, left, and right of each row and column must match the given hints. 
-- The number of blank spaces in each row and column is fixed.
-The objective of the problem is to find a solution that satisfies all the constraints, without any specific minimization or maximization goal. The problem is a satisfaction problem, where the goal is to find a feasible solution that meets all the requirements.

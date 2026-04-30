@@ -1,5 +1,0 @@
-name: Rot13 (Caesar Cipher)
-description: The Rot13 problem is a classic encryption technique that replaces each letter in the input text with the letter 13 positions ahead of it in the alphabet, wrapping around to the beginning of the alphabet when necessary. This problem models the decryption of a given text using the Rot13 cipher.
-variables: $rotated_i$ for $i = 1..len$, where $rotated_i$ represents the $i^{th}$ character in the decrypted string, which is a variable that takes a value from 1 to $alpha\_len$ (the length of the alphabet).
-constraints: $\forall i \in 1..len: rotated_i = \begin{cases} alpha\_len & \text{if } (text_i + rot) \mod alpha\_len = 0 \\ (text_i + rot) \mod alpha\_len & \text{otherwise} \end{cases}$, which ensures that each character in the input text is shifted 13 positions forward in the alphabet, wrapping around to the beginning of the alphabet when necessary.
-objective: The objective of this problem is to satisfy the given constraints, which means finding the decrypted string $rotated$ that corresponds to the input text $text$ using the Rot13 cipher, there is no explicit objective function to minimize or maximize.

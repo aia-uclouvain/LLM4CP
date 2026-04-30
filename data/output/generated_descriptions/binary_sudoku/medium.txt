@@ -1,5 +1,0 @@
-Binary Sudoku
-Binary Sudoku is a constraint programming problem where an NxN matrix must be filled with 0s and 1s, satisfying certain conditions. 
-The main decision variables are the elements of the matrix, represented by `x[i,j]`, which can take values of either 0 or 1. 
-The key constraints are: each row and column must contain an equal number of 0s and 1s, no two rows or columns can be identical, and there can be no sequences of 3 or more consecutive 0s or 1s in rows or columns. 
-The problem's objective is to find a solution that satisfies all the given constraints, with no specific objective function to minimize or maximize, making it a satisfaction problem.

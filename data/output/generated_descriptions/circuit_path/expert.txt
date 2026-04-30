@@ -1,5 +1,0 @@
-name: Circuit Problem
-description: The circuit problem is a classic problem in constraint programming that involves finding a Hamiltonian cycle in a complete graph, which is a closed path that visits each node exactly once. In this problem, we have a set of nodes, and the goal is to find a cycle that passes through each node exactly once and returns to the starting node.
-variables: $x = (x_1, x_2, ..., x_n)$ and $p = (p_1, p_2, ..., p_n)$, where $x_i$ represents the next node in the cycle after node $i$, and $p_i$ represents the $i^{th}$ node in the cycle.
-constraints: $circuit(x)$, $circuit\_path(x, p)$, $all\_different(x)$, $all\_different(p)$, $p_1 = x_1$, $p_n = 1$, and $p_i = x_{p_{i-1}}$, which ensure that the cycle is valid, each node is visited exactly once, and the path is correctly constructed.
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a feasible solution that represents a valid Hamiltonian cycle. There is no explicit objective function to minimize or maximize.

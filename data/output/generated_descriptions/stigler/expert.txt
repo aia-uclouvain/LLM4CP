@@ -1,9 +1,0 @@
-name: Stigler's 1939 Diet Problem
-
-description: The problem is to determine the optimal daily intake of 77 different foods for a moderately active man to meet the recommended daily allowances of 9 essential nutrients while minimizing the total cost of the diet.
-
-variables: $x_c, x_{cost_c}, quant_c$ for $c = 1, \ldots, 77$, where $x_c$ is the amount of food $c$ to be purchased daily, $x_{cost_c}$ is the daily cost of food $c$, and $quant_c$ is the quantity of food $c$ to be purchased daily. These variables represent the decision variables in the problem, which are the amounts and costs of each food item to be included in the diet.
-
-constraints: $\sum_{c=1}^{77} data_{c,n} \cdot x_c \geq allowance_n$ for $n = 3, \ldots, 11$, $x_c \geq 0$ for $c = 1, \ldots, 77$, $x_{cost_c} \geq 0$ for $c = 1, \ldots, 77$, $quant_c \geq 0$ for $c = 1, \ldots, 77$, $x_{cost_c} = days \cdot x_c$ for $c = 1, \ldots, 77$, and $quant_c = 100 \cdot days \cdot x_c / data_{c,1}$ for $c = 1, \ldots, 77$. These constraints ensure that the daily intake of each nutrient meets or exceeds the recommended allowance, that the amounts and costs of each food item are non-negative, and that the cost and quantity of each food item are calculated correctly.
-
-objective: minimize $\sum_{c=1}^{77} x_c$, which represents the total daily cost of the diet. The objective is to find the optimal diet that meets all the nutritional requirements while minimizing the total cost.

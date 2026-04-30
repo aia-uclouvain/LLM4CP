@@ -1,5 +1,0 @@
-Consecutive Digits Puzzle
-The problem is about finding a set of four consecutive digits that can be arranged in a specific way to satisfy an equation. 
-The main variables are A, B, C, and D, which represent four consecutive digits in increasing order, and dots, which represent the same four digits in an unknown order. 
-The basic restrictions are that A, B, C, and D must be consecutive digits, the digits in the dots must be the same as A, B, C, and D, and the sum of the numbers formed by A, B, C, D, and the dots must be 12300. 
-The goal is to find the number represented by the four dots.

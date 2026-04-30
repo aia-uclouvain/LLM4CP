@@ -1,5 +1,0 @@
-The problem is called the 225 Divisor Problem. 
-It's about finding the smallest number that consists only of the digits 1 and 0, and is also divisible by 225. 
-The main variables are x, which represents the digits of the number, and y, which represents the number itself. 
-The basic restrictions are that each digit can only be 0 or 1, and the number must be divisible by 225. 
-The goal is to minimize y, meaning to find the smallest possible number that meets these conditions.

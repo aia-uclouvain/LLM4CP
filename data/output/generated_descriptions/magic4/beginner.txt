@@ -1,5 +1,0 @@
-Magic Square Problem
-The problem is about filling a 4x4 grid with numbers from 1 to 16, so that the sum of numbers in each row, column, and two main diagonals is the same.
-The main variables are X1 to X16, which represent the numbers to be placed in each cell of the grid.
-The basic restrictions are that each number can only be used once, and the sum of numbers in each row, column, and the two main diagonals must be equal to 34.
-The goal of the problem is to find a way to fill the grid that satisfies all these restrictions, which is known as a "magic square".

@@ -1,7 +1,0 @@
-name: Bit Vector Problem
-description: The problem is about finding a number that Alice picked, which when multiplied by 2 and then having its last 4 bits inverted, results in the same number as the initial pick.
-variables: $num, num_x, num2, num2_x, num3, num3_x$ 
-These variables represent the initial number picked by Alice ($num$), its binary representation ($num_x$), the result of multiplying the initial number by 2 ($num2$), its binary representation ($num2_x$), the result of inverting the last 4 bits of $num2$ ($num3$), and its binary representation ($num3_x$).
-constraints: $toNum(num_x, num, 2) \land num2 = 2 \cdot num \land toNum(num2_x, num2, 2) \land toNum(num3_x, num3, 2) \land \forall i \in \{bits-3, \ldots, bits\} (num3_x[i] = 1 \leftrightarrow num2_x[i] = 0) \land num = num3$
-These constraints ensure that $num$ is correctly converted to and from its binary representation, that $num2$ is the result of multiplying $num$ by 2, that $num3$ is the result of inverting the last 4 bits of $num2$, and that $num$ is equal to $num3$.
-objective: The problem does not have a specific objective to minimize or maximize, but rather to find all possible values of $num$ that satisfy the given constraints.

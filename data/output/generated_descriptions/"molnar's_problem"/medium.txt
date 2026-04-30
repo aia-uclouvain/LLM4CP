@@ -1,5 +1,0 @@
-The problem is known as the "Molnar Problem" or "Hadamard Matrix Problem". 
-It is about finding a square matrix of a given size, where each entry is an integer within a specified range, such that the matrix is invertible and has certain properties. 
-The main decision variables are `x[i][j]` and `y[i][j]`, which represent the value of the matrix at row `i` and column `j`, and the square of this value, respectively. 
-The key constraints are that the square of each entry must be equal to the entry multiplied by itself, the determinant of the matrix must be 1, the determinant of the matrix of squared entries must also be 1, and the entries must be lexicographically increasing. 
-The problem's objective is to find such a matrix, which can be seen as a feasibility problem, where the goal is to satisfy all the given constraints.

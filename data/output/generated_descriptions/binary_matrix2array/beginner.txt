@@ -1,9 +1,0 @@
-Binary Matrix to Array Conversion Problem
-The problem is about converting a special kind of table, called a binary matrix, into a list of numbers. 
-The main variables are: 
-- x, which is the binary matrix (a table with 0s and 1s), 
-- a, which is the list of numbers that we want to get from the binary matrix.
-The basic restrictions are: 
-- each row in the binary matrix can only have one 1 (and the rest are 0s), 
-- the list of numbers should match the positions of the 1s in the binary matrix.
-The goal is to find a list of numbers that matches the given binary matrix, following the restrictions.

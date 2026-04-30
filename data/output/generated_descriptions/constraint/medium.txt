@@ -1,5 +1,0 @@
-The problem is called the Cutting Stock Problem. 
-It is about minimizing waste when cutting a set of items of different lengths from a set of stock materials of fixed length. 
-The main decision variables are the coefficients a, which represent how many times each item length is used, and the variable b, which represents the minimum number of stock materials needed. 
-The key constraints are that the total length of items cut from each stock material cannot exceed its length, the total length of items cut must be at least the minimum number of stock materials needed plus one, all coefficients must be non-negative, and the length of items cut must be non-increasing. 
-The problem's objective is to minimize either the minimum number of stock materials needed minus the total length of two specific items, or the sum of the coefficients multiplied by their respective item lengths.

@@ -1,5 +1,0 @@
-The Four Number Problem. 
-This problem is about finding three numbers that can be added together in different ways to get four other given numbers. 
-The main variables are the four given numbers (called "r") and the three numbers we are trying to find (called "x"). 
-The basic restrictions are that each of the three numbers must be between 1 and 10, and that the four given numbers can be made by adding different combinations of the three numbers. 
-The goal is to find all possible sets of three numbers that satisfy these conditions, given a specific set of four numbers.

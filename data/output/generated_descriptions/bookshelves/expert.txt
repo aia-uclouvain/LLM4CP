@@ -1,8 +1,0 @@
-name: Bookshelves Problem
-description: The Bookshelves Problem is a combinatorial optimization problem that involves cutting planks of wood into pieces to build bookshelves. The goal is to maximize the total width of the shelves while satisfying various constraints such as the length of the planks, the thickness of the planks, the vertical gap between shelves, and the maximum width of the shelves.
-variables: $pieces, pfrom$ 
-These are the decision variables where $pieces$ represents the length of each piece of wood and $pfrom$ represents the index of the plank that each piece comes from.
-constraints: $pieces[1] * pieces[2] * pieces[3] > 0$, $pieces[1] = pieces[2]$, $pieces[i] = pieces[3] \lor pieces[i] = 0 \forall i > 3$, $\sum_{i=1}^{maxpieces} pieces[i]*(pfrom[i]=x) + CUTCOST * (\sum_{i=1}^{maxpieces} (pieces[i]>0)*(pfrom[i]=x) - 1) \leq lengths[x] \forall x$, $pieces[1] \geq (sum([(i>2 \land pieces[i]>0)|i:PIECES])) * (thickness+vertical_gap)$, $(maxwidth > 0) \rightarrow (pieces[3] \leq maxwidth)$, $(minshelves > 0) \rightarrow (pieces[minshelves+2] > 0)$
-These constraints ensure that at least three pieces are used, the first two pieces are equal, all other pieces are of equal length, each plank is not overused, each shelf has enough vertical room, and the maximum width and minimum number of shelves are satisfied if specified.
-objective: maximize $\sum_{i=1}^{maxpieces} pieces[i] - (pieces[1]+pieces[2])$ 
-This objective function maximizes the total width of the shelves minus the width of the two uprights.

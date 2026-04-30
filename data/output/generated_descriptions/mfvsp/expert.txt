@@ -1,8 +1,0 @@
-name: Minimum Feedback Vertex Set Problem (MFVSP)
-description: The Minimum Feedback Vertex Set Problem is a classic problem in graph theory and computer science, which involves finding a minimal subset of vertices in a directed graph that, when removed, makes the graph acyclic. In other words, the goal is to identify the smallest set of vertices that, when deleted, breaks all cycles in the graph.
-variables: $n, x_1, x_2, ..., x_{num\_edges}, k_1, k_2, ..., k_n, obj$ 
-These variables represent the following: $n$ is the number of vertices, $x_i$ is a binary variable indicating whether the $i^{th}$ vertex is a feedback vertex, $k_i$ is an integer variable representing the number assigned to vertex $i$, and $obj$ is the objective function value, which is the sum of all $x_i$.
-constraints: $\forall i \in \{1, 2, ..., num\_edges\}, (k_{E[i,2]} - k_{E[i,1]}) \geq 1 - num\_edges \* (x_{E[i,1]} + x_{E[i,2]})$ 
-These constraints ensure that for every arc $(i, j)$ in the graph, if the arc is not part of a cycle (i.e., $x_i = 0$ and $x_j = 0$), then the number assigned to vertex $j$ must be greater than the number assigned to vertex $i$. If the arc is part of a cycle, the constraint is relaxed.
-objective: minimize $obj = \sum_{i=1}^{num\_edges} x_i$ 
-The objective is to minimize the cardinality of the subset of feedback vertices, which is equivalent to minimizing the sum of all $x_i$.

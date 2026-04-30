@@ -1,5 +1,0 @@
-The problem is called the Element Matrix problem. 
-It is about accessing a specific element in a two-dimensional matrix. 
-The main decision variables are index_i, index_j, matrix, and value, which represent the row index, column index, the matrix itself, and the value at the specified position in the matrix, respectively. 
-The key constraints are that the matrix must be equal to a given matrix, the row and column indices must be set to specific values, and the value at the specified position in the matrix must be equal to a given value. 
-The problem's objective is to satisfy these constraints, i.e., to verify that the given value is indeed at the specified position in the given matrix.

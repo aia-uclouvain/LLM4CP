@@ -1,5 +1,0 @@
-name: Clarke's Tobacconist Problem
-description: The problem describes a situation where a tobacconist has to purchase two types of tobacco, with different prices and quantities, to meet a total budget of 2000 units, with the constraint that the quantities of each type of tobacco must be non-negative.
-variables: $x_1, x_2$ - These are the decision variables representing the quantities of each type of tobacco to be purchased.
-constraints: $25x_1 + 49x_2 = 2000, x_1 \geq 0, x_2 \geq 0$ - These constraints represent the total budget constraint and the non-negativity constraints on the quantities of each type of tobacco.
-objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, as indicated by the "solve satisfy" statement in the model, which means that the goal is not to minimize or maximize a specific value, but rather to find a valid combination of tobacco quantities that meet the given conditions.

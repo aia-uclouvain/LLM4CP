@@ -1,5 +1,0 @@
-name: Contracting Costs puzzle
-description: The problem is about finding the individual costs of services for six workers: a paper hanger, a painter, a plumber, an electrician, a carpenter, and a mason. The contractor has six different pairwise cost estimates, and we need to determine the cost of each worker's service.
-variables: Ph, Pa, Pl, El, Ca, Ma. These variables represent the costs of the paper hanger, painter, plumber, electrician, carpenter, and mason, respectively.
-constraints: 1100 = Ph + Pa, 1700 = Pa + Pl, 1100 = Pl + El, 3300 = El + Ca, 5300 = Ca + Ma, 3200 = Ma + Pa. These constraints represent the given pairwise cost estimates, where each equation states that the sum of the costs of two workers equals the given estimate.
-objective: minimize Ph + Pa + Pl + El + Ca + Ma + Pa, although the problem can be solved with the objective "satisfy" since we are looking for any feasible solution that satisfies all the constraints, not necessarily the minimum cost.

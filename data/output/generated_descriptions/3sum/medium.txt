@@ -1,5 +1,0 @@
-3SUM (Three Elements That Sum To Zero) 
-The 3SUM problem is about finding three elements in a given collection of integers that sum to zero. 
-The main decision variables are represented by the array `x`, where each `x[i]` is a binary variable (0 or 1) indicating whether the `i-th` element in the collection should be included in the sum. 
-The key constraints are that the sum of the selected elements must be zero, and exactly three elements must be selected. In plain language, this means that the model is looking for a subset of three numbers in the collection that add up to zero, without using any number more than once. 
-The problem's objective is to find a solution that satisfies these constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to determine whether there exists a combination of three elements in the collection that sum to zero, and if so, identify the indices of these elements.

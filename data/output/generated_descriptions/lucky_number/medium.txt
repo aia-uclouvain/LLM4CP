@@ -1,5 +1,0 @@
-The problem is known as Kirillov's Lucky Number Problem. 
-It is about finding a six-digit bus ticket number where the sum of the first three digits equals the sum of the last three digits, making the ticket "lucky". 
-The main decision variables are the array x, which represents the six digits of the bus ticket number, and the variable a, which represents the ticket number as a whole. 
-The key constraints are that the sum of the first three digits of the ticket number must be equal to the sum of the last three digits, and that the ticket number must be a valid six-digit number. 
-The problem's objective is to find a solution that satisfies these constraints, rather than minimizing or maximizing a specific value, as the goal is to generate a "lucky" ticket number.

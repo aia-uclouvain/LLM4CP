@@ -1,5 +1,0 @@
-The problem is called the Maximum N problem, or max_n. 
-It is about finding the maximum value of a given rank in a collection of variables, where the rank represents the position of the value in a sorted list of distinct values from the collection. 
-The main decision variables are t_max, which represents the maximum value of the given rank, rank, which represents the rank of the maximum value, and variables, which is an array of variables representing the collection of values. 
-The key constraints are that t_max must be one of the values in the variables array, the rank is calculated by counting the number of distinct values in the variables array that are larger than t_max, and the values in the variables array must match a given set of values. 
-The objective of the problem is to satisfy the constraints, specifically the max_n constraint, which ensures that t_max is the maximum value of the given rank in the variables array.

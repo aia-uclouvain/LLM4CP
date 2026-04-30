@@ -1,7 +1,0 @@
-Hadamard Problem
-The Hadamard problem is about constructing two sequences of values, each consisting of 1s and -1s, with specific properties. 
-The main decision variables are x and y, which represent the two sequences of values. Each x[i] and y[i] can take on the value of either -1 or 1, representing the ith element in the first and second sequences, respectively.
-The key constraints are: 
-- The sum of the values in each sequence must be equal to 1, meaning that there is one more 1 than -1 in each sequence. 
-- For each possible offset (from 1 to m, where m is half of the sequence length minus one), when the sequences are shifted by that offset and the corresponding elements are multiplied together, the sum of these products for both sequences should be equal to -2. 
-The objective of the Hadamard problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find sequences that satisfy the given constraints. In other words, the objective is to construct two sequences that meet the specified properties, which can be useful in various applications such as coding theory and signal processing.

@@ -1,5 +1,0 @@
-The Reverse Fahrenheit problem. 
-This problem is about finding temperature equivalents in Celsius and Fahrenheit that can be converted to each other by simply reversing their digits, but with a twist: the conversion is done in a base other than 10. 
-The main decision variables are C (the temperature in Celsius), F (the temperature in Fahrenheit), Base (the base in which the conversion is done), and D1 and D2 (the digits of the temperatures in the given base). 
-The key constraints are that the standard Celsius to Fahrenheit conversion rule must hold (5*F = 9*C + 160), the digits D1 and D2 must be valid in the given base, and the temperatures C and F can be represented as the concatenation of D1 and D2 in the given base. 
-The problem's objective is to find values of C and F that satisfy these constraints, with C between 0 and 100, and where the conversion between C and F can be done by reversing the digits in a base other than 10.

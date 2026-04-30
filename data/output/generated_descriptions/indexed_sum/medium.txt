@@ -1,5 +1,0 @@
-The problem is called Indexed Sum. 
-It is about assigning items to entries in a table such that the sum of the weights of the items assigned to each entry equals the corresponding summation variable in the table. 
-The main decision variables are the xtable array, which represents the summation variables for each entry in the table, and the items array, which represents the items to be assigned, where each item has an index and a weight. 
-The key constraints are that the sum of the weights of the items assigned to each entry in the table must equal the corresponding summation variable, and that the xtable array must match a given target array. 
-The objective of the problem is to satisfy these constraints, meaning that the model is a satisfaction problem, where the goal is to find an assignment of items to table entries that meets the given conditions, rather than minimizing or maximizing a specific objective function.

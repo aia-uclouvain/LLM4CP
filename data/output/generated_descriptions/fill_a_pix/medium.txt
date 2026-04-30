@@ -1,5 +1,0 @@
-Fill-a-Pix problem
-The Fill-a-Pix problem is about revealing a hidden picture in a grid by painting squares around clues so that the number of painted squares matches the value of the clue.
-The main decision variables are the `x` array, which represents a 2D grid of binary values (0 or 1) where 1 indicates a painted square and 0 indicates an empty square.
-The key constraints are that for each clue in the grid, the number of painted squares (including the square with the clue) must match the value of the clue. This is achieved by summing the values of the surrounding squares (including the clue square) and equating it to the clue value. The constraints also ensure that the grid boundaries are respected when counting the surrounding squares.
-The objective of the problem is to find a satisfying assignment of painted and empty squares that satisfies all the clue constraints, rather than minimizing or maximizing a specific value. The model uses the `solve satisfy` statement, which means that the goal is to find a feasible solution that meets all the constraints, without optimizing any particular objective function.

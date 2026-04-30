@@ -1,5 +1,0 @@
-name: Coin Changing Problem
-description: The problem is to find the minimum number of coins of different denominations that can be used to make any amount from 1 to 99 cents, given that there are six different euro cents of denomination 1, 2, 5, 10, 20, and 50.
-variables: $x_1, x_2, ..., x_n$ where $n = 6$, $x_i$ represents the number of coins of denomination $variables_i$ used. 
-constraints: $\forall i \in \{2, ..., n\}: variables_{i-1} < variables_i$, $\forall i \in \{1, ..., n\}: x_i \geq 0$, $\forall j \in \{1, ..., 99\}: \exists tmp_1, ..., tmp_n \in \{0, ..., 99\}: \sum_{i=1}^{n} tmp_i \cdot variables_i = j \land \forall i \in \{1, ..., n\}: tmp_i \leq x_i$, $\sum_{i=1}^{n} variables_i \leq 99$, and $x_i$ are all different. 
-objective: Minimize $\sum_{i=1}^{n} x_i$ which represents the total number of coins used.

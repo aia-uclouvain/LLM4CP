@@ -1,5 +1,0 @@
-The problem is called argmax/argmin predicate. 
-It's about finding the position of the largest and smallest values in a list of numbers, and making sure the list follows certain rules. 
-The main variables are x, which is a list of numbers, and pos, which is the position of the largest value in the list. 
-The basic restrictions are that all numbers in the list must be different, the largest value must be in a specific position, and the smallest value must be in another specific position. 
-The goal of the problem is to find a list of numbers that satisfies all these rules.

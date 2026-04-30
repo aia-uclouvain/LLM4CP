@@ -1,5 +1,0 @@
-The name of the problem is Inverse Within Range. 
-This problem is about finding a correspondence between two collections of variables, X and Y, where each variable in X is assigned a value from the index set of Y, and vice versa, while satisfying certain constraints. 
-The main decision variables are x1 and x2, which represent the collections of variables X and Y, respectively. Each element in x1 and x2 is a variable that can take on a value from a given set of integers. 
-The key constraints are that if the ith variable of X is assigned to j and j is within the range of Y, then the jth variable of Y must be assigned to i, and conversely. This is enforced by the inverse_within_range predicate, which ensures that the assignments between X and Y are consistent. 
-The problem's objective is to satisfy the given constraints, specifically the inverse_within_range constraint and the constraints that x1 and x2 must be equal to given arrays [9,4,2] and [9,3,9,2], respectively. The goal is to find an assignment of values to x1 and x2 that satisfies these constraints, rather than minimizing or maximizing a specific objective function.

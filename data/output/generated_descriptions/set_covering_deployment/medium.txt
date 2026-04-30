@@ -1,8 +1,0 @@
-Set Covering Deployment problem
-The Set Covering Deployment problem is about finding the minimum number of armies required to defend a set of cities, where each city must have an army and a backup army nearby.
-The main decision variables are X and Y, which represent the presence of an army and a backup army in each city, respectively. X[i] and Y[i] are binary variables that take the value 1 if an army and a backup army are present in city i, and 0 otherwise.
-The key constraints are: 
-- each city must have an army if it has a backup army, 
-- each city must have an army or a backup army nearby, 
-- the number of armies is minimized.
-The objective of the problem is to minimize the total number of armies, which is represented by the variable c_armies. This is calculated as the sum of the number of armies and backup armies in all cities.

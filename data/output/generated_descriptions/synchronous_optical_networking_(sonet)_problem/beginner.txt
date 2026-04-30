@@ -1,5 +1,0 @@
-The SONET problem
-The SONET problem is about designing a network of rings to connect nodes that need to communicate with each other. 
-The main variables are the number of rings, the number of nodes, the demand for communication between nodes, and the capacity of each ring. 
-The basic restrictions are that each ring can only hold a certain number of nodes, and if two nodes need to communicate, they must be on the same ring. 
-The goal is to minimize the total number of nodes installed on rings, which is equivalent to minimizing the number of ADMs used.

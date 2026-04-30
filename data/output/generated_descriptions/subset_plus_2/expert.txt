@@ -1,8 +1,0 @@
-name: Subset Problem
-description: The problem is to find the number of subsets S of the set {1, 2, ..., 10} such that S and S+2 cover all the numbers from 1 to 12, where S+2 means the set obtained by adding 2 to each element of S.
-variables: s1, s2 
-These are the decision variables representing the subsets S and S+2, where s1 is a subset of {1, 2, ..., 10} and s2 is a subset of {3, 4, ..., 12}.
-constraints: 
-i ∈ s1 ⇔ i+2 ∈ s2, s1 ∪ s2 = {1, 2, ..., 12} 
-These constraints ensure that for every element i in the set {1, 2, ..., 10}, i is in s1 if and only if i+2 is in s2, and that the union of s1 and s2 covers all the numbers from 1 to 12.
-objective: The objective of the problem is to find all possible subsets s1 that satisfy the given constraints, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find all feasible solutions.

@@ -1,5 +1,0 @@
-The problem is called "soft_same_var". 
-It's about comparing two lists of numbers to see how similar they are. 
-The main variables are "variables1" and "variables2", which are the two lists of numbers being compared, and "c", which is the minimum number of changes needed to make the two lists match. 
-The basic rules are that the two lists must have the same length, and the goal is to find the minimum number of changes needed to make the lists match, with the changes being counted as the number of times a value in one list needs to be replaced to match the corresponding value in the other list. 
-The goal is to minimize "c", the number of changes needed, which is calculated by comparing the counts of each number in the two lists and summing up the differences.

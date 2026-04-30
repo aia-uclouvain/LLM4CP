@@ -1,5 +1,0 @@
-Knapsack Problem
-The problem is about a traveler who wants to take as many valuable items as possible from a place, but he has a knapsack that can only hold a certain amount of weight and volume. 
-The main variables are the number of each item the traveler takes, which are represented by x[1], x[2], and x[3] for panacea, ichor, and gold respectively. 
-The basic restrictions are that the total weight of the items cannot exceed 25 units and the total volume cannot exceed 0.25 units. The traveler can only take whole units of each item. 
-The goal is to maximize the total value of the items the traveler takes, which means finding the combination of items that gives the highest total value while not exceeding the weight and volume limits.

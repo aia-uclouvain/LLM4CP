@@ -1,5 +1,0 @@
-name: Sum of Four Fourth Powers
-description: The problem is to find four different positive integers whose fourth powers add up to the fourth power of another positive integer.
-variables: $x_1, x_2, x_3, x_4, x_5$ - These are the decision variables representing the five positive integers, where $x_1, x_2, x_3, x_4$ are the four integers whose fourth powers are added together, and $x_5$ is the integer whose fourth power is the sum of the other four.
-constraints: $x_1 \neq x_2 \neq x_3 \neq x_4 \neq x_5, x_1 < x_2 < x_3 < x_4 < x_5, x_1^4 + x_2^4 + x_3^4 + x_4^4 = x_5^4$ - These constraints ensure that all five integers are distinct and in increasing order, and that the sum of the fourth powers of the first four integers equals the fourth power of the fifth integer.
-objective: The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a solution that satisfies the given constraints.

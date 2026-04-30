@@ -1,5 +1,0 @@
-Assignment Problem
-The problem is about assigning tasks to workers in the best way possible, so that the total cost is as low as possible. 
-The main variables are the workers, the tasks, and a special table that shows which worker is assigned to which task. 
-The basic restrictions are that each worker can only do one task, and each task can only be done by one worker, but there can be more tasks than workers. 
-The goal is to minimize the total cost of assigning workers to tasks.

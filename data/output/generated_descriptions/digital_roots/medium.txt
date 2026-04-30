@@ -1,5 +1,0 @@
-Digital Root Problem
-The Digital Root problem is about calculating the digital root of a given number, which is the value obtained by recursively summing the digits of a number until a single-digit number is reached.
-The main decision variables in this problem are `d_x` and `d_roots`, where `d_x` represents the digital root of a specific number `x`, and `d_roots` is an array of variables representing the digital roots of numbers from 1 to `m`.
-The key constraints in this problem are defined by the `digital_root` predicate, which calculates the digital root of a given number `num` in a given base (in this case, base 10). The constraints ensure that the digital roots of all numbers from 1 to `m` and the digital root of `x` are correctly calculated.
-The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the constraints and calculate the digital roots of the given numbers. The `solve satisfy` statement in the model indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

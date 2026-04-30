@@ -1,8 +1,0 @@
-name: Newspaper Problem
-description: The problem involves four students, Algy, Bertie, Charlie, and Digby, who share a flat and read four different newspapers, the Financial Times, the Guardian, the Daily Express, and the Sun. Each student reads all the newspapers in a specific order and for a specified amount of time. The problem is to determine the earliest time they can all set off for college, given their reading schedules and the constraint that only one person can read a newspaper at a time.
-variables: $reading\_start_{p,m}, reading\_end_{p,m}, timeline_{t,p}, idle\_time_p, earliest\_end\_time$ 
-These variables represent the start and end times for each person $p$ reading each newspaper $m$, a timeline indicating whether person $p$ is reading at time $t$, the idle time for each person $p$, and the earliest end time for all persons to finish reading.
-constraints: $reading\_start_{p,m} \geq start\_times_p$, $reading\_end_{p,m} = reading\_start_{p,m} + reading\_times_{p,m}$, $cumulative(reading\_start_{p,m}, reading\_times_{p,m}, 1, 1)$, $before(reading\_end_{p,m1}, reading\_start_{p,m2})$ if $reading\_order_{p,m1} < reading\_order_{p,m2}$, $timeline_{t,p} = 1$ if $t \geq reading\_start_{p,m}$ and $t < reading\_end_{p,m}$ 
-These constraints ensure that each person starts reading after their wake-up time, that the end time for reading a newspaper is the start time plus the reading time, that only one person can read a newspaper at a time, that the reading order is respected, and that the timeline accurately reflects the reading schedule.
-objective: minimize $earliest\_end\_time$ 
-The objective is to minimize the earliest end time, which represents the earliest time all persons can finish reading and set off for college.

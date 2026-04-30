@@ -1,5 +1,0 @@
-N Queens Problem
-The problem is about placing queens on a chessboard in such a way that none of them can attack each other.
-The main variables are the positions of the queens on the board, which are represented by the "queens" array. Each position in the array corresponds to a row on the chessboard, and the value at that position is the column where the queen is placed.
-The basic restrictions are that no two queens can be in the same column, and no two queens can be on the same diagonal. This means that if one queen is in a certain position, other queens cannot be in positions where they could attack it.
-The goal of the problem is to find a way to place all the queens on the board without any of them being able to attack each other. The problem does not try to minimize or maximize anything, it just tries to find a solution that satisfies the rules.

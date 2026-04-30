@@ -1,9 +1,0 @@
-Name of the problem: k-alldifferent 
-
-This problem is about making sure that in each group of numbers, all the numbers are different. 
-
-The main variables are the numbers in a two-dimensional table (like a spreadsheet), where each number can be between 0 and 9. 
-
-The basic restrictions are that each group of numbers (each row in the table) must have all different numbers, and the numbers in the table must match a given example, except for one unknown number. 
-
-The goal of the problem is to find a solution where all the numbers in each group are different, and the numbers in the table match the given example as closely as possible.

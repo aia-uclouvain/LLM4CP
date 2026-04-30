@@ -1,5 +1,0 @@
-The Enigma problem. 
-This problem is about finding a set of numbers that fit certain conditions, where each number is represented by a word with letters replacing digits. 
-The main variables are the digits represented by letters such as O, N, E, T, W, H, R, F, and U, which are used to form numbers like ONE, TWO, THREE, FOUR, and FORTUNE. 
-The basic restrictions are that each letter represents a unique digit, and when these numbers are added to or modified in certain ways, only specific ones should be perfect squares. 
-The goal is to find the values of these numbers, especially FORTUNE, that satisfy all the given conditions.

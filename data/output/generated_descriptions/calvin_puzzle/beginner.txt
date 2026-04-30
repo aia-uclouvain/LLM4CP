@@ -1,5 +1,0 @@
-Calvin Puzzle
-The Calvin puzzle is about filling a 10x10 grid with numbers from 1 to 100 in a specific order. 
-The main variables are the numbers in the grid, which represent the order in which the numbers are placed. 
-The basic restrictions are that each number can only be placed a certain distance away from the previous number, either horizontally, vertically, or diagonally, with specific gaps in between. 
-The goal is to fill the entire grid with numbers from 1 to 100, following these movement rules.

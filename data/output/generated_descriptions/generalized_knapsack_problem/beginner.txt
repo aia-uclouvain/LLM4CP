@@ -1,5 +1,0 @@
-Generalized Knapsack Problem
-The problem is about a person named Tom who is going on a hike and wants to pack items in his knapsack to maximize the total benefit he gets from them. 
-The main variables are the number of copies of each item Tom takes, the total benefit he gets, and the total weight of the items in his knapsack. 
-The basic restrictions are that Tom's knapsack can only hold up to 20 pounds, he can take a limited number of copies of each item, and each item has a certain weight and benefit associated with it. 
-The goal is to maximize the total benefit Tom gets from the items he packs, without exceeding the weight limit of his knapsack.

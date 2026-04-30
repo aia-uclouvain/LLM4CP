@@ -1,8 +1,0 @@
-name: Exodus Puzzle
-description: The Exodus puzzle is a logic puzzle where five children, each of a different age and from a different country, are assigned to present different parts of the story of the Exodus from Egypt. The goal is to determine the age of each child, their family's country of origin, and the part of the Exodus story they are assigned to present.
-variables: $BurningBush, Captivity, MosessYouth, Passover, TenCommandments, Age = [Age_1, Age_2, Age_3, Age_4, Age_5], Country = [Ethiopia, Kazakhstan, Lithuania, Morocco, Yemen]$ 
-These variables represent the assignment of each child to a part of the Exodus story ($BurningBush, Captivity, MosessYouth, Passover, TenCommandments$), their age ($Age$), and their family's country of origin ($Country$).
-constraints: $alldifferent(Story) \wedge alldifferent(Age) \wedge alldifferent(Country) \wedge Debby = Lithuania \wedge Age[Passover] = Age[Bernice] + 2 \wedge Age[Yemen] < Age[Ethiopia] \wedge Age[Morocco] = Age[Ted] + 3 \wedge Age[Sammy] = Age[MosessYouth] + 3 \wedge Carl = Captivity \wedge Age[TenCommandments] = 5 \wedge (Age[BurningBush] = Age[Kazakhstan] + 2 \vee Age[BurningBush] = Age[Kazakhstan] + 3)$
-These constraints ensure that each child is assigned to a unique part of the Exodus story, has a unique age, and is from a unique country. The remaining constraints encode the given clues, such as Debby's family being from Lithuania, the child presenting the Passover story being two years older than Bernice, and so on.
-objective: satisfy
-The objective of the problem is to find a satisfying assignment of values to the decision variables that satisfies all the given constraints.

@@ -1,5 +1,0 @@
-name: Subset Sum Problem
-description: The problem involves a bank van that had several bags of coins, each containing a specific number of coins. Thieves stole some bags, resulting in a total loss of 100 coins. The goal is to determine how many bags were stolen.
-variables: $x_1, x_2, ..., x_n$ - These variables represent the number of bags stolen for each coin value, where $x_i$ is the number of bags stolen containing $coins_i$ coins.
-constraints: $\sum_{i=1}^{n} values_i \cdot x_i = total$, $x_i \geq 0$ for $i = 1, ..., n$ - These constraints ensure that the total number of coins stolen equals 100 and that the number of bags stolen for each coin value is non-negative.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables $x_1, x_2, ..., x_n$ such that the constraints are met, rather than minimizing or maximizing a specific value.

@@ -1,5 +1,0 @@
-name: Low Autocorrelation Binary Sequences
-description: The problem involves finding a binary sequence of a given length with the property that the autocorrelation of the sequence is as low as possible. The autocorrelation of a sequence is a measure of how similar the sequence is to itself when shifted by a certain amount. In this case, the goal is to minimize the sum of the squares of the autocorrelations at all possible shifts.
-variables: $x_1, x_2, ..., x_n$, where $x_i$ is the $i^{th}$ value of the sequence to be built, and can take on the values -1 or 1. 
-constraints: $y_{k,i} = x_i \cdot x_{i+k+1}$ for $1 \leq k \leq n-1$ and $1 \leq i \leq n-k-1$, and $\sum_{i=1}^{n-k} y_{k,i} = c_k$ for $1 \leq k \leq n-1$, where $y_{k,i}$ is the $i^{th}$ product value required to compute the $k^{th}$ auto-correlation, and $c_k$ is the value of the $k^{th}$ auto-correlation.
-objective: minimize $\sum_{k=1}^{n-1} c_k^2$, which is the sum of the squares of the auto-correlations at all possible shifts.

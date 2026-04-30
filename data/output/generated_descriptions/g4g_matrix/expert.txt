@@ -1,9 +1,0 @@
-name: Gathering 4 Garder matrix problem
-
-description: The problem is to place numbers 1 through 20 in a 10x10 grid such that each row and column contains exactly two numbers. The sum or product of the two numbers in each row must equal the value given in the row margin, and the sum or product of the two numbers in each column must equal the value given in the column margin.
-
-variables: $x_{i,j}, x\_rows_{i,1}, x\_rows_{i,2}, x\_cols_{i,1}, x\_cols_{i,2}$ where $i \in \{1, \ldots, 10\}$ and $j \in \{1, \ldots, 10\}$. These variables represent the values placed in the grid, with $x_{i,j}$ being the value in the $i$th row and $j$th column, and $x\_rows_{i,1}$, $x\_rows_{i,2}$, $x\_cols_{i,1}$, $x\_cols_{i,2}$ being the two numbers in the $i$th row and column, respectively.
-
-constraints: $\sum_{j=1}^{10} (x_{i,j} > 0) = 2$, $\sum_{i=1}^{10} (x_{i,j} > 0) = 2$, $x\_rows_{i,1} = x_{i,k}$, $x\_rows_{i,2} = x_{i,l}$, $x\_cols_{i,1} = x_{k,i}$, $x\_cols_{i,2} = x_{l,i}$, $x\_rows_{i,1} + x\_rows_{i,2} = rows_i$ or $x\_rows_{i,1} \cdot x\_rows_{i,2} = rows_i$, $x\_cols_{i,1} + x\_cols_{i,2} = cols_i$ or $x\_cols_{i,1} \cdot x\_cols_{i,2} = cols_i$, $\sum_{i=1}^{10} \sum_{j=1}^{10} (x_{i,j} = k) = 1$ for $k \in \{1, \ldots, 20\}$. These constraints ensure that each row and column contains exactly two numbers, that the two numbers in each row and column are correctly identified, and that the sum or product of the two numbers in each row and column equals the given margin values.
-
-objective: The objective of the problem is to satisfy all the given constraints, which means finding a feasible solution that places numbers 1 through 20 in the grid according to the rules. There is no explicit objective function to minimize or maximize.

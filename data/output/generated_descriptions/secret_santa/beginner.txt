@@ -1,5 +1,0 @@
-Secret Santa problem
-The problem is about a group of friends who want to play a game where each person gives gifts to another person in secret. 
-The main variables are the people in the group, identified by numbers, and the families these people belong to, also identified by numbers. 
-The basic restrictions are that a person cannot give gifts to themselves, and people in the same family cannot give gifts to each other. 
-The goal is to find a way to assign each person to give gifts to another person, following these rules, so that everyone gives and receives gifts.

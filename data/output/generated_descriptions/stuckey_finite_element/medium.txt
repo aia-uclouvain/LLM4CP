@@ -1,5 +1,0 @@
-The problem is known as the Finite Element Method for Steady-State Heat Transfer. 
-It is about finding the temperature distribution in a grid, where the temperature at each point is determined by the temperatures of its neighboring points. 
-The main decision variables are the grid array elements, which represent the temperature at each point in the grid. 
-The key constraints are that the temperature at each internal point is the average of the temperatures of its four neighboring points, and that the temperature at each point is non-negative. 
-The problem's objective is to find a temperature distribution that satisfies these constraints, with no specific objective function being minimized or maximized, as the goal is to find a feasible solution that meets the given conditions.

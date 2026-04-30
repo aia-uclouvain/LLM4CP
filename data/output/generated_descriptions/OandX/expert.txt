@@ -1,8 +1,0 @@
-name: Three Dimensional Nought and Crosses (Tic-Tac-Toe)
-description: The problem is a variation of the classic Tic-Tac-Toe game, but played in a three-dimensional space. The goal is to find the minimum number of crosses (represented by the variable d) that need to be placed in the 3D grid such that there are no winning lines for the noughts (represented by the variable g).
-variables: $d = [d_1, d_2, ..., d_{27}], g = [g_1, g_2, ..., g_{49}]$ 
-These are decision variables where $d_i$ represents whether a cross is placed at position $i$ and $g_j$ represents whether a winning line $j$ is covered by the crosses.
-constraints: $\forall i \in set1: \sum_{j \in set2} (lines[i,j]*d[j] - g[i]) \leq 2, \forall i \in set1: \sum_{j \in set2} (lines[i,j]*d[j] + g[i]) \geq 1, \sum_{j \in set2} (d[j]) = 14, \forall j \in set2: d[j] \leq 1$ 
-These constraints ensure that each winning line is either covered by at least one cross or has at most two uncovered positions, the total number of crosses is 14, and each position can have at most one cross.
-objective: minimize $\sum_{i \in set1} g_i$ 
-The objective is to minimize the total number of winning lines that are covered by the crosses.

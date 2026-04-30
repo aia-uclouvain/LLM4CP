@@ -1,8 +1,0 @@
-name: Send More Money Problem
-description: The Send More Money problem is a classic constraint satisfaction problem where the goal is to assign digits to letters in the equation SEND + MORE = MONEY such that the equation holds true. Each letter must be assigned a unique digit from 0 to 9, and the resulting equation must be mathematically correct.
-variables: $x_{i,d}, dig_i, carry_i$ 
-These variables represent the assignment of digits to letters, where $x_{i,d}$ is a binary variable indicating whether letter $i$ is assigned digit $d$, $dig_i$ is the digit assigned to letter $i$, and $carry_i$ is a binary variable representing the carry from one column to the next in the addition.
-constraints: $\sum_{d=0}^{9} x_{i,d} = 1, \sum_{i=1}^{8} x_{i,d} \leq 1, dig_i = \sum_{d=0}^{9} d \cdot x_{i,d}, dig_D + dig_E + 10 \cdot carry_1 = dig_Y, dig_N + dig_R + carry_1 = dig_E + 10 \cdot carry_2, dig_E + dig_O + carry_2 = dig_N + 10 \cdot carry_3, dig_S + dig_M + carry_3 = dig_O + 10 \cdot dig_M, dig_M \geq 1$
-These constraints ensure that each letter is assigned exactly one digit, each digit is assigned to at most one letter, the digit assignments satisfy the equation SEND + MORE = MONEY, and the carry values are correctly calculated.
-objective: satisfy 
-The objective of the problem is to find an assignment of digits to letters that satisfies all the constraints, i.e., to find a solution that makes the equation SEND + MORE = MONEY true.

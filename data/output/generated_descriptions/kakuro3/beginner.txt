@@ -1,5 +1,0 @@
-Kakuro puzzle
-The problem is about filling in numbers in a puzzle so that they add up to certain totals and no number is repeated in any row or column. 
-The main variables are the numbers that go in each empty space, which can be any number from 1 to 9.
-The basic restrictions are that the numbers in each group must add up to a certain total, and no number can be used more than once in any group.
-The goal is to find a solution where all the numbers are filled in correctly, following the rules of the puzzle.

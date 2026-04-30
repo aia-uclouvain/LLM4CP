@@ -1,8 +1,0 @@
-name: Urban Planning
-description: The problem is to reorder 12 residential and 13 commercial lots in a 5x5 grid to maximize the quality of the layout, which is determined by a points system that awards points based on the number of residential lots in each row and column, and penalizes for commercial lots.
-variables: $x_{i,j}, row\_scores_i, col\_scores_i, z$ 
-These are the decision variables where $x_{i,j}$ represents the type of lot (residential or commercial) at position $(i,j)$ in the grid, $row\_scores_i$ and $col\_scores_i$ represent the score for row $i$ and column $i$ respectively, and $z$ is the total score.
-constraints: $\forall i \in 1..n (scores([x_{i,j} | j \in 1..n], row\_scores_i) \wedge scores([x_{j,i} | j \in 1..n], col\_scores_i)) \wedge count([x_{i,j} | i,j \in 1..n], residential, 12) \wedge x_{1,1} = residential$
-These constraints ensure that the score for each row and column is calculated correctly based on the number of residential lots, that there are exactly 12 residential lots, and that the top-left lot is residential (to break symmetry).
-objective: Maximize $z$ 
-The objective is to maximize the total score $z$, which is the sum of the scores for all rows and columns.

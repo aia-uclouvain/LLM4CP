@@ -1,5 +1,0 @@
-Sequence Puzzle
-The Sequence Puzzle is a constraint programming problem that involves finding the smallest number that meets certain conditions. 
-The main decision variables are x, an array of integers representing the digits of the output number, and p, an array of primes representing the 2-digit sequences within the output number. 
-The key constraints are that the first digit of the output number must be the input number, the output number must have the same number of digits as the input number, and every 2-digit sequence within the output number must be a different prime number. 
-The objective of the problem is to minimize the output number, which means finding the smallest possible number that satisfies all the conditions.

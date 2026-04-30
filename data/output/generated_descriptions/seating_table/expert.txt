@@ -1,7 +1,0 @@
-name: Table Seating Problem
-description: The Table Seating Problem is a classical problem in constraint programming where n couples are seated around a table in such a way that two neighbors of each person are of the different gender and are not the spouse of that person.
-variables: x, gender 
-x represents the seating arrangement of the people around the table, where x[i] is the person seated at position i, and gender represents the gender of each person, where gender[i] is the gender of the person seated at position i. 
-constraints: alldifferent(x), gender[i] = x[i] mod 2, gender[i] != gender[i-1], not(is_couple(n, x[i], x[i-1], couples)), gender[m] != gender[1], not(is_couple(n, x[m], x[1], couples))
-These constraints ensure that each position around the table is occupied by a different person (alldifferent(x)), the gender of each person is determined by their position in the seating arrangement (gender[i] = x[i] mod 2), adjacent people are of different genders and not spouses (gender[i] != gender[i-1] and not(is_couple(n, x[i], x[i-1], couples))), and the same applies to the people seated at the first and last positions (gender[m] != gender[1] and not(is_couple(n, x[m], x[1], couples))).
-objective: The objective of the problem is to find a satisfying assignment, i.e., a seating arrangement that satisfies all the constraints, as the problem is formulated as a satisfaction problem (solve satisfy).

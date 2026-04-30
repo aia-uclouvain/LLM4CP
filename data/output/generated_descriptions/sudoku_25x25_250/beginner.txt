@@ -1,5 +1,0 @@
-Sudoku 25x25
-The problem is about solving a large Sudoku puzzle with a 25x25 grid. 
-The main variables are the values of each cell in the grid, which can range from 1 to 25. 
-The basic restrictions or rules of the problem are that each row, column, and 5x5 sub-grid must contain each number from 1 to 25 exactly once. 
-The goal of the problem is to find a solution that satisfies all these constraints, which means filling in the entire grid with numbers from 1 to 25 such that each row, column, and sub-grid contains each number exactly once.

@@ -1,5 +1,0 @@
-name: Random Number Generation
-description: The problem is to generate random numbers using a pseudorandom number generator, which is a algorithm that generates a sequence of numbers that appear to be random and unrelated to each other, but are actually determined by a mathematical formula.
-variables: None, the model does not contain decision variables, it contains functions that generate random integers and floats: `random_int` and `random_float`, which are used to generate arrays of random integers and floats.
-constraints: None, the model does not contain constraints, it only defines functions to generate random numbers.
-objective: None, the model does not have an objective function to minimize or maximize, its purpose is to generate random numbers using a pseudorandom number generator.

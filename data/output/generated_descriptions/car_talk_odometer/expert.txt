@@ -1,7 +1,0 @@
-name: Car Talk Odometer problem
-description: The problem is about finding the minimum distance driven by a person, given that the odometer reading is a palindrome at the start and end of the drive. A palindrome is a number that reads the same forwards and backwards. The person drives for approximately an hour, with a stop at a cafe, and the odometer reading is a palindrome at the beginning and end of the drive.
-variables: $start, end, start_a, end_a, z$ 
-These variables represent the start and end odometer readings, the digits of the start and end odometer readings, and the distance driven, respectively. $start$ and $end$ are integers between 100000 and 999999, $start_a$ and $end_a$ are arrays of integers between 0 and 9, and $z$ is an integer.
-constraints: $start = to\_num(start_a)$, $end = to\_num(end_a)$, $is\_palindromic(start_a)$, $is\_palindromic(end_a)$, $z > 0$, $z = end - start$ 
-These constraints ensure that the start and end odometer readings are palindromes, that the distance driven is greater than 0, and that the distance driven is equal to the difference between the end and start odometer readings.
-objective: minimize $z$

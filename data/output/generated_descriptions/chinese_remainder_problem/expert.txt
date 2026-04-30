@@ -1,8 +1,0 @@
-name: Chinese Remainder Problem
-description: The Chinese Remainder Problem is a classical problem in number theory that involves finding a number that satisfies multiple modular equations. It states that given a set of divisors and corresponding remainders, find the smallest number that when divided by each divisor leaves the corresponding remainder.
-variables: x, divs, rems 
-x is the decision variable representing the number to be found, divs is an array of integers representing the divisors, and rems is an array of integers representing the remainders. These variables are used to represent the input and output of the problem, where x is the value to be determined, and divs and rems are the given inputs.
-constraints: crt(divs, rems, x) = ∀i (x mod divs[i] = rems[i])
-The constraints of the problem are represented by the crt predicate, which ensures that for each divisor divs[i], the remainder of x divided by divs[i] is equal to the corresponding remainder rems[i]. This constraint is applied for all divisors.
-objective: minimize x
-The objective of the problem is to minimize the value of x, which represents the smallest number that satisfies all the modular equations.

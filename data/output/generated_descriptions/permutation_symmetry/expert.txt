@@ -1,5 +1,0 @@
-name: Color Sequence Optimization Problem
-description: The problem involves optimizing an array of colors to minimize the changes of colors, while also considering the interchangeability of colors. The goal is to find an optimal sequence of colors that satisfies the given constraints.
-variables: $perm_{1..n}, optimal_{1..n}$, where $perm_{1..n}$ represents the permutation indices of the colors and $optimal_{1..n}$ represents the optimized sequence of colors. These variables determine the final arrangement of colors.
-constraints: $\forall i \in 1..n: perm_i \in 1..n \land optimal_i \in \{min(colors)..max(colors)\} \land permutation3(colors, perm, optimal)$, where $permutation3$ is a predicate that ensures the permutation of colors is correct. The constraints ensure that the permutation indices are valid, the optimized sequence is within the range of colors, and the permutation is correct.
-objective: Minimize the number of changes of colors, although this is not explicitly modeled as an objective function in the provided MiniZinc model. Instead, the model focuses on finding a valid permutation that satisfies the given constraints.

@@ -1,8 +1,0 @@
-name: De Bruijn Sequence with No Direct Repetition
-description: The problem is to generate a De Bruijn sequence, which is a cyclic sequence of length k^n, where k is the size of the alphabet and n is the order of the sequence, with the condition that no symbol is directly repeated, i.e., a symbol is not followed by the same symbol.
-variables: x, binary, bin_code 
-x is an array of decision variables representing the sequence in decimal representation, binary is a 2D array representing the binary representation of the numbers in the sequence, and bin_code is an array representing the sequence in base-representation, where each variable is a symbol from the alphabet.
-constraints: all_different(x), toNum(t, x[i], base), binary[i-1, j] = binary[i, j-1], binary[m, j] = binary[1, j-1], bin_code[i-1] != bin_code[i], bin_code[1] != bin_code[m] 
-These constraints ensure that all numbers in the sequence are different, the binary representation of the numbers is correct, the sequence satisfies the De Bruijn condition (i.e., the first element of each number is the same as the last element of the previous number), and no symbol is directly repeated.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, i.e., to generate a De Bruijn sequence with no direct repetition.

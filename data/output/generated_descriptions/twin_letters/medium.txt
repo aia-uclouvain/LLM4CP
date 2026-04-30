@@ -1,5 +1,0 @@
-Twin Letters Problem
-The Twin Letters problem is a classic constraint programming problem that involves assigning digits to letters in a multiplication puzzle. 
-The main decision variables in this problem are the letters A to T, each representing a digit from 0 to 9. 
-The key constraints in this problem are: each digit from 0 to 9 must be used exactly twice, the multiplication of the two numbers must be correct, and the carry from each column must be handled correctly. 
-The objective of this problem is to find an assignment of digits to letters that satisfies all the constraints, effectively solving the multiplication puzzle.

@@ -1,5 +1,0 @@
-Rooks path problem
-The problem is about finding a path for a rook on a chessboard of size n x n, such that the rook visits each square exactly once and returns to the starting point.
-The main decision variables are the elements of the 2D array x, where x[i, j] represents the order in which the rook visits the square at position (i, j) on the board.
-The key constraints are that each square is visited exactly once, and the rook moves horizontally or vertically from one square to an adjacent square. This is achieved by ensuring that the difference between the row or column indices of two consecutive squares is either -1, 0, or 1, and that the sum of the absolute differences is 1. Additionally, the path must form a tour, meaning that the rook returns to the starting point.
-The objective of the problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific quantity. In other words, the goal is to find a valid rook's path that visits each square exactly once and returns to the starting point.

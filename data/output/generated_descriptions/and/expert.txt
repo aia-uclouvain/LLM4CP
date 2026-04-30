@@ -1,5 +1,0 @@
-name: Logical And Constraint Problem
-description: The problem involves modeling a logical AND operation using a set of binary variables and a target variable, where the target variable is true if and only if all the binary variables are true.
-variables: $x_1, x_2, ..., x_n, y$ - These are decision variables where $x_i$ represents a binary variable and $y$ represents the target variable that should be true if and only if all $x_i$ are true.
-constraints: $y = 1 \leftrightarrow \sum_{i=1}^{n} x_i = n$ and $x = [1, 1, _]$ - The first constraint enforces the logical AND operation, where $y$ is true if and only if all $x_i$ are true. The second constraint fixes the values of the first two binary variables to 1 and leaves the third one free.
-objective: satisfy - The objective of the problem is to find an assignment of values to the decision variables that satisfies all the constraints, rather than minimizing or maximizing a specific value.

@@ -1,5 +1,0 @@
-Alphametic Puzzle
-The problem is about solving an alphametic puzzle, which is a type of mathematical puzzle where letters are used to represent numbers. 
-The main variables are a, b, c, ..., z, which represent letters, and rad01, rad02, ..., rad40, which represent the results of certain calculations. The variables a1, a2, ..., z5 represent the digits of the numbers represented by the letters.
-The basic restrictions or rules of the problem are that each letter must represent a unique digit, and the calculations defined by the rad variables must be satisfied. Additionally, the numbers represented by the letters must be between 10000 and 99999.
-The goal of the problem is to find a solution that satisfies all the constraints, which means finding a unique digit for each letter such that the calculations defined by the rad variables are correct.

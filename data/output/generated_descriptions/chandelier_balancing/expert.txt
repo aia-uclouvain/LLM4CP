@@ -1,5 +1,0 @@
-name: Chandelier Balancing
-description: The problem is to balance a chandelier by placing 9 different weights (1-9 kg) into 9 triangles, such that the chandelier is perfectly balanced, considering the weights of the arms, wires, and triangles as negligible.
-variables: $a, b, c, d, e, f, g, h, i$ - These variables represent the weights placed in each of the 9 triangles, with each weight being one of the 9 available weights (1-9 kg).
-constraints: $alldifferent([a,b,c,d,e,f,g,h,i]) \wedge (2*a = 1*b+2*c) \wedge (2*d+1*e = 1*f) \wedge (2*g+1*h = 3*i) \wedge 3*(a+b+c) = 2*(d+e+f)+3*(g+h+i)$ - These constraints ensure that each triangle contains a unique weight, and the chandelier is balanced according to the given equations, which represent the balance of weights in different parts of the chandelier.
-objective: The objective of the problem is to find a satisfying assignment of weights to triangles, such that all constraints are met, rather than minimizing or maximizing a specific value.

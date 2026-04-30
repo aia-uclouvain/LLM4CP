@@ -1,5 +1,0 @@
-The problem is called Lex Between. 
-It's about comparing lists of numbers to see if one list is between two other lists, in a specific order. 
-The main variables are lower_bound, vector, and upper_bound, which are lists of numbers. 
-The basic restrictions are that the vector list must be greater than or equal to the lower_bound list and less than or equal to the upper_bound list, when compared in a specific order. 
-The goal is to check if the vector list is within the given bounds, and if so, to output the vector list.

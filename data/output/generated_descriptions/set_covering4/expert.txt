@@ -1,5 +1,0 @@
-name: Set Partition/Covering Problem
-description: The problem involves selecting a subset of alternatives to cover all objects, where each object can be covered exactly once (set partition) or at least once (set covering), with the goal of minimizing the total cost of the selected alternatives.
-variables: $x_i$ (i = 1 to num_alternatives), where $x_i$ is a binary decision variable indicating whether alternative i is selected or not. These variables represent the choices of alternatives to include in the solution.
-constraints: $\sum_{i=1}^{num\_alternatives} (x_i \* a_{i,j}) \geq 1$ (for all objects j), which ensures that each object is covered by at least one selected alternative, and $\sum_{i=1}^{num\_alternatives} (x_i \* costs_i)$, which calculates the total cost of the selected alternatives. The constraints define the feasible solutions and ensure that all objects are covered.
-objective: Minimize $z = \sum_{i=1}^{num\_alternatives} (x_i \* costs_i)$, which represents the total cost of the selected alternatives. The goal is to find the subset of alternatives that covers all objects at the minimum cost.

@@ -1,5 +1,0 @@
-Same Modulo Problem
-The problem is about comparing two sets of numbers to see if they have the same pattern when divided by a certain number.
-The main variables are v1 and v2, which are lists of numbers, and M, which is the number by which we divide the numbers in v1 and v2. 
-The basic restrictions are that the numbers in v1 and v2 must be between 1 and 9, and M is 3. The problem also requires that the pattern of remainders when dividing the numbers in v1 by M is the same as the pattern of remainders when dividing the numbers in v2 by M.
-The goal of the problem is to check if the given lists v1 and v2 satisfy the same_modulo constraint, meaning they have the same pattern of remainders when divided by M.

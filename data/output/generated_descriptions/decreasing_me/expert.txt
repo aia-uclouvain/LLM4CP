@@ -1,5 +1,0 @@
-name: Decreasing Sequence Problem
-description: The problem requires finding a sequence of numbers that is decreasing, meaning each number is less than or equal to the previous one, given an initial sequence of numbers.
-variables: $x = [x_1, x_2, x_3, x_4]$, where $x$ is an array of decision variables representing the sequence of numbers, each $x_i$ being a variable integer between 1 and 8.
-constraints: $cp1d([8,4,1,1],x) \wedge decreasing\_me(x)$, where $cp1d([8,4,1,1],x)$ ensures that the sequence $x$ is equal to the given sequence $[8,4,1,1]$, and $decreasing\_me(x)$ ensures that the sequence $x$ is decreasing, i.e., $x_{i-1} \geq x_i$ for all $i$ from 2 to $n$.
-objective: The objective of the problem is to satisfy the given constraints, i.e., to find a sequence $x$ that is equal to $[8,4,1,1]$ and is decreasing. Since the sequence is already given, the problem is essentially a feasibility problem, where the goal is to verify that the given sequence satisfies the decreasing constraint.

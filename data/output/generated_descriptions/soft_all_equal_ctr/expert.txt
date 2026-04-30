@@ -1,5 +1,0 @@
-name: Soft All Equal Constraint Problem
-description: The problem involves finding an assignment of values to a set of variables such that a certain number of equality constraints between pairs of variables are satisfied, where the number of satisfied constraints is greater than or equal to a given threshold.
-variables: $x = [x_1, x_2, ..., x_n], N$ - These are the decision variables, where $x$ is an array of variables representing the values to be assigned, and $N$ is a variable representing the minimum number of equality constraints that should be satisfied.
-constraints: $N \geq 0, N \leq n^2, N \leq \sum_{i,j \in 1..n, i \neq j} (x_i = x_j), x = [5,1,5,5]$ - These constraints ensure that $N$ is a non-negative integer, $N$ does not exceed the total number of possible equality constraints, the number of satisfied equality constraints is greater than or equal to $N$, and the values of $x$ are constrained to match a given array.
-objective: satisfy - The objective of the problem is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

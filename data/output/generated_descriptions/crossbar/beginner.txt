@@ -1,5 +1,0 @@
-Crossbar problem
-The Crossbar problem is about finding a way to connect a set of horizontal lines to a set of vertical lines in a specific way. 
-The main variables are V1 to V20, which represent the vertical lines and the values they can take, which are numbers from 1 to 20.
-The basic restrictions are that each vertical line can only be connected to certain horizontal lines, and each horizontal line can only be connected to one vertical line. 
-The goal of the problem is to find a way to connect all the lines so that each horizontal line is connected to a different vertical line, and all the connections are valid according to the given restrictions.

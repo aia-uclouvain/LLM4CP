@@ -1,7 +1,0 @@
-name: The Gentle Art of Stamp-licking puzzle
-description: The problem is a classic puzzle where a set of stamps with different values are to be placed on a grid such that each row, column, and diagonal contains each stamp value at most once, and the total value of the stamps on the grid is maximized. The puzzle is a variation of the classic "stamp-licking" problem, where the goal is to maximize the total value of the stamps while satisfying certain constraints.
-variables: $x_{i,j,k}, a_{i,j,k}, y_{i,j}, z$ 
-These variables represent the following: $x_{i,j,k}$ is a binary variable that indicates whether a stamp of value $k$ is placed on the grid at position $(i,j)$, $a_{i,j,k}$ is a binary variable that indicates whether the stamp on position $(i,j)$ is in line with similar stamps, $y_{i,j}$ represents the value of the stamp on the grid at position $(i,j)$, and $z$ is the total value of the stamps on the grid.
-constraints: $\sum_{k=1}^{stamp} x_{i,j,k} \leq 1, \sum_{m=1}^{size} x_{m,m-i+j,k} + \sum_{m=1}^{size} x_{m,i+j-m,k} + \sum_{m=1}^{size} x_{m,j,k} + \sum_{m=1}^{size} x_{i,m,k} \leq 99a_{i,j,k}, a_{i,j,k} + x_{i,j,k} \leq 1, y_{i,j} = \sum_{k=1}^{stamp} kx_{i,j,k}$
-These constraints ensure that each position on the grid contains at most one stamp, that the stamp on each position is in line with similar stamps, that a position cannot be both occupied and attacked by the same stamp value, and that the output matrix $y$ is calculated correctly.
-objective: maximize $z = \sum_{i=1}^{size} \sum_{j=1}^{size} \sum_{k=1}^{stamp} kx_{i,j,k}$

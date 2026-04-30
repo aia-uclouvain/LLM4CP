@@ -1,5 +1,0 @@
-Fill-in the squares problem. 
-This problem is about filling in a 5x5 grid with numbers from 1 to 25, following certain rules. 
-The main variables are the numbers in each row (a, b, c, d, e) and the total sum of numbers in each row (a_sum, b_sum, c_sum, d_sum, e_sum). 
-The basic restrictions are: each number can only be used once, the sum of each column must be odd, the sum of each row must be even (except for row c), and there are several other specific rules about the relationships between numbers in different positions. 
-The goal of the problem is to find a solution that satisfies all the rules, there is no specific objective to minimize or maximize.

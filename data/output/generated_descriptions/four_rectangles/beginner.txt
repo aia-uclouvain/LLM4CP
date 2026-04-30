@@ -1,5 +1,0 @@
-Rectangle Area Puzzle
-The problem is about finding the area of a missing rectangle in a larger rectangle that has been divided into four smaller rectangles. 
-The main variables are the areas of the four rectangles (area1, area2, area3, area4), the length and height of the larger rectangle (len, height), and the dimensions of the internal dividing lines (x, y). 
-The basic restrictions are that the areas of three of the rectangles are given (16, 13, and 39), and the rectangles must fit together perfectly to form the larger rectangle. 
-The goal is to find the area of the fourth rectangle (area4).

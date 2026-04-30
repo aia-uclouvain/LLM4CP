@@ -1,5 +1,0 @@
-Dudeney's Queen Placement Problem
-The problem is about placing 8 queens on a chessboard in such a way that the fewest number of squares are under attack.
-The main variables are x and a. The variable x represents whether a square on the chessboard is occupied by a queen (1) or not (0). The variable a represents whether a square is under attack (1) or not (0).
-The basic restrictions are that all 8 queens must be used, 5 of the original queens must remain untouched, and a square is under attack if it is in the same row, column, or diagonal as a queen.
-The goal is to minimize the number of squares that are under attack, which is represented by the variable suma.

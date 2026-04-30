@@ -1,8 +1,0 @@
-Perfect Shuffle Problem
-The Perfect Shuffle problem is about rearranging a sequence of elements in a specific way, known as an out-shuffle, and determining the minimum number of shuffles required to return the sequence to its original order.
-
-The main decision variables in this problem are the elements of a 2D array `x`, where `x[i, j]` represents the `j-th` element of the sequence after `i` shuffles. The variable `n` represents half the length of the sequence, and `t` is twice the value of `n`, representing the total length of the sequence.
-
-The key constraints in this problem can be described as follows: the first row of the array `x` is initialized with the sequence `1..t`, and each subsequent row is obtained by applying the perfect shuffle operation to the previous row. The perfect shuffle operation rearranges the elements of the sequence by placing the odd-indexed elements in the first half of the sequence and the even-indexed elements in the second half.
-
-The objective of the problem is to find the minimum number of shuffles required to return the sequence to its original order, which is achieved when the last row of the array `x` is the same as the first row. The number of shuffles required is stored in the variable `num_shuffles`. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a solution that satisfies the given constraints.

@@ -1,8 +1,0 @@
-name: Minimal Subset of Columns for Unique Rows
-description: The problem is to find the minimal subset of columns in a discrete-valued matrix that makes the rows unique. In other words, the goal is to select the fewest columns necessary to ensure that each row in the matrix is distinct from every other row.
-variables: $x = (x_1, x_2, ..., x_{cols})$, $z$ 
-These are the decision variables where $x_j$ represents whether column $j$ is selected (1) or not (0), and $z$ represents the total number of selected columns.
-constraints: $\forall r_1, r_2 \in \{1, 2, ..., rows\} \text{ where } r_1 < r_2: \sum_{j=1}^{cols} x_j \cdot (m_{r_1, j} \neq m_{r_2, j}) \geq 1$
-These constraints ensure that for every pair of rows $r_1$ and $r_2$, there is at least one selected column $j$ where the values in $r_1$ and $r_2$ are different.
-objective: Minimize $z$ 
-The objective is to minimize the total number of selected columns, $z$, which represents the minimal subset of columns needed to make the rows unique.

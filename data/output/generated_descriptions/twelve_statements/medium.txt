@@ -1,8 +1,0 @@
-The Twelve Statements Problem
-The Twelve Statements problem is about arranging a set of 12 cards with statements in a row from left to right to maximize the number of true statements. Each card has a statement claiming a specific number of false statements to its left.
-
-The main decision variables are x, y, and z. The array x represents the order of the cards, where x[i] is the number on the card at position i. The array y represents the truth values of the statements, where y[i] is 1 if the statement on card i is true and 0 if it is false. The variable z represents the total number of true statements.
-
-The key constraints are that each card's statement must match the actual number of false statements to its left, and no two cards can have the same number. Additionally, the model includes a symmetry-breaking constraint to ensure that the false statements are ordered, which helps to reduce the number of possible solutions.
-
-The objective of the problem is to maximize the number of true statements, which is represented by the variable z. The goal is to find the largest possible value of z, which corresponds to the maximum number of statements that can be true at the same time. In this case, the maximum value of z is 6, which means that at most 6 statements can be true.

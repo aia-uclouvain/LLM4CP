@@ -1,5 +1,0 @@
-Markov Chain Problem
-The problem is about understanding how things change over time, like how people switch between different products. 
-The main variables are the transition matrix, which shows how likely it is for someone to switch from one product to another, and the stable state, which is the percentage of people using each product after a long time. 
-The basic restrictions are that the percentages must add up to 100% and that the transition matrix must follow certain rules. 
-The goal is to find the stable state, which is the point where the percentages no longer change over time.

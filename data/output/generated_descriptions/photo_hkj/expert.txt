@@ -1,5 +1,0 @@
-name: Photo Problem
-description: The problem involves arranging seven people - Betty, Chris, Donald, Fred, Gary, Mary, and Paul - in a row for a photo, given certain preferences for who wants to stand next to whom, with the goal of maximizing the number of satisfied preferences.
-variables: $n, positions, z, preferences$ - $n$ is the number of people, $positions$ is an array of decision variables representing the position of each person in the row, $z$ is a decision variable representing the total number of satisfied preferences, and $preferences$ is a given array representing the preferences of each person.
-constraints: $all\_different(positions)$, $z = \sum_{i,j} preferences_{i,j} \cdot bool2int(nextTo(positions_i, positions_j))$ - the first constraint ensures that each position in the row is assigned to a different person, and the second constraint calculates the total number of satisfied preferences based on the positions of the people and their preferences.
-objective: Maximize $z$ - the objective is to maximize the total number of satisfied preferences, i.e., to find an arrangement that satisfies as many preferences as possible.

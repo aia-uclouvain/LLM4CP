@@ -1,5 +1,0 @@
-The name of the problem is Dividing the Spoils. 
-This problem is about dividing a certain number of chestnuts among three girls, Mary, Nellie, and Susie, in proportion to their ages. 
-The main decision variables are mary, nellie, and susie, which represent the number of chestnuts each girl receives. 
-The key constraints are that the ratio of Mary's chestnuts to Nellie's chestnuts is 4:3, the ratio of Mary's chestnuts to Susie's chestnuts is 6:7, and the total number of chestnuts the girls receive is 770. 
-The problem's objective is to find a satisfying assignment of chestnuts to the girls, such that all the given constraints are met, rather than minimizing or maximizing a specific value.

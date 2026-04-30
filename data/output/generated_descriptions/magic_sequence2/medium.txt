@@ -1,8 +1,0 @@
-Magic Sequence Problem
-The problem is about finding a sequence of integers where each integer represents the frequency of its own index in the sequence.
-The main decision variables are `s[i]`, which represent the frequency of the integer `i` in the sequence. In other words, `s[i]` is the number of times the integer `i` appears in the sequence.
-The key constraints are: 
-- each integer `i` appears exactly `s[i]` times in the sequence, 
-- the total count of all integers in the sequence equals the length of the sequence `n`, 
-- and the sum of the products of each integer and its frequency equals the length of the sequence `n`. 
-The problem's objective is to find a sequence that satisfies these constraints, which is a feasibility problem, not an optimization problem, so there is no objective function to minimize or maximize, and the goal is to find a solution that satisfies all the constraints.

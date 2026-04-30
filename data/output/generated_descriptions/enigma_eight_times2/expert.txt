@@ -1,5 +1,0 @@
-name: Enigma Puzzle Eight Times
-description: The problem is to find a 5-digit number with different digits, not starting with zero, such that when multiplied by 8, it produces another 5-digit number with the remaining 5 digits, and the sum of the digits of the original number is greater than the sum of the digits of the product.
-variables: $x, y, x_a, y_a$ where $x$ and $y$ are integers representing the 5-digit numbers, and $x_a$ and $y_a$ are arrays of integers representing the digits of $x$ and $y$ respectively. 
-constraints: $all\_different(x_a ++ y_a)$, $toNum10(x_a, x)$, $toNum10(y_a, y)$, $y = 8x$, $sum(x_a) > sum(y_a)$ where the constraints ensure that all digits are different, $x$ and $y$ are converted to their digit arrays, $y$ is the product of $x$ and 8, and the sum of the digits of $x$ is greater than the sum of the digits of $y$.
-objective: The problem does not have a specific objective to minimize or maximize, but rather to find a 5-digit number that satisfies all the given constraints.

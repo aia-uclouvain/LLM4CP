@@ -1,5 +1,0 @@
-The problem is called "alldifferent_partition". 
-It's about dividing some items into groups in such a way that each item is in its own unique group and each group has its own unique set of values. 
-The main variables are "x" which represents the items, and "s" which represents the groups. 
-The basic restrictions are that each item must be in one group, each group must have a unique set of values, and no two items can be in the same group if they have the same value. 
-The goal is to find a way to divide the items into groups that satisfy these restrictions.

@@ -1,5 +1,0 @@
-Divisible by 7 problem. 
-This problem is about arranging three cubes with numbers 6, 3, and 1 on them in a line to form a 3-digit number that is divisible by 7. 
-The main variables are the numbers on each cube (x[1], x[2], x[3]) which represent the digits of the 3-digit number, and z which is the 3-digit number itself. 
-The basic restrictions are that each cube must be used, the numbers on the cubes must be different, and the 3-digit number must be divisible by 7. Also, since a 6 cube could also be a 9, the problem considers both possibilities but only allows one of them to be used. 
-The goal of the problem is to find an arrangement of the cubes that satisfies these restrictions, meaning to find a 3-digit number that is divisible by 7.

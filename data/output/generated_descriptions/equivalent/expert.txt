@@ -1,5 +1,0 @@
-name: Equivalent Problem
-description: The Equivalent problem is a constraint satisfaction problem that involves enforcing an equivalence relation between a single variable and a collection of 0-1 variables. The goal is to find an assignment of values to the variables such that the equivalence relation holds.
-variables: $b, variables_{1..2}$, where $b$ is a 0-1 variable and $variables_{1..2}$ is an array of two 0-1 variables. These variables represent the decision variables in the problem, where $b$ is the variable that is equivalent to the equivalence of $variables_{1}$ and $variables_{2}$.
-constraints: $b \leftrightarrow (variables_1 = variables_2)$, which is the equivalence constraint that enforces $b$ to be equal to 1 if and only if $variables_1$ and $variables_2$ are equal.
-objective: The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to solve the problem as a satisfaction problem, where the goal is to find an assignment that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

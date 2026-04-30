@@ -1,5 +1,0 @@
-Quasigroup problem
-The problem is about finding a special kind of multiplication table that follows certain rules. 
-The main variables are the elements in the multiplication table, which are like boxes where you can put numbers. 
-The basic restrictions are that each row and column can only have each number once, and when you multiply numbers together in a certain way, you get a specific result. 
-The goal is to fill in the multiplication table so that it satisfies all these rules, and there is no specific thing to minimize or maximize, just to find a table that works.

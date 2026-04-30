@@ -1,5 +1,0 @@
-name: Optimizing Shopping Basket Problem
-description: The problem is to find the optimal shopping strategy to purchase all items from different shops with minimal total price, considering the prices of items in each shop and the delivery costs of each shop, which may depend on the total cost of items purchased from that shop.
-variables: $x_{i,j}$, where $x_{i,j}$ is a binary variable indicating whether item $i$ is purchased from shop $j$. These variables represent the decision of which shop to buy each item from.
-constraints: $\sum_{j=1}^{num\_shops} x_{i,j} = 1 \forall i \in 1..num\_items$, which ensures that each item is purchased from exactly one shop, and $total = \sum_{i=1}^{num\_items} \sum_{j=1}^{num\_shops} x_{i,j} \cdot costs_{i,j} + \sum_{j=1}^{num\_shops} delivery\_costs_j \cdot bool2int(\sum_{i=1}^{num\_items} costs_{i,j} \cdot x_{i,j} > 0 \wedge \sum_{i=1}^{num\_items} costs_{i,j} \cdot x_{i,j} < delivery\_costs\_limits_j)$, which calculates the total cost, including the costs of items and delivery costs.
-objective: Minimize $total$, the total cost of purchasing all items.

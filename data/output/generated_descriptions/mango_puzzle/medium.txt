@@ -1,5 +1,0 @@
-Magno Puzzle
-The Magno puzzle is a classic constraint programming problem that involves finding a sequence of integers that satisfy a set of linear equations. 
-The main decision variables in this problem are the elements of the array x, which represent a sequence of integers. 
-The key constraints in this problem are a set of linear equations that the sequence of integers must satisfy. In plain language, each equation states that a certain combination of the integers in the sequence must equal a specific value. For example, the first equation states that -3 times the first integer plus the second integer must equal 1. The constraints also specify that all integers in the sequence must be non-negative. 
-The objective of the Magno puzzle is to minimize the last integer in the sequence, which is represented by the variable x[n]. In other words, the goal is to find a sequence of integers that satisfies all the constraints while keeping the last integer as small as possible.

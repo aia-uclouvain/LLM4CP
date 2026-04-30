@@ -1,7 +1,0 @@
-name: Rubik's Cube Problem
-description: The problem is to find the minimum number of moves required to solve a Rubik's Cube from a given initial configuration. The cube has 48 elements, and there are 6 basic moves (and their inverses) that can be applied to the cube. The goal is to find the shortest sequence of moves that transforms the initial configuration into the solved state.
-variables: x, init, check_ix, operations 
-x: a 2D array of decision variables representing the state of the cube at each step, init: a 1D array of decision variables representing the initial configuration of the cube, check_ix: a decision variable representing the index of the minimum number of moves, operations: a 1D array of decision variables representing the sequence of moves applied to the cube. 
-constraints: operations[1] = 0, forall(j in 1..n) (x[1, j] = init[j] /\ x[rows, j] = j), forall(i in 1..rows) (alldifferent([x[i, j] | j in 1..n])), forall(i in 2..rows) (permutation3([x[i-1, k] | k in 1..n], [moves[m, k] | k in 1..n], [x[i, k] | k in 1..n]) /\ operations[i] = m), forall(j in 1..n) (x[check_ix, j] = j), forall(k in 2..rows) (k > check_ix -> forall(j in 1..n) (x[k, j] = j) /\ operations[k] = 0), forall(i in 2..rows) (i < check_ix <-> operations[i] > 0)
-These constraints ensure that the initial configuration is set correctly, each step is a valid permutation of the previous step, the final configuration is the solved state, and the sequence of moves is minimal.
-objective: minimize check_ix, which represents the minimum number of moves required to solve the cube.

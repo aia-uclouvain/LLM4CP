@@ -1,5 +1,0 @@
-name: Optimizing Shopping Basket Problem
-description: The problem is to find the optimal shopping strategy to purchase a set of items from different shops with varying prices and delivery costs, such that the total cost is minimized. Each item can be bought from one shop, and the delivery cost of a shop is added to the total cost if the total price of items bought from that shop is below a certain limit.
-variables: $x_i \in \{1, 2, ..., num\_shops\}$ for $i \in \{1, 2, ..., num\_items\}$, $total \in \mathbb{Z}$. These variables represent the shop from which to buy each item, and the total cost of the shopping basket, respectively.
-constraints: $total = \sum_{i=1}^{num\_items} costs_{i,x_i} + \sum_{j=1}^{num\_shops} delivery\_costs_j \* bool2int(\sum_{i=1}^{num\_items} costs_{i,j} \* bool2int(x_i == j) > 0 \wedge \sum_{i=1}^{num\_items} costs_{i,j} \* bool2int(x_i == j) < delivery\_costs\_limits_j)$. These constraints ensure that the total cost is calculated correctly, taking into account the prices of the items and the delivery costs of the shops.
-objective: Minimize $total$

@@ -1,5 +1,0 @@
-The Crossfigure problem. 
-The Crossfigure problem is about filling in a grid with numbers to satisfy certain clues. 
-The main variables are the grid cells (M) and the clue values (A and D). 
-The basic restrictions or rules of the problem are that each clue value must be equal to the number represented by the corresponding cells in the grid, and that the grid cells must contain digits between 0 and 9. 
-The goal of the problem is to find a solution that satisfies all the clues.

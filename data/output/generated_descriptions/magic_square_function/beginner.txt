@@ -1,5 +1,0 @@
-Magic Square Problem
-The problem is about creating a special square grid where numbers are arranged in a specific way. 
-The main variables are the grid cells (x) and the sum of each row, column, and diagonal (s), which represent the total of the numbers in each line. 
-The basic restrictions are that each number can only be used once, and the sum of numbers in each row, column, and diagonal must be the same. 
-The goal is to find a way to fill the grid with numbers from 1 to n*n (where n is the size of the grid) such that all these conditions are met, and the sum of each row, column, and diagonal is equal to the sum of the first n*n natural numbers divided by n.

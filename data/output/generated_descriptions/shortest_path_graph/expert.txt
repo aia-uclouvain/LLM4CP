@@ -1,8 +1,0 @@
-name: Shortest Path Problem
-description: The problem is to find the shortest path between two nodes in a graph. The graph is represented by a set of edges, where each edge connects two nodes. The goal is to find a path that starts at a given start node, ends at a given target node, and has the minimum number of edges.
-variables: $x_1, x_2, ..., x_n, path\_length$ 
-These are decision variables where $x_i$ represents the $i^{th}$ node in the path, and $path\_length$ represents the total number of nodes in the path. The $x_i$ variables are used to construct the path, and the $path\_length$ variable is used to measure the length of the path.
-constraints: $all\_different\_except\_0(x)$, $x_1 = start$, $last\_not\_0(x, target)$, $all\_paths(x, graph)$ 
-These constraints ensure that: all nodes in the path are distinct except for the nodes that are not part of the path (which are represented by 0), the path starts at the given start node, the path ends at the given target node, and the path only includes edges that are present in the graph.
-objective: minimize $path\_length$ 
-The objective is to minimize the total number of nodes in the path, which corresponds to finding the shortest path between the start and target nodes.

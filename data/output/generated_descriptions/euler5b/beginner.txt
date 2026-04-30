@@ -1,5 +1,0 @@
-Euler #5 
-This problem is about finding the smallest number that can be divided evenly by all numbers from 1 to 20. 
-The main variable is x, which is an array of numbers where each number is a solution to the problem for a given range, and the key value is x[n], which represents the smallest number that can be divided by all numbers from 1 to n.
-The basic restriction is that the number must be divisible by all numbers from 1 to 20 without any remainder. 
-The goal of the problem is to find the smallest such number, which is the value of x[n].

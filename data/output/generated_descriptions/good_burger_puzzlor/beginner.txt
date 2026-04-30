@@ -1,5 +1,0 @@
-Good Burger problem
-The problem is about creating a burger with certain ingredients that meet health requirements and taste standards, and the goal is to make the most expensive burger possible.
-The main variables are the number of each ingredient to include in the burger, such as beef patties, buns, cheese, onions, pickles, lettuce, ketchup, and tomatoes.
-The basic restrictions are that each ingredient must be used at least once and no more than five times, the total sodium content must be less than 3,000 mg, the total fat content must be less than 150 grams, and the total calories must be less than 3,000.
-The goal is to maximize the total cost of the burger, which means using the most expensive combination of ingredients that meet the health and taste requirements.

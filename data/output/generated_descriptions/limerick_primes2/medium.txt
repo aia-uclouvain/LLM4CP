@@ -1,5 +1,0 @@
-Limerick Primes problem
-The problem is about finding prime numbers that follow the rhyme scheme of a limerick, which is AABBA, where A is an odd digit and B is any digit other than A.
-The main decision variables are p, x, A, and B. p represents a 5-digit prime number, x is an array of 5 variables representing the digits of p, A is an odd digit, and B is any digit other than A.
-The key constraints are that p must be a prime number, the digits of p must follow the AABBA pattern, A must be an odd digit, and A and B must be different. In plain language, this means that the number must be prime, have the correct digit pattern, and have an odd first digit that is different from the third and fourth digits.
-The objective of the problem is to find a 5-digit prime number that satisfies the limerick rhyme scheme, rather than minimizing or maximizing a specific value. The model uses a satisfaction-based approach, where it searches for a solution that meets all the constraints, rather than optimizing a particular objective function.

@@ -1,5 +1,0 @@
-Magic Square Problem
-The problem is about filling a 3x3 grid with numbers from 1 to 9 in a special way. 
-The main variables are X1 to X9, which represent the numbers to be placed in each cell of the grid.
-The basic restrictions are that each number can only be used once, and the numbers in each row, column, and two diagonals must add up to 15.
-The goal of the problem is to find a way to fill the grid that satisfies all these rules, which is known as a "magic square".

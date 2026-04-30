@@ -1,5 +1,0 @@
-name: Equality of Addition and Multiplication of Fractions
-description: The problem is to find all possible combinations of six distinct integers A, B, C, D, E, and F, within a given range, such that the sum of three fractions A/B, C/D, and E/F is equal to their product, with the additional constraint that the fractions are in increasing order.
-variables: A, B, C, D, E, F, where A, B, C, D, E, F are decision variables representing the numerators and denominators of the fractions, and are distinct integers within a given range.
-constraints: A/B < C/D < E/F, all_different([A,B,C,D,E,F]), (A/B) + (C/D) + (E/F) = (A/B) * (C/D) * (E/F), where the first constraint ensures the fractions are in increasing order, the second constraint ensures the integers are distinct, and the third constraint ensures the sum of the fractions equals their product.
-objective: The problem is a satisfaction problem, where the goal is to find all possible combinations of A, B, C, D, E, and F that satisfy the given constraints, rather than minimizing or maximizing a specific value.

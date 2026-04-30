@@ -1,5 +1,0 @@
-Knight Domination Puzzle
-The problem is about placing knights on a chessboard so that every square is under attack by at least one knight.
-The main variables are the squares on the chessboard, represented by "x", which can be either 0 (no knight) or 1 (knight present).
-The basic restrictions are that every square on the board must be under attack by at least one knight, and no knights can be placed on the outer rows and columns of the board (these are considered "dummy" squares).
-The goal is to minimize the total number of knights needed to achieve this, which is represented by "minnum".

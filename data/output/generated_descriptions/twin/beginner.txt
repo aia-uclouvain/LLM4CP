@@ -1,6 +1,0 @@
-Twin Problem
-The Twin problem is about finding pairs of numbers that are related in a specific way. 
-Imagine you have a list of pairs of numbers, like (1,8) and (9,6). 
-The main variables are the pairs of numbers, where each pair has two parts: x and y. 
-The basic restrictions are that if two pairs have the same x value, they must also have the same y value, and if two pairs have the same y value, they must also have the same x value. 
-The goal of the problem is to find all possible pairs of numbers that satisfy these restrictions, given some initial pairs of numbers.

@@ -1,5 +1,0 @@
-The name of the problem is Breaking News. 
-This problem is about matching four reporters with four different locations and four breaking news events. 
-The main decision variables are the locations and events, which represent the assignment of each reporter to a location and an event. 
-The key constraints are: the 30-pound baby was not born in South Amboy or New Hope, Jimmy did not go to Port Charles, the blimp launching and skyscraper dedication were covered by Lois and the reporter sent to Port Charles, South Amboy was not the site of the beached whale or skyscraper dedication, and Bayonne is either where Corey went or where the whale was beached, or both. 
-The problem's objective is to find a satisfying assignment of reporters to locations and events, given the constraints, with no explicit minimization or maximization objective, but rather to find a feasible solution that meets all the conditions.

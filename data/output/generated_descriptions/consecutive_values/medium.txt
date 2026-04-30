@@ -1,5 +1,0 @@
-The problem is called Consecutive Values.
-It is about assigning values to a set of variables such that the difference between the largest and smallest values is equal to the number of distinct values minus one, meaning there are no gaps or holes in the used values.
-The main decision variables are the elements of the array `x`, which represent the values assigned to each variable, and can take any integer value between 1 and 10.
-The key constraints are that the number of distinct values in `x` must be equal to the difference between the maximum and minimum values in `x` plus one, ensuring that all values between the minimum and maximum are used.
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies the given constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model.

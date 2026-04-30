@@ -1,5 +1,0 @@
-Costas Array Problem
-The problem is about finding special arrangements of numbers, called Costas arrays, where the differences between numbers in each row are unique.
-The main variables are "costas" (an array of numbers) and "differences" (a table of differences between numbers in the array). In plain language, "costas" represents the arrangement of numbers, and "differences" represents the table of differences between these numbers.
-The basic restrictions are that each number in the array must be unique, and the differences between numbers in each row must be distinct. Additionally, the lower triangle of the difference table is fixed to a specific value.
-The goal of the problem is to find all possible Costas arrays of a given size (in this case, 18 numbers). The problem aims to generate all valid arrangements that satisfy the given constraints, rather than minimizing or maximizing a specific value.

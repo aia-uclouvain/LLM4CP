@@ -1,8 +1,0 @@
-Assignment Problem
-The Assignment Problem is about finding the optimal way to assign a set of agents to a set of tasks, such that each agent is assigned to exactly one task and each task is assigned to exactly one agent, while maximizing or minimizing a certain objective function.
-
-The main decision variables in this problem are represented by the 2D array `x`, where `x[i, j]` is a binary variable that indicates whether agent `i` is assigned to task `j`. The `cost` array represents the compatibility or cost of assigning each agent to each task.
-
-The key constraints in this problem are that each agent can only be assigned to one task, and each task can only be assigned to one agent. This is represented by the constraints `sum(j in 1..cols) (x[i, j]) = 1` for each agent `i`, and `sum(i in 1..rows) (x[i, j]) = 1` for each task `j`.
-
-The objective of the Assignment Problem is to maximize the total cost or happiness, which is represented by the variable `total_cost`. This is calculated by summing the product of the assignment variables `x[i, j]` and the corresponding cost `cost[i, j]` for all agents and tasks. In this specific example, the goal is to maximize the total happiness of the couples on the desert island by assigning each person to a partner of the opposite sex.

@@ -1,5 +1,0 @@
-Project Euler Problem 1
-The problem is about finding the sum of all natural numbers below a given limit that are multiples of 3 or 5.
-The main decision variables are an array `x` of binary variables, where `x[i]` represents whether the number `i` is a multiple of 3 or 5 (1 if it is, 0 if it's not), and a variable `s` which represents the sum of all these multiples.
-The key constraints are that for each number `i`, if `i` is a multiple of 3 or 5, then `x[i]` must be 1, otherwise `x[i]` must be 0. This is done using a conditional statement that checks the remainder of `i` divided by 3 and 5.
-The problem's objective is to find the sum `s` of all the multiples of 3 or 5 below the given limit, which in this case is 1000. The model uses the `solve satisfy` statement, which means it aims to find a solution that satisfies all the constraints, and the sum `s` is then output as the result.

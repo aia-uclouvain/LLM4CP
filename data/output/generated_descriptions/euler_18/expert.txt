@@ -1,5 +1,0 @@
-name: Maximum Path Sum in a Triangle
-description: The problem is to find the maximum total from top to bottom of a triangle, where each step can only be to an adjacent number on the row below.
-variables: $x_1, x_2, ..., x_n$ - These are decision variables representing the column index of the number chosen at each row, where $n$ is the number of rows in the triangle. 
-constraints: $\forall i \in 2..n: triangle[i,x_i] > 0 \wedge triangle[i-1,x_{i-1}] > 0 \wedge x_i - x_{i-1} \geq 0 \wedge x_i - x_{i-1} \leq 1 \wedge x_1 = 1$ - These constraints ensure that the chosen numbers are valid (i.e., they exist in the triangle), and that each step is to an adjacent number on the row below.
-objective: Maximize $\sum_{i=1}^{n} triangle[i, x_i]$ - The objective is to maximize the total sum of the chosen numbers from top to bottom of the triangle.

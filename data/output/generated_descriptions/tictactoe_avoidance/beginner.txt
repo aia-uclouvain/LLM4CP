@@ -1,5 +1,0 @@
-Tic Tac Toe Avoidance
-The problem is about placing a certain number of X's on a Tic Tac Toe board without getting three X's in a row, either horizontally, vertically, or diagonally.
-The main variables are the X's (represented by 1's) and O's (represented by 0's) on the board, which are arranged in a grid of rows and columns.
-The basic restrictions are that there must be a certain number of X's on the board, and no three X's can be in a row, either horizontally, vertically, or diagonally, and each row and column can only have one more O than X.
-The goal of the problem is to find a way to place the X's on the board without violating these restrictions, and the model is looking for all possible solutions that satisfy these conditions.

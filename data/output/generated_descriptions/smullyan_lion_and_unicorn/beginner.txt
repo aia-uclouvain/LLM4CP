@@ -1,5 +1,0 @@
-Smullyan's Lion and Unicorn problem. 
-This problem is about figuring out what day of the week it is, based on statements made by a lion and a unicorn. The lion lies on Mondays, Tuesdays, and Wednesdays, while the unicorn lies on Thursdays, Fridays, and Saturdays. 
-The main variables are "today" which represents the current day of the week, "lion" and "unicorn" which represent whether the lion or unicorn is telling the truth on each day. 
-The basic restrictions are that the lion and unicorn have specific days when they lie, and they make statements about what happened yesterday or what will happen tomorrow. 
-The goal is to find the day of the week that satisfies the statements made by the lion, which involves determining the value of "today".

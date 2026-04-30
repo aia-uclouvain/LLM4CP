@@ -1,5 +1,0 @@
-The Dreadsbury Mansion Murder Mystery 
-The problem is about determining who killed Aunt Agatha in Dreadsbury Mansion, given certain conditions and relationships between Agatha, the butler, and Charles. 
-The main decision variables are the_killer and the_victim, which represent the person who committed the murder and the person who was murdered, respectively. The array variables hates and richer represent the hate and wealth relationships between the characters, where hates[i,j] is 1 if person i hates person j, and richer[i,j] is 1 if person i is richer than person j. 
-The key constraints are: a killer always hates their victim and is not richer than them, Agatha hates everyone except the butler, the butler hates everyone not richer than Agatha and everyone Agatha hates, Charles hates no one that Agatha hates, and no one hates everyone. 
-The problem's objective is to satisfy all the given constraints and determine who killed Agatha, with the solution indicating that Agatha killed herself.

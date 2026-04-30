@@ -1,5 +1,0 @@
-Set Covering Problem
-The Set Covering Problem is about finding the smallest collection of sets that covers all elements in a given universe. 
-The main decision variables are x, which is an array of binary variables where x[i] represents whether the ith set is included in the covering or not, and z, which represents the total number of sets included in the covering. 
-The key constraints are that each element in the universe must be covered by at least one set, and the total number of elements in the chosen sets is calculated. 
-The objective of the problem is to minimize the number of sets included in the covering, which is represented by the variable z. Alternatively, the problem can also be formulated to minimize the total number of elements in the chosen sets, or a combination of both.

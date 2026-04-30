@@ -1,5 +1,0 @@
-Combination Locks problem
-The problem is about finding the correct combination to unlock a safe with six dials, where each dial has a set of possible numbers, and the sum of the numbers on all dials must be 419.
-The main decision variables are the array x, where x[i] represents the number selected on the i-th dial.
-The key constraints are that each dial's number must be one of the possible numbers for that dial, and the sum of the numbers on all dials must be exactly 419. In plain language, this means that the chosen numbers must be valid options for each dial, and the total of these numbers must match the given target sum.
-The problem's objective is to find a satisfying assignment of numbers to the dials, such that all constraints are met, rather than minimizing or maximizing a specific value. The goal is to determine the correct combination that unlocks the safe, given the constraints on the sum of the dial numbers and the allowed values for each dial.

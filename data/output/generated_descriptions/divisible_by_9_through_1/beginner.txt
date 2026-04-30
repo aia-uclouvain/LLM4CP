@@ -1,5 +1,0 @@
-Divisible by 9 through 1 problem
-This problem is about finding a special 9-digit number where each digit from 1 to 9 is used only once. The number must also follow some rules: when you remove the last digit, the remaining number should be divisible by 8, and if you remove the last digit again, the new number should be divisible by 7, and so on, until you are left with a single digit that is divisible by 1.
-The main variables are x and t. The variable x represents the 9 digits of the number, and each digit is a number from 1 to 9. The variable t represents the numbers you get when you remove digits from the original number.
-The basic restrictions are that each digit can only be used once, and the numbers you get by removing digits must be divisible by certain numbers (9, 8, 7, and so on).
-The goal of the problem is to find a 9-digit number that satisfies all these rules.

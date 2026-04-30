@@ -1,5 +1,0 @@
-Logic Puzzle 
-This problem is about figuring out information about three friends, Michael, Simon, and Richard, who participated in a programming competition. 
-The main variables are the friends' names (Michael, Simon, Richard), the sports they like (basketball, tennis, cricket), their nationalities (American, Israeli, Australian), and the places they came in the competition (first, second, third). 
-The basic restrictions are that each friend has a different name, likes a different sport, and has a different nationality, and there are specific rules about how they performed in the competition, such as Michael doing better than the American and Simon doing better than the tennis player. 
-The goal is to determine the nationality of each friend and the sport each friend likes, specifically to find out who the Australian is and what sport Richard plays.

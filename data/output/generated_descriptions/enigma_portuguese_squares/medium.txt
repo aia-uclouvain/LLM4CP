@@ -1,5 +1,0 @@
-The problem is called the Enigma Puzzle 1476: Portuguese Squares. 
-It is about finding a set of digits that can replace letters in the statement "ZERO, UM, NOVE, and CEM are perfect squares" such that the statement is true, and the digits are consistently replaced by the same letter. 
-The main decision variables are Z, E, R, O, U, M, N, V, and C, which represent the digits to replace the letters in the statement. 
-The key constraints are that each letter must be replaced by a unique digit, no number can start with zero, and the numbers ZERO, UM, NOVE, and CEM must be perfect squares. 
-The problem's objective is to calculate the square root of the product of the four perfect squares (ZERO, UM, NOVE, and CEM), which is represented by the variable square_root.

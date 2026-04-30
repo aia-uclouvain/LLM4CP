@@ -1,8 +1,0 @@
-Calculs d'Enfer puzzle
-The Calculs d'Enfer puzzle is a classic constraint programming problem that involves assigning integer values to a set of variables, each representing a letter from 'a' to 'z', such that a set of constraints is satisfied.
-The main decision variables are the 26 variables `a` to `z`, each representing a letter and taking an integer value between -100 and 100. These variables are collected in an array `A`.
-The key constraints are: 
-- each variable `A[i]` must have a unique value (all_different constraint), 
-- the sum of the values of the letters in each word must equal the word's index (sum constraint), 
-- and the maximum absolute value of the variables `A[i]` must be minimized (minimize constraint).
-The objective of the problem is to minimize the maximum absolute value of the variables `A[i]`, which represents the largest absolute value assigned to any letter. In other words, the goal is to find an assignment of integer values to the letters such that the largest absolute value is as small as possible.

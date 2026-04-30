@@ -1,5 +1,0 @@
-The problem is called the Layout Problem. 
-It's about fitting different shapes into a grid, like a puzzle, where each shape has its own unique form and size. 
-The main variables are the grid, which is the space where we're trying to fit the shapes, and the shapes themselves, which have different forms and sizes. 
-The basic restrictions or rules are that each shape must be placed within the grid, and each cell in the grid can only be occupied by one shape or be empty. 
-The goal of the problem is to find a way to place all the shapes in the grid so that each shape fits perfectly, without overlapping with other shapes, and all the cells in the grid are either occupied by a shape or empty.

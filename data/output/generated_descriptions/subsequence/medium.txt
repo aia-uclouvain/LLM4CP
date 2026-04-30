@@ -1,5 +1,0 @@
-The Longest Common Subsequence problem.
-The Longest Common Subsequence problem is about finding a contiguous or non-contiguous subset of elements that appears in the same order in two sequences. 
-The main decision variables are x and x_s, where x represents the original sequence and x_s represents the subsequence. 
-The key constraints are that x must be equal to a given sequence [5,4,1,5,2,1], x_s must be a subsequence of x, and x_s must be equal to a given subsequence [5,4,2,1]. Additionally, the positions of the elements in x_s must be in increasing order within x. 
-The problem's objective is to satisfy these constraints, meaning that it aims to find a sequence x and a subsequence x_s that meet all the given conditions, rather than minimizing or maximizing a specific value.

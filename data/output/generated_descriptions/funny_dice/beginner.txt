@@ -1,5 +1,0 @@
-Funny Dice 
-This problem is about two special dice, one red and one blue, with different numbers on each face. 
-The main variables are the numbers on each face of the red and blue dice, and the probabilities of getting certain totals when rolling both dice. 
-The basic restrictions are that each die has six faces with positive whole numbers, the total of the numbers on the red die is higher than the total on the blue die, and the probabilities of getting certain totals follow a specific order. 
-The goal is to find the numbers on the red die, given the order of probabilities for the totals when rolling both dice.

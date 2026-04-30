@@ -1,5 +1,0 @@
-Latin Square Problem
-The Latin Square problem is about creating an n x n grid where each row and column contains each of a set of n distinct symbols exactly once. 
-The main decision variables in this problem are the elements of the "overlays" array, which represents the grid to be filled. Each element overlays[i, j] is a binary variable that indicates whether the symbol i is placed in the jth position of the grid.
-The key constraints are that each row and each column must contain each symbol exactly once. In plain language, this means that for each row, there must be exactly one occurrence of each symbol, and the same applies to each column. 
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of symbols to the grid, such that all the constraints are met. The model uses the "solve satisfy" statement, which means that it will stop as soon as it finds a solution that satisfies all the constraints.

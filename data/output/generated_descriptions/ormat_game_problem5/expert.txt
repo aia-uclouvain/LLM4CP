@@ -1,5 +1,0 @@
-name: Ormat Game Problem
-description: The Ormat game is a puzzle where a player is presented with a grid of cells, some of which are filled with a specific value, and the goal is to fill in the remaining cells according to certain rules.
-variables: $x_{i,j}$, where $x_{i,j}$ represents the value of the cell at row $i$ and column $j$ in the grid, and is a decision variable that can take on a specific value.
-constraints: $\forall i \in \{1, \ldots, n\}, \forall j \in \{1, \ldots, n\}, x_{i,j} \in \{0,1\}$, $\forall i \in \{1, \ldots, n\}, \sum_{j=1}^{n} x_{i,j} = k$, $\forall j \in \{1, \ldots, n\}, \sum_{i=1}^{n} x_{i,j} = k$, where $k$ is a given constant, and additional constraints based on the given problem instance, which are not explicitly defined in the provided model, but are included in the "ormat_game_model.mzn" file.
-objective: The objective of the Ormat game problem is not explicitly defined in the provided model, but based on the context, it appears to be a decision problem, where the goal is to determine whether a given grid can be filled in according to the rules, rather than minimizing or maximizing a specific value.

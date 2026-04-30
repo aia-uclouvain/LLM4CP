@@ -1,5 +1,0 @@
-Pigeon Hole Problem
-The problem is about putting pigeons into pigeon holes, where each hole can hold at most one pigeon. 
-The main variables are the pigeons and the pigeon holes, and the variable "pigeon_holes_ip" keeps track of which pigeon is in which hole.
-The basic restrictions are that each hole can only hold one pigeon, and each pigeon must be placed in exactly one hole.
-The goal of the problem is to find a way to put all the pigeons into the holes, following these rules, and the problem is solved if such a way exists.

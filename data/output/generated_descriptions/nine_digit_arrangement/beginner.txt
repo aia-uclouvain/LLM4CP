@@ -1,5 +1,0 @@
-Nine-digit arrangement problem. 
-This problem is about finding two different ways to multiply three-digit numbers to get the same result, using the digits 1 through 9 only once. 
-The main variables are the digits A, B, C, D, E, F, G, H, and I, which represent the numbers in the two multiplication problems. 
-The basic restrictions are that each digit can only be used once, and the two multiplication problems must have the same result. 
-The goal of the problem is to find a solution where the product of the two multiplications is a specific number, 7448, which is the maximum possible product.

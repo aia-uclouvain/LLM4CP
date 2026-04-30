@@ -1,5 +1,0 @@
-name: KenKen Problem
-description: The KenKen problem is a style of arithmetic and logical puzzle where the objective is to fill a grid with digits such that each row and column contains exactly one of each digit, and each bold-outlined group of cells achieves a specified result using a specified mathematical operation.
-variables: $x_{i,j}$, where $i$ and $j$ are in $1..n$, $n$ being the size of the grid. These variables represent the digit to be placed in the $i$-th row and $j$-th column of the grid.
-constraints: $\forall i \in 1..n, \forall j \in 1..n, x_{i,j} \in 1..n$, $\forall i \in 1..n, \text{all\_different}([x_{i,j} | j \in 1..n])$, $\forall j \in 1..n, \text{all\_different}([x_{i,j} | i \in 1..n])$, and for each group of cells, either the sum, difference, product, or division of the digits in the group equals a specified result.
-objective: satisfy, meaning the objective is to find a feasible solution that satisfies all the constraints, there is no explicit value to minimize or maximize.

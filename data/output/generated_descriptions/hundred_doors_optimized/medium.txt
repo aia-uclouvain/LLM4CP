@@ -1,8 +1,0 @@
-100 Doors Problem
-The 100 doors problem is about determining the state of 100 doors after a series of passes, where each pass involves toggling a subset of doors based on their position.
-
-The main decision variable in this problem is the set `s`, which represents the doors that are open after the last pass. Each door is identified by its position, ranging from 1 to 100.
-
-The key constraints in this problem can be described as follows: a door is toggled (opened or closed) during each pass if its position is a multiple of the pass number. For example, during the first pass, all doors are toggled, during the second pass, every 2nd door is toggled, and so on. The optimized version of the model uses the property that a door remains open if and only if its position is a perfect square of an integer.
-
-The problem's objective is not to minimize or maximize a specific value, but rather to find the set of doors that remain open after the last pass. In other words, the goal is to determine which doors are open and which are closed after all 100 passes have been completed. The model uses a satisfaction-based approach, where the solution is a set of doors that satisfy the given constraints.

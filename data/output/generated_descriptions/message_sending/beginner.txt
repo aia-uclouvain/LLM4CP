@@ -1,8 +1,0 @@
-Message Sending Puzzle
-The problem is about a teacher who wants to send a message to a student named Robert through other students. The teacher asks Craig to tell Robert, but Craig will only tell Robert if he meets him, otherwise, he will tell everyone he meets and the message will be passed on. The students meet each other in a certain order, and we want to find out if the teacher's message will reach Robert.
-
-The main variables are the students, represented by numbers, and the order in which they meet each other. The variable "x" represents the path that the message takes from Craig to Robert.
-
-The basic restrictions or rules of the problem are that each student can only meet another student if they are connected in the given order, and the message can only be passed from one student to another if they meet. The message must start with Craig and end with Robert.
-
-The goal of the problem is to find all possible paths that the message can take from Craig to Robert, and to determine if the teacher's message will reach Robert. In other words, we want to find out if there is a way for the message to be passed from Craig to Robert through the other students, given the order in which they meet each other.

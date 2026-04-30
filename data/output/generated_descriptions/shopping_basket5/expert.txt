@@ -1,9 +1,0 @@
-name: Shopping Basket Optimization Problem
-description: The problem is to find the optimal way to purchase a set of items from different shops, each with its own price for the item and a delivery cost that depends on the total cost of the items purchased from that shop, in order to minimize the total cost.
-variables: x, total 
-x is an array of decision variables where x[i] represents the shop from which to buy item i, and total is the total cost of purchasing all items.
-constraints: 
-x[i] ∈ {1, ..., num_shops} for all i, 
-total = ∑(costs[i, x[i]]) + ∑(delivery_costs[j] * bool2int(∑(costs[i, j] * bool2int(x[i] == j)) > 0 ∧ ∑(costs[i, j] * bool2int(x[i] == j)) < delivery_costs_limits[j]))
-The constraints ensure that each item is bought from a valid shop and that the total cost is calculated correctly, taking into account the delivery costs.
-objective: minimize total

@@ -1,5 +1,0 @@
-The problem is called orth_link_ori_siz_end. 
-It's about making sure that for each item in a collection, the sum of two values (called "ori" and "siz") equals a third value (called "end"). 
-The main variables are "ori", "siz", and "end", which represent the starting point, size, and ending point of something, respectively. 
-The basic rule is that for each item, "ori" plus "siz" must equal "end". 
-The goal is to find values for "ori", "siz", and "end" that satisfy this rule for all items in the collection.

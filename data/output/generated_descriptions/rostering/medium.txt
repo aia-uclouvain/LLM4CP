@@ -1,5 +1,0 @@
-The name of the problem is the Rostering Problem. 
-The Rostering Problem is about assigning workers to different tasks or shifts while ensuring fairness and meeting certain constraints. 
-The main decision variables are `on_duty` and `num_workdays`, where `on_duty` represents the worker assigned to a specific shift on a specific day, and `num_workdays` represents the total number of days a worker is assigned to work. 
-The key constraints are that each worker can only work one shift per day, all workers must work at least a certain number of shifts per week, and the total workload for each worker should not exceed a certain limit. Additionally, the model aims to distribute the workload fairly among workers. 
-The problem's objective is to satisfy these constraints while making the schedule as fair as possible, with the goal of approximating the same number of days per week for each worker. Note that the provided model uses the `satisfy` keyword, indicating that the goal is to find a feasible solution that meets all constraints, rather than minimizing or maximizing a specific objective function.

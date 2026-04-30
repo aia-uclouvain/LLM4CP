@@ -1,5 +1,0 @@
-Self-Referential Quiz puzzle 
-This problem is about a quiz with 10 questions, each with 5 possible answers (A, B, C, D, E). The twist is that the questions are about the answers themselves, making it a self-referential puzzle. 
-The main variables are Q1 to Q10, which represent the answers to each question. 
-The basic restrictions or rules of the problem are the relationships between the questions and their answers, as stated in the problem description. For example, Q1 asks about the first question whose answer is A, Q2 asks about the only two consecutive questions with identical answers, and so on. 
-The goal of the problem is to find the correct answers to each question, which is represented by the array LD.

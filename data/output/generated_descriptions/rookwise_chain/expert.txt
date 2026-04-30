@@ -1,8 +1,0 @@
-name: Rookwise Chain Puzzle
-description: The problem requires placing the digits 1-9 on a 3x3 matrix to form a rookwise connected chain from 1 to 9, and also ensuring that the bottom row is the sum of the first two rows.
-variables: $x_{i,j}, row\_sums_i$ 
-These are decision variables where $x_{i,j}$ represents the digit placed in the $i^{th}$ row and $j^{th}$ column of the matrix, and $row\_sums_i$ represents the sum of the digits in the $i^{th}$ row.
-constraints: $\forall i \in 1..n (row\_sums_i > 0)$, $all\_different([x_{i,j} | i,j \in 1..n])$, $\forall i \in 1..n (toNum10([x_{i,j} | j \in 1..n], row\_sums_i))$, $\sum_{i=1}^{n-1} row\_sums_i = row\_sums_n$, $\forall k \in 1..n*n-1 (\exists i, j \in 1..n (k = x_{i, j} \wedge \exists a, b \in \{-1, 0, 1\} (i+a \geq 1 \wedge j+b \geq 1 \wedge i+a \leq n \wedge j+b \leq n \wedge |a+b| = 1 \wedge k + 1 = x_{i+a, j+b})))$
-These constraints ensure that each row sum is positive, all digits are unique, each row sum is calculated correctly, the sum of the first n-1 rows equals the nth row, and the rookwise chain is formed correctly.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the given constraints, as there is a unique answer.

@@ -1,5 +1,0 @@
-Rogo problem
-The Rogo problem is about finding a loop through a grid of fixed length that contains as many reward points as possible. 
-The main decision variables are x and y, which represent the coordinates in the path, and points, which represent the collected points at each step. 
-The key constraints are that all coordinates must be unique, the path must not include black cells, the path must be connected (i.e., each step is one unit away from the previous step), and the path must close in on itself (i.e., the last step is one unit away from the first step). 
-The objective of the problem is to maximize the sum of the points in the path, which is represented by the variable sum_points.

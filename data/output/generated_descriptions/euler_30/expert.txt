@@ -1,5 +1,0 @@
-name: Euler Problem 30 - Sum of Fifth Powers
-description: The problem asks to find the sum of all numbers that can be expressed as the sum of fifth powers of their digits, where each digit is raised to the power of 5 and the results are summed to form the original number.
-variables: $x_1, x_2, ..., x_m, digits_{i,j}$ where $i = 1..m$ and $j = 1..n$, $x_i$ represents the numbers that can be written as the sum of fifth powers of their digits, and $digits_{i,j}$ represents the $j^{th}$ digit of the $i^{th}$ number.
-constraints: $\forall i \in 1..m: toNum10([digits_{i,j} | j \in 1..n], x_i) \land x_i = \sum_{j=1}^{n} digits_{i,j}^5 \land x_i > 1 \land increasing(x) \land all\_different(x)$, these constraints ensure that each number $x_i$ can be formed by the sum of fifth powers of its digits, and that all numbers are distinct and in increasing order.
-objective: The objective is to find the sum $s = \sum_{i=1}^{m} x_i$ of all such numbers.

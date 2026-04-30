@@ -1,5 +1,0 @@
-Minesweeper
-The problem is about a popular puzzle game where you have to figure out where mines are hidden in a grid. 
-The main variables are the positions in the grid, which can either be a mine (represented by X) or a number showing how many mines are nearby.
-The basic restrictions are that the numbers in the grid must be correct, meaning they must show the correct number of mines adjacent to them. 
-The goal is to correctly identify all the mines in the grid, which is like solving the puzzle.

@@ -1,5 +1,0 @@
-Traffic Lights Problem
-The Traffic Lights Problem is about finding a valid configuration for a set of traffic lights at a four-way junction, considering both vehicle and pedestrian traffic lights.
-The main decision variables are V and P, which represent the states of the vehicle and pedestrian traffic lights, respectively. V has four possible values: red (r), red-yellow (ry), green (g), and yellow (y), while P has two possible values: red (r) and green (g).
-The key constraints are that the combinations of traffic light states for adjacent intersections must be one of the allowed tuples: (r,r,g,g), (ry,r,y,r), (g,g,r,r), or (y,r,ry,r). This ensures that the traffic flow is safe and efficient.
-The objective of the problem is to find a valid assignment of states to all traffic lights, satisfying the given constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints. The model uses a satisfaction-based approach, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

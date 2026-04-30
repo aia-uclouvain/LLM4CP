@@ -1,5 +1,0 @@
-The name of the problem is the implementation of the global constraint "arith_or" in MiniZinc. 
-This problem is about checking if for two lists of numbers, for each pair of corresponding numbers, at least one of them meets a certain condition, such as being equal to a specific value. 
-The main variables are x and y, which are lists of numbers that can be either 0 or 1, and z, which is a number that the condition is compared to. 
-The basic restrictions or rules of the problem are that x and y must be lists of the same length, and they must match specific given lists of numbers. The condition being checked is that for each pair of corresponding numbers in x and y, at least one of them must be equal to z. 
-The goal of the problem is to find values for x, y, and z that satisfy these conditions, specifically with z being equal to 0, and to verify that the "arith_or" constraint holds for these values.

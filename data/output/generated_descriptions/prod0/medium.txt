@@ -1,8 +1,0 @@
-Production Planning Problem
-The problem is about determining the optimal production levels of two products, X and Y, in order to maximize profit while satisfying certain constraints.
-The main decision variables are XB and XC, which represent the production levels of products X and Y, respectively, measured in units.
-The key constraints are: 
-- Non-negativity constraints, which ensure that production levels are not negative
-- Upper bound constraints, which limit the maximum production levels of each product
-- A resource constraint, which limits the total amount of a shared resource used by both products, where product X requires 1/200 of the resource per unit and product Y requires 1/140 of the resource per unit, and the total available resource is 40 units.
-The objective of the problem is to maximize the total profit, which is calculated as 25 times the production level of product X plus 30 times the production level of product Y.

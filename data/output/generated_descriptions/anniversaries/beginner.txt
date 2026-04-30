@@ -1,5 +1,0 @@
-Anniversaries problem
-The problem is about figuring out the names of five couples, how long they have been married, and matching the husbands and wives. 
-The main variables are the names of the husbands (Russell, Douglas, Charles, Peter, and Everett), the names of the wives (Elaine, Joyce, Marcia, Elizabeth, and Mildred), the surnames of the couples (Johnstone, Parker, Watson, Graves, and Shearer), and how long each couple has been married.
-The basic restrictions are that no two couples have been married for the same amount of time, and there are several clues given about the relationships between the couples, such as who has been married longer or shorter than others. 
-The goal of the problem is to determine the correct pairings of husbands and wives, their surnames, and how long they have been married, based on the given clues.

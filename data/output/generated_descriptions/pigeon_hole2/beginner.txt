@@ -1,5 +1,0 @@
-Pigeon Hole Problem
-The problem is about putting pigeons into pigeon holes, where each hole can hold at most one pigeon. 
-The main variables are the number of pigeons (N) and the number of pigeon holes (M), and an array called pigeon_holes that keeps track of which pigeons are in which holes.
-The basic restrictions are that each hole can hold at most one pigeon, and each pigeon must be in a hole. 
-The goal of the problem is to find a way to put all the pigeons into the holes, if possible, and to show which pigeons are in which holes.

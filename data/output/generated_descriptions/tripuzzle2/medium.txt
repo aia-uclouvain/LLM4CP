@@ -1,8 +1,0 @@
-Tripuzzle Problem
-The Tripuzzle problem is a classic constraint programming problem that involves placing triangular pieces of different colors into a larger triangular puzzle. 
-
-The main decision variables in this problem are `x` and `y`. The variable `x` is a 3D array that represents the placement of each triangular piece in the puzzle, with `x[i,j,k]` being 1 if piece `i` is placed at position `j` in orientation `k`, and 0 otherwise. The variable `y` is a 2D array that represents the color of each spot in the puzzle, with `y[i,j]` being the color of spot `i` in orientation `j`.
-
-The key constraints in this problem can be described as follows: each position in the puzzle must be occupied by exactly one piece in one orientation, and each piece must be placed in exactly one position in one orientation. Additionally, the colors of the spots in the puzzle must be consistent with the colors of the pieces, and the colors of the outer spots must match the given colors. The inner spots must also match the colors of the adjacent spots.
-
-The objective of the Tripuzzle problem is to find a satisfying assignment of pieces to positions and orientations, such that all the constraints are satisfied. This is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. In other words, the problem is to determine whether it is possible to place the pieces in the puzzle such that all the constraints are met, and if so, to find one such placement.

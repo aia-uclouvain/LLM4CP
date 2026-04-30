@@ -1,9 +1,0 @@
-Same and Global Cardinality Problem
-The problem is about matching two sets of numbers in a specific way, while also making sure that each number appears a certain number of times.
-The main variables are: 
-- variables1 and variables2, which are lists of numbers that need to be matched.
-- values, which is a list of numbers and how many times they should appear.
-The basic restrictions are: 
-- The numbers in variables1 and variables2 must be a rearrangement of each other.
-- Each number in values must appear exactly as many times as specified.
-The goal is to find a solution where variables1 and variables2 are matched correctly and the numbers appear the required number of times.

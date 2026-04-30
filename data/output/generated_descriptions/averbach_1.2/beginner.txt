@@ -1,5 +1,0 @@
-The problem is called "Hearts Game Problem". 
-It's about three women - an American, an Englishwoman, and a Frenchwoman - playing a card game around a circular table. 
-The main variables are the women's names (American, English, French) and their positions at the table (X, Y, Z), which represent who is sitting where. 
-The basic rules are that each woman passes cards to the person on her right, and some specific cards were passed between them, like the queen of spades and hearts. 
-The goal is to figure out who is the American, the Englishwoman, and the Frenchwoman, based on the information about the cards they passed to each other.

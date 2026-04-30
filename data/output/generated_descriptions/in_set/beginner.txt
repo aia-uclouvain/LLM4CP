@@ -1,5 +1,0 @@
-The problem is called "in_set". 
-It's about checking if a specific value belongs to a given set of values. 
-The main variables are "val" which is a single value, and "s" which is a set of values. 
-The basic restrictions are that "val" must be one of the values in the set "s", and in this case, the set "s" is defined as containing the values 1 and 3, and "val" is set to 3. 
-The goal of the problem is to check if the value "val" is indeed in the set "s", and to confirm that the given constraints are satisfied.

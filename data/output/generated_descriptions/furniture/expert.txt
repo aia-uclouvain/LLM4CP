@@ -1,5 +1,0 @@
-name: Furniture Offer Optimization Problem
-description: The problem is to find the optimal combination of furniture offers to buy at least a certain amount of each type of furniture (armchairs, sidechairs, and benches) while minimizing the total cost.
-variables: $to\_buy_i$ for $i = 1..7$, Total: These are the decision variables representing the number of each offer to buy, and the total cost of the offers, respectively. The $to\_buy_i$ variables determine how many times each offer is purchased, and the Total variable calculates the total cost based on the number of offers bought.
-constraints: $\sum_{i=1}^{7} to\_buy_i \* mat_{i,j} \geq prefs_j$ for $j = 1..3$, $to\_buy_i \geq 0$ for $i = 1..7$, Total $= \sum_{i=1}^{7} offer\_price_i \* to\_buy_i$: These constraints ensure that the preferred amount of each type of furniture is bought, that the number of offers bought is non-negative, and that the total cost is calculated correctly.
-objective: Minimize Total, which represents the total cost of the offers.

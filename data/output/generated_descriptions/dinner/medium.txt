@@ -1,5 +1,0 @@
-Dinner Problem
-The problem is about determining the number of grandparents, parents, and children to invite to dinner under certain constraints. 
-The main decision variables are Grandparents, Parents, and Children, which represent the number of individuals from each group attending the dinner.
-The key constraints are that the total number of people at dinner must be 20, the total cost must be $20, and there must be at least one person from each group, with costs being $3 for grandparents, $2 for parents, and $0.50 for children.
-The problem's objective is to find a satisfying assignment of values to the decision variables that meet all the given constraints, as it is a satisfaction problem rather than an optimization problem, meaning it aims to find a feasible solution that satisfies all conditions rather than minimizing or maximizing a specific objective function.

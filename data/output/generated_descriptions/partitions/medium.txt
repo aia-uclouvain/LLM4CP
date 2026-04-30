@@ -1,5 +1,0 @@
-Integer Partition Problem
-The problem is about dividing a given integer into a specified number of parts, where each part is also an integer. 
-The main decision variables are the array x, where x[i] represents the size of the i-th part. 
-The key constraints are that the sum of all parts must equal the given integer n, and each part must be greater than 2. 
-The problem's objective is to find a satisfying assignment of values to the decision variables, with no explicit minimization or maximization objective, but rather to generate one or all possible solutions that meet the given constraints.

@@ -1,5 +1,0 @@
-Uniform Dice Problem
-The problem is about labeling a blank six-sided die with numbers from 0 to 6 so that when rolled with a standard six-sided die, the sum of the two dice shows each whole number from 1 to 12 with equal chance.
-The main variables are x1, x2, and dist. x1 represents the faces of the standard die, which are already labeled with numbers 1 to 6. x2 represents the faces of the blank die, which need to be labeled. dist represents the distribution of the sums of the two dice, which should be equal for each number from 1 to 12.
-The basic restrictions are that each face of the blank die must be labeled with a number from 0 to 6, and all six faces must be labeled. The sum of the two dice should show each number from 1 to 12 with equal chance.
-The goal of the problem is to find a labeling of the blank die such that the distribution of the sums is uniform, meaning each number from 1 to 12 has an equal chance of being rolled.

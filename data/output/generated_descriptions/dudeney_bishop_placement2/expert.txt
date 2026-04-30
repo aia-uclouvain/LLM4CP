@@ -1,5 +1,0 @@
-name: Dudeney's Bishop Placement Problem II
-description: The problem is a classic constraint programming problem where the goal is to place as many bishops as possible on an 8x8 chessboard such that no two bishops attack each other. A bishop attacks a square if it is on the same diagonal as the square.
-variables: $x_{i,j}, a_{i,j}$, where $x_{i,j}$ represents whether a bishop is placed on square $(i,j)$ (1 if a bishop is placed, 0 otherwise), and $a_{i,j}$ represents whether square $(i,j)$ is attacked by any bishop (1 if attacked, 0 otherwise). 
-constraints: $\sum_{m \in 1..size, m \neq i, m-i+j \geq 1, m-i+j \leq size} x_{m,m-i+j} + \sum_{m \in 1..size, m \neq i, i+j-m \geq 1, i+j-m \leq size} x_{m,i+j-m} \leq 99a_{i,j}$ (a square is attacked if there is a bishop on the same diagonal), $a_{i,j} + x_{i,j} = 1$ (each square is either occupied or attacked). 
-objective: Maximize $\sum_{i,j \in 1..size} x_{i,j}$, which represents the total number of bishops placed on the board.

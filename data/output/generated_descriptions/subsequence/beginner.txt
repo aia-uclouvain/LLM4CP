@@ -1,5 +1,0 @@
-Subsequence problem
-The problem is about finding a shorter sequence of numbers that appears in the same order within a longer sequence of numbers.
-The main variables are x, which represents the longer sequence, and x_s, which represents the shorter sequence. 
-The basic restrictions are that the shorter sequence must be in the same order as it appears in the longer sequence, and the numbers in the shorter sequence must match the numbers in the longer sequence.
-The goal of the problem is to find a shorter sequence x_s that is a subsequence of the longer sequence x, where x_s matches a given sequence [5,4,2,1] and x matches a given sequence [5,4,1,5,2,1].

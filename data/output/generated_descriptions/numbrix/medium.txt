@@ -1,9 +1,0 @@
-Numbrix
-Numbrix is a logic-based number-placement puzzle where the objective is to fill a grid with digits in sequential order, either horizontally or vertically, without using diagonal paths.
-The main decision variables are represented by a 3D array `x[i, j, k]`, where `x[i, j, k] = 1` means cell `[i, j]` is assigned the number `k`. 
-The key constraints are: 
-- each cell must be assigned exactly one number, 
-- a value can only occur once in the grid, 
-- each cell must have a neighbor with the next higher value, and 
-- pre-defined numbers in the grid, given by the `givens` array, must be respected.
-The problem's objective is to find a solution that satisfies all the constraints, which means finding a valid Numbrix puzzle solution, rather than minimizing or maximizing a specific value.

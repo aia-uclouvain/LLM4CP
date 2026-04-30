@@ -1,5 +1,0 @@
-Best Shuffle
-The problem is about rearranging the letters of a word in such a way that as many letters as possible are moved to a different position.
-The main variables are the word (the original string of letters), shuffle (the rearranged string of letters), and num_same (the number of positions where the letter did not change).
-The basic restrictions are that each letter in the word must be used exactly once in the shuffled string, and no letter can be in the same position as it was in the original word.
-The goal is to minimize the number of positions where the letter did not change, which means finding the best possible shuffle where as many letters as possible are moved to a different position.

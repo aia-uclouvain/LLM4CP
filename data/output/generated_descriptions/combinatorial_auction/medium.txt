@@ -1,8 +1,0 @@
-Combinatorial Auction Problem
-The Combinatorial Auction Problem is about finding the optimal selection of bids in an auction where bidders can place bids on combinations of items. 
-
-The main decision variables are `x`, an array of binary variables where `x[i]` represents whether bid `i` is selected or not, and `total`, the total revenue from the selected bids.
-
-The key constraints are that each item can be selected at most once, meaning that if two bids include the same item, only one of them can be selected. This is ensured by the constraint `sum(i in 1..num_bids) (x[i]*bool2int(j in packages[i])) <= 1` for each item `j`.
-
-The objective of the problem is to maximize the total revenue, which is the sum of the values of the selected bids, represented by the constraint `total = sum(i in 1..num_bids) ( x[i]*bids[i] )`. The goal is to find a subset of bids that maximizes the total revenue without selecting any two bids that share an item.

@@ -1,5 +1,0 @@
-Calculs d'Enfer puzzle 
-The problem is about finding values for a set of letters (a to z) such that certain rules are satisfied. 
-The main variables are the values of the letters (a to z) which can be any integer between -100 and 100. 
-The basic restrictions are that all the letters must have different values, and when the letters are substituted into certain words, the sum of the values of the letters in each word must equal a specific number. 
-The goal of the problem is to minimize the maximum absolute value of the letter values, which means finding the smallest possible largest absolute value among all the letter values.

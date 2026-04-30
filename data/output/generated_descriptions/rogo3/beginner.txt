@@ -1,5 +1,0 @@
-Rogo problem
-The Rogo problem is about finding a path in a grid that collects as many points as possible. 
-The main variables are the x and y coordinates of each step in the path, and the points collected at each step. 
-The basic restrictions are that the path must be of a fixed length, it cannot visit the same cell twice, and it cannot go through black cells. 
-The goal is to maximize the total number of points collected.

@@ -1,5 +1,0 @@
-The problem is called Consecutive Values. 
-It's about finding a set of numbers where the difference between the largest and smallest numbers is equal to the number of unique numbers minus one, meaning there are no gaps in the sequence of numbers. 
-The main variable is "x", which is an array of numbers that we're trying to find. 
-The basic restriction is that the numbers in "x" must be between 1 and 10, and the difference between the largest and smallest numbers in "x" must be equal to the number of unique numbers in "x" minus one. 
-The goal of the problem is to find a set of numbers that satisfy this restriction, and the solution will be a list of numbers that meet this condition.

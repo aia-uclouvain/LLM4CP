@@ -1,5 +1,0 @@
-name: Tommy's Birthday Coins
-description: The problem is about finding the number of coins of different denominations that add up to a total value of 306 and a total count of 15 coins, with each denomination having at least one coin. The coins have values of 30, 12, and 6 units.
-variables: $x_1, x_2, x_3$, where $x_i$ represents the number of coins of the $i^{th}$ denomination, which has a value of $value_i$ units.
-constraints: $x_i \geq 1, \forall i \in C$, $\sum_{i \in C} value_i \cdot x_i = 306$, $\sum_{i \in C} x_i = 15$, which are the constraints that each denomination must have at least one coin, the total value of all coins must be 306, and the total count of all coins must be 15.
-objective: satisfy, which means the objective is to find a feasible solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

@@ -1,5 +1,0 @@
-The problem is called "in_same_partition". 
-It's about dividing a group of things into smaller groups, called partitions, and making sure two specific things are in the same smaller group. 
-The main variables are "s" (the smaller groups), "var1" and "var2" (the two things that need to be in the same group). 
-The basic rules are that "var1" and "var2" must be different, and they both need to be in one of the smaller groups. 
-The goal is to find a way to divide the things into smaller groups so that "var1" and "var2" are in the same group, following the given smaller groups.

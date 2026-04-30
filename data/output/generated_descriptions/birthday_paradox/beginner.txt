@@ -1,5 +1,0 @@
-Birthday Problem
-The problem is about finding the probability that at least two people in a group share the same birthday. 
-The main variables are the number of days in a year (n), the number of people in the group (p), the probability of no duplicate birthdays (prob_no_dup), and the probability of at least two people sharing the same birthday (prob_dup). 
-The basic restrictions are that each person can only have one birthday, and there are only 365 possible birthdays in a year. 
-The goal is to calculate the probability of at least two people sharing the same birthday for a given number of people, and to show how this probability changes as the number of people increases.

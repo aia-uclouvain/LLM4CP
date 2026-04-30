@@ -1,5 +1,0 @@
-name: Denny's Menu problem
-description: The problem is to find the number of different combinations of menu items that can be purchased to total $10, given the prices of the menu items are $2, $4, $6, and $8.
-variables: $x_1, x_2, x_3, x_4$ - These are the decision variables representing the number of each menu item to purchase, where $x_i$ is the number of items priced at $y_i$.
-constraints: $\sum_{i=1}^{4} x_i \cdot y_i = 10$ - This is the constraint that the total cost of the purchased items must equal $10, where $y_i$ is the price of the $i^{th}$ item.
-objective: The objective of the problem is not to minimize or maximize a specific value, but rather to find all possible combinations of menu items that satisfy the constraint, which is achieved by using the "solve satisfy" statement in the Minizinc model.

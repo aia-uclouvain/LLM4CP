@@ -1,5 +1,0 @@
-The Arrow Problem. 
-This problem is about finding a path through a grid of numbers that creates the largest possible number when read from left to right, without visiting any cell more than once and only moving to neighboring cells. 
-The main variables are the grid of numbers and the path that is taken through the grid, which is represented by the variable x, where each value in x corresponds to a cell in the grid. 
-The basic restrictions are that each cell can only be visited once, and from each cell, you can only move to a neighboring cell (up, down, left, or right, but not diagonally), and you cannot visit a cell that is outside the grid. 
-The goal is to maximize the number that is created by reading the values in the path from left to right, with the condition that this number must be larger than 84937561.

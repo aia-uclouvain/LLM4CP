@@ -1,7 +1,0 @@
-name: Global Cardinality No Loop Problem
-description: The Global Cardinality No Loop problem is a constraint satisfaction problem that involves assigning values to a set of variables, with constraints on the number of occurrences of each value and the number of self-assignments (i.e., assignments where the variable index matches the assigned value).
-variables: $nloop \in \{0, \ldots, n\}, variables = (variables_1, \ldots, variables_n) \in \{1, \ldots, 8\}^n, values = (values_{i,1}, values_{i,2})_{i=1}^m \in \{1, \ldots, 8\} \times \{0, \ldots, 8\}^m$ 
-These are the decision variables of the problem, where $nloop$ represents the number of self-assignments, $variables_i$ represents the value assigned to the $i$-th variable, and $values_{i,1}$ and $values_{i,2}$ represent the value and its desired number of occurrences, respectively.
-constraints: $values_{i,2} = \sum_{j \neq i} (variables_j = values_{i,1}), nloop = \sum_{j = 1}^n (variables_j = j)$ 
-These constraints ensure that the number of occurrences of each value matches the desired number, and the number of self-assignments is equal to $nloop$.
-objective: The objective of the problem is to find an assignment of values to variables that satisfies all the constraints, with no specific objective function to minimize or maximize. The goal is to find a feasible solution that meets all the constraints.

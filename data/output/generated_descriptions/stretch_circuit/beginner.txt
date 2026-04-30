@@ -1,5 +1,0 @@
-The problem is called the Global Constraint Stretch Circuit. 
-It's about finding a sequence of numbers that follows certain rules. 
-The main variables are the sequence of numbers (x), the values that these numbers can take (val), and the minimum and maximum lengths of sequences of the same number (lmin and lmax). 
-The basic restrictions are that each sequence of the same number must be within a certain length, and each number in the sequence must be different from the one before and after it, except when the sequence wraps around to the start. 
-The goal is to find a sequence that satisfies all these rules, given the specific values, minimum lengths, and maximum lengths provided.

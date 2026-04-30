@@ -1,5 +1,0 @@
-Knapsack Problem
-The problem is about finding the best way to pack two types of items, small and large, to get the maximum value while not exceeding certain limits.
-The main variables are "smallset" and "largeset", which represent the number of small and large items to pack.
-The basic restrictions are that we cannot pack a negative number of items, and we have limits on the total size of the items we can pack, which are represented by two equations: one for the total weight (200) and one for the total volume (160).
-The goal of the problem is to maximize the total value, which is calculated as 5 times the number of small items plus 20 times the number of large items.

@@ -1,5 +1,0 @@
-The problem is called "Recreational mathematics". 
-It's about five men - Baker, Dyer, Farmer, Glover, and Hosier - sitting around a circular table playing poker. Each man has the same name as one of the other men's professions. 
-The main variables are the names of the men and their professions, which are just labels to identify who is who and what job each person has. 
-The basic rules are that each man must have a different name and a different profession, and they must sit in a specific order based on the clues given. For example, the dyer must sit two places to the left of Mr Hosier, and the baker must sit two places to Mr Baker's right. 
-The goal is to figure out who the dyer is, based on the given clues and the seating arrangement.

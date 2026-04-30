@@ -1,5 +1,0 @@
-Twelve Draughts Puzzle
-The problem is about placing 12 draughts (or checkers) on a 4x4 grid in a specific way. 
-The main variables are the positions on the grid, represented by x[i,j], which means the number of draughts placed at row i and column j.
-The basic restrictions are that each position on the grid can have zero or more draughts, the total number of draughts is 12, 5 draughts must be placed on the first row, 5 on the first column, 5 on the last row, and 5 on the last column, and the inner 2x2 squares must be empty.
-The goal of the problem is to find a way to place the 12 draughts on the grid that satisfies all these restrictions.

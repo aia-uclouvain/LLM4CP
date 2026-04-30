@@ -1,5 +1,0 @@
-The name of the problem is Between Min Max. 
-This problem is about determining if a given variable is within the range of values in a collection of variables, specifically if it is greater than or equal to the minimum value and less than or equal to the maximum value in the collection. 
-The main decision variables are `x`, an array of variables representing the collection of values, and `nvar`, a variable representing the value to be checked. 
-The key constraints are that `nvar` must be within the range of values in `x`, meaning it must be greater than or equal to the minimum value in `x` and less than or equal to the maximum value in `x`. Additionally, the values in `x` are constrained to be within a specific range, from 1 to 8. 
-The problem's objective is to satisfy the constraints, specifically the `between_min_max` constraint, which checks if `nvar` is within the range of values in `x`. The model is solved as a satisfaction problem, meaning it aims to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

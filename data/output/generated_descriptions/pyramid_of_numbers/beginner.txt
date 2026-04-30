@@ -1,5 +1,0 @@
-Pyramid of Numbers problem. 
-This problem is about a triangular structure where each block is the sum of the two blocks below it, and we need to find the values of the blocks. 
-The main variables are the values of the blocks in the pyramid, represented by x, and the specific blocks at the bottom, X, Y, and Z. 
-The basic rules are that each block is the sum of the two blocks below it, and the middle block at the bottom is the sum of the other two blocks at the bottom. 
-The goal is to find the values of all the blocks in the pyramid, specifically X, Y, and Z, that satisfy these rules.

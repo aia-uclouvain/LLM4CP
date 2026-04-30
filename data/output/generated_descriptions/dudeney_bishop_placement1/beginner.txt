@@ -1,5 +1,0 @@
-Dudeney's Bishop Placement problem 
-This problem is about placing bishops on a chessboard in such a way that every square on the board is either occupied by a bishop or under attack by one. 
-The main variables are x and a, where x represents whether a square is occupied by a bishop and a represents whether a square is under attack by a bishop. 
-The basic restrictions are that each square must be either occupied or under attack, and that bishops can attack squares diagonally. 
-The goal is to minimize the number of bishops needed to achieve this.

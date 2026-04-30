@@ -1,5 +1,0 @@
-Hidato puzzle
-The Hidato puzzle is a logic-based puzzle where you have to fill in missing numbers in a grid to create a continuous path of consecutive numbers. 
-The main variables are the grid cells, which can contain a number from 1 to the maximum number of cells in the grid, or a special value indicating an empty or inaccessible cell.
-The basic restrictions are that each number can only be used once, and consecutive numbers must be adjacent to each other in the grid, either horizontally, vertically, or diagonally. 
-The goal of the problem is to fill in all the missing numbers in the grid to create a continuous path from the first number to the last number.

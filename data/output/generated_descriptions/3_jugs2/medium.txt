@@ -1,8 +1,0 @@
-Water Jug Problem
-The Water Jug Problem is a classic problem in the field of operations research and constraint programming, which involves finding the shortest sequence of operations to measure a certain amount of water using jugs of different capacities.
-The main decision variables in this problem are the flow of water between the jugs, represented by the array `x`, where `x[i,j]` denotes the amount of water flowing from jug `i` to jug `j`.
-The key constraints in this problem are: 
-- the capacity constraints of each jug, 
-- the conservation of water at each node (i.e., the amount of water flowing into a node equals the amount of water flowing out of it), 
-- and the requirement that the final amount of water in one of the jugs is the target amount.
-The objective of the Water Jug Problem is to minimize the total number of operations (i.e., pouring water from one jug to another) required to measure the target amount of water.

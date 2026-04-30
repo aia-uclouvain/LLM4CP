@@ -1,5 +1,0 @@
-Taxicab Problem
-The problem is about finding a combination of numbers that satisfy a specific mathematical equation, similar to a puzzle. 
-The main variables are A, B, C, D, E, F, and G, which are numbers between 1 and 50 that need to be found.
-The basic restrictions are that each number on the left side of the equation must be less than or equal to the next number, and the same applies to the numbers on the right side. Also, the first number on the left side must be less than or equal to the first number on the right side. The equation is a sum of cubes of numbers on the left side equaling the sum of cubes of numbers on the right side.
-The goal of the problem is to find a combination of numbers A, B, C, D, E, F, and G that satisfy the given equation, which is a well-known problem in number theory.

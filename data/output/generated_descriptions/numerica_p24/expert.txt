@@ -1,5 +1,0 @@
-name: Numerica problem
-description: This problem originates from neuropsychology and involves finding values for a set of variables that satisfy a system of nonlinear equations, which can be interpreted as a numerical analysis problem.
-variables: $x_1, x_2, x_3, x_4, x_5, x_6$ - These are decision variables representing the values to be determined in order to satisfy the given system of equations.
-constraints: $x_1^2 + x_3^2 = 1.0, x_2^2 + x_4^2 = 1.0, x_5x_3^3 + x_6x_4^3 = C_1, x_5x_1^3 + x_6x_2^3 = C_2, x_5x_1x_3^2 + x_6x_4^2x_2 = C_3, x_5x_1^2x_3 + x_6x_2^2x_4 = C_4$ - These constraints represent a system of nonlinear equations that the decision variables must satisfy, where $C_1, C_2, C_3, C_4$ are given constants.
-objective: satisfy - The objective of this problem is to find values for the decision variables $x_1, x_2, x_3, x_4, x_5, x_6$ that satisfy all the given constraints, rather than minimizing or maximizing a specific value.

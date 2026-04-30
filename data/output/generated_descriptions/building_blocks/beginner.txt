@@ -1,5 +1,0 @@
-Building Blocks puzzle 
-The problem is about figuring out how letters are arranged on four alphabet blocks, with each block having a single letter on each of its six sides. 
-The main variables are the arrangement of letters on each block, with each block represented by a number (1 to 4) and each letter represented by a number (1 to 24, with each number corresponding to a letter of the alphabet, excluding Q and Z). 
-The basic restrictions are that each word listed can be spelled out by arranging the blocks in a certain way, and each block must have exactly six letters. 
-The goal is to find an arrangement of letters on the blocks that satisfies all the given words, with no specific objective to minimize or maximize.

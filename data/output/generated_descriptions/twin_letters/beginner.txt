@@ -1,5 +1,0 @@
-Twin Letters problem
-The problem is about finding the correct pairs of letters that correspond to the same digit in a multiplication puzzle. 
-The main variables are letters (A to T) that represent digits from 0 to 9. 
-The basic restrictions are that each digit can only be used twice, and the multiplication must be correct, including any carry-over from one digit to the next. 
-The goal is to find the correct pairs of letters and their corresponding digit values that satisfy the multiplication equation.

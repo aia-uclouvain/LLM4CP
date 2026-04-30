@@ -1,5 +1,0 @@
-Fibonacci Sum Problem
-The problem is about finding the sum of all even-valued terms in the Fibonacci sequence that do not exceed four million. 
-The main decision variables are `f`, an array representing the Fibonacci sequence, and `x`, an array of binary variables where `x[i]` represents whether the `i-th` Fibonacci number is included in the sum. 
-The key constraints are that the Fibonacci sequence is generated correctly by adding the previous two terms, and that only even-valued terms less than four million are included in the sum. 
-The problem's objective is to find the sum of these even-valued terms, which is represented by the variable `res`.

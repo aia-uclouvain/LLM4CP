@@ -1,5 +1,0 @@
-Curve Fitting Problem. 
-This problem is about finding the best straight line that fits a set of points on a graph. 
-The main variables are X and Y, which represent the slope and intercept of the line, and Ex and Ey, which represent the differences between the actual points and the points on the line. 
-The basic restrictions are that the line should be as close as possible to all the points, and the sum of the differences between the actual points and the points on the line should be zero. 
-The goal of the problem is to find the best line that minimizes the sum of the squared differences between the actual points and the points on the line, which is a common method used in statistics called Least Squares.

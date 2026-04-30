@@ -1,5 +1,0 @@
-Autoref problem
-The problem is about finding a special sequence of numbers that meets certain conditions. 
-The main variables are the sequence of numbers s, where each number in the sequence represents how many times a particular number appears in the sequence. 
-The basic restrictions are that each number from 0 to n appears in the sequence as many times as its value, and the last number in the sequence is fixed at m. 
-The goal of the problem is to find a sequence that satisfies these conditions, and there may be one or more solutions.

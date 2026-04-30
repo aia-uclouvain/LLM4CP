@@ -1,5 +1,0 @@
-name: Ormat Game Problem
-description: The Ormat game is a puzzle where a set of cells are arranged in a grid, and each cell can be either "on" (1) or "off" (0). The goal is to find a configuration of the cells such that each row and column contains an equal number of "on" cells. The problem is modeled as a constraint satisfaction problem, where the constraints are defined by the given grid configuration.
-variables: $x_{i,j}$, where $x_{i,j} \in \{0,1\}$ represents the state of the cell at row $i$ and column $j$, with $x_{i,j} = 1$ indicating the cell is "on" and $x_{i,j} = 0$ indicating the cell is "off".
-constraints: $\sum_{j=1}^{n} x_{i,j} = \sum_{j=1}^{n} x_{j,i}$ for all $i$, $x_{i,j} \in \{0,1\}$ for all $i,j$, where the first constraint ensures that each row and column has the same number of "on" cells, and the second constraint ensures that each cell can only be "on" or "off".
-objective: The objective of the problem is to find a feasible solution that satisfies all the constraints, as the Ormat game is a constraint satisfaction problem and does not have a specific objective function to minimize or maximize.

@@ -1,5 +1,0 @@
-Binoxxo problem
-The Binoxxo problem is about filling a grid with X's and O's in a specific way. 
-The main variables are the X's and O's in the grid, which can be thought of as a big piece of paper with many squares. 
-The basic restrictions are that no more than two X's or O's can be together in a row or column, and each row and column must have the same number of X's and O's. Also, no row or column can be exactly the same as another one. 
-The goal of the problem is to fill the grid in a way that satisfies all these rules, without trying to minimize or maximize anything, just finding a solution that works.

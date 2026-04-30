@@ -1,5 +1,0 @@
-Set Partition Problem
-The problem is about selecting some sets from a given collection of sets, such that certain conditions are met. 
-The main variables are the sets (E, F, M, N, A) and the decision variables x and xs, where x represents which sets to select and xs represents the selected sets.
-The basic restrictions are that the selected sets must satisfy the given condition ((E || F) && (M || N) && A), and each value can only be in one selected set.
-The goal is to find a selection of sets that satisfies the condition without having any duplicate values, and to do this efficiently without having to check all possible combinations.

@@ -1,5 +1,0 @@
-The Chinese Remainder Theorem Puzzle, also known as the Remainder Puzzle. 
-This problem is about finding the smallest number that satisfies a set of modular equations, where the remainders are given when the number is divided by different divisors. 
-The main decision variables are x, an array of four integers representing the quotients when the number is divided by 3, 4, 5, and 6, and n, an integer representing the smallest number that satisfies all the modular equations. 
-The key constraints are that each quotient must be at least 1, the number must be at least 1, and when the number is divided by 3, 4, 5, and 6, the remainders must be 1, 2, 3, and 4, respectively, which can be thought of as a set of simultaneous modular equations. 
-The objective of this problem is to minimize the value of n, which represents the smallest number that satisfies all the given conditions.

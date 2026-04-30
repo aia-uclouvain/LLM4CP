@@ -1,5 +1,0 @@
-Crypto problem
-The Crypto problem is about decoding a secret message where each letter of the alphabet is assigned a number from 1 to 26. The goal is to figure out which number corresponds to each letter. 
-The main variables are the letters of the alphabet (A to Z) and the numbers assigned to them (1 to 26). 
-The basic restrictions are that each letter can only be assigned one number, and each number can only be assigned to one letter. There are also equations that show the total value of the letters in certain words. 
-The goal is to find the correct assignment of numbers to letters that satisfies all the equations.

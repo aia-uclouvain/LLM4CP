@@ -1,5 +1,0 @@
-The Bomb puzzle 
-The problem is about disarming a bomb with 7 flip switches by putting them in the correct positions to avoid the bomb detonating. 
-The main variables are the 7 switches, which can be either on or off. 
-The basic restrictions or rules of the problem are that certain combinations of switch positions will cause the bomb to detonate, such as having switch 3 on and switches 2 and 4 off. 
-The goal of the problem is to find a combination of switch positions that will not cause the bomb to detonate, which means finding a solution that satisfies all the given conditions and avoids all the "boom" scenarios.

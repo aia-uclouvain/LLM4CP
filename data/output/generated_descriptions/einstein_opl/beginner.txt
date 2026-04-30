@@ -1,5 +1,0 @@
-Einstein's Puzzle
-The problem is about figuring out the characteristics of five houses, each with a different owner, pet, drink, cigarette brand, and color. 
-The main variables are the owners (Brit, Sweed, Dane, Norwegian, German), pets (dogs, fish, birds, cats, horses), drinks (tea, coffee, milk, beer, water), cigarette brands (Pall Mall, Dunhill, Blends, Blue Master, Prince), and colors (red, green, white, yellow, blue), which represent the different houses and their characteristics.
-The basic restrictions are that each house has a unique owner, pet, drink, cigarette brand, and color, and there are specific rules about the relationships between these characteristics, such as the color of the house, the pet, and the drink of the owner.
-The goal of the problem is to find a solution that satisfies all the given rules and restrictions, which will reveal the characteristics of each house.

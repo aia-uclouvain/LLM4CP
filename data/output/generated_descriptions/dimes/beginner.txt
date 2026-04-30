@@ -1,5 +1,0 @@
-Dimes puzzle
-The problem is about a person who needs to buy stamps of different values with a limited amount of money, exactly enough to buy the required stamps. 
-The main variables are the number of stamps of each type (one-cent, two-cent, three-cent, five-cent, and ten-cent) and the total amount of money spent. 
-The basic restrictions are that the person needs to buy four of two types of stamps and three of the other types, the total amount of money spent must be a multiple of 10 (since a dime is worth 10 cents), and the values of the stamps are one-cent, two-cent, three-cent, five-cent, and ten-cent. 
-The goal of the problem is to find the number of stamps of each type that the person wants to buy, given the total amount of money spent.

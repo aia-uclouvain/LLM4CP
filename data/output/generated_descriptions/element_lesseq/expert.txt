@@ -1,5 +1,0 @@
-name: Element Less Than or Equal To Constraint Demonstration
-description: This problem demonstrates the usage of the element_lesseq constraint in MiniZinc, which checks if an item's value is less than or equal to one of the entries in a given table.
-variables: $n, element\_table, item$ - These are the decision variables where $n$ is the size of the table, $element\_table$ is an array of variables representing the table, and $item$ is a single variable representing the item to be compared with the table entries.
-constraints: $cp1d(element\_table,[6,9,2,9]), item = 1, element\_lesseq(item, element\_table)$ - These constraints ensure that the table is initialized with the values [6,9,2,9], the item is set to 1, and the element_lesseq constraint checks if the item's value is less than or equal to one of the entries in the table.
-objective: satisfy - The objective of this problem is not to minimize or maximize a specific value, but rather to demonstrate the satisfaction of the given constraints, specifically the element_lesseq constraint.

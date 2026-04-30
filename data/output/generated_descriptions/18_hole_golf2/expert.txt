@@ -1,5 +1,0 @@
-name: Golf Course Generation
-description: The problem requires generating a random 18-hole golf course, where each hole has a length of 3, 4, or 5, and the total length of all holes is 72.
-variables: $x = [x_1, x_2, ..., x_{18}]$, where $x_i$ represents the length of the $i^{th}$ hole, which can be 3, 4, or 5.
-constraints: $\sum_{i=1}^{18} x_i = 72$, which ensures that the total length of all holes is 72, and $x_i \in \{3, 4, 5\}$ for $i = 1, 2, ..., 18$, which restricts the length of each hole to 3, 4, or 5.
-objective: The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies the given constraints, allowing for the generation of all possible hole configurations with some non-zero probability.

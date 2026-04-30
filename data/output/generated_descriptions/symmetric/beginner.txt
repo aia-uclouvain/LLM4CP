@@ -1,5 +1,0 @@
-The problem is called Symmetric Graph. 
-It's about creating a special kind of graph where if there's a connection from point A to point B, then there must also be a connection from point B to point A. 
-The main variables are the points in the graph and the connections between them, which are like roads between cities. 
-The basic rules are that for every connection from one point to another, there must be a connection in the opposite direction, and the graph must match a given example. 
-The goal is to make sure the graph follows these rules, rather than trying to minimize or maximize something.

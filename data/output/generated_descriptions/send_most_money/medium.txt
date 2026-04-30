@@ -1,5 +1,0 @@
-The Send More Money problem.
-This problem is about finding the optimal assignment of digits to letters in the equation SEND + MOST = MONEY, such that the value of MONEY is maximized.
-The main decision variables are S, E, N, D, M, O, T, and Y, which represent the digits assigned to each letter in the equation.
-The key constraints are that each digit can only be used once, the equation SEND + MOST = MONEY must be satisfied, and the first letter of each word (S and M) must be non-zero. In plain language, this means that we need to find a way to add the numbers represented by the words SEND and MOST to get the number represented by the word MONEY, without reusing any digits.
-The objective of the problem is to maximize the value of MONEY, which is represented by the variable z. This is done by finding the optimal assignment of digits to letters that results in the largest possible value of z.

@@ -1,8 +1,0 @@
-The Contiguity Problem
-The Contiguity problem is about enforcing a specific pattern on a sequence of binary variables, where all variables assigned to value 1 must appear contiguously. 
-
-The main decision variables in this problem are the elements of the array `arr`, which represents a sequence of binary variables that can take values 0 or 1. 
-
-The key constraints in this problem are that all variables in the `arr` array must be assigned to either 0 or 1, and all variables assigned to value 1 must appear contiguously, meaning that there can be at most one group of contiguous 1s in the sequence. This is achieved through the use of a regular constraint, which enforces a specific pattern on the sequence of variables.
-
-The objective of the Contiguity problem is to find a solution that satisfies the contiguity constraint, meaning that the sequence of variables in the `arr` array contains at most one group of contiguous 1s. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets the contiguity constraint.

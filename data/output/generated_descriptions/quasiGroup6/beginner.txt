@@ -1,5 +1,0 @@
-Quasigroup problem
-The problem is about finding a special kind of multiplication table where each row and column has unique numbers, and certain rules are followed when multiplying numbers together.
-The main variables are the multiplication tables "quasiGroup" and "quasiGroupColumns", which are like grids where each cell contains a number. These numbers represent the result of multiplying two things together.
-The basic rules are that each row and column must have unique numbers, and when you multiply two numbers together, the result must follow certain patterns. For example, if you multiply "a" and "b" together, and then multiply the result by "b" again, it should be the same as multiplying "a" by the result of multiplying "a" and "b" together.
-The goal of the problem is to find a multiplication table that satisfies all these rules, which is called a "quasigroup". The problem doesn't try to minimize or maximize anything, it just tries to find a solution that works.

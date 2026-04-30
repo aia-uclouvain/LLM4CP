@@ -1,5 +1,0 @@
-The name of the problem is the "Tokyo Elevator Puzzle". 
-This problem is about finding the most efficient way for an elevator to visit a set of floors in a building, given a set of rules and restrictions. 
-The main variables are the floors that need to be visited and the order in which they should be visited. 
-The basic restrictions or rules of the problem are that the elevator can only visit each floor once, and it must follow a specific set of rules for which floors it can visit and in what order. 
-The goal of the problem is to minimize the total distance traveled by the elevator, or in other words, to find the shortest possible route that the elevator can take to visit all the required floors.

@@ -1,9 +1,0 @@
-The problem is called "Inverse Within Range".
-
-This problem is about matching two lists of numbers, X and Y, in a special way. Imagine you have two lists of boxes, and each box in one list needs to be paired with a box in the other list. The pairing is done based on the numbers in the boxes.
-
-The main variables are X and Y, which are the two lists of numbers. Each number in X and Y represents a box, and the value of the number tells us which box in the other list it should be paired with.
-
-The basic rules are: if a box in X is paired with a box in Y, then the box in Y must be paired back with the box in X. Also, a box in X can only be paired with a box in Y if the box in Y is within a certain range (i.e., its position in the list is not too high).
-
-The goal of the problem is to find a way to pair the boxes in X and Y that satisfies these rules. In this specific case, we are given the values of X and Y, and we need to check if they satisfy the inverse within range condition.

@@ -1,5 +1,0 @@
-Set Covering Problem. 
-This problem is about placing security telephones in the least number of street corners on a campus so that all streets are covered. 
-The main variables are x, which represents whether a security telephone is placed at a particular corner (1 means yes, 0 means no), and z, which is the total number of security telephones used. 
-The basic restrictions are that each street must be covered by at least one security telephone, and a security telephone can cover multiple streets if they share the same corner. 
-The goal is to minimize the total number of security telephones used, which is represented by z.

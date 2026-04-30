@@ -1,5 +1,0 @@
-Scanner problem
-The problem is about filling a grid with squares, where each square can be either filled or empty, based on given clues about the number of filled squares in each row, column, and diagonal.
-The main variables are the grid squares, represented by x, where x[i,j] means the square at row i and column j, and it can be either 0 (empty) or 1 (filled). The other variables are the number of filled squares in each row (rows), column (columns), and diagonal (diagonal1 and diagonal2).
-The basic restrictions are that the number of filled squares in each row, column, and diagonal must match the given clues. For example, if a row is supposed to have 5 filled squares, then exactly 5 of the squares in that row can be filled.
-The goal of the problem is to find a way to fill the grid that satisfies all the given clues, which means finding a solution that makes all the constraints true. In this case, the solution is a picture of a cat, where filled squares represent the cat's body and empty squares represent the background.

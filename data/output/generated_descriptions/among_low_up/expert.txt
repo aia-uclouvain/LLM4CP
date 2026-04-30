@@ -1,8 +1,0 @@
-name: Among Low Up Problem
-description: The Among Low Up problem is a constraint satisfaction problem where we have two collections of variables, x and y, and two integer variables, low and up. The goal is to find an assignment of values to the variables in x such that between low and up variables of x are assigned a value that belongs to the set of values in y.
-variables: $x = [x_1, x_2, x_3, x_4], y = [y_1, y_2, y_3, y_4, y_5], low, up$ 
-These are the decision variables of the problem, where $x_i$ and $y_j$ are integer variables that can take values between 0 and 9, and low and up are integer variables that represent the lower and upper bounds of the number of variables in x that should be assigned a value from y.
-constraints: $cp1d(x, [9,2,4,6]), cp1d(y, [0,2,4,6,8]), among\_low\_up(low, up, x, y), low = 1, up = 3$ 
-These constraints ensure that the variables in x are assigned the values [9,2,4,6], the variables in y are assigned the values [0,2,4,6,8], the among_low_up constraint holds, and the lower and upper bounds are set to 1 and 3, respectively. The among_low_up constraint ensures that between low and up variables of x are assigned a value that belongs to the set of values in y.
-objective: satisfy 
-The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to find values for the variables that satisfy all the constraints.

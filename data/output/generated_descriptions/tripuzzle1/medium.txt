@@ -1,8 +1,0 @@
-Tripuzzle
-The Tripuzzle problem is about placing 16 triangular pieces into a larger triangular shape, with each piece having three possible orientations and three colored spots. The goal is to find an arrangement where the colors of the spots match according to certain rules.
-
-The main decision variables are x and y. The variable x represents whether a triangle is placed at a specific position in a specific orientation, with x[i,j,k] being 1 if triangle i is placed at position j in orientation k, and 0 otherwise. The variable y represents the color of a spot at a specific position, with y[i,j] being the color of spot j at position i.
-
-The key constraints are: each position is occupied by one triangle in one orientation, each triangle is placed in one position and one orientation, and the colors of the spots are consistent with the piece positions and orientations. Additionally, there are specific color matches required for the outer and inner spots.
-
-The objective of the problem is to find a satisfying arrangement, meaning one that meets all the constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the given conditions.

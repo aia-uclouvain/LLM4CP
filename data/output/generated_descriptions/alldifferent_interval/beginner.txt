@@ -1,5 +1,0 @@
-The problem is called "alldifferent_interval". 
-It's about making sure that a group of numbers are in separate ranges, or intervals, and that these intervals are all the same size and don't overlap. 
-The main variables are: x, which is a list of numbers, size_interval, which is the size of each interval, and intervals, which is a list of the start and end points of each interval. 
-The basic restrictions are that all the numbers in x must be in their own separate interval, and that these intervals must be the same size and not overlap. 
-The goal is to find values for x, size_interval, and intervals that satisfy these restrictions.

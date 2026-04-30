@@ -1,5 +1,0 @@
-Wedding Seating Chart Problem
-The problem is about finding the best way to seat guests at a wedding. Imagine you have a lot of guests coming to your wedding, and you want to make sure they have a good time. You want to sit them at tables with people they know, so they can chat and have fun. 
-The main variables are the guests, the tables, and how many people each guest knows at their table. The guests are the people coming to the wedding, the tables are where the guests will sit, and the connections between guests show how well they know each other.
-The basic rules are that each table can only hold a certain number of guests, and each guest should be seated with at least a certain number of people they know. 
-The goal is to find a seating arrangement that makes the most guests happy, by sitting them with people they have strong connections to.

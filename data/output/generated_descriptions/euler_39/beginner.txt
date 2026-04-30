@@ -1,5 +1,0 @@
-Euler Problem 39
-This problem is about finding the perimeter of a right-angled triangle with integer side lengths that has the most solutions. 
-The main variables are the sides of the triangle (a, b, c) and the perimeter (p), which is the sum of the sides. 
-The basic restrictions are that the sides must be integers, the triangle must be right-angled (meaning the square of the longest side is equal to the sum of the squares of the other two sides), and the perimeter must be less than or equal to 1000. 
-The goal is to find the perimeter (p) that has the most solutions, meaning the most different combinations of integer side lengths that satisfy the conditions.

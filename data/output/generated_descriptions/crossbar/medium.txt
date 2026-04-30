@@ -1,5 +1,0 @@
-Crossbar problem
-The Crossbar problem is a classic constraint programming problem that involves finding a set of distinct values for a given set of variables, subject to certain constraints. 
-The main decision variables in this problem are V1 to V20, which represent a set of values that must be assigned to each variable. 
-The key constraints in this problem are that each variable can only take on a value from a specific set of allowed values, and that all variables must take on distinct values, as enforced by the all_different constraint. 
-The objective of this problem is to find a set of values for the variables that satisfy all the constraints, with no specific objective function being minimized or maximized, as indicated by the solve satisfy statement.

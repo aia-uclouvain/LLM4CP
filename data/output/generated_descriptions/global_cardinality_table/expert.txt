@@ -1,5 +1,0 @@
-name: Global Cardinality Problem
-description: The Global Cardinality Problem is a constraint satisfaction problem where we have a collection of variables and a table of values with their desired occurrences. The goal is to assign values to the variables such that each value in the table occurs exactly as many times as specified.
-variables: $x_1, x_2, ..., x_n, v_{i,1}, v_{i,2}$ for $i = 1, 2, ..., m$, where $x_i$ represents the value assigned to the $i^{th}$ variable and $v_{i,1}$ and $v_{i,2}$ represent the $i^{th}$ value and its desired occurrence in the table, respectively.
-constraints: $\forall i \in \{1, 2, ..., m\}, \sum_{j=1}^{n} (x_j = v_{i,1}) = v_{i,2}$, which ensures that each value $v_{i,1}$ occurs exactly $v_{i,2}$ times in the variables, and $x_i \in \{1, 2, ..., 8\}$ for $i = 1, 2, ..., n$, which restricts the domain of the variables.
-objective: The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to satisfy all the constraints, rather than minimizing or maximizing a specific value.

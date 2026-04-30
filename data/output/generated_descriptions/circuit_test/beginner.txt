@@ -1,5 +1,0 @@
-The problem is called the Circuit problem. 
-It's about finding a path that visits a series of points in a specific order and then returns to the starting point, without visiting any point more than once. 
-The main variables are x, which represents the order in which the points are visited. 
-The basic restrictions are that each point can only be visited once, and the path must return to the starting point after visiting all other points. 
-The goal of the problem is to find a path that satisfies these rules, and the solution is a specific order in which the points can be visited.

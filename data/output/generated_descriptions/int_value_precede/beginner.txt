@@ -1,5 +1,0 @@
-The problem is called "int_value_precede". 
-It's about making sure that in a list of numbers, a specific number (let's call it T) only appears after another specific number (let's call it S) has appeared first. 
-The main variables are "x" which is a list of numbers, "s" which is the number that should appear first, and "t" which is the number that should appear after "s". 
-The basic restrictions are that "s" and "t" are specific numbers, and "x" is a list of numbers where "t" can only appear after "s" has appeared. 
-The goal of the problem is to find a list of numbers "x" that satisfies these restrictions, specifically that "t" appears after "s" in the list, or that "t" does not appear at all if "s" is not present.

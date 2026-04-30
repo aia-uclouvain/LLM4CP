@@ -1,5 +1,0 @@
-100 Doors Problem
-The problem is about a row of 100 doors that are initially closed. You make 100 passes by the doors, and each time, you toggle (open or close) some of the doors based on a specific pattern. 
-The main variables are the doors (represented by a 100x100 matrix) and the result (a set of doors that are open at the end). 
-The basic restrictions are that you visit every door, every 2nd door, every 3rd door, and so on, until you only visit the 100th door, and you toggle the door each time you visit it. 
-The goal is to find out which doors are open and which are closed after the last pass.

@@ -1,5 +1,0 @@
-Pi Day Sudoku 
-The problem is about solving a special kind of Sudoku puzzle called Pi Day Sudoku. In everyday terms, it's like a game where you have to fill in numbers and symbols in a grid, following certain rules. 
-The main variables are the numbers and symbols (represented by "P" for pi) that need to be filled in the grid. These variables represent the possible values that can be placed in each cell of the grid. 
-The basic restrictions or rules of the problem are: each row, column, and region (a smaller part of the grid) can only have each number or symbol once, and there are some numbers already given in the grid that cannot be changed. 
-The goal of the problem is to find a solution that satisfies all the rules, filling in the entire grid with numbers and symbols.

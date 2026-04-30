@@ -1,5 +1,0 @@
-The Power Set Problem
-The problem is about generating the power set of a given set of integers from 1 to n.
-The main decision variable is an array of sets of integers, where each set represents a subset of the original set.
-The key constraints are that all subsets must be unique and that the subsets must be ordered in a specific way to break symmetry, although the latter constraint may not work for all solvers.
-The problem's objective is to find a solution that satisfies the constraints, which is achieved by using the "satisfy" keyword in the solve statement, indicating that the goal is to find a feasible solution rather than optimizing a specific objective function.

@@ -1,5 +1,0 @@
-Tobacco Puzzle
-The Tobacco Puzzle is a classic constraint programming problem that involves finding the number of boxes of two different types of tobacco that add up to a total weight of 2000 units, with each type of tobacco having a specific weight.
-The main decision variables in this problem are x[1] and x[2], which represent the number of boxes of each type of tobacco.
-The key constraints in this problem are that the total weight of the tobacco boxes should be exactly 2000 units, and that the number of boxes of each type should be non-negative. In plain language, this means that the total weight of the boxes should add up to 2000 units, and you cannot have a negative number of boxes.
-The objective of this problem is to find a solution that satisfies the given constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to determine the number of boxes of each type of tobacco that meets the weight requirement, without trying to optimize any particular quantity.

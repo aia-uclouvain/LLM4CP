@@ -1,5 +1,0 @@
-Robot Kinematic Application 
-This problem is about finding the position of a robot's joints. 
-The main variables are s and c, which represent the positions of the robot's joints in terms of sine and cosine values. 
-The basic restrictions are that each joint's position must be within a certain range and that the robot's joints must satisfy certain mathematical equations that describe how the joints are connected. 
-The goal of the problem is to find all possible positions of the robot's joints that satisfy these equations, with a high degree of precision.

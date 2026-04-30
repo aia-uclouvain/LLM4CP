@@ -1,5 +1,0 @@
-Cardinality Atleast Problem
-The Cardinality Atleast problem is about ensuring that a set of variables takes on specific values a minimum number of times. 
-The main decision variables are: variables (an array of variables representing the collection of values), values (an array of variables representing the specific values to be taken), and nvar (a variable representing the minimum number of times each value should be taken).
-The key constraints are: each value in the "values" array must be taken by the "variables" array at least "nvar" times, and the "variables" and "values" arrays must match predefined sets of values.
-The objective of the problem is to satisfy these constraints, specifically to ensure that the "cardinality_atleast" constraint holds, meaning that each value in "values" is taken by "variables" at least "nvar" times, in this case, "nvar" is set to 1.

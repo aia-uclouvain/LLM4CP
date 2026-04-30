@@ -1,5 +1,0 @@
-Reverse Division Problem
-The problem is about finding two four-digit numbers that meet certain conditions. 
-The main variables are n1 and n2, which are the two four-digit numbers we are trying to find. 
-The basic restrictions are that each number must be divisible by two specific numbers (11 and 13 for n1, 17 and 19 for n2), its reverse must also be divisible by those same numbers, and the reverse must be larger than the original number. 
-The goal is to find the two numbers that satisfy these conditions, with the additional requirement that neither number can start with zero.

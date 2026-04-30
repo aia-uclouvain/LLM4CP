@@ -1,5 +1,0 @@
-The Coloured Painting problem. 
-This problem is about figuring out the correct arrangement of colors in a 6x6 painting, where each square can be one of three colors: red, blue, or green. 
-The main variables are the rows and columns of the painting, and the order in which they appear. 
-The basic restrictions are that each row and column can only be used once, and that the colors in each row must match the colors in each column. 
-The goal is to find the correct arrangement of rows and columns that satisfies these restrictions, effectively reproducing the original painting.

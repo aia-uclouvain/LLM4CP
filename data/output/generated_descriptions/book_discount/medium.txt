@@ -1,8 +1,0 @@
-The problem is called the "Discount Puzzle". 
-It is about finding the optimal way to buy a set of books over a number of days, with the goal of minimizing the total cost. The cost of buying books on a given day is reduced by a small discount based on the total cost of books bought on the previous day.
-
-The main decision variables are `x[i,j]`, which represent whether book `i` is bought on day `j`, and `t[j]`, which represents the total cost of books bought on day `j`. 
-
-The key constraints are that each book can only be bought once, and the total cost of books bought on each day is calculated based on the books bought on that day. In plain language, the constraints ensure that each book is purchased exactly once, and the cost of purchasing books on each day is correctly calculated.
-
-The objective of the problem is to minimize the total cost `totcost`, which is the sum of the costs of all books minus a small discount for each day based on the cost of books bought on the previous day. The discount is a tiny fraction (0.001) of the product of the total costs of books bought on two consecutive days.

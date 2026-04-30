@@ -1,5 +1,0 @@
-The problem is called the "Cycle" problem. 
-It's about finding a way to arrange a set of numbers in a circle, so that each number is connected to another number in a specific way. 
-The main variables are "x" which represents the arrangement of numbers, and "num_cycles" which represents the number of cycles or loops in the arrangement. 
-The basic restrictions are that each number can only be used once, and that the arrangement must form a certain number of cycles. 
-The goal is to find an arrangement that satisfies these restrictions and has a specific number of cycles, in this case, 2.

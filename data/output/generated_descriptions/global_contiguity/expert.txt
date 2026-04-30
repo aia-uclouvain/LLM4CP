@@ -1,5 +1,0 @@
-name: Global Contiguity Problem
-description: The Global Contiguity Problem is a constraint satisfaction problem that involves finding an assignment of values to a sequence of binary variables such that all variables assigned to 1 appear contiguously. This means that the 1's in the sequence must be grouped together, with no 0's in between.
-variables: $x = (x_1, x_2, ..., x_n), start, end$ where $x_i$ is a binary variable representing the value at position $i$, and $start$ and $end$ are integer variables representing the start and end positions of the contiguous group of 1's.
-constraints: $\forall i \in \{1, 2, ..., n\}, (i \geq start \wedge i \leq end) \leftrightarrow x_i = 1, end \geq start$ where the first constraint ensures that the 1's appear contiguously between positions $start$ and $end$, and the second constraint ensures that $end$ is greater than or equal to $start$.
-objective: The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to satisfy all the constraints. There is no explicit objective function to minimize or maximize.

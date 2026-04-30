@@ -1,9 +1,0 @@
-name: Hidato Puzzle
-description: The Hidato puzzle is a logic puzzle where a grid of numbers needs to be filled in such a way that consecutive numbers are adjacent to each other, either horizontally, vertically, or diagonally. The puzzle starts with some numbers already filled in, and the goal is to fill in the remaining numbers to create a continuous path from the first number to the last number.
-variables: $x_{i,j}$, where $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, c\}$. These variables represent the numbers to be filled in at each position $(i, j)$ in the grid, where $r$ is the number of rows and $c$ is the number of columns.
-constraints: 
-$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} (puzzle_{i,j} > 0 \leftrightarrow x_{i,j} = puzzle_{i,j})$ 
-$\bigwedge_{k=1}^{r \cdot c - 1} \exists i \in \{1, \ldots, r\} \exists j \in \{1, \ldots, c\} (k = x_{i,j} \wedge \exists a \in \{-1, 0, 1\} \exists b \in \{-1, 0, 1\} (i + a \geq 1 \wedge j + b \geq 1 \wedge i + a \leq r \wedge j + b \leq c \wedge (a, b) \neq (0, 0) \wedge k + 1 = x_{i+a, j+b}))$ 
-$\bigwedge_{i=1}^{r} \bigwedge_{j=1}^{c} \bigwedge_{i'=1}^{r} \bigwedge_{j'=1}^{c} (x_{i,j} = x_{i',j'} \rightarrow (i, j) = (i', j'))$. 
-These constraints ensure that the pre-filled numbers are not changed, that each number is adjacent to the next number in the sequence, and that all numbers in the grid are distinct.
-objective: satisfy

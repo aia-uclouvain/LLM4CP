@@ -1,5 +1,0 @@
-name: Coin Puzzle
-description: The Coin Puzzle is a classic problem where we have three types of coins with different values and we need to make a specific amount using these coins. The goal is to find the combination of coins that sums up to the required amount with the minimum number of coins.
-variables: $x_1, x_2, x_3$, where $x_i$ represents the number of coins of type $i$ to use, and $i$ ranges from 1 to 3, corresponding to the three types of coins with values $v_1 = 15$, $v_2 = 16$, and $v_3 = 17$.
-constraints: $x_i \geq 0, i = 1, 2, 3$ and $\sum_{i=1}^{3} v_i x_i = 121$, which means that we cannot use a negative number of coins and the total value of the coins used must be equal to 121.
-objective: Minimize $\sum_{i=1}^{3} x_i$, which means finding the combination of coins that sums up to 121 with the minimum total number of coins.

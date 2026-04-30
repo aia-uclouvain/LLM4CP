@@ -1,5 +1,0 @@
-name: Alldifferent_on_intersection problem
-description: The problem is to find two collections of values, x and y, that satisfy the given constraints, where the values that occur in both collections have exactly one occurrence in each collection.
-variables: $x = [x_1, x_2, ..., x_m]$ and $y = [y_1, y_2, ..., y_n]$, where $x_i$ and $y_j$ are decision variables representing the values in the collections x and y, respectively.
-constraints: $x = [5, 9, 1, 5]$, $y = [2, 1, 6, 9, 6, 2]$, and $\forall i \in 1..m, \sum_{j=1}^{n} (x_i = y_j) \leq 1$ and $\forall j \in 1..n, \sum_{i=1}^{m} (x_i = y_j) \leq 1$, which ensure that the values that occur in both collections have exactly one occurrence in each collection.
-objective: The objective is to satisfy the given constraints, there is no explicit objective function to minimize or maximize.

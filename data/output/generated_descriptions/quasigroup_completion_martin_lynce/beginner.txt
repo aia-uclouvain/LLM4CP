@@ -1,5 +1,0 @@
-Quasigroup Completion Problem
-The problem is about filling in missing numbers in a table so that each row and column has each number only once, and each pair of numbers appears together exactly once.
-The main variables are the missing numbers in the table, which are represented by the symbol "_". These numbers can take on values from 1 to 5.
-The basic restrictions are that each row and column can only have each number once, and that each pair of numbers must appear together exactly once. 
-The goal is to find a way to fill in the missing numbers that satisfies these rules, and to do so in a way that is consistent and complete.

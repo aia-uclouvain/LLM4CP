@@ -1,5 +1,0 @@
-Rot 13 problem. 
-This problem is about encrypting a message using a simple code called the Caesar cipher, where each letter is shifted by a certain number of positions in the alphabet. 
-The main variables are the original message (text), the encrypted message (rotated), and the number of positions to shift (rot). 
-The basic restrictions are that each letter in the original message must be shifted by the same number of positions, and if the shift goes past the end of the alphabet, it wraps around to the beginning. 
-The goal of the problem is to find the encrypted message and the shift number that satisfies these rules, given the original message.

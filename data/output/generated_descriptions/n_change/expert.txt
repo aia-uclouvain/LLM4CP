@@ -1,8 +1,0 @@
-name: NCHANGE Problem
-description: The NCHANGE problem is a constraint programming problem that involves finding a sequence of integers with a specified number of changes between consecutive elements. A change occurs when the value of an element is different from the previous one. The problem is to find a sequence that satisfies the given constraints, including the number of changes.
-variables: $x = (x_1, x_2, ..., x_n)$, $c\_pos = (c\_pos_1, c\_pos_2, ..., c\_pos_{n-1})$, $num\_changes$ 
-These are the decision variables of the problem, where $x$ is an array of integers representing the sequence, $c\_pos$ is an array of binary variables indicating whether a change occurs between consecutive elements, and $num\_changes$ is an integer representing the total number of changes in the sequence.
-constraints: $x_i \geq 1 \wedge x_i \leq n$, $c\_pos_i = 1 \leftrightarrow x_i \neq x_{i+1}$, $num\_changes = \sum_{i=2}^{n} (x_{i-1} \neq x_i)$, $num\_changes = 2$ 
-These constraints ensure that each element in the sequence is within the range $[1, n]$, that $c\_pos_i$ is true if and only if a change occurs between $x_i$ and $x_{i+1}$, that $num\_changes$ is equal to the total number of changes in the sequence, and that the total number of changes is equal to 2.
-objective: satisfy 
-The objective of the problem is to find a sequence that satisfies all the given constraints, without any specific optimization goal.

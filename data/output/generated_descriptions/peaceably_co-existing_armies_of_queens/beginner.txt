@@ -1,5 +1,0 @@
-Peaceably Co-existing Armies of Queens
-The problem is about placing two armies of queens on a chessboard in such a way that no queen from one army can attack any queen from the other army, and both armies have the same number of queens.
-The main variables are the positions of the black and white queens on the board, which can be thought of as a grid of squares. Each square can either have a black queen, a white queen, or no queen at all.
-The basic restrictions are that no row, column, or diagonal can have both a black and a white queen, and that both armies must have the same number of queens. Additionally, a queen can attack another queen if they are in the same row, column, or diagonal.
-The goal of the problem is to maximize the number of queens on the board, or in other words, to make the armies as large as possible while still following the rules.

@@ -1,5 +1,0 @@
-The problem is called a Simple Puzzle. 
-It's about filling in a 4x4 grid with numbers from 1 to 9. 
-The main variables are the numbers in each cell of the grid, which are represented by the variable x. 
-The basic restrictions or rules of the problem are that the sum of numbers in each row, column, and diagonal must match given totals, and some numbers are already given as clues. 
-The goal of the problem is to find a solution that satisfies all these rules, and the solution is the completed grid with numbers from 1 to 9.

@@ -1,5 +1,0 @@
-name: Table of Numbers Problem
-description: The problem is to choose 5 numbers from a 5x5 table in such a way that no two numbers come from the same row and no two numbers come from the same column, and then find the sum of these 5 numbers.
-variables: $x_{i,j}, the\_sum$ - $x_{i,j}$ are binary decision variables where $x_{i,j} = 1$ if the number in the $i^{th}$ row and $j^{th}$ column is chosen, and $x_{i,j} = 0$ otherwise. $the\_sum$ is an integer variable representing the sum of the chosen numbers.
-constraints: $\forall i \in \{1, \ldots, 5\}: \sum_{j=1}^{5} x_{i,j} = 1 \land \sum_{j=1}^{5} x_{j,i} = 1 \land the\_sum = \sum_{i=1}^{5} \sum_{j=1}^{5} x_{i,j} \cdot t_{i,j}$ - These constraints ensure that exactly one number is chosen from each row and each column, and that $the\_sum$ is the sum of the chosen numbers.
-objective: The objective is to find a feasible solution, i.e., to satisfy all the constraints, as the problem is a satisfaction problem and does not involve minimizing or maximizing a specific value.

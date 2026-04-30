@@ -1,5 +1,0 @@
-Mortgage Problem
-The Mortgage problem is about calculating the monthly payment, interest rate, or initial principal of a mortgage based on given values of the other two parameters.
-The main decision variables are P (initial principal), I (interest rate), and R (monthly payment), which represent the amount borrowed, the rate at which interest is charged, and the amount paid each month, respectively.
-The key constraints are that the mortgage balance at each time period must be non-negative, the initial mortgage balance is the principal plus interest minus the monthly payment, and each subsequent balance is the previous balance plus interest minus the monthly payment.
-The problem's objective is to minimize the initial principal P, given the interest rate I and monthly payment R, or to calculate I or R given the other two parameters, with the goal of finding a feasible solution that satisfies all constraints.

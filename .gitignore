@@ -1,3 +1,6 @@
+# Data folder - managed with Git LFS
+data/
+
 # Virtual Environments
 venv/
 .venv/

@@ -1,5 +1,0 @@
-Sudoku Problem
-The problem is about solving a Sudoku puzzle, which is a game where you have a 9x9 grid and you need to fill in numbers from 1 to 9 in each cell, following certain rules.
-The main variables are the cells in the grid, represented by x, where x[i,j] is the number in the cell at row i and column j. The variable occ represents the number of occurrences of each number in a section.
-The basic restrictions or rules of the problem are that each row, column, and 3x3 sub-grid can only contain each number once. This means that if a number is already present in a row, column, or sub-grid, it cannot be placed in another cell in the same row, column, or sub-grid.
-The goal of the problem is to find a solution that satisfies all the rules, which means filling in the entire grid with numbers from 1 to 9, such that each row, column, and sub-grid contains each number only once.

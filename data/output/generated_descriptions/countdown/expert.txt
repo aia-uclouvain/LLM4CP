@@ -1,7 +1,0 @@
-name: Countdown Problem
-description: The Countdown Problem is a mathematical puzzle where a set of numbers, typically including a few large numbers and several small numbers, are used to try to get as close as possible to a target number by combining them using basic arithmetic operations such as addition, subtraction, multiplication, and division. Each number can only be used once, and the goal is to find an expression that equals the target number or comes closest to it.
-variables: $n, x, perm, s, total, ops$ 
-These variables represent the following: $n$ is the number of input numbers, $x$ is an array of the numbers in the order they are used, $perm$ is a permutation of the indices of the input numbers, $s$ is an array of intermediate results, $total$ is the final result, and $ops$ is an array of the operations used between the numbers.
-constraints: $all\_different(perm), x[i] = numbers[perm[i]], make(x, ops, total, s), total = target$ 
-These constraints ensure that the permutation of indices is valid, the numbers are assigned correctly, the operations are applied in the correct order to get the intermediate and final results, and the final result equals the target number.
-objective: The objective of this problem is to satisfy the given constraints, which implicitly means finding a combination of numbers and operations that equals the target number.

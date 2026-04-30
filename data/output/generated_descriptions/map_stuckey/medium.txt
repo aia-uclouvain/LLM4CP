@@ -1,8 +1,0 @@
-Map Coloring Problem
-The Map Coloring Problem is a classic constraint programming problem that involves assigning colors to different regions on a map such that no two adjacent regions have the same color.
-
-The main decision variables in this problem are the `country` array, which represents the color assigned to each country, and the `num_larger` variable, which is used for symmetry breaking. The `country` array is an array of variables, where each variable represents the color of a country, and the `num_larger` variable represents the number of times a country has a color greater than another country.
-
-The key constraints in this problem are that two countries that share a border cannot have the same color, and that the first country must be assigned the first color. The `coloring` predicate ensures that the first constraint is satisfied by checking all pairs of countries that share a border and verifying that they have different colors. The `country[1] = 1` constraint ensures that the first country is assigned the first color.
-
-The objective of this problem is to find a valid coloring of the map, which is achieved by satisfying all the constraints. There are also alternative objectives, such as minimizing the number of times a country has a color greater than another country, or minimizing/maximizing the sum of the product of the country index and its assigned color. However, the primary goal is to find a feasible solution that satisfies all the constraints.

@@ -1,5 +1,0 @@
-name: Common and Used By Problem
-description: The problem involves finding two arrays of variables, x and y, that satisfy certain constraints related to the common and used_by predicates, which describe the relationships between the values in the two arrays.
-variables: $x = [x_1, x_2, x_3, x_4], y = [y_1, y_2, y_3, y_4, y_5, y_6], a, b$, where $x$ and $y$ are arrays of decision variables representing the values in the two arrays, and $a$ and $b$ are decision variables representing the number of common values between the two arrays.
-constraints: $cp1d([1,9,1,5],x) \wedge cp1d([2,1,9,9,6,9],y) \wedge common(a, b, x, y)$, where $cp1d$ is a constraint that checks if two arrays are equal, and $common(a, b, x, y)$ is a constraint that checks if $a$ is the number of values of $x$ that are in $y$ and $b$ is the number of values of $y$ that are in $x$.
-objective: The objective of the problem is to satisfy the given constraints, which means finding values for $x$, $y$, $a$, and $b$ that make the constraints true, with no explicit minimization or maximization objective.

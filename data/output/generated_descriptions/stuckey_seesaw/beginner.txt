@@ -1,5 +1,0 @@
-Seesaw Balancing Problem
-The problem is about balancing three people, Liz, Fi, and Sara, on a seesaw. 
-The main variables are Liz, Fi, and Sara, which represent the positions of each person on the seesaw, with positive numbers meaning they are on one side and negative numbers meaning they are on the other side.
-The basic restrictions are that the total weight of the people on each side of the seesaw must be balanced, and each person must be at least 3 positions away from the others. 
-The goal of the problem is to find a position for each person that satisfies these restrictions, with no specific goal to minimize or maximize anything, just to find a balanced and safe arrangement.

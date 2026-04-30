@@ -1,5 +1,0 @@
-name: Zoo, Buses, and Kids problem
-description: The problem involves finding the minimum cost to transport 300 kids to the London zoo by renting buses of two different sizes, 40 seats and 30 seats, which cost 500 and 400 pounds respectively.
-variables: $buses_1, buses_2, z$, where $buses_1$ and $buses_2$ are the number of buses of each size to rent, and $z$ is the total cost.
-constraints: $30buses_1 + 40buses_2 \geq 300$, $buses_1 \in [0, 100]$, $buses_2 \in [0, 100]$, which ensure that the total number of seats is sufficient to transport all kids and that the number of buses of each size is non-negative and does not exceed 100.
-objective: Minimize $z = 400buses_1 + 500buses_2$, the total cost of renting the buses.

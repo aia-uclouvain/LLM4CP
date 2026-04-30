@@ -1,9 +1,0 @@
-name: Broken Weights Problem
-description: A merchant has a 40-pound measuring weight that broke into four pieces, and each piece weighs a whole number of pounds. The goal is to find the weights of the pieces such that they can be used to weigh every integral weight between 1 and 40 pounds using a balance scale.
-variables: $n, m, weights, x$ 
-weights is an array of var 1..m, and x is an array of var -1..1. 
-$n$ is the number of different weights (4 in this case), $m$ is the original weight (40 pounds), $weights$ are the weights of the pieces, and $x$ represents the combinations of weights on either side of the scale.
-constraints: $\forall i \in 2..n (weights[i-1] \leq weights[i]) \land \sum_{i=1}^{n} weights[i] = m \land \forall j \in 1..m (\sum_{i=1}^{n} x[j,i]*weights[i] = j)$
-These constraints ensure that the weights are non-decreasing, their sum equals the original weight, and all weights from 1 to 40 can be made by combining the pieces on either side of the scale.
-objective: minimize $weights[n]$ 
-The objective is to minimize the largest weight, which means finding the smallest possible weights that satisfy the constraints.

@@ -1,5 +1,0 @@
-Lewis Carroll Coin Puzzle
-The problem is about dividing a set of coins among three people - a buyer, a shopkeeper, and a friend - in such a way that each person gets a specific amount of money.
-The main variables are the coins (10 different coins with different values) and the people (3 individuals: buyer, shopkeeper, and friend). The variable x represents which coin is given to which person.
-The basic restrictions are that each coin can only be given to one person, and each person must receive a specific total amount of money (63, 160, and 85 for the buyer, shopkeeper, and friend, respectively).
-The goal of the problem is to find a way to distribute the coins among the three people so that each person receives the exact amount of money they are supposed to get, using the available coins.

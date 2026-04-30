@@ -1,8 +1,0 @@
-Word Square Problem
-The Word Square problem is about finding a set of words that can be arranged in a square grid such that the same set of words can be read both horizontally and vertically.
-
-The main decision variables are the `words` array, which represents the characters in each word, and the `E` array, which represents the index of each word in the square. The `words` array is a 2D array where each row represents a word and each column represents a character position in the word. The `E` array is a 1D array where each element represents the index of the word that should be placed in the corresponding row of the square.
-
-The key constraints are that the characters in each position of the square must be the same when read horizontally and vertically, and that all the words in the square must be different. This is achieved through the constraint `words[E[I], J] = words[E[J],I]`, which ensures that the characters in each position of the square are the same when read horizontally and vertically. The constraint `all_different(E)` ensures that all the words in the square are different.
-
-The objective of the problem is to find a set of words that satisfy the constraints, rather than to minimize or maximize a specific objective function. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than to optimize a specific objective function. The `solve :: int_search(E, first_fail, indomain_min, complete) satisfy` statement in the model indicates that the problem is a satisfaction problem, and the solver will search for a solution that satisfies all the constraints.

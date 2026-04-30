@@ -1,7 +1,0 @@
-All Interval Problem
-The All Interval Problem is about finding a sequence of musical notes, represented by numbers, such that each note appears exactly once and the intervals between consecutive notes cover all possible intervals from the minor second to the major seventh.
-The main decision variables are the elements of the `series` array, which represents the sequence of notes. Each element `series[i]` is a variable that takes a value from the set `classes`, representing a specific note.
-The key constraints are: 
-- Each note appears exactly once in the sequence, ensuring that no note is repeated.
-- The intervals between consecutive notes are all different, meaning that every possible interval from the minor second to the major seventh appears exactly once.
-The objective of the problem is to find a sequence that satisfies these constraints, effectively covering all intervals exactly once. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that meets the given constraints.

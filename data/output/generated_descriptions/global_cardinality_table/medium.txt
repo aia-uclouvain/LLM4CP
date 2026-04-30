@@ -1,5 +1,0 @@
-The problem is called the Global Cardinality Constraint problem. 
-It is about ensuring that a set of variables take on specific values a certain number of times, as defined in a given table of values and their occurrences. 
-The main decision variables are the "variables" array, which represents the values to be assigned, and the "values" array, which represents the table of values and their occurrences. 
-The key constraints are that each value in the "values" table should be taken by exactly the specified number of variables in the "variables" array. 
-The problem's objective is to satisfy all the given constraints, specifically the global cardinality constraint, which ensures that the values are assigned as specified in the table.

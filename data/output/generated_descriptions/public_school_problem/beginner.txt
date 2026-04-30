@@ -1,5 +1,0 @@
-Public School Problem
-The problem is about finding the smallest possible value for a set of numbers that represent the number of students in different classes at a public school, while following certain rules about how the classes are related to each other.
-The main variables are x[1] to x[5], which represent the number of students in five different classes, and m, which is a minimum number of students that each class must have.
-The basic restrictions are that each class must have at least m students, and the total number of students in the classes must follow certain mathematical relationships, such as one class having twice as many students as another class, and the total number of students in some classes being equal to the total number of students in other classes.
-The goal of the problem is to minimize the number of students in the first class, x[1], while still following all the rules and restrictions.

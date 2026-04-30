@@ -1,5 +1,0 @@
-name: Conditional Lexicographic Constraints Problem
-description: The problem involves finding an assignment of values to two vectors, v1 and v2, and a 2D array, arr, such that the vectors are assigned to specific rows in the array and a conditional lexicographic constraint is satisfied.
-variables: $v1 \in \{0,1\}^m, v2 \in \{0,1\}^m, arr \in \{0,1\}^{n \times m}$, where $v1$ and $v2$ are binary vectors of length $m$, and $arr$ is a binary 2D array of size $n \times m$, representing the assignment of values to the vectors and the array.
-constraints: $cp2d(arr, [|1,0, 0,1, 0,0, 1,1|])$, $cp1d(v1, [1,0])$, $cp1d(v2, [0,0])$, $cond\_lex\_less(v1, v2, arr)$, which ensure that the array $arr$ is assigned the given values, the vectors $v1$ and $v2$ are assigned the given values, and the conditional lexicographic constraint is satisfied.
-objective: The objective of the problem is to find a satisfying assignment, i.e., to satisfy all the constraints, there is no explicit objective function to minimize or maximize.

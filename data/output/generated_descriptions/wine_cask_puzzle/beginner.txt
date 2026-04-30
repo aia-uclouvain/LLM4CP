@@ -1,5 +1,0 @@
-Wine Cask Puzzle
-The problem is about distributing wine among casks in a specific way. 
-The main variables are the amount of wine in each cask for each person (x) and the total amount of wine each person has (dtot). 
-The basic restrictions are that each person gets 9 casks, the total amount of wine each person gets is 4.5 units, each cask type is given to 9 people, and the total amount of wine each person has is calculated based on the casks they receive. Additionally, each person must have at least one more unit of wine than the previous person. 
-The goal of the problem is to find a way to distribute the wine among the casks that satisfies all these rules.

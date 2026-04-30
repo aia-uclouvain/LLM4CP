@@ -1,5 +1,0 @@
-The Logical Labyrinth problem. 
-This problem is about a puzzle where a prisoner is presented with nine doors, behind one of which is a lady, and the rest are either tigers or empty. The prisoner must figure out which door the lady is behind by using clues written on the doors. 
-The main variables are x and t. The variable x represents which door hides which prize (the lady, a tiger, or nothing), and the variable t represents whether the statement written on each door is true or false. 
-The basic restrictions are that each door can only hide one prize, there is only one lady, and the statements on the doors must follow certain rules. For example, if a door says "the lady is behind one of these doors," then that statement must be true if the lady is indeed behind one of those doors. 
-The goal of the problem is to find the arrangement of the lady, tigers, and empty rooms behind the doors that satisfies all the given clues and rules, and to determine which door the lady is behind.

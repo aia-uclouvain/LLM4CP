@@ -1,9 +1,0 @@
-The Social Golfer Problem or Wedding Seating Chart Problem
-The problem is about finding an optimal seating arrangement for a wedding with a given number of guests and tables, where each guest has certain relationships with other guests.
-The main decision variables are the `tables` array, which represents the table assignment for each guest, and the `z` variable, which represents the total strength of relationships between guests seated at the same table.
-The key constraints are: 
-- each table can seat a maximum of `a` guests, 
-- each guest must know at least `b` people at their table, 
-- the seating arrangement must maximize the total strength of relationships between guests seated at the same table, 
-- and a symmetry-breaking constraint to ensure that a specific guest (Martha) sits at table 1.
-The problem's objective is to maximize the total strength of relationships between guests seated at the same table, represented by the `z` variable, by finding the optimal seating arrangement that satisfies the given constraints.

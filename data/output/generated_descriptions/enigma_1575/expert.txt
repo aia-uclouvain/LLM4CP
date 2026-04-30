@@ -1,7 +1,0 @@
-name: Enigma 1575 (All our days)
-description: The problem is to find a set of non-zero digits to replace the letters in the days of the week (Monday to Sunday) such that each day is divisible by its own ordinal number (1 to 7) and by no higher digit. The goal is to find a famous number, which is a specific arrangement of these digits.
-variables: $m, o, t, u, w, h, f, s, a, letters, days, famous$ 
-These variables represent the digits to replace the letters in the days of the week, where $m, o, t, u, w, h, f, s, a$ are the individual digits, $letters$ is an array of these digits, $days$ is an array of the resulting day numbers, and $famous$ is the famous number to be found.
-constraints: $all\_different(letters)$, $days[1] = 10m + o$, $days[2] = 10t + u$, $days[3] = w$, $days[4] = 10t + h$, $days[5] = f$, $days[6] = 10s + a$, $days[7] = 10s + u$, $days[i] \mod i = 0$, $days[i] \mod j \neq 0$ for $i = 1..7$ and $j = i+1..9$ 
-These constraints ensure that all the digits are different, the days of the week are formed correctly, and each day is divisible by its own ordinal number and by no higher digit.
-objective: The objective of the problem is to find a solution that satisfies all the constraints, there is no explicit objective function to minimize or maximize.

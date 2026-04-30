@@ -1,8 +1,0 @@
-name: The 13-Link Chain Puzzle
-description: The problem is about finding the minimum number of links to break in a 13-link chain to be able to weigh items from 1 to 13 ounces in 1-ounce increments using a balance scale, where each link of the chain weighs one ounce.
-variables: $x_{i,j}, weights_j, t, t_2$ 
-These variables represent the following: $x_{i,j}$ is the coefficient of the $j^{th}$ weight in the $i^{th}$ equation, $weights_j$ is the $j^{th}$ weight, $t$ is the number of weights used, and $t_2$ is the largest coefficient used.
-constraints: $\sum_{j=1}^{m_1} (max_{i=1}^{n} |x_{i,j}|) \cdot weights_j = n$, $i = \sum_{j=1}^{m_1} x_{i,j} \cdot weights_j$, $weights_j = 0 \leftrightarrow \forall i \in \{1, \ldots, n\} (x_{i,j} = 0)$, $weights_1 \leq weights_2 \leq \ldots \leq weights_{m_1}$, $alldifferent\_except\_0(weights)$, $\forall i \in \{2, \ldots, m_1\} (weights_i \geq 2 \cdot weights_{i-1} - 1)$
-These constraints ensure that the total weight of the links is equal to the total weight that needs to be measured, each weight from 1 to 13 ounces can be measured, a weight is used if and only if at least one coefficient for that weight is non-zero, the weights are non-decreasing, all non-zero weights are distinct, and the weights are chosen in a way that minimizes the number of weights used.
-objective: minimize $t \cdot t_2$ 
-The objective is to minimize the product of the number of weights used ($t$) and the largest coefficient used ($t_2$), which represents the minimum number of links to break in the chain to achieve the desired weighing capability.

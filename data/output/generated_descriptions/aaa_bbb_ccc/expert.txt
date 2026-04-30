@@ -1,5 +1,0 @@
-name: AAA + BBB + CCC = BAAC Puzzle
-description: This problem is a classic puzzle where we need to find the values of A, B, and C such that the equation AAA + BBB + CCC = BAAC holds true, with the constraint that A, B, and C are distinct digits between 1 and 9.
-variables: A, B, C, AAA, BBB, CCC, BAAC. These variables represent the digits A, B, and C, and the numbers AAA, BBB, CCC, and BAAC, which are constructed by concatenating the digits. For example, AAA is a three-digit number where all digits are A, and BAAC is a four-digit number with B as the first digit, followed by A, A, and C.
-constraints: BAAC = AAA+BBB+CCC, all_different([A,B,C]). The first constraint represents the equation that needs to be satisfied, and the second constraint ensures that the digits A, B, and C are distinct.
-objective: satisfy. The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

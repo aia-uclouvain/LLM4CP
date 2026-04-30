@@ -1,5 +1,0 @@
-name: Lexicographically Ordered Vectors Problem
-description: The problem involves finding a set of vectors of integers, where each vector is lexicographically strictly less than the next one in the set, and all elements in the vectors are within a given range.
-variables: $x_{i,j}$, where $i \in \{1, \ldots, r\}$ and $j \in \{1, \ldots, c\}$, are decision variables representing the elements of the vectors, where $r$ is the number of vectors and $c$ is the number of components in each vector.
-constraints: $\forall i \in \{2, \ldots, r\}, \lex\_less([x_{i-1, j} | j \in \{1, \ldots, c\}], [x_{i, j} | j \in \{1, \ldots, c\}])$, which ensures that each vector is lexicographically strictly less than the next one, and $x_{i,j} \in \{1, \ldots, 9\}$, which restricts the values of the elements in the vectors.
-objective: The objective of the problem is to find a set of vectors that satisfy the lexicographical order constraint, with no specific minimization or maximization goal, as the problem is a satisfaction problem.

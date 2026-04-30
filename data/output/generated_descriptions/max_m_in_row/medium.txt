@@ -1,8 +1,0 @@
-The problem is called the Consecutive Values Problem. 
-It is about finding an assignment of values to a matrix such that no more than a specified number of consecutive cells in any row or column have the same value. 
-
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the value assigned to the cell at row `i` and column `j`. The values are integers between 0 and 2.
-
-The key constraints are that for each row and each column, there cannot be more than `m` consecutive cells with the same value. This means that if we look at any sequence of `m+1` cells in a row or column, there must be at least two different values.
-
-The problem's objective is to find a solution that satisfies these constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. This means that the goal is not to minimize or maximize a specific objective function, but rather to find a feasible assignment of values to the matrix that meets the given constraints.

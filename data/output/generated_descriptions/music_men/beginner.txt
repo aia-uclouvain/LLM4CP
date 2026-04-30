@@ -1,5 +1,0 @@
-The problem is called "Music Men". 
-It's about three friends - Leon, Mark, and Rob - who have different last names (King, Prince, Queen), are of different ages (24, 25, 26), and like different kinds of music (Classical, Jazz, Pop). 
-The main variables are the friends' names, ages, and music preferences. 
-The basic restrictions are: Rob is older than the person who likes Classical music, the person who likes Pop music is not 24 and not Prince, Leon is 25 and not King, and Mark does not like Jazz. 
-The goal is to figure out the full name, age, and music preference of each friend.

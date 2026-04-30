@@ -1,5 +1,0 @@
-The Philosophical Railway problem. 
-It's about figuring out the jobs of five railway employees: James, Kant, Locke, Mill, and Nietzsche, who are the driver, guard, porter, signalman, and stationmaster. 
-The main variables are the names of the employees and their corresponding jobs. 
-The basic restrictions are the statements made by each employee, where each statement is either true or false, and each employee makes two statements. 
-The goal is to find the job of the driver, by satisfying all the given statements and finding a valid assignment of jobs to the employees.

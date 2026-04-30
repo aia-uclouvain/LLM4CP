@@ -1,8 +1,0 @@
-The problem is called "roots" in the context of global constraints. 
-It's about checking if certain values appear in a list only at specific positions. 
-The main variables are: 
-- x, which is a list of numbers that can be 1, 2, or 3
-- s, which is a set of positions in the list x where certain values can appear
-- t, which is a set of values that we're looking for in the list x.
-The basic restrictions are that the list x must match a given example list, and the sets s and t are fixed. 
-The goal is to check if the values in t appear in x only at the positions specified in s, which is achieved by satisfying the "roots" constraint.

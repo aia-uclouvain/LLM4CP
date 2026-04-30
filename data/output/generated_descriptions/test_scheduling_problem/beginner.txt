@@ -1,5 +1,0 @@
-Job Scheduling Problem
-The problem is about scheduling tasks on machines with limited resources, like a factory with multiple machines and workers. 
-The main variables are tasks, machines, and resources. Tasks are jobs that need to be done, machines are the equipment used to do the jobs, and resources are the materials or workers needed for the tasks.
-The basic restrictions are that each task can only be done on certain machines, each machine can only do one task at a time, and some tasks need specific resources that can't be used by other tasks at the same time. Also, there are only a certain number of machines available.
-The goal is to schedule all the tasks in a way that minimizes the time it takes to finish all the tasks, by assigning each task to a machine and making sure that the tasks that need the same resources don't happen at the same time.

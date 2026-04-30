@@ -1,5 +1,0 @@
-name: Inter-Distance Problem
-description: The Inter-Distance problem is a constraint satisfaction problem that ensures all variables in a set are pairwise distant from a certain value p, meaning the absolute difference between any two variables is greater than or equal to p. This problem is a generalization of the alldifferent constraint, where p = 1.
-variables: $x = (x_1, x_2, ..., x_n)$, $p$: $x$ is an array of decision variables representing the values to be assigned, and $p$ is a decision variable representing the minimum distance between any two variables in $x$.
-constraints: $|x_i - x_j| \geq p \forall i \neq j$, $x_1 \leq x_2 \leq ... \leq x_n$, $p \geq 2$: these constraints ensure that all variables in $x$ are pairwise distant from $p$, the variables in $x$ are in increasing order, and $p$ is greater than or equal to 2, respectively.
-objective: maximize $p$: the objective of the problem is to find the maximum value of $p$ such that all constraints are satisfied.

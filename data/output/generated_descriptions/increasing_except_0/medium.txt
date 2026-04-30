@@ -1,5 +1,0 @@
-The Increasing Sequence Problem Except Zeroes
-The problem is about finding a sequence of numbers that is increasing, with the exception that zeroes are disregarded in the comparison.
-The main decision variable is an array `x` of length `n`, where each element `x[i]` represents a number in the sequence, which can range from 0 to `n`.
-The key constraints are that for any two elements in the sequence, if neither of them is zero, then the earlier element must be less than or equal to the later element. This ensures that the sequence is increasing, ignoring any zeroes.
-The problem's objective is to find a sequence that satisfies the increasing constraint, rather than minimizing or maximizing a specific value. The model uses a satisfiability solver to find a valid sequence, and the `int_search` annotation is used to specify the search strategy for finding the solution.

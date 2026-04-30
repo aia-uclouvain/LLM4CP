@@ -1,7 +1,0 @@
-The Set Covering Problem (SCP) is a classic problem in constraint programming. The SCP is a problem where we have a set of subsets of a set of elements, and we want to find the smallest subset of subsets that covers all the elements. In this case, we have 200 subsets and 168 elements. The goal is to minimize the total cost of the selected subsets.
-
-The decision variables in this problem are the array x, which represents whether a subset is selected or not. The objective is to minimize the total cost, which is the sum of the costs of the selected subsets.
-
-The key constraints in this problem are that each element must be covered by at least one subset. This is represented by the predicate set_covering3, which ensures that for each element, there is at least one subset that contains it.
-
-The problem's objective is to minimize the total cost, which is the sum of the costs of the selected subsets. The costs of the subsets are given in the array costs. The problem is solved using the MiniZinc solver, which is a constraint programming solver. The solution to the problem is the smallest subset of subsets that covers all the elements with the minimum total cost.

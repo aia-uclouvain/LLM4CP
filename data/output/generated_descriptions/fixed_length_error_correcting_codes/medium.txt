@@ -1,5 +1,0 @@
-The problem is known as the Fixed Length Error Correcting Codes problem. 
-It is about finding a set of code words of a fixed length, where each character in the code word is chosen from a given set of characters, such that the minimum distance between any two code words is maximized. 
-The main decision variables are the code words, represented by the set `c` of strings, where each string is a function that maps an index to a character. 
-The key constraints are that each pair of code words in the set must have a minimum distance, calculated as the sum of the distances between corresponding characters, where the distance between two characters is given by the `dist` function. 
-The problem's objective is to find a set of code words that satisfies these constraints, with the goal of maximizing the minimum distance between any two code words, thereby allowing for more effective error correction.

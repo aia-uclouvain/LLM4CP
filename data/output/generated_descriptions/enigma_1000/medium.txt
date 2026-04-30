@@ -1,5 +1,0 @@
-Enigma Puzzle
-The Enigma puzzle is a classic constraint programming problem where each letter represents a unique digit, and the goal is to find the values of these letters such that a given equation is satisfied.
-The main decision variables in this problem are the letters E, N, I, G, M, A, T, and S, which represent different digits from 0 to 9. 
-The key constraints are that each letter must be a unique digit, no number can start with zero (i.e., E, M, and T must be greater than 0), and the equation 100000*E + 10000*N + 1000*I + 100*G + 10*M + A = M * (10000*T + 1000*I + 100*M + 10*E + S) must be satisfied.
-The objective of this problem is to find a solution that satisfies all the given constraints, as it is a satisfaction problem rather than an optimization problem, meaning that the goal is to find a feasible solution that meets all the requirements rather than minimizing or maximizing a specific objective function.

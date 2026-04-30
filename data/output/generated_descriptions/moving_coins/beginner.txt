@@ -1,5 +1,0 @@
-Moving Coins Problem
-The problem is about rearranging coins from a triangle pointing upwards to a triangle pointing downwards by moving as few coins as possible.
-The main variables are the number of rows (k), the number of coins (n), and the positions of the coins in a grid (x and grid2).
-The basic restrictions are that the number of coins remains the same, and the coins must be rearranged to form a triangle pointing downwards.
-The goal is to maximize the number of coins that remain in the same position (z), which means minimizing the number of coins that need to be moved.

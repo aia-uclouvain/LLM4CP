@@ -1,5 +1,0 @@
-Ages problem
-The problem is about figuring out the ages of three people, Tim, Jane, and Mary, based on some clues about their ages at different times. 
-The main variables are t, j, and m, which represent the current ages of Tim, Jane, and Mary, and other variables like y, y1, y2, etc., which represent their ages at different points in the past or future. 
-The basic restrictions or rules of the problem are that the ages must satisfy certain equations, such as "y + 10 - t = 2 * (y1 - j)", which describes a relationship between the ages of Tim and Jane at different times. 
-The goal of the problem is to minimize the sum of the current ages of Tim, Jane, and Mary, which is represented by the variable z.

@@ -1,9 +1,0 @@
-name: Crystal Maze problem
-
-description: The Crystal Maze problem is a constraint satisfaction problem where the goal is to assign letters A to H to a set of circular plates, arranged in a specific pattern, such that no consecutive letters are in adjacent circles. The problem is represented by a set of circular plates, with some plates having fixed letters and others being empty. The task is to find an assignment of letters to the empty plates that satisfies the constraint of not having consecutive letters in adjacent circles.
-
-variables: $x_1, x_2, ..., x_8$ - These are decision variables representing the assignment of letters to each of the 8 circular plates. Each variable $x_i$ takes a value from 1 to 8, where 1 corresponds to letter A, 2 corresponds to letter B, and so on.
-
-constraints: $all\_different(x) \land \forall i \in 1..16 (|x[connections[i,1]] - x[connections[i,2]]| > 1) \land \forall i \in 1..8 (if hints[i] > 0 then x[i] = hints[i] else true)$ - These constraints ensure that: (1) all letters are assigned to exactly one plate ($all\_different(x)$), (2) no consecutive letters are in adjacent circles ($\forall i \in 1..16 (|x[connections[i,1]] - x[connections[i,2]]| > 1)$), and (3) any fixed letters are assigned to their corresponding plates ($\forall i \in 1..8 (if hints[i] > 0 then x[i] = hints[i] else true)$).
-
-objective: The objective of the problem is to find a satisfying assignment of letters to the plates, which is achieved by solving the constraint satisfaction problem. There is no explicit objective function to minimize or maximize, as the goal is to find a feasible solution that satisfies all the constraints.

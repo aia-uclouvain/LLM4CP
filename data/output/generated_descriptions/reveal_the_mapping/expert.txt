@@ -1,5 +1,0 @@
-name: Reveal the Mapping problem
-description: The problem is to map the unique digits 1-9 to the unknowns (a-i) in a set of 5 circles, such that the sum of the unknowns in each circle adds up to 11, with each digit used only once.
-variables: $x_1, x_2, ..., x_9$ - These are decision variables representing the mapping of the unique digits 1-9 to the unknowns (a-i) in the circles.
-constraints: $alldifferent(x) \wedge \forall i \in \{1,2,3,4,5\} (\sum_{j \in circles[i]} x_j = 11)$ - These constraints ensure that each digit is used only once (alldifferent) and that the sum of the unknowns in each circle equals 11.
-objective: The objective of the problem is to find all possible mappings that satisfy the given constraints, rather than minimizing or maximizing a specific value.

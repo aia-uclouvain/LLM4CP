@@ -1,5 +1,0 @@
-Quasigroup Completion Problem
-The problem is about filling in missing values in a table so that each row and column has each number only once, like a Sudoku puzzle, but with some specific rules. 
-The main variables are the missing values in the table, which are like empty boxes that need to be filled with numbers.
-The basic restrictions are that each row and column can only have each number once, and some numbers are already given in the table. 
-The goal is to find a way to fill in all the missing values so that the table is complete and follows the rules, and the problem is looking for any solution that satisfies these conditions, not necessarily to minimize or maximize anything.

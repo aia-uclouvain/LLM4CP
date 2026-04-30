@@ -1,8 +1,0 @@
-Magic Square Water Retention problem. 
-This problem is about creating a special kind of square grid, called a magic square, where the numbers in each row, column, and diagonal add up to the same total. The twist is that this magic square is also a model of a surface where water can flow and be retained. The goal is to find a magic square that can hold the most water.
-
-The main variables are the numbers in the magic square grid, represented by "magic", and the amount of water that can be held in each cell, represented by "water". 
-
-The basic restrictions or rules of the problem are that the numbers in each row, column, and diagonal of the magic square must add up to the same total, and that the amount of water in each cell cannot be less than the number in the corresponding cell of the magic square.
-
-The goal of the problem is to maximize the total amount of water that can be held in the magic square, which is represented by the variable "z". This means finding a magic square where the numbers are arranged in such a way that the most water can be retained.

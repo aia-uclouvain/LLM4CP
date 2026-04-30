@@ -1,5 +1,0 @@
-The problem is called lex_different. 
-It's about comparing two lists of numbers to see if they are different. 
-The main variables are vector1 and vector2, which are lists of numbers that can be between 1 and 7. 
-The basic rules are that both lists must have the same length, and they must match two specific lists of numbers, except for at least one position where they must be different. 
-The goal is to find lists of numbers that satisfy these rules, and the problem is solved when it finds such lists, without trying to minimize or maximize anything.

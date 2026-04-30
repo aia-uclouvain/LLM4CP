@@ -1,5 +1,0 @@
-K4P2 Graceful Graph
-The problem is about finding a way to label the points (called nodes) and the connections (called edges) between them in a special kind of graph, so that the labels on the edges are all different and the labels on the nodes are also all different.
-The main variables are the nodes and the edges. The nodes represent points in the graph, and the edges represent the connections between these points. The labels on the nodes and edges are like names or numbers that we assign to them.
-The basic rules are that the label on each edge must be the absolute difference between the labels of the two nodes it connects, and all the labels on the edges and nodes must be different.
-The goal is to find a way to label all the nodes and edges that satisfies these rules, and there are 1440 different solutions to this problem.

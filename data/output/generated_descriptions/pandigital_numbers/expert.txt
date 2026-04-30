@@ -1,7 +1,0 @@
-name: Pandigital Numbers Problem
-description: The problem is to find a pandigital number, which is a number that contains each of the digits from 1 to 9 (or 0 to 9 if the base is 10 and the start is 0) exactly once, such that the product of two groups of digits is equal to a number represented by the remaining digits, or alternatively, the sum of two groups of digits is equal to a number represented by the remaining digits.
-variables: $x, num1, num2, res, len1, len2, vop$ 
-These variables represent the following: $x$ is an array of digits, $num1$ and $num2$ are the two numbers formed by the first and second groups of digits, $res$ is the result of the operation, $len1$ and $len2$ are the lengths of $num1$ and $num2$, and $vop$ is the operation (1 for multiplication or 2 for addition).
-constraints: $all\_different(x)$, $toNum(x, num1, base)$, $toNum(x, num2, base)$, $toNum(x, res, base)$, $num1 * num2 = res$, $num1 < num2$, $num2 < res$, $res < 99999$, $x[1] > 0$, $x[len1+1] > 0$, $x[len1+len2+1] > 0$ 
-These constraints ensure that each digit is used exactly once, the numbers are formed correctly, the operation is performed correctly, and the numbers are within certain bounds.
-objective: The problem is a satisfaction problem, which means that the objective is to find a solution that satisfies all the constraints, rather than to minimize or maximize a specific value.

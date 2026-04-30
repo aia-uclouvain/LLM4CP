@@ -1,5 +1,0 @@
-name: 225 Divisor Problem
-description: The problem is to find the smallest number that consists only of the digits 1 and 0 and is divisible by 225. This means that the number should be a sequence of 1s and 0s, and when divided by 225, it should leave no remainder.
-variables: $x = (x_1, x_2, ..., x_n)$, $y$ where $x$ is an array of binary decision variables representing the digits of the number, and $y$ is an integer decision variable representing the number itself. 
-constraints: $y = \sum_{i=1}^{n} 10^{n-i} \cdot x_i$, $y \mod 225 = 0$ where the first constraint converts the binary array $x$ into the integer $y$, and the second constraint ensures that $y$ is divisible by 225.
-objective: Minimize $y$

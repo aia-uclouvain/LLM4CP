@@ -1,5 +1,0 @@
-Wilkinson's problem 
-This problem is about finding a specific value of a variable, x, that makes a complex mathematical equation true. 
-The main variable is x, which is a number that we are trying to find. 
-The basic restriction of this problem is that the variable x must make the given complex equation equal to zero. This equation involves multiplying many numbers together and adding a small adjustment to get zero. 
-The goal of this problem is to minimize the value of x, which means finding the smallest possible value of x that still satisfies the equation.

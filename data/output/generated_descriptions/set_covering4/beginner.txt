@@ -1,5 +1,0 @@
-Set Partition Problem
-The problem is about selecting a group of alternatives that cover all objects, where each object can only be covered once, at the lowest possible cost.
-The main variables are alternatives, objects, and costs. Alternatives are options that cover certain objects, objects are things that need to be covered, and costs are the prices of the alternatives.
-The basic restrictions are that all objects must be covered, and each object can only be covered once. 
-The goal is to minimize the total cost of the selected alternatives.

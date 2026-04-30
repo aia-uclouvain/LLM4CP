@@ -1,5 +1,0 @@
-The Enigma Puzzle 1396 problem. 
-This problem is about assigning distinct positive integer values to the letters of the alphabet such that the sum of the values of the letters in the names of certain planets and celestial bodies matches given scores. 
-The main decision variables are the values assigned to each letter of the alphabet, represented by variables such as p, l, u, t, o, r, a, n, s, e, i, m, j, h, v, c, and y, which are all part of the array "letters". 
-The key constraints are that each letter must have a unique value, and the sum of the values of the letters in each planet's name must equal the given score, for example, the sum of the values of the letters in "PLUTO" must be 40. 
-The objective of the problem is to find the value of "PLANETS" by summing up the values of the letters in the word "PLANETS", which is represented by the variable "planets".

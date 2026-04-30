@@ -1,9 +1,0 @@
-Sudoku
-Sudoku is a classic constraint programming problem where the goal is to fill a 9x9 grid with numbers from 1 to 9, such that each row, column, and 3x3 sub-grid contains each number exactly once.
-The main decision variables in Sudoku are the values of the grid cells, represented by the 2D array `x`. Each `x[i, j]` represents the value of the cell in the `i`-th row and `j`-th column.
-The key constraints in Sudoku are: 
-* Each row must contain each number from 1 to 9 exactly once. 
-* Each column must contain each number from 1 to 9 exactly once. 
-* Each 3x3 sub-grid must contain each number from 1 to 9 exactly once. 
-These constraints ensure that the completed grid is a valid Sudoku solution.
-The objective of Sudoku is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints. In other words, the goal is to fill the grid with numbers such that all the constraints are met, and the grid is completed correctly. The model uses the `solve satisfy` statement to find a solution that satisfies all the constraints.

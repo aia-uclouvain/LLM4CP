@@ -1,5 +1,0 @@
-Shortest Path Problem. 
-This problem is about finding the shortest way to get from one point to another in a network of connected points. 
-The main variables are the points we visit on our path (x), the number of points in the network (n), the connections between points (graph), the starting point (start), and the target point (target). 
-The basic restrictions are that we can only move between connected points, we must start at the starting point, and we must end at the target point. All points on the path must be different, except that we can have zeros which mean we're not visiting that point. 
-The goal is to find the shortest path, which means minimizing the number of points we visit.

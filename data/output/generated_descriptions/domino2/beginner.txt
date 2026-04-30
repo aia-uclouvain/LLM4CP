@@ -1,5 +1,0 @@
-Domino Problem
-The Domino problem is about placing domino pieces on a board so that the numbers on the dominoes match the numbers on the board. 
-The main variables are the board, which is a grid of numbers, and the domino pieces, which are pairs of numbers. 
-The basic restrictions are that each domino piece must be placed on the board so that its numbers match the numbers on the board, and each number on the board must be covered by a domino piece. 
-The goal of the problem is to find a way to place all the domino pieces on the board so that all the numbers match, and all the pieces are used exactly once.

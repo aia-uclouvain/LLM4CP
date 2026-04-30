@@ -1,5 +1,0 @@
-The name of the problem is the Circuit Problem. 
-The Circuit Problem is about finding a circular arrangement of a set of items, such that each item is visited exactly once and the arrangement forms a single cycle or circuit. 
-The main decision variable in this problem is an array `x` of size `n`, where `x[i]` represents the next item to be visited after item `i`. 
-The key constraints in this problem are that each item must be visited exactly once, and the arrangement must form a single cycle. This is achieved by ensuring that the sequence of next items to visit is different for each item, and that the sequence eventually returns to the starting item. In plain language, this means that if you start at any item and follow the sequence of next items to visit, you will eventually return to the starting item, and you will visit each item exactly once. 
-The objective of the Circuit Problem is to find a feasible solution that satisfies the constraints, rather than minimizing or maximizing a specific objective function. In other words, the goal is to find a valid circular arrangement of the items, rather than finding the "best" arrangement according to some criteria.

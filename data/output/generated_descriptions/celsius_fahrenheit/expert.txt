@@ -1,8 +1,0 @@
-name: Celsius to Fahrenheit Conversion Problem
-description: The problem is a classic example of a constraint programming problem that involves converting temperature from Celsius to Fahrenheit and vice versa. The goal is to find a pair of temperature values, one in Celsius and one in Fahrenheit, that satisfy the conversion formula.
-variables: C, F, Ci, Fi 
-These variables represent the temperature values in Celsius (C) and Fahrenheit (F), and their integer counterparts (Ci and Fi). C and F are floating-point decision variables that can take any value within a specified range, while Ci and Fi are integer decision variables that represent the integer values of C and F.
-constraints: convert(C, F), int2float(Ci) = C, int2float(Fi) = F 
-These constraints ensure that the conversion formula between Celsius and Fahrenheit is satisfied, and that the integer variables Ci and Fi are equal to their corresponding floating-point variables C and F. The convert(C, F) constraint enforces the relationship C = (F - 32.0) * 5.0 / 9.0, which is the formula for converting Fahrenheit to Celsius.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. The problem is a satisfaction problem, where the goal is to find a pair of temperature values that satisfy the conversion formula and the integer constraints.

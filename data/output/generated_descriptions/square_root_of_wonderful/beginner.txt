@@ -1,5 +1,0 @@
-The Square Root of Wonderful problem. 
-This problem is about finding a special code where each letter in the word "WONDERFUL" represents a different digit, and the same code is used to represent the square root of the number "WONDERFUL". 
-The main variables are the letters in the word "WONDERFUL" (W, O, N, D, E, R, F, U, L), which represent different digits from 1 to 9. 
-The basic restrictions are that each letter must represent a unique digit, the number "WONDERFUL" and its square root "OODDF" must be greater than 0, and the digits must be combined in a specific way to form these numbers. 
-The goal of the problem is to find the digits that represent each letter in the word "WONDERFUL" such that the square of "OODDF" equals "WONDERFUL".

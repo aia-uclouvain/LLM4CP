@@ -1,5 +1,0 @@
-The Abbott's Puzzle
-The Abbott's Puzzle is a classic constraint programming problem that involves finding the number of items of three different types that satisfy certain conditions. 
-The main decision variables in this problem are represented by the array `x`, where `x[i]` denotes the number of items of type `i`. 
-The key constraints in this problem are: the total value of all items must be 200, the total number of items must be 100, and the number of items of type 2 must be five times the number of items of type 1. 
-The objective of this problem is to find a solution that satisfies all the given constraints, as indicated by the `solve satisfy` statement, which means that the goal is to find values for the decision variables that make all the constraints true, rather than minimizing or maximizing a specific objective function.

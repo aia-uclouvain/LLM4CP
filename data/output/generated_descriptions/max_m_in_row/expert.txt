@@ -1,5 +1,0 @@
-name: Max Consecutive Values Problem
-description: The problem is to find an assignment of values to a matrix such that there are no more than a specified number of consecutive occurrences of the same value in any row or column.
-variables: $x_{i,j}$, where $i$ and $j$ are indices of the matrix, representing the value at position $(i,j)$ in the matrix. These variables are decision variables that can take on integer values between 0 and 2.
-constraints: $\forall i \in \{1, \ldots, n\}: max\_m\_in\_row([x_{i,j} | j \in \{1, \ldots, n\}], m) \wedge max\_m\_in\_row([x_{j,i} | j \in \{1, \ldots, n\}], m)$, which ensures that there are no more than $m$ consecutive occurrences of the same value in any row or column.
-objective: The objective is to satisfy all the constraints, i.e., to find a feasible assignment of values to the matrix. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a solution that satisfies all the constraints.

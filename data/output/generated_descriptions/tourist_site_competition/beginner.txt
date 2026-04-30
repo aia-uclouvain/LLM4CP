@@ -1,5 +1,0 @@
-Tourist Site Competition
-The problem is about assigning judges to visit tourist sites in a way that meets certain rules. 
-The main variables are the tourist sites (like Birka, Falun, and Lund) and the judges (like Ali, Dan, and Eva), and a special variable x that tracks which judges visit which sites.
-The basic restrictions are that each site must be visited by exactly 3 judges, each judge must visit exactly 3 sites, and every pair of sites must have exactly 1 judge in common.
-The goal of the problem is to find a way to assign the judges to the sites that satisfies all these rules, without trying to minimize or maximize anything.

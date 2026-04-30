@@ -1,5 +1,0 @@
-Atmost Nvalue Problem
-The Atmost Nvalue problem is about limiting the number of distinct values in a collection of variables. 
-The main decision variables are x, an array of variables representing the collection, and nval, a variable representing the maximum number of distinct values allowed. 
-The key constraints are that the values in x must be within a specified range, the number of distinct values in x must not exceed nval, and the specific values of x must match a given pattern. 
-The problem's objective is to find an assignment of values to x that satisfies these constraints, with the specific goal of demonstrating that the number of distinct values in x is indeed less than or equal to nval, which is set to 4 in this case.

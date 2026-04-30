@@ -1,5 +1,0 @@
-The Self-Referential Sentence Problem
-The problem is about generating a sentence that describes the number of occurrences of each digit from 0 to 9 within the sentence itself.
-The main decision variables are the array `x` of length `n`, where `n` is twice the base (10 in this case), representing the digits and their counts in the sentence. Each pair of elements `x[i*2+1]` and `x[i*2+2]` corresponds to a digit `i` and its count, respectively.
-The key constraints are that each digit `i` is placed in the correct position `x[i*2+1]`, and the count of each digit `i` in the sentence is equal to the value stored in `x[i*2+2]`.
-The objective of the problem is to find a satisfying assignment of values to the decision variables `x`, such that the generated sentence is self-referentially correct, meaning it accurately describes the number of occurrences of each digit within itself. The problem does not involve minimization or maximization, but rather finding a feasible solution that satisfies all the constraints.

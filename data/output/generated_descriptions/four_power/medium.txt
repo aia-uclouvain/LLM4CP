@@ -1,5 +1,0 @@
-The problem is known as the "Sum of Fourth Powers" problem. 
-It is about finding four different numbers, each raised to the fourth power, that add up to another number also raised to the fourth power. 
-The main decision variables are x1, x2, x3, x4, and x5, which represent the five numbers in the equation, with x1, x2, x3, and x4 being the four numbers raised to the fourth power and added together, and x5 being the resulting number raised to the fourth power. 
-The key constraints are that all five numbers must be different and in increasing order, and that the sum of the fourth powers of the first four numbers equals the fourth power of the fifth number. 
-The problem's objective is to find a solution that satisfies these constraints, with no specific minimization or maximization goal, as the problem is a feasibility problem, aiming to find any valid combination of numbers that meet the given conditions.

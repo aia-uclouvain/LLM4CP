@@ -1,5 +1,0 @@
-The problem is called "orth_on_the_ground". 
-It's about making sure that a certain object, called an "orthotope", has a specific orientation when it's placed on the ground. 
-The main variables are "orthotope" and "vertical_dim". The "orthotope" variable represents the object and its properties, like its size and orientation. The "vertical_dim" variable determines which part of the object to focus on. 
-The basic rules are that the object must have a certain size and orientation, and that it must be placed on the ground in a specific way. 
-The goal is to make sure that the object is placed correctly, with its orientation set to "one", which means it's standing upright on the ground.

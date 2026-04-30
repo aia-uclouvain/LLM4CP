@@ -1,5 +1,0 @@
-name: Binary Puzzle
-description: The Binary Puzzle is a classical problem in constraint programming where the goal is to fill a square grid with binary values (0s and 1s) such that each row and column has an equal number of 0s and 1s, and no three consecutive cells in a row or column have the same value.
-variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the binary values (0 or 1) assigned to each cell in the grid.
-constraints: $\sum_{j=1}^{n} x_{i,j} = m$, $\sum_{i=1}^{n} x_{i,j} = m$, and $sliding\_sum(1,2,3,this\_row)$, $sliding\_sum(1,2,3,this\_column)$. These constraints ensure that each row and column has an equal number of 0s and 1s, and that no three consecutive cells in a row or column have the same value.
-objective: The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to solve the problem as a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

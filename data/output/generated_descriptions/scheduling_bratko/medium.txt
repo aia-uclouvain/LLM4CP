@@ -1,9 +1,0 @@
-Job Shop Scheduling Problem
-The problem is about scheduling a series of tasks with specific dependencies and durations to minimize the total time required to complete all tasks.
-The main decision variables are Ta, Tb, Tc, Td, and Tf, which represent the completion times of tasks A, B, C, D, and F, respectively.
-The key constraints are:
-- Task B cannot start until 2 time units after Task A is completed.
-- Task C cannot start until 2 time units after Task A is completed.
-- Task D cannot start until 3 time units after Task B is completed.
-- Task F cannot start until 5 time units after Task C is completed and 4 time units after Task D is completed.
-The objective of the problem is to minimize the completion time of Task F (Tf), which represents the total time required to complete all tasks.

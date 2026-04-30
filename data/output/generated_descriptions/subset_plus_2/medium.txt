@@ -1,5 +1,0 @@
-The problem is called the Subset problem. 
-It is about finding the number of subsets S of a given set of integers {1, 2, ..., n} such that S and S+2 (the set obtained by adding 2 to each element of S) together cover all the numbers from 1 to n+2. 
-The main decision variables are s1 and s2, which represent the subsets S and S+2, respectively. 
-The key constraints are that for every number i in the set {1, 2, ..., n}, i is in S if and only if i+2 is in S+2, and the union of S and S+2 covers all the numbers from 1 to n+2. 
-The problem's objective is to find all possible subsets S that satisfy these conditions, and the model is designed to output all such subsets.

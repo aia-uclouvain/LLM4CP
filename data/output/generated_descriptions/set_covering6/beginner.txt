@@ -1,5 +1,0 @@
-Set Covering Problem
-The problem is about finding the best set of tests to run on a new version of a computer program to make sure all the changed parts are covered, while also keeping the cost of running these tests as low as possible.
-The main variables are the tests (x) and the total cost (total_cost). The tests are like switches that can be either on (1) or off (0), and the total cost is the sum of the costs of all the tests that are turned on.
-The basic rules are that each changed part of the program must be covered by at least one test, and each test has a certain cost. The goal is to minimize the total cost by choosing the tests that cover all the changed parts while keeping the cost as low as possible.
-The goal of the problem is to minimize the total cost (total_cost) by selecting the best combination of tests (x) that cover all the changed parts of the program.

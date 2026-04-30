@@ -1,5 +1,0 @@
-Ice cream production problem. 
-This problem is about making ice cream to meet monthly demands while keeping costs low. 
-The main variables are production (x), surplus (s), increase in production (y), and decrease in production (z), which represent how much ice cream is made, stored, increased, or decreased each month. 
-The basic restrictions are that the amount of ice cream made plus what's already stored must meet the monthly demand, and the production can't be negative. Also, the amount of ice cream stored at the beginning and end of the year must be zero. 
-The goal is to minimize the total cost, which includes the cost of changing production levels and storing ice cream, with the aim of finding the most cost-effective way to meet the monthly ice cream demands.

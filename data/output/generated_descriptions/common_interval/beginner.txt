@@ -1,5 +1,0 @@
-The problem is called "Common Interval". 
-It's about comparing two groups of numbers and finding out how many numbers in each group fall into certain ranges that are determined by the numbers in the other group. 
-The main variables are "x" and "y", which are the two groups of numbers, and "a" and "b", which count how many numbers in each group fall into the ranges determined by the other group. 
-The basic restrictions are that each number in "x" and "y" must be between 0 and 9, and the ranges are determined by a fixed interval size, which is 3 in this case. 
-The goal is to find the values of "a" and "b", which represent the number of common intervals between the two groups of numbers.

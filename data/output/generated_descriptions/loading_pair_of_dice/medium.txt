@@ -1,5 +1,0 @@
-The name of the problem is Loading a Pair of Dice. 
-This problem is about rigging a pair of dice so that the rolls of 2, 3, 4, …, 12 all have the same chance of occurring. 
-The main decision variables are x and y, which represent the two dice, with each element in the arrays x and y representing a side of the die and taking a value from 0 to n, where n is the number of sides of a standard die. 
-The key constraints are that the sum of the values on each side of the two dice must result in the same probability distribution for the sums 2 through 12, and that the distribution of these sums must be the same for each possible outcome. 
-The problem's objective is to find a configuration of the two dice that satisfies these constraints, which is essentially a satisfaction problem rather than an optimization problem, as it seeks to find a feasible solution where all sums have the same probability, rather than minimizing or maximizing a specific objective function.

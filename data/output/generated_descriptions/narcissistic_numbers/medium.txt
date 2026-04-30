@@ -1,5 +1,0 @@
-Narcissistic Numbers problem
-The problem is about finding numbers that are equal to the sum of the nth powers of their digits, where n is the number of digits.
-The main decision variables are x, an array of integers representing the digits of the number, and num, an integer representing the number itself. The array x has a length of n, where n is the number of digits.
-The key constraints are: the number must be greater than 0, the first digit must be greater than 0, the number is equal to the sum of its digits raised to the power of n, and each digit is between 0 and base-1, where base is the base of the number system (10 for decimal).
-The objective of the problem is to find a number that satisfies these constraints, which is essentially a feasibility problem, not an optimization problem, as the goal is to find any number that meets the conditions, not to minimize or maximize a particular value.

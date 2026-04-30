@@ -1,8 +1,0 @@
-name: Critical Path Problem
-description: The Critical Path Problem is a classic problem in operations research and project management that involves finding the longest path through a network of activities, where each activity has a specific duration and dependencies on other activities. The goal is to determine the minimum time required to complete the entire project.
-variables: $timex_1, timex_2, ..., timex_{num\_nodes}, sum\_dur$ 
-These are decision variables representing the start time of each node (or activity) in the project, and the sum of durations of all activities.
-constraints: $timex_i \geq 0, timex_i \leq sum\_dur, timex_{arcs_{i,2}} \geq timex_{arcs_{i,1}} + dur_i$ 
-These constraints ensure that the start time of each activity is non-negative and does not exceed the total duration of all activities, and that the start time of each activity depends on the completion time of its predecessor activities.
-objective: minimize $timex_{num\_nodes} - timex_1$ 
-The objective is to minimize the difference between the start time of the last activity and the start time of the first activity, which represents the minimum time required to complete the entire project.

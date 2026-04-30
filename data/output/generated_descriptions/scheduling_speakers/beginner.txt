@@ -1,5 +1,0 @@
-Scheduling Speakers
-The problem is about scheduling six speakers to give talks in six time slots. 
-The main variables are the speakers and the time slots they are assigned to, which means deciding which speaker talks at which time.
-The basic restrictions are that each speaker can only talk once, and each speaker can only talk during certain time slots that they are available. 
-The goal of the problem is to find a schedule where all speakers are assigned a time slot that they are available for, and no two speakers talk at the same time.

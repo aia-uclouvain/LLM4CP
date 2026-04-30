@@ -1,5 +1,0 @@
-Futoshiki problem
-The Futoshiki problem is about filling in numbers in a grid, like a puzzle. 
-The main variables are the numbers in the grid, which can be from 1 to 5, and the relationships between these numbers, which are shown by "less than" signs.
-The basic restrictions are that each row and each column can only have each number once, and the "less than" relationships must be true. 
-The goal is to fill in all the numbers so that all the rules are followed, and the puzzle is solved.

@@ -1,5 +1,0 @@
-name: Global Contiguity Problem
-description: The Global Contiguity Problem is a constraint satisfaction problem that involves assigning values to a sequence of variables such that all variables assigned to 1 appear contiguously, and all variables are assigned either 0 or 1.
-variables: $x = (x_1, x_2, ..., x_n)$, where $x_i$ is a binary decision variable representing the $i^{th}$ element in the sequence, with $x_i = 1$ indicating the presence of a contiguous group and $x_i = 0$ indicating the absence of a contiguous group.
-constraints: $x_i \in \{0, 1\}$ for all $i$, $\exists k, l \in \{1, ..., n\}$ such that $x_k = x_{k+1} = ... = x_l = 1$ and $x_i = 0$ for all $i < k$ and $i > l$, where $k$ and $l$ are the start and end indices of the contiguous group, respectively, and the constraint $global\_contiguity(x)$ enforces the contiguity of the 1's in the sequence.
-objective: The objective of the problem is to find a satisfying assignment of values to the variables $x$ that satisfies the $global\_contiguity(x)$ constraint, with no explicit optimization criterion (i.e., the problem is a satisfaction problem).

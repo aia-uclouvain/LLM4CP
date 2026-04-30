@@ -1,6 +1,0 @@
-The Spy Girls puzzle 
-is about figuring out the ranks, first names, and last names of five female spies. 
-The main variables are the ranks and names of the spies: Jane, Sylvia, Hillary, Kate, Amanda, Brookes, Adams, Darling, Cooper, and Miller. 
-These variables represent the position of each spy in the agency, from highest to lowest, and their corresponding names. 
-The basic restrictions are: each spy has a unique rank and name, Sylvia is ranked higher than Adams but not the highest, Hillary is ranked higher than Darling but not as high as Brookes, Amanda is ranked higher than Kate or Hillary but not the highest, Adams is ranked higher than Miller but lower than Cooper, and Miller is not the lowest. 
-The goal is to find the correct rank, first name, and last name for each spy.

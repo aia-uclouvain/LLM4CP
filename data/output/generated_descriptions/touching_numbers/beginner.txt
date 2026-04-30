@@ -1,5 +1,0 @@
-Touching Numbers puzzle 
-The problem is about arranging the digits 0 through 9 in a line such that the number of "touches" between adjacent digits is maximized. 
-The main variables are X and Z: X represents which digits are next to each other, and Z helps ensure that the arrangement doesn't form any loops. 
-The basic restrictions are that each digit can only be to the immediate left or right of at most one other digit, there can't be any loops, and exactly nine pairs of digits must be adjacent. 
-The goal is to maximize the total "score" of the arrangement, where the score is calculated based on the number of touches between adjacent digits and their positions.

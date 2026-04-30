@@ -1,5 +1,0 @@
-The Dreadsbury Mansion Murder Mystery 
-This problem is about figuring out who killed a woman named Agatha in a mansion where she lived with a butler and a man named Charles. 
-The main variables are the killer, the victim, who hates whom, and who is richer than whom. In simple terms, the killer is the person who did the crime, the victim is Agatha, "hates" means one person dislikes another, and "richer" means one person has more money than another. 
-The basic rules are that the killer must hate the victim and not be richer than them, Agatha hates everyone except the butler, the butler hates people who are not richer than Agatha and those Agatha hates, and no one hates everyone. 
-The goal is to find out who killed Agatha, which the problem solves by concluding that Agatha killed herself.

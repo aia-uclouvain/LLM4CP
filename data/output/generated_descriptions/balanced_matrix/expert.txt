@@ -1,5 +1,0 @@
-name: Balanced 0-1 Matrix Problem
-description: The problem involves assigning values of either 0 or 1 to the positions of an n x n matrix, where n is even, such that each row and each column contains exactly n/2 zeros and n/2 ones.
-variables: $x_{i,j}$, where $i \in \{1, 2, ..., n\}$ and $j \in \{1, 2, ..., n\}$. These are decision variables representing the value (0 or 1) assigned to the position at row $i$ and column $j$ in the matrix.
-constraints: $\forall i \in \{1, 2, ..., n\}: \sum_{j=1}^{n} x_{i,j} = \frac{n}{2}$ and $\forall j \in \{1, 2, ..., n\}: \sum_{i=1}^{n} x_{i,j} = \frac{n}{2}$, and $n \mod 2 = 0$. These constraints ensure that each row and each column has exactly n/2 ones, and that the size of the matrix is even.
-objective: The objective of this problem is to find a feasible solution that satisfies all the constraints, as it is a satisfaction problem (solve satisfy).

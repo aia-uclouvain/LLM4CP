@@ -1,5 +1,0 @@
-The problem is called Assign and Nvalues. 
-It is about assigning items to bins such that the number of distinct values in each bin satisfies a certain condition relative to a given limit. 
-The main decision variables are the bins, which represent the assignment of items to bins, and the limitx, which is the maximum number of distinct values allowed in each bin. 
-The key constraints are that each item must be assigned to a bin, and the number of distinct values in each bin must satisfy the condition specified by the relop (relation operator) and the limitx. 
-The problem's objective is to satisfy these constraints, specifically to find an assignment of items to bins such that the number of distinct values in each bin is less than or equal to the given limit, in this case, 2.

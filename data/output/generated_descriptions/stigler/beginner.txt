@@ -1,5 +1,0 @@
-Stigler's 1939 Diet Problem
-The problem is about finding the cheapest way for a moderately active man to get all the necessary nutrients by eating a combination of 77 different foods.
-The main variables are the amount of each food to buy daily, the total cost of the diet, and the amount of each nutrient consumed.
-The basic restrictions are that the diet must provide at least the recommended daily amount of nine essential nutrients, including calories, protein, and vitamins, and that the cost of the diet must be minimized.
-The goal of the problem is to minimize the total cost of the diet while ensuring that the man gets all the necessary nutrients.

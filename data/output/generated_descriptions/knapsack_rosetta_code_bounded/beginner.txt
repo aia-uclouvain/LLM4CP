@@ -1,8 +1,0 @@
-Knapsack Problem
-The problem is about a tourist who wants to pack items for a trip, but their knapsack has a limited weight capacity of 4 kg. They have a list of items they want to bring, each with a weight and a value representing how important it is. The tourist can choose any combination of items, but they cannot exceed the weight limit.
-
-The main variables are the items to be packed and the number of each item to include. These variables represent the tourist's choices about what to bring on the trip.
-
-The basic restrictions are that the total weight of the packed items cannot exceed 4 kg, and the tourist cannot take more of an item than they have available. For example, if they have two sandwiches, they can take either zero, one, or two sandwiches, but not three.
-
-The goal of the problem is to maximize the total value of the items packed while staying within the weight limit. In other words, the tourist wants to bring the most important items that fit in their knapsack.

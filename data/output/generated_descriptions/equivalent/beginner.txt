@@ -1,5 +1,0 @@
-The problem is called "Equivalent". 
-It's about checking if two yes/no choices are the same. 
-The main variables are "b" which is a single yes/no choice, and "variables" which is a list of two yes/no choices. 
-The basic rule is that "b" should be yes only if the two choices in "variables" are the same. 
-The goal is to find a combination of "b" and "variables" that follows this rule.

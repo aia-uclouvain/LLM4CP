@@ -1,5 +1,0 @@
-Transportation Problem
-The problem is about finding the best way to transport goods from several sources to several destinations. 
-The main variables are the amount of goods to be transported from each source to each destination, and the total amount of goods transported.
-The basic restrictions are that the total amount of goods transported from each source must equal the amount available at that source, and the total amount of goods transported to each destination must equal the amount needed at that destination. Also, the amount of goods transported from each source to each destination must be at least a certain minimum value.
-The goal of the problem is to minimize the total amount of goods transported.

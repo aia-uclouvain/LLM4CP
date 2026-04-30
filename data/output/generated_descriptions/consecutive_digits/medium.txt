@@ -1,5 +1,0 @@
-Consecutive Digits Puzzle
-The problem is about finding four consecutive digits that satisfy a specific arithmetic condition when arranged in a particular way. 
-The main decision variables are A, B, C, and D, which represent the four consecutive digits in increasing order, and the array "dots" which represents the same four digits in an unknown order. 
-The key constraints are that the digits A, B, C, and D must be consecutive and distinct, the digits in the "dots" array must also be distinct and consist of the same four digits A, B, C, and D, and the sum of the numbers formed by the digits ABCD, DCBA, and the "dots" array must equal 12300. 
-The problem's objective is to find the number represented by the four dots, which is the sum of the digits in the "dots" array, such that all the given constraints are satisfied.

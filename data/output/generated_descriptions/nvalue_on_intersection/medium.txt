@@ -1,5 +1,0 @@
-The problem is called the Nvalue Common problem. 
-It is about finding the number of distinct values that are common to two collections of variables. 
-The main decision variables are `nval`, which represents the number of common distinct values, `variables1` and `variables2`, which are arrays of variables representing the two collections. 
-The key constraints are that `nval` must be equal to the number of distinct values that occur in both `variables1` and `variables2`, and that `variables1` and `variables2` must be equal to given arrays. 
-The problem's objective is to satisfy these constraints, specifically to verify that `nval` is indeed the number of common distinct values between `variables1` and `variables2`.

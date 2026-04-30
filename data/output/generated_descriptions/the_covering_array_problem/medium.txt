@@ -1,5 +1,0 @@
-Covering Array Problem
-The Covering Array problem is about finding a matrix that covers all possible combinations of values for a given set of parameters. 
-The main decision variables are CA (in the Essence model) or p and v (in the PyCSP3 model), which represent the matrix to be constructed. 
-The key constraints are that for every subset of rows of size t, all possible combinations of values must be present in at least one column, and that the matrix must satisfy certain symmetry-breaking conditions to reduce the search space. 
-The objective of the problem is to determine whether a covering array exists for the given parameters, rather than to minimize or maximize a specific value.

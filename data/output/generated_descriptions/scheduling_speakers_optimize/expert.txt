@@ -1,8 +1,0 @@
-name: Conference Scheduling Problem
-description: The problem involves scheduling talks for a conference with multiple speakers, each with their own availability and talk duration. The goal is to find a schedule that allows all speakers to present their talks without overlapping and finishes as early as possible.
-variables: $starting\_slot_i, ending\_slot_i, m_{t,s}, z$ 
-These variables represent the starting and ending slots for each speaker $i$, a matrix $m$ indicating whether a speaker is presenting at a given time slot, and the maximum ending time $z$ among all speakers.
-constraints: $ending\_slot_i = starting\_slot_i + app\_durations_i - 1$, $no\_overlap(starting\_slot_i, app\_durations_i, starting\_slot_j, app\_durations_j)$, $starting\_slot_i + j - 1 \in speaker\_availability_i$, $(t \notin speaker\_availability_s) \leftrightarrow m_{t,s} = -1$, $(t \geq starting\_slot_s \wedge t \leq ending\_slot_s) \rightarrow m_{t,s} = 1$
-These constraints ensure that each speaker's talk duration is respected, no two speakers overlap, each speaker only presents at available time slots, and the matrix $m$ accurately reflects the schedule.
-objective: minimize $z = \max_i (ending\_slot_i)$ 
-The objective is to minimize the maximum ending time among all speakers, which represents the earliest finish time for all talks.

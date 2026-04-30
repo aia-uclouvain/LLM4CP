@@ -1,5 +1,0 @@
-Lecture Series Puzzle
-The problem is about scheduling a series of lectures, one each day from Monday to Friday, with different lecturers and subjects. 
-The main decision variables are the days assigned to each lecturer and subject, represented by variables such as `choosing_a_college`, `physical_hygiene`, `modern_art`, `nutrition`, `study_habits` for the subjects, and `Alice`, `Bernadette`, `Charles`, `Duane`, `Eddie` for the first names of the lecturers, and `Felicidad`, `Garber`, `Haller`, `Itakura`, `Jeffreys` for the last names of the lecturers.
-The key constraints are: each subject and lecturer can only be assigned to one day, Alice lectures on Monday, Charles' lecture on physical hygiene is not on Friday, a man gives the lecture on modern art, Ms. Itakura and the lecturer on study habits speak on consecutive days, Haller lectures after Eddie, and Duane Felicidad lectures before the modern art lecture.
-The objective is to find a satisfying assignment of lecturers and subjects to days, such that all constraints are met, which is achieved by using the `solve satisfy` statement in the MiniZinc model.

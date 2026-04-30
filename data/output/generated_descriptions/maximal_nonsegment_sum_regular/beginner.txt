@@ -1,5 +1,0 @@
-The problem is called Maximal Non-Segment Sum. 
-It's about finding the largest possible sum of numbers from a given list, with a condition: the numbers you choose cannot be next to each other in the list. 
-The main variables are the list of numbers (s) and a set of choices (x) that say whether each number should be included in the sum or not. 
-The basic rule is that you cannot choose numbers that are next to each other in the list. 
-The goal is to find the largest possible sum of the chosen numbers.

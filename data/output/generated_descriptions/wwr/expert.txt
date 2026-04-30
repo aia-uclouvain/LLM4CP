@@ -1,5 +1,0 @@
-name: Alphametic Problem (WRONG + WRONG = RIGHT)
-description: The Alphametic Problem is a classic puzzle where letters represent digits, and the goal is to find the correct assignment of digits to letters such that the given equation holds true. In this case, the equation is WRONG + WRONG = RIGHT, where each letter represents a unique digit from 0 to 9.
-variables: W, R, O, N, G, I, H, T - These variables represent the digits assigned to each letter in the equation, where W, R, O, N, G, I, H, and T are the decision variables that take on values from the set of digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}.
-constraints: all_different(LD) ∧ 10000*W + 1000*R + 100*O + 10*N + G + 10000*W + 1000*R + 100*O + 10*N + G = 10000*R + 1000*I + 100*G + 10*H + T ∧ O = 0 - These constraints ensure that each letter is assigned a unique digit, the equation WRONG + WRONG = RIGHT holds true, and the additional constraint O = 0 is used to reduce the number of solutions.
-objective: satisfy - The objective of this problem is to find a satisfying assignment of digits to letters that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

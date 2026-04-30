@@ -1,8 +1,0 @@
-name: N-Queens Problem
-description: The N-Queens problem is a classic problem in the field of constraint programming, where the goal is to place a certain number of queens on a chessboard of size NxN, such that no two queens attack each other. A queen can attack another queen if they are in the same row, column, or diagonal.
-variables: q = [q[1], q[2], ..., q[n]], where q[i] is a decision variable representing the column where the ith queen is placed, with q[i] = 0 indicating that the ith queen is not placed. These variables represent the positions of the queens on the board.
-constraints: 
-∀i, j ∈ {1, ..., n} where i < j: (q[i] ≠ 0 ∧ q[j] ≠ 0) → (q[i] ≠ q[j] ∧ q[i] + i ≠ q[j] + j ∧ q[i] - i ≠ q[j] - j)
-∑[bool2int(q[i] > 0) | i ∈ {1, ..., n}] = m
-These constraints ensure that: (1) no two queens are in the same column or on the same diagonal, and (2) exactly m queens are placed on the board.
-objective: The objective of the problem is to find a satisfying assignment of the decision variables, i.e., to find a placement of the queens on the board that satisfies all the constraints, rather than minimizing or maximizing a specific value. The model uses the "solve satisfy" statement, which means that the goal is to find one or more solutions that satisfy all the constraints, without any optimization criterion.

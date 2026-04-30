@@ -1,5 +1,0 @@
-Ormat Game
-The Ormat game is about filling a grid with two types of symbols, 0 and 1, in a specific way. 
-The main variables are the symbols (0 and 1) in the grid, which represent the state of each cell.
-The basic restrictions are that each row and column must have a certain number of 0s and 1s, and that the grid must be filled according to specific rules.
-The goal of the problem is to find a valid way to fill the grid, following the given rules and restrictions, which is a type of puzzle-solving challenge, rather than trying to minimize or maximize something.

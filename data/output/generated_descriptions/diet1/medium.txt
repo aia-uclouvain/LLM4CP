@@ -1,5 +1,0 @@
-Diet Problem
-The Diet Problem is a classic constraint programming problem that involves finding the optimal combination of foods to meet certain nutritional requirements while minimizing cost.
-The main decision variables are `x`, which represents the quantity of each food item to include in the diet, and `price`, which represents the cost of each food item.
-The key constraints are that the total calories, chocolate, sugar, and fat from the selected foods must meet or exceed the specified limits, and that the quantity of each food item must be non-negative. Additionally, the total cost of the selected foods must not exceed a certain limit.
-The objective of the problem is to minimize the total cost of the diet, which is calculated as the sum of the cost of each food item multiplied by its quantity.

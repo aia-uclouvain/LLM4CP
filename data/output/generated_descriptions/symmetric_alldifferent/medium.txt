@@ -1,5 +1,0 @@
-The name of the problem is Symmetric Alldifferent. 
-This problem is about finding an assignment of values to a set of variables such that each variable is assigned a unique value and the assignment satisfies a symmetry condition. 
-The main decision variables are the elements of the array x, where x[i] represents the value assigned to the i-th variable. 
-The key constraints are that all variables must be assigned unique values and that if variable i is assigned the value j, then variable j must be assigned the value i. 
-The problem's objective is to find a satisfying assignment, there is no explicit objective function being minimized or maximized, the goal is to find a solution that satisfies all the constraints.

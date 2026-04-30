@@ -1,8 +1,0 @@
-Laplace Problem
-The Laplace problem is about finding a solution to Laplace's equation, a partial differential equation that describes the behavior of a physical system in equilibrium, using a finite difference approximation.
-
-The main decision variables in this problem are the values of `x[i, j]`, which represent the solution at each point `(i, j)` in a two-dimensional grid. The grid has `r` rows and `c` columns, and the values of `x[i, j]` are constrained to be between `Z` (zero) and `M` (a maximum value).
-
-The key constraints in this problem are that the value at each internal point in the grid is equal to the average of the values at its four neighboring points. This is represented by the equation `4.0*x[i, j] = x[i-1, j] + x[i, j-1] + x[i+1, j] + x[i, j+1]`, which is applied to all internal points in the grid. The boundary conditions are specified by the values of `x[i, j]` at the edges of the grid, which are either fixed to `Z` or `M`, or left unspecified (represented by `_`).
-
-The objective of this problem is not to minimize or maximize a specific function, but rather to find a solution that satisfies the constraints. However, the model includes a dummy objective function `minimize x[1, 1]` to keep the solver happy. The actual goal is to find a solution that satisfies the Laplace equation and the boundary conditions.

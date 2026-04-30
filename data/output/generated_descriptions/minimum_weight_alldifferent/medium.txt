@@ -1,5 +1,0 @@
-Minimum Weight All Different Problem
-The Minimum Weight All Different problem is about assigning distinct values to a set of variables while minimizing the total cost associated with these assignments. 
-The main decision variables are the `variables` array, which represents the values assigned to each variable, and the `matrix` array, which represents the cost of assigning each value to each variable. 
-The key constraints are that all variables must take distinct values, and the cost is calculated as the sum of the costs associated with each assignment. 
-The objective of the problem is to minimize the total cost.

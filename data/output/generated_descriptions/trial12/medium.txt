@@ -1,8 +1,0 @@
-The Logical Labyrinth problem. 
-The problem is about a prisoner who is presented with nine doors, behind one of which is a lady, and the rest are either tigers or empty. The prisoner can read statements on each door, which provide clues about what is behind the other doors. The goal is to figure out which door the lady is behind.
-
-The main decision variables are x(i,j) and t(i), where x(i,j) represents whether door i hides prize j (1 = Lady, 2 = Tiger, 3 = Empty), and t(i) represents whether the statement on door i is true. 
-
-The key constraints are: each door hides one prize, only one room contains the lady, the sign on the lady's door is true, and the signs on the tigers' doors are false. Additionally, the statements on each door provide clues about what is behind the other doors, such as "the lady is behind one of these five doors" or "this door is empty". 
-
-The problem's objective is to satisfy all the constraints, which means finding a solution that is consistent with all the given statements and clues. The model does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the constraints.

@@ -1,5 +1,0 @@
-name: Lam's Problem
-description: The problem involves finding a 111 by 111 binary matrix where each row and column has exactly 11 zeros, and each pair of rows has exactly one zero in the same column, which is equivalent to finding a projective plane of order 10.
-variables: $x_{i,j}, m$, where $x_{i,j}$ represents the binary value in the $i^{th}$ row and $j^{th}$ column of the matrix, and $m$ represents the number of zeros in each row and column.
-constraints: $\forall i \in 1..n: \sum_{j=1}^{n} (x_{i,j} = 0) = m$, $\forall j \in 1..n: \sum_{i=1}^{n} (x_{i,j} = 0) = m$, $\forall i, j \in 1..n, i \neq j: \sum_{k=1}^{n} (x_{i,k} = x_{j,k} \wedge x_{j,k} = 0) = 1$, which ensure that each row and column has exactly $m$ zeros, and each pair of rows has exactly one zero in the same column.
-objective: The problem is a satisfaction problem, where the goal is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

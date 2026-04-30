@@ -1,8 +1,0 @@
-name: 5x5 Puzzle
-description: The 5x5 puzzle is a classic problem in constraint programming where the goal is to find a configuration that satisfies certain conditions. The puzzle consists of a 5x5 grid, and the task is to place "moves" in such a way that each cell is either a move or not, and each move is "supported" by exactly two other moves, either horizontally, vertically, or diagonally.
-variables: $x_{i,j}, d_{i,j}, moves$ 
-These variables represent the decision variables in the problem: $x_{i,j}$ is a binary variable indicating whether a move is placed at position $(i,j)$, $d_{i,j}$ is an integer variable representing the number of moves supporting the move at position $(i,j)$, and $moves$ is an integer variable representing the total number of moves.
-constraints: $\forall i,j \in N: \sum_{k \in j-1..j+1, k \neq j, k \geq 1, k \leq n} x_{i,k} + \sum_{k \in i-1..i+1, k \geq 1, k \leq n} x_{k,j} = 2d_{i,j} + 1$ 
-These constraints ensure that each move is supported by exactly two other moves. The constraints iterate over each cell in the grid and count the number of moves in the neighboring cells (horizontally, vertically, and diagonally). The count is then equated to twice the number of moves supporting the current move plus one, which represents the move itself.
-objective: minimize $moves$ 
-The objective of the problem is to minimize the total number of moves, $moves$, which represents the minimum number of moves required to satisfy the conditions of the puzzle.

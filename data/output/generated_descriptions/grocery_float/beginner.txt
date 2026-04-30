@@ -1,5 +1,0 @@
-Grocery problem
-The problem is about a kid buying four items at a grocery store, where the total cost is $7.11. The cashier made a mistake by multiplying the prices instead of adding them, but surprisingly, the total cost is still $7.11 when the prices are added. 
-The main variables are the prices of the four items, which are represented as "item" in the code. These variables mean the cost of each of the four things the kid bought.
-The basic restrictions are that the prices of the four items must add up to $7.11 and multiply to $7.11. 
-The goal of the problem is to find the prices of the four items that meet these conditions.

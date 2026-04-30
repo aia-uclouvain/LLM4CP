@@ -1,5 +1,0 @@
-The problem is called Non Linear Programming. 
-It's about finding a point on a map that is a certain distance from two given locations. 
-The main variables are X and Y, which represent the coordinates of the point we're trying to find, like the address on a map. 
-The basic restrictions are that the point must be a certain distance (related to the number 4) from two specific locations: the origin (0,0) and the point (1,1). 
-The goal of the problem is to find a point that satisfies these distance restrictions, rather than minimizing or maximizing something.

@@ -1,5 +1,0 @@
-The Gunport Problem
-The problem is about covering a grid of squares with dominoes, which are like small tiles that cover two squares each. 
-The main variables are the grid of squares (called "x") and the dominoes (also part of "x"), where each square can be covered by one domino or none. 
-The basic restrictions are that each domino must cover two adjacent squares, each square can be covered by at most one domino, and no two adjacent squares can be left empty. 
-The goal is to find a way to cover the grid with dominoes such that the number of empty squares (called "sum_zeros") is at least 4, and to satisfy all the restrictions.

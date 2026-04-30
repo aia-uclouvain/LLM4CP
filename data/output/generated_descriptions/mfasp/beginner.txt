@@ -1,9 +1,0 @@
-Minimum Feedback Arc Set Problem
-The problem is about finding the smallest number of arrows (or connections) to remove from a directed graph so that it no longer has any cycles. 
-The main variables are: 
-- n, which is the number of points (or vertices) in the graph
-- E, which is the set of arrows (or edges) between these points
-- x, which determines whether an arrow is part of a cycle that needs to be removed
-- k, which assigns a number to each point to help figure out the order of the points.
-The basic restrictions are that when an arrow is removed, the remaining graph should not have any cycles, and the numbers assigned to the points should be in an order that makes sense for the remaining arrows.
-The goal is to minimize the number of arrows that need to be removed, which is represented by the variable obj.

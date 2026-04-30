@@ -1,5 +1,0 @@
-The problem is called "Finding Minimal Subset of Columns that Make Rows Unique". 
-It's about finding the smallest set of columns in a table that makes each row different from the others. 
-The main variables are the columns in the table, and the variable "x" which says whether a column is chosen or not. 
-The basic rule is that if two rows are different, there must be at least one chosen column where they have different values. 
-The goal is to minimize the number of chosen columns, which means finding the smallest set of columns that makes all rows unique.

@@ -1,8 +1,0 @@
-Square Number Problem
-The problem is about finding an eight-digit number that is a perfect square and remains a perfect square when the digit 1 is concatenated in front of its decimal notation.
-
-The main decision variables are `n`, `x`, and `y`, which represent the eight-digit number, the square root of `n`, and the square root of the concatenated number (100000000 + `n`), respectively.
-
-The key constraints are that `n` must be the square of `x`, and the number formed by concatenating 1 to `n` must be the square of `y`. In plain language, this means that `n` is a perfect square, and when you add a 1 to the beginning of `n`, the resulting number is also a perfect square.
-
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies the given constraints, i.e., to find an eight-digit number `n` that meets the specified conditions. The `solve satisfy` statement in the model indicates that the goal is to find a feasible solution that meets all the constraints, rather than optimizing a particular objective function.

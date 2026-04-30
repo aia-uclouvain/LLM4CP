@@ -1,8 +1,0 @@
-Unhelpful Square problem. 
-This problem is about filling in a grid of numbers to form perfect squares, which are numbers that can be expressed as the square of an integer, like 1, 4, 9, etc. The grid has some numbers already filled in, and the task is to fill in the remaining blank cells with digits to form perfect squares.
-
-The main variables are the grid cells (x) and the digits (y) that will be filled into these cells. The numbers (nums) variable represents the perfect squares that will be formed.
-
-The basic restrictions are that each perfect square must be unique, and the digits in the grid cells must be different from the already given clue numbers. Additionally, exactly half of the filled-in digits should be less than the clue number, and the other half should be greater.
-
-The goal of the problem is to find a solution that satisfies all these restrictions, which means filling in the grid with digits to form unique perfect squares.

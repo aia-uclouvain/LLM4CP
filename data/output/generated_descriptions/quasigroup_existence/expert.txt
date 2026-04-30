@@ -1,9 +1,0 @@
-name: Quasigroup Existence Problem
-description: The Quasigroup Existence Problem is a well-known problem in the field of constraint programming. It involves finding an m x m multiplication table of integers 1..m, where each element occurs exactly once in each row and column, and certain multiplication axioms hold.
-variables: $x_{i,j}$, where $i, j \in \{1, 2, ..., m\}$, $x_{i,j}$ represents the value at row $i$ and column $j$ of the quasigroup. These variables are decision variables that need to be assigned a value from the set $\{1, 2, ..., m\}$.
-constraints: 
-$\forall i \in \{1, 2, ..., m\}: \text{all\_different}(x_{i,1}, x_{i,2}, ..., x_{i,m})$,
-$\forall j \in \{1, 2, ..., m\}: \text{all\_different}(x_{1,j}, x_{2,j}, ..., x_{m,j})$,
-$\forall i, j \in \{1, 2, ..., m\}: (x_{j,i} \cdot x_{i,j}) = i$ or other axioms depending on the specific problem variant, 
-where the first two constraints ensure that each row and column contains each value exactly once, and the third constraint enforces the quasigroup axiom.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to determine whether a quasigroup of a given order exists. The problem does not involve minimizing or maximizing a specific value.

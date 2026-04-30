@@ -1,5 +1,0 @@
-name: Dividing into Roughly Equal Sized Groups
-description: The problem involves dividing a sorted list of elements into k groups, where the goal is to make the groups as close in size to the ideal group size (n/k) as possible, with the additional constraint that elements with the same value must be in the same group.
-variables: x, s, z, x is an array of decision variables representing the break points between groups, s is an array representing the size of each group, and z is the total error, which is the sum of the absolute differences between the size of each group and the ideal group size. These variables determine how the elements are divided into groups and measure the quality of the division.
-constraints: s[1] = x[1], s[i] = x[i] - x[i-1] for i in 2..k-1, s[k] = n - x[k-1], x[p] != j for j in non_valid_breaks and p in 1..k-1, where non_valid_breaks are the indices where the value changes. These constraints ensure that the groups are formed correctly and that elements with the same value are in the same group.
-objective: minimize z, which is the sum of the absolute differences between the size of each group and the ideal group size (n/k).

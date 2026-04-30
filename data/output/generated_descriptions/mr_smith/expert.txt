@@ -1,5 +1,0 @@
-name: Mr. Smith Problem
-description: The Mr. Smith problem is a classic constraint satisfaction problem where the goal is to determine which members of the Smith family will visit, given certain conditions and constraints on their attendance.
-variables: $Mr\_Smith, Mrs\_Smith, Matt, John, Tim$ are boolean decision variables representing whether each family member will come or not.
-constraints: $(Mr\_Smith \rightarrow Mrs\_Smith) \land (Matt \lor John) \land (Mrs\_Smith \oplus Tim) \land (Tim = John) \land (Matt \rightarrow (John \land Mr\_Smith))$ are the constraints that must be satisfied, which include: if Mr. Smith comes then his wife comes, at least one of the two sons comes, either Mrs. Smith or Tim comes but not both, Tim and John come together or not at all, and if Matt comes then John and his father come.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to determine which family members will visit, such that all the given constraints are satisfied.

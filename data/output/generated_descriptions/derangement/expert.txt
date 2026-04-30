@@ -1,5 +1,0 @@
-name: Derangement Problem
-description: The Derangement Problem is a classic problem in combinatorial mathematics and constraint programming. It involves finding a permutation of a set of objects such that no object is in its original position. In other words, a derangement is a permutation of the elements of a set, such that no element appears in its original position.
-variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the position of the $i^{th}$ object in the derangement, and $x_i$ is an integer between 1 and $n$.
-constraints: $x_i \neq i \forall i \in \{1, 2, ..., n\}$ and $x$ is a permutation of the set $\{1, 2, ..., n\}$, which means that each value between 1 and $n$ appears exactly once in $x$. The constraint $cp1d$ ensures that the solution $x$ is a specific permutation, but this is not a general constraint of the derangement problem.
-objective: The objective of the problem is to find a satisfying assignment, i.e., a derangement that satisfies the given constraints. There is no explicit objective function to minimize or maximize. The goal is to find a feasible solution that meets the derangement condition.

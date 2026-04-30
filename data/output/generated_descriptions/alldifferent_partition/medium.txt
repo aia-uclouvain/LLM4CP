@@ -1,5 +1,0 @@
-The problem is called the All Different Partition problem. 
-It is about partitioning a set of variables into distinct subsets, where each variable takes a value that belongs to one of these subsets, and all variables in each subset are assigned different values. 
-The main decision variables are x, which represents the values assigned to each variable, and s, which represents the subsets or partitions. 
-The key constraints are that each variable must take a value that belongs to one of the subsets, all variables in each subset must have different values, and each variable can only belong to one subset. 
-The objective of the problem is to find an assignment of values to variables that satisfies these constraints, which is a satisfaction problem, not an optimization problem, so there is no objective function being minimized or maximized.

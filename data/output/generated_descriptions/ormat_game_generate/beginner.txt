@@ -1,5 +1,0 @@
-Ormat game
-The Ormat game is about creating different patterns on a square grid. 
-The main variables are the overlays, which are like squares on the grid that can either be filled (1) or empty (0).
-The basic restrictions are that each row and each column can only have one filled square. 
-The goal is to find all possible patterns that follow these rules on a grid of a certain size (in this case, 4x4).

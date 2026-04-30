@@ -1,5 +1,0 @@
-name: 0/1 Knapsack Problem
-description: The 0/1 Knapsack Problem is a classic problem in combinatorial optimization where a traveller needs to decide how many units of each item to take with him, given the item's value, weight, and volume, and the knapsack's capacity constraints, in order to maximize the total value of the items taken.
-variables: $x_1, x_2, x_3$ where $x_i$ represents the number of units of item $i$ to take, which are non-negative integers.
-constraints: $z \geq 0$, $x_i \geq 0$ for $i = 1, 2, 3$, $\sum_{i=1}^{3} volume_i \cdot x_i \leq 0.25$, $\sum_{i=1}^{3} weight_i \cdot x_i \leq 25$ where $z$ is the total value of the items taken, $volume_i$ and $weight_i$ are the volume and weight of item $i$ respectively.
-objective: Maximize $z = \sum_{i=1}^{3} value_i \cdot x_i$ where $value_i$ is the value of item $i$.

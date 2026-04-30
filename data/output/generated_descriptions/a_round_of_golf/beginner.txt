@@ -1,5 +1,0 @@
-A Round of Golf
-This problem is about four friends - Jack, Bill, Paul, and Frank - who work at a golf course and play a round of golf together. Each friend has a different job, such as a cook or a caddy, and scores a different number of strokes in the game. 
-The main variables are the friends' first names, last names, jobs, and golf scores. In simple terms, we want to figure out each friend's full name, what job they do, and how many strokes they scored in the game.
-The basic rules are that each friend has a unique job and score, and their scores are between 70 and 85 strokes. There are also some specific clues, such as Bill having the lowest score, Mr. Clubb scoring 10 strokes more than the clerk, and Frank scoring lower than Mr. Carter. 
-The goal is to use these clues to determine each friend's full name, job, and golf score.

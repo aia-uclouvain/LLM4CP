@@ -1,9 +1,0 @@
-De Bruijn Torus Problem
-
-The De Bruijn Torus problem is about creating a special kind of grid, like a puzzle, where each small square (or sub-grid) inside the grid is unique. Imagine a grid of numbers, like a big piece of paper with rows and columns, where each small group of numbers (the sub-grid) is different from every other group.
-
-The main variables in this problem are the size of the grid (rows and columns), the size of the small sub-grids (m1 and m2), and the base (or alphabet) used to fill in the grid. The base is like a set of colors or numbers that can be used to fill in each square of the grid.
-
-The basic rules of the problem are that each sub-grid must be unique, and the grid must be filled in such that every possible sub-grid appears exactly once. The problem also has some extra constraints, like making sure that all rows and columns are distinct, and that the grid is filled in with numbers from the chosen base.
-
-The goal of the problem is to find a way to fill in the grid so that all the rules are satisfied, and every sub-grid is unique. This is a challenging problem because there are many possible ways to fill in the grid, and not all of them will meet the rules. The problem is like a big puzzle, where the solution is a grid that meets all the rules and has all unique sub-grids.

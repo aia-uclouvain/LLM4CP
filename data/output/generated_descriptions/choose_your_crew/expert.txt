@@ -1,7 +1,0 @@
-name: Choose Your Crew
-description: The problem is about selecting a crew for a sea voyage with a mix of different skill sets in fishing, sailing, and navigation. Each crew member has a salary and different skill levels, and the goal is to minimize the total cost while ensuring a cumulative skill of 15 or more in each of the three skill categories.
-variables: $x_i$ for $i = 1, \ldots, 9$, total_cost, sum_skills_j$ for $j = 1, 2, 3$ 
-These variables represent the decision to hire ($x_i = 1$) or not hire ($x_i = 0$) each of the 9 crew members, the total cost of the hired crew members, and the cumulative skill in each of the three categories.
-constraints: $\sum_{i=1}^{9} x_i \cdot \text{skills}_{ij} \geq 15$ for $j = 1, 2, 3$, $x_i \in \{0, 1\}$ for $i = 1, \ldots, 9$, total_cost $= \sum_{i=1}^{9} x_i \cdot \text{salary}_i$, sum_skills_j $= \sum_{i=1}^{9} x_i \cdot \text{skills}_{ij}$ for $j = 1, 2, 3$ 
-These constraints ensure that the cumulative skill in each category is at least 15, that each crew member is either hired or not hired, that the total cost is calculated correctly, and that the cumulative skills are calculated correctly.
-objective: Minimize total_cost

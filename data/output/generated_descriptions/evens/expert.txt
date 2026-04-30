@@ -1,5 +1,0 @@
-name: Evens Puzzle
-description: The Evens Puzzle is a classic problem in constraint programming where we have a 4x4 square and 10 coins. The task is to place the coins in the square such that each row and each column contains an even number of coins.
-variables: $x_{i,j}, n_i, m_j$ where $x_{i,j}$ represents whether there is a coin in the cell at row $i$ and column $j$, and $n_i$ and $m_j$ represent the number of pairs of coins in row $i$ and column $j$ respectively. 
-constraints: $\sum_{i,j} x_{i,j} = 10, \sum_j x_{i,j} = 2n_i, \sum_i x_{i,j} = 2m_j$ which represent the total number of coins, the even number of coins in each row, and the even number of coins in each column respectively.
-objective: satisfy

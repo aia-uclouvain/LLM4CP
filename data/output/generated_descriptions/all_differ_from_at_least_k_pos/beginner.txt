@@ -1,5 +1,0 @@
-The problem is called "all_differ_from_at_least_k_pos". 
-It's about making sure that all pairs of rows in a table are different from each other in at least a certain number of columns. 
-The main variables are the table (called "x") and the minimum number of columns that rows must differ in (called "c" or "k"). 
-The basic restrictions are that each cell in the table can only have a value from 0 to 6, and all pairs of rows must differ in at least "c" columns. 
-The goal is to find a table that satisfies these restrictions, with "c" being 2 in this specific case, meaning all pairs of rows must differ in at least 2 columns.

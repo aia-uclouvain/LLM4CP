@@ -1,5 +1,0 @@
-The problem is called Sort Permutation. 
-It's about taking a list of numbers, rearranging them according to a specific order, and making sure the rearranged list is in order from smallest to largest. 
-The main variables are "from", "permutation", and "to". "From" is the original list of numbers, "permutation" is the specific order to rearrange the numbers, and "to" is the rearranged list. 
-The basic rules are that each number in the original list must be used exactly once in the rearranged list, the rearranged list must be in order from smallest to largest, and the numbers must be rearranged according to the specified order. 
-The goal is to find a solution that satisfies these rules, which means finding a valid rearrangement of the original list that is in order from smallest to largest.

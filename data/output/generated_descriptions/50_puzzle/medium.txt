@@ -1,5 +1,0 @@
-The Fifty Puzzle problem. 
-This problem is about finding a subset of a given set of numbers that sums up to a specific target value, which is 50 in this case. 
-The main decision variables are x, which is an array of binary variables where x[i] represents whether the i-th number in the set should be included (x[i] = 1) or not (x[i] = 0) in the subset. 
-The key constraints are that the sum of the products of the numbers and their corresponding inclusion variables should equal 50, meaning the sum of the included numbers should be exactly 50. 
-The problem's objective is to minimize the number of included numbers, which is represented by the variable sumx, the sum of all x[i].

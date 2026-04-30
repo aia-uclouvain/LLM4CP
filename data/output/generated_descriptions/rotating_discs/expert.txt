@@ -1,5 +1,0 @@
-name: Rotating Disc Problem
-description: The problem involves four concentric discs divided into eight valued zones. The goal is to rotate the discs so that each octant counts up to the same value of 12.
-variables: $rot_1, rot_2, rot_3, rot_4$ - These are decision variables representing the rotation of each disc, where $rot_i$ is the number of positions the $i^{th}$ disc is rotated.
-constraints: $\forall j \in \{1, \ldots, 8\}: \sum_{i=1}^{4} v_{i, 1+((rot_i+j-1) \mod 8)} = 12$, $rot_1 = 0$ - The first constraint ensures that the sum of the values in each octant is 12 after rotation, and the second constraint is a symmetry-breaking constraint that fixes the rotation of the first disc to 0.
-objective: The problem is a satisfaction problem, where the goal is to find a rotation of the discs that satisfies the constraints, rather than minimizing or maximizing a specific value.

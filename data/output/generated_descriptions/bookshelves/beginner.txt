@@ -1,5 +1,0 @@
-The Bookshelves Problem
-The problem is about building bookshelves using wooden planks of different lengths. 
-The main variables are the length of each piece of wood used for the shelves and the uprights, and which plank each piece comes from. 
-The basic restrictions are that each plank can only be used once, and there must be enough vertical space between each shelf. 
-The goal is to build the widest possible shelves, while following the given restrictions, or to build shelves of a specific width.

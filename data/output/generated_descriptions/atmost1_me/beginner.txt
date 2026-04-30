@@ -1,5 +1,0 @@
-The problem is called "atmost1". 
-It's about having some groups of things, and each group can have a certain number of items. 
-The main variables are "x" which represents how many items are in each group, and "s" which represents the items in each group. 
-The basic rules are that each group must have the correct number of items, and any two groups can't have more than one item in common. 
-The goal is to find a way to make all the groups have the correct number of items, without having too many items in common between groups.

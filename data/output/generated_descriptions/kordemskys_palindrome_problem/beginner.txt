@@ -1,5 +1,0 @@
-Kordemsky's Palindrome problem
-The problem is about finding a special 10-digit number where all the digits are different. When this number is divided by 9, the result must be a number that reads the same forwards and backwards, like 121 or 545.
-The main variables are xa, x, ya, and y. xa is an array of 10 digits, and x is the 10-digit number made up of these digits. ya is an array of 9 digits, and y is the 9-digit number made up of these digits. 
-The basic restrictions are that all the digits in xa must be different, and when x is divided by 9, the result y must be a palindrome (read the same forwards and backwards). 
-The goal of the problem is to find all possible 10-digit numbers x that meet these conditions, with the result y being a palindrome when x is divided by 9.

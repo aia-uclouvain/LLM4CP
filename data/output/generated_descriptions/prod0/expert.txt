@@ -1,5 +1,0 @@
-name: Linear Programming Problem
-description: This problem is a classic example of a linear programming problem, where the goal is to maximize a linear objective function subject to a set of linear constraints. The problem can be interpreted as a production planning problem, where two products, XB and XC, are produced with limited resources. The objective is to determine the optimal production levels of XB and XC to maximize profit.
-variables: $XB, XC$ - These are the decision variables representing the production levels of products XB and XC, respectively.
-constraints: $XB \geq 0, XC \geq 0, XB \leq 6000, XC \leq 4000, \frac{1}{200}XB + \frac{1}{140}XC \leq 40$ - These constraints represent the non-negativity of production levels, the upper limits on production capacities, and a resource constraint that limits the total amount of resources used by the production of XB and XC.
-objective: Maximize $25XB + 30XC$ - The objective is to maximize the total profit, which is a linear function of the production levels of XB and XC.

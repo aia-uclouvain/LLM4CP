@@ -1,5 +1,0 @@
-Nim Game
-The problem is about a game where two players take turns removing matchsticks from a pile. 
-The main variables are the number of matchsticks taken by each player at each turn, who makes each move, and who wins the game. 
-The basic restrictions are that each player must take one or two matchsticks at a turn, and the player who takes the last matchstick wins. 
-The goal is to determine who wins the game when both players make the best possible moves.

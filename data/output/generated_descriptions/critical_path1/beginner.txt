@@ -1,5 +1,0 @@
-Critical Path Problem
-The problem is about finding the shortest time to complete a series of tasks that depend on each other. 
-The main variables are the tasks (called nodes) and the time it takes to complete each task, as well as the time when each task starts. 
-The basic restrictions are that each task must start after the tasks it depends on are finished, and each task takes a certain amount of time to complete. 
-The goal is to minimize the difference between the time when the last task is finished and the time when the first task starts, which means finding the shortest time to complete all tasks.

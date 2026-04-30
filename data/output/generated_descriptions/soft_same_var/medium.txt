@@ -1,5 +1,0 @@
-The Soft Same Var problem.
-The Soft Same Var problem is about finding the minimum number of changes required to make two collections of variables correspond to each other according to a permutation.
-The main decision variables are `variables1` and `variables2`, which are arrays of variables representing the two collections, and `c`, which represents the minimum number of changes required.
-The key constraints are that the length of `variables1` and `variables2` must be the same, and that the number of changes `c` is calculated as the sum of the absolute differences between the global cardinality counts of `variables1` and `variables2`, divided by 2.
-The objective of the problem is to satisfy the constraints, specifically the `soft_same_var` constraint, which ensures that the number of changes `c` is minimized, and the given constraints on `variables1` and `variables2`.

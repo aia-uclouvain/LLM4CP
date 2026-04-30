@@ -1,5 +1,0 @@
-Make a Good Burger problem
-The problem is about creating a burger with certain ingredients while following health requirements and taste standards. 
-The main variables are the number of each ingredient to include in the burger, such as beef patty, bun, cheese, onions, pickles, lettuce, ketchup, and tomato. 
-The basic restrictions are that each ingredient must be used at least once and no more than five times, the total sodium must be less than 3000mg, the total fat must be less than 150g, and the total calories must be less than 3000. Additionally, the servings of ketchup and lettuce must be the same, and the servings of pickles and tomatoes must be the same. 
-The goal of the problem is to find the most and least expensive burgers that meet these requirements.

@@ -1,5 +1,0 @@
-Differ From At Least K Positions Problem
-The problem is about enforcing two vectors to differ from at least a specified number of positions.
-The main decision variables are `a1` and `a2`, which represent two vectors of integers, and `k`, which represents the minimum number of positions that the two vectors must differ from.
-The key constraints are that `a1` and `a2` must be equal to two given vectors, and that the two vectors must differ from at least `k` positions, meaning that at least `k` elements in the two vectors must have different values.
-The problem's objective is to satisfy the given constraints, specifically the constraint that the two vectors differ from at least `k` positions, where `k` is given as 2 in this case, and the vectors `a1` and `a2` are constrained to be equal to `[2,5,2,0]` and `[3,6,2,1]` respectively.

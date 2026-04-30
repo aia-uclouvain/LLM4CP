@@ -1,5 +1,0 @@
-name: Parallel Resistors Problem
-description: The Parallel Resistors Problem is a classic problem in electrical engineering and constraint programming. It involves determining the voltage and current across two resistors connected in parallel. The problem can be extended to multiple resistors and voltage sources, making it a complex constraint satisfaction problem.
-variables: V, I, R1, R2 - These are the decision variables, where V is the voltage across the resistors, I is the total current, and R1 and R2 are the resistances of the two resistors. 
-constraints: V = I1*R1, V = I2*R2, I1 + I2 = I, R1 = 10, R2 = 5 - These constraints represent the relationships between the voltage, current, and resistance of the two resistors. The first two constraints represent Ohm's law for each resistor, the third constraint represents the total current, and the last two constraints represent the given resistances.
-objective: satisfy - The objective of this problem is to find a satisfying assignment of values to the decision variables that satisfies all the constraints, rather than minimizing or maximizing a specific value.

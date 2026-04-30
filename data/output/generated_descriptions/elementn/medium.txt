@@ -1,5 +1,0 @@
-The problem is called the Element Constraint Problem. 
-It is about finding a subsequence of fixed length within a given sequence of elements. 
-The main decision variables are: elements, an array representing the sequence of elements; entries, an array representing the subsequence to be found; and t_index, a variable representing the starting index of the subsequence in the sequence. 
-The key constraints are: the sequence of elements must match a given sequence; the subsequence must match a given subsequence; the starting index of the subsequence must be within the bounds of the sequence; and the subsequence must be a contiguous part of the sequence, as defined by the elementn constraint, which ensures that each element of the subsequence matches the corresponding element in the sequence. 
-The problem's objective is to satisfy these constraints, i.e., to find a solution where all constraints hold, rather than to minimize or maximize a specific value.

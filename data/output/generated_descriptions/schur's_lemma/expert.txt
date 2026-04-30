@@ -1,5 +1,0 @@
-name: Schur's Lemma
-description: Schur's Lemma is a classic problem in combinatorial mathematics and constraint programming that involves distributing a set of balls into a set of boxes such that no box contains a triple of balls where one ball's label is the sum of the other two balls' labels.
-variables: $x_1, x_2, ..., x_n$ where $x_i$ represents the box where the $i^{th}$ ball is placed. These variables are decision variables that determine the assignment of each ball to a box.
-constraints: $\forall i, j, k \in \{1, 2, ..., n\}$ where $i < j$ and $i + j = k$, $x_i \neq x_j \vee x_i \neq x_k \vee x_j \neq x_k$. These constraints ensure that for any triple of balls $(x, y, z)$ where $x + y = z$, not all three balls are in the same box.
-objective: The objective of the problem is to find a satisfying assignment of balls to boxes, i.e., to determine if it is possible to distribute the balls into the boxes such that the constraints are satisfied. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

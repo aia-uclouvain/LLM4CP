@@ -1,5 +1,0 @@
-1D Rubik's Cube
-The problem is about solving a one-dimensional version of the Rubik's Cube puzzle. Imagine a line of numbers that can be rotated in groups of four. The goal is to find the shortest sequence of rotations to restore the original order of the numbers.
-The main variables are the input sequence of numbers (data) and the steps required to solve the puzzle (steps). The steps are represented by a 2D array where each row represents a step and each column represents a position in the sequence. The ops variable represents the operation performed at each step, which can be either a rotation or no operation.
-The basic restrictions are that each rotation can only be performed on a group of four consecutive numbers, and the same rotation cannot be repeated consecutively. The goal is to find the shortest sequence of rotations that restores the original order of the numbers.
-The goal of the problem is to minimize the number of steps (min_step) required to solve the puzzle. The problem is solved when the final sequence of numbers is in the original order, and all subsequent steps are "same" (i.e., no further rotations are needed).

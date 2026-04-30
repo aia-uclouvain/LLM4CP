@@ -1,7 +1,0 @@
-The Cumulative Scheduling Problem with Arithmetic Sliding Constraint
-The problem is about scheduling a sequence of tasks with varying durations and ensuring that the cumulative sum of these durations satisfies a certain condition at each point in the sequence.
-The main decision variables are `x`, an array of integers representing the durations of the tasks, and `z`, an integer representing the target cumulative sum. The `x` array represents the tasks to be scheduled, and the `z` variable represents the maximum allowed cumulative sum.
-The key constraints are: 
-- The cumulative sum of the task durations at each point in the sequence must be less than the target cumulative sum `z`. 
-- The task durations are fixed and given by the array `[0,0,1,2,0,0,-3]`.
-The objective of the problem is to satisfy the given constraints, specifically the arithmetic sliding constraint, which ensures that the cumulative sum of the task durations at each point in the sequence is less than the target cumulative sum `z`, which is set to 4. The problem does not have a specific minimization or maximization objective, but rather aims to find a solution that satisfies the given constraints.

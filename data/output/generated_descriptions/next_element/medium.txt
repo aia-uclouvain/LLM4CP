@@ -1,5 +1,0 @@
-The problem is called the Next Element problem. 
-It is about finding the smallest index in a table that is greater than a given threshold and contains a specific value. 
-The main decision variables are threshold, ind, table_vars, and val, which represent the threshold value, the index of the next element, a 2D table of variables, and the value to be found in the table, respectively. 
-The key constraints are that ind must be greater than threshold, the table must contain the threshold and ind values, and the value at index ind in the table must be equal to val. 
-The problem's objective is to satisfy the next_element constraint, which means finding the smallest index ind that meets the conditions, given the threshold and the table.

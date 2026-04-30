@@ -1,5 +1,0 @@
-name: Devil's Word Problem
-description: The Devil's Word problem is a classic constraint programming problem where the goal is to find a sequence of numbers and operations that satisfy certain conditions. In this case, the problem is to find a sequence of 19 numbers and operations that sum up to 666, with the additional constraint that the numbers must match a given sequence of ASCII values representing a string.
-variables: $x = [x_1, x_2, ..., x_{19}], ops = [ops_1, ops_2, ..., ops_{18}]$, where $x_i$ represents the $i^{th}$ number in the sequence and $ops_i$ represents the operation to be applied between $x_i$ and $x_{i+1}$.
-constraints: $make_op(x_i, x_{i+1}, ops_i, s_i) \forall i \in [1,18], total = \sum_{i=1}^{18} s_i, total = 666, cp1d(x, [72, 229, 107, 97, 110, 32, 75, 106, 101, 108, 108, 101, 114, 115, 116, 114, 97, 110, 100])$, where $make_op$ is a predicate that defines the operation between two numbers, $total$ is the sum of the results of the operations, and $cp1d$ is a predicate that checks if two arrays are equal.
-objective: satisfy

@@ -1,8 +1,0 @@
-Set Covering Problem
-The problem is about finding the smallest collection of sets that covers all elements in a given universe. 
-The main variables are: 
-- x, which represents whether a set is chosen or not
-- z, which is the total number of chosen sets
-- tot_elements, which is the total number of elements in the chosen sets
-The basic restrictions are that each element must be covered by at least one chosen set. 
-The goal is to minimize the number of chosen sets, or alternatively, to minimize the total number of elements in the chosen sets, or a combination of both.

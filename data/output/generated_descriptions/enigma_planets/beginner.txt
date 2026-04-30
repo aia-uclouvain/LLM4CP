@@ -1,5 +1,0 @@
-The name of the problem is Enigma 1396. 
-This problem is about assigning numbers to letters of the alphabet and using these numbers to calculate scores for the names of planets and other objects in our solar system. 
-The main variables are the letters of the alphabet (like p, l, u, t, o, etc.) which represent the numbers assigned to each letter, and "planets" which is the score for the word "PLANETS". 
-The basic restrictions are that each letter must have a unique number, and the scores for each planet's name must match the given values (like PLUTO = 40, URANUS = 36, etc.). 
-The goal of the problem is to find the score for the word "PLANETS" by figuring out the numbers assigned to each letter of the alphabet.

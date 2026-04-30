@@ -1,5 +1,0 @@
-Cashier Change Problem
-The problem is about a cashier who has $1.15 in coins but cannot make change for $1, $0.50, $0.25, $0.10, or $0.05. 
-The main variables are the number of each type of coin (1 cent, 5 cents, 10 cents, 25 cents, and 50 cents) the cashier has.
-The basic restrictions are that the total value of the coins must be $1.15, and the cashier must not be able to make change for the given amounts using the available coins.
-The goal is to find the combination of coins that satisfies these conditions.

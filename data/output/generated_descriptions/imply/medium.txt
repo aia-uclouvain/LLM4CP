@@ -1,5 +1,0 @@
-Implication Problem
-The Implication Problem is about enforcing a logical implication relationship between two Boolean variables through a third variable.
-The main decision variables are `v` and `vars`, where `v` represents the implication result and `vars` is an array of two Boolean variables.
-The key constraint is that `v` should be true if and only if the first variable in `vars` implies the second variable in `vars`. In plain language, this means that if the first variable is true, then the second variable must also be true for `v` to be true. If the first variable is false, then `v` is true regardless of the second variable.
-The objective of the Implication Problem is to find an assignment of values to `v` and `vars` that satisfies the implication constraint, which is a satisfaction problem rather than an optimization problem, meaning that the goal is to find a feasible solution that meets the constraints rather than minimizing or maximizing a specific objective function.

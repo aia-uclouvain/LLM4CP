@@ -1,8 +1,0 @@
-Portfolio Optimization Problem
-The problem is about investing a given amount of money in a set of assets to maximize returns while minimizing risk.
-The main decision variables are `x`, an array of variables representing the amount of money invested in each asset, and `f`, a variable representing the total risk of the portfolio.
-The key constraints are: 
-- the total amount invested in all assets cannot exceed a given budget `B`, 
-- the total return of the portfolio must be greater than or equal to a given threshold `G`, 
-- the risk of the portfolio, calculated as the sum of the products of the amounts invested in each pair of assets and their corresponding covariance coefficients, must be minimized.
-The objective of the problem is to minimize the total risk `f` of the portfolio, which is a measure of the uncertainty or volatility of the portfolio's returns.

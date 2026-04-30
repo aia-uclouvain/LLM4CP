@@ -1,8 +1,0 @@
-Kidney Exchange Problem
-The Kidney Exchange Problem is about finding the maximum number of possible kidney exchanges between a group of people, where each person has a set of compatible donors. 
-
-The main decision variables are `x`, an array where `x[p]` represents the person from whom person `p` receives a kidney, and `z`, which represents the total number of kidney exchanges. 
-
-The key constraints are that each person can only receive a kidney from someone who is compatible with them, and that the kidney exchange must form a cycle, meaning that a person receiving a kidney must also be able to give a kidney. Additionally, each person can only give one kidney and receive one kidney. 
-
-The objective of the problem is to maximize the number of kidney exchanges, represented by `z`, which is the sum of the number of people who receive a kidney from someone other than themselves. In other words, the goal is to find the largest possible set of cycles in the compatibility graph, where each cycle represents a group of people who can exchange kidneys with each other.

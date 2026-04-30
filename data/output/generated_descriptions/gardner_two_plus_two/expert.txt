@@ -1,9 +1,0 @@
-name: Gardner's TWO+TWO=FOUR problem
-
-description: This problem is a classic example of a constraint satisfaction problem, where each letter in the equation TWO + TWO = FOUR represents a different digit. The goal is to find the possible values for the letters, given that T = 7 and O is an even number.
-
-variables: $T, W, O, F, U, R$ - These variables represent the digits for each letter in the equation, where $T$ is the thousands digit of the first and second addend, $W$ is the hundreds digit of the first and second addend, $O$ is the ones digit of the first and second addend and the tens digit of the result, $F$ is the thousands digit of the result, $U$ is the tens digit of the result, and $R$ is the ones digit of the result.
-
-constraints: $T = 7$, $O \mod 2 = 0$, $2 * (100*T + 10*W + O) = 1000*F + 100*O + 10*U + R$, $alldifferent(FD)$ - These constraints ensure that $T$ is equal to 7, $O$ is an even number, the equation TWO + TWO = FOUR is satisfied, and all the digits are different.
-
-objective: The objective of this problem is to satisfy all the constraints, i.e., to find a solution that meets all the conditions, rather than to minimize or maximize a specific value.

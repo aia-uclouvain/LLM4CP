@@ -1,5 +1,0 @@
-name: Photo Problem
-description: The Photo Problem is a classic problem in constraint programming where a group of people need to be arranged in a line for a photo, taking into account their individual preferences for the people they want to stand next to.
-variables: $n, positions, z, preferences$ - $n$ is the number of people, $positions$ is an array representing the position of each person in the line, $z$ is the number of satisfied preferences, and $preferences$ is a 2D array representing the preference list of each person.
-constraints: $z \geq 12, positions \in 0..n-1$ - these constraints ensure that at least 12 preferences are satisfied and each person is assigned a unique position in the line.
-objective: satisfy - the objective of the problem is to find a satisfying assignment of people to positions, such that the preferences of the people are taken into account, rather than maximizing or minimizing a specific value.

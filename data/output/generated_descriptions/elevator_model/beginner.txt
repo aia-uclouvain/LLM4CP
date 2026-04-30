@@ -1,5 +1,0 @@
-The problem is called the Tokyo Elevator Puzzle. 
-It's about a building with many floors and several elevators. Each elevator can connect some of the floors, but not all of them. 
-The main variables are the elevators (x) and the connections between elevators and floors (c). In simple terms, x means whether an elevator is being used or not, and c shows which floors each elevator can connect. 
-The basic rule is that every pair of floors must be connected by at least one elevator. 
-The goal is to use the fewest number of elevators possible to connect all the floors, which means minimizing the total number of elevators in use (sumx).

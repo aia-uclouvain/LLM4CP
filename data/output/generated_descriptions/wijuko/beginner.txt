@@ -1,5 +1,0 @@
-Wijuko Grid Puzzle
-The problem is about filling in a grid with numbers from 1 to 9, where each pair of adjacent squares has a specific sum.
-The main variables are the numbers to be placed in the grid (x) and the given sums between pairs of squares (d).
-The basic restrictions are that each number can only be used once, and the sum of each pair of adjacent squares must match the given sum.
-The goal is to find a solution that satisfies all the given sums and uses each number from 1 to 9 exactly once, with the model being solved to satisfy all the constraints.

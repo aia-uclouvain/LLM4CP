@@ -1,8 +1,0 @@
-name: Shortest Path (Transshipment) Problem
-description: The Shortest Path Problem is a classic problem in graph theory and operations research that involves finding the path with the minimum total cost or distance between two nodes in a weighted graph. The transshipment version of the problem allows for intermediate nodes to act as transshipment points, where flow can be redirected to other nodes. The goal is to determine the optimal flow of goods or commodities through the network while minimizing the total cost.
-variables: x[i,j], where i and j are nodes in the graph, representing the flow from node i to node j. These variables are decision variables that determine the amount of flow sent from one node to another.
-constraints: The constraints of the problem include: 
-- Flow conservation constraints: the total flow into a node must equal the total flow out of the node, 
-- Non-negativity constraints: the flow on each arc must be non-negative, 
-- Capacity constraints: the flow on each arc must not exceed the capacity of the arc.
-objective: Minimize the total cost, which is the sum of the costs of all the flows on the arcs, represented by the variable total_cost.

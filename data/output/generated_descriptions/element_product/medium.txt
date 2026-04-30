@@ -1,5 +1,0 @@
-The problem is called the Element Product problem. 
-It is about finding the product of a specific element in a table and a given multiplier. 
-The main decision variables are: element_table, an array representing the table of elements; x, the multiplier; y, the index of the element in the table; and z, the result of the product. 
-The key constraints are: the element_table must be equal to a given table [6,9,2,9]; x must be 5; y must be 3; and z must be the product of the yth element of the table and x. 
-The problem's objective is to satisfy these constraints, meaning to find values for the variables that make all the constraints true, rather than minimizing or maximizing a specific value.

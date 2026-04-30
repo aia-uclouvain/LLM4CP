@@ -1,5 +1,0 @@
-The problem is called the "Final Student Problem". 
-It is about determining the number of students in a class based on the average score of the class when the last student's score is either 7% or 92%. 
-The main decision variables are the number of students in the class, represented by 'n', and the scores of the first 'n-1' students, represented by the array 'x'. 
-The key constraints are that when the last student scores 7%, the class average is 90%, and when the last student scores 92%, the class average is 95%. 
-The problem's objective is to find the number of students in the class, 'n', that satisfies these conditions, which is essentially finding the value of 'n' that makes both constraints true.

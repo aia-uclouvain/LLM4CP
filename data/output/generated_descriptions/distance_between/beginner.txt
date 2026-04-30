@@ -1,5 +1,0 @@
-The problem is called Distance Between. 
-It's about comparing two lists of numbers, x and y, to see how many times the relationship between two numbers in one list is different from the relationship between the corresponding numbers in the other list. 
-The main variables are x and y, which are lists of numbers, and d, which is the distance or the number of times the relationships are different. 
-The basic restrictions are that x and y must be lists of the same length, and the relationships between numbers in x and y are compared using a specific operator, in this case, less than. 
-The goal of the problem is to maximize the distance d, which means finding the highest number of times the relationships between numbers in x and y are different.

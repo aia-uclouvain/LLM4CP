@@ -1,5 +1,0 @@
-name: Transshipment Problem
-description: The Transshipment Problem is a classic problem in operations research and optimization, which involves finding the optimal way to transport goods from a set of supply cities to a set of demand cities through a network of intermediate cities, while minimizing the total transportation cost.
-variables: $delivery_{i,j}, z$, where $delivery_{i,j}$ represents the amount of goods transported from city $i$ to city $j$, and $z$ is the total transportation cost. These variables determine the optimal flow of goods through the network.
-constraints: $\sum_{j \in cities} delivery_{i,j} \leq supply_i, \sum_{i \in cities} delivery_{i,j} \geq demand_j, delivery_{i,j} \geq 0$, which represent the capacity constraints at each supply city, the demand constraints at each demand city, and the non-negativity constraints on the flow of goods.
-objective: minimize $z = \sum_{i \in cities, j \in cities} cost_{i,j} \cdot delivery_{i,j}$, which represents the total transportation cost. The goal is to find the optimal flow of goods that minimizes this cost while satisfying all the constraints.

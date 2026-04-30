@@ -1,8 +1,0 @@
-The Photo Problem
-The Photo problem is a classic constraint programming problem that involves arranging a group of people in a line for a photo, subject to certain preferences and constraints.
-
-The main decision variables in this problem are the positions of the people in the line, represented by the array `positions`. Each element in the array corresponds to a person, and the value of the element represents the position of that person in the line.
-
-The key constraints in this problem are based on the preferences of the people. Each preference is represented by a pair of people, where one person prefers to be to the left or right of the other person. The constraints ensure that these preferences are satisfied in the final arrangement. Additionally, there is a constraint that the number of satisfied preferences should be at least a certain threshold, represented by the variable `z`.
-
-The objective of the Photo problem is to find an arrangement of people that satisfies as many preferences as possible, while also ensuring that the number of satisfied preferences is at least the threshold value `z`. In this case, the problem is formulated as a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. The value of `z` is used to filter out solutions that do not satisfy a minimum number of preferences.

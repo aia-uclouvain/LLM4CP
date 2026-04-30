@@ -1,8 +1,0 @@
-Olympic Puzzle
-The Olympic Puzzle is a classic constraint programming problem that involves assigning different integers to a set of variables, arranged in a specific configuration, such that certain constraints are satisfied.
-
-The main decision variables in this problem are X1 to X10, which represent the values to be assigned to each variable. These variables are arranged in a triangular configuration, with X1 at the bottom, and the goal is to assign a different integer from 1 to 10 to each variable.
-
-The key constraints in this problem are that for any three variables arranged in a triangular formation, the absolute difference between the values of the two upper variables must be equal to the value of the lower variable. In other words, if we have variables Xi, Xj, and Xk arranged in a triangular formation, then the constraint is |Xi - Xj| = Xk. Additionally, all variables must be assigned a different integer, and X1 is fixed to be equal to 3.
-
-The objective of this problem is to find an assignment of values to the variables that satisfies all the constraints. There is no explicit objective function to minimize or maximize, but rather the goal is to find a feasible solution that meets all the constraints. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

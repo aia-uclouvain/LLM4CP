@@ -1,5 +1,0 @@
-The name of the problem is Change Pairs. 
-This problem is about finding the number of times that two sequences of numbers change in a certain way. 
-The main variables are x and y, which are lists of numbers, and nchange, which is the number of times these lists change. 
-The basic restrictions or rules of the problem are that we compare each pair of consecutive numbers in the lists x and y, and if either the numbers in x are different or the numbers in y are different in a certain way (for example, one is greater than the other), then we count it as a change. 
-The goal of the problem is to find the number of changes, which is stored in the variable nchange, given the lists x and y and the way we compare the numbers.

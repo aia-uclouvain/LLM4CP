@@ -1,5 +1,0 @@
-The name of the problem is Balance Interval. 
-This problem is about distributing values into groups or intervals in a way that the difference between the largest and smallest number of values in any interval is minimized. 
-The main variables are x, which represents the values to be distributed, and bal, which represents the difference between the largest and smallest number of values in any interval. 
-The basic restrictions or rules of the problem are that the values in x must be distributed into intervals of a fixed size, and the difference between the largest and smallest number of values in any interval must be equal to bal. 
-The goal of the problem is to find a distribution of values into intervals such that the difference between the largest and smallest number of values in any interval, represented by bal, is equal to a given value, in this case 3.

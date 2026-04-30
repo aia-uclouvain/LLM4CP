@@ -1,5 +1,0 @@
-name: Lam's Problem
-description: Lam's Problem is a classic problem in constraint programming that involves finding a matrix of boolean values that satisfy certain conditions. The problem is defined for a given index size, and the goal is to find a matrix where each row and column sum to a specific value, and for any two distinct rows, there is exactly one column where both rows have a false value.
-variables: $m_{r,c}$, where $m_{r,c}$ is a boolean decision variable representing the value at row $r$ and column $c$ in the matrix, indicating whether the cell is true or false.
-constraints: $\sum_{c} m_{r,c} = 11 \forall r$, $\sum_{r} m_{r,c} = 11 \forall c$, $\sum_{c} \neg (m_{r_1,c} \lor m_{r_2,c}) = 1 \forall r_1, r_2, r_1 \neq r_2$, which represent the row sum constraints, column sum constraints, and the constraint that for any two distinct rows, there is exactly one column where both rows have a false value.
-objective: The problem does not have an explicit objective function to minimize or maximize, but rather aims to find a feasible solution that satisfies all the given constraints.

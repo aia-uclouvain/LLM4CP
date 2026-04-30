@@ -1,7 +1,0 @@
-name: The Five Brigands Puzzle
-description: The problem describes five Spanish brigands - Alfonso, Benito, Carlos, Diego, and Esteban - who have captured a total of 200 doubloons. The puzzle states that if Alfonso had twelve times as much, Benito three times as much, Carlos the same amount, Diego half as much, and Esteban one-third as much, they would still have a total of 200 doubloons. The goal is to find out how many doubloons each brigand had, given that every man had something and there is no fractional money.
-variables: A, B, C, D2, E3, LD = [A, B, C, D2, E3] 
-These variables represent the number of doubloons each brigand had, where A is Alfonso, B is Benito, C is Carlos, D2 is Diego (with his amount doubled), and E3 is Esteban (with his amount tripled). The array LD is used to store these values for easier manipulation.
-constraints: A + B + C + 2*D2 + 3*E3 = 200, A * 12 + B * 3 + C + D2 + E3 = 200 
-These constraints represent the two conditions given in the problem: the total amount of doubloons the brigands have initially is 200, and if they had the specified multiples of their initial amounts, they would still have a total of 200 doubloons.
-objective: The objective of this problem is not to minimize or maximize a specific value, but rather to find all possible combinations of doubloons that satisfy the given constraints, with the implicit goal of counting the number of different solutions.

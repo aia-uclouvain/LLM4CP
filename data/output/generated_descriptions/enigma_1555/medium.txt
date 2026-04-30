@@ -1,5 +1,0 @@
-The problem is called "Not a square" (Enigma Number 1555). 
-It involves filling a 12-cell grid with digits so that certain combinations of these digits form perfect squares. 
-The main decision variables are A, B, C, D, E, F, G, H, I, J, K, and L, which represent the digits to be placed in the grid. 
-The key constraints are that the two four-digit numbers, two two-digit numbers at the sides, and the two-digit number at the bottom must all be different perfect squares, with no leading zeros. 
-The objective is to find the two-digit number at the top (represented by AB) that is not a perfect square, while satisfying all the constraints related to perfect squares.

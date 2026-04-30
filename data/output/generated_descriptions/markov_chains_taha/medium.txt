@@ -1,5 +1,0 @@
-Markov Chain Problem
-The problem is about finding the steady-state probabilities of a Markov chain and calculating the total cost based on these probabilities.
-The main decision variables are `p` (probabilities) and `mean_first_return_time` (mean first return time), which represent the steady-state probabilities of each state and the average time it takes to return to each state, respectively.
-The key constraints are that the probabilities must satisfy the steady-state equation (i.e., the probability of being in a state is equal to the sum of the probabilities of transitioning to that state from all other states) and that the probabilities must sum to 1. Additionally, the mean first return time is calculated as the reciprocal of the steady-state probability for each state.
-The objective of the problem is to find the steady-state probabilities and the total cost, which is calculated as the sum of the costs of each state multiplied by the corresponding steady-state probability. The model does not have a specific objective function to minimize or maximize, but rather it is a satisfaction problem that aims to find a solution that satisfies all the constraints.

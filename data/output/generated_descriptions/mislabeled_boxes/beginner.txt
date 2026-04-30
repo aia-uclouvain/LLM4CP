@@ -1,5 +1,0 @@
-The Mislabeled Boxes problem. 
-This problem is about three boxes labeled with different types of fruit: apples, bananas, and oranges. Each box actually contains a different type of fruit than what its label says. 
-The main variables are the labels on the boxes and what each box actually contains. In simple terms, the labels are like signs on the boxes saying what's inside, and the contents are what's really inside each box. 
-The basic rules are that no box contains the same fruit as another box, and no box contains the fruit that its label says it does. Also, we know that one of the boxes, box b, actually contains apples. 
-The goal is to figure out what fruits are in the other two boxes, given the rules and the information about box b.

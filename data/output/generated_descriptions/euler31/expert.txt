@@ -1,5 +1,0 @@
-name: Project Euler Problem 31 - Coin Change Problem
-description: The problem is to find the number of different ways to make £2 (200p) using any number of the eight available coins in England, which are 1p, 2p, 5p, 10p, 20p, 50p, L1 (100p), and L2 (200p).
-variables: $x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8$ - These variables represent the number of each coin used to make £2, where $x_i$ is the number of coins of denomination $coins_i$.
-constraints: $\sum_{i=1}^{8} coins_i \cdot x_i = 200$ - This constraint ensures that the total value of the coins used equals £2 (200p).
-objective: The objective of this problem is to count the number of solutions to the constraint, which represents the number of different ways to make £2 using the available coins. Since the model uses the "solve satisfy" statement, the goal is to find all possible combinations of coins that sum up to £2, rather than minimizing or maximizing a specific value.

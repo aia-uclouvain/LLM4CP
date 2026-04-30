@@ -1,8 +1,0 @@
-No-three-in-line problem
-The No-three-in-line problem is a classic constraint programming problem that involves placing points in an n × n grid such that no three points are collinear, meaning they do not lie on the same line.
-The main decision variables in this problem are the elements of the 2D array `x`, where `x[i, j]` represents whether a point is placed at position `(i, j)` in the grid (1 if a point is placed, 0 otherwise).
-The key constraints in this problem are: 
-- each row and column can contain at most two points (enforced by `sum([x[a,i] | a in 1..n]) < m` and `sum([x[i,a] | a in 1..n]) < m`), 
-- the total number of points placed is exactly `2*n` (enforced by `tot = 2*n`), 
-- and the points are placed in a way that maintains lexicographically non-decreasing order (enforced by `lex2(x)`).
-The objective of this problem is to find a placement of points that satisfies these constraints, with the goal of maximizing the number of points placed, which is fixed at `2*n`. However, the actual goal is to find a valid placement that meets these conditions, rather than truly maximizing a variable, as the total number of points is predetermined.

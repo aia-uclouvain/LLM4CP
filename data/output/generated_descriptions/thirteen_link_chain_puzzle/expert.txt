@@ -1,8 +1,0 @@
-name: The 13-Link Chain Puzzle
-description: The problem is about finding the minimum number of links to break in a 13-link chain, where each link weighs one ounce, in order to be able to weigh items from 1 to 13 ounces in 1-ounce increments using a balance scale.
-variables: $n, m, weights, s, t$ 
-These variables represent the following: $n$ is the total number of links in the chain, $m$ is a calculated value based on $n$, $weights$ is a set of links that are not broken and can be used as weights, $s$ is an array of sets where each set $s[i]$ represents the links used to weigh $i$ ounces, and $t$ is the number of different weights (i.e., the size of the $weights$ set).
-constraints: $\sum_{i=1}^{m} i \cdot \mathbb{I}(i \in weights) = n$, $\sum_{i=1}^{m} i \cdot \mathbb{I}(i \in s[j] \land i \in weights) = j$ for all $j \in 1..n$, $j \notin weights \leftrightarrow \forall k \in 1..n, j \notin s[k]$ for all $j \in 1..n$, and $(i \in weights \land j \in weights) \rightarrow \neg (i+j \in weights)$ for all $i, j \in 1..m$ where $i < j$ and $n > 25$.
-These constraints ensure that the total length of the chain is $n$, each weight from 1 to $n$ can be formed using the links in $weights$, a link is not used to form any weight if it is broken, and no two links can be combined to form another link in $weights$ when $n > 25$.
-objective: minimize $t$ 
-The objective is to minimize the number of different weights (i.e., the size of the $weights$ set) needed to weigh items from 1 to 13 ounces.

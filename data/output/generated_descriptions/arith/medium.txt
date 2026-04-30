@@ -1,5 +1,0 @@
-The problem is the "arith" constraint problem, a classic constraint programming problem. 
-It is about enforcing a specific arithmetic relationship between a collection of variables and a given value. 
-The main decision variables are x, an array of variables representing the collection, and y, a variable representing the value. 
-The key constraints are that all elements in the collection x must have a specific arithmetic relationship (less than, less than or equal to, equal to, greater than or equal to, greater than, or not equal to) with the value y, and that the collection x must be equal to a given array of integers. 
-The problem's objective is to satisfy these constraints, meaning to find values for x and y such that all constraints are met, rather than to minimize or maximize a specific objective function.

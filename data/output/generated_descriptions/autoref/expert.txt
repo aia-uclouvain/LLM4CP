@@ -1,5 +1,0 @@
-name: Autoref Problem
-description: The Autoref problem is a generalization of the problem of finding a magic series. It involves finding a non-empty finite series S such that each integer i from 0 to n occurs exactly si times in S, and the last element of S is equal to a given integer m.
-variables: $s_0, s_1, ..., s_n, s_{n+1}$, where $s_i$ represents the i-th element in the series S, which is a non-negative integer less than or equal to n+1.
-constraints: $global\_cardinality(s, [0, 1, ..., n], t)$ and $s_{n+1} = m$, where the global cardinality constraint ensures that each integer i from 0 to n occurs exactly si times in S, and the last constraint ensures that the last element of S is equal to m.
-objective: The objective of the Autoref problem is to find a satisfying assignment of values to the decision variables $s_i$ such that all constraints are satisfied, rather than minimizing or maximizing a specific value.

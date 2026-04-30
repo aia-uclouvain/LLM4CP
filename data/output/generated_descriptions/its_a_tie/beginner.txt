@@ -1,5 +1,0 @@
-The "It's a tie" problem. 
-This problem is about four men - Crow, Evans, Hurley, and Speigler - who each wear a different ridiculous tie to work, and we need to figure out who is wearing which tie and who gave it to them. 
-The main variables are the men (Crow, Evans, Hurley, and Speigler), the tie patterns (cupids, happy faces, leprechauns, and reindeer), and the relatives who gave the ties (daughter, father-in-law, sister, and uncle). 
-The basic restrictions are that no two men wear the same tie pattern, and each tie was given by a different relative. There are also specific clues, such as the tie with leprechauns wasn't given by a daughter, and Mr. Crow's tie doesn't have reindeer or happy faces. 
-The goal is to match each man with the correct tie pattern and the relative who gave it to him, using the given clues to solve the puzzle.

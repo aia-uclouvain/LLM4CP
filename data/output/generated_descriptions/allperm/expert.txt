@@ -1,5 +1,0 @@
-name: AllPerm Problem
-description: The AllPerm problem is a constraint satisfaction problem that involves finding a matrix of domain variables such that the first row is lexicographically less than or equal to all permutations of all other rows.
-variables: $x_{i,j}$ where $i \in \{1, \ldots, m\}$ and $j \in \{1, \ldots, n\}$, which represent the elements of the matrix, where $m$ is the number of rows and $n$ is the number of columns, and $x_{i,j}$ is a decision variable that can take any integer value between 1 and 10.
-constraints: $\forall i \in \{2, \ldots, m\}: \text{sorted}(x_{i,1}, \ldots, x_{i,n}) = x_{1,1}, \ldots, x_{1,n}$ and $x_{1,1} \leq \ldots \leq x_{1,n}$, which ensure that the first row is sorted and that all other rows are permutations of the first row, as well as the constraint that the matrix $x$ is equal to a given matrix.
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a matrix $x$ that satisfies the AllPerm constraint and is equal to the given matrix.

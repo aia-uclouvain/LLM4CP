@@ -1,5 +1,0 @@
-The problem is called Lexicographic Constraint. 
-It is about comparing two vectors (lists of numbers) lexicographically, which means comparing them element-wise from left to right, and determining their order based on the first differing element. 
-The main decision variables are `arr`, `v1`, and `v2`, where `arr` is a 2D array representing a collection of vectors, and `v1` and `v2` are 1D arrays representing the two vectors being compared. 
-The key constraints are defined by the `cond_lex_less`, `cond_lex_lesseq`, `cond_lex_greater`, and `cond_lex_greatereq` predicates, which ensure that `v1` and `v2` are assigned to the correct positions in `arr` based on their lexicographic order. 
-The problem's objective is to find an assignment of `v1` and `v2` to `arr` that satisfies the given lexicographic constraint, which is specified by the `solve satisfy` statement, indicating that the goal is to find a feasible solution that meets all the constraints, rather than optimizing a specific objective function.

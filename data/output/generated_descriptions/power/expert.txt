@@ -1,7 +1,0 @@
-name: Exponentiation Problem
-description: The problem is to calculate the result of raising a given number to a certain power. In this case, the number is 3 and the power is 4, resulting in 3^4. The problem is modeled using a custom predicate called my_pow, which handles the exponentiation operation.
-variables: n, num 
-These are the decision variables in the problem, where n is the base number and num is the result of the exponentiation operation. 
-constraints: n = 3, my_pow(n, 4, num) 
-These constraints specify that the base number n should be equal to 3 and that the result of the exponentiation operation should be calculated using the my_pow predicate, with n as the base, 4 as the exponent, and num as the result.
-objective: The objective of the problem is not to minimize or maximize a value, but rather to satisfy the given constraints and calculate the result of the exponentiation operation. The problem is solved using the satisfy keyword in MiniZinc, which means that the solver will try to find a solution that satisfies all the constraints.

@@ -1,5 +1,0 @@
-name: Knight's Tour with Queen Attack
-description: The problem involves finding a knight's tour on an n x n chessboard, where a knight's tour is a sequence of moves by a knight that visits every cell on the board exactly once, with the additional constraint of minimizing the number of prime numbers that are not attacked by a queen placed on the board.
-variables: $q, x_1, x_2, ..., x_{n^2}$, where $q$ represents the cell where the queen is placed, and $x_i$ represents the cell visited at the $i^{th}$ step of the knight's tour, with each variable taking a value from 0 to $n^2 - 1$, representing the cells of the chessboard.
-constraints: $\forall i \in \{1, 2, ..., n^2\}, x_i \in \{0, 1, ..., n^2 - 1\}$, $AllDifferent(x_1, x_2, ..., x_{n^2})$, $(\forall i \in \{1, 2, ..., n^2 - 1\}, (|row(x_i) - row(x_{i+1})|, |col(x_i) - col(x_{i+1})|) \in \{(1, 2), (2, 1)\})$, where $row(x_i)$ and $col(x_i)$ represent the row and column of cell $x_i$, and the last constraint ensures that the queen attacks the minimum number of prime numbers.
-objective: Minimize the number of prime numbers that are not attacked by the queen.

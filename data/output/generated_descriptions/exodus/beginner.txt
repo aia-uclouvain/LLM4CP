@@ -1,5 +1,0 @@
-Exodus puzzle 
-The problem is about figuring out the age of each of five children, the country their family came from, and the part of the Exodus story they told. 
-The main variables are the children's names (Bernice, Carl, Debby, Sammy, and Ted), their ages (three, five, seven, eight, or ten), the countries their families came from (Ethiopia, Kazakhstan, Lithuania, Morocco, or Yemen), and the parts of the Exodus story they told (burning bush, captivity, Moses's youth, Passover, or Ten Commandments). 
-The basic restrictions are that each child is a different age, from a different country, and told a different part of the story. There are also specific clues, such as Debby's family being from Lithuania, the child who told the Passover story being two years older than Bernice, and the child from the Moroccan family being three years older than Ted. 
-The goal is to find the age of each child, their family's country of origin, and the part of the Exodus story they told, given these restrictions and clues.

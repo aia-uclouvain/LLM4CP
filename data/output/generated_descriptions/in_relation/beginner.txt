@@ -1,5 +1,0 @@
-The problem is called "in_relation" which is a part of a larger collection of global constraints. 
-In everyday terms, this problem is about finding a match between a set of values and a list of possible combinations of values. 
-The main variables are "v1" which is a set of values, and "arr" which is a list of possible combinations of values. 
-The basic restrictions or rules of the problem are that "v1" must be one of the combinations in "arr", and "v1" is set to a specific combination [5,3,3]. 
-The goal of the problem is to satisfy these restrictions, meaning to find a match between "v1" and one of the combinations in "arr".

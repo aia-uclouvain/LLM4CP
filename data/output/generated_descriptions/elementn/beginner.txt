@@ -1,8 +1,0 @@
-The problem is called the "elementn" problem. 
-It's about finding a part of a list that matches another given list. 
-The main variables are: 
-- "elements" which is the main list of numbers, 
-- "entries" which is the list we are looking for, 
-- and "t_index" which is the position in the main list where the smaller list starts. 
-The basic restrictions are that the smaller list must be found in the main list, and it must start at the position specified by "t_index". 
-The goal of the problem is to find the position where the smaller list starts in the main list and to confirm that the main list and the smaller list match the given lists.

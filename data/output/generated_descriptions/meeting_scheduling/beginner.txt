@@ -1,1 +1,0 @@
-No problem is provided. Please provide the Minizinc model code to explain the problem.

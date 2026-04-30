@@ -1,5 +1,0 @@
-name: Joshua and his rats puzzle
-description: The problem describes a situation where Joshua has a certain number of rats, and he wants to put them in cages in such a way that the number of rats in each cage is increasing and satisfies certain conditions. The goal is to find the minimum total number of rats that Joshua can have while still satisfying these conditions.
-variables: $x_i, d_{i,j,k}$, where $x_i$ represents the number of rats in the $i^{th}$ cage, and $d_{i,j,k}$ is a binary variable that helps to enforce the constraints related to the differences between the number of rats in different cages.
-constraints: $\forall i \in \{2, \ldots, rat\}: x_i \geq x_{i-1} + 1$, $\forall i, j, k \in R, j < i, k < j: -x_i + 2x_j - x_k + 19d_{i,j,k} \geq 1$, $\forall i, j, k \in R, j < i, k < j: -x_i + 2x_j - x_k + 19d_{i,j,k} \leq 18$, which ensure that the number of rats in each cage is increasing, and the differences between the number of rats in different cages satisfy certain conditions.
-objective: minimize $tot = \sum_{i \in R} x_i$, which represents the total number of rats.

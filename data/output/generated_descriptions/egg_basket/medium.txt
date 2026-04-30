@@ -1,8 +1,0 @@
-Egg Basket Puzzle
-The Egg Basket Puzzle is a classic problem that involves finding the minimum number of eggs that can be placed in baskets of different sizes, with each basket containing a specific number of eggs. 
-
-The main decision variables in this problem are `n` and `x`, where `n` represents the minimum number of eggs and `x` is an array representing the number of eggs in each basket of sizes 2 to 7.
-
-The key constraints in this problem are that each basket must contain a non-negative number of eggs, and the total number of eggs `n` must be equal to the number of eggs in each basket multiplied by the basket size plus one (except for the largest basket). 
-
-The objective of the Egg Basket Puzzle is to minimize the total number of eggs `n`, which means finding the smallest possible value of `n` that satisfies all the constraints. In other words, the goal is to find the minimum number of eggs that can be distributed among the baskets of different sizes while meeting the specified conditions.

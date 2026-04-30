@@ -1,5 +1,0 @@
-Huey, Dewey and Louie problem 
-This problem is about three people, Huey, Dewey, and Louie, who are being questioned by their uncle about whether they are guilty or not. 
-The main variables are huey, dewey, and louie, which represent whether each person is guilty (true) or not guilty (false).
-The basic restrictions are that if Huey says Dewey and Louie have the same status, then they must either both be guilty or both not guilty, if Huey is guilty then Dewey must also be guilty, and Dewey and Louie cannot both be guilty at the same time.
-The goal of the problem is to figure out if there is a possible combination of guilty or not guilty for Huey, Dewey, and Louie that satisfies all the given conditions, and to find out who is guilty or not.

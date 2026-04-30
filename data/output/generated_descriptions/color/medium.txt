@@ -1,5 +1,0 @@
-Graph Coloring Problem
-The Graph Coloring Problem is about assigning colors to the nodes of a graph such that no two adjacent nodes have the same color.
-The main decision variables are the array `x` of size `n`, where `x[i]` represents the color assigned to node `i`. The colors are represented by integers from 1 to 4.
-The key constraints are that for each node `i`, the color assigned to `i` must be different from the colors assigned to all its neighboring nodes. This is enforced by the constraint `x[i] != j` for all `j` in `neighbors[i]`.
-The objective of the problem is to find a satisfying assignment of colors to the nodes, i.e., an assignment that satisfies all the constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the constraints. In this case, the `solve satisfy` statement in the model indicates that the goal is to find a solution that satisfies all the constraints.

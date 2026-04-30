@@ -1,5 +1,0 @@
-name: Graph Coloring Problem (Gardner's Graph)
-description: The Graph Coloring Problem is a classic problem in computer science and operations research that involves assigning colors to the vertices of a graph such that no two adjacent vertices have the same color. In this specific instance, the problem is to color Gardner's graph, which is a well-known benchmark graph in the field of graph coloring.
-variables: $x_1, x_2, ..., x_{110}$, where $x_i$ represents the color assigned to vertex $i$ and can take on values from 1 to 4, representing the four available colors.
-constraints: $\forall i \in \{1, 2, ..., 110\}, \forall j \in neighbors[i], x_i \neq j$, which ensures that each vertex is assigned a color that is different from the colors assigned to its neighboring vertices.
-objective: The objective of the problem is to find a satisfying assignment of colors to the vertices, i.e., to solve the problem such that all constraints are satisfied, with no specific objective function to minimize or maximize. The problem is a feasibility problem, where the goal is to find a valid coloring of the graph.

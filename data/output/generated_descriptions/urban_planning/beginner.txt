@@ -1,5 +1,0 @@
-Urban Planning 
-The problem is about arranging residential and commercial lots in a 5x5 grid to maximize the quality of the layout. 
-The main variables are the type of each lot (residential or commercial) and the scores for each row and column. 
-The basic restrictions are that there must be 12 residential lots and 13 commercial lots, and the scores for each row and column are determined by the number of residential lots in that row or column. 
-The goal is to maximize the total score, which is the sum of the scores for all rows and columns, with residential lots earning positive points and commercial lots earning negative points.

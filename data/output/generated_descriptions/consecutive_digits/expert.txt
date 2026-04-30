@@ -1,7 +1,0 @@
-name: Consecutive Digits Puzzle
-description: The problem is to find four consecutive digits in increasing order (A, B, C, D) and the same digits in decreasing order (D, C, B, A), such that when added to a four-digit number (represented by the same digits in an unknown order), the sum equals 12300.
-variables: A, B, C, D, fd, dots, dots_num, ABCD, DCBA 
-These variables represent the following: A, B, C, D are the four consecutive digits, fd is an array of these digits, dots is an array representing the four-digit number to be found, dots_num is the integer value of the four-digit number, and ABCD and DCBA are the integer values of the numbers formed by the digits in increasing and decreasing order, respectively.
-constraints: all_different(fd) ∧ increasing(fd) ∧ all_different(dots) ∧ toNum10(dots, dots_num) ∧ 12300 = ABCD + DCBA + dots_num ∧ contains(A, dots) ∧ contains(B, dots) ∧ contains(C, dots) ∧ contains(D, dots)
-These constraints ensure that the digits A, B, C, D are distinct and in increasing order, the digits in the four-digit number are distinct, the four-digit number is formed correctly, the sum of the three numbers equals 12300, and the four-digit number contains the digits A, B, C, D.
-objective: The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

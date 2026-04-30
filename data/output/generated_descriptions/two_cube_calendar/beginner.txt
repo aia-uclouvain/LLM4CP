@@ -1,5 +1,0 @@
-Two Cube Calendar problem.
-This problem is about creating two special dice (or cubes) that can be used together to represent all the days of the month, from 1 to 31. 
-The main variables are the numbers on each side of the two cubes, which are represented by cube1 and cube2. These variables determine what numbers are on each side of the cubes.
-The basic rules are that each cube has six sides, and the numbers on the sides of the cubes must be used to represent all the days of the month. The numbers on the cubes are combined in different ways to get the days of the month. For example, one cube might have a 1 on one side and the other cube might have a 0 on one side, which together represent the 10th day of the month.
-The goal of the problem is to find the numbers that should be on each side of the two cubes so that they can be used to represent all the days of the month, from 1 to 31.

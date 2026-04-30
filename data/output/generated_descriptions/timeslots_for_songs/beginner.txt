@@ -1,5 +1,0 @@
-Timeslot problem
-The problem is about scheduling songs and a news segment into seven consecutive time slots for a broadcast. 
-The main variables are the time slots for each song (G, H, L, O, P, S) and the news segment (News), which represent when each item will be played.
-The basic restrictions are that L must be played right before O, the news segment must be played after L, and there must be exactly two time slots between G and P. 
-The goal of the problem is to find all possible schedules that satisfy these restrictions, with the aim of generating a list of permutations that meet the conditions.

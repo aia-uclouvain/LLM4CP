@@ -1,5 +1,0 @@
-The problem is called "Squares from squares" or Enigma 1553. 
-It's about filling in a 4x4 grid with digits so that each row and column adds up to the same number, and each row forms a perfect square number. 
-The main variables are the digits in each square of the grid, which can be any number from 0 to 9, and the sum of each row and column. 
-The basic rules are that no digit can be repeated in a row, all rows and columns must add up to the same number, and each row must form a different perfect square number. 
-The goal is to find a solution that satisfies all these rules, with the perfect squares in each row in increasing order.

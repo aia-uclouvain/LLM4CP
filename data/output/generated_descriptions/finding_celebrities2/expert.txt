@@ -1,7 +1,0 @@
-name: Finding Celebrities Problem
-description: The problem is to find the celebrities at a party, where a celebrity is a person that everybody at the party knows, but that only knows other celebrities. The problem is defined by a graph of who knows who at the party.
-variables: $n, party, celebrities, num\_celebrities$ 
-These variables represent the following: $n$ is the number of people at the party, $party$ is a graph representing who knows who, $celebrities$ is the set of celebrities, and $num\_celebrities$ is the number of celebrities.
-constraints: $num\_celebrities \geq 1 \land \forall i \in 1..n ((i \in celebrities \rightarrow \forall j \in 1..n (j \neq i \rightarrow i \in party[j])) \land (i \in celebrities \rightarrow |party[i]| = num\_celebrities - 1))$
-These constraints ensure that there is at least one celebrity, and that each celebrity is known by everyone and only knows other celebrities.
-objective: The objective of the problem is to find a set of celebrities that satisfies the given constraints, there is no explicit objective function to minimize or maximize.

@@ -1,7 +1,0 @@
-name: Max Activity Problem
-description: The Max Activity Problem is a constraint programming problem where a group of kids need to be assigned to a set of activities based on their preferences. Each kid has three preferences in order of priority, and each activity has a maximum number of participants. The goal is to find an assignment that respects the kids' preferences as much as possible without exceeding the maximum size of each activity.
-variables: $x = (x_1, x_2, ..., x_{num\_kids})$, $scores = (scores_1, scores_2, ..., scores_{num\_kids})$ 
-These are decision variables where $x_i$ represents the activity assigned to kid $i$, and $scores_i$ represents the score assigned to kid $i$ based on their preference, with higher scores indicating a better match.
-constraints: $\forall k \in 1..num\_kids (x_k = prefs_{k,p} \wedge scores_k = 4-p) \vee (scores_k = 0)$, $global\_cardinality\_low\_up(x, [i | i \in 1..num\_activities], [0 | i \in 1..num\_activities], activity\_size)$, $total\_score = \sum_{i=1}^{num\_kids} scores_i$
-These constraints ensure that each kid is assigned to one of their preferred activities if possible, with a score based on their preference, or a score of 0 if no preferred activity is available. The $global\_cardinality\_low\_up$ constraint ensures that the number of kids assigned to each activity does not exceed its maximum size.
-objective: maximize $total\_score$

@@ -1,5 +1,0 @@
-The problem is called Weighted Sum. 
-It is about finding a combination of numbers that when multiplied by certain weights and added together, give a specific total. 
-The main variables are coeffs, which are the weights, x, which are the numbers, and s, which is the total. 
-The basic restrictions are that each number (x) can only be between 0 and 5, and the total (s) must be equal to the weighted sum of the numbers. 
-The goal of the problem is to find a combination of numbers that satisfy these restrictions, specifically to find the total (s) when the weights (coeffs) are [1, 2, -3] and the numbers (x) are between 0 and 5.

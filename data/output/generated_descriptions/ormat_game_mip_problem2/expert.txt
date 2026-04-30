@@ -1,5 +1,0 @@
-name: Ormat Game Problem
-description: The Ormat game is a mathematical puzzle where a player is presented with a grid of numbers and must find a solution that satisfies certain conditions. The goal is to determine the correct arrangement of numbers in the grid.
-variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the values in the grid that the player must determine.
-constraints: $\sum_{i=1}^{n} x_{i,j} = \sum_{j=1}^{n} x_{i,j}$ for all $i$ and $j$, $x_{i,j} \in \{0,1\}$ for all $i$ and $j$, and $\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i,j} = n^2$. These constraints ensure that each row and column sum to the same value, each cell contains either 0 or 1, and the total number of 1s in the grid is equal to $n^2$.
-objective: The objective of the Ormat game problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find a feasible solution that satisfies all the constraints.

@@ -1,5 +1,0 @@
-The problem is the k-alldifferent constraint problem. 
-This problem is about enforcing a set of variables to take distinct values, which means no two variables can have the same value. 
-The main decision variables are the elements of the 2D array x, where x[i, j] represents the value of the variable at row i and column j. 
-The key constraints are that all the values in each row must be distinct, meaning no two elements in the same row can have the same value. 
-The problem's objective is to find an assignment of values to the variables such that all constraints are satisfied, which is achieved by using the solve satisfy statement in the MiniZinc model.

@@ -1,5 +1,0 @@
-Game Theory Problem. 
-This problem is about two players competing in a game where each player has several strategies to choose from, and each strategy has a certain payoff or reward. 
-The main variables are X, which represents the probability of choosing each strategy for one of the players, and w, which is the minimum payoff that player can expect. 
-The basic restrictions are that the probabilities of choosing each strategy must add up to 1, meaning that one of the strategies must be chosen, and that the expected payoff for the other player must be greater than or equal to the minimum payoff w for all their possible strategies. 
-The goal of the problem is to maximize the minimum payoff w, meaning to find the best strategy for the first player that gives them the highest minimum payoff, taking into account all possible strategies of the other player.

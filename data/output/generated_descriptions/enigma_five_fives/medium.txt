@@ -1,8 +1,0 @@
-The problem is called the "Five Fives" problem. 
-It is about finding five different bases in which the number 11101 can be represented, such that when these five numbers are added together, the sum is also 11101 in its respective base, and all five numbers are even. 
-
-The main decision variables are `bases` and `x`, where `bases` is an array representing the base of each number and `x` is an array representing the decimal value of each number in its respective base. 
-
-The key constraints are that each number must be even, all numbers must be in different bases, the sum of the first four numbers must equal the fifth number, and the bases must be in increasing order to avoid duplicate solutions. 
-
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the given constraints, specifically to find the total sum that is less than 100,000.

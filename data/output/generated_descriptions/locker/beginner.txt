@@ -1,5 +1,0 @@
-Locker Puzzle 
-The problem is about finding a three-number combination for a locker, where each number is between 1 and 40. 
-The main variables are the three numbers: the first number, the second number (which is twice the first), and the third number (which is ten more than the second). 
-The basic restrictions are: the first number has one even and one odd digit, the second number has either two odd or two even digits, and the total of all different digits used in the combination is 10. 
-The goal is to find the combination that satisfies all these rules.

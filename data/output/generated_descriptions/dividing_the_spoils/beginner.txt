@@ -1,5 +1,0 @@
-Dividing the Spoils 
-The problem is about three girls - Mary, Nellie, and Susie - who want to divide 770 chestnuts among themselves in a way that the amount each girl gets is related to her age. 
-The main variables are mary, nellie, and susie, which represent the number of chestnuts each girl gets. 
-The basic restrictions are that the girls get chestnuts in a specific ratio: for every 4 chestnuts Mary gets, Nellie gets 3, and for every 6 chestnuts Mary gets, Susie gets 7, and together they get a total of 770 chestnuts. 
-The goal of the problem is to find out how many chestnuts each girl gets, given these conditions.

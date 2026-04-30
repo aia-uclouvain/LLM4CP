@@ -1,5 +1,0 @@
-name: Optimal Partial Design (OPD)
-description: The Optimal Partial Design (OPD) problem is a combinatorial optimization problem that involves finding a binary matrix with a specified number of rows and columns, where each row sums to a certain value, and the dot product between any pair of distinct rows is minimized.
-variables: $x_{i,j}, m_{i,j}, opd, \lambda$ - These variables represent the binary matrix, where $x_{i,j}$ and $m_{i,j}$ are the values at row $i$ and column $j$, $opd$ is a set of sets representing the rows of the matrix, and $\lambda$ is the maximum dot product between any pair of distinct rows. 
-constraints: $\sum_{j=1}^{b} x_{i,j} = r, \sum_{j=1}^{b} m_{i,j} = r, \sum_{j=1}^{b} x_{i,j} * x_{k,j} \leq \lambda, \sum_{j=1}^{b} m_{i,j} * m_{k,j} \leq \lambda, |i \cap j| \leq \lambda$ - These constraints ensure that each row sums to $r$, and the dot product between any pair of distinct rows is less than or equal to $\lambda$.
-objective: minimize $\lambda$ - The objective of the problem is to minimize the maximum dot product between any pair of distinct rows, which is represented by the variable $\lambda$.

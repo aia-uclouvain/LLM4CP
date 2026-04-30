@@ -1,5 +1,0 @@
-Alphametic Puzzle
-The problem is about solving a mathematical puzzle where letters represent numbers. 
-The main variables are E, I, N, V, and R, which are letters that stand for digits from 0 to 9. 
-The basic restrictions are that each letter must represent a unique digit, and the letters E and V cannot be zero. 
-The goal is to find values for these letters such that when you add up the number "EIN" four times, it equals the number "VIER", and all the letters represent different digits.

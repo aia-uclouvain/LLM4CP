@@ -1,5 +1,0 @@
-The problem is called the NValues problem. 
-It is about counting the number of distinct values in a given array of variables and enforcing a specific condition on this count. 
-The main decision variables are the array of variables x, where each element represents a value, and the variable nvv, which represents the count of different values in x. 
-The key constraints are that all values in x should be distinct and that the count of these distinct values should satisfy a specific condition, such as being equal to, less than, or greater than a given limit. 
-The problem's objective is to find an assignment of values to x such that the count of distinct values in x satisfies the given condition, in this case, being equal to the limit.

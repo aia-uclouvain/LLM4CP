@@ -1,7 +1,0 @@
-name: Giant Cat Army Riddle
-description: The Giant Cat Army Riddle is a problem where we start with a list containing a single element, 0, and build this list by applying one of three operations: adding 5, adding 7, or taking the square root. The goal is to create a list such that the numbers 2, 10, and 14 appear in that order, with possible other numbers in between. All elements in the list must be distinct integers less than or equal to 60.
-variables: $x = [x_1, x_2, ..., x_{len}]$, where $x$ is an array of decision variables representing the list of numbers, with $x_i$ being the $i^{th}$ element in the list, and $len$ is the length of the list.
-constraints: 
-$x_1 = 0 \land (x_2 = 5 \lor x_2 = 7) \land x_{len} = 14 \land \forall i \in \{1, 2, ..., len-1\} (x_{i+1} = x_i + 5 \lor x_{i+1} = x_i + 7 \lor (x_{i+1} \leq 7 \land x_{i+1}^2 = x_i)) \land \forall i, j \in \{1, 2, ..., len\} (i \neq j \rightarrow x_i \neq x_j) \land \exists ix_2, ix_{10} \in \{1, 2, ..., len\} (x_{ix_2} = 2 \land x_{ix_{10}} = 10 \land ix_2 < ix_{10})$, 
-which represent the initial value of the list, the possible operations to generate the next element, the final value of the list, the distinctness of all elements, and the order of appearance of 2, 10, and 14.
-objective: The objective of the problem is to find a list of numbers that satisfies all the given constraints, with no specific value to minimize or maximize, as the problem is a satisfaction problem.

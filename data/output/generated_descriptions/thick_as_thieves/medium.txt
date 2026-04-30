@@ -1,5 +1,0 @@
-The Thick as Thieves problem.
-This problem is about determining the culprit(s) of a robbery based on the statements given by six suspects, considering that at least four of them are innocent and tell the truth, while the guilty one(s) lie.
-The main decision variables are `artie`, `bill`, `crackitt`, `dodgy`, `edgy`, and `fingers`, which represent whether each suspect is guilty (1) or not (0), and `x_t` which represents whether each suspect told the truth (1) or not (0).
-The key constraints are: each suspect's statement must be consistent with their guilt or innocence, at least four suspects must be innocent (i.e., told the truth), and at most two suspects can be guilty. Additionally, the constraints ensure that if a suspect says someone else is guilty, they must be telling the truth if the accused is indeed guilty, and lying if the accused is innocent.
-The objective of this problem is to find a solution that satisfies all the constraints, effectively identifying the culprit(s) of the robbery. The model uses a satisfaction problem, where the goal is to find a feasible solution that meets all the conditions, rather than optimizing a specific objective function.

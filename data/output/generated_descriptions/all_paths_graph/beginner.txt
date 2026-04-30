@@ -1,6 +1,0 @@
-The problem is called the "Message Passing Problem". 
-It's about a teacher who wants to send a message to a student named Robert through other students. 
-The main variables are the students and the order in which they meet each other. 
-The students are represented by names like Craig, Jason, and Robert, and the order they meet is like a path or a chain of meetings. 
-The basic restrictions are that each meeting between students must be possible according to the given information, and the message must eventually reach Robert. 
-The goal is to find the shortest path, or chain of meetings, that will get the message from the teacher to Robert.

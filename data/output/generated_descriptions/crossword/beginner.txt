@@ -1,5 +1,0 @@
-Crossword Puzzle Problem
-The problem is about filling in a crossword puzzle with given words. 
-The main variables are the positions of the words in the puzzle, represented by E1 to E8, and the letters in each word, represented by numbers corresponding to each letter of the alphabet.
-The basic restrictions are that the words must fit in the given positions, and the letters must match where the words overlap. 
-The goal of the problem is to find a solution that satisfies all the constraints, filling in the crossword puzzle correctly.

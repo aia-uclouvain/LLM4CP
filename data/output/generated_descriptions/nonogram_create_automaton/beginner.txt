@@ -1,9 +1,0 @@
-Nonogram Problem
-The problem is about solving a Nonogram puzzle, which is a type of puzzle where you have to fill in a grid with black and white squares according to certain rules.
-The main variables are: 
-- x: a 2D grid of variables that represent the color of each square (1 for black, 2 for white)
-- row_rules and col_rules: arrays that represent the rules for each row and column, which are used to determine the correct filling of the grid
-The basic restrictions or rules of the problem are: 
-- each row and column must be filled according to the given rules, which specify the lengths of consecutive black squares
-- the rules are applied in a specific order, from left to right and from top to bottom
-The goal of the problem is to find a filling of the grid that satisfies all the rules, which is known as a solution to the Nonogram puzzle.

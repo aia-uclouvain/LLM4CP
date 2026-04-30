@@ -1,5 +1,0 @@
-Greatest Common Divisor (GCD) and Least Common Multiple (LCM) problem. 
-This problem is about finding the greatest common divisor and least common multiple of two numbers, which are like two numbers that have the most factors in common and the smallest number that both numbers can divide into evenly. 
-The main variables are a and b, which are the two numbers, gg, which is the greatest common divisor of a and b, and ll, which is the least common multiple of a and b. 
-The basic restrictions are that a is less than b, the greatest common divisor is greater than 1, and the greatest common divisor and least common multiple must follow certain rules. 
-The goal of the problem is to find values of a, b, gg, and ll that satisfy these rules, which means finding two numbers and their greatest common divisor and least common multiple.

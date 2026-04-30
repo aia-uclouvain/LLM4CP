@@ -1,8 +1,0 @@
-Honey Division Puzzle
-The Honey Division Puzzle is a classic constraint programming problem that involves dividing a certain quantity of honey among multiple sons, with specific constraints on the amount each son receives and the capacity of the barrels used.
-
-The main decision variables in this problem are `x[i,j]`, which represent the number of barrels of capacity `j` that son `i` receives, and `howfull[j]`, which represents the amount of honey that a barrel of capacity `j` can hold. 
-
-The key constraints in this problem are: each son must receive exactly 7 barrels, each son must receive exactly 3.5 units of honey (with the amount of honey in each barrel capacity being predefined), and each barrel capacity must be used exactly 7 times. 
-
-The objective of the Honey Division Puzzle is not to minimize or maximize a specific quantity, but rather to find a feasible solution that satisfies all the given constraints, which is achieved by using the `solve satisfy` statement in the MiniZinc model. In other words, the goal is to determine how the honey can be divided among the sons in a way that meets all the requirements.

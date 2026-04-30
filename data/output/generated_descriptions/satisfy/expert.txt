@@ -1,5 +1,0 @@
-name: Satisfiability Problem
-description: The problem is to generate all interpretations that satisfy a given propositional formula, which involves finding values for a set of Boolean variables such that the formula is true.
-variables: $x_1, x_2, x_3, x_4 \in \{0, 1\}$, where $x_i$ represents a Boolean variable that can take on the value 0 (false) or 1 (true).
-constraints: $(x_1 = 1 \wedge x_2 = 1) \vee (x_3 = 1 \wedge x_4 = 1) \wedge (x_1 \neq x_3 \vee x_2 \neq x_4)$, which represents two constraints: the first one requires that either both $x_1$ and $x_2$ are true or both $x_3$ and $x_4$ are true, and the second one requires that $x_1$ and $x_3$ have different values or $x_2$ and $x_4$ have different values.
-objective: Satisfy the given constraints, there is no objective function to minimize or maximize, the goal is to find all possible assignments of values to the variables that satisfy the constraints.

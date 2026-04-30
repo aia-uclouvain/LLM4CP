@@ -1,9 +1,0 @@
-Binoxxo problem
-The Binoxxo problem is about placing X's and O's in a grid such that no more than two consecutive X's or O's appear in a row or column, and the number of X's equals the number of O's in each row and column, with all rows and columns being unique.
-The main decision variables are the elements of the 2D array `x`, where `x[i, j]` represents the value (0 for O or 1 for X) to be placed in the cell at row `i` and column `j`.
-The key constraints are: 
-- no more than two consecutive X's or O's can appear in a row or column, 
-- each row and column must have an equal number of X's and O's, 
-- all rows must be different from each other, and 
-- all columns must be different from each other.
-The objective of the Binoxxo problem is to find a satisfying assignment of X's and O's to the grid, such that all constraints are met, which is achieved by using the `solve satisfy` statement in the MiniZinc model.

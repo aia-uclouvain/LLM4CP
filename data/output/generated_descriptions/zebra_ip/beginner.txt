@@ -1,5 +1,0 @@
-Zebra Problem
-The problem is about figuring out the characteristics of five houses, including their colors, the nationalities of their inhabitants, the drinks they prefer, the cigarettes they smoke, and the pets they own.
-The main variables are the colors of the houses, the nationalities of the inhabitants, the drinks they prefer, the cigarettes they smoke, and the pets they own. These variables represent the different characteristics of each house.
-The basic restrictions or rules of the problem are that each house has a unique color, nationality, drink, cigarette, and pet, and that certain characteristics are related to each other, such as the Englishman living in the red house and the Spaniard owning the dog.
-The goal of the problem is to determine the characteristics of each house, specifically who drinks water and who owns the zebra, by satisfying all the given constraints and rules.

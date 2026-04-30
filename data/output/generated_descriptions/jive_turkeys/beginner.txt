@@ -1,5 +1,0 @@
-Jive Turkeys Puzzle
-The problem is about finding a combination of numbers that satisfies a specific mathematical equation, similar to a puzzle. 
-The main variables are x[1], x[2], and x[3], which are numbers that we need to find. 
-The basic restrictions are that x[1] and x[2] are single-digit numbers (between 0 and 9), x[3] is not too large (not more than 1345), and all numbers are non-negative (not negative). 
-The goal is to minimize the value of x[3], which means finding the smallest possible value for x[3] that still satisfies the given equation.

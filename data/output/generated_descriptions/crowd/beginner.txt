@@ -1,5 +1,0 @@
-The Crowded Chessboard puzzle 
-is about placing different types of chess pieces on a chessboard in such a way that they do not attack each other. 
-The main variables are the positions of the pieces on the board, which are represented by a three-dimensional array x, where x[i,j,k] is 1 if a piece of type k is placed at position (i,j) on the board, and 0 otherwise. 
-The basic restrictions or rules of the problem are that each type of piece has a limited number of pieces that can be placed, and that no two pieces of the same type can attack each other. 
-The goal of the problem is to minimize the total number of pieces placed on the board, which is represented by the variable z.

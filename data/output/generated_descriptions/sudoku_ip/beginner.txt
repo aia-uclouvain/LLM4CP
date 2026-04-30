@@ -1,5 +1,0 @@
-Sudoku
-The problem is about filling in numbers on a 9x9 grid so that each row, column, and small 3x3 box has the numbers 1-9 without repeating any number. 
-The main variables are the "givens" which are the numbers already filled in on the grid, and the "x" variables which represent whether a number can be placed in a certain spot on the grid. The "sol" variable is the solution to the puzzle, showing which numbers are in each spot.
-The basic restrictions are that each row, column, and small 3x3 box can only have each number once, and that each spot on the grid can only have one number. 
-The goal of the problem is to find a solution that satisfies all the restrictions, filling in the entire grid with numbers 1-9.

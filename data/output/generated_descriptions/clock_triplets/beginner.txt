@@ -1,5 +1,0 @@
-Dean Clark's Problem or Clock Triplets Problem
-The problem is about rearranging the numbers 1 to 12 on a clock face in a circle so that no three numbers next to each other add up to more than 21.
-The main variables are the numbers 1 to 12 on the clock face, represented by x, which means the number at each position on the clock, and triplet_sum, which is the highest sum of three adjacent numbers.
-The basic restrictions are that each number can only be used once, the numbers must be in a circle, and no three adjacent numbers can add up to more than 21.
-The goal of the problem is to find an arrangement of numbers that satisfies these rules, specifically to check if 21 is indeed the smallest possible highest sum of three adjacent numbers.

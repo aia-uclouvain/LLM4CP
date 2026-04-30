@@ -1,5 +1,0 @@
-The Fifth Trial puzzle
-The problem is about two doors, one with a lady and the other with a tiger, and statements on each door that may or may not be true. 
-The main variables are which door has which prize (lady or tiger), and whether the statement on each door is true or false. 
-The basic restrictions are that each door has one prize, and the statements on the doors follow certain rules: if a door says it has the lady, then it's true, and if the first door says the second door has the lady, then the first door must have the tiger, and if the second door says the first door has the lady, then the second door must have the lady. 
-The goal of the problem is to figure out which door has the lady and which has the tiger, based on the statements on the doors.

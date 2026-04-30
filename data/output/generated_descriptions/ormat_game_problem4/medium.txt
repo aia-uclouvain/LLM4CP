@@ -1,5 +1,0 @@
-The Ormat Game problem.
-The Ormat Game is a classic constraint programming problem where the goal is to find a set of moves to transform a given grid into a target grid by applying a set of rules.
-The main decision variables in this problem represent the moves to be applied to the grid, which can include rotations, reflections, and other transformations.
-The key constraints in the Ormat Game problem include rules such as: each move must be valid (e.g., rotating a row or column), each cell in the grid can only be modified a certain number of times, and the final grid must match the target grid. Additionally, there may be constraints on the number of moves allowed, or the types of moves that can be applied.
-The objective of the Ormat Game problem is to find the minimum number of moves required to transform the initial grid into the target grid, subject to the given constraints. In other words, the goal is to minimize the number of transformations needed to reach the target grid.

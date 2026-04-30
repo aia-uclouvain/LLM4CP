@@ -1,5 +1,0 @@
-The General Store problem. 
-This problem is about finding the correct digits to replace letters in a mathematical puzzle where several words add up to a total, "ALL WOOL". 
-The main variables are letters like C, H, E, S, A, B, O, W, P, and L, which represent different digits from 0 to 9. 
-The basic restrictions are that each letter must be a different digit, and when the words are added together, they must equal the total "ALL WOOL". 
-The goal is to find the correct digits for each letter so that the equation is satisfied, which means finding a solution that makes the sum of the words equal to "ALL WOOL" with each letter replaced by a unique digit.

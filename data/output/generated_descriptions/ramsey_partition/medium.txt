@@ -1,7 +1,0 @@
-Ramsey Partition Problem
-The Ramsey partition problem is about dividing a set of integers into smaller subsets such that no subset contains three numbers where two of the numbers add up to the third.
-The main decision variables in this problem are the sets x[1], x[2], and x[3], which represent the three partitions of the integers from 1 to 23.
-The key constraints are: 
-- The integers from 1 to 23 must be partitioned into the three sets x[1], x[2], and x[3].
-- For each set, if it contains at least three numbers, then for any three distinct numbers in the set, the sum of the two smallest numbers cannot be equal to the largest number.
-The objective of the problem is to find all possible partitions that satisfy these constraints, with no specific minimization or maximization goal, as indicated by the "solve satisfy" statement in the model.

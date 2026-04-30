@@ -1,5 +1,0 @@
-99 Bottles of Beer problem. 
-This problem is about printing out the lyrics of a popular song called "99 Bottles of Beer on the Wall". The song is a repetitive verse that starts with 99 bottles of beer and counts down to zero. 
-The main variable is "n" which is the total number of bottles of beer, and "i" which is a counter that goes from 0 to n-1. 
-The basic restriction is that the song follows a specific pattern: it starts with a certain number of bottles, then takes one down, and repeats this process until there are no bottles left. 
-The goal of the problem is to print out the entire song, following the correct pattern and using the correct grammar for the number of bottles (e.g. "1 bottle" instead of "1 bottles").

@@ -1,5 +1,0 @@
-name: Twelve Draughts Puzzle
-description: The Twelve Draughts Puzzle is a classic problem where 12 draughts (or checkers) need to be placed on a 4x4 grid, such that 5 pieces are placed on each side of the grid (top, bottom, left, and right), and the inner 2x2 squares are left empty.
-variables: $x_{i,j}$, where $x_{i,j}$ represents the number of draughts placed on the square at row $i$ and column $j$, and $i, j \in \{1, 2, 3, 4\}$, which are decision variables that determine the placement of the draughts on the grid.
-constraints: $\forall i, j \in S, x_{i,j} \geq 0$, $\sum_{i,j \in S} x_{i,j} = 12$, $\sum_{j \in S} x_{1,j} = 5$, $\sum_{i \in S} x_{i,1} = 5$, $\sum_{j \in S} x_{4,j} = 5$, $\sum_{i \in S} x_{i,4} = 5$, $\sum_{i \in \{2,3\}, j \in \{2,3\}} x_{i,j} = 0$, which represent the constraints that the number of draughts on each square is non-negative, the total number of draughts is 12, 5 draughts are placed on each side, and the inner squares are empty.
-objective: satisfy, which means the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

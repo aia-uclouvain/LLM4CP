@@ -1,5 +1,0 @@
-name: Maximal Non-Segment Sum
-description: The problem is to find the maximum sum that can be obtained by selecting a subsequence of numbers from a given sequence, with the condition that the selected numbers do not form a contiguous block.
-variables: $x = (x_1, x_2, ..., x_n)$, where $x_i$ is a binary decision variable that represents whether the $i^{th}$ number in the sequence is selected (1) or not (0).
-constraints: $\text{non_contiguity}(x)$, which ensures that the selected numbers do not form a contiguous block, and $x_i \in \{0, 1\}$ for all $i$, which ensures that each decision variable is binary.
-objective: Maximize $\sum_{i=1}^{n} x_i \cdot s_i$, where $s_i$ is the $i^{th}$ number in the sequence.

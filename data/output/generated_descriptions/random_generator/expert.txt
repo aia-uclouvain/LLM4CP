@@ -1,5 +1,0 @@
-name: Pseudo Random Number Generation with Constraints
-description: This problem involves generating pseudo random numbers using a linear congruential generator and then using these numbers to constrain a set of decision variables. The goal is to find values for the decision variables that satisfy the given constraints.
-variables: $x = (x_1, x_2, ..., x_n)$, $rand = (rand_1, rand_2, ..., rand_n)$, where $x$ represents a set of decision variables and $rand$ represents an array of pseudo random numbers generated using a linear congruential generator.
-constraints: $rng[i] = (rand_g * rng[i-1]) mod rand_modn$, $r[i] = rng[i] mod (max_value+1)$, $x[i+1]+x[i] = (rand[i]+rand[i+1])$, where the first two constraints define the pseudo random number generation process and the third constraint relates the decision variables $x$ to the generated pseudo random numbers $rand$.
-objective: The objective of this problem is to find a solution that satisfies all the given constraints, there is no explicit objective function to minimize or maximize.

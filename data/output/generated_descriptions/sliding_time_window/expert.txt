@@ -1,8 +1,0 @@
-name: Sliding Time Window Problem
-description: The Sliding Time Window Problem is a constraint satisfaction problem where we have a set of tasks with start times and durations, and a time window of fixed size. The goal is to ensure that the total duration of tasks that overlap with any time window of the given size does not exceed a certain limit.
-variables: $n, max\_time, window\_size, limitx, tasks_{i,j}, sums_i$ 
-These variables represent the following: $n$ is the number of tasks, $max\_time$ is the maximum time, $window\_size$ is the size of the time window, $limitx$ is the maximum allowed duration of tasks in any time window, $tasks_{i,j}$ is a 2D array where $tasks_{i,1}$ represents the start time of task $i$ and $tasks_{i,2}$ represents the duration of task $i$, and $sums_i$ represents the total duration of tasks that overlap with the time window starting at time $i$.
-constraints: $limitx = 6, cp2d(tasks, array2d(1..n, 1..2, [[10, 3], [5, 1], [6, 2], [14, 2], [2, 2]])), sliding\_time\_window(window\_size, limitx, tasks, max\_time)$ 
-These constraints ensure that: the limit is set to 6, the tasks are assigned the given start times and durations, and the sliding time window constraint is satisfied, which means that for any time window of size $window\_size$, the total duration of tasks that overlap with it does not exceed $limitx$.
-objective: satisfy 
-The objective of this problem is to find an assignment of tasks that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

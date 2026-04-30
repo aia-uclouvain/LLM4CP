@@ -1,9 +1,0 @@
-name: Balanced Incomplete Block Design (BIBD)
-description: The Balanced Incomplete Block Design problem is a combinatorial design problem where we need to arrange v distinct objects into b blocks, such that each block contains exactly k distinct objects, each object occurs in exactly r different blocks, and every two distinct objects occur together in exactly λ blocks.
-variables: x[i, j] or m[i, j] or bibd(o, bl), where x[i, j] or m[i, j] or bibd(o, bl) is a binary variable that represents whether object o is in block bl, with o being an object and bl being a block. 
-constraints: 
-∀i ∈ rows, ∑(j ∈ cols) x[i, j] = r, 
-∀j ∈ cols, ∑(i ∈ rows) x[i, j] = k, 
-∀i, j ∈ rows, i ≠ j, ∑(l ∈ cols) (x[i, l] * x[j, l]) = λ, 
-where the first constraint ensures that each row (object) has exactly r blocks, the second constraint ensures that each column (block) has exactly k objects, and the third constraint ensures that every two distinct objects occur together in exactly λ blocks.
-objective: The problem is a feasibility problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific objective function.

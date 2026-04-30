@@ -1,5 +1,0 @@
-Satisfiability Problem
-The problem is about finding a way to make a set of rules true by assigning values to a set of variables. 
-The main variables are x and y. The x variables represent the values that can be either true or false, and the y variables are helper variables that track if a rule is not satisfied.
-The basic restrictions are that each rule must be true, and a rule is true if at least one of its conditions is true. 
-The goal is to minimize the number of rules that are not satisfied, which is tracked by the variable unsat. In other words, the goal is to find a way to make as many rules true as possible by assigning values to the x variables.

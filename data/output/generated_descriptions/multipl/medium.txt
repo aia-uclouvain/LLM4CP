@@ -1,5 +1,0 @@
-The problem is called the "Unknown Multiplication Problem". 
-It is about finding the values of digits in a multiplication equation where each digit from 0 to 9 appears exactly twice, and the equation holds true. 
-The main decision variables are X1 to X20, which represent the digits in the multiplication equation. 
-The key constraints are that each digit appears exactly twice, the multiplication equation holds true, and the sum of the partial products equals the final product. 
-The objective is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

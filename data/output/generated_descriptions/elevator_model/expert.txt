@@ -1,8 +1,0 @@
-name: Tokyo Elevator Puzzle
-description: The Tokyo Elevator Puzzle is a classic problem in constraint programming where we have multiple elevators and floors in a building, and each pair of floors must be connected by at least one elevator. The goal is to find the minimum number of elevators required to satisfy this condition.
-variables: $x_i$ for $i = 1, \ldots, m$, $c_{i,j}$ for $i = 1, \ldots, m$ and $j = 1, \ldots, n$, $sumx$ 
-These are the decision variables where $x_i$ represents whether the $i^{th}$ elevator is used (1) or not (0), $c_{i,j}$ is a given matrix representing the connection between the $i^{th}$ elevator and the $j^{th}$ floor, and $sumx$ is the total number of elevators used.
-constraints: $\forall j, k \in \{1, \ldots, n\}: \sum_{i=1}^{m} (c_{i,j} \cdot c_{i,k} \cdot x_i) \geq 1$
-These constraints ensure that each pair of floors $j$ and $k$ is connected by at least one elevator $i$, i.e., there exists an elevator $i$ such that $c_{i,j} = 1$ and $c_{i,k} = 1$ and $x_i = 1$.
-objective: minimize $sumx$ 
-The objective of the problem is to minimize the total number of elevators used, $sumx$, which is the sum of all $x_i$ for $i = 1, \ldots, m$.

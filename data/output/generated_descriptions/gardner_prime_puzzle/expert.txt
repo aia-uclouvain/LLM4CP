@@ -1,8 +1,0 @@
-name: Martin Gardner's Prime puzzle
-description: The problem is to find two numbers, mP and nP, where each digit is a prime number (2, 3, 5, or 7), such that their product is equal to the concatenation of mP and nP. The length of mP and nP are given as M and N, respectively.
-variables: mP, nP, mnP, mP_a, nP_a, mnP_a 
-These variables represent the numbers mP, nP, and their product mnP, as well as arrays of variables representing each digit of these numbers, where each digit must be a prime number.
-constraints: toNum(mP_a, mP) ∧ toNum(nP_a, nP) ∧ toNum(mnP_a, mnP) ∧ mP * nP = mnP 
-These constraints ensure that the arrays of variables mP_a, nP_a, and mnP_a are converted to their corresponding numerical values mP, nP, and mnP, and that the product of mP and nP is equal to mnP.
-objective: satisfy 
-The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

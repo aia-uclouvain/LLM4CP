@@ -1,5 +1,0 @@
-The name of the problem is the Knapsack problem. 
-This problem is about a traveler who wants to take some valuable items from a place, but he has a knapsack that can only hold a certain amount of weight and volume. 
-The main variables are the number of each item the traveler takes, the total value of the items, the weight of each item, and the volume of each item. In simple terms, these variables mean how many of each item to take, the total worth of the items, how heavy each item is, and how much space each item takes up. 
-The basic restrictions or rules of the problem are that the traveler can only take whole units of each item, the total weight of the items cannot exceed 25 units, and the total volume of the items cannot exceed 0.25 units. 
-The goal of the problem is to maximize the total value of the items the traveler takes, which means finding the combination of items that gives the highest total value while not exceeding the weight and volume limits of the knapsack.

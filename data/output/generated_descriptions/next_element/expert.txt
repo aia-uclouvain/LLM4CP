@@ -1,8 +1,0 @@
-name: Next Element Problem
-description: The Next Element Problem is a constraint satisfaction problem that involves finding the smallest entry in a table that contains a specific value and is located after a given threshold. The problem originated from modeling the consumption of nucleotides in a cycle, where a nucleotide must be consumed as soon as possible after a given cycle.
-variables: $n, m, table\_vars, ind, threshold, val$ 
-These variables represent the following: $n$ and $m$ are parameters representing the size of the table and the upper bound of the values, respectively. $table\_vars$ is a 2D array of decision variables representing the table, $ind$ is the index of the smallest entry containing the value $val$ after the threshold, $threshold$ is the given cycle, and $val$ is the value to be found in the table.
-constraints: $ind > threshold$, $table\_vars[k,1] = threshold$, $table\_vars[k,1] = ind$, $val = table\_vars[k,2]$, $all\_different([table\_vars[i,1] | i in index\_set\_1of2(table\_vars)])$ 
-These constraints ensure that the index $ind$ is greater than the threshold, the threshold and $ind$ are indices in the table, the value $val$ is found in the table at index $ind$, and all indices in the table are distinct.
-objective: satisfy 
-The objective of the problem is to satisfy all the given constraints, which means finding the smallest entry in the table that contains the value $val$ and is located after the threshold.

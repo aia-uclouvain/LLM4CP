@@ -1,5 +1,0 @@
-Discrete Tomography Problem
-The problem is about filling in a grid with different colors, where each row and column has a specific number of each color. 
-The main variables are the number of rows, the number of columns, the number of colors, and the grid itself, where each cell can be one of the colors. 
-The basic restrictions are that each row and column must have the exact number of each color specified. 
-The goal is to find a way to fill in the grid such that all the row and column restrictions are met, and the grid is completely filled with the given colors.

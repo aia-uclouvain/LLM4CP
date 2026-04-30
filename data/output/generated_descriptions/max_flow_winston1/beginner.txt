@@ -1,5 +1,0 @@
-Max Flow Problem. 
-This problem is about finding the most efficient way to move things, like oil or water, through a network of pipes from one place to another. 
-The main variables are the nodes, which are like junctions in the pipe network, and the flow, which is how much stuff is moving between each pair of nodes. 
-The basic restrictions are that you can't move more stuff through a pipe than it can handle, and everything that goes into a node must also come out of it. 
-The goal is to maximize the amount of stuff that can be moved from the starting point back to the end point, which is like finding the maximum amount of oil that can be pumped through the network.

@@ -1,5 +1,0 @@
-The problem is called "GATHER + HOMAGE = MARTIN". 
-It's about finding a way to assign numbers to letters in three words ("GATHER", "HOMAGE", and "MARTIN") so that when you add the first two words, you get the third word. 
-The main variables are the letters in the words, and they represent the numbers that will be assigned to each letter. 
-The basic restrictions are that each letter must be assigned a different number, and the numbers must be between 0 and 9. Also, the first letter of each word cannot be 0, and there are some extra rules like A*A = H and G*G = O. 
-The goal is to find a solution that satisfies all these rules, and the solution is a set of numbers assigned to each letter.

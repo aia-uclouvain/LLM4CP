@@ -1,5 +1,0 @@
-Fixed-Charge Transportation Problem
-The problem is about finding the cheapest way to transport goods from sources to customers. 
-The main variables are the amount of goods shipped from each source to each customer and whether a shipping route is used. 
-The basic restrictions are that each source can only ship a certain amount of goods, each customer needs a certain amount of goods, and shipping a certain amount of goods on a route costs a fixed amount plus a cost per unit shipped. 
-The goal is to minimize the total cost of shipping all the goods.

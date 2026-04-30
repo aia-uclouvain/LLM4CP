@@ -1,8 +1,0 @@
-The name of the problem is the Bananas problem. 
-This problem is about purchasing a combination of fruits, specifically bananas, oranges, mangoes, and apples, with certain constraints on their quantities and costs, while minimizing the total quantity of bananas and apples purchased.
-
-The main decision variables are bananas, oranges, mangoes, and apples, which represent the quantities of each fruit to be purchased. 
-
-The key constraints are that at least one of each fruit must be purchased, the total cost of the fruits must equal $100, and the total quantity of fruits must be 100. The cost constraint is calculated based on the given prices for each fruit: $3 for 5 bananas, $5 for 7 oranges, $7 for 9 mangoes, and $9 for 3 apples.
-
-The problem's objective is to minimize the sum of the quantities of bananas and apples purchased, as the problem states a dislike for these fruits, while still fulfilling the other constraints.

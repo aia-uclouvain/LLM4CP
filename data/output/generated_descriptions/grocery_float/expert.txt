@@ -1,5 +1,0 @@
-name: Grocery Problem
-description: A kid buys four items from a grocery store and is charged $7.11. The cashier initially multiplies the prices of the items instead of adding them, but surprisingly, both the sum and product of the prices equal $7.11. The problem is to find the prices of the four items.
-variables: $item_1, item_2, item_3, item_4$ - These are the decision variables representing the prices of the four items in dollars, which are restricted to a set of float values representing pennies (i.e., $0.01, 0.02, ..., 7.00$).
-constraints: $\sum_{i=1}^{4} item_i = 7.11 \wedge \prod_{i=1}^{4} item_i = 7.11 \wedge item_1 \leq item_2 \leq item_3 \leq item_4$ - These constraints ensure that the sum of the prices equals $7.11, the product of the prices equals $7.11, and the prices are in non-decreasing order to break symmetry.
-objective: The objective of the problem is to find a satisfying assignment of prices to the items, as there is no explicit objective function to minimize or maximize. The goal is to find values for the decision variables that satisfy all the given constraints.

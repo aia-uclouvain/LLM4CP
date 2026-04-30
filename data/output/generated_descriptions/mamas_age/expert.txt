@@ -1,9 +1,0 @@
-name: Mama's Age Problem
-
-description: The problem is about determining the age of Mama based on a conversation between Tommy, Papa, and Mama. The conversation reveals that the sum of their ages is 70 years, Papa is six times as old as Tommy, and when Tommy is half as old as Papa, the sum of their ages will be twice the current sum.
-
-variables: $m, p, t, i, m2, p2, t2$ - These variables represent the ages of Mama, Papa, and Tommy, as well as temporary variables to help with calculations. $m, p, t$ are the ages in months, while $m2, p2, t2$ are the ages in years.
-
-constraints: $m + p + t = 70 \cdot 12, 6t = p, (t + i) \cdot 2 = p + i, m + i + p + i + t + i = 2 \cdot (m + p + t), m2 = m \div 12, p2 = p \div 12, t2 = t \div 12$ - These constraints represent the given conditions: the sum of their ages is 70 years, Papa is six times as old as Tommy, when Tommy is half as old as Papa the sum of their ages will be twice the current sum, and the conversion from months to years.
-
-objective: satisfy - The objective of this problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

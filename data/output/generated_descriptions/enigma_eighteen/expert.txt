@@ -1,7 +1,0 @@
-name: Eighteen Puzzle
-description: The Eighteen Puzzle is a mathematical puzzle where an eight-digit "multiplicand" comprising of dots and letters is multiplied by 2, resulting in the product EIGHTEEN. Different letters stand for different digits, the same letter stands for the same digit, and a dot can be any digit. The goal is to find the eight-digit product EIGHTEEN.
-variables: N, I, E, G, H, T, X1, X2, X3, X4, 
-These variables represent the digits in the multiplicand and the product, where N, I, E, G, H, and T are the digits represented by the corresponding letters, and X1, X2, X3, and X4 are the digits represented by the dots.
-constraints: all_different([N,I,E,G,H,T]) ∧ E ≥ 1 ∧ X1 ≥ 1 ∧ 2*(10000000*X1 + 1000000*X2 + 100000*N + 10000*I + 1000*N + 100*E + 10*X3 + X4) = (10000000*E + 100000*I + 100000*G + 10000*H + 1000*T + 100*E + 10*E + N), 
-These constraints ensure that all the letters represent different digits, the first digit of the multiplicand and the product are non-zero, and the multiplicand multiplied by 2 equals the product EIGHTEEN.
-objective: The objective of the problem is to satisfy the given constraints, i.e., to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

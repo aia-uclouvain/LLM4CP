@@ -1,5 +1,0 @@
-name: Pi Day Sudoku 2009
-description: The problem is a variation of the classic Sudoku puzzle, where each row, column, and region contains the digits 1-9 exactly once, along with three π symbols, which are represented by the variable P. The goal is to fill in the missing values in the grid to satisfy these conditions.
-variables: $x_{i,j}$ for $i, j \in 1..12$, where $x_{i,j}$ represents the value in the $i^{th}$ row and $j^{th}$ column of the grid, which can be a digit from 1 to 9 or the π symbol (represented by -1). 
-constraints: $\forall i \in 1..12: check([x_{i,j} | j \in 1..12]) \land \forall j \in 1..12: check([x_{i,j} | i \in 1..12]) \land \forall k \in 1..12: check([x_{regions[j,1],regions[j,2]} | j \in 1+(k-1)*12..1+((k-1)*12)+11])$, where $check$ is a predicate that ensures each row, column, or region contains each digit exactly once, and $regions$ is a predefined array that defines the regions in the grid. The constraints also include the given values in the grid, which are represented by the $dat$ array.
-objective: satisfy

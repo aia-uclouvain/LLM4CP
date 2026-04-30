@@ -1,8 +1,0 @@
-Reindeer Ordering Problem
-The Reindeer Ordering Problem is a classic constraint programming problem where the goal is to determine the order in which nine reindeer should pull Santa's sleigh, given a set of rules that specify the relative positions of the reindeer.
-
-The main decision variables in this problem are the positions of each reindeer, represented by the `x` array, and the order of the reindeer, represented by the `order` array. These variables represent the sequence in which the reindeer will pull the sleigh.
-
-The key constraints in this problem can be described in plain language as follows: each reindeer has a specific set of reindeer that must be in front of or behind it. For example, Comet must be behind Rudolph, Prancer, and Cupid, while Blitzen must be in front of Donder, Vixen, and Dancer. These constraints ensure that the order of the reindeer satisfies all the given rules.
-
-The objective of the Reindeer Ordering Problem is to find a valid order of the reindeer that satisfies all the constraints. In other words, the goal is to find a sequence of reindeer that meets all the rules specified in the problem. The problem does not involve minimizing or maximizing a specific objective function, but rather finding a feasible solution that satisfies all the constraints.

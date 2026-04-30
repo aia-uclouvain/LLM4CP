@@ -1,5 +1,0 @@
-Eighteen puzzle 
-This problem is about finding a secret 8-digit number that when multiplied by 2 gives the result EIGHTEEN. 
-The main variables are the letters N, I, E, G, H, T, and the dots (X1, X2, X3, X4) which represent digits. 
-The basic restrictions are that each letter must represent a unique digit, and the dots can be any digit. Also, when the secret number is multiplied by 2, it must result in the number EIGHTEEN. 
-The goal of the problem is to find the 8-digit secret number that satisfies these conditions, which is the multiplicand that when multiplied by 2 results in EIGHTEEN.

@@ -1,5 +1,0 @@
-The name of the problem is a binary decision tree problem. 
-This problem is about making decisions in a tree-like structure where two players, A and B, take turns to maximize or minimize their gains. 
-The main variables are x, which represents the decision tree, and node_used, which keeps track of the nodes used in the tree. 
-The basic restrictions or rules of the problem are that the tree is a complete binary tree, and the players alternate between maximizing and minimizing their gains at each level of the tree. 
-The goal of the problem is to find the optimal decision tree that maximizes A's gains, given the node values and the alternating maximizing and minimizing strategy of the two players.

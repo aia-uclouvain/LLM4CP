@@ -1,5 +1,0 @@
-Movie Scheduling Problem
-The problem is about scheduling movies to be shown on a single screen, given their start and end times, so that no two movies overlap. 
-The main variables are the movies and their corresponding start and end times, and a variable x that decides whether a movie is shown or not. 
-The basic restrictions are that no two movies can be shown at the same time, meaning their start and end times cannot overlap. 
-The goal is to maximize the number of movies that can be shown, which is represented by the variable z.

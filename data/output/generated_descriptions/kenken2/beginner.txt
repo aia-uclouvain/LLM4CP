@@ -1,5 +1,0 @@
-KenKen problem
-The KenKen problem is about filling a grid with numbers so that each row and column has each number only once, and certain groups of cells add up, multiply, or otherwise calculate to a specific total.
-The main variables are the numbers in the grid, which can be 1 through 6, and the mathematical operations (like addition, subtraction, multiplication, and division) that are used to calculate the totals for the groups of cells.
-The basic restrictions are that each row and column can only have each number once, and the groups of cells must calculate to the correct total using the correct mathematical operation.
-The goal of the problem is to find a way to fill in the grid that satisfies all of these restrictions, which is a kind of puzzle.

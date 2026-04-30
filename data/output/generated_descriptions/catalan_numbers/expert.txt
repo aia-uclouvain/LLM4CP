@@ -1,8 +1,0 @@
-name: Catalan Numbers Problem
-description: The Catalan Numbers Problem is a mathematical problem that involves calculating a sequence of natural numbers that occur in various counting problems, often involving recursive structures. The problem is to calculate the first m Catalan numbers, which are a sequence of natural numbers that appear in various counting problems.
-
-variables: $C[0..m]$ - This is an array of decision variables representing the first m Catalan numbers, where each $C[i]$ is a non-negative integer that corresponds to the ith Catalan number.
-
-constraints: $C[0] = 1$, $C[n+1] = \sum_{j=0}^{n} (C[j]*C[n-j])$ for $n in 0..m-1$, $C[i] \geq 0$ for $i in 0..m$ - These constraints define the recursive formula for calculating Catalan numbers, where the first Catalan number is 1, and each subsequent number is the sum of the products of all pairs of previous numbers. The non-negativity constraints ensure that all Catalan numbers are non-negative.
-
-objective: The objective of this problem is not to minimize or maximize a specific value, but rather to satisfy the constraints and calculate the first m Catalan numbers. The solve satisfy statement in the MiniZinc model indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

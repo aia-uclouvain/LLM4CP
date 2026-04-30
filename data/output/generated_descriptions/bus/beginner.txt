@@ -1,5 +1,0 @@
-Bus problem. 
-The problem is about a teacher who wants to put students into buses, but there's a catch: when the teacher puts 33 students in each bus, there's one student left over, and when the teacher puts a different number of students in each bus, there's one bus left empty. 
-The main variables are the total number of students (a), the number of buses (b), and the number of students per bus for the second try (c). 
-The basic restrictions are that when 33 students are put in each bus, one student is left over, and when a different number of students are put in each bus, one bus is left empty. 
-The goal is to find the total number of students and buses that satisfy these conditions, and the number of students per bus for the second try.

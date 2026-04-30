@@ -1,5 +1,0 @@
-Cryptarithmetic puzzle 
-This problem is about solving a mathematical puzzle where letters represent numbers. 
-The main variables are letters like A, B, C, and so on, which represent digits from 0 to 9. 
-The basic restrictions are that each letter must be a different digit, and the puzzle must follow the rules of addition, with some letters having a minimum value of 1. 
-The goal is to find the values of the letters that make the addition problem true, with no specific objective to minimize or maximize, but rather to satisfy the given constraints.

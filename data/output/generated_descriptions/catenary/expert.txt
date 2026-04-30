@@ -1,8 +1,0 @@
-name: Catenary Problem
-description: The Catenary Problem is a classic problem in physics and mathematics that involves finding the shape of a hanging chain under its own weight. The problem assumes a chain with a fixed length, suspended between two points, and seeks to determine the curve that the chain will form when it reaches equilibrium.
-variables: $y_0, y_1, ..., y_N$ 
-These are the decision variables representing the y-coordinates of the endpoints of the chainlinks, where $y_i$ is the y-coordinate of the $i^{th}$ endpoint.
-constraints: $x_0 = 0.0, y_0 = 0.0, x_N = L, y_N = 0.0, (x_j - x_{j-1})^2 + (y_j - y_{j-1})^2 \leq h^2 \forall j \in 1..N$
-These constraints represent the boundary conditions of the problem, where the chain is fixed at the left and right endpoints, and the length of each link is limited by the constraint $(x_j - x_{j-1})^2 + (y_j - y_{j-1})^2 \leq h^2$, which ensures that the chain does not stretch or compress beyond its maximum length.
-objective: minimize $z = \sum_{j=1}^N \frac{y_{j-1} + y_j}{2}$ 
-The objective of the problem is to minimize the potential energy of the chain, represented by the variable $z$, which is calculated as the sum of the average y-coordinates of each link.

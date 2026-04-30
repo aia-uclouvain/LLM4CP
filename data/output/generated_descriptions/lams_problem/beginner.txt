@@ -1,5 +1,0 @@
-Lam's Problem
-It's about filling a 111x111 grid with zeros and ones in such a way that each row and column has exactly 11 zeros, and each pair of rows has exactly one zero in the same column.
-The main variables are the grid cells (x) which can be either 0 or 1, and the number of zeros in each row and column (m).
-The basic restrictions are that each row and column must have exactly 11 zeros, and each pair of rows must have exactly one zero in the same column.
-The goal is to find a way to fill the grid that satisfies all these restrictions, but it turns out that this problem has no solution, which proves that a certain mathematical concept called a "finite projective plane of order 10" does not exist.

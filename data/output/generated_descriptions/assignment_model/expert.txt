@@ -1,5 +1,0 @@
-name: Assignment Problem
-description: The Assignment Problem is a classic problem in combinatorial optimization and computer science. It involves finding the optimal way to assign a set of agents to a set of tasks, given the cost of each agent performing each task. The goal is to minimize the total cost of the assignments.
-variables: $x_{i,j}$, where $x_{i,j}$ is a binary variable that represents whether agent $i$ is assigned to task $j$. These variables determine the assignment of agents to tasks.
-constraints: $\sum_{j=1}^{cols} x_{i,j} = 1$ for each agent $i$, $\sum_{i=1}^{rows} x_{i,j} = 1$ for each task $j$ if the number of agents equals the number of tasks, and $\sum_{i=1}^{rows} x_{i,j} \leq 1$ for each task $j$ otherwise, $summax = \sum_{i=1}^{rows} \sum_{j=1}^{cols} x_{i,j} \cdot cost_{i,j}$. These constraints ensure that each agent is assigned to exactly one task, and each task is assigned to at most one agent. The $summax$ variable represents the total cost of the assignments.
-objective: Minimize $summax$, which represents the total cost of the assignments.

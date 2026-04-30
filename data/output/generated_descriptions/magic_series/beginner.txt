@@ -1,5 +1,0 @@
-Magic Series problem. 
-This problem is about finding a special set of numbers that add up to a specific total, where the numbers are chosen from a range of possible values. 
-The main variables are the numbers in the set, represented by "x", which can be any number from 1 to the square of the set size "n". 
-The basic restrictions are that all the numbers in the set must be different, they must be in increasing order, and their sum must equal a specific target value calculated using the set size "n". 
-The goal of the problem is to find a set of numbers that satisfies these conditions, which is known as a "magic series".

@@ -1,5 +1,0 @@
-Spreadsheet problem
-The problem is about calculating the values of cells in a spreadsheet based on given formulas and constraints. 
-The main decision variables are the values of the cells B1, B4, B5, C4, C5, D4, D5, E7, and E8, which represent the values to be calculated in the spreadsheet.
-The key constraints are that the values of B1, B4, B5, C4, and C5 are fixed, and the values of D4, D5, E7, and E8 are calculated based on these fixed values using specific formulas: D4 is the product of B4 and C4, D5 is the product of B5 and C5, E7 is the sum of D4 and D5, and E8 is the product of E7 and the sum of 1 and B1.
-The problem's objective is to satisfy all the given constraints, which means calculating the values of all the cells in the spreadsheet based on the provided formulas. There is no explicit objective function to minimize or maximize, the goal is to find a solution that satisfies all the constraints.

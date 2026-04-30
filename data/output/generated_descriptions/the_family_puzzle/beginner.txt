@@ -1,5 +1,0 @@
-The Family Puzzle
-The problem is about figuring out who is married to whom and what their sons are named among three couples: Abel, Locker, and Snyder, and their wives Edith, Doris, and Luisa.
-The main variables are the names of the men (Abel, Locker, Snyder), the names of the women (Edith, Doris, Luisa), and the names of the sons (Albert, Henry, Victor), which represent the family relationships.
-The basic restrictions are: each man is married to only one woman, each woman is married to only one man, and each son has only one set of parents. Additionally, there are specific rules such as Snyder not being married to Luisa, Edith not being married to Locker, and certain conditions about the sons' parents.
-The goal of the problem is to find the correct marriages and parent-son relationships among the given individuals, satisfying all the given conditions.

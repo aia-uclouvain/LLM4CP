@@ -1,5 +1,0 @@
-Work-shift scheduling problem
-The problem is about assigning six workers to three different work shifts, making sure each shift has the right number of workers. 
-The main variables are the workers (Alan, Bob, John, Mike, Scott, and Ted) and the work shifts (1, 2, and 3) they can be assigned to. 
-The basic restrictions are that the first shift needs 1-4 workers, the second shift needs 2-3 workers, and the third shift needs exactly 2 workers. Also, Alan cannot work on the first shift, and Bob can only work on the third shift. 
-The goal is to find a way to assign all the workers to the shifts that satisfies these rules, which is called a "feasible solution".

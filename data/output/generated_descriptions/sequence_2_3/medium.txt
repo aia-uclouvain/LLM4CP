@@ -1,5 +1,0 @@
-Sequence Puzzle
-The problem is about finding a specific arrangement of numbers from 1 to 10 that satisfies certain conditions.
-The main decision variables are represented by the array `x`, where `x[i]` denotes the number placed at the `i-th` position in the sequence. 
-The key constraints are that the number 6 must be placed at the 7th position, each number in the sequence must be unique, and the difference between consecutive numbers must be either 3 (the next number is bigger) or -2 (the next number is smaller).
-The objective of the problem is to find a sequence that satisfies all the given constraints, as it is a satisfaction problem, not an optimization problem, meaning it does not aim to minimize or maximize a specific value, but rather to find a feasible solution that meets all the requirements.

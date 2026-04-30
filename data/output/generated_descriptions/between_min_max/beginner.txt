@@ -1,5 +1,0 @@
-The problem is called "between_min_max". 
-It's about finding a value that is within the range of a set of given numbers. 
-The main variables are "x" which is a set of numbers, and "nvar" which is a single number. 
-The basic restrictions are that "nvar" must be greater than or equal to the smallest number in "x" and less than or equal to the largest number in "x". 
-The goal is to find a set of numbers "x" and a number "nvar" that satisfy these conditions, given that "x" must be equal to a specific set of numbers (1,1,4,8) and "nvar" is 3.

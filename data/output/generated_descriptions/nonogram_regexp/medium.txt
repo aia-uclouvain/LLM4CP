@@ -1,8 +1,0 @@
-Nonogram Problem
-The Nonogram problem is a classic constraint programming problem that involves solving a puzzle where a set of rules is given to reconstruct a hidden image. 
-
-The main decision variables in this problem are represented by a 2D array `x`, where `x[i, j]` is a variable that can take two values: 1 (representing an empty space) or 2 (representing a filled space). These variables represent the pixels in the image.
-
-The key constraints in the Nonogram problem are defined by the row and column rules. Each row and column has a set of rules that specify the sequence of filled and empty spaces. These rules are represented as regular expressions, which are used to constrain the values of the `x` variables. For example, a row rule might specify that there should be exactly three filled spaces followed by two empty spaces. The `make_regexp` predicate is used to convert these rules into regular expressions that can be used in the `regular` constraint.
-
-The objective of the Nonogram problem is to find an assignment of values to the `x` variables that satisfies all the row and column rules. The problem is a satisfaction problem, meaning that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function. The solution is typically visualized as an image, where filled spaces are represented by a specific symbol (such as "#") and empty spaces are represented by another symbol (such as " ").

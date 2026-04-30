@@ -1,5 +1,0 @@
-Five Floors Problem
-The problem is about five people - Baker, Cooper, Fletcher, Miller, and Smith - who live in an apartment house with five floors. 
-The main variables are the floors where each person lives: Baker, Cooper, Fletcher, Miller, and Smith. 
-The basic restrictions are that each person has a specific rule about which floor they can or cannot live on, such as Baker not living on the fifth floor, and Miller living on a higher floor than Cooper. 
-The goal of the problem is to find a way to assign each person to a floor so that all the rules are followed, and each person lives on a different floor.

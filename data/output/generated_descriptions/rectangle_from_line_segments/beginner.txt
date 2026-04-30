@@ -1,6 +1,0 @@
-Largest Possible Rectangle Problem
-The problem is about building the largest possible rectangle using a set of given line segments. 
-The main variables are the line segments of given lengths, the sides of the rectangle, and the area of the rectangle. 
-The line segments can be combined to form the sides of the rectangle, but they cannot be broken or split. 
-The basic restrictions are that the opposite sides of the rectangle must be of the same length, and all the line segments must be used. 
-The goal is to maximize the area of the rectangle that can be built using all the given line segments.

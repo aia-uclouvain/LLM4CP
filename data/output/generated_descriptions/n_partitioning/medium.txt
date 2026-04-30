@@ -1,5 +1,0 @@
-The 3-Partition Problem
-The 3-Partition problem is about dividing a set of numbers into equal-sized groups, where each group has the same sum. 
-The main decision variables are `a` and `a_sum`, where `a` represents the groups of numbers and `a_sum` represents the sum of numbers in each group. 
-The key constraints are that the numbers must be divided into `n` groups, each group must have `m` numbers, the sum of numbers in each group must be the same, and all numbers must be used exactly once. 
-The objective of the problem is to determine whether it is possible to divide the numbers into groups with the same sum, rather than minimizing or maximizing a specific value.

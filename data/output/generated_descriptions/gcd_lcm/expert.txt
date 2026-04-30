@@ -1,5 +1,0 @@
-name: Greatest Common Divisor (GCD) and Least Common Multiple (LCM) Problem
-description: The problem is to find the greatest common divisor (GCD) and least common multiple (LCM) of two integers a and b, where a and b are decision variables within a given range.
-variables: $a, b, gg, ll$ - These variables represent the two input integers $a$ and $b$, their greatest common divisor $gg$, and their least common multiple $ll$, respectively.
-constraints: $a < b, gg > 1, gcd(a,b,gg), lcm(a,b,ll)$ - These constraints ensure that $a$ is less than $b$, the GCD $gg$ is greater than 1, and the GCD and LCM of $a$ and $b$ are correctly calculated using the defined predicates.
-objective: satisfy - The objective of the problem is to find a satisfying assignment of values to the decision variables $a, b, gg, ll$ that satisfy all the given constraints, rather than minimizing or maximizing a specific value.

@@ -1,8 +1,0 @@
-name: Resource Constrained Scheduling Problem
-description: The Resource Constrained Scheduling Problem is a classic problem in operations research and computer science that involves scheduling a set of tasks on a set of machines, subject to resource constraints. Each task has a duration, a set of machines it can be executed on, and a set of resources it requires. The goal is to find a schedule that minimizes the maximum completion time of all tasks, while ensuring that each task is executed on a machine it is compatible with, and that no two tasks requiring the same resource are executed at the same time.
-variables: tasks[t], allocs[a] 
-tasks[t] represents the time interval during which task t is executed, and allocs[a] represents the time interval during which task a.tname is executed on machine a.machine. These decision variables determine the schedule of tasks on machines.
-constraints: alternative(tasks[t], all(a in Allocs: a.tname==t.name) allocs[a]), noOverlap(all(a in Allocs: a.machine==m) allocs[a]), noOverlap(all(t in Tasks: r in t.resources) tasks[t]), machines <= card(Machines)
-These constraints ensure that each task is executed on one of its compatible machines, that no two tasks are executed on the same machine at the same time, that no two tasks requiring the same resource are executed at the same time, and that the total number of machines used does not exceed the available number of machines.
-objective: minimize max(t in Tasks) endOf(tasks[t])
-The objective is to minimize the maximum completion time of all tasks, which is equivalent to minimizing the makespan of the schedule.

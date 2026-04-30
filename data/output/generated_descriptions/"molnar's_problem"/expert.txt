@@ -1,5 +1,0 @@
-name: Matrix Determinant Problem
-description: The problem involves finding a square matrix of size k x k with integer entries between 2 and d, such that the determinant of the matrix and the determinant of the matrix of squared entries are both equal to 1.
-variables: $x_{i,j}, y_{i,j}$ for $1 \leq i,j \leq k$, where $x_{i,j}$ represents the value of the matrix at row i and column j, and $y_{i,j}$ represents the square of the value of the matrix x at row i and column j.
-constraints: $y_{i,j} = x_{i,j}^2$ for $1 \leq i,j \leq k$, $\det(x) = 1$, $\det(y) = 1$, and $x$ is lexicographically increasing, where $\det(x)$ denotes the determinant of the matrix $x$.
-objective: The problem is a feasibility problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

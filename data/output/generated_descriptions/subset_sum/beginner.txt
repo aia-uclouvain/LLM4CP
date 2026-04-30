@@ -1,5 +1,0 @@
-The problem is called the Subset Sum problem. 
-It's about a bank van that had bags of coins, and some of these bags were stolen. Each bag had a different number of coins, and we know that a total of 100 coins were taken. 
-The main variables are the number of bags of each type that were stolen, which are represented by the variable x. This variable has multiple parts, each showing how many bags of a certain type (16, 17, 23, 24, 39, or 40 coins) were stolen. 
-The basic rules are that the total number of coins stolen must be exactly 100, and you can't steal a negative number of bags. 
-The goal is to find out how many bags of each type were stolen, which adds up to a total of 100 coins.

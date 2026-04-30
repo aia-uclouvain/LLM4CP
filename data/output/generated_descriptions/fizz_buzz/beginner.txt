@@ -1,5 +1,0 @@
-The Fizz Buzz problem. 
-It's about printing numbers from 1 to 100, but with some special rules: if a number is divisible by 3 or contains the digit 3, it's a "fizz" number, and if it's divisible by 5 or contains the digit 5, it's a "buzz" number. 
-The main variables are the numbers from 1 to 100, and a special array x that keeps track of whether each number is "fizz", "buzz", "fizzbuzz", or none of these. 
-The basic restrictions are that a number can be "fizz" if it's divisible by 3 or contains the digit 3, "buzz" if it's divisible by 5 or contains the digit 5, and "fizzbuzz" if it meets both conditions. 
-The goal is to print out the numbers from 1 to 100, replacing the numbers that meet these conditions with "fizz", "buzz", or "fizzbuzz" accordingly.

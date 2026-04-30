@@ -1,5 +1,0 @@
-name: Pythagorean Triples
-description: The problem is to find a set of three positive integers that satisfy the Pythagorean theorem, which states that the square of the length of the hypotenuse of a right triangle is equal to the sum of the squares of the lengths of the other two sides.
-variables: A, B, C - These are the decision variables representing the lengths of the sides of a right triangle, where A and B are the lengths of the two shorter sides and C is the length of the hypotenuse.
-constraints: A ≥ 1, B ≥ 1, C ≥ 1, A*A + B*B = C*C, A < B, B < C - These constraints ensure that the lengths of the sides are positive integers, that the Pythagorean theorem is satisfied, and that the lengths of the sides are in increasing order.
-objective: The objective of the problem is to find a satisfying assignment, as indicated by the "solve satisfy" statement, meaning that the goal is to find a set of values for A, B, and C that satisfy all the constraints, rather than minimizing or maximizing a specific value.

@@ -1,8 +1,0 @@
-Stable Marriage Problem
-The Stable Marriage Problem is a classic problem in computer science and operations research that involves matching men and women in a way that is stable, meaning that there is no pair of individuals who would prefer each other to their current partners.
-
-The main decision variables in this problem are the wife and husband arrays, which represent the assignments of men to women and women to men, respectively. The rankWomen and rankMen arrays represent the preferences of each woman and man, respectively, with lower values indicating a stronger preference.
-
-The key constraints in this problem are that each man is assigned to exactly one woman, and each woman is assigned to exactly one man. Additionally, the problem requires that the assignments be stable, meaning that there is no pair of individuals who would prefer each other to their current partners. This is enforced by the constraints that check if a man prefers a woman to his current wife, and if the woman prefers the man to her current husband.
-
-The objective of the Stable Marriage Problem is not to minimize or maximize a specific function, but rather to find a stable assignment of men to women and women to men. The problem is typically solved using a satisfaction algorithm, which searches for a solution that satisfies all of the constraints. In this case, the solve satisfy statement in the Minizinc model is used to find a stable assignment.

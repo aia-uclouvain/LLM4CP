@@ -1,5 +1,0 @@
-The name of the problem is the Enigma puzzle "Eight times" (#1317). 
-This problem is about finding a 5-digit number consisting of five different digits, not starting with zero, which when multiplied by 8 produces another 5-digit number consisting of the other 5 digits. 
-The main decision variables are x1, x2, x3, x4, x5, and y1, y2, y3, y4, y5, which represent the digits of the original 5-digit number and the digits of the product when the original number is multiplied by 8, respectively. 
-The key constraints are that all digits must be different, the first digit of both numbers must be greater than zero, the product of the original number and 8 must be equal to the second 5-digit number, and the sum of the digits of the original number must be greater than the sum of the digits of the product. 
-The problem's objective is to find a 5-digit number that satisfies all these constraints, with no specific minimization or maximization goal, but rather to find a solution that meets the given conditions.

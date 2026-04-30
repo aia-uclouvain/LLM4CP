@@ -1,5 +1,0 @@
-name: Roots Constraint Problem
-description: The Roots Constraint Problem is a constraint satisfaction problem that involves finding the indices of variables in a collection that take their values in a given set. The problem is defined by a set of variables, a set of values, and a collection of variables, and the goal is to identify the indices of the variables in the collection that take their values in the given set.
-variables: $x = [x_1, x_2, ..., x_n], s, t$ where $x$ is an array of decision variables representing the collection of variables, $s$ is a set of indices of the variables in $x$ that take their values in $t$, and $t$ is a set of values.
-constraints: $cp1d(x, [1,3,1,2,3]), s = \{2,4,5\}, t = \{2,3,8\}, roots(x, s, t)$ where $cp1d(x, [1,3,1,2,3])$ ensures that the array $x$ is equal to the array $[1,3,1,2,3]$, $s = \{2,4,5\}$ and $t = \{2,3,8\}$ define the sets $s$ and $t$, and $roots(x, s, t)$ ensures that the variables in $x$ at indices in $s$ take their values in $t$.
-objective: satisfy

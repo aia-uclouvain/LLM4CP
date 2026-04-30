@@ -1,5 +1,0 @@
-Eye Drop Optimization Problem
-The problem is about finding the best way to take eye drops after a cataract operation. 
-The main variables are the times when each type of eye drop should be taken, and the goal is to spread out these times as much as possible.
-The basic restrictions are that there are a limited number of hours in the day, each type of drop can only be taken a certain number of times, and there can only be one drop per hour. 
-The goal is to maximize the dispersion of the drop times, which means spreading them out as much as possible.

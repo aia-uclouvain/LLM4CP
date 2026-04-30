@@ -1,5 +1,0 @@
-Harry Potter's Potion Problem
-The problem is about Harry and Hermione being trapped in a room with 7 different bottles of potion on a table. They need to figure out which bottle will let them move forward and which one will let them go back.
-The main variables are the 7 bottles, each represented by a decision variable (p1 to p7), and the types of potion in each bottle (wine, poison, forward, or back). 
-The basic restrictions are: there is one bottle to move forward, one to move back, two bottles of wine, and three bottles of poison. The bottles are arranged in a specific order, with the smallest and largest bottles having certain properties. Additionally, there are four clues: each wine bottle has poison on its left, the ends are different, the largest and smallest bottles are not poison, and the second left and second right bottles are the same.
-The goal is to figure out the correct arrangement of the bottles, specifically which one moves Harry and Hermione forward and which one moves them back.

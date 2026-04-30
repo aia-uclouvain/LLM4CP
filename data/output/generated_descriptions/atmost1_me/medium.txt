@@ -1,7 +1,0 @@
-**Set Partitioning Problem with Atmost1 Constraint**
-The problem is about partitioning a set of elements into subsets, where each subset has a specific cardinality, and ensuring that the intersection of any two subsets has at most one element.
-The main decision variables are `x` and `s`, where `x` is an array of integers representing the cardinality of each subset, and `s` is an array of sets of integers representing the subsets themselves.
-The key constraints are: 
-* Each subset `s[i]` has a cardinality equal to `x[i]`.
-* The intersection of any two subsets `s[i]` and `s[j]` has at most one element.
-The objective of the problem is to satisfy these constraints, which means finding a partitioning of the set into subsets with the specified cardinalities, such that the intersection of any two subsets has at most one element. There is no explicit minimization or maximization objective in this problem, as it is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints.

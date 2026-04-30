@@ -1,8 +1,0 @@
-name: Drive Ya Nuts puzzle
-description: The Drive Ya Nuts puzzle is a classic problem where the goal is to place seven nuts in a specific arrangement such that the numbers on all sides of each nut match the numbers on the adjoining nut. The puzzle consists of seven nuts, each with six sides numbered from 1 to 6, and the objective is to find a unique arrangement that satisfies the matching condition.
-variables: $x_{i,j}, pos_i, pos\_inv_i, start\_ix_i$ 
-These variables represent the decision variables in the problem: $x_{i,j}$ represents the number on the j-th side of the i-th nut, $pos_i$ represents the index of the nut in the solution order, $pos\_inv_i$ is the inverse permutation of $pos_i$, and $start\_ix_i$ represents the starting index of the i-th nut in the solution order.
-constraints: $\forall i \in 1..m (alldifferent([x_{i,j} | j \in 1..n]) \wedge \forall j \in 1..n (x_{i,j} = nuts_{p,j+k})) \wedge alldifferent(pos) \wedge inverse(pos, pos\_inv) \wedge start\_ix[7] = 0 \wedge \forall c \in 1..num\_connections (x_{cc[1], cc[3]} = x_{cc[2], cc[4]})$
-These constraints ensure that each nut has a unique arrangement of numbers, the numbers on the sides of each nut match the numbers on the adjoining nut, the center nut starts with 1, and the connections between the nuts are satisfied.
-objective: satisfy 
-The objective of the problem is to find a feasible solution that satisfies all the constraints, as there is no explicit objective function to minimize or maximize.

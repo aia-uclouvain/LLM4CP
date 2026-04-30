@@ -1,5 +1,0 @@
-The Set Cardinality and Minimum/Maximum Problem
-The problem is about finding a subset of a given size from a larger set, and then determining the minimum and maximum values within this subset.
-The main decision variables are S, mn, and mx. S represents the subset of size 4 from the set 1..n, mn represents the minimum value in the subset S, and mx represents the maximum value in the subset S.
-The key constraints are that the subset S must have exactly 4 elements, and that mn and mx must be the minimum and maximum values in S, respectively. This means that mn must be less than or equal to all elements in S, and mx must be greater than or equal to all elements in S.
-The problem's objective is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies the given constraints. The solve satisfy statement in the model indicates that the goal is to find any solution that meets the constraints, rather than optimizing a particular objective function.

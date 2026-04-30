@@ -1,5 +1,0 @@
-name: Array Copy Problem
-description: The problem involves copying arrays of different dimensions and types, including one-dimensional and two-dimensional arrays, with fixed and variable integer values, as well as sets of integers.
-variables: $x, y$ - $x$ is a one-dimensional array of variable integers, and $y$ is a two-dimensional array of variable integers, where $x$ and $y$ are used to represent the arrays being copied.
-constraints: $x = [1,2,_,4]$ and $y = [|1,2|3,4|4,3|2,1|]$ - These constraints specify the values of the arrays $x$ and $y$, where $x$ is a one-dimensional array with some fixed and some variable values, and $y$ is a two-dimensional array with fixed values.
-objective: satisfy - The objective of the problem is to find an assignment of values to the decision variables $x$ and $y$ that satisfies all the given constraints.

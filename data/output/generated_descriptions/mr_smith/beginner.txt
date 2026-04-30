@@ -1,5 +1,0 @@
-The name of the problem is the Mr. Smith problem. 
-This problem is about a family, the Smiths, who want to go on a visit together, but not all of them can make it. The problem is trying to figure out who will go and who will stay home based on some given hints. 
-The main variables are Mr_Smith, Mrs_Smith, Matt, John, and Tim, which represent whether each member of the family will come on the visit or not. 
-The basic restrictions or rules of the problem are: if Mr. Smith comes, his wife must come too; at least one of the two sons, Matt or John, must come; either Mrs. Smith or Tim can come, but not both; either Tim and John come together, or neither of them comes; and if Matt comes, then John and Mr. Smith must also come. 
-The goal of the problem is to find a solution that satisfies all these rules, meaning to determine which family members will go on the visit.

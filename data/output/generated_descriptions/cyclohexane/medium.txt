@@ -1,5 +1,0 @@
-The problem is known as a Non-Linear Constraint Satisfaction Problem. 
-It is about finding values for three variables, x, y, and z, that satisfy a set of non-linear equations. 
-The main decision variables are x, y, and z, which are floating-point numbers within the range -20.0 to 20.0, representing the solution to the system of equations. 
-The key constraints are three non-linear equations that involve the variables x, y, and z, and their squares, which must be equal to zero. In plain language, these constraints can be thought of as three curves in a 3D space, and the solution must be a point where all three curves intersect. 
-The problem's objective is to find a solution that satisfies all the constraints, which is achieved by using the "satisfy" keyword in the Minizinc model, indicating that the goal is to find a feasible solution, rather than minimizing or maximizing a specific objective function.

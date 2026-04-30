@@ -1,5 +1,0 @@
-name: Family Relations Problem
-description: The problem models a family relationship database, where the goal is to find specific relationships between family members, such as siblings, cousins, and parents, based on a given set of family relations and age information.
-variables: X, Y - These are the decision variables representing two family members, where X and Y can take values from the set of family members (r) and are used to query specific relationships between them, such as cousin or sibling relationships.
-constraints: cousin(X, Y) ∧ Y = peter, older(X, Y) - These constraints represent the conditions that need to be satisfied, specifically that X is a cousin of Y (who is Peter) and that X is older than Y, based on the defined family relationships and age information.
-objective: satisfy - The objective of the problem is to find a satisfying assignment of values to the decision variables X and Y that satisfy all the given constraints, without any specific minimization or maximization goal.

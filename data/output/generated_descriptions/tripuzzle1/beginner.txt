@@ -1,5 +1,0 @@
-Tripuzzle 
-The problem is about solving a puzzle where 16 triangles with different colors on each corner need to be arranged in a specific way to match certain color patterns. 
-The main variables are the position and orientation of each triangle, and the colors on each corner of the triangles. 
-The basic restrictions are that each position can only be occupied by one triangle in one orientation, each triangle can only be in one position and one orientation, and the colors on the corners of the triangles must match the given color patterns. 
-The goal of the problem is to find an arrangement of the triangles that satisfies all the given color patterns and restrictions.

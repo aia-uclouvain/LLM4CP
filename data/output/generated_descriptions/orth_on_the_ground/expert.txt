@@ -1,5 +1,0 @@
-name: Orthotope on the Ground
-description: The problem involves a collection of orthotopes, which are geometric shapes with orthogonal dimensions, and the task is to ensure that the orientation of a specific orthotope is fixed to one, while also satisfying other constraints related to the dimensions and positions of the orthotopes.
-variables: $n, orthotope_{i,j}, vertical\_dim$ where $i \in [1..n]$ and $j \in [1..3]$. These variables represent the number of orthotopes ($n$), the dimensions and orientations of each orthotope ($orthotope_{i,j}$), and the index of the vertical dimension to be fixed ($vertical\_dim$).
-constraints: $orthotope[vertical\_dim,1] = 1, cp2d(orthotope, array2d(1..n, 1..3, [1,2,3, 2,3,5])), vertical\_dim = 1$. These constraints ensure that the orientation of the specified orthotope is fixed to one, that the dimensions of the orthotopes match a given array, and that the vertical dimension to be fixed is the first one.
-objective: satisfy. The objective of the problem is to find a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

@@ -1,8 +1,0 @@
-The problem is called the Open Global Cardinality problem. 
-It's about making sure that certain numbers appear a specific number of times in a list, but only considering certain positions in the list. 
-The main variables are: 
-- "variables" which is a list of numbers, 
-- "values" which is a table with two columns: the first column is a number and the second column is how many times that number should appear, 
-- and "s" which is a set of positions in the list that we care about. 
-The basic restrictions are that each number in the "values" table should appear exactly as many times as specified, but only in the positions listed in "s". 
-The goal of the problem is to find a solution where all these restrictions are satisfied.

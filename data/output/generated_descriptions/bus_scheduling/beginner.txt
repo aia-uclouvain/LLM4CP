@@ -1,5 +1,0 @@
-Bus Scheduling Problem
-The problem is about scheduling buses to meet the demand for transportation at different times of the day. 
-The main variables are the number of time slots, the demand for buses at each time slot, and the number of buses starting their schedule at each time slot. 
-The basic restrictions are that there must be enough buses at each time slot to meet the demand, and that the buses can be scheduled to start at any time slot. 
-The goal is to minimize the total number of buses needed to meet the demand at all time slots.

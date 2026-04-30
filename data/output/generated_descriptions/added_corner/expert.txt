@@ -1,5 +1,0 @@
-name: Added Corner Puzzle
-description: The Added Corner Puzzle is a classic problem in constraint programming where the goal is to place the digits 1 through 8 in a specific arrangement of circles and squares such that the number in each square is equal to the sum of the numbers in the circles that adjoin it.
-variables: $A, B, C, D, E, F, G, H$ - These variables represent the digits to be placed in the circles and squares, with each variable corresponding to a specific position in the puzzle arrangement.
-constraints: $B = A + C, D = A + F, E = C + H, G = F + H, \text{all\_different}([A,B,C,D,E,F,G,H])$ - These constraints ensure that the numbers in the squares are equal to the sum of the numbers in the adjacent circles and that each digit from 1 to 8 is used exactly once.
-objective: satisfy - The objective of the problem is to find a feasible solution that satisfies all the constraints, as there is no specific value to be minimized or maximized.

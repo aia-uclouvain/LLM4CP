@@ -1,6 +1,0 @@
-Set Game Problem
-The problem is about finding sets of cards that have specific properties. 
-The main variables are the cards and the sets of cards. 
-Each card has four attributes: number, symbol, color, and shading. 
-The basic restrictions are that each set must have exactly three cards, and for each attribute, the cards in a set must be either all the same or all different. 
-The goal is to find a specified number of sets that satisfy these conditions.

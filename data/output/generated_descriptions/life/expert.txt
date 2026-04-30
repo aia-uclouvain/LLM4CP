@@ -1,8 +1,0 @@
-name: Conway's Game of Life
-description: Conway's Game of Life is a cellular automaton devised by the British mathematician John Horton Conway. The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. The game is defined on a grid of cells, where each cell can be either alive (1) or dead (0). The game's evolution is determined by four simple rules: any live cell with fewer than two live neighbours dies, any live cell with more than three live neighbours dies, any live cell with two or three live neighbours lives, and any dead cell with exactly three live neighbours becomes a live cell.
-variables: $x_{k,i,j}, start_{i,j}, n, m$ 
-These variables represent the following: $x_{k,i,j}$ is a 3D array representing the state of the cell at position $(i,j)$ at time step $k$, where $x_{k,i,j} = 1$ if the cell is alive and $x_{k,i,j} = 0$ if the cell is dead. $start_{i,j}$ is a 2D array representing the initial state of the grid. $n$ and $m$ are integers representing the size of the grid and the number of time steps, respectively.
-constraints: $x_{1,i,j} = start_{i,j}$, $life(x_{k-1}, x_{k}, n)$ for $k = 2..m$ 
-These constraints represent the following: the initial state of the grid is given by $start_{i,j}$, and the state of the grid at each time step $k$ is determined by the state of the grid at the previous time step $k-1$ and the rules of the Game of Life, as defined by the $life$ predicate.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, i.e., to find a sequence of grid states that evolves according to the rules of the Game of Life, given an initial state. There is no explicit objective function to minimize or maximize.

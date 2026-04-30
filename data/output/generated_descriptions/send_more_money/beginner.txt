@@ -1,8 +1,0 @@
-Send More Money problem. 
-This problem is about finding a mathematical solution to a well-known puzzle where you have to add two words, "SEND" and "MORE", and get another word, "MONEY", as a result. 
-
-The main variables are the letters in the words: S, E, N, D, M, O, R, Y, which represent digits from 0 to 9. 
-
-The basic restrictions are that each letter must be a different digit, the first letter of each word cannot be zero, and when you add the numbers represented by "SEND" and "MORE", you get the number represented by "MONEY". 
-
-The goal of the problem is to find a solution that satisfies all these conditions, which means finding the correct digits for each letter so that the addition works out correctly.

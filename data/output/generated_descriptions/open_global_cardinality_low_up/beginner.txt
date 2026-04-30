@@ -1,8 +1,0 @@
-The problem is called Global Cardinality Low Up.
-This problem is about making sure that certain numbers appear a certain number of times in a list. 
-The main variables are: 
-- "variables" which is a list of numbers, 
-- "values" which is a table that says how many times each number should appear, 
-- and "s" which is a set of positions in the list that we care about.
-The basic restrictions are that each number in "values" should appear at least a certain number of times and at most a certain number of times in the "variables" list, but only in the positions that are in "s".
-The goal of the problem is to make sure that all these restrictions are satisfied, there is no specific thing to minimize or maximize.

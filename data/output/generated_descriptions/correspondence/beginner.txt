@@ -1,8 +1,0 @@
-Correspondence Problem
-The problem is about matching items from one set to another set in a specific way.
-The main variables are: 
-- "from" which represents the original set of items, 
-- "permutation" which represents the order in which the items should be matched, 
-- "to" which represents the target set of items.
-The basic restrictions are that each item in the "from" set must match an item in the "to" set, and the matching must follow the order specified by the "permutation".
-The goal of the problem is to find a matching between the "from" and "to" sets that satisfies the given permutation order, and to verify that this matching is correct.

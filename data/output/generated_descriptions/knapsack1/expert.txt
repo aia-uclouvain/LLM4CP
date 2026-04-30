@@ -1,5 +1,0 @@
-name: 0/1 Knapsack Problem
-description: The 0/1 Knapsack Problem is a classic problem in combinatorial optimization where a thief has a knapsack with a limited capacity and wants to maximize the total value of items to be carried, given that each item has a weight and a value, and the thief can either take an item or not.
-variables: $take_i, i = 1, \ldots, n$ - These are decision variables that represent whether the $i^{th}$ item is taken ($take_i = 1$) or not ($take_i = 0$).
-constraints: $\sum_{i=1}^{n} w_i \cdot take_i \leq W, take_i \geq 0, i = 1, \ldots, n, take_i \in \{0,1\}$ - These constraints ensure that the total weight of the items taken does not exceed the knapsack capacity ($W$), and each item is either taken or not.
-objective: Maximize $\sum_{i=1}^{n} v_i \cdot take_i$ - The objective is to maximize the total value of the items taken, where $v_i$ is the value of the $i^{th}$ item.

@@ -1,8 +1,0 @@
-Bridges to Somewhere problem
-The Bridges to Somewhere problem is about finding the optimal placement of two bridges between Hometown and Worktown to minimize the total commuting distance of five residents. The residents live in houses represented by letters "A" through "E" in Hometown and work in offices with matching letters in Worktown. The bridges can only be built in approved areas, and each resident will take the shortest path from home to work, traveling only in up, down, left, or right directions.
-
-The main decision variables are the positions of the two bridges to be built, represented by the array `x`, and the nearest bridge for each resident, represented by the array `b_ix`. The `x` array determines which bridges to build, and the `b_ix` array determines which bridge each resident will use to commute to work.
-
-The key constraints are that each resident must use one of the built bridges to commute to work, and the total commuting distance of all residents must be minimized. The distance for each resident is calculated as the sum of the distances from their home to the bridge and from the bridge to their workplace. The model also ensures that the bridges are built in the approved areas and that each resident uses the nearest bridge.
-
-The objective of the problem is to minimize the total commuting distance of all residents, represented by the variable `tot_dist`. The model uses the `minimize` statement to find the optimal placement of the two bridges that results in the minimum total commuting distance.

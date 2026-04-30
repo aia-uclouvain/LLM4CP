@@ -1,8 +1,0 @@
-Kiselman Semigroup Problem
-The Kiselman Semigroup Problem is about finding a sequence of integers drawn from 1 to n, where n is a given positive integer, such that between every pair of occurrences of an integer i, there exists an integer greater than i and an integer less than i.
-
-The main decision variables in this problem are the elements of the array x, where x[i] represents the i-th element in the sequence. The value of x[i] is an integer between 0 and n, where 0 is used as a dummy value to represent the end of the sequence.
-
-The key constraints in this problem can be described as follows: for every pair of occurrences of the same integer i in the sequence, there must be at least one integer greater than i and one integer less than i between them. Additionally, any zeros in the sequence must be placed at the end, and once a zero is encountered, all subsequent elements must also be zero.
-
-The objective of the Kiselman Semigroup Problem is not to minimize or maximize a specific value, but rather to find a sequence that satisfies the given constraints. The problem is typically interested in counting the number of solutions for a given n. The length of the sequence is also an important aspect, and it can be derived based on the value of n. The problem uses a satisfy statement, which means that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

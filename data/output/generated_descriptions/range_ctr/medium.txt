@@ -1,5 +1,0 @@
-The problem is called the Range Constraint Problem. 
-It is about constraining the difference between the maximum and minimum values of a set of variables. 
-The main decision variables are an array of variables, each representing a value in the set, and a variable representing the range between the maximum and minimum values. 
-The key constraints are that the range between the maximum and minimum values of the set of variables must satisfy a certain comparison (e.g., less than, equal to, greater than) with a given value, and that the values in the set are assigned specific values. 
-The objective of the problem is to satisfy these constraints, rather than to minimize or maximize a specific value, as indicated by the "solve satisfy" statement in the model.

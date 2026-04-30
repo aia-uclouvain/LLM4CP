@@ -1,5 +1,0 @@
-The problem is called "sum_of_weights_of_distinct_values". 
-It's about assigning values to a set of variables in a way that the sum of the weights of the unique values is equal to a given cost. 
-The main variables are "variables" which is a list of values, "values" which is a table of values and their corresponding weights, and "cost" which is the total weight of the unique values. 
-The basic restrictions are that each variable must take a value from the given list, and the cost must be equal to the sum of the weights of the unique values taken by the variables. 
-The goal is to find an assignment of values to the variables that satisfies these restrictions, with the given cost being equal to 12.

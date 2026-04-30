@@ -1,9 +1,0 @@
-The problem is called "Next Element". 
-It's about finding a specific item in a list of items that comes after a certain point. 
-The main variables are: 
-- "threshold" which is like a starting point, 
-- "ind" which is the position of the item we're looking for, 
-- "table_vars" which is the list of items, and 
-- "val" which is the specific item we want to find. 
-The basic rules are that "ind" must be greater than "threshold", and "ind" must be the smallest position in the list where we can find "val". 
-The goal is to check if "ind" is the correct position of "val" in the list, given the "threshold" starting point.

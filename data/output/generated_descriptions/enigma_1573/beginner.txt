@@ -1,5 +1,0 @@
-Enigma Number 1573 
-This problem is about finding two five-digit numbers that result from multiplying two three-digit numbers by two-digit numbers, where each letter represents a different digit. 
-The main variables are the letters S, A, T, M, O, N, U, and E, which represent different digits, and the numbers SAT, MON, SUNab, TUEcd, and MONTH, which are calculated using these digits. 
-The basic restrictions are that each letter must be a different digit, the first digit of each number cannot be zero, and the resulting five-digit numbers must be the product of the given multiplications. Additionally, the number MONTH must be divisible by 28, 30, and 31. 
-The goal of the problem is to find the total of the two five-digit products, SUNab and TUEcd.

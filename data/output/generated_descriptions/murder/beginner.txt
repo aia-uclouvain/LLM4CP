@@ -1,5 +1,0 @@
-Murder Puzzle
-The problem is about solving a murder mystery where someone was killed and there are several suspects, each with a different motive for the crime. 
-The main variables are the suspects (Miss Linda Ablaze, Mr. Tom Burner, Ms. Lana Curious, Mrs. Suzie Dulles, and Mr. Jack Evilson), the evidence objects (a pistol, an umbrella, a cigarette, a diary, and a threatening letter), the actions (arguing, leaving, ringing, walking, and murdering), and the motives (being harassed, abandoned, sacked, seeking promotion, and hate).
-The basic restrictions or rules are that each suspect has a unique motive, evidence object, and action, and that certain clues are known, such as the cigarette belonging to Mr. Burner and Mrs. Dulles walking past the house several times.
-The goal of the problem is to figure out who the murderer is, what their motive was, what evidence object they had, and what action they took, while satisfying all the given clues and restrictions.

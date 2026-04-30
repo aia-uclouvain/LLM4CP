@@ -1,5 +1,0 @@
-Same Modulo Problem
-The Same Modulo problem is about finding two sets of variables that have the same distribution of remainders when divided by a given modulus M. 
-The main decision variables are v1 and v2, which are arrays of variables representing the two sets of values. 
-The key constraints are that the number of variables in each set that have the same remainder when divided by M must be equal. This is achieved through the global_cardinality constraint, which ensures that the distribution of remainders is the same for both sets. 
-The problem's objective is to satisfy the same_modulo constraint, which means finding values for v1 and v2 such that the distribution of remainders when divided by M is the same for both sets. In other words, the problem is trying to find two sets of values that have the same "fingerprint" in terms of their remainders when divided by M.

@@ -1,5 +1,0 @@
-Fifty Puzzle
-The problem is about finding a way to get a total of 50 by selecting some numbers from a given list. 
-The main variables are the numbers in the list (3, 6, 9, 12, 15, 19, 21, 25, 27, 30) and a set of choices (x) that say whether to use each number or not. 
-The basic restrictions are that each number can only be used once, and the total must be exactly 50. 
-The goal is to minimize the number of choices, meaning to find the smallest set of numbers that add up to 50.

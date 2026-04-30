@@ -1,5 +1,0 @@
-The problem is called Mrs. Timpkin's Age problem. 
-It is about determining the current age of Mrs. Timpkin based on the information provided about her age and her husband's age at the time of their marriage and at present. 
-The main decision variables are T, representing Mr. Timpkin's current age, and W, representing Mrs. Timpkin's current age. 
-The key constraints are that eighteen years ago, Mr. Timpkin was three times as old as his wife, and now he is twice as old as she. 
-The problem's objective is not to minimize or maximize a specific value, but rather to find a solution that satisfies the given constraints, which will provide the current age of Mrs. Timpkin.

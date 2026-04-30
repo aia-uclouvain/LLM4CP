@@ -1,5 +1,0 @@
-Magic Sequence problem. 
-This problem is about finding a special sequence of numbers where each number in the sequence tells you how many times it appears in the sequence. 
-The main variables are the sequence of numbers, where each number represents how many times a particular number appears in the sequence.
-The basic restrictions are that each number in the sequence must be between 0 and the length of the sequence, and each number must appear in the sequence exactly as many times as its value says. Also, the total count of all numbers in the sequence must equal the length of the sequence, and the sum of the products of each number and its count must also equal the length of the sequence.
-The goal of the problem is to find a sequence that satisfies all these rules, which is known as a "magic sequence".

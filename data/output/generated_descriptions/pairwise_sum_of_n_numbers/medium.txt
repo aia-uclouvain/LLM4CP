@@ -1,5 +1,0 @@
-Pairwise Sum Problem
-The problem is about identifying individual numbers from their pairwise sums, given in non-decreasing order. 
-The main decision variables are the array `x`, which represents the individual numbers. 
-The key constraints are that each pairwise sum of the individual numbers must match the given input sums, and the individual numbers must be in non-increasing order. 
-The problem's objective is to find the individual numbers that satisfy these constraints, with no explicit minimization or maximization objective, but rather a satisfaction of the given conditions.

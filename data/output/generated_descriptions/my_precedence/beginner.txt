@@ -1,6 +1,0 @@
-The problem is called Precedence. 
-It's about following a specific order when using a set of items, like a list of numbers. 
-The main variables are an array of numbers, x, which represents the list of items. 
-The basic restrictions are that the list must follow a certain order, where the first time an item is used, it must be before the first time another item is used, if that item is "larger". 
-The goal is to find a list of numbers that satisfies this order, and also includes all the numbers from 1 to the largest number in the list. 
-In simpler terms, it's like making a list of numbers where you have to use the smaller numbers before the larger ones, and you have to use all the numbers.

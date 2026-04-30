@@ -1,5 +1,0 @@
-name: Primes in a Circle
-description: The problem requires placing the numbers 1 to 14 around a circle such that the sum and the positive difference of any two neighboring numbers are both prime numbers.
-variables: $x = [x_1, x_2, ..., x_{14}]$, where $x_i$ represents the number placed at the $i^{th}$ position in the circle, and is a decision variable that can take any value from 1 to 14.
-constraints: $x_i \neq x_j \forall i \neq j$, $x_i + x_{i+1} \in primes \forall i \in 1..13$, $|x_i - x_{i+1}| \in primes \forall i \in 1..13$, $x_{14} + x_1 \in primes$, $|x_{14} - x_1| \in primes$, $x_1 = 1$, where $primes$ is the set of prime numbers less than or equal to 23.
-objective: The problem is a satisfaction problem, where the objective is to find an assignment of values to the decision variables that satisfies all the constraints, rather than minimizing or maximizing a specific value.

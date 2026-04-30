@@ -1,7 +1,0 @@
-name: Young Tableaux Problem
-description: The Young Tableaux problem is a combinatorial problem that involves finding the number of ways to fill a Ferrers diagram with numbers from 1 to n in a standard way, such that each row and column is non-decreasing and each number appears exactly once.
-variables: $x_{i,j}, p_i$ 
-These are decision variables where $x_{i,j}$ represents the value in the $i^{th}$ row and $j^{th}$ column of the Ferrers diagram, and $p_i$ represents the length of the $i^{th}$ row in the partition structure.
-constraints: $\forall i \in 1..n: \sum_{j=1}^{n} (x_{i,j} = i) = 1$, $x_{1,1} = 1$, $\forall i \in 1..n: \forall j \in 2..n: x_{i,j} \geq x_{i,j-1}$, $\forall j \in 1..n: \forall i \in 2..n: x_{i,j} \geq x_{i-1,j}$, $\forall i \in 1..n: p_i = \sum_{j=1}^{n} (x_{i,j} \leq n)$, $\sum_{i=1}^{n} p_i = n$, $\forall i \in 2..n: p_{i-1} \geq p_i$, $x_{1,6} = 6$, $\exists j \in 1..n: x_{j,1} = 11 \wedge \forall k \in j+1..n: x_{k,1} = n+1$
-These constraints ensure that each number from 1 to n appears exactly once, the first element of the first row is 1, each row and column is non-decreasing, the partition structure is calculated correctly, the sum of the row lengths equals n, and each row is non-increasing in length.
-objective: The objective of this problem is to find a feasible solution that satisfies all the constraints, as the problem is a satisfaction problem and does not involve minimizing or maximizing a specific value.

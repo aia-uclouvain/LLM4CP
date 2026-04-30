@@ -1,5 +1,0 @@
-name: Ormat Game
-description: The Ormat game is a puzzle where the goal is to generate all possible overlays for a specific n x n grid, with the constraint that each row and column can only contain one mark. 
-variables: $overlays_{i,j}$, where $i,j \in \{1,2,...,n\}$, are decision variables representing whether there is a mark in the cell at row $i$ and column $j$.
-constraints: $\forall i \in \{1,2,...,n\}: \sum_{j=1}^{n} overlays_{i,j} = 1 \land \sum_{j=1}^{n} overlays_{j,i} = 1$, which ensure that each row and column contains exactly one mark.
-objective: The objective of the problem is to find a satisfying assignment of values to the decision variables, i.e., to generate all possible overlays that satisfy the given constraints, with no explicit minimization or maximization of any value.

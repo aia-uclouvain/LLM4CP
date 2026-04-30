@@ -1,5 +1,0 @@
-Seven11 Puzzle
-The Seven11 puzzle is a classic constraint programming problem that involves finding four numbers whose sum and product equal specific targets.
-The main decision variables in this problem are the array `x` of size 4, where each element `x[i]` represents a number between 0 and 711.
-The key constraints in this problem are: the sum of the four numbers must equal 711, the product of the four numbers must equal 711 * 100 * 100 * 100, and the numbers must be in increasing order to avoid duplicate solutions.
-The objective of the Seven11 puzzle is not to minimize or maximize a specific value, but rather to find a set of four numbers that satisfy the given constraints, which is a classic example of a satisfaction problem.

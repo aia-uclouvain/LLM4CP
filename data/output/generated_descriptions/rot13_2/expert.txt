@@ -1,8 +1,0 @@
-name: Rot 13 (Caesar cipher) problem
-description: The Rot 13 problem is a classic example of a Caesar cipher, a type of substitution cipher where each letter in the plaintext is 'shifted' a certain number of places down the alphabet. In this problem, the goal is to find the rotated string and the rotation number that satisfies the given constraints.
-variables: $rot, rotated_i$ for $i = 1..len$ 
-These are the decision variables in the problem, where $rot$ represents the rotation number and $rotated_i$ represents the $i^{th}$ character in the rotated string.
-constraints: $\forall i \in 1..len: (text_i + rot) \mod alpha\_len = 0 \rightarrow rotated_i = alpha\_len \wedge (text_i + rot) \mod alpha\_len > 0 \rightarrow rotated_i = (text_i + rot) \mod alpha\_len$ 
-These constraints ensure that each character in the input string is shifted by the rotation number, wrapping around to the end of the alphabet if necessary.
-objective: satisfy 
-The objective of the problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

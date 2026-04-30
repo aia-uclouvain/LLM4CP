@@ -1,9 +1,0 @@
-Name of the problem: Not All Equal
-
-This problem is about making sure that a group of things don't all have the same value. Imagine you have a bunch of boxes, and each box can be one of three colors: red, blue, or green. The problem wants to make sure that not all the boxes are the same color.
-
-The main variables are the colors of the boxes, which are represented by numbers (1, 2, or 3). These numbers stand for the different colors.
-
-The basic rules are that each box can only be one of the three colors, and there must be at least two different colors among all the boxes.
-
-The goal of the problem is to find a way to color the boxes so that they satisfy these rules. In other words, the problem wants to make sure that the boxes are colored in such a way that not all of them are the same color.

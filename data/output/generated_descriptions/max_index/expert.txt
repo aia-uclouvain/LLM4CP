@@ -1,5 +1,0 @@
-name: Maximum Index Problem
-description: The Maximum Index Problem is a constraint satisfaction problem that involves finding the index of the maximum value in a given array of variables, as well as the maximum value itself.
-variables: $n, variables_{1..n}, max\_ind, max\_val$ - These variables represent the size of the array ($n$), the array of decision variables ($variables_{1..n}$) which can take values from 1 to 7, the index of the maximum value ($max\_ind$) which ranges from 1 to $n$, and the maximum value ($max\_val$) which ranges from 1 to 7.
-constraints: $cp1d(variables, [3,2,7,2,6]), max\_index\_val(max\_ind, variables, max\_val)$ - The first constraint ($cp1d$) ensures that the array of decision variables $variables$ is equal to the given array $[3,2,7,2,6]$. The second constraint ($max\_index\_val$) ensures that $max\_ind$ is the index of the maximum value in the array $variables$ and $max\_val$ is the maximum value itself.
-objective: The objective of the problem is to satisfy the given constraints, which means finding the index and value of the maximum element in the array $variables$ that is equal to $[3,2,7,2,6]$.

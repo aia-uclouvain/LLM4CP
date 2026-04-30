@@ -1,8 +1,0 @@
-Post Office Problem
-The problem is about scheduling workers in a post office over a week, taking into account the varying demand for workers on different days and the costs associated with hiring workers on specific days.
-
-The main decision variables are represented by the array `x`, where `x[i]` denotes the number of workers starting on day `i`. This means that the value of `x[i]` determines how many workers are hired to work on day `i` and the subsequent days.
-
-The key constraints in this problem can be described as follows: the total number of workers available on each day must meet or exceed the demand for that day. Additionally, workers are not available to work on the two days immediately following their initial start day (e.g., a worker starting on Monday is not available to work on Saturday or Sunday of the same week). 
-
-The objective of this problem is to minimize the total cost `z`, which is calculated by multiplying the number of workers starting on each day by the cost of hiring workers on that day and summing these values. The cost of hiring workers varies by day, with higher costs for weekends and holidays.

@@ -1,8 +1,0 @@
-Factorial problem
-The problem is about calculating the factorial of a given number. In everyday terms, the factorial of a number is the result of multiplying all positive integers up to that number. For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
-
-The main variables are n and z. The variable n represents the number for which we want to calculate the factorial, and the variable z represents the result of the factorial calculation.
-
-The basic restrictions or rules of the problem are that the factorial of a number is calculated by multiplying all positive integers up to that number, starting from 1. For example, to calculate the factorial of 5, we start with 1, then multiply by 2, then by 3, then by 4, and finally by 5.
-
-The goal of the problem is to calculate the factorial of a given number n and store the result in the variable z. The problem does not aim to minimize or maximize anything, but rather to satisfy the constraint that z is equal to the factorial of n.

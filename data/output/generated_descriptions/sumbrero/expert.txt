@@ -1,8 +1,0 @@
-name: Sumbrero
-description: The Sumbrero problem is a classic constraint programming problem where we have a set of linear equations with integer coefficients and a set of variables that must be assigned integer values between 1 and 9. The problem is to find an assignment of values to the variables such that the linear equations are satisfied. Additionally, there is an option to require that all variables take distinct values.
-
-variables: $x_1, x_2, ..., x_{cols}$, where $x_i$ is a decision variable representing the value assigned to column $i$, and it must be an integer between 1 and 9.
-
-constraints: $\forall i \in 1..rows: \sum_{j=1}^{cols} x_j \cdot a_{i,j} = sums_i$ and optionally $\forall i, j \in 1..cols: x_i \neq x_j$, where the first constraint ensures that the linear equations are satisfied, and the second constraint ensures that all variables take distinct values if $use\_alldiff$ is true.
-
-objective: The objective of the problem is to find a satisfying assignment of values to the variables, there is no explicit objective function to minimize or maximize. The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints.

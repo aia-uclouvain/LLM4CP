@@ -1,9 +1,0 @@
-name: Drinking Game Problem
-
-description: The problem models a drinking game where a person must drink if the current time is divisible by 5 or 7 and they have not drunk in the last 8 minutes. The goal is to determine the drinking schedule for a given number of time slots.
-
-variables: $d_1, d_2, ..., d_n, l_1, l_2, ..., l_n, N$ where $d_i$ represents whether the person drinks at time $i$ (1 if drinking, 0 if not), $l_i$ represents the number of times the person has drunk in the last 8 minutes at time $i$, and $N$ represents the total number of drinks.
-
-constraints: $\forall t \in [1,n]: l_t = \sum_{i=max(t-8,1)}^{max(t-1,1)} d_i$, $\forall t \in [1,n]: (t \mod 5 = 0 \lor t \mod 7 = 0) \leftrightarrow (l_t = 0 \leftrightarrow d_t = 1)$, $N = \sum_{t=1}^{n} d_t$ where the first constraint calculates the number of drinks in the last 8 minutes, the second constraint enforces the drinking rule, and the third constraint calculates the total number of drinks.
-
-objective: The problem is a satisfaction problem, meaning that it aims to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value. However, the total number of drinks $N$ is calculated and output as part of the solution.

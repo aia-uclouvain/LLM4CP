@@ -1,5 +1,0 @@
-All Interval Series problem
-The problem is about finding a series of musical notes where each note occurs exactly once and the intervals between neighboring notes cover all possible intervals from a minor second to a major seventh.
-The main variables are the series of notes (x) and the differences between neighboring notes (diffs), where x is a permutation of the numbers 0 to n-1 and diffs is a permutation of the numbers 1 to n-1.
-The basic restrictions are that each note occurs exactly once, the differences between neighboring notes are all different, and the series starts with a note that is less than the last note.
-The goal of the problem is to find all possible series of notes that satisfy these conditions.

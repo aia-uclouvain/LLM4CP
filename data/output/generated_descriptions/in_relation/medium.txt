@@ -1,5 +1,0 @@
-The problem is called the "In Relation" problem. 
-It is about finding a tuple of values that exists within a given set of tuples. 
-The main decision variables are `v1`, an array of variables representing the tuple to be found, and `arr`, a 2D array of variables representing the set of tuples. 
-The key constraints are that `v1` must be equal to a specific tuple `[5,3,3]`, `arr` must be equal to a given set of tuples, and `v1` must be in relation with `arr`, meaning that the values of `v1` must match one of the tuples in `arr`. 
-The problem's objective is to satisfy these constraints, i.e., to find a solution where `v1` is indeed one of the tuples in `arr`.

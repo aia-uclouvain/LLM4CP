@@ -1,5 +1,0 @@
-Social Golfer Problem
-The Social Golfer problem is about arranging a group of people into smaller groups over a series of days, with the constraint that each pair of people can only appear together once. 
-The main decision variables in this problem are the sets of people assigned to each day, represented by the array `days`. Each `days[i]` represents the set of people invited to dinner on day `i`.
-The key constraints are: each day has exactly three people, all sets of people are different, and no two days have more than one person in common. 
-The objective of the problem is to find a satisfying arrangement, meaning one that meets all the constraints, rather than minimizing or maximizing a specific value. In other words, the goal is to determine whether it is possible to arrange the dinner invitations such that each pair of friends only comes together once over the 35 days.

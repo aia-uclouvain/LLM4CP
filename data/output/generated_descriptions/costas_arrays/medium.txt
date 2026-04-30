@@ -1,5 +1,0 @@
-Costas Array Problem
-The Costas Array problem is about arranging marks in a square array in such a way that the rows and columns where the marks are placed are unique, and the displacement vectors between all pairs of marks are distinct.
-The main decision variables are `x[i]`, which represent the row where the `i-th` mark is placed in the `i-th` column.
-The key constraints are that all marks must be placed in different rows and columns, and for any given distance between two marks, the vertical displacement between them must be unique. In simpler terms, if you consider any two marks, the difference in their vertical positions must be different from the difference in vertical positions of any other pair of marks.
-The objective of the problem is not explicitly stated as a minimization or maximization problem, but rather as a satisfaction problem, where the goal is to find an arrangement of marks that satisfies all the given constraints, effectively constructing a valid Costas array of a specified size `n`.

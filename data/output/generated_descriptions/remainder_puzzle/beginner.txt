@@ -1,5 +1,0 @@
-Remainder Puzzle
-The problem is about finding the smallest number that leaves specific remainders when divided by certain numbers. 
-The main variables are x (which represents the remainders) and n (the number we're trying to find). 
-The basic restrictions are that each remainder must be at least 1, and when n is divided by certain numbers (3, 4, 5, and 6), it leaves remainders of 1, 2, 3, and 4 respectively, but in a reversed way (i.e., n = 3x[1] + 1, n = 4x[2] + 2, etc.). 
-The goal is to minimize n, or in other words, find the smallest number that satisfies all these conditions.

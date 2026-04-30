@@ -1,5 +1,0 @@
-The problem is called Lexicographic Between.
-It is about determining if a given vector of integers falls within a specified lexicographic range defined by a lower bound vector and an upper bound vector.
-The main decision variables are the vectors `lower_bound`, `vector`, and `upper_bound`, which represent the lower limit, the vector to be checked, and the upper limit of the lexicographic range, respectively.
-The key constraints are that the `vector` must be lexicographically greater than or equal to `lower_bound` and lexicographically less than or equal to `upper_bound`, meaning that when comparing the vectors element-wise from left to right, `vector` must have elements that are greater than or equal to the corresponding elements in `lower_bound` and less than or equal to the corresponding elements in `upper_bound`.
-The problem's objective is to satisfy the lexicographic between constraint, which means finding a `vector` that meets the specified conditions, rather than minimizing or maximizing a specific value.

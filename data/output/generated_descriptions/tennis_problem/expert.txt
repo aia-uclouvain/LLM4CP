@@ -1,5 +1,0 @@
-name: Tennis Problem
-description: The problem describes a tennis match between Frank and George, where Frank wins 6 games to 3, and in 4 games, the server loses. The goal is to determine who served the first game.
-variables: $fs_1..fs_n, gs_1..gs_n, fw_1..fw_n, gw_1..gw_n$ - These are decision variables representing whether Frank serves ($fs$), George serves ($gs$), Frank wins ($fw$), and George wins ($gw$) for each of the $n$ games.
-constraints: $\forall j \in 1..n: fs_j = 1-gs_j \land fw_j = 1-gw_j$, $\forall j \in 2..n: gs_j = 1-gs_{j-1}$, $\sum_{j=1}^{n} fw_j = 6$, $\sum_{j=1}^{n} (fs_j \cdot gw_j + gs_j \cdot fw_j) = 4$ - These constraints ensure that for each game, either Frank or George serves, the winner is the opposite of the loser, the server alternates, Frank wins exactly 6 games, and the server loses exactly 4 games.
-objective: satisfy - The objective of this problem is to find a satisfying assignment of values to the decision variables, meaning a solution that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

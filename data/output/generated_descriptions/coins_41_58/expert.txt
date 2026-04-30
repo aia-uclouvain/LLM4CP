@@ -1,5 +1,0 @@
-name: Change Making Problem with Equal Coin Counts
-description: The problem is to find the minimum number of coins of different denominations that add up to a given amount, with the constraint that the number of coins of each denomination must be the same.
-variables: $x_1, x_2, ..., x_8$ - These variables represent the number of coins of each denomination, where $x_i$ is the number of coins with denomination $denom_i$ (1, 2, 5, 10, 20, 50, 100, 200 cents).
-constraints: $\sum_{i=1}^{8} x_i \cdot denom_i = 4158$, $x_i \geq 0$, $x_i \leq 4158$, $x_i = x_j \lor x_i = 0 \lor x_j = 0$ - These constraints ensure that the total value of the coins equals the given amount, each variable is non-negative and does not exceed the given amount, and for any two denominations, either the number of coins is the same or at least one of them is zero.
-objective: Minimize $num\_coins = \sum_{i=1}^{8} x_i$ - The objective is to minimize the total number of coins used to make the change.

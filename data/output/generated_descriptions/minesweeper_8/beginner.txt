@@ -1,5 +1,0 @@
-Minesweeper problem
-The problem is about a game where you have to figure out where mines are hidden in a grid. 
-The main variables are the grid cells, which can either have a mine or a number showing how many mines are nearby.
-The basic restrictions are that each cell can only have one thing in it (either a mine or a number), and the numbers in the cells must be correct according to the rules of the game. 
-The goal of the problem is to correctly fill in the entire grid, figuring out where all the mines are and what numbers should be in the other cells.

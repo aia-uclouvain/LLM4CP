@@ -1,5 +1,0 @@
-The problem is called the Prime Looking problem. 
-It is about finding numbers that are composite, meaning they have more than two distinct positive divisors, but are not divisible by 2, 3, or 5. 
-The main decision variables are x, d1, and d2, where x represents a prime-looking number, and d1 and d2 are its divisors, with d1 being less than or equal to d2. 
-The key constraints are that x must be the product of d1 and d2, and x must not be divisible by 2, 3, or 5. 
-The problem's objective is to find a prime-looking number, and the model uses a satisfiability solver to find such a number, with the search strategy focused on finding a solution that satisfies the given constraints, rather than minimizing or maximizing a specific objective function.

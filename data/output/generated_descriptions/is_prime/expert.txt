@@ -1,5 +1,0 @@
-name: Prime Number Identification Problem
-description: The problem is to identify all prime numbers within a given range, in this case, from 1 to 100. A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. The model aims to find the set of all prime numbers within the specified range and count how many there are.
-variables: $x$ is not used in this model, instead, we have $primes$ and $num\_primes$, where $primes$ is a set variable representing the set of all prime numbers in the range, and $num\_primes$ is an integer variable representing the number of prime numbers in the set. 
-constraints: $i \in primes \leftrightarrow is\_prime(i)$ for $i \in 1..n$, where $is\_prime(i)$ is a predicate that checks if $i$ is a prime number, and $num\_primes = |primes|$. These constraints ensure that the set $primes$ contains all and only the prime numbers in the range, and $num\_primes$ is the correct count of prime numbers.
-objective: The objective of the problem is to satisfy all the constraints, i.e., to find a set of prime numbers and its size, there is no explicit objective function to minimize or maximize.

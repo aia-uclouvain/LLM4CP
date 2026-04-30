@@ -1,5 +1,0 @@
-The name of the problem is the Sangraal problem. 
-This problem is about rescuing knights from a castle before the sun sets and the Sangraal arrives. 
-The main variables are the time it takes to free each knight, the time each knight needs to prepare, the start and end times for each knight, and which knights are rescued. 
-The basic restrictions are that each knight must be freed and prepared before the sun sets, and the time it takes to free and prepare each knight is different. 
-The goal of the problem is to maximize the number of knights that can be rescued before the sun sets, which is 20 minutes.

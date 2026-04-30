@@ -1,5 +1,0 @@
-name: Nonogram
-description: A Nonogram is a puzzle where a picture is represented by a grid of cells, and the goal is to fill in the cells according to given rules. The rules are specified by a set of row and column constraints, where each constraint is a sequence of block lengths that must appear in the corresponding row or column. The task is to find a valid filling of the grid that satisfies all the row and column constraints.
-variables: $x_{i,j}$, where $i \in 1..rows$ and $j \in 1..cols$. These variables represent the state of each cell in the grid, where $x_{i,j} = 1$ indicates a filled cell and $x_{i,j} = 2$ indicates an empty cell.
-constraints: $\forall j \in 1..cols: make\_automaton([x_{i,j} | i \in 1..rows], [col\_rules_{j,k} | k \in 1..col\_rule\_len]) \wedge \forall i \in 1..rows: make\_automaton([x_{i,j} | j \in 1..cols], [row\_rules_{i,k} | k \in 1..row\_rule\_len])$. These constraints ensure that each row and column satisfies the corresponding rules, as defined by the $make\_automaton$ predicate.
-objective: satisfy

@@ -1,9 +1,0 @@
-name: Secret Santa problem
-description: The Secret Santa problem is a classic problem in constraint programming where a group of people are divided into families and each person is assigned a Secret Santa, who is responsible for giving them gifts. The problem requires that no person is their own Secret Santa, and no person is assigned a Secret Santa from the same family.
-variables: $x = [x_1, x_2, ..., x_n]$, where $x_i$ is a decision variable representing the Secret Santa assigned to person $i$. These variables are used to determine the Secret Santa for each person in the group.
-constraints: $\begin{aligned} 
-& all\_different(x) \\
-& \forall i \in \{1, 2, ..., n\}: x_i \neq i \\
-& \forall i \in \{1, 2, ..., n\}: family_i \neq family_{x_i} 
-\end{aligned}$, where the first constraint ensures that each person is assigned a unique Secret Santa, the second constraint ensures that no person is their own Secret Santa, and the third constraint ensures that no person is assigned a Secret Santa from the same family.
-objective: The objective of the problem is to find a satisfying assignment of Secret Santas, which means finding a solution that satisfies all the constraints. The problem does not have a specific objective function to minimize or maximize, but rather aims to find a feasible solution that meets all the requirements.

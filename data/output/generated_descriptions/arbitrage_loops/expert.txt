@@ -1,5 +1,0 @@
-name: Arbitrage Loop Detection Problem
-description: The problem involves detecting arbitrage loops in a currency exchange market, where an arbitrage loop is a sequence of currency exchanges that results in a profit. The goal is to find a sequence of exchanges that maximizes the profit, given the exchange rates between different currencies.
-variables: $y_{1..m+1} \in \{0, 1, ..., n\}, profit_{1..m} \in \mathbb{R}, z \in \mathbb{R}$, where $y_i$ represents the currency to use at each step, $profit_i$ represents the exchange rate at each step, and $z$ represents the total profit.
-constraints: $z \geq 0, \forall i \in \{1, ..., m\} (y_i \neq y_j \forall j \neq i), y_1 = y_{m+1}, \forall i \in \{1, ..., m\} (profit_i = currencies_{y_i, y_{i+1}}), z = \prod_{i=1}^{m} profit_i$, where the first constraint ensures non-negativity of the profit, the second constraint ensures that all currencies in the loop are distinct, the third constraint ensures that the loop starts and ends with the same currency, the fourth constraint sets the exchange rate at each step, and the fifth constraint calculates the total profit.
-objective: Maximize $z$, the total profit.

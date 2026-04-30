@@ -1,5 +1,0 @@
-Progressive Party Problem
-The problem is about organizing a party where several guest boats visit a set of host boats over multiple periods. 
-The main variables are the host boats and the schedule of visits by the guest boats. 
-The basic restrictions are that each host boat has a limited capacity, each guest boat can only visit a host boat once, and two guest boats cannot meet at the same host boat more than once. 
-The goal is to minimize the number of host boats needed to accommodate all the guest boats while satisfying these restrictions.

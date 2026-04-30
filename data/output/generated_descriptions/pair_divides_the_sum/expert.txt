@@ -1,5 +1,0 @@
-name: Pairs Divides the Sum Puzzle
-description: The problem is to find a set of distinct positive integers such that for every pair of them, their difference divides their sum. The goal is to find multiple sets of such integers, with varying sizes (e.g., sets of four, five, six distinct positive integers).
-variables: $x = (x_1, x_2, ..., x_n)$, $z$ where $x$ is an array of decision variables representing the set of distinct positive integers, and $z$ is a decision variable representing the sum of the integers in the set. $n$ is a parameter representing the size of the set.
-constraints: $x_i \neq x_j \forall i \neq j$, $x_i < x_{i+1} \forall i$, $z = \sum_{i=1}^{n} x_i$, $z \mod n = 0$, $z \mod |x_i - x_j| = 0 \forall i < j$ where these constraints ensure that all integers in the set are distinct, ordered, their sum is a multiple of the set size, and the difference between any two integers divides their sum.
-objective: The problem is a satisfaction problem, meaning that the objective is to find a set of values for the decision variables that satisfy all the constraints, rather than minimizing or maximizing a specific value.

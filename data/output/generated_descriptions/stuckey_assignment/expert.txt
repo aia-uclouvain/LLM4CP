@@ -1,5 +1,0 @@
-name: Assignment Problem
-description: The Assignment Problem is a classic problem in combinatorial optimization and computer science. It involves finding the optimal way to assign a set of workers to a set of tasks, such that each worker is assigned to exactly one task and each task is assigned to exactly one worker, in order to maximize the total profit or efficiency.
-variables: $x_{i,j}$, where $x_{i,j}$ is a binary decision variable that equals 1 if worker $i$ is assigned to task $j$, and 0 otherwise. These variables represent the assignment of workers to tasks.
-constraints: $\sum_{j=1}^{n} x_{i,j} = 1 \forall i$, $\sum_{i=1}^{m} x_{i,j} = 1 \forall j$, $x_{i,j} \in \{0,1\}$, where $n$ is the number of tasks and $m$ is the number of workers. These constraints ensure that each worker is assigned to exactly one task and each task is assigned to exactly one worker.
-objective: Maximize $\sum_{i=1}^{m} \sum_{j=1}^{n} x_{i,j} \cdot profit_{i,j}$, where $profit_{i,j}$ is the profit obtained by assigning worker $i$ to task $j$. The objective is to find the assignment of workers to tasks that maximizes the total profit.

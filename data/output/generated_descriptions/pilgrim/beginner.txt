@@ -1,5 +1,0 @@
-The Riddle of the Pilgrims 
-This problem is about finding the arrangement of pilgrims in a building with two floors and a specific layout. 
-The main variables are the number of pilgrims in each room, which is represented by the variable x. This variable has several parts: the solution number (1 or 2), the floor number (1 or 2), the row number (1, 2, or 3), and the column number (1, 2, or 3). 
-The basic restrictions are: each room can have at least 1 and at most 3 pilgrims, the central cells have no pilgrims, the first and third rows have 11 pilgrims, the first and third columns have 11 pilgrims, and the second floor has twice as many pilgrims as the first floor. Also, the difference between the total number of pilgrims in the two solutions is 3. 
-The goal of the problem is to find an arrangement of pilgrims that satisfies all these restrictions.

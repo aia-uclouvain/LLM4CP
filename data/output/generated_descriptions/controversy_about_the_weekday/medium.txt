@@ -1,5 +1,0 @@
-The problem is called the "Controversy about the weekday" problem. 
-It is about seven friends who disagree on which day of the week it is, with each friend making a statement about the current day. 
-The main decision variables are "today" which represents the current day of the week, and "truth" which is an array representing the truthfulness of each friend's statement. 
-The key constraints are that each friend's statement must be either true or false, and only one friend's statement can be true. For example, Klaus says it is Tuesday, so if it is indeed Tuesday, then Klaus's statement is true, and if it is not Tuesday, then his statement is false. Similarly, Sophia says it is not Sunday, so if it is not Sunday, then her statement is true, and if it is Sunday, then her statement is false. 
-The objective of the problem is to determine the day of the week when the friends met, given that only one friend's statement is correct. The problem is solved by finding the day of the week that satisfies all the constraints, which is Saturday.

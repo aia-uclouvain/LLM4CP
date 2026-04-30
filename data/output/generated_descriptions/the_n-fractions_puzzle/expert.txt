@@ -1,5 +1,0 @@
-name: Fractions Problem
-description: The problem is to find distinct non-zero digits such that the following equation holds: A/B*C + D/E*F + G/H*I = 1, where A, B, C, D, E, F, G, H, and I are the digits.
-variables: A, B, C, D, E, F, G, H, I, D1, D2, D3, where A, B, C, D, E, F, G, H, and I are the digits to be assigned, and D1, D2, and D3 are intermediate variables representing the denominators of the fractions, which are calculated as 10*B+C, 10*E+F, and 10*H+I, respectively.
-constraints: all_different(Vars) ∧ D1 = 10*B+C ∧ D2 = 10*E+F ∧ D3 = 10*H+I ∧ A*D2*D3 + D*D1*D3 + G*D1*D2 = D1*D2*D3 ∧ A*D2 ≥ D*D1 ∧ D*D3 ≥ G*D2 ∧ 3*A ≥ D1 ∧ 3*G ≤ D2, which represent the constraints that all digits must be distinct, the denominators must be calculated correctly, the equation must hold, and the symmetry must be broken.
-objective: satisfy, the objective is to find a solution that satisfies all the constraints, there is no specific value to minimize or maximize.

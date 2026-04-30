@@ -1,5 +1,0 @@
-The Monkey and the Coconuts problem. 
-This problem is about finding the original number of coconuts in a pile, given that a sequence of men take turns removing a portion of the coconuts, with some coconuts being given to a monkey at each step. 
-The main decision variables are `left` and `removed`, where `left[i]` represents the number of coconuts remaining after the `i-th` man has taken his portion, and `removed[i]` represents the number of coconuts taken by the `i-th` man. 
-The key constraints are that each man takes one-nth of the remaining coconuts, leaving one coconut that is given to the monkey, and that the remaining coconuts are divided evenly among the men at the end, with any leftover coconuts being given to the monkey. 
-The problem's objective is to find the smallest original number of coconuts, `left[0]`, that satisfies these constraints, given a specified number of men `n`.

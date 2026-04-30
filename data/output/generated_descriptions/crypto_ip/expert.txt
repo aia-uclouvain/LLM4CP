@@ -1,8 +1,0 @@
-name: Crypto Problem
-description: The Crypto problem is a classic constraint programming problem where the numbers from 1 to 26 are assigned to the letters of the alphabet. The goal is to find the value of each letter under a set of equations, where each equation represents the total value of the letters in a given word.
-variables: $x_{i,j}, letters\_res_i$ 
-These are decision variables where $x_{i,j}$ is a binary variable that equals 1 if letter $i$ is assigned value $j$, and $letters\_res_i$ is the resulting value assigned to letter $i$.
-constraints: $\sum_{j \in values} x_{i,j} = 1, \sum_{i \in letters} x_{i,j} = 1, sum\_letters(word, total)$ for each word, $letters\_res_i = \sum_{j \in values} j \* x_{i,j}$
-These constraints ensure that each letter is assigned exactly one value, each value is assigned to exactly one letter, the total value of the letters in each word equals the given total, and the resulting value assigned to each letter is calculated correctly.
-objective: satisfy 
-The objective of the problem is to find a satisfying assignment of values to letters that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

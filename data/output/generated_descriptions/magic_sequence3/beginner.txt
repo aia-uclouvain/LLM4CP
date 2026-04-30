@@ -1,5 +1,0 @@
-Magic Sequence problem. 
-This problem is about finding a special sequence of numbers where each number in the sequence tells you how many times it appears in the sequence. 
-The main variables are the sequence of numbers, which is like a list of boxes where each box can hold a number from 0 to the length of the sequence minus 1. 
-The basic restrictions are that each number in the sequence must match how many times it actually appears, and the total count of all numbers must equal the length of the sequence, and the sum of the product of each number and its count must also equal the length of the sequence. 
-The goal is to find a sequence that satisfies these rules, and the problem doesn't aim to minimize or maximize anything, it just wants to find a sequence that works.

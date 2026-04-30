@@ -1,5 +1,0 @@
-Powerset Problem
-The Powerset problem is about generating all possible subsets of a given set of integers, which in this case is the set of integers from 0 to n-1.
-The main decision variables in this problem are the sets ps, which represent the powerset of the set s. Each element of ps is a subset of s, and the index of the element in ps corresponds to a specific subset.
-The key constraints in this problem are that each subset in ps is generated based on the binary representation of the index. For each index k in ss, the subset ps[k] includes the element i from s if the i-th bit of the binary representation of k is 1. This is achieved through the expression (k div pow(2,i)) mod 2 = 1, which checks if the i-th bit of k is 1.
-The objective of this problem is not to minimize or maximize a specific value, but rather to generate and output all possible subsets of the given set s. The solve satisfy statement in the model indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

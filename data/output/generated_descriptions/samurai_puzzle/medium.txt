@@ -1,5 +1,0 @@
-Samurai Puzzle
-The Samurai puzzle is a classic constraint programming problem that involves finding a solution to a Sudoku-like puzzle with additional constraints. 
-The main decision variables in this problem are `x` and `y`, where `x` is an array of variables representing the row in which a digit appears in each column, and `y` is a 2D array of variables representing the presence or absence of a digit in each cell.
-The key constraints in this problem are: each row and column can contain each digit only once, each sub-square (of size `m` by `m`) can contain each digit only once, and the channeling constraint that links `x` and `y`. 
-The objective of the Samurai puzzle is to find a solution that satisfies all the constraints, which is a satisfaction problem rather than an optimization problem, meaning that the goal is to find a feasible solution that meets all the requirements rather than to minimize or maximize a particular objective function.

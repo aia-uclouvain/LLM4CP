@@ -1,8 +1,0 @@
-Multi Sudoku
-The Multi Sudoku problem is a variant of the classic Sudoku puzzle, where multiple Sudoku boards overlap, and the goal is to find a solution that satisfies the rules of each individual board, as well as the overlap between them.
-
-The main decision variables in this problem are two 9x9 matrices, `s1` and `s2`, where each cell in the matrix represents a variable that can take on a value from 1 to 9. These variables represent the numbers that will be placed in each cell of the Sudoku boards.
-
-The key constraints in this problem can be described as follows: each row, column, and 3x3 sub-grid in each Sudoku board must contain the numbers 1-9 without repetition. Additionally, the overlap between the two boards must be consistent, meaning that the cells in the overlap region must have the same value in both boards.
-
-The objective of the problem is to find a solution that satisfies all the constraints, which is a feasible solution. In other words, the goal is to find values for the variables `s1` and `s2` that make both Sudoku boards valid, while also ensuring that the overlap between them is consistent. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a solution that satisfies all the given constraints.

@@ -1,6 +1,0 @@
-The problem is called "Choose your crew". 
-It's about hiring the right crew members for a sea voyage, where each member has different skills in fishing, sailing, and navigation, and demands a certain salary. 
-The main variables are the crew members, their skills in fishing, sailing, and navigation, and their salaries. 
-In simple terms, the crew members are like workers, and their skills are like how good they are at certain jobs. 
-The basic restrictions are that the total skills of the chosen crew members must be at least 15 in each of the three skill categories. 
-The goal is to minimize the total cost of the crew, which means finding the cheapest combination of crew members that still meets the required skill levels.

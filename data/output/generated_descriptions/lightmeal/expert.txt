@@ -1,5 +1,0 @@
-name: Lightmeal Problem
-description: The Lightmeal problem is a classic constraint programming problem that involves finding all possible combinations of appetizer, main meal, and dessert that have a total calorific value not exceeding 10, given a set of predefined dishes with their respective calorific values.
-variables: $a \in \{1, 2\}, m \in \{0, 3, 4, 5, 6\}, f \in \{0, 5, 6\}, d \in \{7, 8\}, sc \in \{0, ..., 40\}$ where $a$ represents the appetizer, $m$ represents the main meal (meat), $f$ represents the main meal (fish), $d$ represents the dessert, and $sc$ represents the total sum of calories.
-constraints: $a \in \{1, 2\} \wedge d \in \{7, 8\} \wedge (m = 0 \vee f = 0) \wedge (m \neq 0 \rightarrow f = 0) \wedge (f \neq 0 \rightarrow m = 0) \wedge sc = c_a + c_m + c_d \wedge sc \leq 10$ where $c_a$, $c_m$, and $c_d$ represent the calorific values of the appetizer, main meal, and dessert respectively.
-objective: The objective of the problem is to find all combinations of appetizer, main meal, and dessert that satisfy the given constraints, with no explicit objective function to minimize or maximize, but rather to enumerate all feasible solutions.

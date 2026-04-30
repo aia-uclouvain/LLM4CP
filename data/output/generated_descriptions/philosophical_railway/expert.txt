@@ -1,9 +1,0 @@
-name: Muddle Management problem (also known as Philosophical Railway problem)
-
-description: The problem involves five railway employees - James, Kant, Locke, Mill, and Nietzsche - who have different occupations: driver, guard, porter, signalman, and stationmaster. Each employee makes two statements, one true and one false, about the occupations of themselves and others. The goal is to determine the occupation of each employee based on these statements.
-
-variables: $James, Kant, Locke, Mill, Nietzsche$ - These are decision variables representing the occupations of the five employees, where each variable can take a value from 1 to 5, corresponding to the occupations: driver, guard, porter, signalman, and stationmaster. They represent the job assignments of each philosopher.
-
-constraints: $all\_different(philosophers)$, $bool2int(Nietzsche = stationmaster) + bool2int(James = guard \/ James = porter) = 1$, $bool2int(Kant != signalman /\ Nietzsche != signalman) + bool2int(Mill != stationmaster) = 1$, $bool2int(not(James = guard \/ James = porter)) + bool2int(Kant != signalman /\ Nietzsche != signalman) = 1$, $bool2int(James = porter \/ Nietzsche = porter) + bool2int(Locke != guard /\ Mill != guard) = 1$, $bool2int(James != signalman) + bool2int(not(Locke != guard /\ Mill != guard)) = 1$ - These constraints represent the statements made by each employee and the requirement that each occupation is assigned to exactly one employee. The constraints ensure that the statements are consistent and that each employee has a unique occupation.
-
-objective: The objective of the problem is to find a satisfying assignment of occupations to employees, such that all constraints are satisfied. The problem does not involve minimizing or maximizing a specific value, but rather finding a feasible solution that satisfies all the given constraints.

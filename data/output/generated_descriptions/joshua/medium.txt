@@ -1,5 +1,0 @@
-The problem is called "Joshua and his rats puzzle". 
-It is about arranging a sequence of numbers for nine rats, where each number represents the number of days it takes for a rat to reach a certain point, with specific constraints on the differences between the numbers. 
-The main decision variables are `x`, an array representing the number of days for each rat, and `d`, a 3D array of binary variables used to model the constraints. 
-The key constraints are that the number of days for each rat must be at least one more than the previous rat, and that for any three rats, the difference between the number of days for the first and second rat, plus the difference between the number of days for the second and third rat, must be between 1 and 18 (inclusive), with the `d` variables helping to enforce this constraint. 
-The objective of the problem is to minimize the total number of days, `tot`, which is the sum of the number of days for all rats.

@@ -1,5 +1,0 @@
-Divisors Ending in 0 to 9 Puzzle
-The problem is about finding the smallest integer that has divisors ending in each of the digits 0 through 9.
-The main decision variable is `n`, which represents the integer to be found.
-The key constraints are that for each digit `i` from 0 to 9, there must exist at least one divisor `d` of `n` such that `d` ends in `i`. This means that `n` must be divisible by a number that ends in each of the digits 0 through 9.
-The objective of the problem is to minimize the value of `n`, i.e., to find the smallest integer that satisfies the constraints.

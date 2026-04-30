@@ -1,5 +1,0 @@
-The name of the problem is Age-changing. 
-This problem is about finding two ages, the age of a person and their husband's age, such that when four specific mathematical operations are applied to the person's age in a certain order, the result is the husband's age, and when the same operations are applied to the husband's age in a different order, the result is the person's age. 
-The main decision variables are m, representing the person's age, and h, representing the husband's age, as well as perm1 and perm2, which represent the two different orders in which the operations are applied. 
-The key constraints are that the four operations (+2, /8, -3, *7) must be applied in two different orders, and the results of these operations must yield the husband's age when starting with the person's age and vice versa. Additionally, the person's age and the husband's age must be within a reasonable range (16 to 120 years). 
-The problem's objective is to find the two ages that satisfy these conditions, with no explicit minimization or maximization goal, but rather a satisfaction of the given constraints.

@@ -1,5 +1,0 @@
-name: Word Design for DNA Computing on Surfaces
-description: The problem involves designing a set of DNA words, each consisting of 8 symbols from the set {A, C, G, T}, such that each word has exactly 4 symbols from {C, G}, each pair of words differs in at least 4 positions, and the reverse of each word and the Watson-Crick complement of every other word differ in at least 4 positions.
-variables: $x_{i,k}, y_{i,k}$ where $i \in [1,n]$ and $k \in [1,8]$, $x_{i,k}$ represents the kth letter of the ith word and $y_{i,k}$ represents the kth letter of the Watson-Crick complement of the ith word. 
-constraints: $x_{i,k} + y_{i,k} = 3$, $x_{i,k} \in \{0, 1, 2, 3\}$, $\sum_{k=1}^{8} (x_{i,k} \neq x_{j,k}) \geq 4$, $\sum_{k=1}^{8} (x_{i,9-k} \neq y_{j,k}) \geq 4$, $x_{i} \in words$ where $words$ is a given set of words.
-objective: maximize $n$

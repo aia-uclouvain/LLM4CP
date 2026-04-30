@@ -1,9 +1,0 @@
-name: Arithmetic Ring problem
-
-description: The problem involves arranging the digits 1 to 8 in a ring such that no two adjacent numbers are consecutive, with the exception of 6 and 7, which must be adjacent.
-
-variables: $x = [x_1, x_2, ..., x_8]$, where $x_i$ represents the digit placed at position $i$ in the ring, and is a decision variable that can take any value from 1 to 8.
-
-constraints: $alldifferent(x)$, $check(x_{i-1}, x_i)$ for $i = 2 to 8$, $check(x_8, x_1)$, $(x_i = 6 \land x_{i+1} = 7) \lor (x_i = 7 \land x_{i+1} = 6)$ for $i = 2 to 7$, $x_1 = 1$, where $alldifferent(x)$ ensures all digits are used exactly once, $check(x_{i-1}, x_i)$ ensures that no two adjacent numbers are consecutive (except for 6 and 7), $check(x_8, x_1)$ ensures the same condition around the corner of the ring, and the last two constraints ensure 6 and 7 are adjacent and the ring starts with 1, respectively.
-
-objective: The objective of the problem is to find a satisfying assignment, i.e., to solve the problem as a satisfaction problem, where the goal is to find an arrangement of digits that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

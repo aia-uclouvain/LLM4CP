@@ -1,5 +1,0 @@
-Alien Tiles problem. 
-This problem is about finding the best way to color a grid of tiles using the fewest number of clicks, with the rule that each click changes the color of a tile and the tiles above, below, to the left, and to the right of it. 
-The main variables are the size of the grid, the number of colors, and a matrix representing which color each tile should be after a certain number of clicks. 
-The basic restrictions are that each tile can only be one color at a time, and the color of a tile is determined by the number of clicks that affect it, with the color changing each time the number of clicks increases by the number of colors. 
-The goal is to find the way of coloring the grid that uses the most clicks, but with the condition that there is no other way to achieve the same coloring using fewer clicks.

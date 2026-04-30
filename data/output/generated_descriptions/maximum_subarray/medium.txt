@@ -1,8 +1,0 @@
-Maximum Subarray Problem
-The Maximum Subarray Problem is a classic problem in computer science and mathematics that involves finding a contiguous subarray within a one-dimensional array of numbers that has the largest sum.
-
-The main decision variables in this problem are the start and end indices of the subarray (represented by `from` and `to` in the Minizinc model), and the sum of the elements in the subarray (represented by `tot_sum`). The array `ans` represents the subarray with the maximum sum, and `from_answer` and `to_answer` represent the start and end indices of this subarray.
-
-The key constraints in this problem can be described as follows: the subarray must be a contiguous subset of the original array, and the sum of its elements must be maximized. If all elements in the array are negative, the problem allows for an empty subarray, which has a sum of 0. The constraints also ensure that the `ans` array contains the elements of the subarray with the maximum sum, and that `from_answer` and `to_answer` contain the correct start and end indices of this subarray.
-
-The objective of the Maximum Subarray Problem is to maximize the sum of the elements in the subarray, represented by `tot_sum`. The problem is solved by finding the start and end indices of the subarray that result in the largest sum, and returning this sum along with the subarray itself. If the maximum sum is negative, the problem returns an empty subarray.

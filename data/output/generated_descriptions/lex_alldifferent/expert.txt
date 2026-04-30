@@ -1,5 +1,0 @@
-name: Lexicographic Alldifferent Problem
-description: The Lexicographic Alldifferent Problem is a constraint satisfaction problem where the goal is to find an assignment of values to a set of vectors such that all vectors are lexicographically distinct, meaning that for any two vectors, there exists a position where the values are different.
-variables: $x_{i,j}$ where $i \in [1,m]$ and $j \in [1,n]$, which represent the values of the vectors, where $x_{i,j}$ is the $j^{th}$ component of the $i^{th}$ vector.
-constraints: $cp2d(x, y)$ and $lex\_alldifferent(x)$, where $cp2d(x, y)$ ensures that the values of $x$ and $y$ are identical, and $lex\_alldifferent(x)$ ensures that all vectors in $x$ are lexicographically distinct.
-objective: The objective of the problem is to find a satisfying assignment, as indicated by the `solve satisfy` statement, meaning that the goal is to find values for the vectors that satisfy all the constraints, rather than minimizing or maximizing a specific value.

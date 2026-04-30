@@ -1,5 +1,0 @@
-Archery Puzzle
-The problem is about an archer trying to score as close to 100 points as possible by shooting arrows at targets with different point values.
-The main variables are the targets (the point values of the targets), x (the number of arrows shot at each target), and z (the total score).
-The basic restrictions are that the archer can shoot any number of arrows (up to 10) at each target, and the total score is the sum of the points from each target multiplied by the number of arrows shot at that target.
-The goal is to minimize the difference between the total score and 100, meaning the archer wants to get as close to 100 points as possible without going over.

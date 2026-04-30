@@ -1,5 +1,0 @@
-Public School Problem
-The Public School Problem is about finding a set of integer values that satisfy a system of linear equations while minimizing one of the variables. 
-The main decision variables are x[1] to x[5], which represent unknown integer values, and m, which is a variable that sets a lower bound for all x values.
-The key constraints are: all x values must be greater than or equal to m and less than or equal to 1000, and four linear equations that relate the x values to each other. These equations can be described as: x[1] is related to x[5], the sum of x[4] and x[5] equals the sum of x[2] and x[3] plus 14, the sum of x[2] and x[5] equals half the sum of all x values minus 2, and the sum of x[3] and x[4] equals 13/32 times the sum of all x values.
-The objective of the problem is to minimize the value of x[1], which means finding the smallest possible value for x[1] while still satisfying all the constraints.

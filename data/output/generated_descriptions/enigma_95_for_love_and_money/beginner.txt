@@ -1,8 +1,0 @@
-The problem is called Enigma 95: For Love and Money. 
-It's about a woman named Amanda who wants to choose the perfect man from seven suitors. 
-She gives each man a score out of 50 for how much she loves him and how much money he earns, and then adds these scores together. 
-The main variables are the love scores, the money scores, and the total scores for each man. 
-In simple terms, the love score means how much Amanda loves a man, the money score means how much money he earns, and the total score is the sum of these two. 
-The basic restrictions are that no two men can have the same love score, money score, or total score, and when the total scores are added up, the men must be in alphabetical order. 
-Additionally, some specific information is given about each man, such as Aloysius being 4th for both love and money, and Bertrand having a total score of 40. 
-The goal of the problem is to figure out the love, money, and total scores for each of the seven men.

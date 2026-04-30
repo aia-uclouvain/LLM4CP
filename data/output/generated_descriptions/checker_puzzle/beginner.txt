@@ -1,5 +1,0 @@
-Checker puzzle
-The problem is about placing checkers on a square board with some rules. 
-The main variables are the positions of the checkers on the board, which is represented by a grid of squares, and the number of checkers in each row.
-The basic restrictions are that each column can only have one checker, and the first few rows cannot have a certain number of checkers. 
-The goal is to count the number of ways to place the checkers on the board while following these rules.

@@ -1,8 +1,0 @@
-The problem is called "Among Interval". 
-It's about checking how many values in a list are within a certain range. 
-The main variables are: 
-- x, which is a list of numbers, 
-- nvar, which counts how many numbers in the list are within the range, 
-- low and up, which define the range (from low to up). 
-The basic restrictions are that the numbers in the list must be between 1 and 8, and the range is from 3 to 5. 
-The goal is to find out how many numbers in the list are within this range (3 to 5) and to make sure this count is correct.

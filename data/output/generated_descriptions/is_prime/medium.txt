@@ -1,5 +1,0 @@
-Prime Number Identification Problem
-The problem is about identifying all prime numbers within a given range of integers from 1 to n, where n is a predefined limit.
-The main decision variable is a set of integers `primes` representing the prime numbers within the given range, and an integer `num_primes` representing the total count of prime numbers found.
-The key constraints are that a number is considered prime if it is greater than 1 and has no divisors other than 1 and itself, which is enforced by the `is_prime` predicate. This predicate checks each number up to the square root of the potential prime to ensure it has no divisors. The model also ensures that the `primes` set only includes numbers that satisfy the `is_prime` condition.
-The problem's objective is not to minimize or maximize a specific value, but rather to find a solution that satisfies all the constraints, which is achieved by using the `solve satisfy` statement. The goal is to identify all prime numbers within the given range and count them, which is then output as `primes` and `num_primes`.

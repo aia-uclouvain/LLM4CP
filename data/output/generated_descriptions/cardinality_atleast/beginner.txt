@@ -1,8 +1,0 @@
-The problem is called Cardinality Atleast. 
-It's about making sure that certain numbers appear at least a minimum number of times in a list. 
-The main variables are: 
-- "variables" which is a list of numbers that we're looking at, 
-- "values" which is a list of specific numbers that we care about, 
-- "nvar" which is the minimum number of times that each of the "values" should appear in the "variables" list. 
-The basic rules are that each number in "variables" has to be between 1 and 8, and each number in "values" also has to be between 1 and 8. 
-The goal is to find a list of "variables" and a list of "values" where each number in "values" appears at least "nvar" times in "variables", and to make sure that this is possible when "nvar" is 1 and the specific lists are given.

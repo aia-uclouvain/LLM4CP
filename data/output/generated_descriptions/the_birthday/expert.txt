@@ -1,5 +1,0 @@
-name: The Birthday Problem
-description: The Birthday Problem is a classic problem in decision theory and game theory. Frank is trying to decide whether to bring flowers to Kitty, not knowing if it's her birthday or not. He has to weigh the potential payoffs of his actions, considering the possibility that it might or might not be her birthday. The problem is modeled as a game against nature, where Frank's actions are bringing flowers or doing nothing, and nature's actions are it being Kitty's birthday or not.
-variables: $x = [x_1, x_2], v$, where $x_1$ and $x_2$ represent the probability of Frank choosing to do nothing and bringing flowers, respectively, and $v$ is the expected payoff.
-constraints: $v \leq \sum_{i=1}^{2} m_{ij}x_i \forall j \in \{1,2\}, \sum_{i=1}^{2} x_i = 1.0$, which ensure that the expected payoff $v$ is less than or equal to the payoff for each of nature's actions, and that the probabilities of Frank's actions sum up to 1.
-objective: maximize $v$, which means finding the mixed strategy for Frank that maximizes his expected payoff, given the uncertainty about whether it's Kitty's birthday or not.

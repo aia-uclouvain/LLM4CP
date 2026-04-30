@@ -1,5 +1,0 @@
-Relative sizes puzzle 
-This problem is about decoding a set of statements that compare the total value of different combinations of words, where each word represents a number. 
-The main variables are letters that represent digits, such as a, b, e, f, g, i, l, n, s, and t, which are used to form numbers like BEES, SNAIL, FLEAS, and ANTS. 
-The basic restrictions are that each letter must represent a unique digit, and the first letter of each number cannot be zero. The problem also states that certain combinations of numbers are greater than others. 
-The goal is to find the value of the word BEETLES by satisfying all the given conditions and constraints.

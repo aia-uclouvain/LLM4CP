@@ -1,5 +1,0 @@
-Sudoku problem
-The problem is about solving a Sudoku puzzle, which is a game where you have a 9x9 grid and you need to fill in numbers from 1 to 9 in a way that each row, column, and small 3x3 box contains each number only once.
-The main variables are the numbers in the grid, represented by x, where x[i,j] is the number in the ith row and jth column.
-The basic restrictions are that each row, column, and small 3x3 box can only contain each number once, and that each number must be between 1 and 9.
-The goal of the problem is to find a solution that satisfies these restrictions, which means filling in the entire grid with numbers from 1 to 9 in a valid way.

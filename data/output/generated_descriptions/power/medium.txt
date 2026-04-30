@@ -1,5 +1,0 @@
-Exponential Calculation Problem
-The problem is about calculating the result of raising a number to a power.
-The main decision variables are `n` and `num`, where `n` represents the base number and `num` represents the result of raising `n` to a certain power.
-The key constraints are that `n` is set to 3 and the `my_pow` predicate calculates the result of raising `n` to the power of 4, which is then assigned to `num`. In plain language, this means that the model is constrained to find the result of 3 raised to the power of 4.
-The problem's objective is not to minimize or maximize a value, but rather to satisfy the given constraints, which means finding the result of the exponential calculation. The `solve satisfy` statement indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

@@ -1,5 +1,0 @@
-Arithmetic Ring problem
-The problem is about arranging the numbers 1 to 8 in a circle so that no two numbers next to each other are consecutive, with the exception of 6 and 7 which must be next to each other.
-The main variables are the numbers 1 to 8, which will be placed in the circle. 
-The basic restrictions are that no two consecutive numbers can be next to each other, except for 6 and 7, and that all numbers must be used exactly once. 
-The goal of the problem is to find an arrangement of the numbers 1 to 8 in the circle that satisfies these rules.

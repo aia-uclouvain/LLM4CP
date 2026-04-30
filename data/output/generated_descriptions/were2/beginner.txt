@@ -1,5 +1,0 @@
-Werewolfes II 
-This problem is about figuring out who is a knight, who is a knave, and who is a werewolf among three people. 
-The main variables are x and y. The x variable shows if a person is a knight (tells the truth) or a knave (lies), and the y variable shows if a person is a werewolf or not. 
-The basic rules are that only one person can be a werewolf, and each person makes a statement that must be either true or false based on whether they are a knight or a knave. 
-The goal of the problem is to find a solution that satisfies all the given conditions, which means finding out who is a knight, who is a knave, and who is a werewolf.

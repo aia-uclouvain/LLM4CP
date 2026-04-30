@@ -1,8 +1,0 @@
-Crystal Maze problem
-The Crystal Maze problem is about arranging letters A to H in a specific pattern of connected circles, such that no consecutive letters are in adjacent circles.
-The main decision variables are represented by the array `x`, where `x[i]` represents the letter assigned to the `i-th` circle. The values of `x` range from 1 to 8, corresponding to the letters A to H.
-The key constraints are: 
-- all letters must be used exactly once, 
-- no consecutive letters can be in adjacent circles, and 
-- some circles may have predefined letters.
-The problem's objective is to find a satisfying assignment of letters to circles, such that all constraints are met. There is no explicit objective function to minimize or maximize, the goal is to find a feasible solution that satisfies all the given constraints.

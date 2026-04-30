@@ -1,5 +1,0 @@
-The problem is called the All Different Except 0 problem. 
-This problem is about finding an assignment of values to a set of variables such that all non-zero values are distinct. 
-The main decision variables are the elements of the array x, which represent the values assigned to each variable, and can take any integer value between 0 and n. 
-The key constraints are that all non-zero values in the array x must be distinct, and the values in the array must be in increasing order. 
-The problem's objective is to find a satisfying assignment of values to the variables, rather than minimizing or maximizing a specific objective function, as indicated by the "solve satisfy" statement.

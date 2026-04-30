@@ -1,7 +1,0 @@
-name: Uniform Dice Problem
-description: The problem involves labeling a blank six-sided die with numbers from 0 to 6 such that when rolled with a standard six-sided die, the sum of the numbers on the two dice shows each whole number from 1 to 12 with equal chance.
-variables: $x1 = [1,2,3,4,5,6], x2 \in [0..6]^6, dist \in [0..36]^{12}, z \in [0..12]$ 
-These variables represent the labels on the standard die ($x1$), the labels on the blank die ($x2$), the distribution of the sums of the numbers on the two dice ($dist$), and the number of possible sums ($z$).
-constraints: $\forall k \in [1..12]: dist[k] = \sum_{i,j \in [1..6]} (x1[i] + x2[j] == k), \forall k \in [1..12]: dist[k] = dist[k+1], z = 12, \sum_{k \in [1..12]} dist[k] = 36, x2[1] \leq x2[2] \leq ... \leq x2[6]$ 
-These constraints ensure that the distribution of the sums is calculated correctly, that all sums have the same probability, that all possible sums are considered, that the total number of outcomes is 36, and that the labels on the blank die are non-decreasing to break symmetry.
-objective: satisfy

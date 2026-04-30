@@ -1,5 +1,0 @@
-Magic Square Primes
-The problem is about creating a special square grid filled with prime numbers in a way that the sum of numbers in each row, column, and diagonal is the same.
-The main variables are the numbers in the grid, which are all prime numbers, and the total sum of numbers in each row, column, and diagonal.
-The basic restrictions are that each number in the grid must be a prime number, all numbers must be different, and the sum of numbers in each row, column, and diagonal must be the same.
-The goal is to find a way to fill the grid with prime numbers that meets these restrictions while keeping the total sum as small as possible.

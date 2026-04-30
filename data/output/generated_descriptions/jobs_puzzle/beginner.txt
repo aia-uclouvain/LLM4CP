@@ -1,5 +1,0 @@
-The name of the problem is the Jobs Puzzle. 
-This problem is about figuring out which jobs are held by four people: Roberta, Thelma, Steve, and Pete. 
-The main variables are the people (Roberta, Thelma, Steve, and Pete) and the eight different jobs they hold (chef, guard, nurse, clerk, police officer, teacher, actor, and boxer). 
-The basic restrictions or rules of the problem are: each person holds exactly two jobs, the nurse is a male, the husband of the chef is the clerk, Roberta is not a boxer, and Pete has limited education. 
-The goal of the problem is to determine which person holds which two jobs, given the restrictions and rules provided.

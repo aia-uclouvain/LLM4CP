@@ -1,5 +1,0 @@
-Rookwise Chain Puzzle
-The problem is about placing the digits 1 through 9 on a 3x3 matrix to form a connected chain from 1 to 9, where each step is a rook move (horizontally or vertically), and the sum of the first two rows equals the third row.
-The main decision variables are the 3x3 matrix `x`, where `x[i, j]` represents the digit placed at row `i` and column `j`, and the array `row_sums`, which represents the sum of each row.
-The key constraints are: each digit from 1 to 9 is used exactly once, the sum of each row is calculated correctly, the sum of the first two rows equals the third row, and the chain of digits is connected by rook moves, meaning that each digit is either directly above, below, to the left, or to the right of the previous digit.
-The objective of the problem is to find a solution that satisfies all the constraints, as indicated by the `solve satisfy` statement, which means that the goal is to find a feasible solution that meets all the requirements, rather than minimizing or maximizing a specific objective function.

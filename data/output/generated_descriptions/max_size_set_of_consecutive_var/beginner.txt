@@ -1,5 +1,0 @@
-The problem is called "Max Size Set of Consecutive Var". 
-It's about finding the largest group of items that have values close to each other. 
-The main variables are "variables" which is a list of items that can have values from 1 to 9, and "max_set" which is the size of the largest group of items with close values. 
-The basic rules are that each item in "variables" must have a value between 1 and 9, and "max_set" must be the size of the largest group of items with consecutive values. 
-The goal is to find a set of values for "variables" such that "max_set" is equal to 6, which means finding the largest group of items with consecutive values.

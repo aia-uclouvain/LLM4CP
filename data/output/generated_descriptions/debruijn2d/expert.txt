@@ -1,9 +1,0 @@
-name: De Bruijn Torus Problem
-description: The De Bruijn Torus problem is a constraint satisfaction problem that involves finding a 2D matrix of size rows x cols, where each cell contains a value from 0 to base-1, such that all sub-matrices of size m1 x m2 are distinct when considered as numbers in base 'base'. The problem also includes additional constraints such as requiring all rows and columns to be distinct, and in some cases, requiring all sub-grids to be distinct.
-variables: x[i,j], y[i*cols+j], gcc[i], max_val. 
-These are the decision variables where x[i,j] represents the value in the cell at row i and column j, y[i*cols+j] represents the number corresponding to the sub-matrix starting at position (i,j), gcc[i] represents the count of occurrences of value i in the matrix, and max_val represents the maximum value in the y array. 
-They are used to represent the matrix, the converted sub-matrices, the count of occurrences of each value, and the maximum value in the y array respectively.
-constraints: m1 <= rows, m2 <= cols, x[i,j+cols] = x[i,j], x[i+rows,j] = x[i,j], alldifferent(y) or sum(k1 in 0..m1-1, k2 in 0..m2-1) ( bool2int(x[i1+k1, j1+k2] != x[i2+k1, j2+k2]) ) >= 1, global_cardinality_old([x[i,j] | i in 0..rows-1, j in 0..cols-1], gcc), gcc[i-1] = gcc[i], alldifferent([x[i,j] | j in 0..cols-1]), alldifferent([x[i,j] | i in 0..rows-1]). 
-These constraints ensure that the sub-matrix size does not exceed the matrix size, the matrix is toroidal (i.e., it wraps around), all sub-matrices are distinct, the count of occurrences of each value is the same, and all rows and columns are distinct.
-objective: satisfy. 
-The objective of the problem is to find a solution that satisfies all the given constraints, there is no specific value to minimize or maximize.

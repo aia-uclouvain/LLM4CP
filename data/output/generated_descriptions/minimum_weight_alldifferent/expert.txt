@@ -1,5 +1,0 @@
-name: Minimum Weight All Different Problem
-description: The Minimum Weight All Different Problem is a constraint satisfaction problem where the goal is to assign distinct values to a set of variables while minimizing the total cost associated with these assignments, where the costs are given by a matrix.
-variables: $variables = [x_1, x_2, ..., x_n], matrix = [c_{i,j}]_{n \times n}$, where $x_i$ represents the assigned value to variable $i$, and $c_{i,j}$ represents the cost of assigning value $j$ to variable $i$.
-constraints: $all\_different(variables)$, $cost = \sum_{i=1}^{n} \sum_{j=1}^{n} (x_i = j) \* c_{i,j}$, $x_i \in [1, n]$, $c_{i,j} \in [0, 9]$, where $all\_different(variables)$ ensures that all variables take distinct values, and the second constraint calculates the total cost based on the assignments.
-objective: Minimize $cost$

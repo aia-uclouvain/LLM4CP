@@ -1,5 +1,0 @@
-Dudeney Numbers problem. 
-This problem is about finding special numbers called Dudeney Numbers, which are perfect cubes where the sum of their digits equals the cube root of the number. 
-The main variables are: x, which represents the digits of the number, nb, which is the number itself, and s, which is the sum of the digits and also the cube root of the number. 
-The basic restrictions are that the number must be a perfect cube, the sum of its digits must equal the cube root, and the digits must be between 0 and 9. 
-The goal of the problem is to find all possible Dudeney Numbers by satisfying these conditions.

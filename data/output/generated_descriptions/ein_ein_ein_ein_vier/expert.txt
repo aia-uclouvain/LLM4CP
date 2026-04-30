@@ -1,5 +1,0 @@
-name: Alphametic Puzzle
-description: The Alphametic Puzzle is a classic problem in constraint programming where a mathematical equation is written using letters to represent digits, and the goal is to find the digit values that satisfy the equation. In this specific puzzle, the equation is "EIN + EIN + EIN + EIN = VIER", where each letter represents a unique digit from 0 to 9.
-variables: $E, I, N, V, R$ - These decision variables represent the digits that each letter corresponds to in the equation, with $E, I, N, V, R$ being the digits for the letters E, I, N, V, and R, respectively.
-constraints: $E \neq I \neq N \neq V \neq R, 100E + 10I + N + 100E + 10I + N + 100E + 10I + N + 100E + 10I + N = 1000V + 100I + 10E + R, E \geq 1, V \geq 1$ - These constraints ensure that each letter represents a unique digit, that the equation is satisfied, and that the letters E and V do not represent the digit 0, as they are the leading digits in the numbers.
-objective: satisfy - The objective of this problem is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

@@ -1,5 +1,0 @@
-name: Rooks Path Problem
-description: The Rooks Path Problem is a classic problem in constraint programming where the goal is to find a path for a rook on an n x n matrix such that the rook visits each cell exactly once and returns to the starting cell, with the constraint that the rook can only move horizontally or vertically to an adjacent cell.
-variables: $x_{i,j}$, where $i$ and $j$ are in $1..n$, representing the decision variables that assign a unique integer value to each cell in the matrix, indicating the order in which the rook visits the cell.
-constraints: $\forall k \in 1..n*n-1: next(x, k, k+1)$, $next(x, 1, n*n)$, and $all\_different([x_{i,j} | i,j \in 1..n])$, which ensure that the rook moves to an adjacent cell at each step, forms a tour by returning to the starting cell, and visits each cell exactly once.
-objective: The problem is a satisfaction problem, meaning that the objective is to find a feasible solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

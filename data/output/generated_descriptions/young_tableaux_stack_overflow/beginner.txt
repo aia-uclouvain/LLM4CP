@@ -1,6 +1,0 @@
-The problem is called the Young Tableau problem. 
-It's about filling a grid of boxes with numbers in a special way. 
-The main variables are the grid of boxes (called x) and the structure of the grid (called p). 
-The grid of boxes is like a puzzle where each box can hold a number, and the structure of the grid is like a map that shows how many boxes are in each row. 
-The basic rules are that each number can only be used once, and the numbers in each row and column must be in order from smallest to largest. 
-The goal is to find all possible ways to fill the grid with numbers while following these rules, given a specific structure of the grid and some fixed numbers in certain boxes.

@@ -1,5 +1,0 @@
-Two Circles Problem
-The problem is about finding the radii of two circles given the sum of their circumferences and areas.
-The main decision variables are `r1` and `r2`, which represent the radii of the two circles.
-The key constraints are that the sum of the circumferences of the two circles must be equal to 10322 times Pi, and the sum of their areas must be equal to 13946281 times Pi. Additionally, the radius of the first circle must be less than or equal to the radius of the second circle.
-The objective of the problem is to find values for `r1` and `r2` that satisfy these constraints, effectively determining the radii of the two circles. Note that this is a satisfaction problem, meaning that the goal is to find a solution that meets all the given conditions, rather than minimizing or maximizing a specific value.

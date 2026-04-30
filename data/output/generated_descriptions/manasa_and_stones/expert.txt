@@ -1,5 +1,0 @@
-name: Manasa and Stones
-description: The problem describes a scenario where a person, Manasa, is following a trail of stones with numbers on them. The numbers on the stones are in increasing order, and the difference between two consecutive stones is either a or b. The goal is to find all possible values for the number on the last stone, given that the number on the first stone is 0.
-variables: $x_1, x_2, ..., x_n$ - These are the decision variables representing the numbers on each stone. They are arrays of variables, where $x_i$ represents the number on the $i^{th}$ stone.
-constraints: $x_1 = 0$, $x_i = x_{i-1} + a \lor x_i = x_{i-1} + b$ for $i = 2$ to $n$, $x_i \leq x_{i+1}$ for $i = 1$ to $n-1$ - These constraints ensure that the first stone is 0, the difference between consecutive stones is either a or b, and the numbers on the stones are in increasing order.
-objective: The objective of the problem is not to minimize or maximize a specific value, but rather to find all possible values for the number on the last stone, $x_n$.

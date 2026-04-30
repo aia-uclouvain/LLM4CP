@@ -1,5 +1,0 @@
-The name of the problem is the Candies problem. 
-This problem is about a teacher, Alice, who wants to distribute candies to her students based on their performance ratings while minimizing the total number of candies given. 
-The main decision variables are the array `x`, where `x[i]` represents the number of candies given to the `i-th` student. 
-The key constraints are that each student must receive at least one candy, and if a student has a higher rating than their neighbor, they must receive more candies than that neighbor. 
-The problem's objective is to minimize the total number of candies given, which is represented by the variable `z`, the sum of all elements in the `x` array.

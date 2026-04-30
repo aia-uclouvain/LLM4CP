@@ -1,5 +1,0 @@
-name: Circular Constraint Problem
-description: The problem is to find an array of length m where all elements are ordered in a circular manner, meaning that each element is one more than the previous element modulo n, where n is the maximum value in the domain, and the last element is one less than the first element modulo n.
-variables: x = (x[1], x[2], ..., x[m]), where x is an array of decision variables representing the elements of the array, each x[i] being an integer between 1 and n.
-constraints: circular(x, n) = (∀i ∈ {2, ..., m}: circ(x[i-1], x[i], n)) ∧ circ(x[m], x[1], n), where circ(a, b, v) is a predicate that ensures b is one more than a modulo v, and the additional constraint that the length of the array m is a multiple of n.
-objective: satisfy, meaning the objective is to find a feasible solution that satisfies all the constraints, there is no specific value to minimize or maximize.

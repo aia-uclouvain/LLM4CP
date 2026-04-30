@@ -1,5 +1,0 @@
-The Family Riddle problem. 
-This problem is about determining the ages of children in two families, each with three boys and three girls, given certain conditions about their ages. 
-The main decision variables are the ages of the boys and girls in each family, represented by the arrays `leo_boys`, `leo_girls`, `rene_boys`, and `rene_girls`. 
-The key constraints are that all children in each family have different ages, the youngest child in each family is a girl, one family has a newborn girl, the sum of the ages of the boys equals the sum of the ages of the girls in each family, the sum of the squared ages of the boys equals the sum of the squared ages of the girls in each family, and the total sum of the ages of all children in both families is 60. 
-The problem's objective is to find the ages of the children that satisfy all these conditions, with no specific objective function to minimize or maximize, as the goal is to find a feasible solution that meets all the constraints.

@@ -1,9 +1,0 @@
-name: The Bomb Puzzle
-
-description: The problem is to find the correct positions of 7 flip switches to disarm a bomb. The bomb detonates under certain combinations of switch positions, which are given as a set of rules. The goal is to find a configuration of switch positions that does not trigger any of the detonation rules.
-
-variables: $x_1, x_2, x_3, x_4, x_5, x_6, x_7$ - These are boolean decision variables representing the positions of the 7 switches, where $x_i = true$ means switch $i$ is on and $x_i = false$ means switch $i$ is off.
-
-constraints: $\neg((x_3 \land \neg x_2 \land \neg x_4) \lor (\neg x_1 \land \neg x_4 \land x_7) \lor (\neg x_1 \land \neg x_3 \land \neg x_4) \lor (\neg x_6 \land x_2 \land x_3) \lor (x_4 \land x_3) \lor (x_6 \land x_7 \land x_1) \lor (x_6 \land x_7 \land x_1) \lor (x_1 \land x_5 \land \neg x_7) \lor (\neg x_3 \land x_4 \land x_5) \lor (x_1 \land x_7) \lor (\neg x_5 \land x_2 \land x_6 \land x_3) \lor (\neg x_7 \land (x_3 \lor x_4)) \lor (x_6 \neq x_7) \lor (\neg x_2 \land \neg x_3 \land \neg x_5) \lor (x_1 \land x_2 \land \neg x_5 \land \neg x_7) \lor (\neg x_6 \land \neg x_7))$ - These constraints represent the rules for detonating the bomb. The goal is to find a configuration of switch positions that satisfies the negation of these constraints, meaning that none of the detonation rules are triggered.
-
-objective: satisfy - The objective of the problem is to find a feasible solution that satisfies all the constraints, meaning that the bomb is disarmed. There is no explicit objective function to minimize or maximize.

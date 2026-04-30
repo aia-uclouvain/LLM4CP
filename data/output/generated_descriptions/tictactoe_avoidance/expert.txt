@@ -1,5 +1,0 @@
-name: Tic Tac Toe Avoidance Problem
-description: The problem is to place a certain number of 'X's on a Tic Tac Toe board without creating three 'X's in a row in any direction, while also considering the placement of 'O's.
-variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices of the board, respectively. These variables represent the state of each cell on the board, with $x_{i,j} = 1$ indicating an 'X' and $x_{i,j} = 0$ indicating an 'O'.
-constraints: $\sum_{j=1}^{n} x_{i,j} = n-1$, $\sum_{i=1}^{n} x_{i,j} = n-1$, $\sum_{i=1}^{n} x_{i,i} \leq n-1$, $\sum_{i=1}^{n} x_{i,n-i+1} \leq n-1$, $\sum_{i=1}^{n} \sum_{j=1}^{n} x_{i,j} = m$, $x_{1,1} = 0$. These constraints ensure that each row and column has exactly $n-1$ 'X's, the main and anti-diagonal have at most $n-1$ 'X's, the total number of 'X's on the board is $m$, and the top-left cell is always an 'O' to break symmetry.
-objective: The objective of the problem is to find a satisfying assignment of 'X's and 'O's on the board, which is achieved by solving the problem as a satisfaction problem, rather than minimizing or maximizing a specific value.

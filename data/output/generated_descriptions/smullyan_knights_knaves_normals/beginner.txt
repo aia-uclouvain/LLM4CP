@@ -1,5 +1,0 @@
-Smullyan Knight, Knave, and Normal problems. 
-This problem is about three people - a knight who always tells the truth, a knave who always lies, and a normal person who sometimes tells the truth and sometimes lies. 
-The main variables are the types of people - knight, normal, and knave, which are represented by numbers 1, 2, and 3 respectively. 
-The basic restrictions are that a knight always speaks the truth, a knave always lies, and a normal person may or may not tell the truth. 
-The goal of the problem is to figure out the types of the people based on the statements they make about each other, and to find a solution that satisfies all the given conditions.

@@ -1,5 +1,0 @@
-The problem is called "Recreational mathematics" or "Number Square". 
-It's about finding a special eight-digit number that is a perfect square, and when you add a "1" to the beginning of this number, it's still a perfect square. 
-The main variables are: n, which is the eight-digit number we're looking for, and x and y, which are the numbers that, when squared, give us n and the new number with "1" added to the beginning, respectively. 
-The basic rules are that n must be an eight-digit number, and when you square x, you get n, and when you square y, you get the new number with "1" added to the beginning of n. 
-The goal is to find such a number n that satisfies these conditions.

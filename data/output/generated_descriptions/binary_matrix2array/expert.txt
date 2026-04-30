@@ -1,8 +1,0 @@
-name: Binary Matrix to Array Conversion Problem
-description: This problem involves converting a binary matrix into an array where each element in the array corresponds to the index of the column with a value of 1 in the respective row of the binary matrix, and vice versa.
-variables: $x_{i,j}, a_i$ 
-These are decision variables where $x_{i,j}$ represents the binary matrix and $a_i$ represents the array to be converted into, with $x_{i,j}$ being 1 if the $j^{th}$ column in the $i^{th}$ row is selected and 0 otherwise, and $a_i$ being the index of the selected column in the $i^{th}$ row.
-constraints: $\forall i \in \{1, \ldots, n\}: a_i = \sum_{j=1}^{m} j \cdot x_{i,j}$ and $\forall i \in \{1, \ldots, n\}: \sum_{j=1}^{m} x_{i,j} = 1$ 
-These constraints ensure that each row in the binary matrix has exactly one column with a value of 1, and the array $a$ is correctly updated based on the selected columns.
-objective: satisfy 
-The objective of this problem is to find a feasible solution that satisfies all the given constraints, rather than optimizing a specific objective function.

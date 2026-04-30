@@ -1,5 +1,0 @@
-name: Word Square
-description: A word square is a special case of acrostic, consisting of a set of words with the same number of letters as the total number of words, where the words can be read horizontally and vertically in a square grid.
-variables: $E, words$, where $E$ is an array of decision variables representing the index of each word in the square, and $words$ is a 2D array representing the characters in each word, with each character encoded as an integer from 1 to 26, corresponding to the letters 'a' to 'z'.
-constraints: $\forall I, J \in 1..word\_len (words[E[I], J] = words[E[J],I]) \land all\_different(E)$, which ensure that the characters in the same position in each word are the same when read horizontally and vertically, and that each word is used exactly once.
-objective: The problem is a satisfaction problem, where the goal is to find a solution that satisfies all the constraints, rather than minimizing or maximizing a specific value.

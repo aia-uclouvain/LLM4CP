@@ -1,7 +1,0 @@
-name: Persistence of a Number
-description: The problem is to find the smallest number that requires a certain number of steps to reduce it to a single digit by multiplying all its digits to obtain a new number, and repeating this process until a single digit is obtained.
-variables: $num, x, nums$ 
-These variables represent the number to start with ($num$), a 2D array $x$ where $x[s,i]$ represents the $i^{th}$ digit of the number at step $s$, and a 1D array $nums$ where $nums[s]$ represents the number at step $s$.
-constraints: $nums[0] = num$, $nums[0] = to\_num([x[0,i] | i in 1..max\_size])$, $nums[s] = product([if x[s-1,i] > 0 then x[s-1,i] else 1 endif | i in 1..max\_size])$, $nums[s] = to\_num([x[s,i] | i in 1..max\_size])$, $nums[num\_steps] != nums[num\_steps-1]$, $x[num\_steps,i] = 0$ for $i in 1..max\_size-1$, $nums[num\_steps] < 10$ 
-These constraints ensure that the initial number is correctly represented, that each subsequent number is the product of the digits of the previous number, that the process stops after $num\_steps$ steps, and that the final number is a single digit.
-objective: minimize $num$

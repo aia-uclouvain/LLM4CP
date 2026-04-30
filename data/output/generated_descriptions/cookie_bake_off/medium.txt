@@ -1,5 +1,0 @@
-Cookie Bake Off problem
-The problem is about finding the best recipe for a cookie that achieves a perfect score of 100, given 15 past attempted recipes with varying amounts of sugar, flour, and butter, and their corresponding judge's scores.
-The main decision variables are x, an array of 3 variables representing the weights of sugar, flour, and butter in the perfect recipe, and diffs, an array of 15 variables representing the differences between the predicted scores and the actual scores for each past recipe.
-The key constraints are that the sum of the weighted ingredients for each past recipe equals the actual score plus the difference, and that the total amount of ingredients in the perfect recipe sums up to 8 cups.
-The objective of the problem is to minimize the sum of the absolute differences between the predicted scores and the actual scores for all past recipes, which represents how well the model fits the data. The solution will provide the best recipe, in terms of the weights of sugar, flour, and butter, that minimizes this sum.

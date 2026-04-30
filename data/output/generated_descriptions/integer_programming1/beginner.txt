@@ -1,9 +1,0 @@
-Problem name: Maximizing ab + bc
-
-This problem is about finding the best combination of three numbers, a, b, and c, that gives the highest total when you multiply a and b, and then add the result of multiplying b and c. 
-
-The main variables are a, b, and c, which are integers between 1 and 10. These numbers must all be different from each other.
-
-The basic restrictions are that a, b, and c must be between 1 and 10, and they cannot be the same as each other.
-
-The goal of the problem is to maximize the total of ab + bc, which means finding the combination of a, b, and c that gives the highest possible result for this calculation.

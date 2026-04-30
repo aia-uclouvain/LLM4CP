@@ -1,5 +1,0 @@
-name: 100 Doors Problem
-description: The problem involves 100 doors in a row, initially closed, and 100 passes are made to toggle the doors. The first pass toggles every door, the second pass toggles every 2nd door, and so on, until the last pass, which only toggles the 100th door. The goal is to determine the state of the doors after the last pass.
-variables: $s$ - a set of door numbers that are open after the last pass. This variable represents the result as a set of doors that remain open.
-constraints: $\forall j \in \{1..100\} (\exists i \in \{1..100\} (i*i = j) \leftrightarrow j \in s)$ - this constraint ensures that a door $j$ is open if and only if its number is a perfect square of an integer.
-objective: The problem does not have a specific objective function to minimize or maximize, as it is a satisfaction problem that aims to find the set of doors that remain open after the last pass. The goal is to satisfy the given constraints and determine the state of the doors.

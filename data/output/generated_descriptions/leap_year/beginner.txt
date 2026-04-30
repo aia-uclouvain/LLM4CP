@@ -1,5 +1,0 @@
-Leap year problem
-The problem is about figuring out whether a given year is a leap year or not, which is a year that has 366 days instead of the usual 365 days. 
-The main variables are "year" and "is_leap_year". The "year" variable represents the year being checked, and the "is_leap_year" variable is a simple yes or no (0 or 1) that indicates whether the year is a leap year. 
-The basic rules of the problem are that a year is a leap year if it is divisible by 4, but not by 100, unless it is also divisible by 400. 
-The goal of the problem is to determine whether a given year meets these rules, and to output whether the year is a leap year or not.

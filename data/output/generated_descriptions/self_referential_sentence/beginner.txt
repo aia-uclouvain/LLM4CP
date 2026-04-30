@@ -1,5 +1,0 @@
-The problem is called the Self Referential Sentence problem. 
-It's about creating a sentence that describes itself, specifically how many times each digit from 0 to 9 appears in the sentence. 
-The main variables are the array x, which represents the digits and their counts in the sentence. 
-The basic restrictions are that each digit must appear in the sentence the exact number of times it claims to, and each digit can only appear once as the digit being described. 
-The goal is to find a sentence that satisfies these conditions, essentially creating a true self-descriptive statement about the digits.

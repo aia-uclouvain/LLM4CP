@@ -1,5 +1,0 @@
-Dice with a Difference
-The problem is about creating special dice with different numbers of sides and finding the numbers on each side so that when two of these dice are thrown, the probability of getting each number from 2 to 12 is the same as when throwing two regular six-sided dice.
-The main variables are the numbers on each side of the special dice: I, M, A, G, N, S for the 9-sided die and the 4-sided die, and E for the regular six-sided die. These variables represent the points or values on each side of the dice.
-The basic restrictions are that each number from 2 to 12 should have the same probability of being thrown with the special dice as with the regular dice. This means that the number of ways to get each number with the special dice should be the same as with the regular dice.
-The goal of the problem is to find the numbers on each side of the special dice that satisfy these conditions, effectively creating a new set of dice that mimic the behavior of regular dice when thrown.

@@ -1,6 +1,0 @@
-Social Golfer Problem
-The problem is about organizing golf games for a group of people. 
-The main variables are the golfers, the groups they play in, and the weeks they play. 
-In simple terms, the golfers are the people playing golf, the groups are the teams they play in, and the weeks are the time periods when they play. 
-The basic restrictions are that each group must have the same number of players, and no two players can be in the same group more than once. 
-The goal is to schedule the golf games for as many weeks as possible without violating these rules.

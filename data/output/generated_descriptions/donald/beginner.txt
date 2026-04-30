@@ -1,5 +1,0 @@
-Donald puzzle 
-The problem is about solving a math puzzle where letters represent numbers, and when added together, they form a correct equation. 
-The main variables are letters like D, O, N, A, L, G, E, R, B, and T, which represent digits from 0 to 9. 
-The basic restrictions are that each letter must be a different digit, and the letters D, G, and R cannot be zero. The equation DONALD + GERALD = ROBERT must also be true. 
-The goal is to find a solution that satisfies the equation, meaning the numbers represented by the letters add up correctly.

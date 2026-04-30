@@ -1,5 +1,0 @@
-The problem is called "A puzzle". 
-It's about finding a secret code that works with numbers. 
-The main variables are x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, which represent the secret code for the digits 0 through 9. 
-The basic restrictions or rules of the problem are that certain equations using these secret codes must be true, like 8809 = 6, where each digit is replaced by its secret code and then added up. 
-The goal of the problem is to find the secret code that makes all these equations true, and then use this code to calculate the value of the number 2581.

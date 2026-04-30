@@ -1,5 +1,0 @@
-The Guards and Apple problem. 
-This problem is about a boy who wants to give an apple to a girl and must pass through five gates, each with a guard who demands a bribe of half of the boy's apples plus one. 
-The main decision variable is x, an array representing the number of apples the boy has at each gate, where x[i] is the number of apples before passing the i-th gate. 
-The key constraints are that the boy gives half of his apples plus one to each guard, and after passing all the gates, he has only one apple left to give to the girl. 
-The problem's objective is to find the initial number of apples the boy had, which is represented by x[1], such that he can give one apple to the girl after passing all the gates and bribing the guards.

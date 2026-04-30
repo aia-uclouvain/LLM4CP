@@ -1,5 +1,0 @@
-name: Sequence Puzzle
-description: The sequence puzzle is a problem where, given an input number n (n < 10), we need to find an output number m such that m's first digit is n, m is an n-digit number, and every 2-digit sequence inside m must be a different prime number. The goal is to find the smallest number m that fulfills these conditions.
-variables: x[1..n], p[1..n-1], m. These are decision variables where x is an array representing the digits of the output number m, p is an array representing the 2-digit prime sequences in m, and m is the output number itself. 
-constraints: x[1] = n, to_num(x,m), to_num([x[i],x[i+1]],p[i]) for i in 1..n-1, all_different(p). These constraints ensure that the first digit of m is n, that x represents the digits of m, that each 2-digit sequence in m is a prime number represented in p, and that all prime numbers in p are distinct.
-objective: minimize m

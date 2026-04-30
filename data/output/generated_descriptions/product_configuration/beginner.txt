@@ -1,5 +1,0 @@
-Product Configuration
-This problem is about designing a product by choosing the type and number of components to use. 
-The main variables are the types of components (like power supply, disk drive, and memory chip) and how many of each to use. 
-The basic restrictions are that each component type has a limited number of uses, and the total product must meet certain requirements like having enough disk space and memory. 
-The goal is to minimize the total weight of the product while meeting these requirements.

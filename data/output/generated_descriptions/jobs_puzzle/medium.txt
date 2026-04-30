@@ -1,8 +1,0 @@
-The Jobs Puzzle
-The Jobs Puzzle is a classic constraint programming problem that involves assigning eight different jobs to four people, with each person holding exactly two jobs. The problem provides various clues and constraints about the jobs and the people, and the goal is to determine who holds which jobs.
-
-The main decision variables in this problem are the job assignments, which are represented by the `Jobs` array in the Minizinc model. This array contains eight variables, each representing a job (chef, guard, nurse, clerk, police officer, teacher, actor, and boxer), and the value of each variable is the person assigned to that job.
-
-The key constraints in this problem can be described in plain language as follows: each person holds exactly two jobs, the nurse is a male, the husband of the chef is the clerk, Roberta is not a boxer, Pete has no education past the ninth grade, and Roberta, the chef, and the police officer went golfing together. Additionally, there are constraints based on the names of the jobs, such as the actor being either Steve or Pete.
-
-The objective of this problem is not to minimize or maximize a specific value, but rather to find a satisfying assignment of jobs to people that meets all the given constraints. In other words, the goal is to find a solution that satisfies all the clues and constraints provided in the problem. The Minizinc model uses the `solve satisfy` statement to find such a solution.

@@ -1,5 +1,0 @@
-Ordering a List of Lists Subject to Constraints
-The problem is about arranging a table of values in a specific way. 
-The main variables are the table of values and the order in which the values appear in each row. 
-The basic restrictions are that the table must be arranged so that it is "lower triangular", meaning that the rows are ordered by length and there are no gaps except in the top right corner, and if a value appears in more than one row, it must be in the same column. 
-The goal of the problem is to find an arrangement that satisfies these restrictions, if one exists.

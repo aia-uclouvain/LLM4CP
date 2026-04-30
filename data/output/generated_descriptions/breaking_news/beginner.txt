@@ -1,5 +1,0 @@
-Breaking News puzzle 
-The problem is about matching four reporters with four different locations and four breaking news events. 
-The main variables are the reporters (Corey, Jimmy, Lois, and Perry), the locations (Bayonne, New Hope, Port Charles, and South Amboy), and the events (30-pound baby, blimp launching, skyscraper dedication, and beached whale). These variables represent the people, places, and news stories involved in the puzzle. 
-The basic restrictions are: the 30-pound baby was not born in South Amboy or New Hope, Jimmy did not go to Port Charles, the blimp launching and skyscraper dedication were covered by Lois and the reporter sent to Port Charles, South Amboy was not the site of the beached whale or skyscraper dedication, and Bayonne is either where Corey went or where the whale was beached, or both. 
-The goal of the problem is to determine the correct match between each reporter, location, and event, satisfying all the given restrictions.

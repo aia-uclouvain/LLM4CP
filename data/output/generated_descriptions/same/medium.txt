@@ -1,5 +1,0 @@
-The problem is called the "Same" problem. 
-It is about finding two collections of variables where the number of occurrences of each value is the same in both collections, but the order of the values can be different. 
-The main decision variables are `variables1` and `variables2`, which are arrays of variables representing the two collections. Each variable in the arrays can take a value from 1 to 9. 
-The key constraints are that the number of occurrences of each value in `variables1` must be the same as the number of occurrences of the same value in `variables2`, and that the values in both collections must be between 1 and 9. 
-The objective of the problem is to find a solution that satisfies these constraints, which is a feasibility problem, not an optimization problem, so there is no objective function being minimized or maximized, the goal is to find a solution that satisfies all the constraints.

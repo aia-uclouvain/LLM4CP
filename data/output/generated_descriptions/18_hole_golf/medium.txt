@@ -1,5 +1,0 @@
-Golf Course Generation Problem
-The problem is about generating a random 18-hole golf course with specific rules.
-The main decision variables are the hole lengths, represented by the array `x`, where each element `x[i]` is a variable that can take a value of 3, 4, or 5, representing the length of the `i-th` hole.
-The key constraints are that each hole must have a length of 3, 4, or 5, and the total length of all 18 holes must add up to 72.
-The problem's objective is to generate a valid golf course configuration that satisfies the given constraints, with no specific objective function to minimize or maximize, but rather to produce a feasible solution that meets the rules.

@@ -1,5 +1,0 @@
-Newspaper problem
-The problem is about four students, Algy, Bertie, Charlie, and Digby, who share a flat and read four different newspapers. Each student reads all the newspapers in a specific order and for a certain amount of time. The goal is to find the earliest time they can all leave for college.
-The main variables are the start and end times for each student to read each newspaper. 
-The basic restrictions are that each student can only read one newspaper at a time, and each newspaper can only be read by one student at a time. Additionally, each student has a specific order in which they must read the newspapers. 
-The goal of the problem is to minimize the earliest end time, which is the latest time any student finishes reading all the newspapers.

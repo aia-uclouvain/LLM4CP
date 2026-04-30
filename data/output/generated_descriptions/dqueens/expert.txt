@@ -1,5 +1,0 @@
-name: Dudeney's Queen Placement Problem
-description: This problem is a classic puzzle in the field of constraint programming, where the goal is to place eight queens on a chessboard such that the number of squares attacked by the queens is minimized, with certain constraints on the placement of the queens.
-variables: $x_{i,j}, a_{i,j}, suma$ where $x_{i,j}$ represents whether the square $(i,j)$ is occupied by a queen, $a_{i,j}$ represents whether the square $(i,j)$ is attacked by any queen, and $suma$ is the total number of squares attacked by the queens. These variables are used to model the placement of the queens and the attack status of each square on the chessboard.
-constraints: $\sum_{i,j} x_{i,j} = 8, \sum_{j=3}^{8} (x_{8,j} + x_{7,8} + x_{6,8}) = 5, (\sum_{m \neq i} x_{m,m-i+j} + \sum_{m \neq i} x_{m,i+j-m} + \sum_{m \neq i} x_{m,j} + \sum_{n \neq j} x_{i,n}) \leq 99a_{i,j}$ which ensure that all eight queens are used, five of the original queens are untouched, and a square is marked as attacked if it is under attack by any queen.
-objective: minimize $suma$ which represents the total number of squares attacked by the queens.

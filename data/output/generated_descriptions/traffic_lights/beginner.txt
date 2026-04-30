@@ -1,5 +1,0 @@
-Traffic Lights Problem
-The problem is about finding the correct settings for traffic lights at a four-way junction to ensure safe and efficient traffic flow.
-The main variables are V1 to V4, which represent the traffic lights for vehicles, and P1 to P4, which represent the traffic lights for pedestrians. These variables can have values such as red, red-yellow, green, and yellow for vehicles, and red and green for pedestrians.
-The basic restrictions are that certain combinations of traffic light settings are not allowed, and only specific combinations are permitted, such as when one road has a green light, the opposing road must have a red light.
-The goal of the problem is to find all possible combinations of traffic light settings that satisfy the given constraints, with only two valid solutions out of a large number of possible assignments.

@@ -1,5 +1,0 @@
-Among Seq Problem
-The Among Seq problem is about constraining sequences of consecutive variables to take a certain number of values from a given set. 
-The main decision variables are x and y, where x represents an array of consecutive variables and y represents a set of values. 
-The key constraints are that all sequences of a specified length (seq) in x must contain at least a minimum (low) and at most a maximum (up) number of values from y. 
-The problem's objective is to satisfy these constraints, ensuring that all sequences of consecutive variables in x adhere to the specified limits of values from y, with no explicit minimization or maximization goal.

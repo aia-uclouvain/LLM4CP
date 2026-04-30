@@ -1,5 +1,0 @@
-name: Lights Out Variant Puzzle
-description: The problem is a variant of the classic Lights Out game, where the goal is to turn all lights off by flipping switches. However, when a switch is flipped, all lamps in the same row and column also flip. The problem is to find a sequence of switch flips that will turn all lights off, given an initial configuration of lights.
-variables: $s_{i,j}, y_{i,j}$ for $i,j = 1,\ldots,n$, where $s_{i,j}$ represents the solution (i.e., the final state of the light at position $(i,j)$) and $y_{i,j}$ is an auxiliary variable used to model the effect of flipping switches on the lights.
-constraints: $2y_{i,j} = s0_{i,j} + \sum_{i2=1}^n s_{i2,j} + \sum_{j2=1}^n s_{i,j2} - s_{i,j}$ for $i,j = 1,\ldots,n$, which models the effect of flipping switches on the lights, where $s0_{i,j}$ is the initial state of the light at position $(i,j)$.
-objective: minimize $m = \sum_{i,j=1}^n s_{i,j}$, which represents the total number of lights that are still on after the sequence of switch flips.

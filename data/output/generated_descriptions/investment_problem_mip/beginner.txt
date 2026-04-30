@@ -1,5 +1,0 @@
-Investment Problem
-The problem is about a person who manages money and wants to invest it in different opportunities to get the most return. 
-The main variables are the amounts invested in each opportunity and the total return. 
-The basic restrictions are that the total amount invested cannot exceed the budget of $100 million, and each opportunity has a limited amount that can be invested, ranging from $0 to $40 million. 
-The goal is to maximize the total annual return without exceeding the budget.

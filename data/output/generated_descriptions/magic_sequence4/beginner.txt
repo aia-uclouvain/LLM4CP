@@ -1,5 +1,0 @@
-Magic Sequence problem. 
-This problem is about finding a special sequence of numbers where each number in the sequence tells you how many times it appears in the sequence. 
-The main variable is "s" which is a list of numbers, and each number in the list means how many times that number should appear in the list. 
-The basic rule is that each number in the list must appear exactly as many times as the number itself says. 
-The goal is to find a sequence that satisfies this rule, and the problem doesn't specify whether to minimize or maximize anything, it just wants to find a sequence that works.

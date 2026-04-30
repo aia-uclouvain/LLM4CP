@@ -1,5 +1,0 @@
-The problem is called the Broken Weights problem. 
-It's about a merchant who had a 40-pound weight that broke into four pieces, and each piece weighs a whole number of pounds. 
-The main variables are the weights of the four pieces, which are like the building blocks to measure other weights. 
-The basic restrictions are that the total weight of the four pieces must be 40 pounds, and that the pieces can be used to measure every whole weight from 1 to 40 pounds using a balance scale, where a piece can be on either side of the scale. 
-The goal is to find the weights of the four pieces that can measure all these weights, and to do so in a way that minimizes the weight of the heaviest piece.

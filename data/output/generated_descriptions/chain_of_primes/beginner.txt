@@ -1,5 +1,0 @@
-Chain of Primes 
-This problem is about finding a special sequence of 10 two-digit prime numbers where each number is connected to the previous one in a specific way. 
-The main variables are the 10 two-digit prime numbers in the sequence, which are represented by the array x. Each number in x is a prime number between 11 and 99. 
-The basic restrictions are that all the numbers in the sequence must be different, and each number's first digit must be the same as the previous number's second digit, except for the first number. Additionally, the fourth number must be the reverse of the first number, and the tenth number must be the reverse of the seventh number. 
-The goal is to find the third, sixth, and ninth prime numbers in this sequence.

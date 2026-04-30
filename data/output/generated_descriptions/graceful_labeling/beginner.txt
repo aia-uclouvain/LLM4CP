@@ -1,5 +1,0 @@
-The problem is called the Graceful Labeling problem. 
-It's about labeling points (called nodes) in a special kind of map (called a tree) with numbers, so that the differences between the numbers on connected points are all unique. 
-The main variables are the labels, which are the numbers given to each node. 
-The basic restrictions are that each node must have a unique label, and the absolute difference between the labels of two connected nodes must be unique for each connection. 
-The goal of the problem is to find a set of labels that satisfy these restrictions.

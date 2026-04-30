@@ -1,5 +1,0 @@
-The problem is called the Minimum NValue Problem. 
-It is about finding the minimum number of times that the same value is taken by a set of variables. 
-The main decision variables are an array of variables, each representing a value, and a variable t_min, which represents the minimum number of times that the same value occurs. 
-The key constraints are that each value in the array must be within a certain range, and the minimum number of times that the same value occurs must be greater than or equal to the value of t_min for at least one value. 
-The problem's objective is to satisfy these constraints, meaning that the model is looking for a solution where the minimum number of times that the same value occurs is consistent with the given constraints, rather than minimizing or maximizing a specific value.

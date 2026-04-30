@@ -1,5 +1,0 @@
-Fibonacci Numbers Problem
-The problem is about calculating a series of numbers called Fibonacci numbers, which is a sequence where each number is the sum of the two preceding ones. 
-The main variable is "fib", which is an array of numbers that will store the Fibonacci sequence.
-The basic restrictions are that the first two numbers in the sequence must be 1, and each subsequent number must be the sum of the two preceding ones.
-The goal of the problem is to calculate the first 11 numbers in the Fibonacci sequence.

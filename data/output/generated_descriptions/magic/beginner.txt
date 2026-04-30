@@ -1,5 +1,0 @@
-Magic Square problem
-The problem is about creating a special square grid where numbers are arranged in a specific way. 
-The main variables are the size of the square (n), the numbers to be placed in the square (1 to n^2), and the magic sum (s) which is the target sum for each row, column, and diagonal.
-The basic restrictions are that each cell in the square can only hold one number, each number can only be used once, and the sum of numbers in each row, column, and diagonal must be the same (the magic sum).
-The goal of the problem is to find a way to arrange the numbers in the square so that the sum of numbers in each row, column, and diagonal is the same, which is the magic sum (s).

@@ -1,5 +1,0 @@
-Meeting Scheduling Problem
-The problem is about figuring out if two people, Mr. Jones and Ms. White, could have talked during a meeting. 
-The main variables are the start and end times of each person's attendance at the meeting: J1 and J2 for Mr. Jones, M1 and M2 for the meeting, B1 and B2 for Mr. Brown, S1 and S2 for Director Smith, and W1 and W2 for Ms. White.
-The basic restrictions are that each person stays for a continuous period, the meeting starts while Mr. Jones is present and ends while Ms. White is present, Ms. White arrives after the meeting starts, Director Smith arrives after Mr. Jones leaves, and Mr. Brown talks to Ms. White in the presence of Director Smith.
-The goal is to find a schedule that satisfies all these conditions and minimizes the time when Mr. Jones and Ms. White could have talked.

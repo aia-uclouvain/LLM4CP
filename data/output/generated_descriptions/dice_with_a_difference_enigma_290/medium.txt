@@ -1,8 +1,0 @@
-The problem is called "Dice with a Difference" or Enigma 290. 
-It is about finding the mappings of letters to numbers on two special dice, a 9-sided die with the letters IMAGINING and a 4-sided die with the letters GAGS, such that the probability distribution of the sum of the numbers on these dice is the same as the probability distribution of the sum of the numbers on two standard 6-sided dice with the letters ENIGMA.
-
-The main decision variables are I, M, A, G, N, S, and E, which represent the numbers that the corresponding letters on the special dice should be mapped to. The arrays dice9, dice4, and dice6 represent the numbers on each side of the 9-sided die, the 4-sided die, and the standard 6-sided die, respectively.
-
-The key constraints are that the probability of each possible sum of the numbers on the two special dice is the same as the probability of the same sum on the two standard dice. This is achieved by counting the number of ways each sum can be obtained with the special dice and with the standard dice, and requiring these counts to be equal for each sum.
-
-The problem's objective is to find a satisfying assignment of numbers to the letters on the special dice, such that the probability distributions of the sums are the same as for the standard dice. The problem does not have a specific objective function to minimize or maximize, but rather seeks to find a feasible solution that satisfies all the constraints.

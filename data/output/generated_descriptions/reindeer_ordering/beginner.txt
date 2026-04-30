@@ -1,5 +1,0 @@
-Reindeer Ordering 
-The problem is about determining the order in which nine reindeer will pull Santa's sleigh. 
-The main variables are the names of the reindeer, which represent their positions in the line. 
-The basic restrictions or rules of the problem are that each reindeer must be in a specific position relative to the others, such as "Comet behind Rudolph, Prancer, and Cupid" or "Blitzen in front of Donder, Vixen, and Dancer". 
-The goal of the problem is to find an order for the reindeer that satisfies all of these rules.

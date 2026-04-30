@@ -1,8 +1,0 @@
-name: Subsequence Extraction Problem
-description: The problem is to extract a subsequence of fixed length from a given sequence, where the subsequence is defined by a set of entries and a starting index in the original sequence.
-variables: $n, s, elements_{1..n}, entries_{1..s}, t\_index$ 
-These variables represent the following: $n$ is the length of the original sequence, $s$ is the length of the subsequence, $elements_{1..n}$ is the original sequence, $entries_{1..s}$ is the subsequence to be extracted, and $t\_index$ is the starting index of the subsequence in the original sequence.
-constraints: $elements = [6,9,2,9]$, $entries = [2,9]$, $t\_index = 3$, $elementn(t\_index, elements, entries)$ 
-These constraints represent the following: the original sequence is fixed to $[6,9,2,9]$, the subsequence to be extracted is fixed to $[2,9]$, the starting index of the subsequence is fixed to $3$, and the $elementn$ constraint ensures that the subsequence starting at index $t\_index$ in the original sequence is equal to the given subsequence.
-objective: satisfy 
-The objective of the problem is to find an assignment of values to the decision variables that satisfies all the given constraints, which means finding a subsequence in the original sequence that matches the given subsequence starting at the given index.

@@ -1,8 +1,0 @@
-name: Discrepancy Problem
-description: The Discrepancy Problem is a constraint satisfaction problem where we have a set of variables, each with its own set of "bad" values. The goal is to find an assignment of values to the variables such that exactly K variables take on a value within their respective sets of bad values.
-variables: $n, variables = [x_1, x_2, ..., x_n], bad = [B_1, B_2, ..., B_n], k$ 
-These are the decision variables where $n$ is the number of variables, $variables$ is an array of variables $x_i$ that can take on integer values, $bad$ is an array of sets $B_i$ representing the bad values for each variable, and $k$ is the number of variables that should take on a bad value.
-constraints: $k = \sum_{i=1}^{n} (x_i \in B_i), variables = [4, 5, 5, 4, 1], bad = [{1,4,6}, {0,1}, {1,6,9}, {1,4}, {}], k = 2$ 
-These constraints ensure that the number of variables taking on a bad value is equal to $k$, and that the variables and bad values are assigned as specified in the problem instance.
-objective: satisfy 
-The objective of the problem is to find a satisfying assignment of values to the variables, i.e., to find values for the variables such that all constraints are satisfied.

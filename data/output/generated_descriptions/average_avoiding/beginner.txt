@@ -1,5 +1,0 @@
-Average Avoiding Problem
-The problem is about arranging a list of numbers in a specific order. 
-The main variables are the numbers in the list and their positions after rearrangement. 
-The basic restrictions are that the average of any two numbers cannot be equal to any number between them. 
-The goal is to find an arrangement that satisfies this condition.

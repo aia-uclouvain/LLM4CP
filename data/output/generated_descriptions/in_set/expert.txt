@@ -1,8 +1,0 @@
-name: In Set Problem
-description: The problem is a simple demonstration of the "in_set" global constraint in MiniZinc, which checks if a given value belongs to a specified set. This problem is used to illustrate the usage of this constraint.
-variables: val, s 
-val is an integer decision variable that can take any value between 1 and 5, and s is a set of integers between 1 and 5. These variables represent the value to be checked and the set to check against, respectively.
-constraints: s = {1,3} ∧ val = 3 ∧ in_set(val, s) 
-These constraints define the set s as {1,3}, assign the value 3 to val, and ensure that val is an element of s using the in_set constraint.
-objective: satisfy 
-The objective of this problem is to find an assignment of values to the decision variables that satisfies all the given constraints, rather than minimizing or maximizing a specific value.

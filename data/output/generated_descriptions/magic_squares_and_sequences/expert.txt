@@ -1,5 +1,0 @@
-name: Magic Sequence Problem
-description: The Magic Sequence Problem is a constraint satisfaction problem where we need to find a sequence of integers between 0 and n-1, such that each integer i occurs exactly x_i times in the sequence.
-variables: $x_0, x_1, ..., x_{n-1}$, where $x_i$ is the number of times the integer i occurs in the sequence. These variables represent the frequency of each integer in the sequence.
-constraints: $\forall i \in \{0, 1, ..., n-1\}, x_i = \sum_{j=0}^{n-1} (x_j = i)$, $\sum_{i=0}^{n-1} x_i = n$, $\sum_{i=0}^{n-1} i \cdot x_i = n$, where the first constraint ensures that the number of occurrences of each integer i is equal to the value of $x_i$, the second constraint ensures that the total number of elements in the sequence is n, and the third constraint is a redundant constraint that can be used to help the solver.
-objective: The problem is a satisfaction problem, so there is no objective function to minimize or maximize. The goal is to find a sequence that satisfies all the constraints.

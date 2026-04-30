@@ -1,5 +1,0 @@
-Quasigroup problem
-The problem is about finding a special kind of multiplication table where each row and column has all different numbers, and some specific rules are followed when multiplying the numbers together.
-The main variables are the numbers in the multiplication table, which are represented by "quasiGroup". This is like a big grid where each box has a number in it, and the numbers range from 0 to n-1 (in this case, n is 7).
-The basic restrictions are that each row and column must have all different numbers, and when you multiply numbers together in a certain way, you get a specific result. There are also some extra rules to help find a solution more efficiently.
-The goal of the problem is to find a multiplication table that satisfies all these rules, which is called a "quasigroup". The problem doesn't try to minimize or maximize anything, it just tries to find a solution that works.

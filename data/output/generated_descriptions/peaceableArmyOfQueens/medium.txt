@@ -1,5 +1,0 @@
-The name of the problem is the Peaceable Army of Queens. 
-This problem is about placing two equally-sized armies of queens (white and black) on a chessboard without any queen attacking another queen of the opposite color. 
-The main decision variables are the positions of the queens on the board, represented by a 2D array `board` where each cell can be 0 (empty), 1 (white queen), or 2 (black queen), and the variable `amountOfQueens` which represents the number of queens of each color. 
-The key constraints are that each row, column, and diagonal can contain at most one queen of each color, and that the number of white queens is equal to the number of black queens. 
-The objective of the problem is to maximize the number of queens of each color, i.e., to find the largest possible equally-sized armies of queens that can coexist peacefully on the chessboard.

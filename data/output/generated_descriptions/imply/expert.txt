@@ -1,5 +1,0 @@
-name: Imply Constraint Problem
-description: The Imply Constraint Problem is a constraint satisfaction problem that involves modeling and solving the implication relationship between two Boolean variables. The problem is defined using a global constraint called "imply" which enforces the implication relationship between two variables.
-variables: $v, vars_1, vars_2$ - These are decision variables where $v$ is a Boolean variable representing the implication result, and $vars_1$ and $vars_2$ are Boolean variables representing the antecedent and consequent of the implication, respectively.
-constraints: $v \leftrightarrow (vars_1 \rightarrow vars_2)$ - This constraint enforces the implication relationship between $vars_1$ and $vars_2$, where $v$ is true if and only if $vars_1$ implies $vars_2$.
-objective: satisfy - The objective of the problem is to find an assignment of values to the decision variables that satisfies the implication constraint.

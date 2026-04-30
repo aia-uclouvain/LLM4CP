@@ -1,9 +1,0 @@
-name: Markov Chain Stable State Problem
-description: The problem is to find the stable state of a Markov chain, given its transition matrix. A Markov chain is a mathematical system that undergoes transitions from one state to another, where the probability of transitioning from one state to another is dependent on the current state. The stable state of a Markov chain is a state where the probability of being in that state does not change over time.
-variables: x = [x[1], x[2], ..., x[n]], transitions = [transitions[i, j]] where i, j in 1..n. 
-These are the decision variables, where x[i] represents the probability of being in state i in the stable state, and transitions[i, j] represents the probability of transitioning from state i to state j.
-constraints: 
-x[i] = sum(j in 1..n) (transitions[i, j] * x[j]) for all i in 1..n, 
-sum(i in 1..n) (x[i]) = 1.0. 
-These constraints ensure that the probabilities of being in each state in the stable state are consistent with the transition probabilities, and that the probabilities of being in all states sum to 1.
-objective: The objective of the problem is to find the stable state, which is achieved by satisfying the constraints. There is no explicit objective function to minimize or maximize.

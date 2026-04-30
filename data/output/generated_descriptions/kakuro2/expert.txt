@@ -1,9 +1,0 @@
-name: Kakuro puzzle
-description: The Kakuro puzzle is a mathematical puzzle where the objective is to fill in a grid with numbers from 1 to 9, such that each row and column sum matches a given clue, and no digit is duplicated in any row or column. The puzzle has some blank cells, which are not part of any row or column sum.
-variables: $x_{i,j}$, where $i$ and $j$ are the row and column indices, respectively. These variables represent the values to be filled in the grid, with $x_{i,j}$ being the value in the $i$-th row and $j$-th column.
-constraints: 
-$\forall i,j \in \{1, \ldots, n\}: x_{i,j} > 0 \lor hints\_row[i,j] = B$
-$\forall p \in \{1, \ldots, num\_row\_hints\}: row\_hint\_sums[p] = \sum_{i,j \in \{1, \ldots, n\} \land hints\_row[i,j] = p} x_{i,j} \land \forall i,j,i',j' \in \{1, \ldots, n\} \land hints\_row[i,j] = p \land hints\_row[i',j'] = p \land (i,j) \neq (i',j'): x_{i,j} \neq x_{i',j'}$
-$\forall p \in \{1, \ldots, num\_col\_hints\}: col\_hint\_sums[p] = \sum_{i,j \in \{1, \ldots, n\} \land hints\_col[i,j] = p+num\_row\_hints} x_{i,j} \land \forall i,j,i',j' \in \{1, \ldots, n\} \land hints\_col[i,j] = p+num\_row\_hints \land hints\_col[i',j'] = p+num\_row\_hints \land (i,j) \neq (i',j'): x_{i,j} \neq x_{i',j'}$
-These constraints ensure that the values filled in the grid are valid (i.e., greater than 0, or blank if the hint is blank), and that each row and column sum matches the given clue, with no digit duplicated in any row or column.
-objective: The objective of the problem is to find a feasible solution, i.e., to fill in the grid with values that satisfy all the constraints. There is no explicit objective function to minimize or maximize.

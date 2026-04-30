@@ -1,5 +1,0 @@
-Factorial Problem
-The problem is about calculating the factorial of a given number, which is the product of all positive integers up to that number.
-The main decision variable is `z`, which represents the result of the factorial calculation, and `x`, an array of variables where `x[i]` represents the factorial of `i`.
-The key constraints are that the first element of `x` is 1, and each subsequent element `x[i]` is the product of the previous element `x[i-1]` and `i`. The result `z` is the last element of `x`, which is the factorial of `n`.
-The problem's objective is not to minimize or maximize a specific value, but rather to satisfy the constraints and calculate the factorial of `n`, which is then output as `z`. In other words, the goal is to find the value of `z` that represents the factorial of `n`, given the constraints that define the factorial calculation.

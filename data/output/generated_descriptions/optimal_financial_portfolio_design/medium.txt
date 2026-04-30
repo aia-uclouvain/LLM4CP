@@ -1,5 +1,0 @@
-Optimal Pairwise Design (OPD) 
-The Optimal Pairwise Design problem is about finding a binary matrix with specific properties. 
-The main decision variables are the elements of the binary matrix, where each element represents whether a particular asset is included in a particular portfolio. 
-The key constraints are that each row (representing a portfolio) must have a specified number of assets, and the dot product between any pair of distinct rows must be minimal. 
-The objective is to minimize the maximum dot product between all pairs of distinct rows, which represents the minimum similarity between any two portfolios.

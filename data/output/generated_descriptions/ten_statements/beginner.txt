@@ -1,5 +1,0 @@
-Ten Statements Problem
-The problem is about a set of statements that talk about how many of them are true. 
-The main variables are the statements themselves, which are represented by a series of true or false values (0 or 1). 
-The basic restrictions are that each statement says exactly how many of all the statements are true, and not all statements can be false. 
-The goal is to figure out how many of these statements are actually true, by finding the combination that satisfies all the conditions.

@@ -1,5 +1,0 @@
-Dinner problem
-The problem is about planning a dinner with a certain number of grandparents, parents, and children, where each group has a different cost for dinner, and there are rules about the total number of people and the total cost.
-The main variables are Grandparents, Parents, and Children, which represent the number of people from each group who will attend the dinner.
-The basic restrictions are that there must be a total of 20 people at the dinner, the total cost must be $20, and there must be at least one person from each group (grandparents, parents, and children) attending the dinner. Additionally, each group has a specific cost: grandparents cost $3, parents cost $2, and children cost $0.50.
-The goal of the problem is to find the number of grandparents, parents, and children who will attend the dinner, given the restrictions on the total number of people and the total cost.

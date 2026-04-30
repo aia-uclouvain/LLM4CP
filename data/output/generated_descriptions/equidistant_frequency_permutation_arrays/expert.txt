@@ -1,5 +1,0 @@
-name: Equidistant Frequency Permutation Arrays (EFPAs) problem
-description: The problem involves finding a set of codewords, each of a certain length, over a given alphabet, such that each codeword contains each symbol a specified number of times, and each pair of codewords differs in exactly a specified number of positions.
-variables: $c : \text{set of strings}$, where $c$ is a set of codewords, each represented as a string of characters from the given alphabet, and each string has a length equal to the number of symbols multiplied by the frequency of each symbol.
-constraints: $\forall s \in c, \forall a \in \text{Character}: \sum_{i=1}^{\text{wordLength}} (s(i) = a) = \lambda$, $\forall s_1, s_2 \in c: s_1 \neq s_2 \rightarrow \sum_{i=1}^{\text{wordLength}} (s_1(i) \neq s_2(i)) = d$, where the first constraint ensures that each codeword contains each symbol exactly $\lambda$ times, and the second constraint ensures that each pair of distinct codewords differs in exactly $d$ positions.
-objective: The objective is to find a set of codewords satisfying the given constraints, with no explicit optimization criterion, so the goal is to find a feasible solution.

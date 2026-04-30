@@ -1,6 +1,0 @@
-The problem is called "A programming puzzle from Einav". 
-It's about taking a table of numbers, some positive and some negative, and changing the signs of some rows and columns to make all the rows and columns add up to positive numbers or zero. 
-The main variables are the numbers in the table, the signs of the rows and columns, and the sums of the rows and columns. 
-In plain language, the variables mean: the numbers in the table are the original values, the signs of the rows and columns are whether the numbers in that row or column should be positive or negative, and the sums of the rows and columns are the total of the numbers in that row or column after any sign changes. 
-The basic restrictions are that all the rows and columns must add up to positive numbers or zero after any sign changes. 
-The goal is to find the way of changing the signs that results in the smallest total sum of all the numbers in the table.

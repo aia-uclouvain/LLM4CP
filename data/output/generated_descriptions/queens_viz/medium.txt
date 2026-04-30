@@ -1,5 +1,0 @@
-N-Queens Problem
-The N-Queens problem is about placing a certain number of queens on a chessboard such that no queen attacks any other queen. 
-The main decision variables in this problem are the positions of the queens on the board, represented by the array `queens` where `queens[i]` is the column in which the queen in row `i` is placed.
-The key constraints are that each queen must be in a unique column, and no two queens can be on the same diagonal. This means that for any two queens, their column positions must be different, and the sum or difference of their column positions and row positions must also be different.
-The objective of the problem is not to minimize or maximize a specific value, but rather to find a feasible solution that satisfies all the constraints, which is achieved by using the `satisfy` keyword in the MiniZinc model. In other words, the goal is to find a way to place the queens on the board such that none of them attack each other, and the model will output one such solution.

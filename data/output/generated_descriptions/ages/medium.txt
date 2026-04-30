@@ -1,5 +1,0 @@
-The Ages problem
-The Ages problem is about determining the ages of three people, Tim, Jane, and Mary, based on a set of cryptic clues given in the form of equations.
-The main decision variables are t, j, and m, which represent the ages of Tim, Jane, and Mary, respectively, as well as several auxiliary variables y, y1, y2, ..., y8, which are used to express the relationships between the ages.
-The key constraints are a set of equations that describe the relationships between the ages, such as "y + 10 - t = 2 * (y1 - j)" which can be translated to "the age of the person who is y years old plus 10 is equal to twice the difference between the age of the person who is y1 years old and Jane's age". Other constraints express relationships such as "the age of the person who is y1 years old minus Mary's age is equal to 9 times the difference between the age of the person who is y1 years old and Tim's age".
-The objective of the problem is to minimize the sum of the ages of Tim, Jane, and Mary, represented by the variable z, which is the sum of t, j, and m.

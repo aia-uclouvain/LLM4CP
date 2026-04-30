@@ -1,5 +1,0 @@
-Dudeney's Bishop Placement Problem II
-This problem is about placing bishops on a chessboard in such a way that the maximum number of bishops can be placed without any bishop attacking another.
-The main variables are x and a, where x represents whether a square on the chessboard is occupied by a bishop or not, and a represents whether a square is attacked by a bishop or not.
-The basic restrictions are that a square can either be occupied by a bishop or be attacked by a bishop, but not both, and that a bishop attacks all squares on the same diagonal.
-The goal is to maximize the number of bishops that can be placed on the chessboard, which means finding the largest possible number of non-attacking bishops.

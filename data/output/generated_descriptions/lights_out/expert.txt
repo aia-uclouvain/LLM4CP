@@ -1,5 +1,0 @@
-name: Lights Out Puzzle
-description: The Lights Out Puzzle is a game where a player is given a grid of cells, some of which are lit and others are not. The goal is to turn off all the lights by clicking on the cells. Each click toggles the state of the clicked cell and its immediate neighbors.
-variables: x[i,j], d[i,j] - The decision variables x[i,j] represent whether a cell at position (i,j) is clicked (1) or not (0), and d[i,j] represent the number of times a cell at position (i,j) is toggled.
-constraints: 2*d[i,j] + r[i,j] = ∑[x[i+a,j+b] | a,b in {-1,0,1} where (i+a) >= 1 /\ (i+a) <= n /\ (j+b) >= 1 /\ (j+b) <= n /\ (abs(a) + abs(b) = 1 \/  a= 0 /\ b = 0)] - This constraint ensures that the final state of each cell is correct based on the initial state and the clicks.
-objective: minimize moves = ∑(x) - The objective is to minimize the total number of clicks (moves) required to turn off all the lights.

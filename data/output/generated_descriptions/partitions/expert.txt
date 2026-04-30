@@ -1,5 +1,0 @@
-name: Integer Partitions Problem
-description: The Integer Partitions Problem is a classic problem in number theory and combinatorics, which involves finding the number of ways to express a given positive integer as a sum of positive integers, where the order of the summands does not matter. In this specific model, the problem is to find a partition of the number 52 into 9 parts, where each part is greater than 2.
-variables: $x_1, x_2, ..., x_9$ - These are decision variables representing the 9 parts of the partition, where $x_i$ is the value of the $i^{th}$ part.
-constraints: $n = \sum_{i=1}^{9} x_i$, $x_i > 2$ for $i = 1, 2, ..., 9$ - These constraints ensure that the sum of the 9 parts equals 52 and that each part is greater than 2.
-objective: The objective of this problem is to find a satisfying assignment of values to the decision variables, i.e., to find one (or all) partition(s) of 52 into 9 parts, where each part is greater than 2. There is no explicit objective function to minimize or maximize.

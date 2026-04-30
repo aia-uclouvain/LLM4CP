@@ -1,7 +1,0 @@
-name: 5x5 Puzzle (Five Puzzle) 
-description: The 5x5 puzzle is a problem where a 5x5 grid of squares can be either lit (white) or unlit (red). The goal is to find the minimum number of moves required to light all 25 squares, where a move consists of clicking on a square, which toggles the state of that square and its orthogonal neighbors.
-variables: $x_{i,j}, d_{i,j}, the\_sum$ 
-These variables represent the state of each square in the grid ($x_{i,j}$), the number of times each square has been toggled ($d_{i,j}$), and the total number of lit squares ($the\_sum$).
-constraints: $2d_{i,j} + 1 = \sum_{k=j-1,j+1, k \neq j} x_{i,k} + \sum_{k=i-1,i+1} x_{k,j}$ 
-These constraints model the relationship between the state of each square and the number of times it has been toggled, taking into account the effects of toggling on neighboring squares.
-objective: Minimize $the\_sum$ is not the correct objective, instead the objective is to minimize the number of moves required to achieve $the\_sum = 25$, however, in this model, the objective is to minimize $the\_sum$ which is the total number of lit squares, this is a simplification of the original problem.

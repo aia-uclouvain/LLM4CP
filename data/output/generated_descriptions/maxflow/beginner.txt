@@ -1,5 +1,0 @@
-Maximum Flow Problem
-The problem is about finding the maximum amount of "stuff" that can be moved from one point to another in a network. 
-The main variables are the nodes (like points on a map), arcs (like roads between points), the capacity of each arc (how much "stuff" can fit on each road), the source node (where the "stuff" starts), the sink node (where the "stuff" ends), and the flow through each arc (how much "stuff" is actually moving on each road).
-The basic restrictions are that the "stuff" can't just appear or disappear at any point, it has to follow the roads and not exceed the capacity of each road. 
-The goal is to maximize the total amount of "stuff" that can be moved from the source to the sink.

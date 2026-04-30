@@ -1,8 +1,0 @@
-The Assignment Problem
-The Assignment Problem is about finding an optimal way to assign a set of agents to a set of tasks, where each agent can only be assigned to one task and each task can only be assigned to one agent. 
-
-The main decision variables in this problem are the arrays A and B, which represent the agents and tasks, respectively, and the 2D array x, where x[i,1] represents the index of the agent and x[i,2] represents the index of the task assigned to that agent.
-
-The key constraints in this problem are that each agent is assigned to exactly one task, and each task is assigned to exactly one agent. This is achieved through the all_different constraint, which ensures that no two agents are assigned to the same task and no two tasks are assigned to the same agent. Additionally, the constraint A[x[i,1]] = B[x[i,2]] ensures that the assignment is valid, i.e., the agent is capable of performing the assigned task.
-
-The objective of the Assignment Problem is to find a feasible assignment that satisfies all the constraints, rather than minimizing or maximizing a specific objective function. In other words, the goal is to find an assignment where each agent is assigned to a task that they are capable of performing, and each task is assigned to exactly one agent. The solve satisfy statement in the model indicates that the goal is to find a solution that satisfies all the constraints, rather than optimizing a specific objective function.

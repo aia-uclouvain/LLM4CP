@@ -1,5 +1,0 @@
-name: Clock Triplet Problem
-description: The Clock Triplet Problem is a combinatorial puzzle that involves rearranging the numbers 1-12 on the face of a clock in a circular manner such that no triplet of adjacent numbers has a sum higher than 21.
-variables: $x = [x_0, x_1, ..., x_{11}]$, where $x_i$ represents the number placed at the $i^{th}$ position on the clock, and is a decision variable that can take any integer value from 1 to 12.
-constraints: $x_0 = 12, x_1 > x_{11}, x_i + x_{i-1} + x_{i-2} \leq triplet\_sum \forall i \in [2,11], x_{10} + x_{11} + x_0 \leq triplet\_sum, x_{11} + x_0 + x_1 \leq triplet\_sum, triplet\_sum \leq 21, all\_different(x)$, which ensure that the number 12 is placed at the first position, each number is unique, and the sum of any triplet of adjacent numbers does not exceed the $triplet\_sum$.
-objective: satisfy, which means the problem is a feasibility problem that aims to find an arrangement of numbers that satisfies all the given constraints, with a particular focus on determining whether 21 is indeed the smallest possible highest sum of a triplet.
