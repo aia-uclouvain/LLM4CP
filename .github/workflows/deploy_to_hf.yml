@@ -8,13 +8,37 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Git LFS
+        run: |
+          sudo apt-get install -y git-lfs
+          git lfs install
+
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Fetch full history for a clean push
+          lfs: true        # Download LFS objects on checkout
 
-      - name: Push to Hugging Face
+      - name: Configure Git LFS and push to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git push --force https://pschaus:$HF_TOKEN@huggingface.co/spaces/pschaus/llm4cp main
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
 
+          # Set up the HF remote with credentials
+          HF_REMOTE="https://pschaus:${HF_TOKEN}@huggingface.co/spaces/pschaus/llm4cp"
+
+          # Initialize LFS on the HF remote (requires a push with LFS objects)
+          git lfs track "data/**/*"
+          git add .gitattributes
+
+          # Re-add data folder so LFS pointers are used if data is present
+          if [ -d "data" ]; then
+            git add data/
+          fi
+
+          # Commit only if there are changes from LFS setup
+          git diff --cached --quiet || git commit -m "ci: track data/ with Git LFS"
+
+          # Push everything including LFS objects to Hugging Face
+          git push --force "${HF_REMOTE}" main
