@@ -1,1 +1,0 @@
-Henz reports runtimes of less than 1 minute, using the finite-domain constraint programming tool [Friar Tuck](http://www.comp.nus.edu.sg/~henz/projects/FriarTuck).
