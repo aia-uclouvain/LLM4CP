@@ -97,43 +97,6 @@ Key configuration options that can be specified in the config file or command li
 - `--results_dir`: Directory for results
 - `--descriptions_dir`: Directory for generated model descriptions
 
-## Deployment on Hugging Face Spaces
-
-### Quick Start on Hugging Face Spaces
-
-1. **Fork/Clone to Hugging Face**:
-   - Go to [Hugging Face Spaces](https://huggingface.co/spaces)
-   - Click "Create new Space"
-   - Choose **Gradio** as the SDK
-   - Select a Persistent Storage for your data (recommended: at least 50GB)
-   - Clone or upload your repository
-
-2. **Set Environment Variables**:
-   - In your Space settings → Secrets and variables
-   - Add `GROQ_API_KEY` with your Groq API key
-
-3. **Pre-generate Vector Databases**:
-   - Before pushing to Spaces, generate vector databases locally:
-     ```bash
-     python run_indexing.py
-     ```
-   - Commit the generated `data/vector_dbs/` directory to git
-   - This avoids regenerating on startup (which may timeout on Spaces)
-
-4. **Push to Spaces**:
-   ```bash
-   git remote add space https://huggingface.co/spaces/<username>/<space-name>
-   git push space main
-   ```
-
-### Notes on Hugging Face Spaces
-
-- **Storage**: The app requires persistent storage for vector databases. Allocate enough space when creating your Space.
-- **Environment Variables**: Use the Spaces settings panel to add `GROQ_API_KEY` securely.
-- **Cold Starts**: First load may take 30-60 seconds as dependencies install and models load.
-- **Gradio Interface**: The app automatically launches on the default Gradio port and is exposed via Spaces.
-
-For more details, see [Hugging Face Spaces Documentation](https://huggingface.co/docs/hub/spaces-overview).
 
 ## Project Structure
 
